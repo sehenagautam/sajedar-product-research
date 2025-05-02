@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajedar - AI Chatbot Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Sajedar - Intelligent AI Chatbot Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -14,23 +15,23 @@
         }
 
         body {
-            background-color: #f8fafc;
-            color: #1e293b;
-            line-height: 1.7;
+            background-color: #f4f7f6;
+            color: #1a2e2a;
+            line-height: 1.8;
         }
 
         /* Navigation Bar */
         .navbar {
             background-color: #ffffff;
-            padding: 20px 40px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 60px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         .navbar-content {
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -38,35 +39,54 @@
         }
 
         .navbar-logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1e40af;
+            display: flex;
+            align-items: center;
             text-decoration: none;
+        }
+
+        .navbar-logo img {
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        .navbar-logo span {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2f855a;
         }
 
         .navbar-links {
             display: flex;
-            gap: 30px;
+            gap: 40px;
         }
 
         .navbar-links a {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 600;
-            color: #1e293b;
+            color: #1a2e2a;
             text-decoration: none;
         }
 
         .navbar-links a:hover {
-            color: #3b82f6;
+            color: #68d391;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: #2f855a;
+            cursor: pointer;
         }
 
         /* Hero Section */
         .hero {
-            min-height: 80vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
-            padding: 60px 40px;
-            background: linear-gradient(135deg, #3b82f6, #7c3aed);
+            padding: 80px 60px;
+            background: linear-gradient(135deg, #2f855a 30%, #68d391 100%);
             color: white;
             position: relative;
             overflow: hidden;
@@ -80,376 +100,523 @@
             width: 100%;
             height: 100%;
             background: url('https://www.transparenttextures.com/patterns/stardust.png');
-            opacity: 0.1;
+            opacity: 0.15;
             z-index: 1;
         }
 
         .hero-content {
             display: flex;
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
             align-items: center;
-            gap: 60px;
+            gap: 80px;
             position: relative;
             z-index: 2;
         }
 
         .hero-text {
             flex: 1;
-            padding: 20px;
+            padding: 30px;
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
 
         .hero-text p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 300;
             margin-bottom: 2.5rem;
-            max-width: 550px;
-            opacity: 0.95;
+            max-width: 600px;
+            opacity: 0.9;
         }
 
         .cta-button {
             display: inline-flex;
             align-items: center;
-            padding: 16px 32px;
-            background: linear-gradient(90deg, #22d3ee, #60a5fa);
+            padding: 18px 36px;
+            background: linear-gradient(90deg, #38a169, #68d391);
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .hero-image {
             flex: 1;
-            max-width: 600px;
+            max-width: 650px;
         }
 
         .hero-image img {
             width: 100%;
             height: auto;
-            border-radius: 16px;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
         }
 
         /* About Section */
         .about {
-            padding: 80px 40px;
+            padding: 100px 60px;
             text-align: center;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
-            background: linear-gradient(180deg, #ffffff, #f1f5f9);
-            border-radius: 16px;
-            margin-top: -40px;
+            background: linear-gradient(180deg, #ffffff, #e6f0ea);
+            border-radius: 20px;
+            margin-top: -50px;
             position: relative;
             z-index: 2;
-            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
         }
 
         .about h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1e40af;
+            margin-bottom: 2rem;
+            color: #2f855a;
         }
 
         .about p {
-            font-size: 1.2rem;
-            color: #475569;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.9;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #4a5e57;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            line-height: 2;
         }
 
         /* Features Section */
         .features {
-            padding: 80px 40px;
-            background-color: #f8fafc;
+            padding: 100px 60px;
+            background-color: #f4f7f6;
             text-align: center;
         }
 
         .features h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 3rem;
-            color: #1e40af;
+            margin-bottom: 3.5rem;
+            color: #2f855a;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .feature-card {
             background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
         }
 
         .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 600;
-            margin-bottom: 1rem;
-            color: #1e293b;
+            margin-bottom: 1.2rem;
+            color: #1a2e2a;
         }
 
         .feature-card p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #5f7670;
+        }
+
+        /* Client Success Metrics Section */
+        .metrics {
+            padding: 100px 60px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .metrics h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3.5rem;
+            color: #2f855a;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+        }
+
+        .metric-card {
+            background: #f4f7f6;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .metric-card h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2f855a;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-card p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #5f7670;
+        }
+
+        .chart-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            padding: 100px 60px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .case-studies h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3.5rem;
+            color: #2f855a;
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .case-study-card {
+            background: #f4f7f6;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .case-study-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #1a2e2a;
+        }
+
+        .case-study-card p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #5f7670;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-card span {
             font-size: 1rem;
-            color: #64748b;
+            font-weight: 600;
+            color: #2f855a;
         }
 
         /* Testimonials Section */
         .testimonials {
-            padding: 80px 40px;
+            padding: 100px 60px;
             background-color: #ffffff;
             text-align: center;
         }
 
         .testimonials h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 3rem;
-            color: #1e40af;
+            margin-bottom: 3.5rem;
+            color: #2f855a;
         }
 
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
         .testimonial-card {
-            background: #f8fafc;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            background: #f4f7f6;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
         }
 
         .testimonial-card p {
-            font-size: 1rem;
-            color: #475569;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #4a5e57;
             margin-bottom: 1.5rem;
             font-style: italic;
         }
 
         .testimonial-card h4 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            color: #1e293b;
+            color: #1a2e2a;
         }
 
         .testimonial-card span {
-            font-size: 0.9rem;
-            color: #64748b;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #5f7670;
         }
 
         /* CTA Banner */
         .cta-banner {
-            padding: 60px 40px;
-            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            padding: 80px 60px;
+            background: linear-gradient(90deg, #2f855a, #68d391);
             text-align: center;
             color: white;
         }
 
         .cta-banner h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
         }
 
         .cta-banner p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 0.95;
+            opacity: 0.9;
         }
 
         .cta-banner .cta-button {
-            background: #22d3ee;
+            background: #38a169;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Contact Section */
         .contact {
-            padding: 80px 40px;
-            background-color: #f8fafc;
+            padding: 100px 60px;
+            background-color: #f4f7f6;
             text-align: center;
         }
 
         .contact h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
-            color: #1e40af;
+            color: #2f855a;
         }
 
         .contact p {
-            font-size: 1.2rem;
-            color: #475569;
-            margin-bottom: 2rem;
-            max-width: 800px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #4a5e57;
+            margin-bottom: 2.5rem;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .contact-form {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
         }
 
         .contact-form input,
         .contact-form textarea {
-            padding: 14px;
-            font-size: 1rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
+            padding: 16px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            border: 1px solid #d1dad7;
+            border-radius: 10px;
             width: 100%;
+            background-color: #ffffff;
         }
 
         .contact-form textarea {
             resize: vertical;
-            min-height: 150px;
+            min-height: 180px;
         }
 
         .contact-form button {
-            padding: 16px;
-            background: linear-gradient(90deg, #22d3ee, #60a5fa);
+            padding: 18px;
+            background: linear-gradient(90deg, #38a169, #68d391);
             color: white;
             border: none;
             border-radius: 50px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
             cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Footer */
         .footer {
-            padding: 40px 40px;
-            background-color: #1e293b;
-            color: #f8fafc;
+            padding: 60px 60px;
+            background-color: #1a2e2a;
+            color: #f4f7f6;
             text-align: center;
         }
 
         .footer-content {
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
         }
 
         .footer-logo {
-            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        .footer-logo span {
+            font-size: 2rem;
             font-weight: 700;
-            color: #f8fafc;
+            color: #f4f7f6;
         }
 
         .footer-links {
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
 
         .footer-links a {
-            font-size: 1rem;
-            color: #f8fafc;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #f4f7f6;
             text-decoration: none;
         }
 
         .footer-links a:hover {
-            color: #60a5fa;
+            color: #68d391;
         }
 
         .footer-social {
             display: flex;
-            gap: 20px;
+            gap: 30px;
         }
 
         .footer-social a {
-            font-size: 1rem;
-            color: #f8fafc;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #f4f7f6;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .footer-social a:hover {
-            color: #60a5fa;
+            color: #68d391;
+        }
+
+        .footer-social i {
+            font-size: 1.3rem;
         }
 
         .footer-bottom {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #94a3b8;
+            margin-top: 30px;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #8b9e98;
         }
 
         /* Responsive Design */
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
             .hero-content {
                 flex-direction: column;
                 text-align: center;
             }
 
             .hero-text h1 {
-                font-size: 2.8rem;
+                font-size: 3.2rem;
+            }
+
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+
+            .hero-image {
+                max-width: 550px;
+            }
+
+            .navbar-links {
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
             }
 
             .hero-text p {
                 font-size: 1.1rem;
             }
 
-            .hero-image {
-                max-width: 500px;
-            }
-
-            .navbar-links {
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-text h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero-text p {
-                font-size: 1rem;
-            }
-
             .about h2,
             .features h2,
+            .metrics h2,
+            .case-studies h2,
             .testimonials h2,
             .cta-banner h2,
             .contact h2 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .hero-image {
-                max-width: 350px;
+                max-width: 400px;
             }
 
             .navbar-content {
-                flex-direction: column;
-                gap: 20px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
             }
 
             .navbar-links {
+                display: none;
                 flex-direction: column;
                 align-items: center;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: #ffffff;
+                padding: 20px 0;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            }
+
+            .navbar-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
             }
 
             .footer-content {
@@ -461,6 +628,47 @@
             .footer-social {
                 flex-direction: column;
             }
+
+            .navbar,
+            .hero,
+            .about,
+            .features,
+            .metrics,
+            .case-studies,
+            .testimonials,
+            .cta-banner,
+            .contact,
+            .footer {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 14px 28px;
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                max-width: 300px;
+            }
+
+            .navbar-logo span {
+                font-size: 1.6rem;
+            }
+
+            .navbar-logo img {
+                height: 40px;
+            }
         }
     </style>
 </head>
@@ -468,11 +676,19 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-content">
-            <a href="#" class="navbar-logo">Sajedar</a>
+            <a href="#" class="navbar-logo">
+                <img src="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png" alt="Sajedar Logo">
+                <span>Sajedar</span>
+            </a>
+            <button class="hamburger" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="navbar-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#features">Features</a>
+                <a href="#metrics">Metrics</a>
+                <a href="#case-studies">Case Studies</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -483,9 +699,9 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Sajedar: Intelligent AI Chatbots</h1>
-                <p>Elevate your business with Sajedar’s AI-driven chatbots, crafted to engage customers, streamline support, and accelerate growth.</p>
-                <a href="#contact" class="cta-button">Get Started</a>
+                <h1>Sajedar: Empowering Businesses with AI Chatbots</h1>
+                <p>Transform your customer experience with Sajedar’s intelligent AI chatbots, designed to engage, support, and drive growth seamlessly across your business operations.</p>
+                <a href="#contact" class="cta-button">Get Started Today</a>
             </div>
             <div class="hero-image">
                 <img src="https://i.ibb.co/WWz2BRsM/Untitled.png" alt="Sajedar AI Chatbot Showcase">
@@ -495,29 +711,94 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>Why Choose Sajedar?</h2>
-        <p>Sajedar delivers cutting-edge AI chatbot solutions that integrate seamlessly with your business systems. Our technology empowers you to provide personalized customer interactions, optimize operations, and drive measurable growth. Partner with us to transform how you connect with your audience.</p>
+        <h2>Why Partner with Sajedar?</h2>
+        <p>At Sajedar, we craft state-of-the-art AI chatbot solutions that integrate effortlessly with your existing systems, delivering personalized customer interactions and operational efficiency. Our mission is to empower businesses to connect with their audiences in meaningful ways, driving measurable growth.</p>
+        <p>With a team of dedicated experts, we provide tailored solutions backed by advanced analytics, continuous support, and a commitment to innovation. Whether you're a startup or an enterprise, Sajedar’s chatbots are designed to scale with your ambitions, ensuring you stay ahead in a competitive landscape.</p>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <h2>Our Strengths</h2>
+        <h2>Our Core Strengths</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <h3>Seamless Integration</h3>
-                <p>Our chatbots integrate effortlessly with your existing platforms, ensuring a smooth and efficient setup.</p>
+                <p>Integrate our chatbots with your CRM, e-commerce platforms, or custom systems for a hassle-free setup.</p>
             </div>
             <div class="feature-card">
                 <h3>24/7 Customer Support</h3>
-                <p>Automate responses and provide instant support to your customers around the clock.</p>
+                <p>Provide instant, automated responses to customer queries anytime, anywhere, enhancing satisfaction.</p>
             </div>
             <div class="feature-card">
                 <h3>Personalized Experiences</h3>
-                <p>Deliver tailored interactions that resonate with your audience and enhance engagement.</p>
+                <p>Leverage AI to deliver tailored interactions that resonate with your audience and boost engagement.</p>
             </div>
             <div class="feature-card">
                 <h3>Scalable Solutions</h3>
-                <p>Our chatbots grow with your business, adapting to increasing demands and complexity.</p>
+                <p>Our chatbots adapt to your business growth, handling increased complexity with ease.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Advanced Analytics</h3>
+                <p>Access detailed insights into customer behavior to optimize chatbot performance and strategy.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Multilingual Support</h3>
+                <p>Engage global audiences with chatbots that communicate fluently in multiple languages.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure Data Handling</h3>
+                <p>Ensure customer data is protected with robust security protocols and compliance standards.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Customizable Workflows</h3>
+                <p>Tailor chatbot workflows to match your business processes for maximum efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Metrics Section -->
+    <section id="metrics" class="metrics">
+        <h2>Client Success Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>95%</h3>
+                <p>Customer Satisfaction Rate</p>
+            </div>
+            <div class="metric-card">
+                <h3>40%</h3>
+                <p>Reduction in Response Time</p>
+            </div>
+            <div class="metric-card">
+                <h3>30%</h3>
+                <p>Increase in Engagement</p>
+            </div>
+            <div class="metric-card">
+                <h3>25%</h3>
+                <p>Boost in Sales Conversions</p>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="clientHappinessChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <h2>Success Stories</h2>
+        <div class="case-studies-grid">
+            <div class="case-study-card">
+                <h3>E-Commerce Growth</h3>
+                <p>A leading online retailer integrated Sajedar’s chatbots to handle customer inquiries, resulting in a 40% reduction in response time and a 25% increase in sales conversions.</p>
+                <span>RetailWorks</span>
+            </div>
+            <div class="case-study-card">
+                <h3>Support Automation</h3>
+                <p>A tech startup used Sajedar to automate 80% of their customer support queries, freeing up their team to focus on innovation and product development.</p>
+                <span>TechTrend Innovations</span>
+            </div>
+            <div class="case-study-card">
+                <h3>Global Expansion</h3>
+                <p>A logistics firm implemented our multilingual chatbots to support customers in 10 languages, boosting their international customer satisfaction by 35%.</p>
+                <span>GlobalTrade Solutions</span>
             </div>
         </div>
     </section>
@@ -527,34 +808,44 @@
         <h2>What Our Clients Say</h2>
         <div class="testimonials-grid">
             <div class="testimonial-card">
-                <p>"Sajedar’s chatbots transformed our customer support, reducing response times and boosting satisfaction."</p>
+                <p>"Sajedar’s chatbots have revolutionized our customer support, slashing response times and elevating satisfaction rates."</p>
                 <h4>Jane Thompson</h4>
                 <span>CEO, TechTrend Innovations</span>
             </div>
             <div class="testimonial-card">
-                <p>"The integration was seamless, and the personalized interactions have significantly improved our sales."</p>
+                <p>"The seamless integration and personalized interactions have driven a significant uptick in our sales performance."</p>
                 <h4>Michael Chen</h4>
                 <span>COO, RetailWorks</span>
             </div>
             <div class="testimonial-card">
-                <p>"Sajedar’s scalable solutions have been a game-changer for our growing business."</p>
+                <p>"Sajedar’s scalable solutions have been pivotal in supporting our rapid business expansion."</p>
                 <h4>Emily Rodriguez</h4>
                 <span>Founder, GrowEasy Analytics</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The multilingual support has enabled us to connect with customers worldwide effortlessly."</p>
+                <h4>Raj Patel</h4>
+                <span>Director, GlobalTrade Solutions</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"With Sajedar’s analytics, we’ve gained actionable insights that have transformed our customer engagement strategy."</p>
+                <h4>Sophia Lee</h4>
+                <span>Head of Marketing, BrightFuture Enterprises</span>
             </div>
         </div>
     </section>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Discover how Sajedar’s AI chatbots can streamline your operations and enhance customer engagement.</p>
+        <h2>Ready to Elevate Your Business?</h2>
+        <p>Join countless businesses transforming their operations with Sajedar’s AI chatbots. Streamline support, enhance engagement, and drive growth today.</p>
         <a href="#contact" class="cta-button">Request a Demo</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or ready to get started? Fill out the form below, and our team will reach out to you.</p>
+        <h2>Get in Touch</h2>
+        <p>Ready to transform your business or have questions? Fill out the form below or connect with us via WhatsApp. Our team is here to assist you every step of the way.</p>
         <form class="contact-form">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
@@ -567,33 +858,81 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">Sajedar</div>
+            <div class="footer-logo">
+                <img src="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png" alt="Sajedar Logo">
+                <span>Sajedar</span>
+            </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#features">Features</a>
+                <a href="#metrics">Metrics</a>
+                <a href="#case-studies">Case Studies</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-social">
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-                <a href="#">Email</a>
+                <a href="https://wa.me/9779860479751?text=Dear%20Sajedar%20Rep,%20I%20have%20a%20few%20questions!" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 Sajedar. All rights reserved.
+            © 2025 Sajedar. All rights reserved.
         </div>
     </footer>
 
-
+    <!-- Scripts -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H94EHFF2ED"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H94EHFF2ED');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Hamburger Menu Toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navbarLinks = document.querySelector('.navbar-links');
 
-  gtag('config', 'G-H94EHFF2ED');
-</script>
+      hamburger.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+      });
+
+      // Chart.js for Client Happiness
+      const ctx = document.getElementById('clientHappinessChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Satisfaction', 'Response Time', 'Engagement', 'Conversions'],
+          datasets: [{
+            label: 'Client Happiness Metrics',
+            data: [95, 40, 30, 25],
+            backgroundColor: '#2f855a',
+            borderColor: '#2f855a',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              title: {
+                display: true,
+                text: 'Percentage (%)'
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+    </script>
 </body>
 </html>
