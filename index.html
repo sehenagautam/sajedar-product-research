@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajedar - Intelligent AI Chatbot Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png">
     <style>
@@ -12,11 +11,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         body {
-            background-color: #f4f7f6;
+            background-color: #ffffff;
             color: #1a2e2a;
             line-height: 1.8;
         }
@@ -63,7 +62,7 @@
 
         .navbar-links a {
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #1a2e2a;
             text-decoration: none;
         }
@@ -122,7 +121,7 @@
 
         .hero-text h1 {
             font-size: 4rem;
-            font-weight: 800;
+            font-weight: 700;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
@@ -166,12 +165,12 @@
             text-align: center;
             max-width: 1100px;
             margin: 0 auto;
-            background: linear-gradient(180deg, #ffffff, #e6f0ea);
             border-radius: 20px;
             margin-top: -50px;
             position: relative;
             z-index: 2;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            background-color: #fbfbfb;
         }
 
         .about h2 {
@@ -181,55 +180,28 @@
             color: #2f855a;
         }
 
-        .about p {
+        .about ul {
+            list-style: none;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .about ul li {
             font-size: 1.3rem;
             font-weight: 300;
             color: #4a5e57;
-            max-width: 900px;
-            margin: 0 auto 1.5rem;
-            line-height: 2;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 100px 60px;
-            background-color: #f4f7f6;
-            text-align: center;
-        }
-
-        .features h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 3.5rem;
-            color: #2f855a;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-        }
-
-        .feature-card h3 {
-            font-size: 1.8rem;
-            font-weight: 600;
             margin-bottom: 1.2rem;
-            color: #1a2e2a;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.6;
         }
 
-        .feature-card p {
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: #5f7670;
+        .about ul li i {
+            color: #2f855a;
+            font-size: 1.2rem;
+            margin-top: 4px;
         }
 
         /* Client Success Metrics Section */
@@ -277,6 +249,58 @@
         .chart-container {
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 60px;
+            background: linear-gradient(180deg, #ffffff, #e6f0ea);
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 3.5rem;
+            color: #2f855a;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #2f855a;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            color: #1a2e2a;
+        }
+
+        .feature-card p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #5f7670;
         }
 
         /* Case Studies Section */
@@ -643,6 +667,10 @@
                 padding-left: 30px;
                 padding-right: 30px;
             }
+
+            .about ul li {
+                font-size: 1.1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -687,8 +715,8 @@
             <div class="navbar-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#features">Features</a>
                 <a href="#metrics">Metrics</a>
+                <a href="#features">Features</a>
                 <a href="#case-studies">Case Studies</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
@@ -713,47 +741,14 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>Why Partner with Sajedar?</h2>
-        <p>At Sajedar, we craft state-of-the-art AI chatbot solutions that integrate effortlessly with your existing systems, delivering personalized customer interactions and operational efficiency. Our mission is to empower businesses to connect with their audiences in meaningful ways, driving measurable growth.</p>
-        <p>With a team of dedicated experts, we provide tailored solutions backed by advanced analytics, continuous support, and a commitment to innovation. Whether you're a startup or an enterprise, Sajedar’s chatbots are designed to scale with your ambitions, ensuring you stay ahead in a competitive landscape.</p>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Our Core Strengths</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Seamless Integration</h3>
-                <p>Integrate our chatbots with your CRM, e-commerce platforms, or custom systems for a hassle-free setup.</p>
-            </div>
-            <div class="feature-card">
-                <h3>24/7 Customer Support</h3>
-                <p>Provide instant, automated responses to customer queries anytime, anywhere, enhancing satisfaction.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Personalized Experiences</h3>
-                <p>Leverage AI to deliver tailored interactions that resonate with your audience and boost engagement.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Scalable Solutions</h3>
-                <p>Our chatbots adapt to your business growth, handling increased complexity with ease.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Advanced Analytics</h3>
-                <p>Access detailed insights into customer behavior to optimize chatbot performance and strategy.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Multilingual Support</h3>
-                <p>Engage global audiences with chatbots that communicate fluently in multiple languages.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Secure Data Handling</h3>
-                <p>Ensure customer data is protected with robust security protocols and compliance standards.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Customizable Workflows</h3>
-                <p>Tailor chatbot workflows to match your business processes for maximum efficiency.</p>
-            </div>
-        </div>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> State-of-the-art AI chatbot solutions that integrate seamlessly with your existing systems.</li>
+            <li><i class="fas fa-check-circle"></i> Personalized customer interactions to enhance engagement and operational efficiency.</li>
+            <li><i class="fas fa-check-circle"></i> Empowering businesses to connect meaningfully with audiences, driving measurable growth.</li>
+            <li><i class="fas fa-check-circle"></i> Tailored solutions backed by advanced analytics and continuous support from our expert team.</li>
+            <li><i class="fas fa-check-circle"></i> Scalable chatbots designed for startups and enterprises to stay competitive.</li>
+            <li><i class="fas fa-check-circle"></i> Commitment to innovation, ensuring your business remains ahead of the curve.</li>
+        </ul>
     </section>
 
     <!-- Client Success Metrics Section -->
@@ -779,6 +774,53 @@
         </div>
         <div class="chart-container">
             <canvas id="clientHappinessChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Core Strengths</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-plug"></i>
+                <h3>Seamless Integration</h3>
+                <p>Integrate our chatbots with your CRM, e-commerce platforms, or custom systems for a hassle-free setup.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Customer Support</h3>
+                <p>Provide instant, automated responses to customer queries anytime, anywhere, enhancing satisfaction.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-check"></i>
+                <h3>Personalized Experiences</h3>
+                <p>Leverage AI to deliver tailored interactions that resonate with your audience and boost engagement.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-expand-arrows-alt"></i>
+                <h3>Scalable Solutions</h3>
+                <p>Our chatbots adapt to your business growth, handling increased complexity with ease.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Advanced Analytics</h3>
+                <p>Access detailed insights into customer behavior to optimize chatbot performance and strategy.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-globe"></i>
+                <h3>Multilingual Support</h3>
+                <p>Engage global audiences with chatbots that communicate fluently in multiple languages.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Data Handling</h3>
+                <p>Ensure customer data is protected with robust security protocols and compliance standards.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Customizable Workflows</h3>
+                <p>Tailor chatbot workflows to match your business processes for maximum efficiency.</p>
+            </div>
         </div>
     </section>
 
@@ -866,8 +908,8 @@
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#features">Features</a>
                 <a href="#metrics">Metrics</a>
+                <a href="#features">Features</a>
                 <a href="#case-studies">Case Studies</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
