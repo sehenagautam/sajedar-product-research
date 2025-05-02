@@ -3,121 +3,591 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Sajedar.com</title>
+    <title>Sajedar - AI Chatbot Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f9f4;
-            color: #333;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e40af;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar-links a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            color: #3b82f6;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 80vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #3b82f6, #7c3aed);
+            color: white;
+            position: relative;
             overflow: hidden;
         }
 
-        .container {
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: flex;
+            max-width: 1300px;
+            margin: 0 auto;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            max-width: 550px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 16px 32px;
+            background: linear-gradient(90deg, #22d3ee, #60a5fa);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #ffffff, #f1f5f9);
+            border-radius: 16px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            color: #475569;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 40px;
+            background-color: #f8fafc;
             text-align: center;
         }
 
-        .coming-soon {
-            color: #28a745;
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
+        .features h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1e40af;
         }
 
-        .description {
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #64748b;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 40px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #1e40af;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-card h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .testimonial-card span {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            padding: 60px 40px;
+            background: linear-gradient(90deg, #1e40af, #3b82f6);
+            text-align: center;
+            color: white;
+        }
+
+        .cta-banner h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-banner p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            color: #444;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
         }
 
-        .countdown {
-            font-size: 2rem;
-            color: #28a745;
-            font-weight: bold;
+        .cta-banner .cta-button {
+            background: #22d3ee;
         }
 
-        .footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #555;
+        /* Contact Section */
+        .contact {
+            padding: 80px 40px;
+            background-color: #f8fafc;
+            text-align: center;
         }
 
-        .highlight {
-            color: #28a745;
-            font-weight: bold;
-        }
-
-        .logo {
+        .contact h2 {
             font-size: 2.5rem;
-            font-weight: bold;
-            color: #28a745;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
         }
 
-        @media (max-width: 600px) {
-            .coming-soon {
-                font-size: 2rem;
+        .contact p {
+            font-size: 1.2rem;
+            color: #475569;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 14px;
+            font-size: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            padding: 16px;
+            background: linear-gradient(90deg, #22d3ee, #60a5fa);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 40px;
+            background-color: #1e293b;
+            color: #f8fafc;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f8fafc;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 1rem;
+            color: #f8fafc;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #60a5fa;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-social a {
+            font-size: 1rem;
+            color: #f8fafc;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            color: #60a5fa;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
             }
 
-            .countdown {
-                font-size: 1.5rem;
+            .hero-text h1 {
+                font-size: 2.8rem;
             }
 
-            .description {
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                max-width: 500px;
+            }
+
+            .navbar-links {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-text p {
                 font-size: 1rem;
             }
 
-            .logo {
+            .about h2,
+            .features h2,
+            .testimonials h2,
+            .cta-banner h2,
+            .contact h2 {
                 font-size: 2rem;
+            }
+
+            .hero-image {
+                max-width: 350px;
+            }
+
+            .navbar-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .navbar-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links,
+            .footer-social {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">Sajedar.com</div>
-        <div class="coming-soon">Coming Soon</div>
-        <div class="description">An online marketplace for digital goods. <br> Solving the online scam problem one step at a time.</div>
-        <div class="countdown" id="countdown">Launching in: 30 Days</div>
-        <div class="footer">Stay tuned! For updates, email us at <span class="highlight">info@sajedar.com</span>.</div>
-    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="navbar-logo">Sajedar</a>
+            <div class="navbar-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <script>
-        // Countdown Timer
-        const countdownElement = document.getElementById('countdown');
-        const targetDate = new Date('2025-01-10T00:00:00'); // Set to Jan 10, 2025
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Sajedar: Intelligent AI Chatbots</h1>
+                <p>Elevate your business with Sajedar’s AI-driven chatbots, crafted to engage customers, streamline support, and accelerate growth.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/WWz2BRsM/Untitled.png" alt="Sajedar AI Chatbot Showcase">
+            </div>
+        </div>
+    </section>
 
-        function updateCountdown() {
-            const now = new Date();
-            const timeDiff = targetDate - now;
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Why Choose Sajedar?</h2>
+        <p>Sajedar delivers cutting-edge AI chatbot solutions that integrate seamlessly with your business systems. Our technology empowers you to provide personalized customer interactions, optimize operations, and drive measurable growth. Partner with us to transform how you connect with your audience.</p>
+    </section>
 
-            if (timeDiff <= 0) {
-                countdownElement.textContent = 'We are live!';
-                return;
-            }
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Strengths</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Seamless Integration</h3>
+                <p>Our chatbots integrate effortlessly with your existing platforms, ensuring a smooth and efficient setup.</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Customer Support</h3>
+                <p>Automate responses and provide instant support to your customers around the clock.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personalized Experiences</h3>
+                <p>Deliver tailored interactions that resonate with your audience and enhance engagement.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Scalable Solutions</h3>
+                <p>Our chatbots grow with your business, adapting to increasing demands and complexity.</p>
+            </div>
+        </div>
+    </section>
 
-            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Sajedar’s chatbots transformed our customer support, reducing response times and boosting satisfaction."</p>
+                <h4>Jane Thompson</h4>
+                <span>CEO, TechTrend Innovations</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"The integration was seamless, and the personalized interactions have significantly improved our sales."</p>
+                <h4>Michael Chen</h4>
+                <span>COO, RetailWorks</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Sajedar’s scalable solutions have been a game-changer for our growing business."</p>
+                <h4>Emily Rodriguez</h4>
+                <span>Founder, GrowEasy Analytics</span>
+            </div>
+        </div>
+    </section>
 
-            countdownElement.textContent = `Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Discover how Sajedar’s AI chatbots can streamline your operations and enhance customer engagement.</p>
+        <a href="#contact" class="cta-button">Request a Demo</a>
+    </section>
 
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H94EHFF2ED"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to get started? Fill out the form below, and our team will reach out to you.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Company" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Sajedar</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Sajedar. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H94EHFF2ED"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
