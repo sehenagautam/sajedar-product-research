@@ -890,11 +890,11 @@
     <section id="contact" class="contact">
         <h2>Get in Touch</h2>
         <p>Ready to transform your business or have questions? Fill out the form below or connect with us via WhatsApp. Our team is here to assist you every step of the way.</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Your Company" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/xqaqogoj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="company" placeholder="Your Company" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
