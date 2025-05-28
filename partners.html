@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sajedar Partners - Collaborating with industry leaders to bring AI chatbot solutions worldwide." />
+  <title>Sajedar - Our Partners</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png"
+  />
+  <style>
+    /* Base styles and fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1a2e2a;
+      line-height: 1.8;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #ffffff;
+      padding: 20px 60px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .navbar-logo img {
+      height: 50px;
+      margin-right: 12px;
+    }
+
+    .navbar-logo span {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2f855a;
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .navbar-links a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1a2e2a;
+      text-decoration: none;
+    }
+
+    .navbar-links a:hover {
+      color: #68d391;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: #2f855a;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 60px;
+      background: linear-gradient(135deg, #2f855a 30%, #68d391 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      max-width: 900px;
+      line-height: 1.2;
+    }
+
+    /* Partners Section */
+    .partners {
+      padding: 80px 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .partners h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: #2f855a;
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .partner-card {
+      background: #f4f7f6;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      max-width: 220px;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+
+    .partner-card:hover {
+      transform: scale(1.05);
+    }
+
+    .partner-logo {
+      max-width: 100%;
+      max-height: 120px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .partner-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1a2e2a;
+      min-height: 3rem;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 60px 60px;
+      background-color: #1a2e2a;
+      color: #f4f7f6;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-logo img {
+      height: 50px;
+      margin-right: 12px;
+    }
+
+    .footer-logo span {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f4f7f6;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-links a {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #f4f7f6;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #68d391;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-social a {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: #f4f7f6;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-social a:hover {
+      color: #68d391;
+    }
+
+    .footer-social i {
+      font-size: 1.3rem;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      font-size: 1rem;
+      font-weight: 300;
+      color: #8b9e98;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20px 0;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links,
+      .footer-social {
+        flex-direction: column;
+      }
+
+      .navbar,
+      .hero,
+      .partners,
+      .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .navbar-logo span {
+        font-size: 1.6rem;
+      }
+
+      .navbar-logo img {
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="index.html" class="navbar-logo">
+        <img
+          src="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png"
+          alt="Sajedar Logo"
+        />
+        <span>Sajedar</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="navbar-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#metrics">Metrics</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="#" class="active">Partners</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Valued Partners</h1>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="partners">
+    <h2>Trusted Collaborations That Drive Innovation</h2>
+    <div class="partners-grid">
+      <!-- Partner 1 -->
+      <div class="partner-card" title="RetailWorks">
+        <img
+          src="https://via.placeholder.com/200x120?text=RetailWorks+Logo"
+          alt="RetailWorks Logo"
+          class="partner-logo"
+          loading="lazy"
+        />
+        <div class="partner-name">RetailWorks</div>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="partner-card" title="TechTrend Innovations">
+        <img
+          src="https://via.placeholder.com/200x120?text=TechTrend+Logo"
+          alt="TechTrend Innovations Logo"
+          class="partner-logo"
+          loading="lazy"
+        />
+        <div class="partner-name">TechTrend Innovations</div>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="partner-card" title="GlobalTrade Solutions">
+        <img
+          src="https://via.placeholder.com/200x120?text=GlobalTrade+Logo"
+          alt="GlobalTrade Solutions Logo"
+          class="partner-logo"
+          loading="lazy"
+        />
+        <div class="partner-name">GlobalTrade Solutions</div>
+      </div>
+
+      <!-- Partner 4 -->
+      <div class="partner-card" title="BrightFuture Enterprises">
+        <img
+          src="https://via.placeholder.com/200x120?text=BrightFuture+Logo"
+          alt="BrightFuture Enterprises Logo"
+          class="partner-logo"
+          loading="lazy"
+        />
+        <div class="partner-name">BrightFuture Enterprises</div>
+      </div>
+
+      <!-- Partner 5 -->
+      <div class="partner-card" title="GrowEasy Analytics">
+        <img
+          src="https://via.placeholder.com/200x120?text=GrowEasy+Logo"
+          alt="GrowEasy Analytics Logo"
+          class="partner-logo"
+          loading="lazy"
+        />
+        <div class="partner-name">GrowEasy Analytics</div>
+      </div>
+
+      <!-- Add more partner cards as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img
+          src="https://i.ibb.co/S76HnxyZ/Chat-GPT-Image-May-2-2025-07-17-45-PM-1.png"
+          alt="Sajedar Logo"
+        />
+        <span>Sajedar</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#metrics">Metrics</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="#" class="active">Partners</a>
+      </div>
+      <div class="footer-social">
+        <a
+          href="https://wa.me/9779860479751?text=Dear%20Sajedar%20Rep,%20I%20have%20a%20few%20questions!"
+          target="_blank"
+          ><i class="fab fa-whatsapp"></i> WhatsApp</a
+        >
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.sajedar.com"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i> Share on LinkedIn</a
+        >
+        <a
+          href="https://twitter.com/intent/tweet?url=https://www.sajedar.com&text=Discover%20Sajedar%20-%20Intelligent%20AI%20Chatbot%20Solutions%20for%20Businesses"
+          target="_blank"
+          ><i class="fab fa-twitter"></i> Share on Twitter</a
+        >
+        <a
+          href="mailto:?subject=Check%20out%20Sajedar&body=Discover%20Sajedar%20-%20Intelligent%20AI%20Chatbot%20Solutions:%20https://www.sajedar.com"
+          ><i class="fas fa-envelope"></i> Share via Email</a
+        >
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Sajedar. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    hamburger.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
