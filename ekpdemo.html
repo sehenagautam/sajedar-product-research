@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat UI - Eshan's Perspective</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .phone {
+            width: 360px;
+            height: 740px;
+            background: url('https://i.imgur.com/0y2f3vX.jpg') no-repeat center;
+            background-size: cover;
+            border-radius: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chat-container {
+            width: 100%;
+            height: 500px;
+            background: url('https://i.pinimg.com/736x/7d/0e/70/7d0e709fd2c2555e075ae8b49368fb74.jpg') no-repeat center;
+            background-size: cover;
+            overflow-y: auto;
+            padding: 20px;
+            margin-top: 70px;
+            transition: height 0.3s;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background: #075e54;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .message {
+            max-width: 70%;
+            margin: 10px 0;
+            padding: 8px 12px 20px 12px;
+            border-radius: 7.5px;
+            font-size: 14px;
+            line-height: 1.4;
+            position: relative;
+            display: none;
+        }
+
+        .sent {
+            background: #dcf8c6;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        .received {
+            background: white;
+            margin-left: 10px;
+        }
+
+        .message::after {
+            content: attr(data-time);
+            font-size: 10px;
+            color: #888;
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            padding-left: 5px;
+        }
+
+        .received::after {
+            left: 10px;
+            right: auto;
+            padding-right: 5px;
+        }
+
+        .typing {
+            display: block;
+            background: #fff;
+            margin-left: 10px;
+            padding: 10px;
+            border-radius: 7.5px;
+            max-width: 70%;
+            font-style: italic;
+            color: #888;
+            animation: blink 1s infinite;
+        }
+
+        .typing::before {
+            content: '●●●';
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .preview {
+            display: none;
+            max-width: 70%;
+            margin: 10px 20px 0 auto;
+            padding: 8px 12px 20px 12px;
+            border-radius: 7.5px;
+            font-size: 14px;
+            line-height: 1.4;
+            background: #dcf8c6;
+            opacity: 0.7;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+
+        .input-area {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-area input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px;
+            outline: none;
+        }
+
+        .input-area button {
+            background: #075e54;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .keyboard {
+            position: absolute;
+            bottom: -200px;
+            width: 100%;
+            height: 200px;
+            background: #d3d3d3;
+            display: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: bottom 0.3s;
+        }
+
+        .keyboard.show {
+            bottom: 0;
+            display: flex;
+        }
+
+        .key {
+            width: 30px;
+            height: 40px;
+            background: white;
+            margin: 3px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-transform: lowercase;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .key:active, .key.active {
+            background: #e0e0e0;
+            transform: scale(0.95);
+        }
+
+        .space {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="header">
+            <img src="neplaw.jpg" alt="Profile">
+            <h2>Adv PB Bot • Ekagajpatra</h2>
+        </div>
+        <div class="chat-container" id="chat">
+            <div class="preview" id="preview"></div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="messageInput" placeholder="Type a message..." readonly>
+            <button id="sendButton">➤</button>
+        </div>
+        <div class="keyboard" id="keyboard">
+            <div class="key">q</div><div class="key">w</div><div class="key">e</div><div class="key">r</div><div class="key">t</div><div class="key">y</div><div class="key">u</div><div class="key">i</div><div class="key">o</div><div class="key">p</div>
+            <div class="key">a</div><div class="key">s</div><div class="key">d</div><div class="key">f</div><div class="key">g</div><div class="key">h</div><div class="key">j</div><div class="key">k</div><div class="key">l</div>
+            <div class="key">z</div><div class="key">x</div><div class="key">c</div><div class="key">v</div><div class="key">b</div><div class="key">n</div><div class="key">m</div>
+            <div class="key space">space</div>
+        </div>
+    </div>
+    <script>
+        const messages = [
+  {
+    "text": "Sir, ek kura sodhna man lagyo. Business ko stage anusar valuation kina different huncha?",
+    "time": "2:42 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Good question. Company ko lifecycle le dherai kura determine garcha. Startup stage ma ta valuation potential ma base huncha, revenue ta dherai hudaina ni.",
+    "time": "2:43 PM",
+    "type": "received"
+  },
+  {
+    "text": "Tyo potential herda ke kura consider garchan ni sir?",
+    "time": "2:44 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Team kasto cha, market opportunity cha ki chaina, product develop bhako cha ki bhako chaina. Berkus method ya scorecard use huncha tyesto bela.",
+    "time": "2:44 PM",
+    "type": "received"
+  },
+  {
+    "text": "Ani jaba company grow garira cha tara profit aako chaina, tyo bela kasto method use huncha?",
+    "time": "2:45 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Tyesto case ma EV/Sales ratio herincha. Sales cha bhane tyo multiply garera enterprise value nikalincha.",
+    "time": "2:45 PM",
+    "type": "received"
+  },
+  {
+    "text": "Mature business ma valuation k base ma huncha ta sir?",
+    "time": "2:46 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Tyesto bela chai EV/EBITDA ya P/E ratio jasto financial metrics base garera valuation garcha. Company profitable bhaisakeko hunchha ni.",
+    "time": "2:46 PM",
+    "type": "received"
+  },
+  {
+    "text": "Ra jaba business decline ma janchha, aba loss ma cha, tyo bela?",
+    "time": "2:47 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Tyo bela ta mostly tangible assets herincha. Price-to-book ya liquidation method use garincha. Real estate, inventory jasto kura.",
+    "time": "2:47 PM",
+    "type": "received"
+  },
+  {
+    "text": "Sir, aba purpose anusar ni different methods huncha hola ni? Jastai selling, funding, taxation, restructuring?",
+    "time": "2:48 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Exactly. For example, investor le future EBITDA base garcha, tax authority le net book value hercha. Restructuring ma chai scenario ko base ma choose garincha.",
+    "time": "2:49 PM",
+    "type": "received"
+  },
+  {
+    "text": "Okay sir, aba clearer bhaisakyo. Assignment ma yo breakdown rakhda ramro marks aaune jasto cha.",
+    "time": "2:50 PM",
+    "type": "sent"
+  },
+  {
+    "text": "Yes, definitely. Structure it stage-wise and mention why each method suits that phase. Best of luck!",
+    "time": "2:50 PM",
+    "type": "received"
+  }
+]
+;
+
+        const chat = document.getElementById('chat');
+        const messageInput = document.getElementById('messageInput');
+        const sendButton = document.getElementById('sendButton');
+        const keyboard = document.getElementById('keyboard');
+        const preview = document.getElementById('preview');
+        const keys = document.querySelectorAll('.key');
+
+        function createMessage(text, time, type) {
+            const div = document.createElement('div');
+            div.className = `message ${type}`;
+            div.innerHTML = text;
+            div.setAttribute('data-time', time);
+            return div;
+        }
+
+        function showTypingIndicator(type) {
+            const typing = document.createElement('div');
+            typing.className = `message ${type} typing`;
+            typing.textContent = 'Typing...';
+            chat.insertBefore(typing, preview);
+            chat.scrollTop = chat.scrollHeight;
+            return typing;
+        }
+
+        function showKeyboard() {
+            keyboard.classList.add('show');
+            chat.style.height = '400px';
+        }
+
+        function hideKeyboard() {
+            keyboard.classList.remove('show');
+            chat.style.height = '500px';
+        }
+
+        function updatePreview(text) {
+            preview.innerHTML = text.replace(/\n/g, '<br>');
+            preview.style.display = text ? 'block' : 'none';
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        function animateKey(char) {
+            const key = Array.from(keys).find(k => k.textContent.toLowerCase() === char.toLowerCase());
+            if (key) {
+                key.classList.add('active');
+                setTimeout(() => key.classList.remove('active'), 100);
+            }
+        }
+
+        async function simulateTypingAndSending(index) {
+            if (index >= messages.length) {
+                hideKeyboard();
+                updatePreview('');
+                return;
+            }
+
+            const msg = messages[index];
+            const typingDelay = 1000 + Math.random() * 1000;
+
+            if (msg.type === 'sent') {
+                showKeyboard();
+                const messageText = msg.text.replace(/<br>/g, '\n').replace(/<[^>]+>/g, '');
+                
+                for (let i = 0; i < messageText.length; i++) {
+                    messageInput.value = messageText.slice(0, i + 1);
+                    updatePreview(messageInput.value);
+                    animateKey(messageText[i]);
+                    await new Promise(resolve => setTimeout(resolve, 50));
+                }
+
+                await new Promise(resolve => setTimeout(resolve, 500));
+                sendButton.style.background = '#128c7e';
+                await new Promise(resolve => setTimeout(resolve, 300));
+                sendButton.style.background = '#075e54';
+
+                updatePreview('');
+                const messageElement = createMessage(msg.text, msg.time, msg.type);
+                chat.insertBefore(messageElement, preview);
+                messageElement.style.display = 'block';
+                chat.scrollTop = chat.scrollHeight;
+
+                messageInput.value = '';
+                hideKeyboard();
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            } else {
+                const typingIndicator = showTypingIndicator(msg.type);
+                await new Promise(resolve => setTimeout(resolve, typingDelay));
+                typingIndicator.remove();
+
+                const messageElement = createMessage(msg.text, msg.time, msg.type);
+                chat.insertBefore(messageElement, preview);
+                messageElement.style.display = 'block';
+                chat.scrollTop = chat.scrollHeight;
+
+                await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+
+            simulateTypingAndSending(index + 1);
+        }
+
+        simulateTypingAndSending(0);
+    </script>
+</body>
+</html>
