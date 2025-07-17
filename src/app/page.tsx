@@ -405,13 +405,7 @@ export default function Home() {
           <a href="#" className="px-8 py-4 rounded-lg bg-white text-gray-900 font-semibold text-lg shadow hover:bg-gray-100 transition">Try it free</a>
           <a href="#" className="px-8 py-4 rounded-lg border border-white text-white font-semibold text-lg hover:bg-white/10 transition">See a live demo</a>
         </div>
-        {/* Trusted by logos */}
-        <div className="text-gray-400 text-xs uppercase tracking-widest mb-2 z-10">Trusted by teams at</div>
-        <div className="flex flex-wrap justify-center gap-8 opacity-70 z-10">
-          {['Culture Amp', 'Clay', 'Lightspeed', 'Anthropic', 'Monday.com', 'Amplitude', 'Synthe'].map((logo, i) => (
-            <span key={i} className="text-white text-lg font-semibold tracking-wide opacity-70" style={{ filter: 'blur(0.5px)' }}>{logo}</span>
-          ))}
-        </div>
+
       </section>
 
       {/* Agentic Flow Diagram Section */}
