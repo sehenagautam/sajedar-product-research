@@ -5,10 +5,23 @@ import { Particles, initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import ChatDashboard from './ChatDashboard';
 import ChatDemoSection from './ChatDemo';
+import Header from '../components/Header';
 import {
   HeroSection,
   AgenticFlowDiagram,
   FeaturesSection,
+  DataCollectionSection,
+  FacebookIntegrationSection,
+  BusinessDashboardSection,
+  ImageChatSection,
+  EscalationNotificationsSection,
+  BrandVoiceSection,
+  KnowledgeIntegrationSection,
+  AILearningSection,
+  ClientProfilingSection,
+  SalesTacticsSection,
+  VoiceIntegrationSection,
+  MultiLingualSection,
   FAQSection,
   ContactSection,
   Footer
@@ -46,6 +59,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+      {/* Header */}
+      <Header />
+      
       {/* Particles background removed for memory optimization. Restore if needed. */}
       
       {/* Hero Section */}
@@ -64,6 +80,42 @@ export default function Home() {
 
       {/* Features Section */}
       <FeaturesSection />
+
+      {/* Data Collection & Sales Funneling Section */}
+      <DataCollectionSection />
+
+      {/* Facebook Integration Section */}
+      <FacebookIntegrationSection />
+
+      {/* Business Dashboard Section */}
+      <BusinessDashboardSection />
+
+      {/* Image Chat Section */}
+      <ImageChatSection />
+
+      {/* Escalation Notifications Section */}
+      <EscalationNotificationsSection />
+
+      {/* Brand Voice Section */}
+      <BrandVoiceSection />
+
+      {/* Knowledge Integration Section */}
+      <KnowledgeIntegrationSection />
+
+      {/* AI Learning Section */}
+      <AILearningSection />
+
+      {/* Client Profiling Section */}
+      <ClientProfilingSection />
+
+      {/* Sales Tactics Section */}
+      <SalesTacticsSection />
+
+      {/* Voice Integration Section */}
+      <VoiceIntegrationSection />
+
+      {/* Multi-Lingual Section */}
+      <MultiLingualSection />
 
       {/* Chat Tracking Dashboard Section */}
       <ChatDashboard />

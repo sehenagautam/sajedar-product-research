@@ -6,7 +6,7 @@ export function HeroSection() {
 
   useEffect(() => {
     if (headlineRef.current) {
-      import('animejs').then((animeModule) => {
+      import('animejs').then((animeModule: any) => {
         const anime = typeof animeModule === 'function'
           ? animeModule
           : animeModule.default;
@@ -47,7 +47,7 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="relative w-full flex flex-col items-center justify-center pt-16 pb-16 px-4 min-h-[90vh] bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] overflow-hidden">
+    <section className="relative w-full flex flex-col items-center justify-center pt-24 pb-16 px-4 min-h-[90vh] bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] overflow-hidden">
       {/* Headline */}
       <div className="mb-8">
         <h1
