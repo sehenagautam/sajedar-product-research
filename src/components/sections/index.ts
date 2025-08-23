@@ -13,6 +13,7 @@ export { ClientProfilingSection } from './ClientProfilingSection';
 export { SalesTacticsSection } from './SalesTacticsSection';
 export { VoiceIntegrationSection } from './VoiceIntegrationSection';
 export { MultiLingualSection } from './MultiLingualSection';
+export { N8nWorkflowSection } from './N8nWorkflowSection';
 export { FAQSection } from './FAQSection';
 export { ContactSection } from './ContactSection';
 export { Footer } from './Footer'; 

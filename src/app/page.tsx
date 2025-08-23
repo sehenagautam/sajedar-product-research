@@ -22,6 +22,7 @@ import {
   SalesTacticsSection,
   VoiceIntegrationSection,
   MultiLingualSection,
+  N8nWorkflowSection,
   FAQSection,
   ContactSection,
   Footer
@@ -116,6 +117,9 @@ export default function Home() {
 
       {/* Multi-Lingual Section */}
       <MultiLingualSection />
+
+      {/* n8n Workflow Section */}
+      <N8nWorkflowSection />
 
       {/* Chat Tracking Dashboard Section */}
       <ChatDashboard />
