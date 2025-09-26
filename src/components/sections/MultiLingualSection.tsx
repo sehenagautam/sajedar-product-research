@@ -340,12 +340,12 @@ export function MultiLingualSection() {
               Break down language barriers and connect with customers worldwide. 
               Create authentic, culturally-aware conversations that drive global business growth.
             </p>
-            <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to enable multi-lingual support in my chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Enable Multi-Lingual
-            </button>
-            <button className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a multi-lingual chatbot demo.#contact" className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-lg transition-colors duration-200">
               Language Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

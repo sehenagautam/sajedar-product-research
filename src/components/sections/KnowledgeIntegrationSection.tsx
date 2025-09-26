@@ -249,12 +249,12 @@ export function KnowledgeIntegrationSection() {
               Connect your chatbot to all your business knowledge sources and watch it become an expert 
               on your products, services, and company information.
             </p>
-            <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to connect knowledge sources to my chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Connect Knowledge Sources
-            </button>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a knowledge integration demo.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
               View Integration Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

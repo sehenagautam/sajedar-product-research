@@ -197,12 +197,12 @@ export function EscalationNotificationsSection() {
               Set up instant escalation notifications and ensure every customer gets the attention they deserve, 
               even when your chatbot reaches its limits.
             </p>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to set up escalation notifications for my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
               Setup Notifications
-            </button>
-            <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show an escalation notifications demo.#contact" className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors duration-200">
               View Escalation Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

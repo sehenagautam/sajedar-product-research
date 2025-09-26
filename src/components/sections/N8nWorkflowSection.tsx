@@ -315,12 +315,8 @@ export function N8nWorkflowSection() {
               Let Sajedar build sophisticated AI automation workflows for your business. We connect multiple AI services, 
               create intelligent agents, and automate complex business processes using n8n's powerful platform.
             </p>
-            <button className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Start Building
-            </button>
-            <button className="px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg transition-colors duration-200">
-              View Templates
-            </button>
+            <a href="/?message=I want to build an advanced AI agent with n8n.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Start Building</a>
+            <a href="/?message=Please send me your AI agent templates.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">View Templates</a>
           </div>
         </div>
       </div>

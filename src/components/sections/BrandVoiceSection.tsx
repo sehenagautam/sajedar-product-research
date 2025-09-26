@@ -204,12 +204,12 @@ export function BrandVoiceSection() {
               Customize your chatbot's personality and communication style to perfectly match your brand identity. 
               Create authentic, engaging conversations that reflect your unique voice.
             </p>
-            <button className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to customize my chatbot's brand voice.#contact" className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Start Customizing
-            </button>
-            <button className="px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a brand voice customization demo.#contact" className="px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg transition-colors duration-200">
               Voice Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

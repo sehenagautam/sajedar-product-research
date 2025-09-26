@@ -2,7 +2,7 @@ import { Linkedin, Facebook } from 'lucide-react';
 
 export function ContactSection() {
   return (
-    <section className="w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-24 px-4 flex flex-col items-center border-t border-white/10">
+    <section id="contact" className="w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-24 px-4 flex flex-col items-center border-t border-white/10">
       <div className="max-w-xl w-full mx-auto flex flex-col items-center gap-8">
         <div className="flex flex-col items-center text-center gap-2 mb-4">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
@@ -92,4 +92,4 @@ export function ContactSection() {
       </div>
     </section>
   );
-} 
+}

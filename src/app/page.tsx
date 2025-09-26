@@ -23,6 +23,7 @@ import {
   VoiceIntegrationSection,
   MultiLingualSection,
   N8nWorkflowSection,
+  TestimonialsSection,
   FAQSection,
   ContactSection,
   Footer
@@ -120,6 +121,9 @@ export default function Home() {
 
       {/* n8n Workflow Section */}
       <N8nWorkflowSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Chat Tracking Dashboard Section */}
       <ChatDashboard />

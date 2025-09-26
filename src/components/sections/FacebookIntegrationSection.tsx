@@ -6,14 +6,14 @@ export function FacebookIntegrationSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2 block">
             Social Media Integration
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            Integrate Chatbot in Your <span className="text-emerald-400">Facebook Page</span>
+            Integrate Chatbot in Your <span className="text-blue-400">Facebook Page</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Engage customers <span className="text-emerald-400 font-bold">24/7 instantly</span> on your Facebook page. 
+            Engage customers <span className="text-blue-400 font-bold">24/7 instantly</span> on your Facebook page. 
             Never miss a potential lead or customer inquiry again with automated responses and intelligent conversations.
           </p>
         </div>
@@ -21,9 +21,9 @@ export function FacebookIntegrationSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Side - Features */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -35,9 +35,9 @@ export function FacebookIntegrationSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                   </svg>
@@ -49,9 +49,9 @@ export function FacebookIntegrationSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
@@ -63,9 +63,9 @@ export function FacebookIntegrationSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
@@ -169,11 +169,11 @@ export function FacebookIntegrationSection() {
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
               <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                <path d="M12 2C6.486 2 2 6.065 2 11.077c0 2.86 1.385 5.428 3.588 7.12V22l3.29-1.802c1.014.281 2.09.435 3.122.435 5.514 0 10-4.065 10-9.077S17.514 2 12 2zm.193 12.807l-2.73-2.91-5.463 2.91 5.996-6.435 2.73 2.91 5.463-2.91-5.996 6.435z"/>
               </svg>
             </div>
 
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center animate-bounce">
+            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center animate-bounce">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
@@ -183,18 +183,14 @@ export function FacebookIntegrationSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-900/30 to-emerald-900/30 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
+          <div className="bg-gradient-to-r from-blue-900/30 to-blue-800/30 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Engage Customers 24/7?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Connect your chatbot to Facebook and start engaging customers instantly. 
               Never miss another opportunity to convert visitors into customers.
             </p>
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Connect to Facebook
-            </button>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
-              See Live Demo
-            </button>
+            <a href="/?message=I want to connect my Facebook page to a chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Connect to Facebook</a>
+            <a href="/demo" className="px-8 py-4 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">See Live Demo</a>
           </div>
         </div>
       </div>

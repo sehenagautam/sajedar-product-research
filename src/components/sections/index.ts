@@ -16,4 +16,4 @@ export { MultiLingualSection } from './MultiLingualSection';
 export { N8nWorkflowSection } from './N8nWorkflowSection';
 export { FAQSection } from './FAQSection';
 export { ContactSection } from './ContactSection';
-export { Footer } from './Footer'; 
+export { Footer } from './Footer'; export { TestimonialsSection } from './TestimonialsSection';

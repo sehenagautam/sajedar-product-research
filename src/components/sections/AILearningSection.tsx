@@ -240,12 +240,12 @@ export function AILearningSection() {
               Deploy your AI chatbot and watch it learn, adapt, and improve with every conversation. 
               See real-time progress as it achieves your business goals more effectively.
             </p>
-            <button className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to deploy and start my chatbot's learning journey.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Start Learning Journey
-            </button>
-            <button className="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show an AI learning demo.#contact" className="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
               View Learning Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

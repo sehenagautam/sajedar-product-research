@@ -10,6 +10,13 @@
   --foreground: #fff;
   --font-serif: 'DM Serif Display', serif;
   --font-sans: 'Inter', Arial, Helvetica, sans-serif;
+  /* Base font scaling */
+  --base-font-size: 100%;
+}
+
+/* Increase overall font scale by ~20% (+10% more now => ~32%) */
+html {
+  font-size: calc(var(--base-font-size) * 1.32);
 }
 
 @theme inline {

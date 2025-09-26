@@ -172,9 +172,9 @@ export function DataCollectionSection() {
               Connect your chatbot to Google Sheets and start capturing leads automatically. 
               No manual data entry required.
             </p>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
+            <a href="/?message=I want to connect Google Sheets and start collecting leads automatically.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
               Start Collecting Leads Today
-            </button>
+            </a>
           </div>
         </div>
       </div>

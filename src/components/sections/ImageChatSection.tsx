@@ -219,12 +219,12 @@ export function ImageChatSection() {
               Add rich media support to your chatbot and provide customers with visual content, 
               product images, and interactive experiences.
             </p>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to add image support to my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
               Add Image Support
-            </button>
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show me an image-enabled chatbot demo.#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200">
               See Image Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

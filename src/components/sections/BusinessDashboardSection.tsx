@@ -227,12 +227,12 @@ export function BusinessDashboardSection() {
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Get access to your business dashboard and start managing your chatbot content, products, and responses with ease.
             </p>
-            <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want access to the business dashboard to manage my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
               Access Dashboard
-            </button>
-            <button className="px-8 py-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please schedule a demo of the business dashboard.#contact" className="px-8 py-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-lg transition-colors duration-200">
               Schedule Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

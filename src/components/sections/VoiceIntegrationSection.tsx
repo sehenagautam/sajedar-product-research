@@ -324,12 +324,12 @@ export function VoiceIntegrationSection() {
               Transform your customer interactions with natural voice capabilities. 
               Create more accessible, engaging, and human-like conversations that drive better results.
             </p>
-            <button className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to enable voice AI in my chatbot.#contact" className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Enable Voice AI
-            </button>
-            <button className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a brand voice customization demo.#contact" className="px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200">
               Voice Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -283,12 +283,12 @@ export function SalesTacticsSection() {
               Stop losing sales to generic responses. Equip your chatbot with proven sales tactics 
               that convert prospects into customers and increase your revenue.
             </p>
-            <button className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to deploy Sales AI in my chatbot.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Deploy Sales AI
-            </button>
-            <button className="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a sales AI demo.#contact" className="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
               Watch Sales Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

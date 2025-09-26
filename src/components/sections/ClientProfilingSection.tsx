@@ -241,12 +241,12 @@ export function ClientProfilingSection() {
               Start profiling your customers automatically and unlock the power of personalized experiences. 
               Drive higher engagement, better conversions, and stronger customer relationships.
             </p>
-            <button className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to start customer profiling in my chatbot.#contact" className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Start Profiling
-            </button>
-            <button className="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-lg transition-colors duration-200">
+            </a>
+            <a href="/?message=Please show a customer profiling demo.#contact" className="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-lg transition-colors duration-200">
               View Profile Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

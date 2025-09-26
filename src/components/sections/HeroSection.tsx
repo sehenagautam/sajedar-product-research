@@ -101,7 +101,7 @@ export function HeroSection() {
       {/* CTAs (no boxShadow, no textShadow) */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 z-40 mt-8">
         <a
-          href="#"
+          href="#contact"
           className="px-8 py-4 rounded-lg bg-emerald-400 text-black font-bold text-lg hover:bg-emerald-500 transition border-2 border-emerald-200"
           style={{
             fontFamily: 'Inter, Arial, sans-serif',
@@ -110,7 +110,7 @@ export function HeroSection() {
           Get Your Custom Chatbot
         </a>
         <a
-          href="#"
+          href="/demo"
           className="px-8 py-4 rounded-lg border-2 border-emerald-400 text-emerald-200 font-bold text-lg hover:bg-emerald-400 hover:text-black transition"
           style={{
             fontFamily: 'Inter, Arial, sans-serif',
