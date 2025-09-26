@@ -151,7 +151,7 @@ services:
     environment:
       POSTGRES_DB: chatbot
       POSTGRES_USER: chatbot
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_PASSWORD: $\{DB_PASSWORD\}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
