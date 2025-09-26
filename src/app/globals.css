@@ -85,3 +85,27 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #16a34a;
 }
+
+/* Global cursor pointer for clickable elements */
+a, button, [role="button"], [onclick], input[type="button"], input[type="submit"], input[type="reset"], 
+.cursor-pointer, .clickable, [data-clickable="true"] {
+  cursor: pointer !important;
+}
+
+/* Ensure all interactive elements have pointer cursor */
+a:hover, button:hover, [role="button"]:hover, [onclick]:hover, 
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,
+.cursor-pointer:hover, .clickable:hover, [data-clickable="true"]:hover {
+  cursor: pointer !important;
+}
+
+/* Specific cursor styles for different states */
+a:active, button:active, [role="button"]:active {
+  cursor: pointer !important;
+}
+
+/* Disabled elements should not have pointer cursor */
+a:disabled, button:disabled, [role="button"]:disabled,
+input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled {
+  cursor: not-allowed !important;
+}
