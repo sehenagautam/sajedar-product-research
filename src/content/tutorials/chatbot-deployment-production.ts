@@ -198,9 +198,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker image
-        run: docker build -t chatbot:${{ github.sha }} .
+        run: docker build -t chatbot:$\{\{ github.sha \}\} .
       - name: Push to registry
-        run: docker push chatbot:${{ github.sha }}
+        run: docker push chatbot:$\{\{ github.sha \}\}
 
   deploy:
     needs: build
