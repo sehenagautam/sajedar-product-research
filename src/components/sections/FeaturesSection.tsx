@@ -2,9 +2,12 @@ import { Rocket, Users, Sparkles, Lightbulb, Mic, Bot } from 'lucide-react';
 
 export function FeaturesSection() {
   return (
+    {/* COMMENTED OUT - AI Chatbots, Tailored for Your Business Section */}
+    {/*
     <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Headline and description for agency */}
+        {/*
         <div className="flex flex-col items-center text-center gap-4">
           <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
             Custom Chatbot Agency
@@ -31,8 +34,10 @@ export function FeaturesSection() {
         </div>
 
         {/* Performance/Stats Row */}
+        {/*
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center w-full">
           {/* Stat Cards */}
+          {/*
           <div className="flex flex-col gap-6 items-center">
             <div className="flex flex-col items-center">
               <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-400">98%</span>
@@ -49,6 +54,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Donut Chart for Resolution Rate */}
+          {/*
           <div className="flex flex-col items-center justify-center">
             <svg width="180" height="180" viewBox="0 0 180 180">
               <circle cx="90" cy="90" r="80" stroke="#23243a" strokeWidth="20" fill="none" />
@@ -80,6 +86,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Bar Chart for Competitor Comparison */}
+          {/*
           <div className="flex flex-col items-center">
             <svg width="200" height="120" viewBox="0 0 200 120">
               <rect x="20" y="60" width="24" height="40" rx="6" fill="#23243a" />
@@ -104,8 +111,10 @@ export function FeaturesSection() {
         </div>
 
         {/* Feature Highlights Grid */}
+        {/*
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
           {/* Integrations */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Rocket size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-4xl font-mono font-bold text-emerald-400">50+</span>
@@ -117,6 +126,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Support */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Users size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-4xl font-mono font-bold text-emerald-400">24/7</span>
@@ -128,6 +138,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Faster Response */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Sparkles size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-4xl font-mono font-bold text-emerald-400">3x</span>
@@ -139,6 +150,7 @@ export function FeaturesSection() {
           </div>
           
           {/* More Deals */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Lightbulb size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-4xl font-mono font-bold text-emerald-400">15%</span>
@@ -150,6 +162,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Voice Enabled */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Mic size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-2xl font-bold text-white">Voice & Multilingual</span>
@@ -160,6 +173,7 @@ export function FeaturesSection() {
           </div>
           
           {/* Avg. Rating */}
+          {/*
           <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
             <Bot size={36} stroke="#22c55e" strokeWidth={2} />
             <span className="text-4xl font-mono font-bold text-emerald-400">4.8/5</span>
@@ -172,5 +186,7 @@ export function FeaturesSection() {
         </div>
       </div>
     </section>
+    */}
+    <></>
   );
-} 
+}
