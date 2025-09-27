@@ -18,7 +18,7 @@ export const metadata = {
     siteName: 'Sajedar',
     title: 'Sajedar - Custom AI Chatbot Agency',
     description: 'We design, build, and support AI chatbots for ambitious brands.',
-    images: [{ url: '/heroimage-robothand.png', width: 1200, height: 630, alt: 'Sajedar AI Chatbot Agency' }]
+    images: [{ url: '/sajedar-logo.png', width: 1200, height: 630, alt: 'Sajedar AI Chatbot Agency' }]
   },
   twitter: {
     card: 'summary_large_image',
@@ -26,9 +26,13 @@ export const metadata = {
     creator: '@sajedar',
     title: 'Sajedar - Custom AI Chatbot Agency',
     description: 'We design, build, and support AI chatbots for ambitious brands.',
-    images: ['/heroimage-robothand.png']
+    images: ['/sajedar-logo.png']
   },
-  icons: { icon: '/favicon.ico' }
+  icons: { 
+    icon: '/sajedar-logo.png',
+    shortcut: '/sajedar-logo.png',
+    apple: '/sajedar-logo.png'
+  }
 }
 
 export const viewport = {
@@ -53,7 +57,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'Sajedar',
               url: 'https://sajedar.com',
-              logo: 'https://sajedar.com/favicon.ico',
+              logo: 'https://sajedar.com/sajedar-logo.png',
               sameAs: ['https://www.facebook.com/']
             })
           }}

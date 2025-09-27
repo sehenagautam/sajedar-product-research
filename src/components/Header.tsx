@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const handleDownloadProposal = () => {
@@ -17,16 +19,25 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
+            <div className="relative w-10 h-10">
+              <Image
+                src="/sajedar-logo.png"
+                alt="Sajedar Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
             <h1 className="text-xl font-bold text-emerald-400" style={{ fontFamily: 'DM Serif Display, serif' }}>
               Sajedar
             </h1>
-          </div>
+          </Link>
 
           {/* Download Proposal Button */}
           <button
             onClick={handleDownloadProposal}
-            className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-lg transition-colors duration-200 flex items-center gap-2"
+            className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-lg transition-colors duration-200 flex items-center gap-2 cursor-pointer"
             style={{ fontFamily: 'Inter, Arial, sans-serif' }}
           >
             <svg 
@@ -50,4 +61,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header; 
+export default Header;
