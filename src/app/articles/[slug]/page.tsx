@@ -70,6 +70,38 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     ? `<div class="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-xl"><iframe class="w-full aspect-video" src="https://www.youtube.com/embed/${new URL(article.youtubeUrl).searchParams.get('v')}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`
     : '';
 
+  // Dynamic CTA content based on article category
+  const getCtaContent = () => {
+    if (article.category === 'Healthcare') {
+      return {
+        title: 'Ready to transform your healthcare practice with AI?',
+        description: 'We\'ll build a HIPAA-compliant AI chatbot for your clinic or hospital in days, not months.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want to build an AI chatbot for my healthcare practice.#contact',
+        buttonMessage: 'I want to build an AI chatbot for my healthcare practice.'
+      };
+    } else if (article.category === 'Finance') {
+      return {
+        title: 'Ready to automate your financial services with AI?',
+        description: 'We\'ll create a secure AI chatbot for your bank, credit union, or financial institution.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want to build an AI chatbot for my financial services business.#contact',
+        buttonMessage: 'I want to build an AI chatbot for my financial services business.'
+      };
+    } else {
+      // Default for hospitality/travel
+      return {
+        title: 'Want a concierge like this for your hotel?',
+        description: 'We\'ll tailor an AI assistant for your property in days, not months.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want a digital concierge for my hotel.#contact',
+        buttonMessage: 'I want a digital concierge for my hotel.'
+      };
+    }
+  };
+
+  const ctaContent = getCtaContent();
+
   return (
     <main className="min-h-screen bg-[#18181b] text-white">
       {/* Breadcrumb */}
@@ -103,12 +135,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </article>
 
-        {/* CTA */}
+        {/* Dynamic CTA based on article category */}
         <div className="mt-12 p-6 rounded-2xl border border-white/10 bg-gradient-to-r from-emerald-900/20 to-purple-900/20">
-          <h3 className="text-xl font-bold mb-2">Want a concierge like this for your hotel?</h3>
-          <p className="text-gray-300 mb-4">We’ll tailor an AI assistant for your property in days, not months.</p>
+          <h3 className="text-xl font-bold mb-2">{ctaContent.title}</h3>
+          <p className="text-gray-300 mb-4">{ctaContent.description}</p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/?message=I want a digital concierge for my hotel.#contact" className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition">Talk to us</Link>
+            <Link href={ctaContent.buttonLink} className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition">{ctaContent.buttonText}</Link>
             <a href={article.youtubeUrl || '#'} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">Watch the intro</a>
             <Link href="/demo" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">See live demos</Link>
           </div>
@@ -116,4 +148,4 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </div>
     </main>
   );
-} 
+}
