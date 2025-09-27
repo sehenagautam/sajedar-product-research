@@ -29,7 +29,13 @@ const Header: React.FC = () => {
                 priority
               />
             </div>
-            <h1 className="text-xl font-bold text-emerald-400" style={{ fontFamily: 'DM Serif Display, serif' }}>
+            <h1 
+              className="text-xl font-bold" 
+              style={{ 
+                fontFamily: 'DM Serif Display, serif',
+                color: '#2eb447'
+              }}
+            >
               Sajedar
             </h1>
           </Link>
@@ -37,8 +43,11 @@ const Header: React.FC = () => {
           {/* Download Proposal Button */}
           <button
             onClick={handleDownloadProposal}
-            className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-lg transition-colors duration-200 flex items-center gap-2 cursor-pointer"
-            style={{ fontFamily: 'Inter, Arial, sans-serif' }}
+            className="px-4 py-2 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center gap-2 cursor-pointer hover:opacity-90"
+            style={{ 
+              fontFamily: 'Inter, Arial, sans-serif',
+              backgroundColor: '#2eb447'
+            }}
           >
             <svg 
               className="w-4 h-4" 
