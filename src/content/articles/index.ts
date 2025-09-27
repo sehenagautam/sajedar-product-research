@@ -2,11 +2,13 @@ import { Article } from '../../types/article';
 import { digitalConciergeArticle } from './digital-concierge';
 import { financeArticle } from './finance-ai-chatbots';
 import { healthcareAiChatbotsArticle } from './healthcare-ai-chatbots';
+import { travelAiInsightsArticle } from './travel-ai-insights';
 
 export const articles: Article[] = [
   digitalConciergeArticle,
   financeArticle,
   healthcareAiChatbotsArticle,
+  travelAiInsightsArticle,
 ];
 
 export const getAllArticles = (): Article[] => articles;

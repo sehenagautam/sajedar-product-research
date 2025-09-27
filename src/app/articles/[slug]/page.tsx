@@ -88,6 +88,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         buttonLink: '/?message=I want to build an AI chatbot for my financial services business.#contact',
         buttonMessage: 'I want to build an AI chatbot for my financial services business.'
       };
+    } else if (article.category === 'Travel') {
+      return {
+        title: 'Ready to revolutionize your travel business with AI?',
+        description: 'We\'ll build an intelligent AI chatbot for your travel agency, hotel, or tourism business to boost bookings and customer satisfaction.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want to build an AI chatbot for my travel business.#contact',
+        buttonMessage: 'I want to build an AI chatbot for my travel business.'
+      };
     } else {
       // Default for hospitality/travel
       return {
