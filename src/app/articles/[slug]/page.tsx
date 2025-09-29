@@ -156,6 +156,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         buttonLink: '/?message=I want to build a real estate AI assistant to qualify leads and book viewings.#contact',
         buttonMessage: 'I want to build a real estate AI assistant to qualify leads and book viewings.'
       };
+    } else if (article.category === 'Advertising' || article.category === 'Marketing' || article.tags.includes('meta ads')) {
+      return {
+        title: 'Ready to scale with Meta ads + AI chatbots?',
+        description: 'We\'ll connect your Meta campaigns to intelligent chat flows to boost LQR, CPQL, and ROAS.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=Help me combine Meta ads with AI chatbots for higher ROAS.#contact',
+        buttonMessage: 'Help me combine Meta ads with AI chatbots for higher ROAS.'
+      };
     } else {
       // Default for hospitality/travel
       return {
@@ -213,7 +221,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <p className="text-gray-300 mb-4">{ctaContent.description}</p>
           <div className="flex flex-wrap gap-3">
             <Link href={ctaContent.buttonLink} className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition">{ctaContent.buttonText}</Link>
-            <a href={article.youtubeUrl || '#'} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">Watch the intro</a>
+            {article.youtubeUrl && (
+              <a href={article.youtubeUrl} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">Watch the intro</a>
+            )}
             <Link href="/demo" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">See live demos</Link>
           </div>
         </div>
