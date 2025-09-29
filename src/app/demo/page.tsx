@@ -6,9 +6,15 @@ export const metadata = {
   description: 'Try live Facebook Messenger chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, and Deep Darshan Traders. Direct messenger links and demo videos.',
   alternates: { canonical: '/demo' },
   openGraph: {
+    type: 'website',
     title: 'Facebook Messenger AI Demos | Sajedar',
     description: 'Live demos of AI chatbots across multiple businesses. Direct messenger links and videos.',
     url: 'https://sajedar.com/demo'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Facebook Messenger AI Demos | Sajedar',
+    description: 'Live demos of AI chatbots across multiple businesses. Direct messenger links and videos.'
   }
 }
 
@@ -90,8 +96,33 @@ export default function DemoPage() {
     return colorMap[color as keyof typeof colorMap] || colorMap.blue;
   };
 
+  // JSON-LD: CollectionPage ItemList + BreadcrumbList
+  const itemList = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: demos.map((d, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: d.name,
+      url: `/demo#${d.id}`
+    }))
+  } as const;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+      { '@type': 'ListItem', position: 2, name: 'Demo', item: '/demo' }
+    ]
+  } as const;
+
   return (
     <div className="min-h-screen bg-[#18181b] text-white">
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-900/20 to-purple-900/20 border-b border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-16">
@@ -135,7 +166,7 @@ export default function DemoPage() {
           {demos.map((demo, index) => {
             const colors = getColorClasses(demo.color);
             return (
-              <div key={demo.id} className="relative">
+              <div key={demo.id} className="relative" id={demo.id}>
                 <div className={`bg-gradient-to-r ${colors.bg} border ${colors.border} rounded-2xl p-8 backdrop-blur-sm`}>
                   <div className="grid lg:grid-cols-2 gap-8 items-center">
                     {/* Left Side - Demo Info */}
@@ -215,7 +246,7 @@ export default function DemoPage() {
                             <div className="text-center space-y-4">
                               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
                                 </svg>
                               </div>
                               <div>
