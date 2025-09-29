@@ -67,14 +67,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Tutorial pages with dynamic priorities
   const tutorialPages = getAllTutorials().map((tutorial) => {
     const priority = tutorial.featured ? 0.9 : 0.8;
-    const changeFrequency = tutorial.updatedAt !== tutorial.publishedAt ? 'monthly' : 'yearly';
+    const changeFrequency: NonNullable<MetadataRoute.Sitemap[number]['changeFrequency']> = tutorial.updatedAt !== tutorial.publishedAt ? 'monthly' : 'yearly';
     
     return {
       url: `${base}/tutorials/${tutorial.slug}`,
       lastModified: tutorial.updatedAt,
-      changeFrequency: changeFrequency as const,
-      priority: priority,
-    };
+      changeFrequency,
+      priority,
+    } as const;
   });
 
   // Article pages
