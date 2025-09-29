@@ -1,6 +1,61 @@
+export const metadata = {
+  title: 'Contact Sajedar | AI Chatbots Agency',
+  description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',
+  alternates: { canonical: '/Contact' },
+  openGraph: {
+    type: 'website',
+    title: 'Contact Sajedar | AI Chatbots Agency',
+    description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',
+    url: 'https://sajedar.com/Contact',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Sajedar | AI Chatbots Agency',
+    description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot.',
+  },
+};
+
 export default function Contact() {
+  const contactJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Sajedar',
+    description: 'Contact Sajedar to discuss custom AI chatbot solutions.',
+    url: '/Contact',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'Sajedar',
+      url: 'https://sajedar.com',
+      email: 'dimanjan@sajedar.com',
+      logo: '/sajedar-logo.png',
+      sameAs: [
+        'https://www.linkedin.com/company/sajedar/',
+        'https://www.facebook.com/sajedardotcom',
+        'https://www.youtube.com/@sajedar_chatbots',
+        'https://www.tiktok.com/@sajedar_chatbots'
+      ],
+      contactPoint: [{
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        availableLanguage: ['en'],
+        telephone: '+9779860479751'
+      }]
+    }
+  } as const;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: '/Contact' }
+    ]
+  } as const;
+
   return (
     <main className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center px-4 py-24">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-2xl w-full bg-[#23243a] bg-opacity-90 rounded-3xl shadow-xl p-8 border border-white/10">
         <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6 text-center">Contact Us</h1>
         <section className="text-gray-300 text-base leading-relaxed flex flex-col gap-6">
