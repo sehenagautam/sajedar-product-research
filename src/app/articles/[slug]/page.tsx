@@ -104,6 +104,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         buttonLink: '/?message=I want to build an AI shopping assistant for my ecommerce store.#contact',
         buttonMessage: 'I want to build an AI shopping assistant for my ecommerce store.'
       };
+    } else if (article.category === 'Real Estate' || article.category === 'Realestate' || article.category === 'Property') {
+      return {
+        title: 'Want faster lead response and more viewings with AI?',
+        description: 'We\'ll build an AI assistant for your brokerage or property business to qualify leads, book tours, and respond 24/7.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want to build a real estate AI assistant to qualify leads and book viewings.#contact',
+        buttonMessage: 'I want to build a real estate AI assistant to qualify leads and book viewings.'
+      };
     } else {
       // Default for hospitality/travel
       return {
