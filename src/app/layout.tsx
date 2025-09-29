@@ -8,7 +8,7 @@ export const metadata = {
     template: '%s | Sajedar'
   },
   description: 'Sajedar builds AI business automation and custom chatbots that increase revenue, reduce costs, and improve customer experience.',
-  keywords: ['Sajedar','AI chatbot','custom chatbot','business automation','ai business automation','chatbots for business','ai agents','customer support automation','conversational AI','facebook messenger bot','whatsapp bot','agentic ai','sajedar ai','sajedar chatbots','sajedar business automation'],
+  keywords: ['Sajedar','AI chatbot','custom chatbot','business automation','ai business automation','chatbots for business','ai powered sales','ai sales automation','sales automation with ai','ai agents','customer support automation','conversational AI','facebook messenger bot','whatsapp bot','agentic ai','sajedar ai','sajedar chatbots','sajedar business automation'],
   authors: [{ name: 'Sajedar' }],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, maxSnippet: -1, maxImagePreview: 'large', maxVideoPreview: -1 } },
   alternates: { canonical: '/' },
