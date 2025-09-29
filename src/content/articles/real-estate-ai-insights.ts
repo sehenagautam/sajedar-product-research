@@ -75,5 +75,5 @@ fullview.io, masterofcode.com, localiq.com, litslink.com, amraandelma.com, yogre
     metaDescription: 'Real estate leads, conversions, and ROI with AI chatbots. Industry-high adoption, rapid payback, and 24/7 response at lower cost.',
     keywords: ['real estate', 'ai chatbots', 'lead response time', 'conversion', 'payback period', 'brokerage ai']
   },
-  youtubeUrl: ''
+  youtubeUrl: 'https://www.youtube.com/watch?v=04FDX1NXag8'
 };
