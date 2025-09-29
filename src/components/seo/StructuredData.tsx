@@ -138,6 +138,7 @@ interface OrganizationStructuredDataProps {
     contactPoint?: {
       telephone: string;
       email: string;
+      contactType?: string;
     };
     sameAs: string[];
   };
