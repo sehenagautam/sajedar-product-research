@@ -18,15 +18,36 @@ Sajedar offers custom AI chatbot solutions that transform customer engagement an
   - Smooth transitions and micro-interactions
 
 ### 💬 Interactive Demonstrations
+- **Demo hub (/demo)**: Facebook Messenger AI demos for multiple businesses + CTA links
 - **Chat Demo**: Interactive demonstration of the chatbot in action
 - **Chat Dashboard**: Conversation management interface
 - **Agentic Flow Diagrams**: Animated visualization of the AI process
 
-### 📱 Pages & Sections
-- **Homepage**: Comprehensive service presentation
-- **Contact Form**: Formspree integration for lead management
-- **Legal Pages**: Privacy Policy and Terms of Service
-- **Smooth Navigation**: Responsive menu with animations
+### 📝 Content Systems
+- **Articles (/articles)**: Business-focused articles authored in code
+  - Location: `src/content/articles/`
+  - Indexed via `src/content/articles/index.ts`
+  - SEO per-article: title, description, keywords, category, tags, readTime
+  - Structured data (Article + Breadcrumb)
+- **Tutorials (/tutorials)**: Developer-focused tutorials authored in code/markdown-like strings
+  - Location: `src/content/tutorials/` (and listing pages in `src/app/tutorials`)
+  - Categories, tags, and related content linking
+
+### 🧑‍💻 Developer Application (/developer)
+- Custom-styled form (pure HTML/CSS) posts to Google Forms endpoint
+- Clean, centered card layout with green focus states and success message (no redirect)
+
+### 🌐 Community (/forum)
+- Short intro page linking to the Sajedar Discord discussion forum
+
+### 🔎 SEO & Performance
+- **Next.js Metadata**: Page titles, descriptions, keywords, Open Graph, Twitter
+- **Structured Data (JSON-LD)**: `Organization`, `WebSite`, `Article`, `BreadcrumbList`
+- **Sitemap**: Dynamic sitemap for pages and content
+- **Robots**: `robots.txt` configured to allow indexing (including Googlebot settings)
+- **Manifest**: PWA manifest and icons/favicons configured
+- **Internal Linking**: Related articles, demo links, CTAs deep-linking to contact
+- **Performance**: Optimized images, lazy sections, modern fonts
 
 ## 🛠️ Tech Stack
 
@@ -98,80 +119,84 @@ npm run lint         # Check code with ESLint
 
 ```
 sajedar-landing/
-├── public/                 # Static assets
-│   ├── favicon.ico
-│   └── robots.txt
+├── public/                         # Static assets (icons, images, videos, robots, manifest)
 ├── src/
-│   └── app/
-│       ├── ChatDashboard.tsx    # Interactive chat dashboard
-│       ├── ChatDemo.tsx         # Chatbot demonstration
-│       ├── Contact/
-│       │   └── page.tsx         # Contact page
-│       ├── PrivacyPolicy/
-│       │   └── page.tsx         # Privacy policy
-│       ├── TermsOfService/
-│       │   └── page.tsx         # Terms of service
-│       ├── globals.css          # Global styles
-│       ├── layout.tsx           # Main layout
-│       └── page.tsx             # Homepage
-├── next.config.js              # Next.js configuration
-├── tailwind.config.js          # Tailwind CSS configuration
-├── tsconfig.json               # TypeScript configuration
-└── vercel.json                 # Vercel configuration
+│   ├── app/
+│   │   ├── demo/                   # /demo page
+│   │   ├── developer/              # /developer page (custom Google Form)
+│   │   ├── forum/                  # /forum page (Discord CTA)
+│   │   ├── articles/               # /articles routes
+│   │   │   ├── page.tsx            # Articles listing
+│   │   │   └── [slug]/page.tsx     # Single article (SEO + JSON-LD)
+│   │   ├── tutorials/              # /tutorials routes (listing/category/single)
+│   │   ├── Contact/                # /Contact page
+│   │   ├── layout.tsx              # Global metadata and Organization/WebSite JSON-LD
+│   │   ├── globals.css             # Global styles (cursor, fonts, base)
+│   │   └── page.tsx                # Homepage
+│   ├── components/                 # UI sections and shared components
+│   └── content/
+│       ├── articles/               # Business articles (code-authored)
+│       │   ├── index.ts            # Registry of articles
+│       │   └── *.ts                # Individual articles
+│       └── tutorials/              # Tutorials content
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── vercel.json
 ```
 
-## 🎯 Key Features
+## 🧩 Content Authoring
 
-### Agentic Flow Animations
-The project includes sophisticated animated flow diagrams that illustrate the AI request processing workflow:
-- Colored particle animations
-- Smooth transitions between steps
-- AI decision process visualization
-
-### Interactive Demonstration
-- Real-time chat interface
-- User interaction simulation
-- Chatbot capabilities showcase
-
-### Consistent Design System
-- Unified color palette (emerald green)
-- Hierarchical typography
-- Reusable components
-- Consistent animations
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-The project is configured for automatic deployment on Vercel:
-
-1. Connect your GitHub repository to Vercel
-2. Automatic builds trigger on pushes to `main`
-3. Automatic deployment with Next.js optimizations
-
-### Other Platforms
-The project can be deployed on any platform supporting Next.js:
-- Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
-
-## 🔧 Configuration
-
-### Environment Variables
-Create a `.env.local` file for environment variables:
-
-```env
-# Formspree (for contact form)
-NEXT_PUBLIC_FORMSPREE_ENDPOINT=your_formspree_endpoint
-
-# Analytics (optional)
-NEXT_PUBLIC_GA_ID=your_google_analytics_id
+### Add a new Article
+1. Create a file in `src/content/articles/` (e.g., `my-new-article.ts`) exporting an `Article` object:
+```ts
+export const myArticle: Article = {
+  id: 'unique-id',
+  title: 'Title',
+  slug: 'title-slug',
+  excerpt: 'Short excerpt...',
+  content: `# Heading\n\nBody content with **bold** and lists.`,
+  tags: ['tag1','tag2'],
+  publishedAt: '2025-09-29',
+  updatedAt: '2025-09-29',
+  author: 'Sajedar Team',
+  readTime: 6,
+  category: 'Advertising',
+  seo: {
+    metaTitle: 'SEO Title | Sajedar',
+    metaDescription: 'SEO description aligned with Sajedar goals.',
+    keywords: ['sajedar','ai business automation','ai powered sales']
+  },
+  youtubeUrl: ''
+};
 ```
+2. Import it in `src/content/articles/index.ts` and add to the `articles` array.
+3. Visit `/articles/my-slug` to verify SEO, JSON-LD, and rendering.
 
-### Customization
-- **Colors**: Modify CSS variables in `globals.css`
-- **Animations**: Adjust parameters in Framer Motion components
-- **Content**: Update texts in React components
+### Add a new Tutorial
+- Add tutorial content in `src/content/tutorials/`
+- Ensure it is exported and indexed so it appears in `/tutorials` listings
+
+## 🔎 SEO Details
+- Global metadata in `src/app/layout.tsx` (title template, keywords including “Sajedar”, Open Graph/Twitter, icons)
+- Per-article metadata via content object (used by `generateMetadata`)
+- JSON-LD: `Organization`, `WebSite` (global), `Article` and `BreadcrumbList` (article pages)
+- Sitemap and robots are generated with open indexation
+- PWA manifest and icons configured (android-chrome, apple-touch, favicon)
+
+## 🔗 Key Pages
+- **Homepage**: `/`
+- **Demo**: `/demo`
+- **Articles**: `/articles`
+- **Tutorials**: `/tutorials`
+- **Developer**: `/developer`
+- **Forum**: `/forum`
+- **Contact**: `/Contact`
+
+## 🧭 CTAs & Deep Links
+- CTAs deep-link to the homepage contact section with pre-filled `?message=...#contact`
+- Category-specific CTAs on article pages (e.g., Advertising → Meta ads + chatbots ROAS message)
+- “Watch the intro” button only appears if an article provides a YouTube URL
 
 ## 🤝 Contributing
 
