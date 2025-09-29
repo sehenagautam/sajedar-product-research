@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     { 
+      url: `${base}/forum`, 
+      priority: 0.8, 
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    { 
       url: `${base}/Contact`, 
       priority: 0.8, 
       changeFrequency: 'monthly' as const,
