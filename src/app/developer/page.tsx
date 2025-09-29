@@ -4,11 +4,6 @@ import React, { useState } from 'react';
 
 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLScPg9J_6XzBGJqWLZ1qBWR3SiAhhxpU1A9Fnk0DpgmK2seeQg/formResponse';
 
-export const metadata = {
-  title: 'Work with Sajedar Developers | AI Automation & Chatbots',
-  description: 'Submit your project details to Sajedar. Our developers specialize in AI business automation and chatbots. We will get back to you quickly.'
-};
-
 export default function DeveloperPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
