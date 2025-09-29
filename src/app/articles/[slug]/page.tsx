@@ -96,6 +96,14 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         buttonLink: '/?message=I want to build an AI chatbot for my travel business.#contact',
         buttonMessage: 'I want to build an AI chatbot for my travel business.'
       };
+    } else if (article.category === 'E-commerce' || article.category === 'Ecommerce' || article.category === 'Retail') {
+      return {
+        title: 'Ready to lift conversions and AOV with an AI shopping assistant?',
+        description: 'We\'ll build an AI chatbot for your store that reduces support costs and boosts sales with cart recovery, personalization, and 24/7 service.',
+        buttonText: 'Talk to us',
+        buttonLink: '/?message=I want to build an AI shopping assistant for my ecommerce store.#contact',
+        buttonMessage: 'I want to build an AI shopping assistant for my ecommerce store.'
+      };
     } else {
       // Default for hospitality/travel
       return {

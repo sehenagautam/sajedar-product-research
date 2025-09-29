@@ -3,12 +3,14 @@ import { digitalConciergeArticle } from './digital-concierge';
 import { financeArticle } from './finance-ai-chatbots';
 import { healthcareAiChatbotsArticle } from './healthcare-ai-chatbots';
 import { travelAiInsightsArticle } from './travel-ai-insights';
+import { ecommerceAiInsightsArticle } from './ecommerce-ai-insights';
 
 export const articles: Article[] = [
   digitalConciergeArticle,
   financeArticle,
   healthcareAiChatbotsArticle,
   travelAiInsightsArticle,
+  ecommerceAiInsightsArticle,
 ];
 
 export const getAllArticles = (): Article[] => articles;
