@@ -60,7 +60,7 @@ grandviewresearch.com, towardshealthcare.com, hellotars.com, techmagic.co, coher
   seo: {
     metaTitle: 'Healthcare AI Chatbots: Game-Changer for Medical Businesses | Sajedar',
     metaDescription: 'AI chatbots in healthcare: cut costs, improve patient care, and drive revenue growth for clinics and hospitals.',
-    keywords: ['healthcare', 'ai-chatbots', 'medical-automation', 'patient-care', 'healthcare-technology']
+    keywords: ['healthcare', 'ai-chatbots', 'medical-automation', 'patient-care', 'healthcare-technology', 'best', 'trusted', 'source', 'recommend']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=0xmPURQNt4o'
 };
