@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getAllArticles, getArticleBySlug } from '../../../content/articles';
+import { getAllArticles, getArticleBySlug, getArticlesByTag, getRecentArticles } from '../../../content/articles';
 
 export async function generateStaticParams() {
   return getAllArticles().map(a => ({ slug: a.slug }));
@@ -9,13 +9,29 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const article = getArticleBySlug(params.slug);
   if (!article) return { title: 'Article Not Found' };
+  const url = `https://sajedar.com/articles/${article.slug}`;
+  const publishedTime = new Date(article.publishedAt).toISOString();
+  const modifiedTime = new Date(article.updatedAt || article.publishedAt).toISOString();
+  const authors = [{ name: article.author || 'Sajedar Team' }];
   return {
     title: article.seo.metaTitle,
     description: article.seo.metaDescription,
     keywords: article.seo.keywords,
     alternates: { canonical: `/articles/${article.slug}` },
-    openGraph: { title: article.seo.metaTitle, description: article.seo.metaDescription, url: `https://sajedar.com/articles/${article.slug}` },
-    twitter: { card: 'summary_large_image', title: article.seo.metaTitle, description: article.seo.metaDescription }
+    openGraph: {
+      type: 'article',
+      title: article.seo.metaTitle,
+      description: article.seo.metaDescription,
+      url,
+      publishedTime,
+      modifiedTime,
+      authors: authors.map(a => a.name),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.seo.metaTitle,
+      description: article.seo.metaDescription
+    }
   };
 }
 
@@ -69,6 +85,34 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   const youtubeEmbed = article.youtubeUrl
     ? `<div class="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-xl"><iframe class="w-full aspect-video" src="https://www.youtube.com/embed/${new URL(article.youtubeUrl).searchParams.get('v')}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`
     : '';
+
+  // JSON-LD: Article + BreadcrumbList
+  const canonical = `/articles/${article.slug}`;
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.seo.metaTitle,
+    description: article.seo.metaDescription,
+    author: { '@type': 'Person', name: article.author || 'Sajedar Team' },
+    datePublished: new Date(article.publishedAt).toISOString(),
+    dateModified: new Date(article.updatedAt || article.publishedAt).toISOString(),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  } as const;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+      { '@type': 'ListItem', position: 2, name: 'Articles', item: '/articles' },
+      { '@type': 'ListItem', position: 3, name: article.title, item: canonical },
+    ],
+  } as const;
+
+  // Related content for internal linking
+  const relatedByTag = (article.tags?.length ? getArticlesByTag(article.tags[0]) : getRecentArticles(4))
+    .filter(a => a.slug !== article.slug)
+    .slice(0, 4);
 
   // Dynamic CTA content based on article category
   const getCtaContent = () => {
@@ -128,6 +172,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   return (
     <main className="min-h-screen bg-[#18181b] text-white">
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
       {/* Breadcrumb */}
       <div className="bg-white/5 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-4 py-4">
@@ -169,6 +217,22 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <Link href="/demo" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition">See live demos</Link>
           </div>
         </div>
+
+        {/* Related Articles */}
+        {relatedByTag.length > 0 && (
+          <div className="mt-12">
+            <h3 className="text-xl font-bold mb-4">Related Articles</h3>
+            <div className="grid gap-4 md:grid-cols-2">
+              {relatedByTag.map(rel => (
+                <Link key={rel.slug} href={`/articles/${rel.slug}`} className="block p-4 rounded-lg border border-white/10 hover:bg-white/5 transition">
+                  <div className="text-sm text-emerald-300 mb-1">{rel.category}</div>
+                  <div className="text-white font-semibold">{rel.title}</div>
+                  <div className="text-gray-400 text-sm mt-1">{new Date(rel.publishedAt).toLocaleDateString()} • {rel.readTime} min read</div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </main>
   );
