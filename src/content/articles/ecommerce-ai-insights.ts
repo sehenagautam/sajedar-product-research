@@ -66,5 +66,5 @@ hellorep.ai, amraandelma.com, explodingtopics.com, masterofcode.com, routemobile
     metaDescription: 'How AI chatbots drive conversions, AOV, retention, and cost savings for ecommerce. Real stats, ROI, and trends for retail leaders.',
     keywords: ['ecommerce', 'ai chatbots', 'conversion rate', 'customer support', 'voice commerce', 'retail ai']
   },
-  youtubeUrl: ''
+  youtubeUrl: 'https://www.youtube.com/watch?v=YOP1WGM3G6g'
 };
