@@ -10,12 +10,13 @@ export function N8nWorkflowSection() {
             Visual AI Development
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            We Build <span className="text-emerald-400">Advanced AI Agents</span> Using n8n
+            We Build <span className="text-emerald-400">Advanced AI Agents</span> Using n8n & Python
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Sajedar leverages n8n's powerful workflow automation to create sophisticated AI agents for your business. 
-            We connect multiple AI services, orchestrate complex decision-making processes, and build intelligent 
-            automation systems that handle your most challenging business scenarios.
+            Sajedar uses <span className="text-emerald-400 font-bold">n8n for rapid prototyping</span> and
+            <span className="text-emerald-400 font-bold"> Python for long‑term, advanced solutions</span>
+            at an <span className="text-emerald-400 font-bold">optimized price</span>. We connect multiple AI services, orchestrate complex
+            decision-making processes, and build intelligent automation systems that handle your most challenging business scenarios.
           </p>
         </div>
 
