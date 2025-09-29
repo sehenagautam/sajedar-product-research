@@ -4,10 +4,10 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://sajedar.com'),
   title: {
-    default: 'Sajedar - Custom AI Chatbot Agency',
+    default: 'Sajedar - AI Business Automation & Chatbots',
     template: '%s | Sajedar'
   },
-  description: 'Sajedar is a hands-on agency specializing in designing, building, and supporting custom AI chatbots for ambitious brands.',
+  description: 'Sajedar builds AI business automation and custom chatbots that increase revenue, reduce costs, and improve customer experience.',
   keywords: ['Sajedar','AI chatbot','custom chatbot','business automation','ai business automation','chatbots for business','ai agents','customer support automation','conversational AI','facebook messenger bot','whatsapp bot','agentic ai','sajedar ai','sajedar chatbots','sajedar business automation'],
   authors: [{ name: 'Sajedar' }],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, maxSnippet: -1, maxImagePreview: 'large', maxVideoPreview: -1 } },
@@ -16,16 +16,16 @@ export const metadata = {
     type: 'website',
     url: 'https://sajedar.com/',
     siteName: 'Sajedar',
-    title: 'Sajedar - Custom AI Chatbot Agency',
-    description: 'We design, build, and support AI chatbots for ambitious brands.',
-    images: [{ url: '/sajedar-logo.png', width: 1200, height: 630, alt: 'Sajedar AI Chatbot Agency' }]
+    title: 'Sajedar - AI Business Automation & Chatbots',
+    description: 'We design, build, and support AI business automation and chatbots for ambitious brands.',
+    images: [{ url: '/sajedar-logo.png', width: 1200, height: 630, alt: 'Sajedar AI Business Automation & Chatbots' }]
   },
   twitter: {
     card: 'summary_large_image',
     site: '@sajedar',
     creator: '@sajedar',
-    title: 'Sajedar - Custom AI Chatbot Agency',
-    description: 'We design, build, and support AI chatbots for ambitious brands.',
+    title: 'Sajedar - AI Business Automation & Chatbots',
+    description: 'We design, build, and support AI business automation and chatbots for ambitious brands.',
     images: ['/sajedar-logo.png']
   },
   icons: { 

@@ -80,7 +80,7 @@ netsuite.com, coirconsulting.com, blog.naitive.cloud, techmagic.co, oracle.com, 
   seo: {
     metaTitle: 'Digital Concierge: Future of Guest Experience | Sajedar',
     metaDescription: 'How AI-driven concierge elevates hospitality: instant answers, streamlined bookings, empowered staff.',
-    keywords: ['hospitality', 'concierge', 'chatbot', 'guest experience', 'automation', 'best', 'trusted', 'source', 'recommend']
+    keywords: ['hospitality', 'concierge', 'chatbot', 'guest experience', 'automation', 'best', 'trusted', 'source', 'recommend', 'Sajedar', 'business automation', 'chatbots for hotels']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=U1VnbmOS06c'
 }; 
