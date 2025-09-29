@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: TutorialPageProps) {
       description: tutorial.seo.metaDescription,
       url: `https://sajedar.com/tutorials/${tutorial.slug}`,
       type: 'article',
-      publishedTime: tutorial.publishedAt,
-      modifiedTime: tutorial.updatedAt,
+      publishedTime: new Date(tutorial.publishedAt).toISOString(),
+      modifiedTime: new Date(tutorial.updatedAt || tutorial.publishedAt).toISOString(),
       authors: [tutorial.author],
       tags: tutorial.tags,
     },
@@ -55,6 +55,40 @@ export default function TutorialPage({ params }: TutorialPageProps) {
   if (!tutorial) {
     notFound();
   }
+
+  const canonical = `/tutorials/${tutorial.slug}`;
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: tutorial.seo.metaTitle,
+    description: tutorial.seo.metaDescription,
+    author: { '@type': 'Person', name: tutorial.author },
+    datePublished: new Date(tutorial.publishedAt).toISOString(),
+    dateModified: new Date(tutorial.updatedAt || tutorial.publishedAt).toISOString(),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    keywords: (tutorial.tags || []).join(', '),
+  } as const;
+
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: tutorial.title,
+    description: tutorial.description,
+    totalTime: `PT${Math.max(1, tutorial.readTime)}M`,
+    step: [
+      { '@type': 'HowToStep', name: 'Follow the guide', text: 'Work through the steps and code blocks in this tutorial.' }
+    ],
+  } as const;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
+      { '@type': 'ListItem', position: 2, name: 'Tutorials', item: '/tutorials' },
+      { '@type': 'ListItem', position: 3, name: tutorial.title, item: canonical },
+    ],
+  } as const;
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
@@ -76,6 +110,11 @@ export default function TutorialPage({ params }: TutorialPageProps) {
 
   return (
     <div className="min-h-screen bg-[#18181b] text-white">
+      {/* Structured Data */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
       {/* Breadcrumb */}
       <div className="bg-white/5 border-b border-white/10">
         <div className="max-w-4xl mx-auto px-4 py-4">
