@@ -170,8 +170,8 @@ export function TestimonialsSection() {
             <div className="text-gray-300 text-sm">Engagement Increase</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-400 mb-2">50+</div>
-            <div className="text-gray-300 text-sm">Happy Clients</div>
+            <div className="text-4xl font-bold text-emerald-400 mb-2">5+</div>
+            <div className="text-gray-300 text-sm">Happy Clients and counting...</div>
           </div>
         </div>
 
