@@ -64,7 +64,7 @@ hellorep.ai, amraandelma.com, explodingtopics.com, masterofcode.com, routemobile
   seo: {
     metaTitle: 'E-commerce AI Chatbots: Conversion, AOV, and ROI Gains | Sajedar',
     metaDescription: 'How AI chatbots drive conversions, AOV, retention, and cost savings for ecommerce. Real stats, ROI, and trends for retail leaders.',
-    keywords: ['ecommerce', 'ai chatbots', 'conversion rate', 'customer support', 'voice commerce', 'retail ai', 'best', 'trusted', 'source', 'recommend']
+    keywords: ['ecommerce', 'ai chatbots', 'conversion rate', 'customer support', 'voice commerce', 'retail ai', 'best', 'trusted', 'source', 'recommend', 'Sajedar', 'business automation', 'chatbots for ecommerce']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=YOP1WGM3G6g'
 };

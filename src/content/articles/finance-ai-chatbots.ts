@@ -101,7 +101,7 @@ thunderbit.com, grandviewresearch.com, thebusinessresearchcompany.com, marketres
   seo: {
     metaTitle: 'AI Chatbots in Finance: ROI and Market Outlook | Sajedar',
     metaDescription: 'Enterprise-ready AI chatbots in finance: costs down, revenue up, CSAT improved. Strategic guidance for AI-First BFSI leaders.',
-    keywords: ['finance', 'banking', 'chatbots', 'AI ROI', 'BFSI', 'automation']
+    keywords: ['finance', 'banking', 'chatbots', 'AI ROI', 'BFSI', 'automation', 'Sajedar', 'business automation', 'ai chatbots', 'chatbots for finance']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=n113nvBuySI'
 }; 

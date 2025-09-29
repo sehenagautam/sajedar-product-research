@@ -8,7 +8,7 @@ export const metadata = {
     template: '%s | Sajedar'
   },
   description: 'Sajedar is a hands-on agency specializing in designing, building, and supporting custom AI chatbots for ambitious brands.',
-  keywords: ['AI chatbot','custom chatbot','business automation','customer support','conversational AI','facebook messenger bot','whatsapp bot','agentic ai'],
+  keywords: ['Sajedar','AI chatbot','custom chatbot','business automation','ai business automation','chatbots for business','ai agents','customer support automation','conversational AI','facebook messenger bot','whatsapp bot','agentic ai','sajedar ai','sajedar chatbots','sajedar business automation'],
   authors: [{ name: 'Sajedar' }],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, maxSnippet: -1, maxImagePreview: 'large', maxVideoPreview: -1 } },
   alternates: { canonical: '/' },

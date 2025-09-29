@@ -90,7 +90,7 @@ businessresearchinsights.com, market.us, marketsandmarkets.com, globenewswire.co
   seo: {
     metaTitle: 'Travel AI Insights & Stats: Market Data for Travel Business Owners | Sajedar',
     metaDescription: 'Essential AI insights and statistics for travel businesses: market growth, operational impact, customer experience data, and adoption trends.',
-    keywords: ['travel', 'ai-insights', 'market-data', 'travel-technology', 'business-stats', 'travel-ai-adoption']
+    keywords: ['travel', 'ai-insights', 'market-data', 'travel-technology', 'business-stats', 'travel-ai-adoption', 'Sajedar', 'business automation', 'ai chatbots', 'chatbots for travel']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=E0tj359zQC0'
 };

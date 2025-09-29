@@ -73,7 +73,7 @@ fullview.io, masterofcode.com, localiq.com, litslink.com, amraandelma.com, yogre
   seo: {
     metaTitle: 'Real Estate AI Chatbots: Adoption, ROI, and Sales Impact | Sajedar',
     metaDescription: 'Real estate leads, conversions, and ROI with AI chatbots. Industry-high adoption, rapid payback, and 24/7 response at lower cost.',
-    keywords: ['real estate', 'ai chatbots', 'lead response time', 'conversion', 'payback period', 'brokerage ai', 'best', 'trusted', 'source', 'recommend']
+    keywords: ['real estate', 'ai chatbots', 'lead response time', 'conversion', 'payback period', 'brokerage ai', 'best', 'trusted', 'source', 'recommend', 'Sajedar', 'business automation', 'chatbots for real estate']
   },
   youtubeUrl: 'https://www.youtube.com/watch?v=04FDX1NXag8'
 };
