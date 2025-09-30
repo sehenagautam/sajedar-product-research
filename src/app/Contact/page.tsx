@@ -1,3 +1,5 @@
+import ObfuscatedEmail from '../../components/ObfuscatedEmail';
+
 export const metadata = {
   title: 'Contact Sajedar | AI Chatbots Agency',
   description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',

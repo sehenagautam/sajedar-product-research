@@ -60,8 +60,8 @@ export default function DemoPage() {
     }
   ];
 
-  const getColorClasses = (color) => {
-    const colorMap = {
+  const getColorClasses = (color: string) => {
+    const colorMap: { [key: string]: string } = {
       'from-blue-500 to-purple-600': 'bg-gradient-to-r from-blue-500 to-purple-600',
       'from-green-500 to-teal-600': 'bg-gradient-to-r from-green-500 to-teal-600',
       'from-red-500 to-pink-600': 'bg-gradient-to-r from-red-500 to-pink-600',

@@ -1,3 +1,5 @@
+import ObfuscatedEmail from '../../components/ObfuscatedEmail';
+
 export default function TermsOfService() {
   return (
     <main className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center px-4 py-24">
