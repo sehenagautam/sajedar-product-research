@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Contact Sajedar | AI Chatbots Agency',
   description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',
-  alternates: { canonical: '/Contact' },
+  alternates: { canonical: 'https://sajedar.com/Contact' },
   openGraph: {
     type: 'website',
     title: 'Contact Sajedar | AI Chatbots Agency',
@@ -26,7 +26,7 @@ export default function Contact() {
       '@type': 'Organization',
       name: 'Sajedar',
       url: 'https://sajedar.com',
-      email: 'dimanjan@sajedar.com',
+      email: '{/* email hidden */}',
       logo: '/sajedar-logo.png',
       sameAs: [
         'https://www.linkedin.com/company/sajedar/',
@@ -67,7 +67,7 @@ export default function Contact() {
           </form>
           <div className="mt-8 text-center">
             <div className="mb-2">Or reach us at:</div>
-            <div className="text-emerald-400 font-mono">dimanjan@sajedar.com</div>
+            <div className="text-emerald-400 font-mono">{/* email hidden */}</div>
             <div className="text-gray-400 mt-1">WhatsApp: <a href="https://wa.me/9779860479751" className="underline text-emerald-400">+977 9860479751</a>
             <div className="mt-4">
               <a href="https://wa.me/9779860479751" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 text-white font-semibold shadow hover:opacity-90 transition">

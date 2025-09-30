@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Sajedar Forum | AI Business Automation & Chatbots Community',
   description: 'Join Sajedar’s Discord community to learn, build, and grow with AI business automation and chatbots. Get help, share wins, and access expert‑guided resources.',
-  alternates: { canonical: '/forum' },
+  alternates: { canonical: 'https://sajedar.com/forum' },
   openGraph: {
     type: 'website',
     title: 'Sajedar Forum | AI Business Automation & Chatbots Community',

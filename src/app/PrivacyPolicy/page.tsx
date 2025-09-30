@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
             <li>You can request access, correction, or deletion of your data at any time.</li>
             <li>We do not sell your personal information.</li>
           </ul>
-          <p>If you have any questions about this policy, please contact us at <span className="text-emerald-400">privacy@sajedar.com</span>.</p>
+          <p>If you have any questions about this policy, please contact us at <ObfuscatedEmail user="privacy" domain="sajedar.com" className="text-emerald-400" linkClassName="text-emerald-400 underline" />.</p>
         </section>
       </div>
     </main>

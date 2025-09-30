@@ -7,7 +7,6 @@ export function FeaturesSection() {
       {/*
       <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
         <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
-          <div className="flex flex-col items-center text-center gap-4">
             <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
               Custom Chatbot Agency
             </span>
@@ -34,7 +33,6 @@ export function FeaturesSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center w-full">
             <div className="flex flex-col gap-6 items-center">
-              <div className="flex flex-col items-center">
                 <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-400">98%</span>
                 <span className="text-gray-400 text-lg uppercase tracking-widest">Client Satisfaction</span>
               </div>

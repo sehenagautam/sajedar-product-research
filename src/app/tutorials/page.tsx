@@ -6,7 +6,7 @@ import { Tutorial } from '../../types/tutorial';
 export const metadata = {
   title: 'AI Chatbot Tutorials & Guides',
   description: 'Learn to build AI chatbots, Facebook Messenger bots, and automation workflows. Step-by-step tutorials with code examples.',
-  alternates: { canonical: '/tutorials' },
+  alternates: { canonical: 'https://sajedar.com/tutorials' },
   openGraph: {
     title: 'AI Chatbot Tutorials & Guides | Sajedar',
     description: 'Learn to build AI chatbots, Facebook Messenger bots, and automation workflows. Step-by-step tutorials with code examples.',

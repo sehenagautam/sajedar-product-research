@@ -25,6 +25,7 @@ const Header: React.FC = () => {
                 src="/sajedar-logo.png"
                 alt="Sajedar Logo"
                 fill
+                sizes="40px"
                 className="object-contain"
                 priority
               />

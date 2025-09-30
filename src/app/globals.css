@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@fontsource/dm-serif-display/index.css";
-@import "@fontsource/inter/index.css";
-
 :root {
   --background: #18181b;
   --foreground: #fff;

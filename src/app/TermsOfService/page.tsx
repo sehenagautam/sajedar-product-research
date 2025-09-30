@@ -17,7 +17,7 @@ export default function TermsOfService() {
             <li>Our services are provided "as is" without warranties of any kind.</li>
           </ul>
           <h2 className="text-lg font-bold text-emerald-400 mt-4">Contact</h2>
-          <p>If you have questions about these terms, contact us at <span className="text-emerald-400">legal@sajedar.com</span>.</p>
+          <p>If you have questions about these terms, contact us at <ObfuscatedEmail user="legal" domain="sajedar.com" className="text-emerald-400" linkClassName="text-emerald-400 underline" />.</p>
         </section>
       </div>
     </main>
