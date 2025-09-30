@@ -127,6 +127,54 @@ export default function TutorialPage({ params }: TutorialPageProps) {
           </nav>
         </div>
       </div>
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-emerald-900/20 to-purple-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Ready to Build Your Own AI Chatbot?</h2>
+          <p className="text-gray-300 mb-8">
+            Put this tutorial into practice with Sajedar's expert guidance.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/?message=I want help implementing this tutorial.#contact"
+              className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="/tutorials"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              More Tutorials
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Developer CTA Section */}
+      <div className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Are you a developer?</h2>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Join our developer network and get exposure for your work. Connect with potential clients 
+            and find new leads for your AI automation projects.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/developer"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Join Developer Network
+            </Link>
+            <Link
+              href="/?message=I'm a developer interested in collaborating with Sajedar.#contact"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* Article Header */}
       <div className="max-w-4xl mx-auto px-4 py-16">
@@ -232,6 +280,54 @@ export default function TutorialPage({ params }: TutorialPageProps) {
           </div>
         </div>
       </div>
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-emerald-900/20 to-purple-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Ready to Build Your Own AI Chatbot?</h2>
+          <p className="text-gray-300 mb-8">
+            Put this tutorial into practice with Sajedar's expert guidance.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/?message=I want help implementing this tutorial.#contact"
+              className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="/tutorials"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              More Tutorials
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Developer CTA Section */}
+      <div className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Are you a developer?</h2>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Join our developer network and get exposure for your work. Connect with potential clients 
+            and find new leads for your AI automation projects.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/developer"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Join Developer Network
+            </Link>
+            <Link
+              href="/?message=I'm a developer interested in collaborating with Sajedar.#contact"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-emerald-900/20 to-purple-900/20 border-t border-white/10">
@@ -252,6 +348,54 @@ export default function TutorialPage({ params }: TutorialPageProps) {
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
             >
               More Tutorials
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* CTA Section */}
+      <div className="bg-gradient-to-r from-emerald-900/20 to-purple-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Ready to Build Your Own AI Chatbot?</h2>
+          <p className="text-gray-300 mb-8">
+            Put this tutorial into practice with Sajedar's expert guidance.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/?message=I want help implementing this tutorial.#contact"
+              className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="/tutorials"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              More Tutorials
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Developer CTA Section */}
+      <div className="bg-gradient-to-r from-blue-900/20 to-indigo-900/20 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 py-16 text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Are you a developer?</h2>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            Join our developer network and get exposure for your work. Connect with potential clients 
+            and find new leads for your AI automation projects.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/developer"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Join Developer Network
+            </Link>
+            <Link
+              href="/?message=I'm a developer interested in collaborating with Sajedar.#contact"
+              className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
+            >
+              Learn More
             </Link>
           </div>
         </div>
