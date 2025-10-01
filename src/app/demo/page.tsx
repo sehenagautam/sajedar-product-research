@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { DemoCard } from '../../components/DemoCard';
 
 export const metadata = {
   title: 'Facebook Messenger AI Demos',
@@ -67,6 +68,8 @@ export default function DemoPage() {
       'from-red-500 to-pink-600': 'bg-gradient-to-r from-red-500 to-pink-600',
       'from-orange-500 to-yellow-600': 'bg-gradient-to-r from-orange-500 to-yellow-600'
     };
+
+
     return colorMap[color] || 'bg-gradient-to-r from-blue-500 to-purple-600';
   };
 
@@ -127,7 +130,7 @@ export default function DemoPage() {
 
                 <div className="space-y-3">
                   <a
-                    href={demo.messengerUrl}
+                    href={demo.messengerUrl} 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full block text-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors"

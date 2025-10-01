@@ -1,6 +1,7 @@
 'use client';
 
 import { Linkedin, Facebook, MessageCircle } from 'lucide-react';
+import { trackLead, trackContact } from '../FacebookPixel';
 import { useEffect, useState } from 'react';
 
 export function ContactSection() {
@@ -14,6 +15,18 @@ export function ContactSection() {
       setPrefilledMessage(decodeURIComponent(message));
     }
   }, []);
+
+  const handleFormSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Track Facebook Pixel events
+    trackLead(0, 'USD'); // Track as lead with $0 value
+    trackContact(); // Track contact event
+    
+    // Submit the form (existing functionality)
+    const form = e.target as HTMLFormElement;
+    form.submit();
+  };
 
   return (
     <section id="contact" className="w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-24 px-4 flex flex-col items-center border-t border-white/10">
