@@ -1,6 +1,6 @@
 // Facebook Pixel Configuration
 // Replace with your actual Facebook Pixel ID
-export const FACEBOOK_PIXEL_ID = 'YOUR_PIXEL_ID_HERE';
+export const FACEBOOK_PIXEL_ID = '1889164861630433';
 
 // Event tracking configuration
 export const PIXEL_EVENTS = {
