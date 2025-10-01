@@ -112,12 +112,12 @@ Savings = (Tickets × Deflection Rate) × Cost per Ticket
 
 ## ROI by Chatbot Archetype
 
-| Factor | Rule-Based | AI/NLP | Generative AI (LLM) |
-|--------|------------|--------|---------------------|
-| **Cost** | Low ($3k–$7k) | Medium ($8k–$22k+) | High ($25k–$85k+, usage-variable) |
-| **Primary ROI** | Cost savings | Balanced (savings + revenue + CX) | Transformational (new workflows, hyper-personalization) |
-| **Metrics** | Deflection rate | Containment, CSAT uplift, churn reduction | Task completion, cost per interaction, innovation value |
-| **Best For** | Narrow FAQs | Balanced CX + sales orgs | Enterprises seeking deep automation + innovation |
+\| Factor \| Rule-Based \| AI/NLP \| Generative AI (LLM) \|
+\|--------\|------------\|--------\|---------------------\|
+\| **Cost** \| Low ($3k–$7k) \| Medium ($8k–$22k+) \| High ($25k–$85k+, usage-variable) \|
+\| **Primary ROI** \| Cost savings \| Balanced (savings + revenue + CX) \| Transformational (new workflows, hyper-personalization) \|
+\| **Metrics** \| Deflection rate \| Containment, CSAT uplift, churn reduction \| Task completion, cost per interaction, innovation value \|
+\| **Best For** \| Narrow FAQs \| Balanced CX + sales orgs \| Enterprises seeking deep automation + innovation \|
 
 ## Strategic Recommendations
 
