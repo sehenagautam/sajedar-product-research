@@ -1,9 +1,11 @@
 import { nepalSouthAsiaResearch } from './nepal-south-asia-conversational-ai-2025';
 import { conversationalUxResearch } from './conversational-ux-best-practices-2025';
+import { chatbotRoiResearch } from './chatbot-roi-definitive-guide-2025';
 
 export const researchArticles = [
   nepalSouthAsiaResearch,
   conversationalUxResearch,
+  chatbotRoiResearch,
 ];
 
 export function getResearchArticle(slug: string) {

@@ -1,9 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Linkedin, Facebook, MessageCircle } from 'lucide-react';
 import { trackLead, trackContact } from '../FacebookPixel';
-import { useEffect, useState } from 'react';
 
 export function ContactSection() {
   const [prefilledMessage, setPrefilledMessage] = useState('');
