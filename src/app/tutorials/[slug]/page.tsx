@@ -243,7 +243,7 @@ export default function TutorialPage({ params }: TutorialPageProps) {
                 .replace(/```(\w+)?\n([\s\S]*?)```/g, '<pre class="bg-gray-900 p-4 rounded-lg overflow-x-auto"><code class="text-green-400">$2</code></pre>')
                 .replace(/^### (.*$)/gm, '<h3 class="text-xl font-bold text-white mb-2 mt-4">$1</h3>')
                 .replace(/^## (.*$)/gm, '<h2 class="text-2xl font-bold text-white mb-3 mt-6">$1</h2>')
-                .replace(/^# (.*$)/gm, '<h1 class="text-3xl font-bold text-white mb-4 mt-8">$1</h1>')
+                .replace(/^# (.*$)/gm, '<h2 class="text-3xl font-bold text-white mb-4 mt-8">$1</h2>')
                 .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white">$1</strong>')
                 .replace(/`([^`]+)`/g, '<code class="bg-gray-800 px-2 py-1 rounded text-green-400">$1</code>')
                 .replace(/^- (.*$)/gm, '<li class="text-gray-300 mb-1">$1</li>')

@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 priority
               />
             </div>
-            <h1 
+            <div 
               className="text-xl font-bold" 
               style={{ 
                 fontFamily: 'DM Serif Display, serif',
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
               }}
             >
               Sajedar
-            </h1>
+            </div>
           </Link>
 
           {/* Download Proposal Button */}
