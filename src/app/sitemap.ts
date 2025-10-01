@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getAllTutorials } from '../content/tutorials'
 import { getAllArticles } from '../content/articles'
+import { getAllResearchArticles } from '../content/research'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://sajedar.com'
@@ -24,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/tutorials`, 
       priority: 0.9, 
       changeFrequency: 'daily' as const,
+      lastModified: now
+    },
+    { 
+      url: `${base}/research`, 
+      priority: 0.8, 
+      changeFrequency: 'monthly' as const,
       lastModified: now
     },
     { 
