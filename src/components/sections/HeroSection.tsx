@@ -74,7 +74,7 @@ export function HeroSection() {
           {/* Right Side - Video with Perfect Aspect Ratio */}
           <div className="relative flex justify-center">
             {/* Video Container with 9:16 aspect ratio (vertical video) */}
-            <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-full max-w-48 sm:max-w-56 md:max-w-64 lg:max-w-72 xl:max-w-80 aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl">
               <video
                 autoPlay
                 muted
