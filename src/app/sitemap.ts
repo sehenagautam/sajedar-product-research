@@ -29,12 +29,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { 
       url: `${base}/research`, 
+      priority: 0.8, 
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },
     { 
       url: `${base}/case-studies`, 
       priority: 0.85, 
-      changeFrequency: 'monthly' as const,
-      lastModified: now
-    },      priority: 0.8, 
       changeFrequency: 'monthly' as const,
       lastModified: now
     },
@@ -97,6 +98,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // Research pages
+  const researchPages = getAllResearchArticles().map((article) => ({
+    url: `${base}/research/${article.slug}`,
+    lastModified: article.publishedAt,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   // Category pages
   const categoryPages = [
     { 
@@ -141,6 +150,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticPages,
     ...tutorialPages,
     ...articlePages,
+    ...researchPages,
     ...categoryPages,
   ];
 }
