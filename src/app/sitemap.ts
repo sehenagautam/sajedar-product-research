@@ -29,7 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     { 
       url: `${base}/research`, 
-      priority: 0.8, 
+    { 
+      url: `${base}/case-studies`, 
+      priority: 0.85, 
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },      priority: 0.8, 
       changeFrequency: 'monthly' as const,
       lastModified: now
     },

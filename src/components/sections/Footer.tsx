@@ -16,7 +16,9 @@ export function Footer() {
             </li>
             <li>
               <a href="/research" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Research</a>
-            </li>
+            <li>
+              <a href="/case-studies" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Case Studies</a>
+            </li>            </li>
             <li>
               <a href="/demo" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Demo</a>
             </li>
