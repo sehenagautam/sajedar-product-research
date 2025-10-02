@@ -23,6 +23,7 @@ import {
   VoiceIntegrationSection,
   MultiLingualSection,
   N8nWorkflowSection,
+  PartnershipsSection,
   TestimonialsSection,
   FAQSection,
   ContactSection,
@@ -122,6 +123,8 @@ export default function Home() {
       {/* n8n Workflow Section */}
       <N8nWorkflowSection />
 
+      {/* Partnerships Section */}
+      <PartnershipsSection />
       {/* Testimonials Section */}
       <TestimonialsSection />
 
