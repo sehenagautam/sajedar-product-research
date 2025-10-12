@@ -4,7 +4,7 @@ import { DemoCard } from '../../components/DemoCard';
 
 export const metadata = {
   title: 'Facebook Messenger AI Demos',
-  description: 'Try live Facebook Messenger chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, and Deep Darshan Traders. Direct messenger links and demo videos.',
+  description: 'Try live Facebook Messenger chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, Deep Darshan Traders, and Sagarmatha Investments. Direct messenger links and demo videos.',
   alternates: { canonical: 'https://sajedar.com/demo' },
   openGraph: {
     type: 'website',
@@ -24,8 +24,8 @@ export default function DemoPage() {
       id: 'ashwi-furniture',
       name: 'Ashwi Furniture',
       description: 'AI-powered furniture consultation and sales assistant',
-      facebookUrl: 'https://www.facebook.com/ashwifurniture',
-      messengerUrl: 'https://m.me/ashwifurniture',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
+      messengerUrl: 'https://m.me/61580366211478',
       youtubeVideo: null,
       features: ['Product recommendations', 'Size consultation', 'Style matching', 'Price quotes'],
       color: 'from-blue-500 to-purple-600'
@@ -34,8 +34,8 @@ export default function DemoPage() {
       id: 'crackgineers',
       name: 'Crackgineers',
       description: 'Engineering solutions and technical support chatbot',
-      facebookUrl: 'https://www.facebook.com/crackgineers',
-      messengerUrl: 'https://m.me/crackgineers',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
+      messengerUrl: 'https://m.me/61580366211478',
       youtubeVideo: null,
       features: ['Technical support', 'Project consultation', 'Engineering solutions', 'Quote generation'],
       color: 'from-green-500 to-teal-600'
@@ -44,8 +44,8 @@ export default function DemoPage() {
       id: 'health-bridge',
       name: 'Health Bridge Hospital',
       description: 'Medical appointment booking and health information assistant',
-      facebookUrl: 'https://www.facebook.com/healthbridgehospital',
-      messengerUrl: 'https://m.me/healthbridgehospital',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
+      messengerUrl: 'https://m.me/61579893515630',
       youtubeVideo: null,
       features: ['Appointment booking', 'Health information', 'Doctor consultation', 'Emergency support'],
       color: 'from-red-500 to-pink-600'
@@ -54,11 +54,21 @@ export default function DemoPage() {
       id: 'deep-darshan',
       name: 'Deep Darshan Traders Pvt. Ltd.',
       description: 'Business trading and supply chain management assistant',
-      facebookUrl: 'https://www.facebook.com/deepdarshantraders',
-      messengerUrl: 'https://m.me/deepdarshantraders',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61580946694935',
+      messengerUrl: 'https://m.me/61580946694935',
       youtubeVideo: null,
       features: ['Product catalog', 'Price inquiries', 'Order processing', 'Supply chain info'],
       color: 'from-orange-500 to-yellow-600'
+    },
+    {
+      id: 'sagarmatha-investments',
+      name: 'Sagarmatha Investments',
+      description: 'Investment consultation and financial planning assistant',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
+      messengerUrl: 'https://m.me/61579893515630',
+      youtubeVideo: null,
+      features: ['Investment advice', 'Portfolio management', 'Financial planning', 'Market analysis'],
+      color: 'from-purple-500 to-indigo-600'
     }
   ];
 
@@ -67,9 +77,9 @@ export default function DemoPage() {
       'from-blue-500 to-purple-600': 'bg-gradient-to-r from-blue-500 to-purple-600',
       'from-green-500 to-teal-600': 'bg-gradient-to-r from-green-500 to-teal-600',
       'from-red-500 to-pink-600': 'bg-gradient-to-r from-red-500 to-pink-600',
-      'from-orange-500 to-yellow-600': 'bg-gradient-to-r from-orange-500 to-yellow-600'
+      'from-orange-500 to-yellow-600': 'bg-gradient-to-r from-orange-500 to-yellow-600',
+      'from-purple-500 to-indigo-600': 'bg-gradient-to-r from-purple-500 to-indigo-600'
     };
-
 
     return colorMap[color] || 'bg-gradient-to-r from-blue-500 to-purple-600';
   };
