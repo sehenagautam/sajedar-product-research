@@ -1,6 +1,8 @@
 import { ecommerceChatbotCaseStudy } from './ecommerce-chatbot-case-study';
 import { healthcareAIAssistantCaseStudy } from './healthcare-ai-assistant-case-study';
 import { hospitalityAutomationCaseStudy } from './hospitality-automation-case-study';
+import { ashwiFurnituresCaseStudy } from './ashwi-furnitures-case-study';
+import { conversationalAiNepalEcosystemCaseStudy } from './conversational-ai-nepal-ecosystem-2025';
 
 export interface CaseStudy {
   slug: string;
@@ -15,6 +17,8 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+  conversationalAiNepalEcosystemCaseStudy,
+  ashwiFurnituresCaseStudy,
   ecommerceChatbotCaseStudy,
   healthcareAIAssistantCaseStudy,
   hospitalityAutomationCaseStudy,
