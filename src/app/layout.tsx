@@ -18,17 +18,21 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sajedar.com'),
   title: {
-    default: 'Sajedar - AI Business Automation & Chatbots',
+    default: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
     template: '%s | Sajedar'
   },
-  description: 'Sajedar builds AI business automation and custom chatbots that increase revenue, reduce costs, and improve customer experience. Get your custom AI chatbot today.',
+  description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement. Free setup, no coding required.',
   keywords: [
-    'Sajedar', 'AI chatbot', 'custom chatbot', 'business automation', 
+    'facebook ai chatbot', 'facebook messenger chatbot', 'ai chatbot for facebook messenger',
+    'facebook messenger ai chatbot', 'how to create chatbot in messenger', 'connect chatbot to facebook messenger',
+    'chatbot facebook messenger free', 'facebook messenger chatbot tutorial', 'how to make chatbot for facebook messenger',
+    'best ai chatbot for facebook messenger', 'free ai chatbot for facebook messenger', 'facebook chatbot',
+    'messenger chatbot', 'facebook messenger bot', 'ai chatbot facebook messenger deutsch',
+    'open ai chatbot on facebook messenger', 'facebook ai chat bot', 'chatbots on facebook',
+    'Sajedar', 'AI chatbot builder', 'custom chatbot', 'business automation', 
     'ai business automation', 'chatbots for business', 'ai powered sales',
     'ai sales automation', 'sales automation with ai', 'ai agents',
-    'customer support automation', 'conversational AI', 'facebook messenger bot',
-    'whatsapp bot', 'agentic ai', 'sajedar ai', 'sajedar chatbots',
-    'sajedar business automation'
+    'customer support automation', 'conversational AI', 'whatsapp bot', 'agentic ai'
   ],
   authors: [{ name: 'Sajedar Team' }],
   creator: 'Sajedar',
@@ -42,8 +46,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://sajedar.com',
-    title: 'Sajedar - AI Business Automation & Chatbots',
-    description: 'Sajedar builds AI business automation and custom chatbots that increase revenue, reduce costs, and improve customer experience.',
+    title: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
+    description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement.',
     siteName: 'Sajedar',
     images: [
       {
@@ -58,8 +62,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sajedar',
     creator: '@sajedar',
-    title: 'Sajedar - AI Business Automation & Chatbots',
-    description: 'Sajedar builds AI business automation and custom chatbots that increase revenue, reduce costs, and improve customer experience.',
+    title: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
+    description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement.',
     images: ['/sajedar-logo.png'],
   },
   robots: {

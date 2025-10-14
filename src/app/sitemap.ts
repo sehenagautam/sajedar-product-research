@@ -64,6 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     { 
+      url: `${base}/facebook-messenger-chatbot-tutorial`, 
+      priority: 0.95, 
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    { 
       url: `${base}/PrivacyPolicy`, 
       priority: 0.5, 
       changeFrequency: 'yearly' as const,

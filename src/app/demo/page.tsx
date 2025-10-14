@@ -3,18 +3,31 @@ import Link from 'next/link';
 import { DemoCard } from '../../components/DemoCard';
 
 export const metadata = {
-  title: 'Facebook Messenger AI Demos',
-  description: 'Try live Facebook Messenger chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, Deep Darshan Traders, and Sagarmatha Investments. Direct messenger links and demo videos.',
+  title: 'Live Facebook Messenger AI Chatbot Demos | Try AI Chatbots',
+  description: 'Try live Facebook Messenger AI chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, Deep Darshan Traders, and Sagarmatha Investments. See how AI chatbots work on Facebook Messenger with real examples.',
+  keywords: [
+    'facebook messenger ai chatbot',
+    'facebook messenger chatbot examples',
+    'live facebook chatbot demo',
+    'ai chatbot for facebook messenger',
+    'facebook ai chatbot demo',
+    'messenger chatbot examples',
+    'facebook messenger chatbot tutorial',
+    'how to create chatbot in messenger',
+    'facebook chatbot demo',
+    'messenger ai chatbot examples'
+  ],
   alternates: { canonical: 'https://sajedar.com/demo' },
   openGraph: {
     type: 'website',
-    title: 'Facebook Messenger AI Demos | Sajedar',
-    description: 'Live demos of AI chatbots across multiple businesses. Direct messenger links and videos.',
+    title: 'Live Facebook Messenger AI Chatbot Demos | Sajedar',
+    description: 'Try live Facebook Messenger AI chatbots. See real examples of AI chatbots working on Facebook Messenger across different businesses.',
+    url: 'https://sajedar.com/demo',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Facebook Messenger AI Demos | Sajedar',
-    description: 'Live demos of AI chatbots across multiple businesses. Direct messenger links and videos.'
+    title: 'Live Facebook Messenger AI Chatbot Demos | Sajedar',
+    description: 'Try live Facebook Messenger AI chatbots. See real examples of AI chatbots working on Facebook Messenger across different businesses.'
   }
 }
 
