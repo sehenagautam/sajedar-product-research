@@ -9,6 +9,12 @@ import { chatbotAnalyticsTutorial } from './chatbot-analytics-tracking';
 import { chatbotSecurityTutorial } from './chatbot-security-best-practices';
 import { chatbotDeploymentTutorial } from './chatbot-deployment-production';
 import { chatbotNlpTutorial } from './chatbot-nlp-advanced';
+import { facebookMessengerChatbotEcommerce } from './facebook-messenger-chatbot-ecommerce';
+import { facebookMessengerChatbotHealthcare } from './facebook-messenger-chatbot-healthcare';
+import { facebookMessengerChatbotRealEstate } from './facebook-messenger-chatbot-real-estate';
+import { facebookMessengerChatbotEducation } from './facebook-messenger-chatbot-education';
+import { facebookMessengerChatbotBanking } from './facebook-messenger-chatbot-banking';
+import { facebookMessengerChatbotTravel } from './facebook-messenger-chatbot-travel';
 
 export const categories: TutorialCategory[] = [
   {
@@ -93,7 +99,13 @@ export const tutorials: Tutorial[] = [
   chatbotAnalyticsTutorial,
   chatbotSecurityTutorial,
   chatbotDeploymentTutorial,
-  chatbotNlpTutorial
+  chatbotNlpTutorial,
+  facebookMessengerChatbotEcommerce,
+  facebookMessengerChatbotHealthcare,
+  facebookMessengerChatbotRealEstate,
+  facebookMessengerChatbotEducation,
+  facebookMessengerChatbotBanking,
+  facebookMessengerChatbotTravel
 ];
 
 export function getTutorialBySlug(slug: string): Tutorial | undefined {

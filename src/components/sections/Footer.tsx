@@ -16,9 +16,10 @@ export function Footer() {
             </li>
             <li>
               <a href="/research" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Research</a>
+            </li>
             <li>
               <a href="/case-studies" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Case Studies</a>
-            </li>            </li>
+            </li>
             <li>
               <a href="/demo" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">Demo</a>
             </li>
@@ -82,6 +83,47 @@ export function Footer() {
                 </svg>
                 <span>info@sajedar.com</span>
               </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="text-center">
+          <h3 className="text-sm font-semibold leading-6 text-white mb-4">Facebook Messenger Resources</h3>
+          <ul role="list" className="space-y-3">
+            <li>
+              <Link href="/facebook-messenger" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                All Facebook Messenger Resources
+              </Link>
+            </li>
+            <li>
+              <Link href="/facebook-messenger-chatbot-tutorial" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                How to Create Facebook Messenger AI Chatbot
+              </Link>
+            </li>
+            <li>
+              <Link href="/tutorials/facebook-messenger-bot-development" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                Facebook Messenger Bot Development
+              </Link>
+            </li>
+            <li>
+              <Link href="/tutorials/connect-chatbot-to-facebook-messenger" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                Connect Chatbot to Facebook Messenger
+              </Link>
+            </li>
+            <li>
+              <Link href="/tutorials/facebook-messenger-chatbot-analytics" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                Facebook Messenger Chatbot Analytics
+              </Link>
+            </li>
+            <li>
+              <Link href="/tutorials/facebook-messenger-chatbot-for-ecommerce" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                E-commerce Facebook Messenger Chatbot
+              </Link>
+            </li>
+            <li>
+              <Link href="/tutorials/facebook-messenger-chatbot-for-healthcare" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                Healthcare Facebook Messenger Chatbot
+              </Link>
             </li>
           </ul>
         </div>
