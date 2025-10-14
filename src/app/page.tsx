@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import {
   HeroSection,
   AgenticFlowDiagram,
+  MediaInMotionSection,
   FeaturesSection,
   DataCollectionSection,
   FacebookIntegrationSection,
@@ -77,6 +78,9 @@ export default function Home() {
         </h2>
         <AgenticFlowDiagram />
       </section>
+
+      {/* Media in Motion Section */}
+      <MediaInMotionSection />
 
       {/* Chat Demo Section */}
       <ChatDemoSection />
