@@ -83,7 +83,7 @@ export default function Home() {
       <MediaInMotionSection />
 
       {/* Chat Demo Section */}
-      <ChatDemoSection />
+      {/*<ChatDemoSection /> */}
 
       {/* Features Section */}
       <FeaturesSection />
