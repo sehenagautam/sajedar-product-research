@@ -106,22 +106,22 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/tutorials/connect-chatbot-to-facebook-messenger" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+              <Link href="/tutorials/facebook-messenger-bot-development" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
                 Connect Chatbot to Facebook Messenger
               </Link>
             </li>
             <li>
-              <Link href="/tutorials/facebook-messenger-chatbot-analytics" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+              <Link href="/tutorials/chatbot-analytics-tracking" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
                 Facebook Messenger Chatbot Analytics
               </Link>
             </li>
             <li>
-              <Link href="/tutorials/facebook-messenger-chatbot-for-ecommerce" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+              <Link href="/tutorials/facebook-messenger-chatbot-ecommerce" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
                 E-commerce Facebook Messenger Chatbot
               </Link>
             </li>
             <li>
-              <Link href="/tutorials/facebook-messenger-chatbot-for-healthcare" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+              <Link href="/tutorials/facebook-messenger-chatbot-healthcare" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
                 Healthcare Facebook Messenger Chatbot
               </Link>
             </li>
