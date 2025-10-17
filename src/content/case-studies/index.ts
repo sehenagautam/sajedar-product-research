@@ -3,6 +3,7 @@ import { healthcareAIAssistantCaseStudy } from './healthcare-ai-assistant-case-s
 import { hospitalityAutomationCaseStudy } from './hospitality-automation-case-study';
 import { ashwiFurnituresCaseStudy } from './ashwi-furnitures-case-study';
 import { conversationalAiNepalEcosystemCaseStudy } from './conversational-ai-nepal-ecosystem-2025';
+import { artisanAiVsSajedarStrategicAnalysis } from './artisan-ai-vs-sajedar-strategic-analysis';
 
 export interface CaseStudy {
   slug: string;
@@ -17,6 +18,7 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+  artisanAiVsSajedarStrategicAnalysis,
   conversationalAiNepalEcosystemCaseStudy,
   ashwiFurnituresCaseStudy,
   ecommerceChatbotCaseStudy,
@@ -26,6 +28,10 @@ export const caseStudies: CaseStudy[] = [
 
 export function getAllCaseStudies(): CaseStudy[] {
   return caseStudies.sort((a, b) => b.date.getTime() - a.date.getTime());
+}
+
+export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
+  return caseStudies.find(caseStudy => caseStudy.slug === slug);
 }
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {

@@ -8,7 +8,7 @@ export const ashwiFurnituresCaseStudy = {
   duration: '2 months',
   results: ['2500% ROI on ad spend', '100 messages handled daily', 'Devanagari Nepali optimization', 'AI-generated promotional content'],
   featured: true,
-  date: new Date('2024-12-15'),
+  date: new Date('2024-10-08'),
   component: function AshwiFurnituresCaseStudy() {
     return (
       <div className="w-full bg-gradient-to-br from-amber-900/20 to-orange-900/20 border border-amber-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">

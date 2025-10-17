@@ -8,7 +8,7 @@ export const ecommerceChatbotCaseStudy = {
   duration: '3 months',
   results: ['340% increase in online sales', '85% reduction in support tickets', '92% customer satisfaction rate'],
   featured: true,
-  date: new Date('2024-09-15'),
+  date: new Date('2024-10-05'),
   component: function EcommerceChatbotCaseStudy() {
     return (
       <div className="w-full bg-gradient-to-br from-blue-900/20 to-indigo-900/20 border border-blue-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">

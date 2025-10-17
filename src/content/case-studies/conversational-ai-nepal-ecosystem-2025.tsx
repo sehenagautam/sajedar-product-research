@@ -8,7 +8,7 @@ export const conversationalAiNepalEcosystemCaseStudy = {
   duration: 'Ongoing',
   results: ['95.6% disease ID accuracy in agriculture', '90% query time reduction in banking', '40% yield increase in farming', '80% guest query automation in tourism'],
   featured: true,
-  date: new Date('2025-01-25'),
+  date: new Date('2024-10-12'),
   component: function ConversationalAiNepalEcosystemCaseStudy() {
     return (
       <div className="w-full bg-gradient-to-br from-indigo-900/20 to-purple-900/20 border border-indigo-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">

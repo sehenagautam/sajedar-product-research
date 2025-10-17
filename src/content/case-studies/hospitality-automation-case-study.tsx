@@ -8,7 +8,7 @@ export const hospitalityAutomationCaseStudy = {
   duration: '5 months',
   results: ['50% increase in guest satisfaction', '30% reduction in operational costs', '95% automation rate'],
   featured: false,
-  date: new Date('2024-07-10'),
+  date: new Date('2024-10-03'),
   component: function HospitalityAutomationCaseStudy() {
     return (
       <div className="w-full bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">

@@ -8,7 +8,7 @@ export const healthcareAIAssistantCaseStudy = {
   duration: '4 months',
   results: ['60% reduction in appointment no-shows', '45% faster patient triage', '98% accuracy in symptom analysis'],
   featured: true,
-  date: new Date('2024-08-20'),
+  date: new Date('2024-10-17'),
   component: function HealthcareAIAssistantCaseStudy() {
     return (
       <div className="w-full bg-gradient-to-br from-emerald-900/20 to-teal-900/20 border border-emerald-500/30 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
