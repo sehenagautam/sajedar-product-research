@@ -4,6 +4,15 @@ import { hospitalityAutomationCaseStudy } from './hospitality-automation-case-st
 import { ashwiFurnituresCaseStudy } from './ashwi-furnitures-case-study';
 import { conversationalAiNepalEcosystemCaseStudy } from './conversational-ai-nepal-ecosystem-2025';
 import { artisanAiVsSajedarStrategicAnalysis } from './artisan-ai-vs-sajedar-strategic-analysis';
+import { sajedarVsSynapseTechnologiesComparison } from './sajedar-vs-synapse-technologies-comparison';
+import { sajedarVsPlexBitInfosystemsComparison } from './sajedar-vs-plex-bit-infosystems-comparison';
+import { sajedarVsCubitComparison } from './sajedar-vs-cubit-comparison';
+import { sajedarVsAwecodeComparison } from './sajedar-vs-awecode-comparison';
+import { sajedarVsHaptikComparison } from './sajedar-vs-haptik-comparison';
+import { sajedarVsYellowAiComparison } from './sajedar-vs-yellow-ai-comparison';
+import { sajedarVsLeenaAiComparison } from './sajedar-vs-leena-ai-comparison';
+import { sajedarVsDriftComparison } from './sajedar-vs-drift-comparison';
+import { sajedarVsCognigyComparison } from './sajedar-vs-cognigy-comparison';
 
 export interface CaseStudy {
   slug: string;
@@ -19,6 +28,15 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   artisanAiVsSajedarStrategicAnalysis,
+  sajedarVsSynapseTechnologiesComparison,
+  sajedarVsPlexBitInfosystemsComparison,
+  sajedarVsCubitComparison,
+  sajedarVsAwecodeComparison,
+  sajedarVsHaptikComparison,
+  sajedarVsYellowAiComparison,
+  sajedarVsLeenaAiComparison,
+  sajedarVsDriftComparison,
+  sajedarVsCognigyComparison,
   conversationalAiNepalEcosystemCaseStudy,
   ashwiFurnituresCaseStudy,
   ecommerceChatbotCaseStudy,
