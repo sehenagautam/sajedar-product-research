@@ -13,6 +13,7 @@ import { sajedarVsYellowAiComparison } from './sajedar-vs-yellow-ai-comparison';
 import { sajedarVsLeenaAiComparison } from './sajedar-vs-leena-ai-comparison';
 import { sajedarVsDriftComparison } from './sajedar-vs-drift-comparison';
 import { sajedarVsCognigyComparison } from './sajedar-vs-cognigy-comparison';
+import { sajedarBrandPositioningStrategy2024 } from './sajedar-brand-positioning-strategy-2024';
 
 export interface CaseStudy {
   slug: string;
@@ -27,6 +28,7 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+  sajedarBrandPositioningStrategy2024,
   artisanAiVsSajedarStrategicAnalysis,
   sajedarVsSynapseTechnologiesComparison,
   sajedarVsPlexBitInfosystemsComparison,

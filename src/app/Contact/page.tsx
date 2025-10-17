@@ -1,23 +1,43 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import ObfuscatedEmail from '../../components/ObfuscatedEmail';
 
-export const metadata = {
-  title: 'Contact Sajedar | AI Chatbots Agency',
-  description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',
-  alternates: { canonical: 'https://sajedar.com/Contact' },
-  openGraph: {
-    type: 'website',
-    title: 'Contact Sajedar | AI Chatbots Agency',
-    description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot. WhatsApp, email, and quick form available.',
-    url: 'https://sajedar.com/Contact',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Contact Sajedar | AI Chatbots Agency',
-    description: 'Get in touch with Sajedar to design, build, and support your custom AI chatbot.',
-  },
-};
-
 export default function Contact() {
+  const searchParams = useSearchParams();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  useEffect(() => {
+    // Prefill form data from URL parameters
+    const source = searchParams.get('source');
+    const score = searchParams.get('score');
+    const business = searchParams.get('business');
+    const type = searchParams.get('type');
+    const email = searchParams.get('email');
+    const phone = searchParams.get('phone');
+
+    if (source === 'readiness' && score) {
+      const readinessMessage = `Hi! I just completed the Sajedar Automation Readiness Assessment and scored ${score}%.
+
+Business: ${business || 'Not specified'}
+Type: ${type || 'Not specified'}
+Email: ${email || 'Not provided'}
+Phone: ${phone || 'Not provided'}
+
+I'm interested in discussing automation solutions for my business. Please contact me to schedule a consultation.`;
+
+      setFormData({
+        name: business || '',
+        email: email || '',
+        message: readinessMessage
+      });
+    }
+  }, [searchParams]);
   const contactJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
@@ -54,18 +74,60 @@ export default function Contact() {
     ]
   } as const;
 
+  const source = searchParams.get('source');
+  const score = searchParams.get('score');
+
   return (
     <main className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center px-4 py-24">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="max-w-2xl w-full bg-[#23243a] bg-opacity-90 rounded-3xl shadow-xl p-8 border border-white/10">
+        {source === 'readiness' && score && (
+          <div className="mb-6 p-4 bg-gradient-to-r from-emerald-500/20 to-green-500/20 border border-emerald-500/30 rounded-lg">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">📊</span>
+              <h2 className="text-lg font-semibold text-emerald-300">Automation Readiness Assessment Complete!</h2>
+            </div>
+            <p className="text-sm text-gray-300">
+              Your score: <span className="font-bold text-emerald-400">{score}%</span> - 
+              {parseInt(score) >= 71 ? ' Automation-Ready' : parseInt(score) >= 41 ? ' Emerging Stage' : ' Manual-First Stage'}
+            </p>
+            <p className="text-xs text-gray-400 mt-1">
+              We've prefilled your information below. Feel free to modify the message before sending.
+            </p>
+          </div>
+        )}
+        
         <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6 text-center">Contact Us</h1>
         <section className="text-gray-300 text-base leading-relaxed flex flex-col gap-6">
           <form className="flex flex-col gap-4" action="https://formspree.io/f/xqaqogoj" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow" />
-            <input type="email" name="email" placeholder="Your Email" required className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow" />
-            <textarea name="message" placeholder="Your Message" required className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow min-h-[100px] resize-none" />
-            <button type="submit" className="bg-gradient-to-br from-emerald-400 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition text-lg">Send Message</button>
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Your Name" 
+              value={formData.name}
+              onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+              required 
+              className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow" 
+            />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Your Email" 
+              value={formData.email}
+              onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+              required 
+              className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow" 
+            />
+            <textarea 
+              name="message" 
+              placeholder="Your Message" 
+              value={formData.message}
+              onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+              required 
+              className="bg-[#18181b] bg-opacity-80 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition shadow min-h-[100px] resize-none" 
+            />
+            <button type="submit" className="bg-gradient-to-br from-emerald-400 to-emerald-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:opacity-90 transition text-lg">
+              {source === 'readiness' ? 'Send Automation Consultation Request' : 'Send Message'}
+            </button>
           </form>
           <div className="mt-8 text-center">
             <div className="mb-2">Or reach us at:</div>

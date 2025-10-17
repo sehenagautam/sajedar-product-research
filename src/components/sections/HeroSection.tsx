@@ -54,6 +54,16 @@ export function HeroSection() {
               </Link>
             </div>
 
+            {/* Automation Readiness Link */}
+            <div className="text-center">
+              <Link 
+                href="/readiness" 
+                className="text-emerald-400 hover:text-emerald-300 transition-colors duration-200 underline decoration-emerald-400/50 hover:decoration-emerald-300/70 underline-offset-4"
+              >
+                Calculate your automation readiness score →
+              </Link>
+            </div>
+
             {/* Trust Indicators */}
             <div className="flex items-center gap-8 text-gray-400">
               <div className="flex items-center gap-2">
