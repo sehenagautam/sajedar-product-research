@@ -10,6 +10,7 @@ import {
   HeroSection,
   AgenticFlowDiagram,
   MediaInMotionSection,
+  VoiceCinematicSection,
   FeaturesSection,
   DataCollectionSection,
   FacebookIntegrationSection,
@@ -81,6 +82,9 @@ export default function Home() {
 
       {/* Media in Motion Section */}
       <MediaInMotionSection />
+
+      {/* Voice Cinematic Section */}
+      <VoiceCinematicSection />
 
       {/* Chat Demo Section */}
       {/*<ChatDemoSection /> */}

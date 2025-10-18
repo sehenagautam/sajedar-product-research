@@ -1,0 +1,121 @@
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// Voice Wave Component
+const VoiceWave: React.FC<{ width: number; height: number }> = ({ width, height }) => {
+  const bars = Array.from({ length: 20 }, (_, i) => ({
+    id: i,
+    height: Math.random() * 100,
+    delay: Math.random() * 1000,
+  }));
+
+  return (
+    <div className="flex items-center justify-center gap-1" style={{ width, height }}>
+      {bars.map((bar) => (
+        <motion.div
+          key={bar.id}
+          className="bg-emerald-500 rounded-full"
+          style={{
+            width: '4px',
+            height: `${Math.max(8, bar.height)}px`,
+          }}
+          animate={{
+            scaleY: [0.3, 1, 0.3],
+            opacity: [0.7, 1, 0.7],
+          }}
+          transition={{
+            duration: 0.8 + Math.random() * 0.4,
+            repeat: Infinity,
+            delay: bar.delay / 1000,
+            ease: "easeInOut"
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
+// Message Square Text Icon
+const MessageSquareText: React.FC<{ size: number }> = ({ size }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    <path d="M13 8H7"/>
+    <path d="M17 12H7"/>
+  </svg>
+);
+
+// CTA Component
+const CTA: React.FC<{ label: string }> = ({ label }) => (
+  <Link
+    href="/readiness"
+    className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+  >
+    <span>{label}</span>
+    <span className="text-lg">→</span>
+  </Link>
+);
+
+// Gradient Backdrop Component
+const GradientBackdrop: React.FC = () => (
+  <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/30 via-transparent to-emerald-100/20 pointer-events-none" />
+);
+
+// Frame Component
+const Frame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] overflow-hidden">
+    {children}
+  </section>
+);
+
+export function VoiceCinematicSection() {
+  return (
+    <Frame>
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="flex items-center justify-center min-h-screen">
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full max-w-4xl"
+          >
+            <div className="flex flex-col items-center gap-6">
+              {/* Text above the conversation */}
+              <div className="text-center space-y-2">
+                <h2
+                  className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                  style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+                >
+                  Your chatbot <span className="text-gray-400">listens…</span>
+                </h2>
+                
+                <h2
+                  className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                  style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+                >
+                  …and <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">speaks back.</span>
+                </h2>
+              </div>
+
+              {/* VoiceWave */}
+              <VoiceWave width={480} height={56} />
+              
+              {/* Conversation Demo */}
+              <div className="w-full max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 text-left font-medium flex flex-col justify-center">
+                <div className="flex items-center gap-3 text-gray-300">
+                  <MessageSquareText size={16} />
+                  <span>You: "Where's my order?"</span>
+                </div>
+                <div className="mt-2 rounded-xl bg-emerald-500/20 p-3 text-white">
+                  Sajedar Voice AI: "Let me check that for you… Order #12345 arrives tomorrow."
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </Frame>
+  );
+}

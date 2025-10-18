@@ -181,7 +181,7 @@ export const sajedarBrandPositioningStrategy2024 = {
                 </div>
                 <div className="p-4 bg-blue-500/10 rounded-lg">
                   <h4 className="font-semibold text-blue-300 mb-2">Containment Rate Goal</h4>
-                  <p className="text-sm text-gray-300">>70%</p>
+                  <p className="text-sm text-gray-300">&gt;70%</p>
                   <p className="text-xs text-blue-300 mt-1">Message Hook: "Let your AI handle the heavy lifting."</p>
                 </div>
               </div>

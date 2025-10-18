@@ -1,6 +1,7 @@
 export { HeroSection } from './HeroSection';
 export { AgenticFlowDiagram } from './AgenticFlowDiagram';
 export { MediaInMotionSection } from './MediaInMotionSection';
+export { VoiceCinematicSection } from './VoiceCinematicSection';
 export { FeaturesSection } from './FeaturesSection';
 export { DataCollectionSection } from './DataCollectionSection';
 export { FacebookIntegrationSection } from './FacebookIntegrationSection';
