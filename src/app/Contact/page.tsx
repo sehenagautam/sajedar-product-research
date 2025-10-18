@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import ObfuscatedEmail from '../../components/ObfuscatedEmail';
 
-export default function Contact() {
+function ContactForm() {
   const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: '',
@@ -143,5 +143,27 @@ I'm interested in discussing automation solutions for my business. Please contac
         </section>
       </div>
     </main>
+  );
+}
+
+export default function Contact() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center px-4 py-24">
+        <div className="max-w-2xl w-full bg-[#23243a] bg-opacity-90 rounded-3xl shadow-xl p-8 border border-white/10">
+          <div className="animate-pulse">
+            <div className="h-8 bg-gray-700 rounded mb-6"></div>
+            <div className="space-y-4">
+              <div className="h-12 bg-gray-700 rounded"></div>
+              <div className="h-12 bg-gray-700 rounded"></div>
+              <div className="h-24 bg-gray-700 rounded"></div>
+              <div className="h-12 bg-gray-700 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    }>
+      <ContactForm />
+    </Suspense>
   );
 } 
