@@ -10,6 +10,7 @@ import {
   HeroSection,
   AgenticFlowDiagram,
   MediaInMotionSection,
+  ImageRecognitionSection,
   VoiceCinematicSection,
   FeaturesSection,
   DataCollectionSection,
@@ -81,7 +82,10 @@ export default function Home() {
       </section>
 
       {/* Media in Motion Section */}
-      <MediaInMotionSection />
+      {/* <MediaInMotionSection /> */}
+
+      {/* Image Recognition Section */}
+      <ImageRecognitionSection />
 
       {/* Voice Cinematic Section */}
       <VoiceCinematicSection />
@@ -101,8 +105,8 @@ export default function Home() {
       {/* Business Dashboard Section */}
       <BusinessDashboardSection />
 
-      {/* Image Chat Section */}
-      <ImageChatSection />
+      {/* Image Chat Section 
+      <ImageChatSection /> */}
 
       {/* Escalation Notifications Section */}
       <EscalationNotificationsSection />
@@ -122,8 +126,8 @@ export default function Home() {
       {/* Sales Tactics Section */}
       <SalesTacticsSection />
 
-      {/* Voice Integration Section */}
-      <VoiceIntegrationSection />
+      {/* Voice Integration Section 
+      <VoiceIntegrationSection /> */}
 
       {/* Multi-Lingual Section */}
       <MultiLingualSection />
