@@ -133,7 +133,7 @@ export default function Home() {
       <IntelligentProfilingSection />
 
       {/* AI As a Salesman Section */}
-      {/* <AIAsASalesman /> */}
+      <AIAsASalesman />
 
       {/* Sales Tactics Section */}
       <SalesTacticsSection />
