@@ -25,3 +25,4 @@ export { Footer } from './Footer';
 export { TestimonialsSection } from './TestimonialsSection';
 export { PartnershipsSection } from './PartnershipsSection';
 export { MultilingualSection } from './MultilingualSection';
+export { KeyFeaturesSection } from './KeyFeaturesSection';

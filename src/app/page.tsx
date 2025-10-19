@@ -30,6 +30,7 @@ import {
   N8nWorkflowSection,
   PartnershipsSection,
   TestimonialsSection,
+  KeyFeaturesSection,
   FAQSection,
   ContactSection,
   Footer
@@ -98,8 +99,8 @@ export default function Home() {
       {/* Facebook Integration Section */}
       <FacebookIntegrationSection />
 
-      {/* Business Dashboard Section */}
-      <BusinessDashboardSection />
+      {/* Business Dashboard Section 
+      <BusinessDashboardSection /> */}
 
       {/* Image Chat Section 
       <ImageChatSection /> */}
@@ -107,11 +108,11 @@ export default function Home() {
       {/* Escalation Notifications Section */}
       <EscalationNotificationsSection />
 
-      {/* Brand Voice Section */}
-      <BrandVoiceSection />
+      {/* Brand Voice Section 
+      <BrandVoiceSection /> */}
 
-      {/* Knowledge Integration Section */}
-      <KnowledgeIntegrationSection />
+      {/* Knowledge Integration Section 
+      <KnowledgeIntegrationSection /> */}
 
       {/* AI Learning Section */}
       {/* <AILearningSection /> */}
@@ -230,6 +231,9 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <TestimonialsSection />
+
+      {/* Key Features Section */}
+      <KeyFeaturesSection />
 
       {/* Chat Tracking Dashboard Section */}
       <ChatDashboard />
