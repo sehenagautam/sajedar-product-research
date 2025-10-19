@@ -35,89 +35,38 @@ export default function AIAsASalesman() {
           </p>
         </div>
 
-        {/* Core Visual: static orb with flowing rays and labeled pointers */}
-        <div className="relative mx-auto flex h-80 w-80 items-center justify-center">
-          <svg viewBox="0 0 400 400" className="absolute h-full w-full">
-            <defs>
-              <linearGradient id="rays" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#10B981" />
-                <stop offset="100%" stopColor="#38BDF8" />
-              </linearGradient>
-            </defs>
-
-            {/* Central orb with glow */}
-            <motion.circle
-              cx="200"
-              cy="200"
-              r="80"
-              fill="url(#rays)"
-              opacity="0.2"
-              animate={{ r: [75, 80, 75] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        {/* Core Visual: AI Salesman Image */}
+        <div className="relative mx-auto flex flex-col items-center justify-center">
+          {/* Central Image */}
+          <div className="relative mb-12">
+            <img
+              src="/ai-as-a-salesman.png"
+              alt="AI Salesman"
+              className="w-80 h-80 object-contain rounded-3xl"
             />
+          </div>
 
-            {/* Pointer rays */}
-            {[...Array(7)].map((_, i) => {
-              const angle = (i / 7) * 2 * Math.PI;
-              const x1 = 200 + Math.cos(angle) * 60;
-              const y1 = 200 + Math.sin(angle) * 60;
-              const x2 = 200 + Math.cos(angle) * 130 - 10; // Half the distance
-              const y2 = 200 + Math.sin(angle) * 130 - 7.5; // Half the distance
-              return (
-                <line
-                  key={i}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
-                  stroke="url(#rays)"
-                  strokeWidth="6"
-                  strokeOpacity="0.7"
-                  strokeLinecap="round"
-                />
-              );
-            })}
-
-            {/* Dedicated pointer line for Objection tag */}
-            <line
-              x1="200"
-              y1="120"
-              x2="200"
-              y2="40"
-              stroke="url(#rays)"
-              strokeWidth="2"
-              strokeOpacity="0.9"
-            />
-          </svg>
-
-          {/* Central orb element */}
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0.7 }}
-            animate={{ scale: [0.9, 1, 0.9], opacity: [0.7, 1, 0.7] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="relative h-28 w-28 rounded-full bg-gradient-to-br from-emerald-300 to-sky-400 shadow-[0_0_40px_10px_rgba(56,189,248,0.2)]"
-          >
-            <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.8),transparent_60%)]" />
-          </motion.div>
-
-          {/* Floating tactic tags */}
-          {['Objection','Upsell','Urgency','Proof','Commit','Value','Bundle'].map((label,i)=>{
-            const angle=(i/7)*2*Math.PI;
-            const x=200+Math.cos(angle)*200 - 20; // Back to previous distance, shifted left
-            const y=200+Math.sin(angle)*200 - 15; // Back to previous distance, shifted up
-            return(
-              <motion.span
+          {/* Apple-style Tactic Tags */}
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl">
+            {['Objection', 'Upsell', 'Urgency', 'Proof', 'Commit', 'Value', 'Bundle'].map((label, i) => (
+              <motion.div
                 key={label}
-                initial={{opacity:0,y:10}}
-                animate={{opacity:1,y:0}}
-                transition={{delay:i*0.1}}
-                className="absolute text-sm font-medium text-gray-300 transform -translate-x-1/2 -translate-y-1/2"
-                style={{left:`${x}px`,top:`${y}px`}}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1, duration: 0.6, ease: "easeOut" }}
+                className="group relative"
               >
-                {label}
-              </motion.span>
-            )
-          })}
+                <div className="px-6 py-3 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20">
+                  <span className="text-sm font-medium text-white tracking-wide">
+                    {label}
+                  </span>
+                </div>
+                
+                {/* Subtle glow effect on hover */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-400/20 to-sky-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10" />
+              </motion.div>
+            ))}
+          </div>
         </div>
         </motion.div>
       </div>
