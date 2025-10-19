@@ -2,8 +2,8 @@ import React from 'react';
 
 export function FacebookIntegrationSection() {
   return (
-    <section className="w-full bg-[#23243a] py-24 px-4 flex flex-col items-center border-t border-white/10">
-      <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
+    <section className="w-full bg-[#23243a] py-12 px-4 flex flex-col items-center border-t border-white/10">
+      <div className="max-w-6xl w-full mx-auto flex flex-col gap-8">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
           <span className="text-blue-400 text-xs font-bold uppercase tracking-widest mb-2 block">
@@ -18,61 +18,61 @@ export function FacebookIntegrationSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+        <div className="grid lg:grid-cols-2 gap-8 items-center w-full">
           {/* Left Side - Features */}
-          <div className="space-y-8">
-            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="space-y-4">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-4 backdrop-blur-sm">
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">24/7 Instant Response</h3>
-                  <p className="text-gray-300">Your chatbot responds immediately to customer messages, even when your team is offline. No more waiting for business hours.</p>
+                  <h3 className="text-lg font-semibold text-white mb-1">24/7 Instant Response</h3>
+                  <p className="text-gray-300 text-sm">Your chatbot responds immediately to customer messages, even when your team is offline. No more waiting for business hours.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-4 backdrop-blur-sm">
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Seamless Facebook Integration</h3>
-                  <p className="text-gray-300">Connect directly to your Facebook page with one-click setup. Customers can start conversations naturally through Messenger.</p>
+                  <h3 className="text-lg font-semibold text-white mb-1">Seamless Facebook Integration</h3>
+                  <p className="text-gray-300 text-sm">Connect directly to your Facebook page with one-click setup. Customers can start conversations naturally through Messenger.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-4 backdrop-blur-sm">
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Lead Generation & Qualification</h3>
-                  <p className="text-gray-300">Automatically capture leads from Facebook conversations and qualify them based on their responses and engagement level.</p>
+                  <h3 className="text-lg font-semibold text-white mb-1">Lead Generation & Qualification</h3>
+                  <p className="text-gray-300 text-sm">Automatically capture leads from Facebook conversations and qualify them based on their responses and engagement level.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-gradient-to-r from-blue-900/20 to-transparent border border-blue-500/30 rounded-xl p-4 backdrop-blur-sm">
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Smart Handoff to Humans</h3>
-                  <p className="text-gray-300">When conversations require human attention, seamlessly transfer to your team with full context and conversation history.</p>
+                  <h3 className="text-lg font-semibold text-white mb-1">Smart Handoff to Humans</h3>
+                  <p className="text-gray-300 text-sm">When conversations require human attention, seamlessly transfer to your team with full context and conversation history.</p>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ export function FacebookIntegrationSection() {
               </div>
 
               {/* Messenger Chat */}
-              <div className="p-4 bg-gray-50 h-96 flex flex-col">
+              <div className="p-4 bg-gray-50 h-64 flex flex-col">
                 {/* Chat Messages */}
                 <div className="flex-1 space-y-4 overflow-y-auto">
                   {/* Customer Message */}
@@ -182,15 +182,17 @@ export function FacebookIntegrationSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-900/30 to-blue-800/30 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Engage Customers 24/7?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+        <div className="text-center mt-8">
+          <div className="bg-gradient-to-r from-blue-900/30 to-blue-800/30 border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <h3 className="text-xl font-bold text-white mb-3">Ready to Engage Customers 24/7?</h3>
+            <p className="text-gray-300 mb-4 max-w-2xl mx-auto text-sm">
               Connect your chatbot to Facebook and start engaging customers instantly. 
               Never miss another opportunity to convert visitors into customers.
             </p>
-            <a href="/?message=I want to connect my Facebook page to a chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Connect to Facebook</a>
-            <a href="/demo" className="px-8 py-4 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">See Live Demo</a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="/?message=I want to connect my Facebook page to a chatbot.#contact" className="px-6 py-3 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Connect to Facebook</a>
+              <a href="/demo" className="px-6 py-3 bg-blue-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">See Live Demo</a>
+            </div>
           </div>
         </div>
       </div>

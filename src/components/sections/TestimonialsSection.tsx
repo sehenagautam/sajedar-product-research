@@ -101,7 +101,12 @@ export function TestimonialsSection() {
           className="w-12 h-12 rounded-full object-cover mr-4"
         />
         <div>
-          <h4 className="text-white font-semibold text-sm">{testimonial.name}</h4>
+          <h4 
+            className="text-white font-semibold text-sm"
+            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+          >
+            {testimonial.name}
+          </h4>
           <p className="text-gray-400 text-xs">{testimonial.role}</p>
           <p className="text-emerald-400 text-xs font-medium">{testimonial.company}</p>
         </div>
@@ -115,7 +120,10 @@ export function TestimonialsSection() {
         ))}
       </div>
       
-      <blockquote className="text-gray-300 text-sm leading-relaxed">
+      <blockquote 
+        className="text-gray-300 text-sm leading-relaxed"
+        style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+      >
         "{testimonial.quote}"
       </blockquote>
     </div>
@@ -129,10 +137,13 @@ export function TestimonialsSection() {
           <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
             Client Success Stories
           </span>
-          <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            What Our <span className="text-emerald-400">Clients Say</span>
+          <h2 
+            className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-2"
+            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+          >
+            <span className="text-gray-400">What Our</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Clients Say</span>
           </h2>
-          <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-6">
             Discover how businesses across different industries have transformed their customer engagement 
             with Sajedar's AI-powered solutions. Real results from real clients.
           </p>
@@ -158,31 +169,79 @@ export function TestimonialsSection() {
         {/* Stats Section */}
         <div className="grid md:grid-cols-4 gap-8 mt-16">
           <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-400 mb-2">98%</div>
-            <div className="text-gray-300 text-sm">Client Satisfaction</div>
+            <div 
+              className="text-4xl font-bold text-emerald-400 mb-2"
+              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              98%
+            </div>
+            <div 
+              className="text-gray-300 text-sm"
+              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              Client Satisfaction
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-400 mb-2">24/7</div>
-            <div className="text-gray-300 text-sm">AI Support</div>
+            <div 
+              className="text-4xl font-bold text-emerald-400 mb-2"
+              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              24/7
+            </div>
+            <div 
+              className="text-gray-300 text-sm"
+              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              AI Support
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-400 mb-2">300%</div>
-            <div className="text-gray-300 text-sm">Engagement Increase</div>
+            <div 
+              className="text-4xl font-bold text-emerald-400 mb-2"
+              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              300%
+            </div>
+            <div 
+              className="text-gray-300 text-sm"
+              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              Engagement Increase
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-emerald-400 mb-2">5+</div>
-            <div className="text-gray-300 text-sm">Happy Clients and counting...</div>
+            <div 
+              className="text-4xl font-bold text-emerald-400 mb-2"
+              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              5+
+            </div>
+            <div 
+              className="text-gray-300 text-sm"
+              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              Happy Clients and counting...
+            </div>
           </div>
         </div>
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-emerald-900/30 to-purple-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Join Our Success Stories?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Let Sajedar transform your business with AI-powered customer engagement. 
-              Join the growing list of satisfied clients who have revolutionized their operations.
-            </p>
+          <h3 
+            className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4"
+            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+          >
+            <span className="text-gray-400">Ready to Join Our</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Success Stories?</span>
+          </h3>
+          <p 
+            className="text-gray-300 mb-6 max-w-2xl mx-auto text-lg"
+            style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+          >
+            Let Sajedar transform your business with AI-powered customer engagement. 
+            Join the growing list of satisfied clients who have revolutionized their operations.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/?message=I want to start my AI chatbot journey.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Start Your Journey</a>
             <a href="/?message=Please share relevant AI chatbot case studies.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">View Case Studies</a>
           </div>
