@@ -26,3 +26,5 @@ export { TestimonialsSection } from './TestimonialsSection';
 export { PartnershipsSection } from './PartnershipsSection';
 export { MultilingualSection } from './MultilingualSection';
 export { KeyFeaturesSection } from './KeyFeaturesSection';
+export { IntegrationSection } from './IntegrationSection';
+export { AutomationHeroSection } from './AutomationHeroSection';

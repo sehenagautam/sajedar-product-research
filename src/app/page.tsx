@@ -31,6 +31,8 @@ import {
   PartnershipsSection,
   TestimonialsSection,
   KeyFeaturesSection,
+  IntegrationSection,
+  AutomationHeroSection,
   FAQSection,
   ContactSection,
   Footer
@@ -90,14 +92,17 @@ export default function Home() {
       {/* Chat Demo Section */}
       {/*<ChatDemoSection /> */}
 
+      {/* Integration Section */}
+      <IntegrationSection />
+
       {/* Features Section */}
       <FeaturesSection />
 
-      {/* Data Collection & Sales Funneling Section */}
-      <DataCollectionSection />
+      {/* Data Collection & Sales Funneling Section 
+      <DataCollectionSection /> */}
 
-      {/* Facebook Integration Section */}
-      <FacebookIntegrationSection />
+      {/* Facebook Integration Section 
+      <FacebookIntegrationSection /> */}
 
       {/* Business Dashboard Section 
       <BusinessDashboardSection /> */}
@@ -105,8 +110,8 @@ export default function Home() {
       {/* Image Chat Section 
       <ImageChatSection /> */}
 
-      {/* Escalation Notifications Section */}
-      <EscalationNotificationsSection />
+      {/* Escalation Notifications Section 
+      <EscalationNotificationsSection /> */}
 
       {/* Brand Voice Section 
       <BrandVoiceSection /> */}
@@ -176,8 +181,7 @@ export default function Home() {
       {/* n8n Workflow Section 
       <N8nWorkflowSection /> */}
 
-      {/* Partnerships Section */}
-      <PartnershipsSection />
+      
 
       {/* Multilingual Section */}
       <section className="w-full py-10 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-hidden">
@@ -229,14 +233,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
       {/* Key Features Section */}
       <KeyFeaturesSection />
 
       {/* Chat Tracking Dashboard Section */}
       <ChatDashboard />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Partnerships Section */}
+      <PartnershipsSection />
+
+      
+
+      
+
+      
 
       {/* FAQ Section */}
       <FAQSection />

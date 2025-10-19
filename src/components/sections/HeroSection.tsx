@@ -28,15 +28,26 @@ export function HeroSection() {
           {/* Left Side - Hero Content */}
           <div className="space-y-8">
             {/* Main Headline */}
-            <div>
-              <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
-                <span className="text-white">AI-Powered</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Business Automation</span> <span className="text-white">That Actually Works</span>
+            <div className="space-y-2">
+              <h1 
+                className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+              >
+                <span className="text-gray-400">AI-Powered Business</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Automation</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-                <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI chatbot that handles inquiries, 
-                books appointments, and converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">24/7 - all while you sleep.</span>
-              </p>
+              
+              <h1 
+                className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+              >
+                <span className="text-gray-400">That Actually</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Works</span>
+              </h1>
             </div>
+            
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+              <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI chatbot that handles inquiries, 
+              books appointments, and converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">24/7 - all while you sleep.</span>
+            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
