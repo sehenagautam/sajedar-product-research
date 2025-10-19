@@ -33,7 +33,7 @@ export function HeroSection() {
                 className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
-                <span className="text-gray-400">AI-Powered Business</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Automation</span>
+                <span className="text-gray-400">AI-Powered</span> <span className="text-white">Business</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Automation</span>
               </h1>
               
               <h1 
