@@ -24,6 +24,7 @@ import {
   AILearningShowcase,
   ClientProfilingSection,
   IntelligentProfilingSection,
+  AIAsASalesman,
   SalesTacticsSection,
   VoiceIntegrationSection,
   MultiLingualSection,
@@ -77,8 +78,8 @@ export default function Home() {
 
       {/* Agentic Flow Diagram Section */}
       <section className="w-full flex flex-col items-center justify-center py-20 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-x-auto">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-10 text-gray-300" style={{ fontFamily: 'DM Serif Display, serif' }}>
-          Single Agent + <span className="text-emerald-400">Dynamically Call Other Agents</span>
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10" style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}>
+          <span className="text-gray-400">Single Agent +</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Dynamically Call Other Agents</span>
         </h2>
         <AgenticFlowDiagram />
       </section>
@@ -120,7 +121,7 @@ export default function Home() {
       <KnowledgeIntegrationSection />
 
       {/* AI Learning Section */}
-      <AILearningSection />
+      {/* <AILearningSection /> */}
 
       {/* AI Learning Showcase Section */}
       <AILearningShowcase />
@@ -130,6 +131,9 @@ export default function Home() {
 
       {/* Intelligent Profiling Section */}
       <IntelligentProfilingSection />
+
+      {/* AI As a Salesman Section */}
+      {/* <AIAsASalesman /> */}
 
       {/* Sales Tactics Section */}
       <SalesTacticsSection />

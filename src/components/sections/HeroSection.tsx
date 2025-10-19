@@ -29,12 +29,12 @@ export function HeroSection() {
           <div className="space-y-8">
             {/* Main Headline */}
             <div>
-              <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight tracking-tight">
-                AI-Powered <span className="text-emerald-400">Business Automation</span> That Actually Works
+              <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight tracking-tight">
+                <span className="text-white">AI-Powered</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Business Automation</span> <span className="text-white">That Actually Works</span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-                Stop losing customers to slow responses. Get a custom AI chatbot that handles inquiries, 
-                books appointments, and converts leads 24/7 - all while you sleep.
+              <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI chatbot that handles inquiries, 
+                books appointments, and converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">24/7 - all while you sleep.</span>
               </p>
             </div>
 

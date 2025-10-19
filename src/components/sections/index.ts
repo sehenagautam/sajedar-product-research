@@ -15,6 +15,7 @@ export { AILearningSection } from './AILearningSection';
 export { default as AILearningShowcase } from './AILearningShowcase';
 export { ClientProfilingSection } from './ClientProfilingSection';
 export { default as IntelligentProfilingSection } from './IntelligentProfilingSection';
+export { default as AIAsASalesman } from './AIAsASalesman';
 export { SalesTacticsSection } from './SalesTacticsSection';
 export { VoiceIntegrationSection } from './VoiceIntegrationSection';
 export { MultiLingualSection } from './MultiLingualSection';
