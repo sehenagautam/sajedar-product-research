@@ -23,6 +23,7 @@ import {
   AILearningSection,
   AILearningShowcase,
   ClientProfilingSection,
+  IntelligentProfilingSection,
   SalesTacticsSection,
   VoiceIntegrationSection,
   MultiLingualSection,
@@ -119,13 +120,16 @@ export default function Home() {
       <KnowledgeIntegrationSection />
 
       {/* AI Learning Section */}
-      {/* <AILearningSection /> */}
+      <AILearningSection />
 
       {/* AI Learning Showcase Section */}
       <AILearningShowcase />
 
       {/* Client Profiling Section */}
-      <ClientProfilingSection />
+      {/* <ClientProfilingSection /> */}
+
+      {/* Intelligent Profiling Section */}
+      <IntelligentProfilingSection />
 
       {/* Sales Tactics Section */}
       <SalesTacticsSection />
