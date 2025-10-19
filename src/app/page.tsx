@@ -25,9 +25,9 @@ import {
   ClientProfilingSection,
   IntelligentProfilingSection,
   AIAsASalesman,
+  MultilingualSection,
   SalesTacticsSection,
   VoiceIntegrationSection,
-  MultiLingualSection,
   N8nWorkflowSection,
   PartnershipsSection,
   TestimonialsSection,
@@ -135,14 +135,15 @@ export default function Home() {
       {/* AI As a Salesman Section */}
       <AIAsASalesman />
 
+      {/* Multilingual Section */}
+      <MultilingualSection />
+
       {/* Sales Tactics Section 
       <SalesTacticsSection /> */}
 
       {/* Voice Integration Section 
       <VoiceIntegrationSection /> */}
 
-      {/* Multi-Lingual Section */}
-      <MultiLingualSection />
 
       {/* n8n Workflow Section */}
       <N8nWorkflowSection />
