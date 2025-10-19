@@ -135,8 +135,8 @@ export default function Home() {
       {/* AI As a Salesman Section */}
       <AIAsASalesman />
 
-      {/* Sales Tactics Section */}
-      <SalesTacticsSection />
+      {/* Sales Tactics Section 
+      <SalesTacticsSection /> */}
 
       {/* Voice Integration Section 
       <VoiceIntegrationSection /> */}
