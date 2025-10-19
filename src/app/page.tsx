@@ -75,13 +75,7 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Agentic Flow Diagram Section */}
-      <section className="w-full flex flex-col items-center justify-center py-20 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-x-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10" style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}>
-          <span className="text-gray-400">Single Agent +</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Dynamically Call Other Agents</span>
-        </h2>
-        <AgenticFlowDiagram />
-      </section>
+      
 
       {/* Media in Motion Section */}
       {/* <MediaInMotionSection /> */}
@@ -134,6 +128,43 @@ export default function Home() {
       {/* AI As a Salesman Section */}
       <AIAsASalesman />
 
+      {/* Agentic Flow Diagram Section */}
+      <section className="w-full flex flex-col items-center justify-center py-20 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-x-auto">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-10" style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}>
+          <span className="text-gray-400">Single Agent +</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Dynamically Call Other Agents</span>
+        </h2>
+        <AgenticFlowDiagram />
+        
+        {/* Tech Stack Section */}
+        <div className="mt-16 max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-3">
+            {[
+              { name: 'n8n', color: 'text-red-400' },
+              { name: 'Python', color: 'text-blue-400' },
+              { name: 'GPT', color: 'text-green-400' },
+              { name: 'Gemini', color: 'text-purple-400' },
+              { name: 'OCR', color: 'text-orange-400' },
+              { name: 'Facebook Graph API', color: 'text-blue-300' },
+              { name: 'Whisper', color: 'text-gray-400' },
+              { name: 'OpenAI', color: 'text-emerald-400' },
+              { name: 'LangChain', color: 'text-red-300' },
+              { name: 'Vector DB', color: 'text-indigo-400' }
+            ].map((tech, index) => (
+              <div
+                key={tech.name}
+                className={`px-3 py-1.5 rounded-full bg-gray-800/50 border border-gray-700/50 ${tech.color} font-medium text-sm`}
+                style={{ 
+                  fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif',
+                  letterSpacing: '-0.01em'
+                }}
+              >
+                {tech.name}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sales Tactics Section 
       <SalesTacticsSection /> */}
 
@@ -141,22 +172,21 @@ export default function Home() {
       <VoiceIntegrationSection /> */}
 
 
-      {/* n8n Workflow Section */}
-      <N8nWorkflowSection />
+      {/* n8n Workflow Section 
+      <N8nWorkflowSection /> */}
 
       {/* Partnerships Section */}
       <PartnershipsSection />
 
       {/* Multilingual Section */}
-      <section className="w-full py-20 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+      <section className="w-full py-10 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-blue-900/20 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto">
           {/* Country Flags Row */}
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-8">
             {['🇯🇵', '🇮🇳', '🇧🇷', '🇳🇵', '🇰🇷', '🇨🇦', '🇬🇧', '🇮🇹', '🇷🇺', '🇹🇷', '🇸🇪', '🇳🇴', '🇫🇮', '🇩🇪', '🇫🇷', '🇪🇸'].map((flag, index) => (
               <div
                 key={index}
-                className="w-12 h-12 rounded-full bg-gray-200/10 border border-gray-300/20 flex items-center justify-center hover:scale-110 transition-transform duration-300"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="w-12 h-12 rounded-full bg-gray-200/10 border border-gray-300/20 flex items-center justify-center"
               >
                 <span className="text-2xl">{flag}</span>
               </div>
@@ -164,43 +194,30 @@ export default function Home() {
           </div>
 
           {/* Main Title */}
-          <div className="text-center mb-16">
-            <div className="inline-block bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl px-8 py-4 border border-blue-400/30">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-200 tracking-tight">
-                Multilingual
-              </h2>
-            </div>
+          <div className="text-center mb-8">
+            <h2 
+              className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+            >
+              <span className="text-gray-400">Multilingual</span>
+            </h2>
           </div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              {
-                title: "Native‑Level Fluency",
-                description: "Communicate with the natural fluency and nuance of native speakers across all supported languages."
-              },
-              {
-                title: "Cultural Adaptation",
-                description: "Understand and adapt to cultural contexts, ensuring appropriate communication for each region."
-              },
-              {
-                title: "Real‑Time Translation",
-                description: "Instant, accurate translation that maintains context and meaning across language barriers."
-              },
-              {
-                title: "Dialect Recognition",
-                description: "Recognize and respond appropriately to regional dialects and linguistic variations."
-              }
+              { title: "Native‑Level Fluency" },
+              { title: "Cultural Adaptation" },
+              { title: "Real‑Time Translation" },
+              { title: "Dialect Recognition" }
             ].map((feature, index) => (
-              <div key={feature.title} className="group relative">
-                <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl p-8 border border-blue-400/20 hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
-                  <h3 className="text-xl font-semibold text-gray-200 mb-4 group-hover:text-blue-300 transition-colors duration-300">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
+              <div key={feature.title} className="text-center">
+                <h3 
+                  className="text-2xl md:text-3xl font-semibold text-white"
+                  style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+                >
+                  {feature.title}
+                </h3>
               </div>
             ))}
           </div>
