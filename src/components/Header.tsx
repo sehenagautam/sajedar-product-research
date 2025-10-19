@@ -31,9 +31,9 @@ const Header: React.FC = () => {
               />
             </div>
             <div 
-              className="text-xl font-bold" 
+              className="text-xl font-semibold tracking-tight" 
               style={{ 
-                fontFamily: 'DM Serif Display, serif',
+                fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
                 color: '#2eb447'
               }}
             >

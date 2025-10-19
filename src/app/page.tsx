@@ -32,7 +32,6 @@ import {
   TestimonialsSection,
   KeyFeaturesSection,
   IntegrationSection,
-  AutomationHeroSection,
   FAQSection,
   ContactSection,
   Footer
