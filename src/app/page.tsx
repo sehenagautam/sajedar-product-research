@@ -21,6 +21,7 @@ import {
   BrandVoiceSection,
   KnowledgeIntegrationSection,
   AILearningSection,
+  AILearningShowcase,
   ClientProfilingSection,
   SalesTacticsSection,
   VoiceIntegrationSection,
@@ -118,7 +119,10 @@ export default function Home() {
       <KnowledgeIntegrationSection />
 
       {/* AI Learning Section */}
-      <AILearningSection />
+      {/* <AILearningSection /> */}
+
+      {/* AI Learning Showcase Section */}
+      <AILearningShowcase />
 
       {/* Client Profiling Section */}
       <ClientProfilingSection />

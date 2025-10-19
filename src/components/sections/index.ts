@@ -12,6 +12,7 @@ export { EscalationNotificationsSection } from './EscalationNotificationsSection
 export { BrandVoiceSection } from './BrandVoiceSection';
 export { KnowledgeIntegrationSection } from './KnowledgeIntegrationSection';
 export { AILearningSection } from './AILearningSection';
+export { default as AILearningShowcase } from './AILearningShowcase';
 export { ClientProfilingSection } from './ClientProfilingSection';
 export { SalesTacticsSection } from './SalesTacticsSection';
 export { VoiceIntegrationSection } from './VoiceIntegrationSection';
