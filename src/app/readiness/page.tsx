@@ -25,58 +25,58 @@ interface FormData {
 
 const readinessQuestions = {
   digitalPresence: {
-    title: "Digital Presence",
-    description: "How strong is your online visibility and digital systems?",
+    title: "Digital Presence & Online Visibility",
+    description: "Are customers finding and engaging with you online?",
     questions: [
-      "Do you have a functional website or Facebook Page?",
-      "Do customers regularly message you online?",
-      "Are you active on social media platforms?",
-      "Do you have online reviews or testimonials?",
-      "Is your business information easily findable online?"
+      "Do you have a website or verified business page (Google, Facebook, LinkedIn)?",
+      "Are your hours, contact, and location visible via search or maps?",
+      "Do customers message you digitally on a regular basis?",
+      "Do you actively post, reply, or update content on social platforms?",
+      "Do you have credible online reviews or testimonials?"
     ]
   },
   customerCommunication: {
-    title: "Customer Communication Flow",
-    description: "How do you handle customer interactions and inquiries?",
+    title: "Customer Communication & Responsiveness",
+    description: "How well do you handle inquiries and conversations?",
     questions: [
-      "How many customer messages do you receive daily?",
-      "Do you manually handle every inquiry?",
-      "Do you use WhatsApp for business communications?",
-      "How quickly do you typically respond to customers?",
-      "Do you have a system for tracking customer conversations?"
+      "How many customer inquiries arrive daily — and how fast do you respond?",
+      "Are replies mostly manual, or supported by staff/tools?",
+      "Do you use WhatsApp Business, Messenger, or similar apps?",
+      "Do you track conversations using a CRM or spreadsheet?",
+      "Are follow-ups organized and timely?"
     ]
   },
   dataInfrastructure: {
-    title: "Data Infrastructure",
-    description: "How well do you manage and organize your business information?",
+    title: "Data Management & Organization",
+    description: "Can your business data actually support automation?",
     questions: [
-      "Do you keep digital records of inquiries and sales?",
-      "Do you use spreadsheets or databases for customer data?",
-      "Do you track customer preferences and history?",
-      "Do you have a system for storing contact information?",
-      "Do you analyze your business data for insights?"
+      "Are transactions and leads digitally recorded or mostly on paper?",
+      "Do you store customer info in one central place (CRM, Google Sheets, etc.)?",
+      "Can you easily access a client’s history or preferences?",
+      "Do you analyze performance data (sales trends, peak inquiry times)?",
+      "Is your data accurate and accessible when needed?"
     ]
   },
   operationalWorkflow: {
-    title: "Operational Workflow",
-    description: "How repetitive are your daily business tasks?",
+    title: "Operational Workflow & Process Efficiency",
+    description: "How streamlined are your daily operations?",
     questions: [
-      "How often do the same tasks repeat daily/weekly?",
-      "Do you spend time on manual follow-ups and reminders?",
-      "Are there bottlenecks in your current processes?",
-      "Do you have standardized procedures for common tasks?",
-      "Would automation save you significant time daily?"
+      "Do repetitive tasks (emails, reports, updates) consume hours weekly?",
+      "Are processes standardized or person-dependent?",
+      "Do you experience workflow bottlenecks that delay progress?",
+      "Have you mapped your processes (so automation can plug in easily)?",
+      "Could automation save you noticeable time weekly?"
     ]
   },
   financialReadiness: {
-    title: "Financial Readiness & ROI Awareness",
-    description: "Are you ready to invest in automation solutions?",
+    title: "Financial & Strategic Readiness",
+    description: "Are you mentally and financially ready to invest in automation?",
     questions: [
-      "Would you invest NPR 10,000–50,000 if it saves 3+ hours daily?",
-      "Do you see automation as a strategic investment?",
-      "Are you willing to learn new digital tools?",
-      "Do you have budget allocated for business improvements?",
-      "Do you understand the ROI potential of automation?"
+      "Would you invest a small budget to save time weekly?",
+      "Do you view automation as a long-term investment, not an expense?",
+      "Are you and your team open to learning new tools?",
+      "Have you allocated any technology improvement budget this year?",
+      "Do you understand automation ROI (hours saved = money gained)?"
     ]
   }
 };
@@ -114,7 +114,8 @@ export default function ReadinessPage() {
       formData.operationalWorkflow,
       formData.financialReadiness
     ];
-    return Math.round(scores.reduce((sum, score) => sum + score, 0) / scores.length);
+    const total = scores.reduce((sum, score) => sum + score, 0); // 0-25
+    return Math.round((total / (5 * 5)) * 100); // percentage 0-100
   };
 
   const getScoreCategory = (score: number) => {
@@ -201,7 +202,7 @@ export default function ReadinessPage() {
 
       <div className="mb-4">
         <label className="block text-sm font-medium text-white mb-2">
-          Rate your readiness (0-5): {formData[pillar]}/5
+          Rate (0–5): {formData[pillar]}/5
         </label>
         <div className="flex space-x-2">
           {[0, 1, 2, 3, 4, 5].map((value) => (
@@ -220,8 +221,8 @@ export default function ReadinessPage() {
           ))}
         </div>
         <div className="flex justify-between text-xs text-gray-400 mt-2">
-          <span>Not Ready</span>
-          <span>Highly Ready</span>
+          <span>0️⃣ Not Ready</span>
+          <span>5️⃣ Highly Ready</span>
         </div>
       </div>
     </div>
@@ -235,8 +236,8 @@ export default function ReadinessPage() {
     return (
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-4">Your Automation Readiness Results</h2>
-          <p className="text-gray-300">Based on your responses, here's your business automation assessment:</p>
+          <h2 className="text-3xl font-bold text-white mb-4">Your Automation Readiness Score</h2>
+          <p className="text-gray-300">Based on your ratings across five core dimensions:</p>
         </div>
 
         {/* Score Visualization */}
@@ -344,19 +345,31 @@ export default function ReadinessPage() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-            Sajedar.com Automation Readiness Scorecard
+            🧠 Sajedar Automation Readiness Scorecard
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Discover Your Automation Readiness
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
-            Take our comprehensive assessment to understand how ready your business is for AI automation. 
-            Get personalized recommendations and a free consultation with our automation experts.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-4">
+            In just 5 minutes, find out how prepared your business is to adopt automation and AI — and receive a personalized action plan with expert insights.
+          </p>
+          <p className="text-sm text-gray-400 max-w-2xl mx-auto mb-8">
+            Only 13% of companies feel fully prepared for AI. Don’t let readiness be your bottleneck. (Sources: Innovectus, RAND, Salesforce, Adact)
           </p>
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-full font-semibold">
             <span className="text-xl">⚡</span>
             Takes only 5 minutes
           </div>
+        </div>
+
+        {/* How It Works */}
+        <div className="mb-10 p-6 bg-white/5 border border-white/10 rounded-xl">
+          <h3 className="text-2xl font-bold text-white mb-4">How It Works</h3>
+          <ul className="text-gray-300 space-y-2">
+            <li>• Five Core Dimensions: Each section reflects a pillar of automation success.</li>
+            <li>• Rate Yourself (0–5): 0 = Not Ready, 5 = Highly Ready.</li>
+            <li>• Instant Score & Insights: Get a readiness score and next-step recommendations.</li>
+          </ul>
         </div>
 
         {/* Progress Indicator */}
@@ -398,7 +411,7 @@ export default function ReadinessPage() {
 
           {/* Business Information */}
           <div className="p-6 bg-white/5 border border-white/10 rounded-xl">
-            <h3 className="text-xl font-bold text-white mb-4">Business Information</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Business Profile (for Personalized Report)</h3>
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-white mb-2">Business Name</label>
@@ -412,21 +425,19 @@ export default function ReadinessPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-white mb-2">Business Type</label>
+                <label className="block text-sm font-medium text-white mb-2">Industry / Sector</label>
                 <select
                   value={formData.businessType}
                   onChange={(e) => setFormData(prev => ({ ...prev, businessType: e.target.value }))}
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   required
                 >
-                  <option value="">Select your business type</option>
-                  <option value="retail">Retail/E-commerce</option>
-                  <option value="restaurant">Restaurant/Food Service</option>
-                  <option value="healthcare">Healthcare/Medical</option>
-                  <option value="real-estate">Real Estate</option>
-                  <option value="education">Education/Training</option>
-                  <option value="consulting">Consulting/Professional Services</option>
-                  <option value="manufacturing">Manufacturing</option>
+                  <option value="">Select industry</option>
+                  <option value="retail">Retail</option>
+                  <option value="services">Services</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="finance">Finance</option>
+                  <option value="hospitality">Hospitality</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -440,7 +451,7 @@ export default function ReadinessPage() {
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold rounded-lg hover:from-emerald-600 hover:to-green-600 transition-all duration-200 transform hover:scale-105"
             >
               <span className="text-xl">📊</span>
-              Get My Automation Readiness Score
+              Get My Score
             </button>
             <p className="text-sm text-gray-400 mt-3">
               Your information is secure and will only be used to provide personalized recommendations

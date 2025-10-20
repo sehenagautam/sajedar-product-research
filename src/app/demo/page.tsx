@@ -42,47 +42,47 @@ export default function DemoPage() {
       youtubeVideo: null,
       features: ['Product recommendations', 'Size consultation', 'Style matching', 'Price quotes'],
       color: 'from-blue-500 to-purple-600'
-    },
-    {
-      id: 'crackgineers',
-      name: 'Crackgineers',
-      description: 'Engineering solutions and technical support chatbot',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
-      messengerUrl: 'https://m.me/61580366211478',
-      youtubeVideo: null,
-      features: ['Technical support', 'Project consultation', 'Engineering solutions', 'Quote generation'],
-      color: 'from-green-500 to-teal-600'
-    },
-    {
-      id: 'health-bridge',
-      name: 'Health Bridge Hospital',
-      description: 'Medical appointment booking and health information assistant',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
-      messengerUrl: 'https://m.me/61579893515630',
-      youtubeVideo: null,
-      features: ['Appointment booking', 'Health information', 'Doctor consultation', 'Emergency support'],
-      color: 'from-red-500 to-pink-600'
-    },
-    {
-      id: 'deep-darshan',
-      name: 'Deep Darshan Traders Pvt. Ltd.',
-      description: 'Business trading and supply chain management assistant',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61580946694935',
-      messengerUrl: 'https://m.me/61580946694935',
-      youtubeVideo: null,
-      features: ['Product catalog', 'Price inquiries', 'Order processing', 'Supply chain info'],
-      color: 'from-orange-500 to-yellow-600'
-    },
-    {
-      id: 'sagarmatha-investments',
-      name: 'Sagarmatha Investments',
-      description: 'Investment consultation and financial planning assistant',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
-      messengerUrl: 'https://m.me/61579893515630',
-      youtubeVideo: null,
-      features: ['Investment advice', 'Portfolio management', 'Financial planning', 'Market analysis'],
-      color: 'from-purple-500 to-indigo-600'
     }
+    // {
+    //   id: 'crackgineers',
+    //   name: 'Crackgineers',
+    //   description: 'Engineering solutions and technical support chatbot',
+    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
+    //   messengerUrl: 'https://m.me/61580366211478',
+    //   youtubeVideo: null,
+    //   features: ['Technical support', 'Project consultation', 'Engineering solutions', 'Quote generation'],
+    //   color: 'from-green-500 to-teal-600'
+    // },
+    // {
+    //   id: 'health-bridge',
+    //   name: 'Health Bridge Hospital',
+    //   description: 'Medical appointment booking and health information assistant',
+    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
+    //   messengerUrl: 'https://m.me/61579893515630',
+    //   youtubeVideo: null,
+    //   features: ['Appointment booking', 'Health information', 'Doctor consultation', 'Emergency support'],
+    //   color: 'from-red-500 to-pink-600'
+    // },
+    // {
+    //   id: 'deep-darshan',
+    //   name: 'Deep Darshan Traders Pvt. Ltd.',
+    //   description: 'Business trading and supply chain management assistant',
+    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61580946694935',
+    //   messengerUrl: 'https://m.me/61580946694935',
+    //   youtubeVideo: null,
+    //   features: ['Product catalog', 'Price inquiries', 'Order processing', 'Supply chain info'],
+    //   color: 'from-orange-500 to-yellow-600'
+    // },
+    // {
+    //   id: 'sagarmatha-investments',
+    //   name: 'Sagarmatha Investments',
+    //   description: 'Investment consultation and financial planning assistant',
+    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
+    //   messengerUrl: 'https://m.me/61579893515630',
+    //   youtubeVideo: null,
+    //   features: ['Investment advice', 'Portfolio management', 'Financial planning', 'Market analysis'],
+    //   color: 'from-purple-500 to-indigo-600'
+    // }
   ];
 
   const getColorClasses = (color: string) => {
@@ -170,10 +170,42 @@ export default function DemoPage() {
                   >
                     📘 Visit Facebook Page
                   </a>
+
+                  {demo.id === 'ashwi-furniture' && (
+                    <a
+                      href="/case-studies/ashwi-furnitures-case-study"
+                      className="w-full block text-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors"
+                    >
+                      📊 View Case Study
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* More Coming Soon Section */}
+        <div className="text-center bg-gradient-to-r from-gray-900/30 to-gray-800/30 border border-gray-500/30 rounded-2xl p-8 backdrop-blur-sm mb-16">
+          <div className="mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-500/20 rounded-full mb-4">
+              <span className="text-2xl">🚀</span>
+            </div>
+          </div>
+          <h2 className="text-3xl font-bold text-white mb-4">
+            More Demos Coming Soon
+          </h2>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            We're working on adding more live chatbot demos across different industries. 
+            Stay tuned for healthcare, engineering, trading, and investment demos!
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Healthcare</span>
+            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Engineering</span>
+            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Trading</span>
+            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Investment</span>
+            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">And More...</span>
+          </div>
         </div>
 
         <div className="text-center bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-2xl p-8 backdrop-blur-sm">

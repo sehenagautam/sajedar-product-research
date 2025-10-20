@@ -90,6 +90,17 @@ export function HeroSection() {
                 <span className="text-sm">Setup in Days</span>
               </div>
             </div>
+
+            {/* Case Study Link */}
+            <div className="pt-4">
+              <Link 
+                href="/case-studies/ashwi-furnitures-case-study" 
+                className="text-gray-500 hover:text-gray-400 transition-colors duration-200 text-sm"
+                style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
+              >
+                See how Ashwi Furniture generated $250 in sales from $10 in ads →
+              </Link>
+            </div>
           </div>
 
           {/* Right Side - Video with Perfect Aspect Ratio */}

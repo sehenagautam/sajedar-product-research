@@ -282,6 +282,35 @@ export const ashwiFurnituresCaseStudy = {
           <div className="text-white font-semibold">Ashwi Furnitures Team</div>
           <div className="text-gray-400">LaxmiNarayan Furniture Udhyog Pvt Ltd</div>
         </div>
+
+        {/* Action Links */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Try Aarya Yourself</h3>
+          <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <a
+              href="https://m.me/61580366211478"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-center"
+            >
+              💬 Chat with Aarya
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61580366211478"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors text-center"
+            >
+              📘 Visit Facebook Page
+            </a>
+            <a
+              href="/demo"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-center"
+            >
+              🎯 View All Demos
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
