@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
-            <div className="relative w-10 h-10">
+            <div className="relative w-10 h-10 rounded-lg overflow-hidden">
               <Image
                 src="/sajedar-new-logo.png"
                 alt="Sajedar Logo"
