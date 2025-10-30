@@ -7,8 +7,8 @@ import Image from 'next/image';
 const Header: React.FC = () => {
   const handleDownloadProposal = () => {
     const link = document.createElement('a');
-    link.href = '/Sajedar-Business-Proposal.pdf';
-    link.download = 'Sajedar-Business-Proposal.pdf';
+    link.href = '/Sajedar-Business-Proposal_AI_Chatbot.pdf';
+    link.download = 'Sajedar-Business-Proposal_AI_Chatbot.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

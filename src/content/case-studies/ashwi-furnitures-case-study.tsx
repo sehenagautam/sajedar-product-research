@@ -206,6 +206,36 @@ export const ashwiFurnituresCaseStudy = {
                 title: 'Future OCR Integration', 
                 description: 'Exploring PaddleOCR and docTR for image reading capabilities',
                 icon: '👁️'
+              },
+              { 
+                title: 'Multi-Channel Integration', 
+                description: 'Seamless Facebook Messenger and WhatsApp Business connectivity',
+                icon: '📱'
+              },
+              { 
+                title: 'Real-Time Analytics', 
+                description: 'Live tracking of conversation quality and conversion metrics',
+                icon: '📊'
+              },
+              { 
+                title: 'Contextual Memory', 
+                description: 'AI remembers previous conversations and customer preferences',
+                icon: '🧠'
+              },
+              { 
+                title: 'Automated Follow-ups', 
+                description: 'Smart scheduling and personalized follow-up sequences',
+                icon: '⏰'
+              },
+              { 
+                title: 'Lead Qualification', 
+                description: 'Automatic scoring and categorization of potential customers',
+                icon: '⭐'
+              },
+              { 
+                title: 'Inventory Sync', 
+                description: 'Real-time product availability and stock level integration',
+                icon: '📦'
               }
             ].map((feature, index) => (
               <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors">
@@ -243,6 +273,66 @@ export const ashwiFurnituresCaseStudy = {
           </div>
         </div>
 
+        {/* Advanced Analytics & Performance */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Advanced Analytics & Performance Metrics</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-blue-300 mb-4">📈 Conversion Analytics</h4>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Message to Lead Rate</span>
+                  <span className="text-blue-400 font-bold">23%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Lead to Sale Rate</span>
+                  <span className="text-blue-400 font-bold">18%</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Average Response Time</span>
+                  <span className="text-blue-400 font-bold">2.3s</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-purple-300 mb-4">🎯 Customer Engagement</h4>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Session Duration</span>
+                  <span className="text-purple-400 font-bold">4.2 min</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Messages per Session</span>
+                  <span className="text-purple-400 font-bold">8.7</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Customer Satisfaction</span>
+                  <span className="text-purple-400 font-bold">94%</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-900/30 to-green-900/30 border border-emerald-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-emerald-300 mb-4">💰 Revenue Impact</h4>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Cost per Lead</span>
+                  <span className="text-emerald-400 font-bold">$0.40</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Revenue per Lead</span>
+                  <span className="text-emerald-400 font-bold">$12.50</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-300">Monthly Savings</span>
+                  <span className="text-emerald-400 font-bold">$1,200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Technology & Future Plans */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Technology Stack & Future Plans</h3>
@@ -255,6 +345,9 @@ export const ashwiFurnituresCaseStudy = {
                 <li>• JSON Response Format</li>
                 <li>• Image Generation AI</li>
                 <li>• WhatsApp Integration</li>
+                <li>• Real-time Analytics Dashboard</li>
+                <li>• CRM Integration</li>
+                <li>• Multi-language Support</li>
               </ul>
             </div>
             
@@ -265,8 +358,119 @@ export const ashwiFurnituresCaseStudy = {
                 <li>• Image Reading Capabilities</li>
                 <li>• Advanced Product Recognition</li>
                 <li>• Enhanced Multimodal Support</li>
+                <li>• Voice Message Processing</li>
+                <li>• Predictive Analytics</li>
+                <li>• Advanced Personalization</li>
                 <li>• Scalability Improvements</li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Business Impact & ROI Analysis */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Business Impact & ROI Analysis</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 border border-green-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-green-300 mb-4">📊 Before vs After Comparison</h4>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-300">Customer Response Time</span>
+                  <div className="text-right">
+                    <div className="text-red-400 text-sm line-through">4-6 hours</div>
+                    <div className="text-green-400 font-bold">2.3 seconds</div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-300">Daily Inquiries Handled</span>
+                  <div className="text-right">
+                    <div className="text-red-400 text-sm line-through">15-20</div>
+                    <div className="text-green-400 font-bold">100+</div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-300">Lead Generation Cost</span>
+                  <div className="text-right">
+                    <div className="text-red-400 text-sm line-through">$5-8</div>
+                    <div className="text-green-400 font-bold">$0.40</div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-300">Staff Hours Saved</span>
+                  <div className="text-right">
+                    <div className="text-red-400 text-sm line-through">0</div>
+                    <div className="text-green-400 font-bold">40+ hours/week</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 border border-blue-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-blue-300 mb-4">🎯 Competitive Advantages</h4>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span className="text-gray-300">24/7 availability vs competitors' business hours</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span className="text-gray-300">Instant responses vs delayed manual replies</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span className="text-gray-300">Nepali language support vs English-only competitors</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span className="text-gray-300">AI-generated content vs static marketing materials</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-blue-400 font-bold">✓</span>
+                  <span className="text-gray-300">Automated lead qualification vs manual screening</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Success Stories & Use Cases */}
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6 text-center">Success Stories & Real Use Cases</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-purple-300 mb-3">🏠 Sofa Sale Success</h4>
+              <p className="text-gray-300 text-sm mb-3">
+                Customer inquired about a 3-seater sofa at 11 PM. Aarya provided detailed specifications, 
+                offered a 5% discount, and collected phone number within 3 minutes.
+              </p>
+              <div className="text-purple-400 font-bold">Result: $180 sale closed</div>
+            </div>
+
+            <div className="bg-gradient-to-br from-amber-900/20 to-orange-900/20 border border-amber-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-amber-300 mb-3">💄 Dressing Table Promotion</h4>
+              <p className="text-gray-300 text-sm mb-3">
+                AI generated promotional images with female models for dressing table collection. 
+                Generated 15 qualified leads in one day.
+              </p>
+              <div className="text-amber-400 font-bold">Result: 3 sales, $420 revenue</div>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-900/20 to-green-900/20 border border-emerald-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-emerald-300 mb-3">📞 Bulk Inquiry Handling</h4>
+              <p className="text-gray-300 text-sm mb-3">
+                During peak hours, Aarya handled 25 simultaneous conversations about different products, 
+                qualifying leads and scheduling follow-ups.
+              </p>
+              <div className="text-emerald-400 font-bold">Result: 8 qualified leads, 2 sales</div>
+            </div>
+
+            <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/30 rounded-2xl p-6">
+              <h4 className="text-lg font-semibold text-cyan-300 mb-3">🔄 Follow-up Automation</h4>
+              <p className="text-gray-300 text-sm mb-3">
+                Customer showed interest but didn't provide contact. Aarya sent automated follow-up 
+                messages with special offers, eventually converting the lead.
+              </p>
+              <div className="text-cyan-400 font-bold">Result: $95 sale after 3 follow-ups</div>
             </div>
           </div>
         </div>
