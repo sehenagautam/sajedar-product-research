@@ -37,8 +37,8 @@ export default function DemoPage() {
       id: 'ashwi-furniture',
       name: 'Ashwi Furniture',
       description: 'AI-powered furniture consultation and sales assistant',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
-      messengerUrl: 'https://m.me/61580366211478',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61579049243889',
+      messengerUrl: 'https://m.me/61579049243889',
       youtubeVideo: null,
       features: ['Product recommendations', 'Size consultation', 'Style matching', 'Price quotes'],
       color: 'from-blue-500 to-purple-600'

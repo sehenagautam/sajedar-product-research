@@ -492,7 +492,7 @@ export const ashwiFurnituresCaseStudy = {
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Try Aarya Yourself</h3>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <a
-              href="https://m.me/61580366211478"
+              href="https://m.me/61579049243889"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-center"
@@ -500,7 +500,7 @@ export const ashwiFurnituresCaseStudy = {
               💬 Chat with Aarya
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=61580366211478"
+              href="https://www.facebook.com/profile.php?id=61579049243889"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg transition-colors text-center"
