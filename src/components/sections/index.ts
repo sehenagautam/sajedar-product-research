@@ -26,3 +26,6 @@ export { TestimonialsSection } from './TestimonialsSection';
 export { PartnershipsSection } from './PartnershipsSection';
 export { KeyFeaturesSection } from './KeyFeaturesSection';
 export { IntegrationSection } from './IntegrationSection';
+
+/* ✅ ADD THIS LINE */
+export { default as FounderMessageSection } from './FounderMessageSection';

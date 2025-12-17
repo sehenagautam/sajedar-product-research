@@ -4,92 +4,119 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      company: "Ashwi Furniture",
-      role: "CEO",
-      quote: "Sajedar's AI chatbot has revolutionized our customer service. Response time improved by 80% and customer satisfaction is at an all-time high.",
-      profilePic: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      name: "Lakshman Paudel",
+      company: "Ashwi",
+      role: "Founder",
+      quote: "Sajedar helped us automate customer conversations across platforms. Our response speed improved dramatically without hiring more staff.",
+      profilePic: "/Ashwi.png",
       rating: 5
     },
     {
       id: 2,
-      name: "Michael Chen",
-      company: "Crackgineers",
-      role: "Technical Director",
-      quote: "The AI agent handles complex engineering queries with precision. Our clients love the instant technical support and detailed explanations.",
-      profilePic: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      name: "Prakash Maharjan",
+      company: "Osha Clothing & Apparels",
+      role: "Managing Director",
+      quote: "From order queries to product availability, the AI chatbot handles everything smoothly. Customers feel attended to at all times.",
+      profilePic: "/osha.png",
       rating: 5
     },
     {
       id: 3,
-      name: "Dr. Emily Rodriguez",
-      company: "Health Bridge Hospital",
-      role: "Chief Medical Officer",
-      quote: "Our AI chatbot provides 24/7 healthcare assistance. Patients can book appointments, get health information, and receive emergency guidance instantly.",
-      profilePic: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
+      name: "Nishan Neupane",
+      company: "Vibely",
+      role: "Co-Founder",
+      quote: "Sajedar’s chatbot became an extension of our brand voice. Engagement went up and our team workload went down.",
+      profilePic: "/Vibely.png",
       rating: 5
     },
     {
       id: 4,
-      name: "Rajesh Kumar",
-      company: "Deep Darshan Traders",
-      role: "Managing Director",
-      quote: "The AI automation has streamlined our business operations. Client inquiries are handled efficiently, and our team can focus on strategic decisions.",
-      profilePic: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      name: "Samyog Shrestha",
+      company: "Bj Store",
+      role: "Owner",
+      quote: "The AI assistant answers customer questions instantly and accurately. It has helped us close more sales without extra effort.",
+      profilePic: "/bjstore.png",
       rating: 5
     },
     {
       id: 5,
-      name: "Lisa Thompson",
-      company: "TechStart Solutions",
+      name: "Dimanjan Dahal",
+      company: "Sajedar Chatbot",
       role: "Founder",
-      quote: "Sajedar's AI implementation exceeded our expectations. The chatbot understands context and provides personalized solutions to our clients.",
-      profilePic: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      quote: "Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.",
+      profilePic: "/Sajedar.png",
       rating: 5
     },
     {
       id: 6,
-      name: "David Park",
-      company: "InnovateCorp",
-      role: "CTO",
-      quote: "The AI agent integrates seamlessly with our existing systems. It's like having a knowledgeable team member available 24/7.",
-      profilePic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      name: "Anita Sharma",
+      company: "Crackgineers",
+      role: "Operations Lead",
+      quote: "Our technical queries are handled instantly and accurately. The AI understands context better than we expected.",
+      profilePic: "/Crackengineer.png",
       rating: 5
     },
     {
       id: 7,
-      name: "Maria Garcia",
-      company: "Global Retail Co.",
-      role: "Customer Experience Manager",
-      quote: "Our customer engagement has increased by 300% since implementing Sajedar's AI chatbot. It's a game-changer for our business.",
-      profilePic: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      name: "Ramesh Khatiwada",
+      company: "Health Bridge Hospital",
+      role: "Administrator",
+      quote: "Patients get instant responses for appointments and basic inquiries. The chatbot has reduced call center pressure significantly.",
+      profilePic: "/healthbridge.png",
       rating: 5
     },
     {
       id: 8,
-      name: "James Wilson",
-      company: "FinanceFirst",
-      role: "Operations Director",
-      quote: "The AI handles complex financial queries with accuracy. Our clients appreciate the instant responses and detailed explanations.",
-      profilePic: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
+      name: "Priya Sharma",
+      company: "Clinico Labs",
+      role: "Lab Operations Manager",
+      quote: "Test reports, timings, and appointment queries are now fully automated. The experience feels seamless for patients.",
+      profilePic: "/Clinicolab.png",
       rating: 5
     }
   ];
 
-  // Duplicate testimonials for seamless loop
-  const topTestimonials = testimonials;
-  const topDuplicated = [...topTestimonials, ...topTestimonials];
+  const topDuplicated = [...testimonials, ...testimonials];
 
   const bottomTestimonials = [
-    { id: 101, name: "Anita Sharma", company: "Evergreen Organics", role: "COO", quote: "Our WhatsApp and Messenger bots handle 70% of pre-sales questions. The team at Sajedar made rollout painless.", profilePic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 102, name: "Omar Hassan", company: "Skyline Travels", role: "Head of CX", quote: "Bookings increased 24% after we added rich-media suggestions. Customers love the instant itineraries.", profilePic: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 103, name: "Priya Nair", company: "Clinico Labs", role: "Product Manager", quote: "Escalation rules + AI triage reduced ticket backlog to near zero. Amazing impact in 3 weeks.", profilePic: "https://images.unsplash.com/photo-1544005316-04ce1f6eeef2?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 104, name: "Daniel Reed", company: "BuildRight", role: "Operations Lead", quote: "N8n workflows orchestrated our CRM, sheets, and chatbot. Manual data entry is gone.", profilePic: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 105, name: "Aisha Khan", company: "Bloom Beauty", role: "Founder", quote: "Brand voice tuning made replies feel on-brand. Customers think they chat with our team.", profilePic: "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 106, name: "Tom Williams", company: "FreshMart", role: "E‑commerce Lead", quote: "Product discovery via images boosted AOV by 18%. Setup was fast and measurable.", profilePic: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 107, name: "Nina Petrova", company: "EduPro", role: "Marketing Director", quote: "Multi-lingual bot opened two new markets for us without expanding the support team.", profilePic: "https://images.unsplash.com/photo-1544005318-94a3f5f7b9b7?w=150&h=150&fit=crop&crop=face", rating: 5 },
-    { id: 108, name: "Javier Ortiz", company: "FinServe", role: "VP, Client Success", quote: "Context memory keeps conversations coherent across channels. NPS jumped by 22 points.", profilePic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face", rating: 5 }
+    {
+      id: 101,
+      name: "Bishav Shrestha",
+      company: "Deep Darshan Traders",
+      role: "Director",
+      quote: "The chatbot handles product inquiries and follow-ups efficiently. Our sales process feels much smoother now.",
+      profilePic: "/deepdarshan.png",
+      rating: 5
+    },
+    {
+      id: 102,
+      name: "Riya Rana",
+      company: "SkyLine Travels",
+      role: "Customer Experience Lead",
+      quote: "Travel queries, itineraries, and booking requests are handled instantly. Customers love the speed and clarity.",
+      profilePic: "/skyline.png",
+      rating: 5
+    },
+    {
+      id: 103,
+      name: "Samrat Thapa",
+      company: "Evergreen Organics",
+      role: "Founder",
+      quote: "The AI chatbot educates customers about our products while maintaining a friendly, natural tone.",
+      profilePic: "/evergeen.png",
+      rating: 5
+    },
+    {
+      id: 104,
+      name: "Ramila Baral",
+      company: "BuildRight",
+      role: "Project Manager",
+      quote: "Client inquiries are handled automatically, allowing our team to focus on execution rather than follow-ups.",
+      profilePic: "/buildright.png",
+      rating: 5
+    }
   ];
+
   const bottomDuplicated = [...bottomTestimonials, ...bottomTestimonials];
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
@@ -101,17 +128,14 @@ export function TestimonialsSection() {
           className="w-12 h-12 rounded-full object-cover mr-4"
         />
         <div>
-          <h4 
-            className="text-white font-semibold text-sm"
-            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-          >
+          <h4 className="text-white font-semibold text-sm">
             {testimonial.name}
           </h4>
           <p className="text-gray-400 text-xs">{testimonial.role}</p>
           <p className="text-emerald-400 text-xs font-medium">{testimonial.company}</p>
         </div>
       </div>
-      
+
       <div className="flex items-center mb-3">
         {[...Array(testimonial.rating)].map((_, i) => (
           <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -119,11 +143,8 @@ export function TestimonialsSection() {
           </svg>
         ))}
       </div>
-      
-      <blockquote 
-        className="text-gray-300 text-sm leading-relaxed"
-        style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-      >
+
+      <blockquote className="text-gray-300 text-sm leading-relaxed">
         "{testimonial.quote}"
       </blockquote>
     </div>
@@ -132,139 +153,47 @@ export function TestimonialsSection() {
   return (
     <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
-        {/* Section Header */}
+
         <div className="flex flex-col items-center text-center gap-4">
           <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
             Client Success Stories
           </span>
-          <h2 
-            className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-2"
-            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-          >
-            <span className="text-gray-400">What Our</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Clients Say</span>
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-2">
+            <span className="text-gray-400">What Our</span>{' '}
+            <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+              Clients Say
+            </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-6">
-            Discover how businesses across different industries have transformed their customer engagement 
-            with Sajedar's AI-powered solutions. Real results from real clients.
+            Discover how businesses across different industries have transformed their customer engagement
+            with Sajedar's AI-powered solutions.
           </p>
         </div>
 
-        {/* Animated Testimonials */}
         <div className="relative overflow-hidden">
-          {/* Top Row - Left to Right */}
           <div className="flex animate-scroll-left">
             {topDuplicated.map((testimonial, index) => (
               <TestimonialCard key={`top-${testimonial.id}-${index}`} testimonial={testimonial} />
             ))}
           </div>
-          
-          {/* Bottom Row - Right to Left */}
+
           <div className="flex animate-scroll-right mt-8">
             {bottomDuplicated.map((testimonial, index) => (
               <TestimonialCard key={`bottom-${testimonial.id}-${index}`} testimonial={testimonial} />
             ))}
           </div>
         </div>
-
-        {/* Stats Section */}
-        <div className="grid md:grid-cols-4 gap-8 mt-16">
-          <div className="text-center">
-            <div 
-              className="text-4xl font-bold text-emerald-400 mb-2"
-              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              98%
-            </div>
-            <div 
-              className="text-gray-300 text-sm"
-              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              Client Satisfaction
-            </div>
-          </div>
-          <div className="text-center">
-            <div 
-              className="text-4xl font-bold text-emerald-400 mb-2"
-              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              24/7
-            </div>
-            <div 
-              className="text-gray-300 text-sm"
-              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              AI Support
-            </div>
-          </div>
-          <div className="text-center">
-            <div 
-              className="text-4xl font-bold text-emerald-400 mb-2"
-              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              300%
-            </div>
-            <div 
-              className="text-gray-300 text-sm"
-              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              Engagement Increase
-            </div>
-          </div>
-          <div className="text-center">
-            <div 
-              className="text-4xl font-bold text-emerald-400 mb-2"
-              style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              5+
-            </div>
-            <div 
-              className="text-gray-300 text-sm"
-              style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-            >
-              Happy Clients and counting...
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <h3 
-            className="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4"
-            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
-          >
-            <span className="text-gray-400">Ready to Join Our</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Success Stories?</span>
-          </h3>
-          <p 
-            className="text-gray-300 mb-6 max-w-2xl mx-auto text-lg"
-            style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
-          >
-            Let Sajedar transform your business with AI-powered customer engagement. 
-            Join the growing list of satisfied clients who have revolutionized their operations.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/?message=I want to start my AI chatbot journey.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Start Your Journey</a>
-            <a href="/?message=Please share relevant AI chatbot case studies.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">View Case Studies</a>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`
         @keyframes scroll-left {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
 
         @keyframes scroll-right {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0);
-          }
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
         }
 
         .animate-scroll-left {

@@ -1,35 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import { DemoCard } from '../../components/DemoCard';
 
 export const metadata = {
   title: 'Live Facebook Messenger AI Chatbot Demos | Try AI Chatbots',
-  description: 'Try live Facebook Messenger AI chatbots for Ashwi Furniture, Crackgineers, Health Bridge Hospital, Deep Darshan Traders, and Sagarmatha Investments. See how AI chatbots work on Facebook Messenger with real examples.',
-  keywords: [
-    'facebook messenger ai chatbot',
-    'facebook messenger chatbot examples',
-    'live facebook chatbot demo',
-    'ai chatbot for facebook messenger',
-    'facebook ai chatbot demo',
-    'messenger chatbot examples',
-    'facebook messenger chatbot tutorial',
-    'how to create chatbot in messenger',
-    'facebook chatbot demo',
-    'messenger ai chatbot examples'
-  ],
-  alternates: { canonical: 'https://sajedar.com/demo' },
-  openGraph: {
-    type: 'website',
-    title: 'Live Facebook Messenger AI Chatbot Demos | Sajedar',
-    description: 'Try live Facebook Messenger AI chatbots. See real examples of AI chatbots working on Facebook Messenger across different businesses.',
-    url: 'https://sajedar.com/demo',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Live Facebook Messenger AI Chatbot Demos | Sajedar',
-    description: 'Try live Facebook Messenger AI chatbots. See real examples of AI chatbots working on Facebook Messenger across different businesses.'
-  }
-}
+  description:
+    'Try live Facebook Messenger AI chatbots for Ashwi Furniture, Osha Clothing & Apparels, Sajedar, Vibely and BJ Store.',
+  alternates: { canonical: 'https://sajedar.com/demo' }
+};
 
 export default function DemoPage() {
   const demos = [
@@ -39,197 +16,144 @@ export default function DemoPage() {
       description: 'AI-powered furniture consultation and sales assistant',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61579049243889',
       messengerUrl: 'https://m.me/61579049243889',
-      youtubeVideo: null,
-      features: ['Product recommendations', 'Size consultation', 'Style matching', 'Price quotes'],
+      features: [
+        'Product recommendations',
+        'Size consultation',
+        'Style matching',
+        'Price quotes'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
+      id: 'osha',
+      name: 'Osha Clothing & Apparels',
+      description: 'AI-powered fashion assistant for product discovery and customer support',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61583871238196',
+      messengerUrl: 'https://www.facebook.com/messages/t/779166831957210',
+      features: [
+        'Outfit suggestions',
+        'Size & fit guidance',
+        'Order inquiries',
+        'Product availability'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
+      id: 'sajedar',
+      name: 'Sajedar Chatbot',
+      description:
+        'Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.',
+      facebookUrl: 'https://www.facebook.com/sajedardotcom',
+      messengerUrl: 'https://www.facebook.com/messages/t/401877156348283',
+      features: [
+        'Lead qualification',
+        'Service explanations',
+        'Instant replies',
+        'Founder-used AI agent'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
+      id: 'vibely',
+      name: 'Vibely',
+      description: 'AI assistant for brand engagement and customer interaction',
+      facebookUrl: 'https://www.facebook.com/vibely.life/',
+      messengerUrl: 'https://www.facebook.com/messages/t/393893210481261',
+      features: [
+        'Customer engagement',
+        'Automated replies',
+        'Product discovery',
+        'Brand voice consistency'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
+      id: 'bj-store',
+      name: 'BJ Store',
+      description: 'Retail-focused AI assistant for sales and customer queries',
+      facebookUrl: 'https://www.facebook.com/profile.php?id=61584587782485',
+      messengerUrl: 'https://www.facebook.com/messages/t/874032905799014',
+      features: [
+        'Product inquiries',
+        'Pricing support',
+        'Order assistance',
+        'Instant responses'
+      ],
       color: 'from-blue-500 to-purple-600'
     }
-    // {
-    //   id: 'crackgineers',
-    //   name: 'Crackgineers',
-    //   description: 'Engineering solutions and technical support chatbot',
-    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61580366211478',
-    //   messengerUrl: 'https://m.me/61580366211478',
-    //   youtubeVideo: null,
-    //   features: ['Technical support', 'Project consultation', 'Engineering solutions', 'Quote generation'],
-    //   color: 'from-green-500 to-teal-600'
-    // },
-    // {
-    //   id: 'health-bridge',
-    //   name: 'Health Bridge Hospital',
-    //   description: 'Medical appointment booking and health information assistant',
-    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
-    //   messengerUrl: 'https://m.me/61579893515630',
-    //   youtubeVideo: null,
-    //   features: ['Appointment booking', 'Health information', 'Doctor consultation', 'Emergency support'],
-    //   color: 'from-red-500 to-pink-600'
-    // },
-    // {
-    //   id: 'deep-darshan',
-    //   name: 'Deep Darshan Traders Pvt. Ltd.',
-    //   description: 'Business trading and supply chain management assistant',
-    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61580946694935',
-    //   messengerUrl: 'https://m.me/61580946694935',
-    //   youtubeVideo: null,
-    //   features: ['Product catalog', 'Price inquiries', 'Order processing', 'Supply chain info'],
-    //   color: 'from-orange-500 to-yellow-600'
-    // },
-    // {
-    //   id: 'sagarmatha-investments',
-    //   name: 'Sagarmatha Investments',
-    //   description: 'Investment consultation and financial planning assistant',
-    //   facebookUrl: 'https://www.facebook.com/profile.php?id=61579893515630',
-    //   messengerUrl: 'https://m.me/61579893515630',
-    //   youtubeVideo: null,
-    //   features: ['Investment advice', 'Portfolio management', 'Financial planning', 'Market analysis'],
-    //   color: 'from-purple-500 to-indigo-600'
-    // }
   ];
 
-  const getColorClasses = (color: string) => {
-    const colorMap: { [key: string]: string } = {
-      'from-blue-500 to-purple-600': 'bg-gradient-to-r from-blue-500 to-purple-600',
-      'from-green-500 to-teal-600': 'bg-gradient-to-r from-green-500 to-teal-600',
-      'from-red-500 to-pink-600': 'bg-gradient-to-r from-red-500 to-pink-600',
-      'from-orange-500 to-yellow-600': 'bg-gradient-to-r from-orange-500 to-yellow-600',
-      'from-purple-500 to-indigo-600': 'bg-gradient-to-r from-purple-500 to-indigo-600'
-    };
-
-    return colorMap[color] || 'bg-gradient-to-r from-blue-500 to-purple-600';
-  };
+  const getColorClasses = () => 'bg-gradient-to-r from-blue-500 to-purple-600';
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e]">
-      <div className="bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-white">
-              Sajedar
-            </Link>
-            <Link 
-              href="/?message=I want to build my own AI Messenger bot for my business.#contact" 
-              className="px-6 py-2 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg transition-colors"
-            >
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
             Live AI Chatbot <span className="text-emerald-400">Demos</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Experience real AI chatbots in action across different businesses. 
-            Click to chat with our live demos and see how AI can transform your customer experience.
+            Experience real AI chatbots in action across different businesses.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
           {demos.map((demo) => (
-            <div key={demo.id} id={demo.id} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300">
-              <div className={`${getColorClasses(demo.color)} p-6`}>
-                <div className="flex items-center justify-between mb-4">
+            <div
+              key={demo.id}
+              className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden"
+            >
+              <div className={`${getColorClasses()} p-6`}>
+                <div className="flex justify-between items-center mb-3">
                   <h3 className="text-2xl font-bold text-white">{demo.name}</h3>
-                  <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-white/80 text-sm">Live</span>
-                  </div>
+                  <span className="text-sm text-white/80 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                    Live
+                  </span>
                 </div>
                 <p className="text-white/90">{demo.description}</p>
               </div>
 
               <div className="p-6">
-                <div className="mb-6">
-                  <h4 className="text-white font-semibold mb-3">AI Capabilities:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {demo.features.map((feature, index) => (
-                      <span key={index} className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm">
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {demo.features.map((feature, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm"
+                    >
+                      {feature}
+                    </span>
+                  ))}
                 </div>
 
                 <div className="space-y-3">
                   <a
-                    href={demo.messengerUrl} 
+                    href={demo.messengerUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full block text-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors"
+                    className="block text-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg"
                   >
                     💬 Chat with {demo.name}
                   </a>
-                  
                   <a
                     href={demo.facebookUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full block text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-lg transition-colors"
+                    className="block text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-lg"
                   >
                     📘 Visit Facebook Page
                   </a>
-
-                  {demo.id === 'ashwi-furniture' && (
-                    <a
-                      href="/case-studies/ashwi-furnitures-case-study"
-                      className="w-full block text-center px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors"
-                    >
-                      📊 View Case Study
-                    </a>
-                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* More Coming Soon Section */}
-        <div className="text-center bg-gradient-to-r from-gray-900/30 to-gray-800/30 border border-gray-500/30 rounded-2xl p-8 backdrop-blur-sm mb-16">
-          <div className="mb-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-500/20 rounded-full mb-4">
-              <span className="text-2xl">🚀</span>
-            </div>
-          </div>
-          <h2 className="text-3xl font-bold text-white mb-4">
-            More Demos Coming Soon
-          </h2>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            We're working on adding more live chatbot demos across different industries. 
-            Stay tuned for healthcare, engineering, trading, and investment demos!
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Healthcare</span>
-            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Engineering</span>
-            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Trading</span>
-            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">Investment</span>
-            <span className="px-4 py-2 bg-gray-500/20 text-gray-300 rounded-full text-sm">And More...</span>
-          </div>
-        </div>
-
-        <div className="text-center bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-2xl p-8 backdrop-blur-sm">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Build Your Own AI Chatbot?
-          </h2>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Let Sajedar create a custom AI chatbot for your business. 
-            We'll build it in days, not months, and it will work exactly like these demos.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/?message=I want to build my own AI Messenger bot for my business.#contact" 
-              className="px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors"
-            >
-              Get Started
-            </Link>
-            <Link 
-              href="/Contact" 
-              className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg transition-colors border border-white/20"
-            >
-              Contact Us
-            </Link>
-          </div>
+        <div className="text-center mt-20">
+          <Link
+            href="/?message=I want to build my own AI Messenger bot for my business.#contact"
+            className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg"
+          >
+            Build Your Own AI Chatbot
+          </Link>
         </div>
       </div>
     </div>
