@@ -35,7 +35,7 @@ export default function FounderMessageSection() {
 
           <p className="text-gray-300 text-lg leading-relaxed mb-5">
             I started Sajedar because I saw too many businesses struggling to keep up with
-            technology. They knew they needed &quot;AI,&quot; but they didn&apos;t know how to
+            technology. They knew they needed &quot;AI&quot;, but they didn&apos;t know how to
             implement it without losing their brand&apos;s voice.
           </p>
 

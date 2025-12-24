@@ -1,12 +1,9 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
-
-export const metadata = {
-  title: 'Live Facebook Messenger AI Chatbot Demos | Try AI Chatbots',
-  description:
-    'Try live Facebook Messenger AI chatbots for Ashwi Furniture, Osha Clothing & Apparels, Sajedar, Vibely and BJ Store.',
-  alternates: { canonical: 'https://sajedar.com/demo' }
-};
+import Header from '../../components/Header';
+import { ContactSection, Footer } from '../../components/sections';
 
 export default function DemoPage() {
   const demos = [
@@ -86,8 +83,11 @@ export default function DemoPage() {
   const getColorClasses = () => 'bg-gradient-to-r from-blue-500 to-purple-600';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e]">
-      <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+      {/* Header */}
+      <Header />
+
+      <div className="max-w-7xl mx-auto px-4 py-16 w-full">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
             Live AI Chatbot <span className="text-emerald-400">Demos</span>
@@ -156,6 +156,12 @@ export default function DemoPage() {
           </Link>
         </div>
       </div>
+
+      {/* Contact */}
+      <ContactSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
