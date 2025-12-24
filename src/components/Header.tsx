@@ -16,27 +16,27 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#18181b]/90 via-[#23243a]/90 to-[#1a1a2e]/90 backdrop-blur-sm border-b border-emerald-500/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14 sm:h-16">
 
           {/* Left Section: Logo + Navigation */}
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-8 min-w-0 flex-1">
             <Link
               href="/"
-              className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
+              className="flex items-center space-x-2 sm:space-x-3 hover:opacity-80 transition-opacity duration-200 flex-shrink-0"
             >
-              <div className="relative w-10 h-10 rounded-lg overflow-hidden">
+              <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden flex-shrink-0">
                 <Image
                   src="/sajedar-new-logo.png"
                   alt="Sajedar Logo"
                   fill
-                  sizes="40px"
+                  sizes="(max-width: 640px) 32px, 40px"
                   className="object-contain"
                   priority
                 />
               </div>
               <div
-                className="text-xl font-semibold tracking-tight"
+                className="text-base sm:text-lg md:text-xl font-semibold tracking-tight whitespace-nowrap"
                 style={{
                   fontFamily:
                     'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
@@ -47,11 +47,11 @@ const Header: React.FC = () => {
               </div>
             </Link>
 
-            {/* Navigation Links */}
-            <nav className="flex items-center space-x-6">
+            {/* Navigation Links - Hidden on very small screens */}
+            <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link
                 href="/about"
-                className="text-sm font-medium text-white/80 hover:text-[#2eb447] transition-colors duration-200"
+                className="text-xs sm:text-sm font-medium text-white/80 hover:text-[#2eb447] transition-colors duration-200 whitespace-nowrap"
                 style={{ fontFamily: 'Inter, Arial, sans-serif' }}
               >
                 About Us
@@ -62,14 +62,14 @@ const Header: React.FC = () => {
           {/* Right Section: Download Button */}
           <button
             onClick={handleDownloadProposal}
-            className="px-4 py-2 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center gap-2 cursor-pointer hover:opacity-90"
+            className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-white text-xs sm:text-sm md:text-base font-semibold rounded-lg transition-colors duration-200 flex items-center gap-1 sm:gap-2 cursor-pointer hover:opacity-90 flex-shrink-0 whitespace-nowrap"
             style={{
               fontFamily: 'Inter, Arial, sans-serif',
               backgroundColor: '#2eb447',
             }}
           >
             <svg
-              className="w-4 h-4"
+              className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -81,7 +81,8 @@ const Header: React.FC = () => {
                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            Download Proposal
+            <span className="hidden sm:inline">Download</span>
+            <span className="hidden md:inline"> Proposal</span>
           </button>
 
         </div>
