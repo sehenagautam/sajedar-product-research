@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Voice Wave Component
-const VoiceWave: React.FC<{ width: number; height: number }> = ({ width, height }) => {
+const VoiceWave: React.FC<{ width?: number; height?: number }> = ({ width, height }) => {
   const bars = Array.from({ length: 20 }, (_, i) => ({
     id: i,
     height: Math.random() * 100,
@@ -13,14 +13,17 @@ const VoiceWave: React.FC<{ width: number; height: number }> = ({ width, height 
   }));
 
   return (
-    <div className="flex items-center justify-center gap-1" style={{ width, height }}>
+    <div className="flex items-center justify-center gap-0.5 sm:gap-1 w-full max-w-full" style={{ height: height || 40 }}>
       {bars.map((bar) => (
         <motion.div
           key={bar.id}
-          className="bg-emerald-500 rounded-full"
+          className="bg-emerald-500 rounded-full flex-shrink"
           style={{
-            width: '4px',
+            width: '3px',
             height: `${Math.max(8, bar.height)}px`,
+            flex: '1 1 auto',
+            minWidth: '2px',
+            maxWidth: '4px',
           }}
           animate={{
             scaleY: [0.3, 1, 0.3],
@@ -73,42 +76,46 @@ const Frame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 export function VoiceCinematicSection() {
   return (
     <Frame>
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="flex items-center justify-center min-h-screen">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6">
+        <div className="flex items-center justify-center min-h-screen py-8 sm:py-12">
           <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="w-full max-w-4xl"
           >
-            <div className="flex flex-col items-center gap-6">
+            <div className="flex flex-col items-center gap-4 sm:gap-6 px-2">
               {/* Text above the conversation */}
-              <div className="text-center space-y-2">
+              <div className="text-center space-y-1 sm:space-y-2">
                 <h2
-                  className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
                   Your chatbot <span className="text-gray-400">listens…</span>
                 </h2>
                 
                 <h2
-                  className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
                   …and <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">speaks back.</span>
                 </h2>
               </div>
 
-              {/* VoiceWave */}
-              <VoiceWave width={480} height={56} />
+              {/* VoiceWave - Responsive width */}
+              <div className="w-full max-w-[480px] px-4">
+                <VoiceWave height={40} />
+              </div>
               
               {/* Conversation Demo */}
-              <div className="w-full max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 text-left font-medium flex flex-col justify-center">
-                <div className="flex items-center gap-3 text-gray-300">
-                  <MessageSquareText size={16} />
-                  <span>You: "Where's my order?"</span>
+              <div className="w-full max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-3 sm:p-4 text-left font-medium flex flex-col justify-center">
+                <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-300 text-xs sm:text-sm md:text-base">
+                  <div className="flex-shrink-0 mt-0.5 sm:mt-0">
+                    <MessageSquareText size={14} />
+                  </div>
+                  <span className="break-words">You: "Where's my order?"</span>
                 </div>
-                <div className="mt-2 rounded-xl bg-emerald-500/20 p-3 text-white">
+                <div className="mt-2 rounded-xl bg-emerald-500/20 p-2 sm:p-3 text-white text-xs sm:text-sm md:text-base break-words">
                   Sajedar Voice AI: "Let me check that for you… Order #12345 arrives tomorrow."
                 </div>
               </div>

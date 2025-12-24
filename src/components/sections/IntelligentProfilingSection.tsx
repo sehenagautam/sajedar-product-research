@@ -78,11 +78,23 @@ export default function IntelligentProfilingSection() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 text-sm text-gray-300">
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10"><Mail className="h-4 w-4 text-emerald-300" /> sita.lama@example.com</div>
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10"><Phone className="h-4 w-4 text-emerald-300" /> +977 984-1234567</div>
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10"><MapPin className="h-4 w-4 text-emerald-300" /> Boudha, Kathmandu</div>
-                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10"><Clock className="h-4 w-4 text-emerald-300" /> Prefers: 11 AM - 3 PM</div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-300">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10 min-w-0">
+                    <Mail className="h-4 w-4 text-emerald-300 flex-shrink-0" />
+                    <span className="whitespace-nowrap overflow-hidden text-ellipsis">sita.lama@example.com</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10 min-w-0">
+                    <Phone className="h-4 w-4 text-emerald-300 flex-shrink-0" />
+                    <span className="whitespace-nowrap">+977 984-1234567</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10 min-w-0">
+                    <MapPin className="h-4 w-4 text-emerald-300 flex-shrink-0" />
+                    <span className="whitespace-nowrap">Boudha, Kathmandu</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-500/5 to-emerald-600/5 rounded-xl px-3 py-2 shadow-sm border border-emerald-500/10 min-w-0">
+                    <Clock className="h-4 w-4 text-emerald-300 flex-shrink-0" />
+                    <span className="whitespace-nowrap">Prefers: 11 AM - 3 PM</span>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-3 pt-4">
