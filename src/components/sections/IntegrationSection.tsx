@@ -36,8 +36,9 @@ export function IntegrationSection() {
               Collect leads by interacting with ad responders
             </p>
           </div>
+          
 
-          {/* WhatsApp */}
+          {/* WhatsApp 
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
             <div className="w-12 h-12 mx-auto mb-4 bg-green-500 rounded-2xl flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -57,6 +58,8 @@ export function IntegrationSection() {
               Take the leads upwards in the funnel
             </p>
           </div>
+
+            */}
 
           {/* Discord */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
