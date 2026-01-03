@@ -44,6 +44,7 @@ export function HeroSection() {
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
               <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI chatbot that handles inquiries, 
               books appointments, and converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">24/7 - all while you sleep.</span>
+              COmmission Basis: We put skin in the game. If we don’t generate measurable revenue, we don’t get paid. 
             </p>
 
             {/* CTA Buttons */}
