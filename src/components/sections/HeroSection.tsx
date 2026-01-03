@@ -34,8 +34,8 @@ export function HeroSection() {
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
                 <span className="text-gray-400">Advanced</span>{' '}
-                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Facebook Messenger</span>{' '}
-                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Automation</span>{' '}
+                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Facebook Page</span>{' '}
+                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Agent</span>{' '}
                 <span className="text-gray-400">for</span>{' '}
                 <span className="text-white">Small and Medium Businesses</span>
               </h1>
@@ -52,7 +52,7 @@ export function HeroSection() {
                 href="/?message=I want to build my own AI Messenger bot for my business.#contact" 
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
-                Get Your Custom Chatbot
+               Hire Sales Agent for your Facebook Page.
               </Link>
               <Link 
                 href="/demo" 
@@ -76,11 +76,11 @@ export function HeroSection() {
             <div className="flex items-center gap-8 text-gray-400">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span className="text-sm">24/7 Available</span>
+                <span className="text-sm">Commission Based (No fixed Charges) </span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span className="text-sm">No Coding Required</span>
+                <span className="text-sm">24/7 Available</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
