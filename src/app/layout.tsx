@@ -1,14 +1,15 @@
 import type { Metadata } from 'next';
 import { Inter, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
+import { FloatingMessenger } from '../components/FloatingMessenger';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap'
 });
 
-const dmSerif = DM_Serif_Display({ 
+const dmSerif = DM_Serif_Display({
   subsets: ['latin'],
   variable: '--font-dm-serif',
   display: 'swap',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     'best ai chatbot for facebook messenger', 'free ai chatbot for facebook messenger', 'facebook chatbot',
     'messenger chatbot', 'facebook messenger bot', 'ai chatbot facebook messenger deutsch',
     'open ai chatbot on facebook messenger', 'facebook ai chat bot', 'chatbots on facebook',
-    'Sajedar', 'AI chatbot builder', 'custom chatbot', 'business automation', 
+    'Sajedar', 'AI chatbot builder', 'custom chatbot', 'business automation',
     'ai business automation', 'chatbots for business', 'ai powered sales',
     'ai sales automation', 'sales automation with ai', 'ai agents',
     'customer support automation', 'conversational AI', 'whatsapp bot', 'agentic ai'
@@ -135,10 +136,10 @@ export default function RootLayout({
           }}
         />
         <noscript>
-          <img height="1" width="1" style={{display:'none'}}
-               src="https://www.facebook.com/tr?id=1889164861630433&ev=PageView&noscript=1" />
+          <img height="1" width="1" style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=1889164861630433&ev=PageView&noscript=1" />
         </noscript>
-        
+
         {/* Resource hints */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -146,10 +147,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        
+
         {/* Critical resources */}
         <link rel="preload" href="/sajedar-new-logo.png" as="image" />
-        
+
         {/* PWA meta tags */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -162,6 +163,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
+        <FloatingMessenger />
       </body>
     </html>
   );
