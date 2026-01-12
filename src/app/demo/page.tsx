@@ -8,6 +8,20 @@ import { ContactSection, Footer } from '../../components/sections';
 export default function DemoPage() {
   const demos = [
     {
+      id: 'latta-kapada',
+      name: 'Latta Kapada',
+      description: 'AI-powered fashion assistant for trendy clothing and apparel',
+      facebookUrl: 'https://web.facebook.com/profile.php?id=61575123480268',
+      messengerUrl: 'https://m.me/61575123480268',
+      features: [
+        'Product discovery',
+        'Size consultation',
+        'Order tracking',
+        'Latest trends'
+      ],
+      color: 'from-blue-500 to-purple-600'
+    },
+    {
       id: 'ashwi-furniture',
       name: 'Ashwi Furniture',
       description: 'AI-powered furniture consultation and sales assistant',
@@ -50,34 +64,7 @@ export default function DemoPage() {
       ],
       color: 'from-blue-500 to-purple-600'
     },
-    {
-      id: 'vibely',
-      name: 'Vibely',
-      description: 'AI assistant for brand engagement and customer interaction',
-      facebookUrl: 'https://www.facebook.com/vibely.life/',
-      messengerUrl: 'https://www.facebook.com/messages/t/393893210481261',
-      features: [
-        'Customer engagement',
-        'Automated replies',
-        'Product discovery',
-        'Brand voice consistency'
-      ],
-      color: 'from-blue-500 to-purple-600'
-    },
-    {
-      id: 'bj-store',
-      name: 'BJ Store',
-      description: 'Retail-focused AI assistant for sales and customer queries',
-      facebookUrl: 'https://www.facebook.com/profile.php?id=61584587782485',
-      messengerUrl: 'https://www.facebook.com/messages/t/874032905799014',
-      features: [
-        'Product inquiries',
-        'Pricing support',
-        'Order assistance',
-        'Instant responses'
-      ],
-      color: 'from-blue-500 to-purple-600'
-    }
+
   ];
 
   const getColorClasses = () => 'bg-gradient-to-r from-blue-500 to-purple-600';
