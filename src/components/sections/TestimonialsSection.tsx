@@ -3,6 +3,15 @@ import React from 'react';
 export function TestimonialsSection() {
   const testimonials = [
     {
+      id: 0,
+      name: "Latta Kapada",
+      company: "Latta Kapada",
+      role: "Store Owner",
+      quote: "The chatbot handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
+      profilePic: "/lattakapada.png",
+      rating: 5
+    },
+    {
       id: 1,
       name: "Lakshman Paudel",
       company: "Ashwi",

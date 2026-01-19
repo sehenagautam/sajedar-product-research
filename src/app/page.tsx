@@ -49,6 +49,9 @@ export default function Home() {
       {/* Hero */}
       <HeroSection />
 
+      {/* AI Salesman */}
+      <AIAsASalesman />
+
       {/* Image Recognition */}
       <ImageRecognitionSection />
 
@@ -66,9 +69,6 @@ export default function Home() {
 
       {/* Intelligent Profiling */}
       <IntelligentProfilingSection />
-
-      {/* AI Salesman */}
-      <AIAsASalesman />
 
       {/* Agentic Flow */}
       <section className="w-full py-20 px-4 border-t border-b border-blue-900/20">

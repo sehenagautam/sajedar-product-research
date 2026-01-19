@@ -10,14 +10,14 @@ export default function DemoPage() {
     {
       id: 'latta-kapada',
       name: 'Latta Kapada',
-      description: 'AI-powered fashion assistant for trendy clothing and apparel',
+      description: 'Our most advanced chatbot yet — guides users from product discovery to address collection, collects Rs 100 advance payment, and notifies the store owner automatically.',
       facebookUrl: 'https://web.facebook.com/profile.php?id=61575123480268',
       messengerUrl: 'https://m.me/61575123480268',
       features: [
-        'Product discovery',
-        'Size consultation',
-        'Order tracking',
-        'Latest trends'
+        'Product details & discovery',
+        'Address collection',
+        'Rs 100 advance payment',
+        'Store owner notifications'
       ],
       color: 'from-blue-500 to-purple-600'
     },
