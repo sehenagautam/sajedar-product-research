@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '../../components/Header';
 import { ContactSection, Footer } from '../../components/sections';
 
@@ -13,6 +14,7 @@ export default function DemoPage() {
       description: 'Our most advanced chatbot yet — guides users from product discovery to address collection, collects Rs 100 advance payment, and notifies the store owner automatically.',
       facebookUrl: 'https://web.facebook.com/profile.php?id=61575123480268',
       messengerUrl: 'https://m.me/61575123480268',
+      logo: '/bjstore.png',
       features: [
         'Product details & discovery',
         'Address collection',
@@ -27,6 +29,7 @@ export default function DemoPage() {
       description: 'AI-powered furniture consultation and sales assistant',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61579049243889',
       messengerUrl: 'https://m.me/61579049243889',
+      logo: '/Ashwi.png',
       features: [
         'Product recommendations',
         'Size consultation',
@@ -41,6 +44,7 @@ export default function DemoPage() {
       description: 'AI-powered fashion assistant for product discovery and customer support',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61583871238196',
       messengerUrl: 'https://www.facebook.com/messages/t/779166831957210',
+      logo: '/osha.png',
       features: [
         'Outfit suggestions',
         'Size & fit guidance',
@@ -53,9 +57,10 @@ export default function DemoPage() {
       id: 'sajedar',
       name: 'Sajedar Chatbot',
       description:
-        'Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.',
+        "Of course it wouldn't be nice if I didn't use my agent to respond on my own Facebook page.",
       facebookUrl: 'https://www.facebook.com/sajedardotcom',
       messengerUrl: 'https://www.facebook.com/messages/t/401877156348283',
+      logo: '/sajedar-logo.png',
       features: [
         'Lead qualification',
         'Service explanations',
@@ -92,7 +97,16 @@ export default function DemoPage() {
             >
               <div className={`${getColorClasses()} p-6`}>
                 <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-2xl font-bold text-white">{demo.name}</h3>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={demo.logo}
+                      alt={`${demo.name} logo`}
+                      width={48}
+                      height={48}
+                      className="rounded-full object-cover bg-white/20"
+                    />
+                    <h3 className="text-2xl font-bold text-white">{demo.name}</h3>
+                  </div>
                   <span className="text-sm text-white/80 flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                     Live
