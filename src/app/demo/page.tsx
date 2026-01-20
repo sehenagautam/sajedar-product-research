@@ -11,10 +11,11 @@ export default function DemoPage() {
     {
       id: 'latta-kapada',
       name: 'Latta Kapada',
-      description: 'Our most advanced chatbot yet — guides users from product discovery to address collection, collects Rs 100 advance payment, and notifies the store owner automatically.',
+      description:
+        'Our most advanced chatbot yet — guides users from product discovery to address collection, collects Rs 100 advance payment, and notifies the store owner automatically.',
       facebookUrl: 'https://web.facebook.com/profile.php?id=61575123480268',
       messengerUrl: 'https://m.me/61575123480268',
-      logo: '/bjstore.png',
+      logo: '/lattakapadalogo.png',
       features: [
         'Product details & discovery',
         'Address collection',
@@ -29,7 +30,7 @@ export default function DemoPage() {
       description: 'AI-powered furniture consultation and sales assistant',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61579049243889',
       messengerUrl: 'https://m.me/61579049243889',
-      logo: '/Ashwi.png',
+      logo: '/ashwifurniturelogo.png',
       features: [
         'Product recommendations',
         'Size consultation',
@@ -44,7 +45,7 @@ export default function DemoPage() {
       description: 'AI-powered fashion assistant for product discovery and customer support',
       facebookUrl: 'https://www.facebook.com/profile.php?id=61583871238196',
       messengerUrl: 'https://www.facebook.com/messages/t/779166831957210',
-      logo: '/osha.png',
+      logo: '/oshaclothinglogo.png',
       features: [
         'Outfit suggestions',
         'Size & fit guidance',
@@ -60,7 +61,7 @@ export default function DemoPage() {
         "Of course it wouldn't be nice if I didn't use my agent to respond on my own Facebook page.",
       facebookUrl: 'https://www.facebook.com/sajedardotcom',
       messengerUrl: 'https://www.facebook.com/messages/t/401877156348283',
-      logo: '/sajedar-logo.png',
+      logo: '/sajedarlogo.png',
       features: [
         'Lead qualification',
         'Service explanations',
@@ -68,15 +69,13 @@ export default function DemoPage() {
         'Founder-used AI agent'
       ],
       color: 'from-blue-500 to-purple-600'
-    },
-
+    }
   ];
 
   const getColorClasses = () => 'bg-gradient-to-r from-blue-500 to-purple-600';
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
-      {/* Header */}
       <Header />
 
       <div className="max-w-7xl mx-auto px-4 py-16 w-full">
@@ -158,10 +157,7 @@ export default function DemoPage() {
         </div>
       </div>
 
-      {/* Contact */}
       <ContactSection />
-
-      {/* Footer */}
       <Footer />
     </div>
   );
