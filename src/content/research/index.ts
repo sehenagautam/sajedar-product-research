@@ -8,7 +8,10 @@ import { conversationalAiStrategicImperativeAutonomousSales } from './conversati
 import { aiImperativeCxAdvancedConversationalAiFramework } from './ai-imperative-cx-advanced-conversational-ai-framework';
 import { modernEnterpriseAiDynamicAdaptationGovernanceAgenticAutonomy } from './modern-enterprise-ai-dynamic-adaptation-governance-agentic-autonomy';
 
+import { improvingEcommerceSearchHybridRetrieval } from './improving-ecommerce-search-hybrid-retrieval';
+
 export const researchArticles = [
+  improvingEcommerceSearchHybridRetrieval,
   modernEnterpriseAiDynamicAdaptationGovernanceAgenticAutonomy,
   aiImperativeCxAdvancedConversationalAiFramework,
   aiAgentsStrategicImperative2025,
