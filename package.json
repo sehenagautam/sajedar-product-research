@@ -16,6 +16,7 @@
     "@heroicons/react": "^2.2.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "@types/html2canvas": "^0.5.35",
     "@types/papaparse": "^5.5.2",
     "animejs": "^4.0.2",
     "autoprefixer": "^10.4.21",
