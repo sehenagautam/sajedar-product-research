@@ -6,6 +6,31 @@ import Header from '../../components/Header';
 import { Footer } from '../../components/sections';
 
 const tools = [
+    // --- 1. VISUAL CONTENT TOOLS (New) ---
+    {
+        title: 'Facebook Ad Mockup Generator',
+        content: `Stop guessing. Upload your image and text to see exactly how your ad will look on the Facebook News Feed before you spend money.`,
+        link: '/tools/facebook-ad-mockup',
+    },
+    {
+        title: 'Social Media Image Cropper',
+        content: `Resize your images perfectly for Facebook Covers, Stories, and Posts without losing quality. Pre-set dimensions included.`,
+        link: '/tools/image-cropper',
+    },
+
+    // --- 2. DIRECT-TO-CHAT TOOLS (New) ---
+    {
+        title: 'WhatsApp Link Generator',
+        content: `Essential for businesses running Click-to-WhatsApp ads. Create instant wa.me links and QR codes with pre-filled messages to reduce customer friction.`,
+        link: '/tools/whatsapp-link-generator',
+    },
+    {
+        title: 'Messenger Ref URL Builder',
+        content: `Essential for advanced chatbot campaigns. Generate deep links to track exactly which ad sent a user to your bot and trigger specific conversation flows.`,
+        link: '/tools/messenger-ref-url-builder',
+    },
+
+    // --- 3. ORIGINAL & CALCULATOR TOOLS ---
     {
         title: 'ROI Calculator',
         content: `Calculate how much money you can save instantly by automating your customer support with Sajedar AI.`,
@@ -81,6 +106,166 @@ const tools = [
         content: `Essential for Real Estate and Auto sales. Calculate monthly EMIs and show clients how much they save with smart pre-payment strategies.`,
         link: '/tools/loan-calculator',
     },
+    {
+    title: 'WhatsApp Link Generator',
+    content: `Create instant Click-to-WhatsApp links with pre-filled messages.
+Perfect for Facebook Ads, Instagram bios, QR codes, and offline posters.`,
+    link: '/tools/whatsapp-link-generator',
+},
+{
+    title: 'Messenger Ref URL Builder',
+    content: `Generate deep m.me links with tracking parameters.
+Send users from specific ads or posts directly into the correct chatbot flow.`,
+    link: '/tools/messenger-ref-url-builder',
+},
+{
+    title: 'Facebook Ad Mockup Generator',
+    content: `Preview exactly how your Facebook ad or post will look on mobile before publishing.
+Eliminate the fear of cropped text, awkward layouts, and wasted ad spend.`,
+    link: '/tools/facebook-ad-mockup',
+},
+{
+    title: 'Social Media Image Cropper',
+    content: `Crop once, post everywhere.
+Resize images perfectly for Facebook posts, covers, events, and stories using exact platform dimensions.`,
+    link: '/tools/image-cropper',
+},
+{
+    title: 'Social Media Caption Spacer',
+    content: `Fix broken Facebook & Instagram captions.
+Preserve line breaks and paragraph spacing so your text doesn’t collapse into one big block.`,
+    link: '/tools/caption-spacer',
+},
+{
+    title: 'Unicode Bold Text Generator',
+    content: `Make your posts stand out in the feed.
+Convert normal text into 𝐁𝐨𝐥𝐝 𝐔𝐧𝐢𝐜𝐨𝐝𝐞 text that works across Facebook, Instagram, and LinkedIn.`,
+    link: '/tools/bold-text-generator',
+},
+{
+    title: 'Engagement Rate Calculator',
+    content: `Instantly measure how well your posts perform.
+Calculate engagement rate using likes, comments, shares, and follower count — no analytics tools needed.`,
+    link: '/tools/engagement-rate-calculator',
+},
+{
+    title: 'ROAS Estimator',
+    content: `Estimate your Return on Ad Spend before scaling.
+Project clicks, sales, revenue, and ROAS using your ad budget and funnel metrics.`,
+    link: '/tools/roas-estimator',
+},
+{
+    title: 'Facebook Pixel Event Code Generator',
+    content: `Generate accurate Facebook Pixel event codes in seconds.
+Safely create Purchase, Lead, AddToCart, and other conversion tracking scripts without touching complex code.`,
+    link: '/tools/facebook-pixel-generator',
+},
+{
+    title: 'UTM Campaign URL Builder',
+    content: `Create clean, trackable URLs for ads and campaigns.
+Know exactly which Facebook ad, post, or chatbot flow is driving your results.`,
+    link: '/tools/utm-builders',
+},
+{
+        title: 'JSON Payload Formatter & Validator',
+        content: `Debug your n8n workflows instantly. Validate, pretty-print, or minify your JSON payloads to fix syntax errors before running your automation.`,
+        link: '/tools/json-formatter',
+    },
+    {
+        title: 'JSON String Escaper',
+        content: `Solves the frustration of nested JSON. Instantly escape quote marks and backslashes for complex API calls and chatbot payloads.`,
+        link: '/tools/json-escaper',
+    },
+    {
+        title: 'Random Comment Picker',
+        content: `Running a giveaway? Paste your list of entrants and let the tool fairly pick a random winner. High viral potential for your contests.`,
+        link: '/tools/comment-picker',
+    },
+    {
+        title: 'Hashtag Shuffler & Mixer',
+        content: `Avoid the algorithm penalty. Randomize your hashtag order and select a fresh subset every time you post to prevent being flagged as spam.`,
+        link: '/tools/hashtag-shuffler',
+    },
+    {
+        title: 'Facebook Messenger JSON Builder',
+        content: `Stop writing code by hand. Visually build "Generic Templates" (Cards) with images and buttons, then get the JSON for ManyChat or n8n instantly.`,
+        link: '/tools/messenger-json-builder',
+    },
+    {
+        title: 'WhatsApp Template Validator',
+        content: `Don't let Meta reject your campaign. Validate your message format, character limits, and variable syntax ({{1}}) in real-time before submitting.`,
+        link: '/tools/whatsapp-template-validator',
+    },
+    {
+        title: '"Cost of Ignoring Customers" Calculator',
+        content: `You might be losing money while you sleep. Calculate the revenue you miss by not having 24/7 instant replies based on your message volume.`,
+        link: '/tools/missed-revenue-calculator',
+    },
+    {
+        title: 'Staff Salary vs. Chatbot Calculator',
+        content: `See the savings. Compare the yearly cost of human support staff versus automating your inbox with a Sajedar AI Agent.`,
+        link: '/tools/salary-vs-bot-calculator',
+    },
+    {
+        title: 'Campaign Naming Convention Generator',
+        content: `Stop the ad account chaos. Generate standardized campaign names (e.g., CONV_JAN26_COLD) to make reporting easy and professional.`,
+        link: '/tools/campaign-naming',
+    },
+    {
+        title: 'QR Code Generator with Logo',
+        content: `Create professional QR codes for your business. Add your brand logo to the center instantly and download high-quality images.`,
+        link: '/tools/qr-code-logo',
+    },
+    {
+        title: 'Cron Expression Generator',
+        content: `Schedule tasks in n8n or Zapier easily. Select "Every Tuesday at 4 PM" and get the correct Cron syntax (0 16 * * 2) instantly.`,
+        link: '/tools/cron-generator',
+    },
+    {
+        title: '"Spintax" Generator & Tester',
+        content: `Make your chatbot sound human. Test your message variations like {Hello|Hi} {there|friend} to ensure they sound natural before going live.`,
+        link: '/tools/spintax-tester',
+    },
+    {
+        title: 'Nepal Phone Number Sanitizer',
+        content: `Clean messy contact lists instantly. Format numbers to 97798XXXXXXXX for WhatsApp broadcasting and remove duplicates automatically.`,
+        link: '/tools/phone-sanitizer',
+    },
+    {
+        title: 'Secure CSV to JSON Converter',
+        content: `Convert spreadsheets to JSON for webhooks. 100% private and browser-based—your data never leaves your computer.`,
+        link: '/tools/csv-to-json',
+    },
+    {
+        title: 'Fake Facebook Lead Ad Payload Generator',
+        content: `Testing n8n or Zapier? Generate a dummy "Lead Ad" webhook JSON with one click. Includes Name, Email, and Phone fields ready for mapping.`,
+        link: '/tools/lead-ad-payload-generator',
+    },
+    {
+        title: 'Dummy Image Placeholder Generator',
+        content: `Need a placeholder for your website layout? Generate solid color blocks with custom dimensions (e.g., 600x400) and download them instantly.`,
+        link: '/tools/dummy-image-generator',
+    },
+    {
+        title: 'Facebook Cover Safe Zone Checker',
+        content: `Don't let your logo get cut off. Overlay a "danger zone" map on your cover photo to see exactly what gets hidden on Mobile vs. Desktop.`,
+        link: '/tools/facebook-cover-checker',
+    },
+    {
+        title: '"Break-Even" ROAS Calculator',
+        content: `Stop burning money. Calculate the exact Return On Ad Spend (ROAS) you need to hit just to cover your product costs and start making a profit.`,
+        link: '/tools/break-even-roas',
+    },
+    {
+        title: 'Sajedar Prompt Architect',
+        content: `Build scientifically optimized prompts for Midjourney & Stable Diffusion. Uses a "Slot-Filling Engine" to ensure perfect syntax, lighting, and composition every time.`,
+        link: '/tools/prompt-builder',
+    },
+    {
+        title: 'Messenger Mockup Studio',
+        content: `Draft, visualize, and export "perfect" chatbot conversations in seconds. Ideal for client proposals and portfolio showcases.`,
+        link: '/tools/messenger-mockup',
+    },
 ];
 
 export default function ToolsPage() {
@@ -114,6 +299,7 @@ export default function ToolsPage() {
                             </div>
                         );
 
+                        // If a link exists, wrap it in Next.js Link
                         return tool.link ? (
                             <Link href={tool.link} key={i} className="block h-full">
                                 {CardContent}
