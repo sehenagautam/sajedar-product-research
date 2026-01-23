@@ -5,27 +5,40 @@ import { Linkedin, Facebook, MessageCircle } from 'lucide-react';
 import { trackLead, trackContact } from '../FacebookPixel';
 
 export function ContactSection() {
-  const [prefilledMessage, setPrefilledMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
   useEffect(() => {
     // Read URL parameters when component mounts
     const urlParams = new URLSearchParams(window.location.search);
     const message = urlParams.get('message');
     if (message) {
-      setPrefilledMessage(decodeURIComponent(message));
+      setFormData(prev => ({ ...prev, message: decodeURIComponent(message) }));
     }
   }, []);
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Track Facebook Pixel events
     trackLead(0, 'USD'); // Track as lead with $0 value
     trackContact(); // Track contact event
-    
-    // Submit the form (existing functionality)
-    const form = e.target as HTMLFormElement;
-    form.submit();
+
+    // Construct WhatsApp message with form data
+    const whatsappMessage = `Hi Sajedar! I found you through your website.
+
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+
+*Message:*
+${formData.message}`;
+
+    // Open WhatsApp with prefilled message
+    const whatsappUrl = `https://wa.me/9779860479751?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -39,11 +52,10 @@ export function ContactSection() {
             Ready to see what Sajedar can do for your business? Tell us a bit about your needs and our team will reach out for a free consultation.
           </p>
         </div>
-        
-        <form 
-          className="w-full bg-gradient-to-br from-[#23243a] to-[#18181b] rounded-3xl shadow-2xl border border-white/10 p-8 flex flex-col gap-6 backdrop-blur-md" 
-          action="https://formspree.io/f/xqaqogoj" 
-          method="POST"
+
+        <form
+          className="w-full bg-gradient-to-br from-[#23243a] to-[#18181b] rounded-3xl shadow-2xl border border-white/10 p-8 flex flex-col gap-6 backdrop-blur-md"
+          onSubmit={handleFormSubmit}
         >
           <div className="flex flex-col gap-4">
             <input
@@ -51,6 +63,8 @@ export function ContactSection() {
               name="name"
               placeholder="Your Name"
               required
+              value={formData.name}
+              onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
               className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
             />
             <input
@@ -58,6 +72,8 @@ export function ContactSection() {
               name="email"
               placeholder="Your Email"
               required
+              value={formData.email}
+              onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
               className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
             />
             <textarea
@@ -65,12 +81,12 @@ export function ContactSection() {
               placeholder="Tell us about your business needs..."
               rows={4}
               required
-              value={prefilledMessage}
-              onChange={(e) => setPrefilledMessage(e.target.value)}
+              value={formData.message}
+              onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
               className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none"
             />
           </div>
-          
+
           <button
             type="submit"
             className="w-full px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-900"
@@ -78,7 +94,7 @@ export function ContactSection() {
             Get Started
           </button>
         </form>
-        
+
         {/* Social Links */}
         <div className="flex items-center gap-6 mt-6">
           <a href="https://www.linkedin.com/company/sajedar/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-300 hover:text-emerald-400 transition-colors">
@@ -97,22 +113,22 @@ export function ContactSection() {
             <MessageCircle className="w-5 h-5 text-green-400" />
             <span className="text-gray-300 font-medium">Direct WhatsApp Contact</span>
           </div>
-          
+
           <div className="text-center mb-4">
             <p className="text-sm text-gray-400 mb-2">For immediate assistance, message us directly:</p>
             <p className="text-green-400 font-semibold">+977 9860479751</p>
           </div>
 
-          <a 
-            href="https://wa.me/9779860479751?text=Hi%20Sajedar!%20I%20found%20you%20through%20your%20website%20and%20I'm%20interested%20in%20building%20a%20custom%20AI%20chatbot%20for%20my%20business.%20Can%20you%20help%20me%20get%20started?" 
-            target="_blank" 
+          <a
+            href="https://wa.me/9779860479751?text=Hi%20Sajedar!%20I%20found%20you%20through%20your%20website%20and%20I'm%20interested%20in%20building%20a%20custom%20AI%20chatbot%20for%20my%20business.%20Can%20you%20help%20me%20get%20started?"
+            target="_blank"
             rel="noopener noreferrer"
             className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
           >
             <MessageCircle className="w-4 h-4" />
             Go to WhatsApp
           </a>
-          
+
           <p className="text-xs text-gray-500 text-center mt-3">
             Click to open WhatsApp with a pre-filled message about your chatbot needs
           </p>
