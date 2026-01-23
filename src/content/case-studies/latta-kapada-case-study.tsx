@@ -192,26 +192,7 @@ export const lattaKapadaCaseStudy = {
                     </div>
                 </div>
 
-                {/* Action Links */}
-                <div className="mt-12">
-                    <h3 className="text-2xl font-bold text-white mb-6 text-center">See It In Action</h3>
-                    <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                        <a
-                            href="https://latta-kapada.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-slate-600 hover:bg-slate-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-center"
-                        >
-                            🌐 Visit Latta Kapada
-                        </a>
-                        <a
-                            href="/demo"
-                            className="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors text-center"
-                        >
-                            🎯 Request Similar Bot
-                        </a>
-                    </div>
-                </div>
+
             </div>
         );
     }
