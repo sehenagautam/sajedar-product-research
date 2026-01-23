@@ -73,21 +73,7 @@ export function HeroSection() {
               </Link>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="flex items-center gap-8 text-gray-400">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span className="text-sm">Commission Based (No fixed Charges) </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span className="text-sm">24/7 Available</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                <span className="text-sm">Setup in Days</span>
-              </div>
-            </div>
+
 
             {/* Case Study Link */}
             <div className="pt-4">
