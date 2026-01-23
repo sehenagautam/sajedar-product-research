@@ -15,6 +15,8 @@ import { sajedarVsDriftComparison } from './sajedar-vs-drift-comparison';
 import { sajedarVsCognigyComparison } from './sajedar-vs-cognigy-comparison';
 import { sajedarBrandPositioningStrategy2024 } from './sajedar-brand-positioning-strategy-2024';
 
+import { lattaKapadaCaseStudy } from './latta-kapada-case-study';
+
 export interface CaseStudy {
   slug: string;
   title: string;
@@ -28,6 +30,7 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+  lattaKapadaCaseStudy,
   sajedarBrandPositioningStrategy2024,
   artisanAiVsSajedarStrategicAnalysis,
   sajedarVsSynapseTechnologiesComparison,

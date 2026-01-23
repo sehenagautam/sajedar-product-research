@@ -10,7 +10,7 @@ export function HeroSection() {
       elements.forEach((element) => {
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
-        
+
         if (elementTop < window.innerHeight - elementVisible) {
           element.classList.add('animate-fade-in');
         }
@@ -29,7 +29,7 @@ export function HeroSection() {
           <div className="space-y-8">
             {/* Main Headline */}
             <div className="space-y-2">
-              <h1 
+              <h1
                 className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
@@ -40,23 +40,23 @@ export function HeroSection() {
                 <span className="text-white">Small and Medium Businesses</span>
               </h1>
             </div>
-            
+
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
               <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI Agent that converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"> 24/7 - all while you sleep. </span>
               <br />
-              Commission Basis: We put skin in the game. If we don’t generate measurable revenue, we don’t get paid. 
+              Commission Basis: We put skin in the game. If we don’t generate measurable revenue, we don’t get paid.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/?message=I want to build my own AI Messenger bot for my business.#contact" 
+              <Link
+                href="/?message=I want to build my own AI Messenger bot for my business.#contact"
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
-               Hire Sales Agent for your Facebook Page.
+                Hire Sales Agent for your Facebook Page.
               </Link>
-              <Link 
-                href="/demo" 
+              <Link
+                href="/demo"
                 className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg transition-colors duration-200 text-center border border-white/20"
               >
                 See a Live Demo
@@ -65,8 +65,8 @@ export function HeroSection() {
 
             {/* Automation Readiness Link */}
             <div className="text-center">
-              <Link 
-                href="/readiness" 
+              <Link
+                href="/readiness"
                 className="text-emerald-400 hover:text-emerald-300 transition-colors duration-200 underline decoration-emerald-400/50 hover:decoration-emerald-300/70 underline-offset-4"
               >
                 Calculate your automation readiness score →
@@ -91,12 +91,12 @@ export function HeroSection() {
 
             {/* Case Study Link */}
             <div className="pt-4">
-              <Link 
-                href="/case-studies/ashwi-furnitures-case-study" 
+              <Link
+                href="/case-studies/latta-kapada-case-study"
                 className="text-gray-500 hover:text-gray-400 transition-colors duration-200 text-sm"
                 style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
-                See how Ashwi Furniture generated $250 in sales from $10 in ads →
+                See how to automate Advance Payments of tactical gears on Facebook Page →
               </Link>
             </div>
           </div>
@@ -111,14 +111,14 @@ export function HeroSection() {
                 loop
                 playsInline
                 className="w-full h-full object-cover object-center"
-                              >
+              >
                 <source src="/sajedar_intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              
+
               {/* Video Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              
+
 
             </div>
 
