@@ -42,7 +42,7 @@ export default function ProposalPage() {
                         </div>
                         <div className="bg-white/5 p-6 rounded-xl border border-white/10">
                             <h3 className="text-xl font-bold text-emerald-400 mb-3">2. AI Chat Conversion</h3>
-                            <p className="text-gray-300">An agent showcases, engages, and qualifies leads in natural conversation — converting chats into confirmed sales or appointments.</p>
+                            <p className="text-gray-300">An agent showcases, engages, and qualifies leads in natural conversation - converting chats into confirmed sales or appointments.</p>
                         </div>
                     </div>
                 </section>
@@ -80,7 +80,7 @@ export default function ProposalPage() {
                                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-bold uppercase">Recommended</span>
                             </div>
                             <p className="text-gray-300 mb-4">
-                                Sajedar handles everything: chatbot setup, automation, and optimization.
+                                Lifetime Support
                             </p>
                             <p className="text-gray-300 italic">
                                 Commission rate determined based on product category, margins, and complexity. As performance scales, more chatbot capabilities are added incrementally.
@@ -90,13 +90,13 @@ export default function ProposalPage() {
                         {/* Option 2 */}
 
                         <div className="bg-white/5 border border-white/10 rounded-xl p-8">
-                            <h3 className="text-2xl font-bold text-white mb-4">2. Fixed Setup (Chatbot Only)</h3>
+                            <h3 className="text-2xl font-bold text-white mb-4">2. Fixed Setup</h3>
                             <div className="space-y-2">
                                 <p className="text-gray-300">
                                     <span className="font-bold text-emerald-400">Setup Fee:</span> $100
                                 </p>
                                 <p className="text-gray-300">
-                                    <span className="font-bold text-emerald-400">Usage Cost:</span> $1 per 30 customers
+                                    <span className="font-bold text-emerald-400">Usage Cost:</span> $1 per 30 Leads Engaged
                                 </p>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ export default function ProposalPage() {
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
                             Let’s Transform Your Inbox into a Sales Engine
                         </h2>
-                        <p className="text-lg text-emerald-400 mb-2">Sajedar.com — Your AI Business Partner</p>
+                        <p className="text-lg text-emerald-400 mb-2">Sajedar.com - Your AI Business Partner</p>
                         <p className="text-gray-400">Automate conversations. Accelerate sales.</p>
                     </div>
 
