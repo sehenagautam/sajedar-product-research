@@ -21,6 +21,14 @@ export default function CaseStudiesPage() {
       {/* Header Section */}
       <div className="w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-24 px-4 flex flex-col items-center border-b border-white/10">
         <div className="max-w-4xl w-full mx-auto text-center">
+          <div className="flex items-center justify-center mb-4">
+            <Link
+              href="/"
+              className="text-emerald-400 hover:text-emerald-300 transition-colors text-sm font-medium"
+            >
+              ← Back to Home
+            </Link>
+          </div>
           <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-4 block">
             Real-World Success Stories
           </span>
@@ -28,7 +36,7 @@ export default function CaseStudiesPage() {
             AI Case Studies
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Discover how our AI solutions have transformed businesses across industries. 
+            Discover how our AI solutions have transformed businesses across industries.
             Each case study showcases measurable results and innovative approaches.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
@@ -73,7 +81,7 @@ export default function CaseStudiesPage() {
                     {caseStudy.description}
                   </p>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {caseStudy.results.slice(0, 3).map((result, idx) => (
                     <span
@@ -89,7 +97,7 @@ export default function CaseStudiesPage() {
                     </span>
                   )}
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-gray-400 text-sm">
                     {caseStudy.duration}
@@ -114,13 +122,13 @@ export default function CaseStudiesPage() {
             Let's discuss how AI can transform your business. Our team is ready to help you achieve similar results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="/?message=I want to discuss a custom AI solution for my business.#contact"
               className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200"
             >
               Start Your Project
             </a>
-            <a 
+            <a
               href="/?message=I want to see more case studies and success stories.#contact"
               className="px-8 py-4 bg-transparent border-2 border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-white font-bold rounded-lg transition-colors duration-200"
             >

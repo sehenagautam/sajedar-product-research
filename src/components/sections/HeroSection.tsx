@@ -33,18 +33,14 @@ export function HeroSection() {
                 className="text-4xl md:text-6xl font-semibold tracking-tight text-white"
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
-                <span className="text-gray-400">Advanced</span>{' '}
-                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Facebook Page</span>{' '}
-                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Agent</span>{' '}
-                <span className="text-gray-400">for</span>{' '}
-                <span className="text-white">Small and Medium Businesses</span>
+                <span className="text-gray-400">Commission based</span>{' '}
+                <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Facebook Page Sales Agent</span>
               </h1>
             </div>
 
             <p className="text-xl md:text-2xl mb-8 leading-relaxed">
-              <span className="text-gray-400">Stop losing customers to slow responses. Get a custom AI Agent that converts leads</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"> 24/7 - all while you sleep. </span>
               <br />
-              Commission Basis: We put skin in the game. If we don’t generate measurable revenue, we don’t get paid.
+              We put skin in the game. If we don’t generate measurable revenue, we don’t get paid.
             </p>
 
             {/* CTA Buttons */}
