@@ -25,22 +25,12 @@ export default function ProposalPage() {
                         Proposal by Sajedar
                     </span>
                     <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight tracking-tight">
-                        AI Chatbot for High-Speed Sales
+                        High Speed Sales powered by AI Agent
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                        Your AI Business Partner
-                    </p>
                 </div>
             </div>
 
             <div className="max-w-4xl mx-auto px-4 pt-16 space-y-16">
-                {/* Overview */}
-                <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-white mb-4">Overview</h2>
-                    <p className="text-lg text-gray-300 leading-relaxed">
-                        Sajedar helps businesses accelerate sales using AI chat automation. Our system engages leads instantly through an intelligent, multilingual AI chatbot — powered by OpenAI's models (ChatGPT) and orchestrated using n8n automation workflows.
-                    </p>
-                </section>
 
                 {/* How It Works */}
                 <section className="space-y-6">
@@ -48,11 +38,11 @@ export default function ProposalPage() {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-white/5 p-6 rounded-xl border border-white/10">
                             <h3 className="text-xl font-bold text-emerald-400 mb-3">1. Customer Engagement</h3>
-                            <p className="text-gray-300">Customers message your business directly on Messenger, WhatsApp, or your website chat.</p>
+                            <p className="text-gray-300">Customers message your business directly on Facebook Messenger.</p>
                         </div>
                         <div className="bg-white/5 p-6 rounded-xl border border-white/10">
                             <h3 className="text-xl font-bold text-emerald-400 mb-3">2. AI Chat Conversion</h3>
-                            <p className="text-gray-300">An AI-powered chatbot greets, engages, and qualifies leads in natural conversation — converting chats into confirmed sales or appointments.</p>
+                            <p className="text-gray-300">An agent showcases, engages, and qualifies leads in natural conversation — converting chats into confirmed sales or appointments.</p>
                         </div>
                     </div>
                 </section>
@@ -62,15 +52,14 @@ export default function ProposalPage() {
                     <h2 className="text-3xl font-bold text-white mb-4">Chatbot Capabilities</h2>
                     <ul className="grid md:grid-cols-2 gap-4 text-gray-300">
                         {[
-                            "24/7 Instant Responses on Facebook Messenger.",
-                            "Multilingual Support: Nepali, English, Romanized Nepali, Hinglish, mixed.",
-                            "Provides detailed product information and FAQs.",
-                            "Handles light bargaining or price justification (with admin-defined limits).",
-                            "Chats fluently in any language — native script, romanized, or mixed.",
-                            "Reads text from images and responds contextually.",
+                            "24/7 Responses.",
+                            "Any language supported.",
+                            "Showcases products and answers FAQs.",
+                            "Admin defined limits on discounts.",
+                            "Understands images.",
                             "Notifies humans in complex or unclear situations.",
                             "Supports human takeover: when a page admin replies, the bot stays silent until released.",
-                            "Can send QR payment images for semi-finalization (human verification required)."
+                            "Can collect advance payments for order confirmations."
                         ].map((capability, index) => (
                             <li key={index} className="flex items-start">
                                 <span className="text-emerald-400 mr-2 mt-1">•</span>
@@ -78,29 +67,6 @@ export default function ProposalPage() {
                             </li>
                         ))}
                     </ul>
-                </section>
-
-                {/* Key Benefits */}
-                <section className="space-y-6">
-                    <h2 className="text-3xl font-bold text-white mb-4">Key Benefits</h2>
-                    <div className="grid sm:grid-cols-2 gap-6">
-                        <div className="border border-white/10 rounded-lg p-6 bg-emerald-500/5">
-                            <h3 className="font-bold text-white text-lg mb-2">Instant Replies = Higher Conversions</h3>
-                            <p className="text-gray-400 text-sm">Never lose a sale due to delayed replies.</p>
-                        </div>
-                        <div className="border border-white/10 rounded-lg p-6 bg-emerald-500/5">
-                            <h3 className="font-bold text-white text-lg mb-2">Reduced Workload</h3>
-                            <p className="text-gray-400 text-sm">Offload repetitive queries and FAQs to the AI assistant.</p>
-                        </div>
-                        <div className="border border-white/10 rounded-lg p-6 bg-emerald-500/5">
-                            <h3 className="font-bold text-white text-lg mb-2">Focus on What Matters</h3>
-                            <p className="text-gray-400 text-sm">Free your team to manage complex or high-value leads.</p>
-                        </div>
-                        <div className="border border-white/10 rounded-lg p-6 bg-emerald-500/5">
-                            <h3 className="font-bold text-white text-lg mb-2">Always Active</h3>
-                            <p className="text-gray-400 text-sm">Operates 24/7, ensuring continuous engagement.</p>
-                        </div>
-                    </div>
                 </section>
 
                 {/* Pricing Options */}
@@ -148,11 +114,11 @@ export default function ProposalPage() {
                             </li>
                             <li className="flex items-start">
                                 <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold mr-4">2</span>
-                                <span className="pt-1">Sajedar will onboard your business — integrating your Meta Page and chatbot.</span>
+                                <span className="pt-1">Contact Us on WhatsApp</span>
                             </li>
                             <li className="flex items-start">
                                 <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold mr-4">3</span>
-                                <span className="pt-1">Launch your first AI-powered sales campaign within 3–5 days.</span>
+                                <span className="pt-1">Launch your first AI-powered sales campaign within 1-3 days.</span>
                             </li>
                         </ol>
                     </div>
