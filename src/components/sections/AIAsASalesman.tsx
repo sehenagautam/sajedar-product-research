@@ -13,14 +13,14 @@ export default function AIAsASalesman() {
 
           {/* Text */}
           <div className="relative z-10 mb-16">
-            <h1 
+            <h1
               className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-6"
               style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
               <span className="text-gray-400">AI As a</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Salesman</span>
             </h1>
             <p className="mx-auto max-w-2xl text-lg text-gray-300">
-              <span className="text-gray-400">Transform your chatbot into a</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">sales expert</span> <span className="text-gray-400">that handles objections, creates urgency, and boosts conversions.</span>
+              <span className="text-gray-400">A</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">sales expert</span> <span className="text-gray-400">that handles objections, creates urgency, and boosts conversions.</span>
             </p>
           </div>
 
