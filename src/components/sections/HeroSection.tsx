@@ -70,7 +70,7 @@ export function HeroSection() {
                 className="text-gray-500 hover:text-gray-400 transition-colors duration-200 text-sm"
                 style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
-                See how to automate Advance Payments of tactical gears on Facebook Page →
+                See how we guided incoming leads to Advance Payments →
               </Link>
             </div>
           </div>
