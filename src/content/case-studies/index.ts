@@ -1,20 +1,4 @@
-import { ecommerceChatbotCaseStudy } from './ecommerce-chatbot-case-study';
-import { healthcareAIAssistantCaseStudy } from './healthcare-ai-assistant-case-study';
-import { hospitalityAutomationCaseStudy } from './hospitality-automation-case-study';
 import { ashwiFurnituresCaseStudy } from './ashwi-furnitures-case-study';
-import { conversationalAiNepalEcosystemCaseStudy } from './conversational-ai-nepal-ecosystem-2025';
-import { artisanAiVsSajedarStrategicAnalysis } from './artisan-ai-vs-sajedar-strategic-analysis';
-import { sajedarVsSynapseTechnologiesComparison } from './sajedar-vs-synapse-technologies-comparison';
-import { sajedarVsPlexBitInfosystemsComparison } from './sajedar-vs-plex-bit-infosystems-comparison';
-import { sajedarVsCubitComparison } from './sajedar-vs-cubit-comparison';
-import { sajedarVsAwecodeComparison } from './sajedar-vs-awecode-comparison';
-import { sajedarVsHaptikComparison } from './sajedar-vs-haptik-comparison';
-import { sajedarVsYellowAiComparison } from './sajedar-vs-yellow-ai-comparison';
-import { sajedarVsLeenaAiComparison } from './sajedar-vs-leena-ai-comparison';
-import { sajedarVsDriftComparison } from './sajedar-vs-drift-comparison';
-import { sajedarVsCognigyComparison } from './sajedar-vs-cognigy-comparison';
-import { sajedarBrandPositioningStrategy2024 } from './sajedar-brand-positioning-strategy-2024';
-
 import { lattaKapadaCaseStudy } from './latta-kapada-case-study';
 
 export interface CaseStudy {
@@ -31,22 +15,7 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   lattaKapadaCaseStudy,
-  sajedarBrandPositioningStrategy2024,
-  artisanAiVsSajedarStrategicAnalysis,
-  sajedarVsSynapseTechnologiesComparison,
-  sajedarVsPlexBitInfosystemsComparison,
-  sajedarVsCubitComparison,
-  sajedarVsAwecodeComparison,
-  sajedarVsHaptikComparison,
-  sajedarVsYellowAiComparison,
-  sajedarVsLeenaAiComparison,
-  sajedarVsDriftComparison,
-  sajedarVsCognigyComparison,
-  conversationalAiNepalEcosystemCaseStudy,
   ashwiFurnituresCaseStudy,
-  ecommerceChatbotCaseStudy,
-  healthcareAIAssistantCaseStudy,
-  hospitalityAutomationCaseStudy,
 ];
 
 export function getAllCaseStudies(): CaseStudy[] {
