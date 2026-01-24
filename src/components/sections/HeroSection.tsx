@@ -49,7 +49,7 @@ export function HeroSection() {
                 href="/?message=I want to build my own AI Messenger bot for my business.#contact"
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
-                Hire Sales Agent for your Facebook Page.
+                Hire Sales Agent
               </Link>
               <Link
                 href="/demo"
