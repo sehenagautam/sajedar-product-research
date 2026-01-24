@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbot + Meta Ads Proposal | Sajedar',
-    description: 'A proposal for high-speed sales using AI Chatbot and Meta Ads automation by Sajedar.',
+    title: 'AI Chatbot Proposal | Sajedar',
+    description: 'A proposal for high-speed sales using AI Chatbot automation by Sajedar.',
 };
 
 export default function ProposalPage() {
@@ -25,7 +25,7 @@ export default function ProposalPage() {
                         Proposal by Sajedar
                     </span>
                     <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight tracking-tight">
-                        AI Chatbot + Meta Ads for High-Speed Sales
+                        AI Chatbot for High-Speed Sales
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
                         Your AI Business Partner
@@ -38,7 +38,7 @@ export default function ProposalPage() {
                 <section className="space-y-6">
                     <h2 className="text-3xl font-bold text-white mb-4">Overview</h2>
                     <p className="text-lg text-gray-300 leading-relaxed">
-                        Sajedar helps businesses accelerate sales using a fusion of Meta Ads and AI chat automation. Our system captures leads directly from your Meta campaigns and engages them instantly through an intelligent, multilingual AI chatbot — powered by OpenAI's models (ChatGPT) and orchestrated using n8n automation workflows.
+                        Sajedar helps businesses accelerate sales using AI chat automation. Our system engages leads instantly through an intelligent, multilingual AI chatbot — powered by OpenAI's models (ChatGPT) and orchestrated using n8n automation workflows.
                     </p>
                 </section>
 
@@ -47,8 +47,8 @@ export default function ProposalPage() {
                     <h2 className="text-3xl font-bold text-white mb-4">How It Works</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-                            <h3 className="text-xl font-bold text-emerald-400 mb-3">1. Lead Generation</h3>
-                            <p className="text-gray-300">Meta Ads drive high-intent prospects directly to Messenger, WhatsApp, or your website chat.</p>
+                            <h3 className="text-xl font-bold text-emerald-400 mb-3">1. Customer Engagement</h3>
+                            <p className="text-gray-300">Customers message your business directly on Messenger, WhatsApp, or your website chat.</p>
                         </div>
                         <div className="bg-white/5 p-6 rounded-xl border border-white/10">
                             <h3 className="text-xl font-bold text-emerald-400 mb-3">2. AI Chat Conversion</h3>
@@ -114,7 +114,7 @@ export default function ProposalPage() {
                                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-bold uppercase">Recommended</span>
                             </div>
                             <p className="text-gray-300 mb-4">
-                                Sajedar handles everything: ad graphics, targeting, chatbot setup, automation, and optimization.
+                                Sajedar handles everything: chatbot setup, automation, and optimization.
                             </p>
                             <p className="text-gray-300 italic">
                                 Commission rate determined based on product category, margins, and complexity. As performance scales, more chatbot capabilities are added incrementally.
@@ -122,35 +122,16 @@ export default function ProposalPage() {
                         </div>
 
                         {/* Option 2 */}
+
                         <div className="bg-white/5 border border-white/10 rounded-xl p-8">
                             <h3 className="text-2xl font-bold text-white mb-4">2. Fixed Setup (Chatbot Only)</h3>
-                            <p className="text-gray-300 mb-6">Starting at $100 setup fee and $0.01 per response.</p>
-
-                            <div className="overflow-x-auto">
-                                <table className="w-full text-left border-collapse">
-                                    <thead>
-                                        <tr className="border-b border-white/10">
-                                            <th className="p-4 text-emerald-400 font-bold">Tier</th>
-                                            <th className="p-4 text-emerald-400 font-bold">Description</th>
-                                            <th className="p-4 text-emerald-400 font-bold">Setup Fee</th>
-                                            <th className="p-4 text-emerald-400 font-bold">Cost per Reply</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="text-gray-300">
-                                        <tr className="border-b border-white/5">
-                                            <td className="p-4 font-semibold text-white">Basic (Text-Only)</td>
-                                            <td className="p-4">Ideal for FAQ or lead capture</td>
-                                            <td className="p-4">$50</td>
-                                            <td className="p-4">$0.01</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="p-4 font-semibold text-white">Text + Image</td>
-                                            <td className="p-4">Supports photos, OCR, and visual replies</td>
-                                            <td className="p-4">$80</td>
-                                            <td className="p-4">$0.015</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div className="space-y-2">
+                                <p className="text-gray-300">
+                                    <span className="font-bold text-emerald-400">Setup Fee:</span> $100
+                                </p>
+                                <p className="text-gray-300">
+                                    <span className="font-bold text-emerald-400">Usage Cost:</span> $1 per 30 customers
+                                </p>
                             </div>
                         </div>
                     </div>
