@@ -29,15 +29,7 @@ export function TestimonialsSection() {
       profilePic: "/osha.png",
       rating: 5
     },
-    {
-      id: 3,
-      name: "Nishan Neupane",
-      company: "Vibely",
-      role: "Co-Founder",
-      quote: "Sajedar’s chatbot became an extension of our brand voice. Engagement went up and our team workload went down.",
-      profilePic: "/Vibely.png",
-      rating: 5
-    },
+
     {
       id: 4,
       name: "Samyog Shrestha",
