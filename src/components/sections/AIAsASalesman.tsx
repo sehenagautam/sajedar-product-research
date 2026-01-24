@@ -19,9 +19,6 @@ export default function AIAsASalesman() {
             >
               <span className="text-gray-400">AI As a</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Salesman</span>
             </h1>
-            <p className="mx-auto max-w-2xl text-lg text-gray-300">
-              <span className="text-gray-400">A</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">sales expert</span> <span className="text-gray-400">that handles objections, creates urgency, and boosts conversions.</span>
-            </p>
           </div>
 
           {/* Core Visual: AI Salesman Image */}
@@ -37,7 +34,7 @@ export default function AIAsASalesman() {
 
             {/* Apple-style Tactic Tags */}
             <div className="flex flex-wrap justify-center gap-4 max-w-4xl">
-              {['Objection', 'Upsell', 'Urgency', 'Proof', 'Commit', 'Value', 'Bundle'].map((label, i) => (
+              {['Upsell', 'Bundle', 'Value', 'Proof', 'Urgency', 'Commit', 'Objection'].map((label, i) => (
                 <div
                   key={label}
                   className="group relative"

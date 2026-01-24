@@ -33,7 +33,7 @@ export function IntegrationSection() {
               className="text-gray-400 text-sm"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Collect leads by interacting with ad responders
+              Collect leads
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export function IntegrationSection() {
               className="text-gray-400 text-sm"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Take the leads upwards in the funnel
+              Talk to Human
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export function IntegrationSection() {
               className="text-gray-400 text-sm"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Escalation notice and management
+              Notify Humans
             </p>
           </div>
 

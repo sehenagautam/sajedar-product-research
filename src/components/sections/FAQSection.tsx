@@ -2,23 +2,23 @@ export function FAQSection() {
   const faqs = [
     {
       question: "What makes Sajedar different from other chatbot providers?",
-      answer: "We build every chatbot from scratch, tailored to your business needs—no templates or generic bots. You get a solution that fits your brand, your workflows, and your goals."
+      answer: "We build tailored Agent specific for your business needs. Hop on a short call and we will figure out everything you need."
     },
     {
       question: "How long does it take to launch a custom chatbot?",
-      answer: "Most projects go live in 2–4 weeks, depending on complexity and integrations. We work fast, but never at the expense of quality."
+      answer: "Between 1 to 3 days."
     },
     {
       question: "Can you integrate with our existing tools and CRM?",
-      answer: "Yes! We support 50+ integrations and can connect your chatbot to most modern platforms, CRMs, and business tools."
+      answer: "Yes! As long as it has an API, we can integrate with it."
     },
     {
       question: "What kind of support do you offer after launch?",
-      answer: "We provide ongoing support, monitoring, and optimization. You'll always have a direct line to our team for help or improvements."
+      answer: "COmmission based is a long term relationship. We will be there for you as long as we work together."
     },
     {
-      question: "Is Sajedar suitable for small businesses or startups?",
-      answer: "Absolutely. We work with companies of all sizes and can tailor our approach to fit your budget and growth stage."
+      question: "Is Sajedar suitable for small retail shops?",
+      answer: "Yes! You are our primary clients right now."
     }
   ];
 

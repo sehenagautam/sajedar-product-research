@@ -87,46 +87,7 @@ export function TestimonialsSection() {
 
   const topDuplicated = [...testimonials, ...testimonials];
 
-  const bottomTestimonials = [
-    {
-      id: 101,
-      name: "Bishav Shrestha",
-      company: "Deep Darshan Traders",
-      role: "Director",
-      quote: "The chatbot handles product inquiries and follow-ups efficiently. Our sales process feels much smoother now.",
-      profilePic: "/deepdarshan.png",
-      rating: 5
-    },
-    {
-      id: 102,
-      name: "Riya Rana",
-      company: "SkyLine Travels",
-      role: "Customer Experience Lead",
-      quote: "Travel queries, itineraries, and booking requests are handled instantly. Customers love the speed and clarity.",
-      profilePic: "/skyline.png",
-      rating: 5
-    },
-    {
-      id: 103,
-      name: "Samrat Thapa",
-      company: "Evergreen Organics",
-      role: "Founder",
-      quote: "The AI chatbot educates customers about our products while maintaining a friendly, natural tone.",
-      profilePic: "/evergeen.png",
-      rating: 5
-    },
-    {
-      id: 104,
-      name: "Ramila Baral",
-      company: "BuildRight",
-      role: "Project Manager",
-      quote: "Client inquiries are handled automatically, allowing our team to focus on execution rather than follow-ups.",
-      profilePic: "/buildright.png",
-      rating: 5
-    }
-  ];
 
-  const bottomDuplicated = [...bottomTestimonials, ...bottomTestimonials];
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
     <div className="flex-shrink-0 w-80 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mx-4">
@@ -164,19 +125,12 @@ export function TestimonialsSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
 
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
-            Client Success Stories
-          </span>
           <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-2">
             <span className="text-gray-400">What Our</span>{' '}
             <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
               Clients Say
             </span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-6">
-            Discover how businesses across different industries have transformed their customer engagement
-            with Sajedar's AI-powered solutions.
-          </p>
         </div>
 
         <div className="relative overflow-hidden">
@@ -186,11 +140,7 @@ export function TestimonialsSection() {
             ))}
           </div>
 
-          <div className="flex animate-scroll-right mt-8">
-            {bottomDuplicated.map((testimonial, index) => (
-              <TestimonialCard key={`bottom-${testimonial.id}-${index}`} testimonial={testimonial} />
-            ))}
-          </div>
+
         </div>
       </div>
 
@@ -200,21 +150,11 @@ export function TestimonialsSection() {
           100% { transform: translateX(-50%); }
         }
 
-        @keyframes scroll-right {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-
         .animate-scroll-left {
           animation: scroll-left 60s linear infinite;
         }
 
-        .animate-scroll-right {
-          animation: scroll-right 60s linear infinite;
-        }
-
-        .animate-scroll-left:hover,
-        .animate-scroll-right:hover {
+        .animate-scroll-left:hover {
           animation-play-state: paused;
         }
       `}</style>
