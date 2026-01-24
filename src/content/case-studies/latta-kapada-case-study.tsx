@@ -21,7 +21,7 @@ export const lattaKapadaCaseStudy = {
                         Fashion Retail Case Study
                     </div>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">
-                        Tactical Sales Agent
+                        Tactical Pants Sales Agent
                     </h2>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                         A Roman-Nepali speaking AI agent for Latta Kapada that drives tactical pants sales by collecting size details, delivery info, and securing advance payments.
@@ -31,16 +31,16 @@ export const lattaKapadaCaseStudy = {
                 {/* Key Metrics Grid */}
                 <div className="grid md:grid-cols-4 gap-6 mb-12">
                     <div className="bg-gradient-to-br from-emerald-900/30 to-green-900/30 border border-emerald-500/30 rounded-2xl p-6 text-center">
-                        <div className="text-3xl font-bold text-emerald-400 mb-2">100%</div>
-                        <div className="text-sm text-gray-300">Advance Collection</div>
+                        <div className="text-3xl font-bold text-emerald-400 mb-2">Goal</div>
+                        <div className="text-sm text-gray-300">Rs 100 Advance Collection</div>
                     </div>
                     <div className="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 border border-blue-500/30 rounded-2xl p-6 text-center">
                         <div className="text-3xl font-bold text-blue-400 mb-2">Audio</div>
                         <div className="text-sm text-gray-300">Message Parsing</div>
                     </div>
                     <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-6 text-center">
-                        <div className="text-3xl font-bold text-purple-400 mb-2">Roman</div>
-                        <div className="text-sm text-gray-300">Nepali Support</div>
+                        <div className="text-3xl font-bold text-purple-400 mb-2">Roman Nepali</div>
+                        <div className="text-sm text-gray-300">Response language</div>
                     </div>
                     <div className="bg-gradient-to-br from-amber-900/30 to-orange-900/30 border border-amber-500/30 rounded-2xl p-6 text-center">
                         <div className="text-3xl font-bold text-amber-400 mb-2">Real-time</div>
@@ -182,7 +182,7 @@ export const lattaKapadaCaseStudy = {
                     </p>
                     <div className="inline-flex gap-4">
                         <div className="px-4 py-2 bg-black/30 rounded-lg border border-white/10">
-                            <span className="block text-2xl font-bold text-emerald-400">100%</span>
+                            <span className="block text-2xl font-bold text-emerald-400">Fully</span>
                             <span className="text-xs text-gray-400">Automated Intake</span>
                         </div>
                         <div className="px-4 py-2 bg-black/30 rounded-lg border border-white/10">
