@@ -5,14 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
-  const handleDownloadProposal = () => {
-    const link = document.createElement('a');
-    link.href = '/Sajedar-Business-Proposal_AI_Chatbot.pdf';
-    link.download = 'Sajedar-Business-Proposal_AI_Chatbot.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#18181b]/90 via-[#23243a]/90 to-[#1a1a2e]/90 backdrop-blur-sm border-b border-emerald-500/20">
@@ -60,8 +53,8 @@ const Header: React.FC = () => {
           </div>
 
           {/* Right Section: Download Button */}
-          <button
-            onClick={handleDownloadProposal}
+          <Link
+            href="/proposal"
             className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-white text-xs sm:text-sm md:text-base font-semibold rounded-lg transition-colors duration-200 flex items-center gap-1 sm:gap-2 cursor-pointer hover:opacity-90 flex-shrink-0 whitespace-nowrap"
             style={{
               fontFamily: 'Inter, Arial, sans-serif',
@@ -78,12 +71,18 @@ const Header: React.FC = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
               />
             </svg>
-            <span className="hidden sm:inline">Download</span>
+            <span className="hidden sm:inline">View</span>
             <span className="hidden md:inline"> Proposal</span>
-          </button>
+          </Link>
 
         </div>
       </div>
