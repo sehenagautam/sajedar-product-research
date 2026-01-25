@@ -125,7 +125,7 @@ Treat compliance as a competitive advantage, not a burden.
 
 ## 🧩 VII. Strategic Takeaways
 
-- **Invest in Architecture, not Just Interface:** Competitive edge lies in RAG + API depth, not chatbot UI.
+- **Invest in Architecture, not Just Interface:** Competitive edge lies in RAG + API depth, not agent UI.
 - **Optimize FCR & Containment:** These metrics best demonstrate ROI and CX improvement.
 - **Perfect the AI–Human Handoff:** Maintain context continuity for empathy + efficiency synergy.
 

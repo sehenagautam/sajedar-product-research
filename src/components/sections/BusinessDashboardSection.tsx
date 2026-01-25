@@ -13,7 +13,7 @@ export function BusinessDashboardSection() {
             Complete <span className="text-emerald-400">Business Dashboard</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Manage your chatbot content, products, and business information from one powerful dashboard. 
+            Manage your agent content, products, and business information from one powerful dashboard.
             Update images, pricing, and responses in real-time without any technical knowledge.
           </p>
         </div>
@@ -92,7 +92,7 @@ export function BusinessDashboardSection() {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-white">Sajedar Business Dashboard</div>
-                    <div className="text-xs text-gray-400">Manage your chatbot content</div>
+                    <div className="text-xs text-gray-400">Manage your agent content</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -225,7 +225,7 @@ export function BusinessDashboardSection() {
           <div className="bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Take Control of Your Chatbot?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Get access to your business dashboard and start managing your chatbot content, products, and responses with ease.
+              Get access to your business dashboard and start managing your agent content, products, and responses with ease.
             </p>
             <a href="/?message=I want access to the business dashboard to manage my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
               Access Dashboard

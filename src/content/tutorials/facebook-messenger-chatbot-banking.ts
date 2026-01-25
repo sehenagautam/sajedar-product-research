@@ -12,7 +12,7 @@ export const facebookMessengerChatbotBanking = {
 
 **Banking Statistics:**
 - **78%** of customers prefer digital banking channels
-- **65%** reduction in call center volume with chatbot support
+- **65%** reduction in call center volume with agent support
 - **89%** customer satisfaction with instant financial assistance
 - **45%** increase in loan application completion rates
 
@@ -325,15 +325,15 @@ async function processTransaction(accountId, amount, type) {
 
 ## 🎯 Ready to Transform Your Banking Services?
 
-Implement a Facebook Messenger chatbot that:
+Implement a Facebook Messenger agent that:
 - ✅ Provides secure 24/7 banking support
 - ✅ Maintains PCI DSS and GDPR compliance
 - ✅ Reduces call center volume by 65%
 - ✅ Improves customer satisfaction by 89%
 - ✅ Enhances security and fraud detection
 
-**Get started with Sajedar's secure banking chatbot solution today!**`,
-  tags: ['banking chatbot facebook messenger', 'facebook messenger chatbot banking', 'banking chatbot', 'financial chatbot', 'banking ai chatbot', 'financial services chatbot', 'banking automation', 'secure banking chatbot'],
+**Get started with Sajedar's secure banking agent solution today!**`,
+  tags: ['banking agent facebook messenger', 'facebook messenger agent banking', 'banking chatbot', 'financial chatbot', 'banking ai chatbot', 'financial services chatbot', 'banking automation', 'secure banking chatbot'],
   publishedAt: '2025-01-25',
   updatedAt: '2025-01-25',
   author: 'Sajedar Team',
@@ -343,6 +343,6 @@ Implement a Facebook Messenger chatbot that:
   seo: {
     metaTitle: 'Facebook Messenger AI Chatbot for Banking & Finance: Complete Guide | Sajedar',
     metaDescription: 'Learn how to create secure Facebook Messenger chatbots for banking and finance that provide real-time account support, loan assistance, and financial guidance while maintaining compliance.',
-    keywords: ['banking chatbot facebook messenger', 'facebook messenger chatbot banking', 'banking chatbot', 'financial chatbot', 'banking ai chatbot', 'financial services chatbot', 'banking automation chatbot']
+    keywords: ['banking agent facebook messenger', 'facebook messenger agent banking', 'banking chatbot', 'financial chatbot', 'banking ai chatbot', 'financial services chatbot', 'banking automation chatbot']
   }
 };

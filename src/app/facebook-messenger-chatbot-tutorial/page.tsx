@@ -4,21 +4,21 @@ import { CheckCircle, ArrowRight, Star, Users, MessageSquare, Zap } from 'lucide
 
 export const metadata: Metadata = {
   title: 'How to Create Facebook Messenger AI Chatbot - Complete Tutorial 2025',
-  description: 'Learn how to create Facebook Messenger AI chatbot step-by-step. Free tutorial for building AI chatbots on Facebook Messenger. No coding required. Start building your chatbot today!',
+  description: 'Learn how to create Facebook Messenger AI agent step-by-step. Free tutorial for building AI chatbots on Facebook Messenger. No coding required. Start building your agent today!',
   keywords: [
-    'how to create chatbot in messenger',
-    'facebook messenger chatbot tutorial',
-    'how to make chatbot for facebook messenger',
-    'connect chatbot to facebook messenger',
+    'how to create agent in messenger',
+    'facebook messenger agent tutorial',
+    'how to make agent for facebook messenger',
+    'connect agent to facebook messenger',
     'facebook messenger ai chatbot',
-    'ai chatbot for facebook messenger',
+    'ai agent for facebook messenger',
     'facebook ai chatbot',
     'chatbot facebook messenger free',
-    'facebook messenger chatbot tutorial',
-    'best ai chatbot for facebook messenger',
-    'free ai chatbot for facebook messenger',
-    'facebook chatbot tutorial',
-    'messenger chatbot tutorial',
+    'facebook messenger agent tutorial',
+    'best ai agent for facebook messenger',
+    'free ai agent for facebook messenger',
+    'facebook agent tutorial',
+    'messenger agent tutorial',
     'create facebook chatbot',
     'facebook messenger bot tutorial'
   ],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'article',
     title: 'How to Create Facebook Messenger AI Chatbot - Complete Tutorial 2025',
-    description: 'Learn how to create Facebook Messenger AI chatbot step-by-step. Free tutorial for building AI chatbots on Facebook Messenger. No coding required.',
+    description: 'Learn how to create Facebook Messenger AI agent step-by-step. Free tutorial for building AI chatbots on Facebook Messenger. No coding required.',
     url: 'https://sajedar.com/facebook-messenger-chatbot-tutorial',
     publishedTime: '2025-01-25',
     modifiedTime: '2025-01-25',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'How to Create Facebook Messenger AI Chatbot - Complete Tutorial 2025',
-    description: 'Learn how to create Facebook Messenger AI chatbot step-by-step. Free tutorial for building AI chatbots on Facebook Messenger.',
+    description: 'Learn how to create Facebook Messenger AI agent step-by-step. Free tutorial for building AI chatbots on Facebook Messenger.',
   }
 };
 
@@ -54,7 +54,7 @@ export default function FacebookMessengerChatbotTutorialPage() {
               How to Create Facebook Messenger AI Chatbot
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Learn how to build, deploy, and optimize Facebook Messenger AI chatbots that increase sales, 
+              Learn how to build, deploy, and optimize Facebook Messenger AI chatbots that increase sales,
               automate customer support, and boost engagement. Complete step-by-step guide for 2025.
             </p>
           </div>
@@ -88,7 +88,7 @@ export default function FacebookMessengerChatbotTutorialPage() {
         {/* Step-by-Step Tutorial */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-white mb-6">Step-by-Step Tutorial: Create Your Facebook Messenger AI Chatbot</h2>
-          
+
           <div className="space-y-8">
             {/* Step 1 */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-8">
@@ -120,7 +120,7 @@ export default function FacebookMessengerChatbotTutorialPage() {
                 <div>
                   <h3 className="text-2xl font-semibold text-white mb-4">Connect Your Page to Sajedar</h3>
                   <p className="text-gray-300 mb-4">
-                    Sajedar makes it easy to connect your Facebook Page and create an AI chatbot without coding.
+                    Sajedar makes it easy to connect your Facebook Page and create an AI agent without coding.
                   </p>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center"><CheckCircle className="w-5 h-5 text-emerald-400 mr-2" />Sign up for Sajedar (free)</li>
@@ -141,7 +141,7 @@ export default function FacebookMessengerChatbotTutorialPage() {
                 <div>
                   <h3 className="text-2xl font-semibold text-white mb-4">Design Your AI Chatbot</h3>
                   <p className="text-gray-300 mb-4">
-                    Use Sajedar's intuitive chatbot builder to design your AI assistant's personality, responses, and capabilities.
+                    Use Sajedar's intuitive agent builder to design your AI assistant's personality, responses, and capabilities.
                   </p>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center"><CheckCircle className="w-5 h-5 text-emerald-400 mr-2" />Choose your chatbot's personality</li>
@@ -162,7 +162,7 @@ export default function FacebookMessengerChatbotTutorialPage() {
                 <div>
                   <h3 className="text-2xl font-semibold text-white mb-4">Test and Deploy</h3>
                   <p className="text-gray-300 mb-4">
-                    Test your chatbot thoroughly before going live, then deploy it to start engaging with customers.
+                    Test your agent thoroughly before going live, then deploy it to start engaging with customers.
                   </p>
                   <ul className="text-gray-300 space-y-2">
                     <li className="flex items-center"><CheckCircle className="w-5 h-5 text-emerald-400 mr-2" />Test all conversation flows</li>
@@ -233,18 +233,18 @@ export default function FacebookMessengerChatbotTutorialPage() {
             Ready to Create Your Facebook Messenger AI Chatbot?
           </h2>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Start building your Facebook Messenger AI chatbot today with Sajedar. 
+            Start building your Facebook Messenger AI agent today with Sajedar.
             No coding required, setup in minutes, and see results immediately.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="/?message=I want to create a Facebook Messenger AI chatbot for my business.#contact" 
+            <Link
+              href="/?message=I want to create a Facebook Messenger AI agent for my business.#contact"
               className="px-8 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors"
             >
               Create My Chatbot
             </Link>
-            <Link 
-              href="/demo" 
+            <Link
+              href="/demo"
               className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg transition-colors border border-white/20"
             >
               See Live Demos

@@ -13,8 +13,8 @@ export function KnowledgeIntegrationSection() {
             Feed Your Chatbot with <span className="text-emerald-400">Business Knowledge</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Connect your chatbot to all your business data sources - databases, PDFs, websites, 
-            and knowledge bases. Your chatbot becomes an expert on your business with instant access to accurate information.
+            Connect your agent to all your business data sources - databases, PDFs, websites,
+            and knowledge bases. Your agent becomes an expert on your business with instant access to accurate information.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export function KnowledgeIntegrationSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Multi-Source Integration</h3>
-                  <p className="text-gray-300">Connect databases, PDFs, websites, knowledge bases, and APIs. Your chatbot accesses information from all your business sources seamlessly.</p>
+                  <p className="text-gray-300">Connect databases, PDFs, websites, knowledge bases, and APIs. Your agent accesses information from all your business sources seamlessly.</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export function KnowledgeIntegrationSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Real-time Data Sync</h3>
-                  <p className="text-gray-300">Automatic synchronization with your data sources. Your chatbot always has the latest information, policies, and product details.</p>
+                  <p className="text-gray-300">Automatic synchronization with your data sources. Your agent always has the latest information, policies, and product details.</p>
                 </div>
               </div>
             </div>
@@ -181,9 +181,9 @@ export function KnowledgeIntegrationSection() {
                 <div className="mt-4 bg-white border border-gray-200 rounded-lg p-3">
                   <h4 className="text-sm font-medium text-gray-800 mb-2">Knowledge Search</h4>
                   <div className="flex space-x-2">
-                    <input 
-                      type="text" 
-                      placeholder="Search knowledge base..." 
+                    <input
+                      type="text"
+                      placeholder="Search knowledge base..."
                       className="flex-1 px-3 py-1 border border-gray-300 rounded text-xs"
                       value="product pricing"
                       readOnly
@@ -202,22 +202,22 @@ export function KnowledgeIntegrationSection() {
               <svg className="w-full h-full" viewBox="0 0 400 300">
                 <defs>
                   <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.6"/>
-                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.6"/>
+                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.6" />
+                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.6" />
                   </linearGradient>
                 </defs>
-                <path 
-                  d="M50 50 Q200 100 350 150" 
-                  stroke="url(#flowGradient)" 
-                  strokeWidth="2" 
+                <path
+                  d="M50 50 Q200 100 350 150"
+                  stroke="url(#flowGradient)"
+                  strokeWidth="2"
                   fill="none"
                   strokeDasharray="5,5"
                   className="animate-pulse"
                 />
-                <path 
-                  d="M50 100 Q200 150 350 200" 
-                  stroke="url(#flowGradient)" 
-                  strokeWidth="2" 
+                <path
+                  d="M50 100 Q200 150 350 200"
+                  stroke="url(#flowGradient)"
+                  strokeWidth="2"
                   fill="none"
                   strokeDasharray="5,5"
                   className="animate-pulse"
@@ -246,7 +246,7 @@ export function KnowledgeIntegrationSection() {
           <div className="bg-gradient-to-r from-blue-900/30 to-emerald-900/30 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Make Your Chatbot a Business Expert?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Connect your chatbot to all your business knowledge sources and watch it become an expert 
+              Connect your agent to all your business knowledge sources and watch it become an expert
               on your products, services, and company information.
             </p>
             <a href="/?message=I want to connect knowledge sources to my chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">

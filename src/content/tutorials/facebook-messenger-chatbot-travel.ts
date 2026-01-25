@@ -12,7 +12,7 @@ export const facebookMessengerChatbotTravel = {
 
 **Travel Industry Statistics:**
 - **73%** of travelers use mobile devices for trip planning
-- **68%** increase in booking conversions with chatbot support
+- **68%** increase in booking conversions with agent support
 - **85%** customer satisfaction with instant travel assistance
 - **42%** reduction in customer service costs
 
@@ -354,15 +354,15 @@ async function sendTravelUpdates(userId, bookingId) {
 
 ## 🎯 Ready to Transform Your Travel Business?
 
-Implement a Facebook Messenger chatbot that:
+Implement a Facebook Messenger agent that:
 - ✅ Provides 24/7 travel assistance
 - ✅ Increases booking conversions by 68%
 - ✅ Reduces support costs by 42%
 - ✅ Improves customer satisfaction by 85%
 - ✅ Offers personalized travel recommendations
 
-**Get started with Sajedar's travel chatbot solution today!**`,
-  tags: ['travel chatbot facebook messenger', 'facebook messenger chatbot travel', 'travel chatbot', 'tourism chatbot', 'travel booking chatbot', 'travel ai chatbot', 'tourism automation', 'travel business chatbot'],
+**Get started with Sajedar's travel agent solution today!**`,
+  tags: ['travel agent facebook messenger', 'facebook messenger agent travel', 'travel chatbot', 'tourism chatbot', 'travel booking chatbot', 'travel ai chatbot', 'tourism automation', 'travel business chatbot'],
   publishedAt: '2025-01-25',
   updatedAt: '2025-01-25',
   author: 'Sajedar Team',
@@ -372,6 +372,6 @@ Implement a Facebook Messenger chatbot that:
   seo: {
     metaTitle: 'Facebook Messenger Chatbot for Travel & Tourism: Complete Guide | Sajedar',
     metaDescription: 'Learn how to create Facebook Messenger chatbots for travel and tourism that provide booking assistance, itinerary planning, and 24/7 travel support.',
-    keywords: ['travel chatbot facebook messenger', 'facebook messenger chatbot travel', 'travel chatbot', 'tourism chatbot', 'travel booking chatbot', 'travel ai chatbot', 'tourism automation chatbot']
+    keywords: ['travel agent facebook messenger', 'facebook messenger agent travel', 'travel chatbot', 'tourism chatbot', 'travel booking chatbot', 'travel ai chatbot', 'tourism automation chatbot']
   }
 };

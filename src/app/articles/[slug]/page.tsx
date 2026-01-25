@@ -119,31 +119,31 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     if (article.category === 'Healthcare') {
       return {
         title: 'Ready to transform your healthcare practice with AI?',
-        description: 'We\'ll build a HIPAA-compliant AI chatbot for your clinic or hospital in days, not months.',
+        description: 'We\'ll build a HIPAA-compliant AI agent for your clinic or hospital in days, not months.',
         buttonText: 'Talk to us',
-        buttonLink: '/?message=I want to build an AI chatbot for my healthcare practice.#contact',
-        buttonMessage: 'I want to build an AI chatbot for my healthcare practice.'
+        buttonLink: '/?message=I want to build an AI agent for my healthcare practice.#contact',
+        buttonMessage: 'I want to build an AI agent for my healthcare practice.'
       };
     } else if (article.category === 'Finance') {
       return {
         title: 'Ready to automate your financial services with AI?',
-        description: 'We\'ll create a secure AI chatbot for your bank, credit union, or financial institution.',
+        description: 'We\'ll create a secure AI agent for your bank, credit union, or financial institution.',
         buttonText: 'Talk to us',
-        buttonLink: '/?message=I want to build an AI chatbot for my financial services business.#contact',
-        buttonMessage: 'I want to build an AI chatbot for my financial services business.'
+        buttonLink: '/?message=I want to build an AI agent for my financial services business.#contact',
+        buttonMessage: 'I want to build an AI agent for my financial services business.'
       };
     } else if (article.category === 'Travel') {
       return {
         title: 'Ready to revolutionize your travel business with AI?',
-        description: 'We\'ll build an intelligent AI chatbot for your travel agency, hotel, or tourism business to boost bookings and customer satisfaction.',
+        description: 'We\'ll build an intelligent AI agent for your travel agency, hotel, or tourism business to boost bookings and customer satisfaction.',
         buttonText: 'Talk to us',
-        buttonLink: '/?message=I want to build an AI chatbot for my travel business.#contact',
-        buttonMessage: 'I want to build an AI chatbot for my travel business.'
+        buttonLink: '/?message=I want to build an AI agent for my travel business.#contact',
+        buttonMessage: 'I want to build an AI agent for my travel business.'
       };
     } else if (article.category === 'E-commerce' || article.category === 'Ecommerce' || article.category === 'Retail') {
       return {
         title: 'Ready to lift conversions and AOV with an AI shopping assistant?',
-        description: 'We\'ll build an AI chatbot for your store that reduces support costs and boosts sales with cart recovery, personalization, and 24/7 service.',
+        description: 'We\'ll build an AI agent for your store that reduces support costs and boosts sales with cart recovery, personalization, and 24/7 service.',
         buttonText: 'Talk to us',
         buttonLink: '/?message=I want to build an AI shopping assistant for my ecommerce store.#contact',
         buttonMessage: 'I want to build an AI shopping assistant for my ecommerce store.'

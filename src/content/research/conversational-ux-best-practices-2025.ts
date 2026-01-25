@@ -131,6 +131,6 @@ unosquare.com, userpilot.com, botpenguin.com, cmswire.com, developers.google.com
   seo: {
     metaTitle: 'The Architecture of Dialogue: Conversational UX Best Practices (2025) | Sajedar Research',
     metaDescription: 'Comprehensive guide to designing human-like conversational experiences. From foundational principles to advanced dialogue mechanics and error handling strategies.',
-    keywords: 'conversational UX, dialogue design, chatbot UX, user experience, conversational AI design, UX best practices, chatbot persona, dialogue mechanics'
+    keywords: 'conversational UX, dialogue design, agent UX, user experience, conversational AI design, UX best practices, agent persona, dialogue mechanics'
   }
 };

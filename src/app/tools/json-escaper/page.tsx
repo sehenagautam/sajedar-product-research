@@ -83,8 +83,8 @@ export default function JsonEscaperPage() {
                             <label className="block text-gray-300 font-bold flex items-center gap-2">
                                 <ArrowRightLeft size={18} className="text-blue-400" /> Result
                             </label>
-                            <button 
-                                onClick={copyOutput} 
+                            <button
+                                onClick={copyOutput}
                                 disabled={!output}
                                 className="text-xs text-gray-400 hover:text-white flex items-center gap-1 transition-colors"
                             >
@@ -94,9 +94,9 @@ export default function JsonEscaperPage() {
                         <div className="w-full h-64 bg-[#1e1e1e] border border-white/10 rounded-xl p-4 text-blue-300 font-mono text-sm overflow-y-auto break-all">
                             {output || <span className="text-gray-600 italic">// Result will appear here...</span>}
                         </div>
-                        
+
                         <div className="bg-blue-900/20 border border-blue-500/20 rounded-lg p-4 text-xs text-gray-300">
-                            <strong>Why use this?</strong> When you are building a chatbot in n8n or ManyChat and need to send a JSON body that contains <em>another</em> JSON string, you must escape the inner quotes (e.g., <code>"</code> becomes <code>\"</code>).
+                            <strong>Why use this?</strong> When you are building a agent in n8n or ManyChat and need to send a JSON body that contains <em>another</em> JSON string, you must escape the inner quotes (e.g., <code>"</code> becomes <code>\"</code>).
                         </div>
                     </div>
                 </div>

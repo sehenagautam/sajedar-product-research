@@ -18,7 +18,7 @@ export function FeaturesSection() {
               <span className="text-emerald-400 font-bold">hands-on agency</span> specializing in designing, building, and supporting{' '}
               <span className="text-emerald-400 font-bold">custom AI chatbots</span> for{' '}
               <span className="text-emerald-400 font-bold">ambitious brands</span>. We{' '}
-              <span className="text-emerald-400 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your chatbot fits your unique needs and delivers{' '}
+              <span className="text-emerald-400 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your agent fits your unique needs and delivers{' '}
               <span className="text-emerald-400 font-bold">real value</span> to your customers and team.{' '}
               <span className="text-emerald-400 font-bold">No off-the-shelf bots</span>—just{' '}
               <span className="text-emerald-400 font-bold">thoughtful, tailored solutions</span> that help you stand out and grow.
@@ -106,7 +106,7 @@ export function FeaturesSection() {
               <span className="text-2xl font-bold text-white">Integrations</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Plug-and-play</span>
               <span className="text-gray-300 text-center">
-                Connect your chatbot to the tools you already use—no headaches.
+                Connect your agent to the tools you already use—no headaches.
               </span>
             </div>
             

@@ -1,5 +1,5 @@
 {
-  "name": "Sajedar - AI Chatbot Agency",
+  "name": "Sajedar - AI Sales Agent",
   "short_name": "Sajedar",
   "description": "Custom AI chatbots for ambitious brands. Build intelligent chatbots with our expert guidance.",
   "start_url": "/",
@@ -10,7 +10,10 @@
   "scope": "/",
   "lang": "en-US",
   "dir": "ltr",
-  "categories": ["business", "productivity", "education"],
+  "categories": [
+    "business",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "/favicon.ico",
@@ -49,7 +52,7 @@
     {
       "name": "Tutorials",
       "short_name": "Learn",
-      "description": "Browse AI chatbot tutorials",
+      "description": "Browse AI agent tutorials",
       "url": "/tutorials",
       "icons": [
         {
@@ -61,7 +64,7 @@
     {
       "name": "Demos",
       "short_name": "Try",
-      "description": "Try live chatbot demos",
+      "description": "Try live agent demos",
       "url": "/demo",
       "icons": [
         {

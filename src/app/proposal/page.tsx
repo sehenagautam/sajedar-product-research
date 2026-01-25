@@ -83,7 +83,7 @@ export default function ProposalPage() {
                                 Lifetime Support
                             </p>
                             <p className="text-gray-300 italic">
-                                Commission rate determined based on product category, margins, and complexity. As performance scales, more chatbot capabilities are added incrementally.
+                                Commission rate determined based on product category, margins, and complexity. As performance scales, more agent capabilities are added incrementally.
                             </p>
                         </div>
 

@@ -2,7 +2,7 @@ export const fortyAiChatbotProjectsNepal = {
   id: '40-ai-chatbot-projects-nepal-2025',
   title: 'Catalyzing National Progress: 40 AI Chatbot Projects For Nepal\'s Budding Innovators',
   slug: '40-ai-chatbot-projects-nepal-2025',
-  excerpt: 'A comprehensive guide to 40 AI chatbot projects across agriculture, tourism, manufacturing, public services, and financial inclusion that can transform Nepal\'s economy and empower local innovators.',
+  excerpt: 'A comprehensive guide to 40 AI agent projects across agriculture, tourism, manufacturing, public services, and financial inclusion that can transform Nepal\'s economy and empower local innovators.',
   content: `# Catalyzing National Progress: 40 AI Chatbot Projects For Nepal's Budding Innovators
 
 *Sponsored by Sajedar — Nepal's AI Chatbot Innovation Platform*
@@ -83,7 +83,7 @@ export const fortyAiChatbotProjectsNepal = {
 
 **Industrial Input Sourcing:** It Searches for reliable suppliers.
 
-💡 **Sajedar Insight:** Digitalizing the small producers is about creating a transparent, data-driven export ecosystem — one chatbot at a time.
+💡 **Sajedar Insight:** Digitalizing the small producers is about creating a transparent, data-driven export ecosystem — one agent at a time.
 
 ## 🏥 Part IV: Expanding Public Services & Education
 
@@ -109,7 +109,7 @@ export const fortyAiChatbotProjectsNepal = {
 
 **Legal Aid Bot:** Help you easier to access the rights and legal assistance.
 
-💡 **Sajedar Insight:** Each chatbot doubles as a digital bridge to governance, education and equality.
+💡 **Sajedar Insight:** Each agent doubles as a digital bridge to governance, education and equality.
 
 ## 💰 Part V: Financial Inclusion & Remittance Innovation
 
@@ -143,7 +143,7 @@ AI chatbots = the Answer for a geographically challenged nation.
 
 They enable students to become problem-solvers, not just coders.
 
-One chatbot project = one true national initiative.
+One agent project = one true national initiative.
 
 Through active engagement by its universities, Nepal can become a role model in nurturing innovation along economic pillars — agriculture, tourism, manufacturing and enterprise governance and finance.
 
@@ -151,7 +151,7 @@ Through active engagement by its universities, Nepal can become a role model in 
 
 ## 👉 Call to Action
 
-If the next generation of Nepalese makers can come up with just a fraction of these 40 chatbot projects, however, perhaps Nepal not only will learn to embrace AI but it might even end up redefining its own AI narrative.
+If the next generation of Nepalese makers can come up with just a fraction of these 40 agent projects, however, perhaps Nepal not only will learn to embrace AI but it might even end up redefining its own AI narrative.
 
 **#Sajedar #AIinNepal #ChatbotsForDevelopment #NepalInnovation #DigitalTransformation**`,
   tags: ['research', 'nepal', 'ai-chatbots', 'innovation', 'development', 'agriculture', 'tourism', 'manufacturing', 'public-services', 'financial-inclusion', '2025'],
@@ -162,7 +162,7 @@ If the next generation of Nepalese makers can come up with just a fraction of th
   category: 'Research',
   seo: {
     metaTitle: '40 AI Chatbot Projects For Nepal\'s Budding Innovators | Sajedar Research',
-    metaDescription: 'Comprehensive guide to 40 AI chatbot projects across agriculture, tourism, manufacturing, public services, and financial inclusion that can transform Nepal\'s economy and empower local innovators.',
-    keywords: 'Nepal AI chatbots, chatbot projects Nepal, AI innovation Nepal, agriculture chatbots, tourism AI, manufacturing chatbots, public services AI, financial inclusion Nepal, Sajedar research, Nepal digital transformation'
+    metaDescription: 'Comprehensive guide to 40 AI agent projects across agriculture, tourism, manufacturing, public services, and financial inclusion that can transform Nepal\'s economy and empower local innovators.',
+    keywords: 'Nepal AI chatbots, agent projects Nepal, AI innovation Nepal, agriculture chatbots, tourism AI, manufacturing chatbots, public services AI, financial inclusion Nepal, Sajedar research, Nepal digital transformation'
   }
 };

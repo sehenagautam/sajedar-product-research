@@ -1,11 +1,11 @@
 import { Tutorial } from '../../types/tutorial';
 
 export const chatbotNlpTutorial: Tutorial = {
-  id: '10',
-  title: 'Advanced NLP for Chatbots',
-  slug: 'chatbot-nlp-advanced',
-  description: 'Implement advanced natural language processing techniques including intent recognition, entity extraction, and sentiment analysis.',
-  content: `# Advanced NLP for Chatbots
+    id: '10',
+    title: 'Advanced NLP for Chatbots',
+    slug: 'chatbot-nlp-advanced',
+    description: 'Implement advanced natural language processing techniques including intent recognition, entity extraction, and sentiment analysis.',
+    content: `# Advanced NLP for Chatbots
 
 ## Introduction
 
@@ -339,18 +339,18 @@ class NLPProcessor {
 
 ## Conclusion
 
-Advanced NLP techniques significantly improve chatbot capabilities. Start with basic intent recognition and gradually implement more sophisticated features.`,
-  author: 'Sajedar Team',
-  publishedAt: '2024-03-01',
-  updatedAt: '2024-03-01',
-  tags: ['nlp', 'intent recognition', 'entity extraction', 'sentiment analysis', 'machine learning'],
-  category: 'nlp',
-  difficulty: 'advanced',
-  readTime: 30,
-  featured: true,
-  seo: {
-    metaTitle: 'Advanced NLP for Chatbots - Complete Guide',
-    metaDescription: 'Learn advanced natural language processing techniques for chatbots including intent recognition and entity extraction.',
-    keywords: ['chatbot nlp', 'intent recognition', 'entity extraction', 'sentiment analysis', 'machine learning']
-  }
+Advanced NLP techniques significantly improve agent capabilities. Start with basic intent recognition and gradually implement more sophisticated features.`,
+    author: 'Sajedar Team',
+    publishedAt: '2024-03-01',
+    updatedAt: '2024-03-01',
+    tags: ['nlp', 'intent recognition', 'entity extraction', 'sentiment analysis', 'machine learning'],
+    category: 'nlp',
+    difficulty: 'advanced',
+    readTime: 30,
+    featured: true,
+    seo: {
+        metaTitle: 'Advanced NLP for Chatbots - Complete Guide',
+        metaDescription: 'Learn advanced natural language processing techniques for chatbots including intent recognition and entity extraction.',
+        keywords: ['chatbot nlp', 'intent recognition', 'entity extraction', 'sentiment analysis', 'machine learning']
+    }
 };

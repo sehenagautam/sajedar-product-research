@@ -26,7 +26,7 @@ const tools = [
     },
     {
         title: 'Messenger Ref URL Builder',
-        content: `Essential for advanced chatbot campaigns. Generate deep links to track exactly which ad sent a user to your bot and trigger specific conversation flows.`,
+        content: `Essential for advanced agent campaigns. Generate deep links to track exactly which ad sent a user to your bot and trigger specific conversation flows.`,
         link: '/tools/messenger-ref-url-builder',
     },
 
@@ -107,73 +107,73 @@ const tools = [
         link: '/tools/loan-calculator',
     },
     {
-    title: 'WhatsApp Link Generator',
-    content: `Create instant Click-to-WhatsApp links with pre-filled messages.
+        title: 'WhatsApp Link Generator',
+        content: `Create instant Click-to-WhatsApp links with pre-filled messages.
 Perfect for Facebook Ads, Instagram bios, QR codes, and offline posters.`,
-    link: '/tools/whatsapp-link-generator',
-},
-{
-    title: 'Messenger Ref URL Builder',
-    content: `Generate deep m.me links with tracking parameters.
-Send users from specific ads or posts directly into the correct chatbot flow.`,
-    link: '/tools/messenger-ref-url-builder',
-},
-{
-    title: 'Facebook Ad Mockup Generator',
-    content: `Preview exactly how your Facebook ad or post will look on mobile before publishing.
+        link: '/tools/whatsapp-link-generator',
+    },
+    {
+        title: 'Messenger Ref URL Builder',
+        content: `Generate deep m.me links with tracking parameters.
+Send users from specific ads or posts directly into the correct agent flow.`,
+        link: '/tools/messenger-ref-url-builder',
+    },
+    {
+        title: 'Facebook Ad Mockup Generator',
+        content: `Preview exactly how your Facebook ad or post will look on mobile before publishing.
 Eliminate the fear of cropped text, awkward layouts, and wasted ad spend.`,
-    link: '/tools/facebook-ad-mockup',
-},
-{
-    title: 'Social Media Image Cropper',
-    content: `Crop once, post everywhere.
+        link: '/tools/facebook-ad-mockup',
+    },
+    {
+        title: 'Social Media Image Cropper',
+        content: `Crop once, post everywhere.
 Resize images perfectly for Facebook posts, covers, events, and stories using exact platform dimensions.`,
-    link: '/tools/image-cropper',
-},
-{
-    title: 'Social Media Caption Spacer',
-    content: `Fix broken Facebook & Instagram captions.
+        link: '/tools/image-cropper',
+    },
+    {
+        title: 'Social Media Caption Spacer',
+        content: `Fix broken Facebook & Instagram captions.
 Preserve line breaks and paragraph spacing so your text doesn’t collapse into one big block.`,
-    link: '/tools/caption-spacer',
-},
-{
-    title: 'Unicode Bold Text Generator',
-    content: `Make your posts stand out in the feed.
+        link: '/tools/caption-spacer',
+    },
+    {
+        title: 'Unicode Bold Text Generator',
+        content: `Make your posts stand out in the feed.
 Convert normal text into 𝐁𝐨𝐥𝐝 𝐔𝐧𝐢𝐜𝐨𝐝𝐞 text that works across Facebook, Instagram, and LinkedIn.`,
-    link: '/tools/bold-text-generator',
-},
-{
-    title: 'Engagement Rate Calculator',
-    content: `Instantly measure how well your posts perform.
+        link: '/tools/bold-text-generator',
+    },
+    {
+        title: 'Engagement Rate Calculator',
+        content: `Instantly measure how well your posts perform.
 Calculate engagement rate using likes, comments, shares, and follower count — no analytics tools needed.`,
-    link: '/tools/engagement-rate-calculator',
-},
-{
-    title: 'ROAS Estimator',
-    content: `Estimate your Return on Ad Spend before scaling.
+        link: '/tools/engagement-rate-calculator',
+    },
+    {
+        title: 'ROAS Estimator',
+        content: `Estimate your Return on Ad Spend before scaling.
 Project clicks, sales, revenue, and ROAS using your ad budget and funnel metrics.`,
-    link: '/tools/roas-estimator',
-},
-{
-    title: 'Facebook Pixel Event Code Generator',
-    content: `Generate accurate Facebook Pixel event codes in seconds.
+        link: '/tools/roas-estimator',
+    },
+    {
+        title: 'Facebook Pixel Event Code Generator',
+        content: `Generate accurate Facebook Pixel event codes in seconds.
 Safely create Purchase, Lead, AddToCart, and other conversion tracking scripts without touching complex code.`,
-    link: '/tools/facebook-pixel-generator',
-},
-{
-    title: 'UTM Campaign URL Builder',
-    content: `Create clean, trackable URLs for ads and campaigns.
-Know exactly which Facebook ad, post, or chatbot flow is driving your results.`,
-    link: '/tools/utm-builders',
-},
-{
+        link: '/tools/facebook-pixel-generator',
+    },
+    {
+        title: 'UTM Campaign URL Builder',
+        content: `Create clean, trackable URLs for ads and campaigns.
+Know exactly which Facebook ad, post, or agent flow is driving your results.`,
+        link: '/tools/utm-builders',
+    },
+    {
         title: 'JSON Payload Formatter & Validator',
         content: `Debug your n8n workflows instantly. Validate, pretty-print, or minify your JSON payloads to fix syntax errors before running your automation.`,
         link: '/tools/json-formatter',
     },
     {
         title: 'JSON String Escaper',
-        content: `Solves the frustration of nested JSON. Instantly escape quote marks and backslashes for complex API calls and chatbot payloads.`,
+        content: `Solves the frustration of nested JSON. Instantly escape quote marks and backslashes for complex API calls and agent payloads.`,
         link: '/tools/json-escaper',
     },
     {
@@ -223,7 +223,7 @@ Know exactly which Facebook ad, post, or chatbot flow is driving your results.`,
     },
     {
         title: '"Spintax" Generator & Tester',
-        content: `Make your chatbot sound human. Test your message variations like {Hello|Hi} {there|friend} to ensure they sound natural before going live.`,
+        content: `Make your agent sound human. Test your message variations like {Hello|Hi} {there|friend} to ensure they sound natural before going live.`,
         link: '/tools/spintax-tester',
     },
     {
@@ -263,7 +263,7 @@ Know exactly which Facebook ad, post, or chatbot flow is driving your results.`,
     },
     {
         title: 'Messenger Mockup Studio',
-        content: `Draft, visualize, and export "perfect" chatbot conversations in seconds. Ideal for client proposals and portfolio showcases.`,
+        content: `Draft, visualize, and export "perfect" agent conversations in seconds. Ideal for client proposals and portfolio showcases.`,
         link: '/tools/messenger-mockup',
     },
 ];

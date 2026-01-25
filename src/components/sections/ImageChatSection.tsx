@@ -13,8 +13,8 @@ export function ImageChatSection() {
             Send <span className="text-emerald-400">Images</span> in Your Chatbot
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Enhance customer engagement with rich media support. Send product images, screenshots, 
-            and visual content directly through your chatbot for a more interactive experience.
+            Enhance customer engagement with rich media support. Send product images, screenshots,
+            and visual content directly through your agent for a more interactive experience.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function ImageChatSection() {
                   {/* Customer Message */}
                   <div className="flex justify-end">
                     <div className="bg-emerald-500 text-white rounded-lg px-4 py-2 max-w-xs">
-                      <p className="text-sm">Can you show me your premium chatbot features?</p>
+                      <p className="text-sm">Can you show me your premium agent features?</p>
                       <span className="text-xs text-emerald-100 block mt-1">2:45 PM</span>
                     </div>
                   </div>
@@ -216,13 +216,13 @@ export function ImageChatSection() {
           <div className="bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Enhance Your Chatbot with Images?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Add rich media support to your chatbot and provide customers with visual content, 
+              Add rich media support to your agent and provide customers with visual content,
               product images, and interactive experiences.
             </p>
             <a href="/?message=I want to add image support to my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
               Add Image Support
             </a>
-            <a href="/?message=Please show me an image-enabled chatbot demo.#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200">
+            <a href="/?message=Please show me an image-enabled agent demo.#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200">
               See Image Demo
             </a>
           </div>

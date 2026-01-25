@@ -2,7 +2,7 @@ export const chatbotRoiResearch = {
   id: 'chatbot-roi-definitive-guide-2025',
   title: 'The Definitive Guide to Chatbot ROI (2025)',
   slug: 'chatbot-roi-definitive-guide-2025',
-  excerpt: 'Comprehensive guide to calculating and maximizing chatbot ROI. From strategic imperatives to detailed cost-benefit analysis and implementation frameworks.',
+  excerpt: 'Comprehensive guide to calculating and maximizing agent ROI. From strategic imperatives to detailed cost-benefit analysis and implementation frameworks.',
   content: `# The Definitive Guide to Chatbot ROI (2025)
 
 ## Executive Insight
@@ -140,7 +140,7 @@ quickchat.ai, dialzara.com, quidget.ai, ibm.com, yeeply.com, landbot.io, streebo
   category: 'Research',
   seo: {
     metaTitle: 'The Definitive Guide to Chatbot ROI (2025) | Sajedar Research',
-    metaDescription: 'Comprehensive guide to calculating and maximizing chatbot ROI. From strategic imperatives to detailed cost-benefit analysis and implementation frameworks.',
-    keywords: 'chatbot ROI, ROI calculator, chatbot business case, TCO analysis, chatbot metrics, AI ROI, chatbot cost benefit, chatbot implementation ROI'
+    metaDescription: 'Comprehensive guide to calculating and maximizing agent ROI. From strategic imperatives to detailed cost-benefit analysis and implementation frameworks.',
+    keywords: 'chatbot ROI, ROI calculator, agent business case, TCO analysis, agent metrics, AI ROI, agent cost benefit, agent implementation ROI'
   }
 };

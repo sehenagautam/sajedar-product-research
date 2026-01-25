@@ -13,8 +13,8 @@ export function VoiceIntegrationSection() {
             <span className="text-emerald-400">Voice Integration</span> for Natural Conversations
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Break free from typing. Your chatbot now understands and responds through voice, 
-            creating truly natural conversations. From voice commands to speech synthesis, 
+            Break free from typing. Your agent now understands and responds through voice,
+            creating truly natural conversations. From voice commands to speech synthesis,
             experience the future of human-AI interaction.
           </p>
         </div>
@@ -126,7 +126,7 @@ export function VoiceIntegrationSection() {
                       <p className="text-sm">"I need help with my order. Can you check the status?"</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <svg className="w-3 h-3 text-indigo-200" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                         <span className="text-xs text-indigo-200">Voice Message</span>
                       </div>
@@ -140,7 +140,7 @@ export function VoiceIntegrationSection() {
                       <p className="text-sm">"I'd be happy to help you check your order status. Let me look that up for you."</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <svg className="w-3 h-3 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                         <span className="text-xs text-gray-500">AI Voice Response</span>
                       </div>
@@ -178,7 +178,7 @@ export function VoiceIntegrationSection() {
                       <p className="text-sm">"Can you send me the tracking link?"</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <svg className="w-3 h-3 text-indigo-200" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                         <span className="text-xs text-indigo-200">Voice Command</span>
                       </div>
@@ -205,7 +205,7 @@ export function VoiceIntegrationSection() {
                       <p className="text-sm">"What if I need to change the delivery address?"</p>
                       <div className="flex items-center space-x-2 mt-1">
                         <svg className="w-3 h-3 text-indigo-200" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
+                          <path d="M8 5v14l11-7z" />
                         </svg>
                         <span className="text-xs text-indigo-200">Voice Query</span>
                       </div>
@@ -321,7 +321,7 @@ export function VoiceIntegrationSection() {
           <div className="bg-gradient-to-r from-indigo-900/30 to-purple-900/30 border border-indigo-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Add Voice to Your Chatbot?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Transform your customer interactions with natural voice capabilities. 
+              Transform your customer interactions with natural voice capabilities.
               Create more accessible, engaging, and human-like conversations that drive better results.
             </p>
             <a href="/?message=I want to enable voice AI in my chatbot.#contact" className="px-8 py-4 bg-indigo-500 hover:bg-indigo-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">

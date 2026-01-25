@@ -4,14 +4,14 @@ import { MessageSquare, BookOpen, Users, TrendingUp, Shield, Globe, Zap, Target 
 
 export const metadata: Metadata = {
   title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-  description: 'Comprehensive collection of Facebook Messenger AI chatbot tutorials, guides, and resources. Learn how to build, deploy, and optimize Facebook Messenger chatbots for any business.',
+  description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources. Learn how to build, deploy, and optimize Facebook Messenger chatbots for any business.',
   keywords: [
     'facebook messenger chatbot',
     'facebook messenger ai chatbot',
-    'facebook messenger chatbot tutorial',
+    'facebook messenger agent tutorial',
     'facebook messenger bot development',
-    'messenger chatbot guide',
-    'facebook chatbot resources',
+    'messenger agent guide',
+    'facebook agent resources',
     'messenger ai chatbot',
     'facebook messenger automation'
   ],
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-    description: 'Comprehensive collection of Facebook Messenger AI chatbot tutorials, guides, and resources for businesses.',
+    description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources for businesses.',
     url: 'https://sajedar.com/facebook-messenger',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-    description: 'Comprehensive collection of Facebook Messenger AI chatbot tutorials, guides, and resources for businesses.'
+    description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources for businesses.'
   }
 };
 
@@ -33,7 +33,7 @@ export default function FacebookMessengerPage() {
   const tutorials = [
     {
       title: 'How to Create Facebook Messenger AI Chatbot',
-      description: 'Complete step-by-step guide to building your first Facebook Messenger AI chatbot from scratch.',
+      description: 'Complete step-by-step guide to building your first Facebook Messenger AI agent from scratch.',
       href: '/facebook-messenger-chatbot-tutorial',
       icon: MessageSquare,
       category: 'Getting Started',
@@ -51,7 +51,7 @@ export default function FacebookMessengerPage() {
     },
     {
       title: 'Facebook Messenger Chatbot for Healthcare',
-      description: 'HIPAA-compliant chatbot setup for healthcare that automates appointments and reduces call volume by 20%.',
+      description: 'HIPAA-compliant agent setup for healthcare that automates appointments and reduces call volume by 20%.',
       href: '/tutorials/facebook-messenger-chatbot-healthcare',
       icon: Shield,
       category: 'Healthcare',
@@ -60,7 +60,7 @@ export default function FacebookMessengerPage() {
     },
     {
       title: 'Facebook Messenger Chatbot for Real Estate',
-      description: 'Lead generation chatbot for real estate that captures prospects 24/7 and boosts conversions by 40%.',
+      description: 'Lead generation agent for real estate that captures prospects 24/7 and boosts conversions by 40%.',
       href: '/tutorials/facebook-messenger-chatbot-real-estate',
       icon: Users,
       category: 'Real Estate',
@@ -69,7 +69,7 @@ export default function FacebookMessengerPage() {
     },
     {
       title: 'Facebook Messenger Chatbot for Education',
-      description: 'Student support chatbot for educational institutions that automates inquiries and improves engagement.',
+      description: 'Student support agent for educational institutions that automates inquiries and improves engagement.',
       href: '/tutorials/facebook-messenger-chatbot-education',
       icon: BookOpen,
       category: 'Education',
@@ -78,7 +78,7 @@ export default function FacebookMessengerPage() {
     },
     {
       title: 'Facebook Messenger Chatbot for Banking',
-      description: 'Secure banking chatbot with PCI DSS compliance for account management and financial services.',
+      description: 'Secure banking agent with PCI DSS compliance for account management and financial services.',
       href: '/tutorials/facebook-messenger-chatbot-banking',
       icon: Shield,
       category: 'Banking',
@@ -87,7 +87,7 @@ export default function FacebookMessengerPage() {
     },
     {
       title: 'Facebook Messenger Chatbot for Travel',
-      description: 'Travel and tourism chatbot for booking assistance, itinerary planning, and 24/7 travel support.',
+      description: 'Travel and tourism agent for booking assistance, itinerary planning, and 24/7 travel support.',
       href: '/tutorials/facebook-messenger-chatbot-travel',
       icon: Globe,
       category: 'Travel',
@@ -120,7 +120,7 @@ export default function FacebookMessengerPage() {
               Facebook Messenger AI Chatbot Resources
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">
-              Master Facebook Messenger chatbots with our comprehensive collection of tutorials, guides, and resources. 
+              Master Facebook Messenger chatbots with our comprehensive collection of tutorials, guides, and resources.
               From basic setup to advanced industry-specific implementations.
             </p>
           </div>
@@ -159,11 +159,10 @@ export default function FacebookMessengerPage() {
           {categories.map((category) => (
             <button
               key={category.name}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                category.active
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${category.active
                   ? 'bg-blue-500 text-white'
                   : 'bg-white/10 text-gray-300 hover:bg-white/20'
-              }`}
+                }`}
             >
               {category.name} ({category.count})
             </button>
@@ -244,18 +243,18 @@ export default function FacebookMessengerPage() {
         <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-500/30 rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-white mb-4">Ready to Build Your Facebook Messenger Chatbot?</h2>
           <p className="text-gray-300 mb-6">
-            Start with our comprehensive tutorial and build a chatbot that transforms your business. 
+            Start with our comprehensive tutorial and build a agent that transforms your business.
             No coding experience required - we'll guide you through every step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href="/facebook-messenger-chatbot-tutorial" 
+            <Link
+              href="/facebook-messenger-chatbot-tutorial"
               className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors text-center"
             >
               Start Building Now
             </Link>
-            <Link 
-              href="/demo" 
+            <Link
+              href="/demo"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg transition-colors text-center border border-white/20"
             >
               See Live Demos
@@ -268,26 +267,26 @@ export default function FacebookMessengerPage() {
       <div className="max-w-6xl mx-auto px-4 pb-24">
         <h2 className="text-2xl font-bold text-white mb-6">Related Resources</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <Link 
-            href="/research" 
+          <Link
+            href="/research"
             className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:bg-white/10"
           >
             <h3 className="text-lg font-semibold text-white mb-2">Research Articles</h3>
             <p className="text-gray-300 text-sm">Deep insights into conversational AI trends and market analysis.</p>
           </Link>
-          <Link 
-            href="/case-studies" 
+          <Link
+            href="/case-studies"
             className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:bg-white/10"
           >
             <h3 className="text-lg font-semibold text-white mb-2">Case Studies</h3>
             <p className="text-gray-300 text-sm">Real-world success stories and implementation examples.</p>
           </Link>
-          <Link 
-            href="/tutorials" 
+          <Link
+            href="/tutorials"
             className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:bg-white/10"
           >
             <h3 className="text-lg font-semibold text-white mb-2">All Tutorials</h3>
-            <p className="text-gray-300 text-sm">Complete collection of AI chatbot tutorials and guides.</p>
+            <p className="text-gray-300 text-sm">Complete collection of AI agent tutorials and guides.</p>
           </Link>
         </div>
       </div>

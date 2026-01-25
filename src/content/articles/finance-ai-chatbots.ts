@@ -7,7 +7,7 @@ export const financeArticle: Article = {
   excerpt: 'Finance leaders are moving to AI-First. Chatbots now drive revenue, cut costs, and lift CSAT—at enterprise scale.',
   content: `## Market Outlook
 
-- Global AI chatbot market (2024): $7.8–$8.6B → $27–47B by 2030 (CAGR: 23–31%).
+- Global AI agent market (2024): $7.8–$8.6B → $27–47B by 2030 (CAGR: 23–31%).
 - BFSI-specific segment: $3.37B (2024) → $31.5B (2031) (CAGR: 37.6%).
 - Generative AI in finance: $2.21B (2024) → $16B (2030) (CAGR: 39.1%).
 - Global AI in finance overall: $38.36B (2024) → $190.3B (2030).

@@ -312,7 +312,7 @@ Track these metrics:
 ## 🚀 Implementation Roadmap
 
 ### Phase 1: Basic Setup (Week 1-2)
-- Configure chatbot platform
+- Configure agent platform
 - Set up basic conversation flows
 - Integrate with Facebook Page
 - Test fundamental features
@@ -337,15 +337,15 @@ Track these metrics:
 
 ## 🎯 Ready to Transform Your Real Estate Business?
 
-Implement a Facebook Messenger chatbot that:
+Implement a Facebook Messenger agent that:
 - ✅ Captures leads 24/7
 - ✅ Qualifies prospects automatically
 - ✅ Boosts conversion rates by 40%
 - ✅ Reduces response time to seconds
 - ✅ Provides personalized property recommendations
 
-**Get started with Sajedar's real estate chatbot solution today!**`,
-  tags: ['real estate chatbot facebook messenger', 'facebook messenger chatbot real estate', 'real estate chatbot', 'property chatbot', 'real estate lead generation', 'property chatbot facebook', 'real estate automation', 'property search chatbot'],
+**Get started with Sajedar's real estate agent solution today!**`,
+  tags: ['real estate agent facebook messenger', 'facebook messenger agent real estate', 'real estate chatbot', 'property chatbot', 'real estate lead generation', 'property agent facebook', 'real estate automation', 'property search chatbot'],
   publishedAt: '2025-01-25',
   updatedAt: '2025-01-25',
   author: 'Sajedar Team',
@@ -355,6 +355,6 @@ Implement a Facebook Messenger chatbot that:
   seo: {
     metaTitle: 'Facebook Messenger Chatbot for Real Estate: Lead Generation Guide | Sajedar',
     metaDescription: 'Learn how to create Facebook Messenger chatbots for real estate that capture leads 24/7, qualify prospects automatically, and boost conversions. Complete setup guide.',
-    keywords: ['real estate chatbot facebook messenger', 'facebook messenger chatbot real estate', 'real estate chatbot', 'property chatbot', 'real estate lead generation', 'property chatbot facebook', 'real estate automation chatbot']
+    keywords: ['real estate agent facebook messenger', 'facebook messenger agent real estate', 'real estate chatbot', 'property chatbot', 'real estate lead generation', 'property agent facebook', 'real estate automation chatbot']
   }
 };

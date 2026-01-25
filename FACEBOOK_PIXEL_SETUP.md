@@ -127,7 +127,7 @@ export const FACEBOOK_PIXEL_ID = '123456789012345';
 ### 7.3 Lead Form Abandoners
 - Target: Website visitors who didn't convert
 - Objective: Lead Generation
-- Ad copy: "Don't miss out! Get your free AI chatbot consultation."
+- Ad copy: "Don't miss out! Get your free AI agent consultation."
 
 ## 📊 Step 8: Analytics & Optimization
 

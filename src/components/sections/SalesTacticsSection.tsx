@@ -13,8 +13,8 @@ export function SalesTacticsSection() {
             Your <span className="text-emerald-400">AI Salesperson</span> with Proven Tactics
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Transform your chatbot into a skilled salesperson that applies real sales psychology, 
-            handles objections, and closes deals. No more generic responses - just intelligent, 
+            Transform your agent into a skilled salesperson that applies real sales psychology,
+            handles objections, and closes deals. No more generic responses - just intelligent,
             persuasive conversations that convert.
           </p>
         </div>
@@ -108,7 +108,7 @@ export function SalesTacticsSection() {
                   {/* Customer Initial Interest */}
                   <div className="flex justify-end">
                     <div className="bg-orange-500 text-white rounded-lg px-4 py-2 max-w-xs">
-                      <p className="text-sm">I'm interested in your chatbot but it seems expensive. Can you explain the value?</p>
+                      <p className="text-sm">I'm interested in your agent but it seems expensive. Can you explain the value?</p>
                       <span className="text-xs text-orange-100 block mt-1">2:15 PM</span>
                     </div>
                   </div>
@@ -280,7 +280,7 @@ export function SalesTacticsSection() {
           <div className="bg-gradient-to-r from-orange-900/30 to-red-900/30 border border-orange-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Transform Your Chatbot into a Sales Superstar?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Stop losing sales to generic responses. Equip your chatbot with proven sales tactics 
+              Stop losing sales to generic responses. Equip your agent with proven sales tactics
               that convert prospects into customers and increase your revenue.
             </p>
             <a href="/?message=I want to deploy Sales AI in my chatbot.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">

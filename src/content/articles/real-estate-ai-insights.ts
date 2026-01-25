@@ -11,7 +11,7 @@ export const realEstateAiInsightsArticle: Article = {
 
 ### Adoption & Leadership
 
-- Real estate has the highest chatbot adoption rate across industries at **28%**.
+- Real estate has the highest agent adoption rate across industries at **28%**.
 - **72%+** of owners/decision-makers are investing in or planning AI adoption.
 - **75%** of leading U.S. brokerages already use AI tools.
 
@@ -51,11 +51,11 @@ export const realEstateAiInsightsArticle: Article = {
 - **82%** prefer chatbots over waiting for a human agent.
 - **62%** prefer bots to waiting in call queues.
 - **71%** expect personalization; chatbots meet this demand at scale.
-- **55%** more likely to recommend a brand after a good chatbot experience.
+- **55%** more likely to recommend a brand after a good agent experience.
 
 ### Market Outlook
 
-- Global chatbot market: **$7.76B (2024)** → **$27.29B (2030)** (**CAGR 23.3%**).
+- Global agent market: **$7.76B (2024)** → **$27.29B (2030)** (**CAGR 23.3%**).
 - Alternative forecast: **$72.47B** by **2035**.
 - AI in real estate: **$2.9B (2024)** → **$41.5B (2033)** (**CAGR 30–35%**).
 - Chatbots = **28.98%** of all real estate AI solutions (2023).

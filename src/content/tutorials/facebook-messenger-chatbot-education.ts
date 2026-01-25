@@ -12,7 +12,7 @@ export const facebookMessengerChatbotEducation = {
 
 **Education Statistics:**
 - **85%** of students prefer digital communication
-- **67%** increase in enrollment inquiries with chatbot support
+- **67%** increase in enrollment inquiries with agent support
 - **40%** reduction in administrative workload
 - **92%** student satisfaction with instant responses
 
@@ -351,15 +351,15 @@ async function getAcademicEvents() {
 
 ## 🎯 Ready to Transform Your Educational Institution?
 
-Implement a Facebook Messenger chatbot that:
+Implement a Facebook Messenger agent that:
 - ✅ Provides 24/7 student support
 - ✅ Automates administrative tasks
 - ✅ Improves student engagement by 67%
 - ✅ Reduces staff workload by 40%
 - ✅ Enhances academic success outcomes
 
-**Get started with Sajedar's educational chatbot solution today!**`,
-  tags: ['education chatbot facebook messenger', 'facebook messenger chatbot education', 'education chatbot', 'student support chatbot', 'academic chatbot', 'university chatbot', 'education automation', 'student services chatbot'],
+**Get started with Sajedar's educational agent solution today!**`,
+  tags: ['education agent facebook messenger', 'facebook messenger agent education', 'education chatbot', 'student support chatbot', 'academic chatbot', 'university chatbot', 'education automation', 'student services chatbot'],
   publishedAt: '2025-01-25',
   updatedAt: '2025-01-25',
   author: 'Sajedar Team',
@@ -369,6 +369,6 @@ Implement a Facebook Messenger chatbot that:
   seo: {
     metaTitle: 'Facebook Messenger Chatbot for Education: Student Support Guide | Sajedar',
     metaDescription: 'Learn how to create Facebook Messenger chatbots for education that automate student support, improve enrollment rates, and enhance academic engagement.',
-    keywords: ['education chatbot facebook messenger', 'facebook messenger chatbot education', 'education chatbot', 'student support chatbot', 'academic chatbot', 'university chatbot', 'education automation chatbot']
+    keywords: ['education agent facebook messenger', 'facebook messenger agent education', 'education chatbot', 'student support chatbot', 'academic chatbot', 'university chatbot', 'education automation chatbot']
   }
 };

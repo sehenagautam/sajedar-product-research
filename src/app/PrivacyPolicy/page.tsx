@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           </ul>
           <h2 className="text-lg font-bold text-emerald-400 mt-4">How We Use Your Information</h2>
           <ul className="list-disc list-inside ml-4">
-            <li>To provide and improve our chatbot services</li>
+            <li>To provide and improve our agent services</li>
             <li>To respond to your inquiries and support requests</li>
             <li>To analyze usage and improve our platform</li>
           </ul>

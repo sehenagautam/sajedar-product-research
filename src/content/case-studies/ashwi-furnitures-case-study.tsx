@@ -3,7 +3,7 @@ import React from 'react';
 export const ashwiFurnituresCaseStudy = {
   slug: 'ashwi-furnitures-case-study',
   title: 'Ashwi Furnitures: AI-Powered Sales Assistant',
-  description: 'How we transformed a furniture business with a Nepali AI chatbot that generated $250 in sales from just $10 in ad spend.',
+  description: 'How we transformed a furniture business with a Nepali AI agent that generated $250 in sales from just $10 in ad spend.',
   industry: 'Furniture Retail',
   duration: '2 months',
   results: ['2500% ROI on ad spend', '100 messages handled daily', 'Devanagari Nepali optimization', 'AI-generated promotional content'],
@@ -24,7 +24,7 @@ export const ashwiFurnituresCaseStudy = {
             Aarya: The AI Sales Assistant
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transforming furniture sales with a Nepali-speaking AI assistant that handles customer inquiries, 
+            Transforming furniture sales with a Nepali-speaking AI assistant that handles customer inquiries,
             provides product information, and drives sales through personalized conversations.
           </p>
         </div>
@@ -66,7 +66,7 @@ export const ashwiFurnituresCaseStudy = {
               <li>• Difficulty in showcasing product variety</li>
             </ul>
           </div>
-          
+
           <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-2xl p-6">
             <h3 className="text-xl font-semibold text-emerald-300 mb-4 flex items-center">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +96,7 @@ export const ashwiFurnituresCaseStudy = {
                 </div>
                 <div className="ml-6">
                   <h4 className="text-lg font-semibold text-white mb-2">Initial Setup & Identity Creation</h4>
-                  <p className="text-gray-300">Created "Aarya" persona with friendly, professional tone. Gave the chatbot its own identity and discount authority up to 5%.</p>
+                  <p className="text-gray-300">Created "Aarya" persona with friendly, professional tone. Gave the agent its own identity and discount authority up to 5%.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -151,7 +151,7 @@ export const ashwiFurnituresCaseStudy = {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-white mb-4">Operational Metrics</h4>
               <div className="space-y-3">
@@ -177,63 +177,63 @@ export const ashwiFurnituresCaseStudy = {
           <h3 className="text-2xl font-bold text-white mb-6 text-center">Key Features Implemented</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { 
-                title: 'Nepali Language Support', 
+              {
+                title: 'Nepali Language Support',
                 description: 'Full Devanagari script support for authentic local communication',
                 icon: '🌐'
               },
-              { 
-                title: 'AI-Generated Content', 
+              {
+                title: 'AI-Generated Content',
                 description: 'Automated promotional images and model generation for marketing',
                 icon: '🎨'
               },
-              { 
-                title: 'Discount Authority', 
+              {
+                title: 'Discount Authority',
                 description: 'AI can offer up to 5% discounts autonomously to close sales',
                 icon: '💰'
               },
-              { 
-                title: 'Phone Number Extraction', 
+              {
+                title: 'Phone Number Extraction',
                 description: 'Primary goal of collecting customer contact information',
                 icon: '📞'
               },
-              { 
-                title: 'Product Catalog Integration', 
+              {
+                title: 'Product Catalog Integration',
                 description: 'Complete furniture catalog with prices and specifications',
                 icon: '🛋️'
               },
-              { 
-                title: 'Future OCR Integration', 
+              {
+                title: 'Future OCR Integration',
                 description: 'Exploring PaddleOCR and docTR for image reading capabilities',
                 icon: '👁️'
               },
-              { 
-                title: 'Multi-Channel Integration', 
+              {
+                title: 'Multi-Channel Integration',
                 description: 'Seamless Facebook Messenger and WhatsApp Business connectivity',
                 icon: '📱'
               },
-              { 
-                title: 'Real-Time Analytics', 
+              {
+                title: 'Real-Time Analytics',
                 description: 'Live tracking of conversation quality and conversion metrics',
                 icon: '📊'
               },
-              { 
-                title: 'Contextual Memory', 
+              {
+                title: 'Contextual Memory',
                 description: 'AI remembers previous conversations and customer preferences',
                 icon: '🧠'
               },
-              { 
-                title: 'Automated Follow-ups', 
+              {
+                title: 'Automated Follow-ups',
                 description: 'Smart scheduling and personalized follow-up sequences',
                 icon: '⏰'
               },
-              { 
-                title: 'Lead Qualification', 
+              {
+                title: 'Lead Qualification',
                 description: 'Automatic scoring and categorization of potential customers',
                 icon: '⭐'
               },
-              { 
-                title: 'Inventory Sync', 
+              {
+                title: 'Inventory Sync',
                 description: 'Real-time product availability and stock level integration',
                 icon: '📦'
               }
@@ -254,9 +254,9 @@ export const ashwiFurnituresCaseStudy = {
             <div className="bg-black/20 rounded-xl p-6 mb-6">
               <h4 className="text-lg font-semibold text-amber-300 mb-4">Core AI Identity</h4>
               <p className="text-gray-300 mb-4">
-                "You are Aarya (Thapa), a helpful and engaging AI assistant for a furniture business. 
-                Your job is to answer questions from potential customers who have replied to a Meta ad 
-                and encourage conversation. Your tone should be friendly, professional, and you should 
+                "You are Aarya (Thapa), a helpful and engaging AI assistant for a furniture business.
+                Your job is to answer questions from potential customers who have replied to a Meta ad
+                and encourage conversation. Your tone should be friendly, professional, and you should
                 occasionally use emojis to add warmth and personality."
               </p>
             </div>
@@ -350,7 +350,7 @@ export const ashwiFurnituresCaseStudy = {
                 <li>• Multi-language Support</li>
               </ul>
             </div>
-            
+
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-white mb-4">Future Enhancements</h4>
               <ul className="text-gray-300 space-y-2">
@@ -440,7 +440,7 @@ export const ashwiFurnituresCaseStudy = {
             <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-purple-300 mb-3">🏠 Sofa Sale Success</h4>
               <p className="text-gray-300 text-sm mb-3">
-                Customer inquired about a 3-seater sofa at 11 PM. Aarya provided detailed specifications, 
+                Customer inquired about a 3-seater sofa at 11 PM. Aarya provided detailed specifications,
                 offered a 5% discount, and collected phone number within 3 minutes.
               </p>
               <div className="text-purple-400 font-bold">Result: $180 sale closed</div>
@@ -449,7 +449,7 @@ export const ashwiFurnituresCaseStudy = {
             <div className="bg-gradient-to-br from-amber-900/20 to-orange-900/20 border border-amber-500/30 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-amber-300 mb-3">💄 Dressing Table Promotion</h4>
               <p className="text-gray-300 text-sm mb-3">
-                AI generated promotional images with female models for dressing table collection. 
+                AI generated promotional images with female models for dressing table collection.
                 Generated 15 qualified leads in one day.
               </p>
               <div className="text-amber-400 font-bold">Result: 3 sales, $420 revenue</div>
@@ -458,7 +458,7 @@ export const ashwiFurnituresCaseStudy = {
             <div className="bg-gradient-to-br from-emerald-900/20 to-green-900/20 border border-emerald-500/30 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-emerald-300 mb-3">📞 Bulk Inquiry Handling</h4>
               <p className="text-gray-300 text-sm mb-3">
-                During peak hours, Aarya handled 25 simultaneous conversations about different products, 
+                During peak hours, Aarya handled 25 simultaneous conversations about different products,
                 qualifying leads and scheduling follow-ups.
               </p>
               <div className="text-emerald-400 font-bold">Result: 8 qualified leads, 2 sales</div>
@@ -467,7 +467,7 @@ export const ashwiFurnituresCaseStudy = {
             <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/30 rounded-2xl p-6">
               <h4 className="text-lg font-semibold text-cyan-300 mb-3">🔄 Follow-up Automation</h4>
               <p className="text-gray-300 text-sm mb-3">
-                Customer showed interest but didn't provide contact. Aarya sent automated follow-up 
+                Customer showed interest but didn't provide contact. Aarya sent automated follow-up
                 messages with special offers, eventually converting the lead.
               </p>
               <div className="text-cyan-400 font-bold">Result: $95 sale after 3 follow-ups</div>
@@ -479,8 +479,8 @@ export const ashwiFurnituresCaseStudy = {
         <div className="bg-gradient-to-r from-amber-900/30 to-orange-900/30 border border-amber-500/30 rounded-2xl p-8 text-center">
           <div className="text-6xl text-amber-400 mb-4">"</div>
           <blockquote className="text-xl text-gray-300 mb-6 italic">
-            "Aarya has revolutionized how we interact with customers. The Nepali language support made all the difference, 
-            and the AI-generated content saves us so much time. We went from struggling with customer engagement to 
+            "Aarya has revolutionized how we interact with customers. The Nepali language support made all the difference,
+            and the AI-generated content saves us so much time. We went from struggling with customer engagement to
             generating $250 in sales from just $10 in ads. It's incredible!"
           </blockquote>
           <div className="text-white font-semibold">Ashwi Furnitures Team</div>

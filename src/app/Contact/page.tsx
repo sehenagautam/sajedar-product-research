@@ -42,7 +42,7 @@ I'm interested in discussing automation solutions for my business. Please contac
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     name: 'Contact Sajedar',
-    description: 'Contact Sajedar to discuss custom AI chatbot solutions.',
+    description: 'Contact Sajedar to discuss custom AI agent solutions.',
     url: '/Contact',
     mainEntity: {
       '@type': 'Organization',

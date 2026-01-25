@@ -14,7 +14,7 @@ export function DataCollectionSection() {
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
             Automatically capture, organize, and track leads in real-time with seamless{' '}
-            <span className="text-emerald-400 font-bold">Google Sheets integration</span>. 
+            <span className="text-emerald-400 font-bold">Google Sheets integration</span>.
             Every conversation becomes valuable data for your sales pipeline.
           </p>
         </div>
@@ -74,7 +74,7 @@ export function DataCollectionSection() {
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center">
                     <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
                     </svg>
                   </div>
                   <div>
@@ -169,7 +169,7 @@ export function DataCollectionSection() {
           <div className="bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Automate Your Lead Collection?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Connect your chatbot to Google Sheets and start capturing leads automatically. 
+              Connect your agent to Google Sheets and start capturing leads automatically.
               No manual data entry required.
             </p>
             <a href="/?message=I want to connect Google Sheets and start collecting leads automatically.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">

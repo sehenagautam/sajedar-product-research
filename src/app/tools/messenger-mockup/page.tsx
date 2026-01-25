@@ -3,11 +3,11 @@
 import React, { useState, useRef } from 'react';
 import Header from '../../../components/Header';
 import { Footer } from '../../../components/sections';
-import { 
-    Battery, Wifi, ChevronLeft, Phone, Video, Info, 
-    Camera, Mic, ThumbsUp, Plus, Image as ImageIcon, 
-    ArrowUp, ArrowDown, Trash2, Download, MessageSquare, 
-    Check, CheckCircle 
+import {
+    Battery, Wifi, ChevronLeft, Phone, Video, Info,
+    Camera, Mic, ThumbsUp, Plus, Image as ImageIcon,
+    ArrowUp, ArrowDown, Trash2, Download, MessageSquare,
+    Check, CheckCircle
 } from 'lucide-react';
 import html2canvas from 'html2canvas';
 
@@ -30,11 +30,11 @@ export default function MessengerMockupPage() {
     const [profilePic, setProfilePic] = useState<string | null>(null);
     const [batteryLevel, setBatteryLevel] = useState(100);
     const [currentTime, setCurrentTime] = useState('9:41');
-    
+
     const [messages, setMessages] = useState<Message[]>([
         { id: '1', type: 'timestamp', text: 'Today 9:30 AM' },
         { id: '2', type: 'bot', text: 'Namaste! How can we help you grow your business today?' },
-        { id: '3', type: 'user', text: 'I need a chatbot for my Facebook page.', status: 'read' },
+        { id: '3', type: 'user', text: 'I need a agent for my Facebook page.', status: 'read' },
         { id: '4', type: 'typing' }
     ]);
 
@@ -60,7 +60,7 @@ export default function MessengerMockupPage() {
     const moveMessage = (index: number, direction: 'up' | 'down') => {
         if (direction === 'up' && index === 0) return;
         if (direction === 'down' && index === messages.length - 1) return;
-        
+
         const newMessages = [...messages];
         const temp = newMessages[index];
         newMessages[index] = newMessages[index + (direction === 'up' ? -1 : 1)];
@@ -125,14 +125,14 @@ export default function MessengerMockupPage() {
                     <h1 className="text-3xl md:text-4xl font-serif font-bold text-white mb-2">
                         Messenger Mockup Studio
                     </h1>
-                    <p className="text-gray-400">Draft, Visualize, and Export perfect chatbot conversations.</p>
+                    <p className="text-gray-400">Draft, Visualize, and Export perfect agent conversations.</p>
                 </div>
 
                 <div className="grid lg:grid-cols-12 gap-8 items-start h-full">
-                    
+
                     {/* --- LEFT PANEL: DIRECTOR'S PANEL --- */}
                     <div className="lg:col-span-7 bg-white/5 border border-white/10 rounded-2xl p-6 h-full overflow-y-auto max-h-[85vh] custom-scrollbar">
-                        
+
                         {/* 1. Global Settings */}
                         <div className="mb-8 p-4 bg-black/20 rounded-xl border border-white/5">
                             <h3 className="text-white font-bold mb-4 flex items-center gap-2 text-sm uppercase tracking-wider">
@@ -189,9 +189,9 @@ export default function MessengerMockupPage() {
 
                                             {/* Text Input */}
                                             {msg.type !== 'typing' && (
-                                                <textarea 
-                                                    value={msg.text} 
-                                                    onChange={(e) => updateMessage(msg.id, 'text', e.target.value)} 
+                                                <textarea
+                                                    value={msg.text}
+                                                    onChange={(e) => updateMessage(msg.id, 'text', e.target.value)}
                                                     className="w-full bg-transparent border-b border-white/10 text-white text-sm focus:border-blue-500 outline-none resize-none h-auto overflow-hidden leading-relaxed"
                                                     rows={1}
                                                     placeholder="Type message..."
@@ -204,9 +204,9 @@ export default function MessengerMockupPage() {
                                             {/* Bot Buttons */}
                                             {msg.type === 'bot' && (
                                                 <div className="flex gap-2">
-                                                    <input 
-                                                        type="text" 
-                                                        placeholder="Add Button Text (Optional)" 
+                                                    <input
+                                                        type="text"
+                                                        placeholder="Add Button Text (Optional)"
                                                         className="bg-white/5 border border-white/10 rounded px-2 py-1 text-xs text-white w-full outline-none"
                                                         onBlur={(e) => e.target.value && updateMessage(msg.id, 'buttons', [...(msg.buttons || []), e.target.value])}
                                                     />
@@ -251,7 +251,7 @@ export default function MessengerMockupPage() {
                     <div className="lg:col-span-5 flex justify-center items-center h-full sticky top-20">
                         {/* Phone Container */}
                         <div ref={previewRef} className="w-[375px] bg-white rounded-[40px] border-8 border-[#1f1f1f] shadow-2xl overflow-hidden relative font-sans text-black flex flex-col h-[750px]">
-                            
+
                             {/* StatusBar */}
                             <div className="h-12 px-6 flex justify-between items-end pb-2 bg-white z-10">
                                 <span className="font-semibold text-sm">{currentTime}</span>
@@ -291,7 +291,7 @@ export default function MessengerMockupPage() {
                             {/* Chat Area */}
                             <div className="flex-grow bg-white p-4 overflow-y-auto space-y-2 flex flex-col">
                                 <div className="flex-grow"></div> {/* Spacer to push messages down */}
-                                
+
                                 {messages.map((msg, index) => {
                                     // Logic for grouping bubbles (rounded corners)
                                     const prev = messages[index - 1];

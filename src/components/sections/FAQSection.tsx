@@ -1,7 +1,7 @@
 export function FAQSection() {
   const faqs = [
     {
-      question: "What makes Sajedar different from other chatbot providers?",
+      question: "What makes Sajedar different from other agent providers?",
       answer: "We build tailored Agent specific for your business needs. Hop on a short call and we will figure out everything you need."
     },
     {
@@ -14,7 +14,7 @@ export function FAQSection() {
     },
     {
       question: "What kind of support do you offer after launch?",
-      answer: "COmmission based is a long term relationship. We will be there for you as long as we work together."
+      answer: "Commission based is a long term relationship. We will be there for you as long as we work together."
     },
     {
       question: "Is Sajedar suitable for small retail shops?",

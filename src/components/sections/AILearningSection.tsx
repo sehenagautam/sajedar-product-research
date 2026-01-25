@@ -13,7 +13,7 @@ export function AILearningSection() {
             Your Chatbot <span className="text-emerald-400">Learns & Improves</span> with Every Conversation
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Watch your chatbot evolve and adapt its communication style to better achieve your business goals. 
+            Watch your agent evolve and adapt its communication style to better achieve your business goals.
             From collecting contact details to increasing engagement - it gets smarter with every interaction.
           </p>
         </div>
@@ -30,7 +30,7 @@ export function AILearningSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Conversational Intelligence</h3>
-                  <p className="text-gray-300">Your chatbot learns from every conversation, understanding customer patterns, preferences, and pain points to provide better responses.</p>
+                  <p className="text-gray-300">Your agent learns from every conversation, understanding customer patterns, preferences, and pain points to provide better responses.</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export function AILearningSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Performance Analytics</h3>
-                  <p className="text-gray-300">Track improvement metrics, conversion rates, and engagement levels. See how your chatbot evolves and optimizes its approach over time.</p>
+                  <p className="text-gray-300">Track improvement metrics, conversion rates, and engagement levels. See how your agent evolves and optimizes its approach over time.</p>
                 </div>
               </div>
             </div>
@@ -237,7 +237,7 @@ export function AILearningSection() {
           <div className="bg-gradient-to-r from-orange-900/30 to-red-900/30 border border-orange-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Watch Your Chatbot Evolve?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Deploy your AI chatbot and watch it learn, adapt, and improve with every conversation. 
+              Deploy your AI agent and watch it learn, adapt, and improve with every conversation.
               See real-time progress as it achieves your business goals more effectively.
             </p>
             <a href="/?message=I want to deploy and start my chatbot's learning journey.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">

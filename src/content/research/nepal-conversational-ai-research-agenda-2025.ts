@@ -11,7 +11,7 @@ Conversational Artificial Intelligence (AI) — the technology of enabling a mac
 
 For Nepal, this technology presents a dual prospect and responsibility: it can take critical services to the farthest reaches of the country but only if piloted with Nepali language, data and infrastructure in mind.
 
-Platforms such as **Sajedar**, Nepal's AI chatbot innovation frontier, are examples of how locally trained conversational agents can help fill the divide between available knowledge and access in domains like agriculture, health and education.
+Platforms such as **Sajedar**, Nepal's AI agent innovation frontier, are examples of how locally trained conversational agents can help fill the divide between available knowledge and access in domains like agriculture, health and education.
 
 However, developing strong Nepali chatbots is confronted with a low-resource language problem such as scarcity of annotated data, morphologically rich languages and dialectal variation.
 
@@ -34,13 +34,13 @@ Improved recognition of names and locations in Nepali for Sajedar-based knowledg
 A Study on Modelling of Subwords for a Morphologically Rich Nepali Language.
 
 ### 5. Morphological Analyzer
-Building Blocks of grammar for better chatbot comprehension.
+Building Blocks of grammar for better agent comprehension.
 
 ### 6. Code-Switching Detection Framework
 Recognition of multilingual dialogue breaks for hybrid Sajedar chat interfaces.
 
 ### 7. Dialect Mapping and Inclusivity Modeling
-Representing local speech for better chatbot access nationwide.
+Representing local speech for better agent access nationwide.
 
 ### 8. NepGLUE: A benchmark nepali NLP
 By the academic and Sajedar researchers.
@@ -69,13 +69,13 @@ Developing a conversational flow-awareness in the low resource multilingual Saje
 Custom attention layers tailored by the Nepali language syntax.
 
 ### 16. Nepali News Unsupervised Topic Modeling
-Data Structuring to better the knowledge base of a chatbot from news data.
+Data Structuring to better the knowledge base of a agent from news data.
 
 ## Sector-Specific Chatbot Applications
 
 ### Agriculture (KrishiTech)
 
-### 17. Multimodality chatbot for pest and disease recognition
+### 17. Multimodality agent for pest and disease recognition
 Via Sajedar's AI-vision pipeline.
 
 ### 18. Market price information agent
@@ -84,7 +84,7 @@ To send daily crop rates on WhatsApp or SMS.
 ### 19. A climate-resilient farm adviser
 Using local information from Nepal's agro zones.
 
-### 20. A voice and SMS-based chatbot for low literate women farmers
+### 20. A voice and SMS-based agent for low literate women farmers
 With simple mobile handsets.
 
 ### Tourism and Hospitality
@@ -136,7 +136,7 @@ Done with Sajedar infrastructure.
 ### 33. Nepali Automatic Speech Recognition (ASR)
 For voice enabled Sajedar chatbots.
 
-### 34. SMS/USSD based chatbot deployment
+### 34. SMS/USSD based agent deployment
 In lowbandwidth settings.
 
 ### 35. Auditing biases in Nepali language models
@@ -146,7 +146,7 @@ For gender and caste equity.
 Tone and respect for a chatbot. We present here our model that supports the evaluation of the tone and respect level.
 
 ### 37. Privacy-preservation federated learning
-For healthcare chatbot training.
+For healthcare agent training.
 
 ### 38. Integration of Explainable AI (XAI)
 For transparent healthcare decisions.
@@ -179,6 +179,6 @@ Sajedar, Conversational AI Nepal, Nepali NLP, Chatbots Low-Resource Language Res
   seo: {
     metaTitle: 'Nepal\'s Conversational AI Research Agenda: A Comprehensive Framework for 2025 | Sajedar Research',
     metaDescription: 'A formal research agenda featuring 40 concrete research questions to support Nepal\'s conversational AI ecosystem, covering foundational NLP, advanced models, sector-specific applications, and ethical AI development.',
-    keywords: 'Nepal conversational AI research agenda, Nepali NLP research, chatbot development Nepal, AI research framework Nepal, Sajedar research, Nepali language AI, low-resource language AI, ethical AI Nepal'
+    keywords: 'Nepal conversational AI research agenda, Nepali NLP research, agent development Nepal, AI research framework Nepal, Sajedar research, Nepali language AI, low-resource language AI, ethical AI Nepal'
   }
 };

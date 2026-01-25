@@ -13,8 +13,8 @@ export function BrandVoiceSection() {
             Tune Your Chatbot to Your <span className="text-emerald-400">Brand Voice</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Customize your chatbot's personality, tone, and communication style to perfectly match your brand. 
-            From professional and formal to friendly and casual - your chatbot becomes an extension of your brand identity.
+            Customize your chatbot's personality, tone, and communication style to perfectly match your brand.
+            From professional and formal to friendly and casual - your agent becomes an extension of your brand identity.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export function BrandVoiceSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">Industry-Specific Language</h3>
-                  <p className="text-gray-300 text-sm">Use industry-specific terminology, jargon, and communication patterns. Your chatbot speaks the language your customers expect and understand.</p>
+                  <p className="text-gray-300 text-sm">Use industry-specific terminology, jargon, and communication patterns. Your agent speaks the language your customers expect and understand.</p>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ export function BrandVoiceSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">Dynamic Adaptation</h3>
-                  <p className="text-gray-300 text-sm">Your chatbot adapts its communication style based on customer context, mood, and interaction history for personalized experiences.</p>
+                  <p className="text-gray-300 text-sm">Your agent adapts its communication style based on customer context, mood, and interaction history for personalized experiences.</p>
                 </div>
               </div>
             </div>
@@ -145,8 +145,8 @@ export function BrandVoiceSection() {
                     <h4 className="text-sm font-medium text-gray-800 mb-2">Live Preview</h4>
                     <div className="bg-gray-50 rounded p-3 text-sm">
                       <p className="text-gray-700">
-                        "Greetings! I'm here to assist you with our premium chatbot solutions. 
-                        How may I be of service today? I'm equipped to address your inquiries 
+                        "Greetings! I'm here to assist you with our premium agent solutions.
+                        How may I be of service today? I'm equipped to address your inquiries
                         regarding our enterprise-grade AI capabilities."
                       </p>
                     </div>
@@ -201,7 +201,7 @@ export function BrandVoiceSection() {
           <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-xl p-4 backdrop-blur-sm">
             <h3 className="text-lg font-bold text-white mb-2">Ready to Create Your Perfect Brand Voice?</h3>
             <p className="text-gray-300 mb-3 max-w-2xl mx-auto text-sm">
-              Customize your chatbot's personality and communication style to perfectly match your brand identity. 
+              Customize your chatbot's personality and communication style to perfectly match your brand identity.
               Create authentic, engaging conversations that reflect your unique voice.
             </p>
             <div className="flex flex-col sm:flex-row gap-2 justify-center">

@@ -141,7 +141,7 @@
 ### 7.3 Lead Form Abandoners
 - **Audience**: Website visitors who didn't convert
 - **Objective**: Lead Generation
-- **Ad Copy**: "Don't miss out! Get your free AI chatbot consultation."
+- **Ad Copy**: "Don't miss out! Get your free AI agent consultation."
 
 ---
 

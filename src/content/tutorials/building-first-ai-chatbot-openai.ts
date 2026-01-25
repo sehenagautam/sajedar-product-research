@@ -4,12 +4,12 @@ export const buildingFirstAiChatbot: Tutorial = {
   id: '1',
   title: 'Building Your First AI Chatbot with OpenAI',
   slug: 'building-first-ai-chatbot-openai',
-  description: "Learn how to create an intelligent chatbot using OpenAI GPT models. This comprehensive guide covers everything from API setup to deployment.",
+  description: "Learn how to create an intelligent agent using OpenAI GPT models. This comprehensive guide covers everything from API setup to deployment.",
   content: `# Building Your First AI Chatbot with OpenAI
 
 ## Introduction
 
-Creating an AI chatbot has never been easier with OpenAI's powerful API. In this tutorial, we'll build a complete chatbot from scratch.
+Creating an AI agent has never been easier with OpenAI's powerful API. In this tutorial, we'll build a complete agent from scratch.
 
 ## Prerequisites
 
@@ -71,7 +71,7 @@ You now have a working AI chatbot! This is just the beginning - you can add feat
   featured: true,
   seo: {
     metaTitle: 'Building Your First AI Chatbot with OpenAI - Complete Guide',
-    metaDescription: 'Learn to build an AI chatbot using OpenAI GPT models. Step-by-step tutorial with code examples and deployment guide.',
+    metaDescription: 'Learn to build an AI agent using OpenAI GPT models. Step-by-step tutorial with code examples and deployment guide.',
     keywords: ['ai chatbot', 'openai', 'gpt', 'javascript', 'tutorial']
   }
 }; 

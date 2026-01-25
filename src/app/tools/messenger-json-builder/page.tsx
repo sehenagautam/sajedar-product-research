@@ -16,11 +16,11 @@ interface Button {
 
 export default function MessengerBuilderPage() {
     const [title, setTitle] = useState('Welcome to Sajedar');
-    const [subtitle, setSubtitle] = useState('The best chatbot agency in Nepal.');
+    const [subtitle, setSubtitle] = useState('The best agent agency in Nepal.');
     const [imageUrl, setImageUrl] = useState('https://sajedar.com/images/logo.png');
     const [actionUrl, setActionUrl] = useState('');
     const [buttons, setButtons] = useState<Button[]>([]);
-    
+
     const [jsonOutput, setJsonOutput] = useState('');
     const [copied, setCopied] = useState(false);
 
@@ -163,7 +163,7 @@ export default function MessengerBuilderPage() {
                             <div className="flex justify-between items-center mb-4">
                                 <label className="text-gray-300 text-sm font-bold">Buttons ({buttons.length}/3)</label>
                                 {buttons.length < 3 && (
-                                    <button 
+                                    <button
                                         onClick={addButton}
                                         className="text-xs bg-emerald-500 hover:bg-emerald-600 text-white px-2 py-1 rounded flex items-center gap-1 transition-colors"
                                     >
@@ -254,11 +254,10 @@ export default function MessengerBuilderPage() {
                                 </span>
                                 <button
                                     onClick={copyToClipboard}
-                                    className={`text-xs font-bold px-3 py-1.5 rounded transition-all flex items-center gap-2 ${
-                                        copied 
-                                            ? 'bg-emerald-500 text-white' 
+                                    className={`text-xs font-bold px-3 py-1.5 rounded transition-all flex items-center gap-2 ${copied
+                                            ? 'bg-emerald-500 text-white'
                                             : 'bg-white/10 text-gray-300 hover:bg-white/20'
-                                    }`}
+                                        }`}
                                 >
                                     {copied ? 'Copied!' : 'Copy Code'}
                                 </button>

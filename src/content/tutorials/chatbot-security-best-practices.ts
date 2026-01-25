@@ -1,15 +1,15 @@
 import { Tutorial } from '../../types/tutorial';
 
 export const chatbotSecurityTutorial: Tutorial = {
-  id: '8',
-  title: 'Chatbot Security Best Practices',
-  slug: 'chatbot-security-best-practices',
-  description: 'Implement robust security measures for your chatbot including authentication, data protection, and threat prevention.',
-  content: `# Chatbot Security Best Practices
+    id: '8',
+    title: 'Chatbot Security Best Practices',
+    slug: 'chatbot-security-best-practices',
+    description: 'Implement robust security measures for your agent including authentication, data protection, and threat prevention.',
+    content: `# Chatbot Security Best Practices
 
 ## Introduction
 
-Security is critical for chatbot applications. This tutorial covers authentication, data protection, input validation, and threat prevention strategies.
+Security is critical for agent applications. This tutorial covers authentication, data protection, input validation, and threat prevention strategies.
 
 ## Prerequisites
 
@@ -232,18 +232,18 @@ class SecurityMonitor {
 
 ## Conclusion
 
-Security should be a priority from day one. Implement these practices to protect your chatbot and users from various threats.`,
-  author: 'Sajedar Team',
-  publishedAt: '2024-02-20',
-  updatedAt: '2024-02-20',
-  tags: ['security', 'authentication', 'encryption', 'validation', 'monitoring'],
-  category: 'security',
-  difficulty: 'advanced',
-  readTime: 15,
-  featured: true,
-  seo: {
-    metaTitle: 'Chatbot Security Best Practices - Complete Guide',
-    metaDescription: 'Learn essential security practices for chatbot development. Authentication, data protection, and threat prevention.',
-    keywords: ['chatbot security', 'authentication', 'data protection', 'input validation', 'threat prevention']
-  }
+Security should be a priority from day one. Implement these practices to protect your agent and users from various threats.`,
+    author: 'Sajedar Team',
+    publishedAt: '2024-02-20',
+    updatedAt: '2024-02-20',
+    tags: ['security', 'authentication', 'encryption', 'validation', 'monitoring'],
+    category: 'security',
+    difficulty: 'advanced',
+    readTime: 15,
+    featured: true,
+    seo: {
+        metaTitle: 'Chatbot Security Best Practices - Complete Guide',
+        metaDescription: 'Learn essential security practices for agent development. Authentication, data protection, and threat prevention.',
+        keywords: ['chatbot security', 'authentication', 'data protection', 'input validation', 'threat prevention']
+    }
 };

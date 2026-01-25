@@ -26,7 +26,7 @@ export const facebookMessengerChatbotHealthcare = {
 - Meet HIPAA technical safeguards
 
 **Recommended Platforms:**
-- **SmartBot360** - Healthcare-focused chatbot platform
+- **SmartBot360** - Healthcare-focused agent platform
 - **Sajedar Healthcare** - HIPAA-compliant healthcare solutions
 - **Microsoft Health Bot** - Enterprise healthcare automation
 - **Amazon Lex Healthcare** - AWS-powered medical chatbots
@@ -127,7 +127,7 @@ app.post('/webhook', (req, res) => {
 - **90%** of appointment queries automated
 - **20%** drop in call center load
 - **15%** reduction in no-show rates with AI reminders
-- **85%** patient satisfaction with chatbot interactions
+- **85%** patient satisfaction with agent interactions
 - **40%** faster appointment scheduling process
 
 ## 🏥 Healthcare-Specific Use Cases
@@ -250,7 +250,7 @@ This information will be handled securely and encrypted."
 - **Response Time**: Instant answers to common questions
 - **Accessibility**: 24/7 availability for scheduling
 - **Convenience**: Self-service options for routine tasks
-- **Satisfaction**: 85% positive feedback on chatbot interactions
+- **Satisfaction**: 85% positive feedback on agent interactions
 
 ## 🛠️ Technical Implementation
 
@@ -290,22 +290,22 @@ function handleAppointmentRequest(userMessage) {
 ## 🎯 Next Steps for Healthcare Organizations
 
 1. **Compliance Assessment**: Evaluate current HIPAA compliance status
-2. **Platform Selection**: Choose HIPAA-compliant chatbot solution
-3. **Staff Training**: Educate team on chatbot operations and compliance
+2. **Platform Selection**: Choose HIPAA-compliant agent solution
+3. **Staff Training**: Educate team on agent operations and compliance
 4. **Pilot Program**: Start with non-sensitive functions
 5. **Full Implementation**: Gradually expand to comprehensive patient services
 
 ## 🚀 Ready to Transform Your Healthcare Practice?
 
-Implement a HIPAA-compliant Facebook Messenger chatbot that:
+Implement a HIPAA-compliant Facebook Messenger agent that:
 - ✅ Automates 90% of appointment scheduling
 - ✅ Reduces call center load by 20%
 - ✅ Improves patient satisfaction by 85%
 - ✅ Ensures full HIPAA compliance
 - ✅ Provides 24/7 patient support
 
-**Get started with Sajedar's HIPAA-compliant healthcare chatbot solution today!**`,
-  tags: ['healthcare chatbot facebook messenger', 'facebook messenger chatbot healthcare', 'hipaa compliant chatbot', 'healthcare chatbot', 'medical chatbot facebook', 'healthcare automation', 'medical appointment chatbot', 'healthcare ai chatbot'],
+**Get started with Sajedar's HIPAA-compliant healthcare agent solution today!**`,
+  tags: ['healthcare agent facebook messenger', 'facebook messenger agent healthcare', 'hipaa compliant chatbot', 'healthcare chatbot', 'medical agent facebook', 'healthcare automation', 'medical appointment chatbot', 'healthcare ai chatbot'],
   publishedAt: '2025-01-25',
   updatedAt: '2025-01-25',
   author: 'Sajedar Team',
@@ -315,6 +315,6 @@ Implement a HIPAA-compliant Facebook Messenger chatbot that:
   seo: {
     metaTitle: 'Facebook Messenger Chatbot for Healthcare: HIPAA-Compliant Setup Guide | Sajedar',
     metaDescription: 'Learn how to create HIPAA-compliant Facebook Messenger chatbots for healthcare that automate appointment booking, reduce call volume by 20%, and improve patient care.',
-    keywords: ['healthcare chatbot facebook messenger', 'facebook messenger chatbot healthcare', 'hipaa compliant chatbot', 'healthcare chatbot', 'medical chatbot facebook', 'healthcare automation chatbot', 'medical appointment chatbot', 'healthcare ai chatbot']
+    keywords: ['healthcare agent facebook messenger', 'facebook messenger agent healthcare', 'hipaa compliant chatbot', 'healthcare chatbot', 'medical agent facebook', 'healthcare automation chatbot', 'medical appointment chatbot', 'healthcare ai chatbot']
   }
 };

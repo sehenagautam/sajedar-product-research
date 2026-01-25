@@ -38,10 +38,10 @@ export function MetaTags({
       <meta name="author" content="Sajedar" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#22C55E" />
-      
+
       {/* Canonical URL */}
       {canonical && <link rel="canonical" href={canonical} />}
-      
+
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -52,7 +52,7 @@ export function MetaTags({
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Sajedar" />
       <meta property="og:locale" content="en_US" />
-      
+
       {/* Twitter Card */}
       <meta name="twitter:card" content={twitterCard} />
       <meta name="twitter:site" content="@sajedar" />
@@ -60,7 +60,7 @@ export function MetaTags({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      
+
       {/* Additional SEO Tags */}
       <meta name="googlebot" content="index, follow" />
       <meta name="bingbot" content="index, follow" />
@@ -68,19 +68,19 @@ export function MetaTags({
       <meta name="revisit-after" content="7 days" />
       <meta name="distribution" content="global" />
       <meta name="rating" content="general" />
-      
+
       {/* Performance and Security */}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-      
+
       {/* Preconnect for Performance */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://www.google-analytics.com" />
-      
+
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link rel="dns-prefetch" href="//www.google-analytics.com" />
@@ -105,7 +105,7 @@ interface TutorialMetaTagsProps {
 export function TutorialMetaTags({ tutorial, canonical }: TutorialMetaTagsProps) {
   const title = `${tutorial.title} | Sajedar AI Chatbot Tutorials`;
   const description = `${tutorial.description} Learn ${tutorial.category} with our step-by-step guide. ${tutorial.readTime} minute read.`;
-  
+
   return (
     <MetaTags
       title={title}
@@ -113,7 +113,7 @@ export function TutorialMetaTags({ tutorial, canonical }: TutorialMetaTagsProps)
       keywords={[
         ...tutorial.tags,
         tutorial.category,
-        'ai chatbot tutorial',
+        'ai agent tutorial',
         'chatbot development',
         'artificial intelligence',
         'conversational ai'
@@ -132,15 +132,15 @@ export function HomepageMetaTags({ canonical }: HomepageMetaTagsProps) {
   return (
     <MetaTags
       title="Sajedar - Custom AI Chatbot Agency | Build Intelligent Chatbots"
-      description="Sajedar is a hands-on agency specializing in designing, building, and supporting custom AI chatbots for ambitious brands. Get your AI chatbot today!"
+      description="Sajedar is a hands-on agency specializing in designing, building, and supporting custom AI chatbots for ambitious brands. Get your AI agent today!"
       keywords={[
-        'ai chatbot agency',
-        'custom chatbot development',
+        'ai agent agency',
+        'custom agent development',
         'facebook messenger bot',
         'whatsapp bot',
         'conversational ai',
         'chatbot automation',
-        'ai chatbot builder',
+        'ai agent builder',
         'intelligent chatbot',
         'business chatbot',
         'customer support chatbot'
@@ -158,14 +158,14 @@ export function DemoMetaTags({ canonical }: DemoMetaTagsProps) {
   return (
     <MetaTags
       title="Live AI Chatbot Demos | Facebook Messenger Bot Examples"
-      description="Try our live AI chatbot demos for Ashwi Furniture, Crackgineers, Health Bridge Hospital, and Deep Darshan Traders. See Facebook Messenger bots in action."
+      description="Try our live AI agent demos for Ashwi Furniture, Crackgineers, Health Bridge Hospital, and Deep Darshan Traders. See Facebook Messenger bots in action."
       keywords={[
-        'ai chatbot demo',
+        'ai agent demo',
         'facebook messenger bot demo',
-        'live chatbot examples',
+        'live agent examples',
         'chatbot showcase',
         'messenger bot demo',
-        'ai chatbot test',
+        'ai agent test',
         'conversational ai demo'
       ]}
       canonical={canonical}

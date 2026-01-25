@@ -1,10 +1,10 @@
 # Sajedar - Custom AI Chatbot Agency
 
-A modern, responsive landing page for Sajedar, a custom AI chatbot agency specializing in tailored solutions for ambitious brands.
+A modern, responsive landing page for Sajedar, a custom AI agent agency specializing in tailored solutions for ambitious brands.
 
 ## 🚀 About
 
-Sajedar offers custom AI chatbot solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences.
+Sajedar offers custom AI agent solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences.
 
 ## ✨ Features
 
@@ -19,7 +19,7 @@ Sajedar offers custom AI chatbot solutions that transform customer engagement an
 
 ### 💬 Interactive Demonstrations
 - **Demo hub (/demo)**: Facebook Messenger AI demos for multiple businesses + CTA links
-- **Chat Demo**: Interactive demonstration of the chatbot in action
+- **Chat Demo**: Interactive demonstration of the agent in action
 - **Chat Dashboard**: Conversation management interface
 - **Agentic Flow Diagrams**: Animated visualization of the AI process
 

@@ -42,7 +42,7 @@ export default function ForumPage() {
           <div className="p-6 rounded-xl border border-white/10 bg-white/5">
             <h3 className="text-xl font-semibold mb-2">Why Join</h3>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li>Get expert feedback on your chatbot flows and automations</li>
+              <li>Get expert feedback on your agent flows and automations</li>
               <li>Steal practical templates for lead capture, support, and sales</li>
               <li>See live demos and teardown sessions every week</li>
               <li>Meet peers shipping with n8n and Python (agentic + RAG)</li>

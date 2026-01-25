@@ -1,11 +1,11 @@
 import { Tutorial } from '../../types/tutorial';
 
 export const advancedChatbotMemoryTutorial: Tutorial = {
-  id: '6',
-  title: 'Advanced Chatbot Memory and Context Management',
-  slug: 'advanced-chatbot-memory-context-management',
-  description: 'Implement sophisticated memory systems for chatbots to maintain context across conversations.',
-  content: `# Advanced Chatbot Memory and Context Management
+    id: '6',
+    title: 'Advanced Chatbot Memory and Context Management',
+    slug: 'advanced-chatbot-memory-context-management',
+    description: 'Implement sophisticated memory systems for chatbots to maintain context across conversations.',
+    content: `# Advanced Chatbot Memory and Context Management
 
 ## Introduction
 
@@ -381,18 +381,18 @@ class AdvancedChatbot {
 
 ## Conclusion
 
-Advanced memory and context management create more engaging chatbot experiences. Start with basic context tracking and gradually implement more sophisticated features like sentiment analysis and topic tracking.`,
-  author: 'Sajedar Team',
-  publishedAt: '2024-02-10',
-  updatedAt: '2024-02-10',
-  tags: ['chatbot memory', 'context management', 'nlp', 'database', 'redis'],
-  category: 'ai-chatbots',
-  difficulty: 'advanced',
-  readTime: 25,
-  featured: true,
-  seo: {
-    metaTitle: 'Advanced Chatbot Memory and Context Management - Complete Guide',
-    metaDescription: 'Learn to implement sophisticated memory systems for chatbots. Context management, user profiles, and conversation history.',
-    keywords: ['chatbot memory', 'context management', 'conversation ai', 'nlp', 'database']
-  }
+Advanced memory and context management create more engaging agent experiences. Start with basic context tracking and gradually implement more sophisticated features like sentiment analysis and topic tracking.`,
+    author: 'Sajedar Team',
+    publishedAt: '2024-02-10',
+    updatedAt: '2024-02-10',
+    tags: ['chatbot memory', 'context management', 'nlp', 'database', 'redis'],
+    category: 'ai-chatbots',
+    difficulty: 'advanced',
+    readTime: 25,
+    featured: true,
+    seo: {
+        metaTitle: 'Advanced Chatbot Memory and Context Management - Complete Guide',
+        metaDescription: 'Learn to implement sophisticated memory systems for chatbots. Context management, user profiles, and conversation history.',
+        keywords: ['chatbot memory', 'context management', 'conversation ai', 'nlp', 'database']
+    }
 };

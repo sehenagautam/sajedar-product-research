@@ -13,8 +13,8 @@ export const ecommerceAiInsightsArticle: Article = {
 
 - **Conversion Rate Lift:** Shoppers engaging with AI chatbots convert at up to **4x higher (12.3% vs. 3.1%)**.
 - **Average Sales Impact:** Businesses see an average **67% sales increase** post-chatbot deployment.
-- **Sales Attribution:** Up to **26% of all sales** originate from chatbot interactions.
-- **Average Order Value (AOV):** Returning customers spend **+25%** more with chatbot assistance; some cases saw **2.3x AOV** lift.
+- **Sales Attribution:** Up to **26% of all sales** originate from agent interactions.
+- **Average Order Value (AOV):** Returning customers spend **+25%** more with agent assistance; some cases saw **2.3x AOV** lift.
 - **Lead Generation:** Chatbots can deliver **300% higher lead conversion** than static forms and generate **55% more** high-quality leads.
 
 ### Operational Efficiency
@@ -29,7 +29,7 @@ export const ecommerceAiInsightsArticle: Article = {
 ### Customer Experience & Loyalty
 
 - **Cart Abandonment Recovery:** AI recovers **15–25%** of lost revenue (sometimes up to **35%**), outperforming email recovery.
-- **Customer Sentiment:** **87%+** of consumers rate chatbot experiences neutral or positive.
+- **Customer Sentiment:** **87%+** of consumers rate agent experiences neutral or positive.
 - **Customer Satisfaction (CSAT):** Gains up to **30%** improvement in some use cases.
 - **Net Promoter Score (NPS):** Chatbots deliver **+15–25** point improvements; in one case **+35%** NPS jump.
 - **Retention:** AI personalization drives **+25%** retention rates; OPPO saw **+57%** repurchase rate with AI chatbots.

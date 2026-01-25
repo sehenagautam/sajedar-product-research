@@ -17,7 +17,7 @@ export default function MessengerRefBuilderPage() {
         }
         // Basic Link: m.me/PageID or m.me/Username
         let link = `https://m.me/${pageId}`;
-        
+
         // Add ref if present
         if (refParam) {
             // Note: m.me links use the ?ref= parameter to pass data to the bot's "Get Started" payload
@@ -74,7 +74,7 @@ export default function MessengerRefBuilderPage() {
                                     className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500"
                                 />
                                 <p className="text-xs text-gray-500 mt-2">
-                                    This value is passed to your chatbot when the user clicks "Get Started". Use it to trigger specific flows.
+                                    This value is passed to your agent when the user clicks "Get Started". Use it to trigger specific flows.
                                 </p>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ export default function MessengerRefBuilderPage() {
                                 <Facebook size={18} /> Why use Ref URLs?
                             </h4>
                             <p className="text-gray-300 text-sm leading-relaxed">
-                                Unlike a generic message button, a Ref URL lets you know <em>context</em>. 
+                                Unlike a generic message button, a Ref URL lets you know <em>context</em>.
                                 You can send users coming from "Product A" directly to the "Product A Flow" inside your Sajedar bot, skipping the main menu.
                             </p>
                         </div>
@@ -94,7 +94,7 @@ export default function MessengerRefBuilderPage() {
                         <h3 className="text-white font-bold mb-6 flex items-center gap-2">
                             <LinkIcon className="text-emerald-400" size={20} /> Generated Deep Link
                         </h3>
-                        
+
                         <div className="bg-black/40 rounded-lg p-4 mb-6 break-all text-emerald-400 font-mono text-sm border border-emerald-500/30 shadow-inner">
                             {generatedLink || 'https://m.me/YourPageID?ref=...'}
                         </div>

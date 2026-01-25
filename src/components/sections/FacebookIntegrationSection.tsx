@@ -13,7 +13,7 @@ export function FacebookIntegrationSection() {
             Integrate Chatbot in Your <span className="text-blue-400">Facebook Page</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Engage customers <span className="text-blue-400 font-bold">24/7 instantly</span> on your Facebook page. 
+            Engage customers <span className="text-blue-400 font-bold">24/7 instantly</span> on your Facebook page.
             Never miss a potential lead or customer inquiry again with automated responses and intelligent conversations.
           </p>
         </div>
@@ -30,7 +30,7 @@ export function FacebookIntegrationSection() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-1">24/7 Instant Response</h3>
-                  <p className="text-gray-300 text-sm">Your chatbot responds immediately to customer messages, even when your team is offline. No more waiting for business hours.</p>
+                  <p className="text-gray-300 text-sm">Your agent responds immediately to customer messages, even when your team is offline. No more waiting for business hours.</p>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@ export function FacebookIntegrationSection() {
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <svg className="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg>
                   </div>
                   <div>
@@ -108,7 +108,7 @@ export function FacebookIntegrationSection() {
                   {/* Customer Message */}
                   <div className="flex justify-end">
                     <div className="bg-blue-600 text-white rounded-lg px-4 py-2 max-w-xs">
-                      <p className="text-sm">Hi! I'm interested in your chatbot services. Can you tell me more about pricing?</p>
+                      <p className="text-sm">Hi! I'm interested in your agent services. Can you tell me more about pricing?</p>
                       <span className="text-xs text-blue-200 block mt-1">2:34 PM</span>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export function FacebookIntegrationSection() {
                   {/* Bot Response */}
                   <div className="flex justify-start">
                     <div className="bg-white text-gray-800 rounded-lg px-4 py-2 max-w-xs shadow-sm">
-                      <p className="text-sm">Hello! Thanks for your interest in our chatbot services! 🤖</p>
+                      <p className="text-sm">Hello! Thanks for your interest in our agent services! 🤖</p>
                       <p className="text-sm mt-2">Our pricing starts at $299/month for basic packages. Would you like me to send you our detailed pricing guide?</p>
                       <span className="text-xs text-gray-500 block mt-1">2:34 PM</span>
                     </div>
@@ -169,7 +169,7 @@ export function FacebookIntegrationSection() {
             {/* Floating Elements */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
               <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.486 2 2 6.065 2 11.077c0 2.86 1.385 5.428 3.588 7.12V22l3.29-1.802c1.014.281 2.09.435 3.122.435 5.514 0 10-4.065 10-9.077S17.514 2 12 2zm.193 12.807l-2.73-2.91-5.463 2.91 5.996-6.435 2.73 2.91 5.463-2.91-5.996 6.435z"/>
+                <path d="M12 2C6.486 2 2 6.065 2 11.077c0 2.86 1.385 5.428 3.588 7.12V22l3.29-1.802c1.014.281 2.09.435 3.122.435 5.514 0 10-4.065 10-9.077S17.514 2 12 2zm.193 12.807l-2.73-2.91-5.463 2.91 5.996-6.435 2.73 2.91 5.463-2.91-5.996 6.435z" />
               </svg>
             </div>
 
@@ -186,7 +186,7 @@ export function FacebookIntegrationSection() {
           <div className="bg-gradient-to-r from-blue-900/30 to-blue-800/30 border border-blue-500/30 rounded-xl p-6 backdrop-blur-sm">
             <h3 className="text-xl font-bold text-white mb-3">Ready to Engage Customers 24/7?</h3>
             <p className="text-gray-300 mb-4 max-w-2xl mx-auto text-sm">
-              Connect your chatbot to Facebook and start engaging customers instantly. 
+              Connect your agent to Facebook and start engaging customers instantly.
               Never miss another opportunity to convert visitors into customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

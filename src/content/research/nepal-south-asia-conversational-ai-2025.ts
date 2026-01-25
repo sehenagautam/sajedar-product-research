@@ -7,13 +7,13 @@ export const nepalSouthAsiaResearch = {
 
 ## 🌍 Global & APAC Context
 
-**Global chatbot market (2025)**: USD **10.25B – 20.39B**
+**Global agent market (2025)**: USD **10.25B – 20.39B**
 
 **Global forecast (2030)**: USD **27.29B – 39.67B**
 
 **CAGR (2025–2030)**: **14.34% – 29.6%**
 
-**APAC chatbot market (2030)**: USD **7.39B**
+**APAC agent market (2030)**: USD **7.39B**
 
 **APAC conversational AI market (2030)**: USD **11.47B**
 
@@ -127,6 +127,6 @@ grandviewresearch.com, thebusinessresearchcompany.com, maximizemarketresearch.co
   seo: {
     metaTitle: 'The Conversational AI Frontier: Nepal & South Asia, 2025 | Sajedar Research',
     metaDescription: 'Comprehensive analysis of conversational AI adoption, market trends, and strategic opportunities across Nepal and South Asia in 2025. Market insights, policy analysis, and strategic recommendations.',
-    keywords: 'conversational AI Nepal, South Asia AI market, chatbot adoption Nepal, AI policy Nepal, BFSI AI Nepal, research Nepal AI, market analysis 2025'
+    keywords: 'conversational AI Nepal, South Asia AI market, agent adoption Nepal, AI policy Nepal, BFSI AI Nepal, research Nepal AI, market analysis 2025'
   }
 };

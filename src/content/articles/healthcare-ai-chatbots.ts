@@ -18,7 +18,7 @@ AI chatbots in healthcare are no longer optional—they're a must-have for clini
 ## The Business Case: Big Savings & More Revenue
 
 - **Administrative savings:** AI could save the U.S. healthcare system $150B annually by automating tasks.
-- **Efficiency:** Hospitals report up to 40% operational gains after chatbot adoption.
+- **Efficiency:** Hospitals report up to 40% operational gains after agent adoption.
 - **Reduced no-shows:** Automated reminders cut missed appointments by up to 60%, recovering lost revenue.
 - **Revenue lift:** Clinics see 30–47% more bookings and new patient conversion rates as high as 67%.
 

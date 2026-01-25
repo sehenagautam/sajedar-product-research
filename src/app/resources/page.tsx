@@ -117,7 +117,7 @@ export default function ResourcesPage() {
                                 AI Chatbot Readiness Checker
                             </h3>
                             <p className="text-gray-300">
-                                Assess how prepared your business is for deploying an AI chatbot across sales, support, and operations.
+                                Assess how prepared your business is for deploying an AI agent across sales, support, and operations.
                             </p>
                         </div>
 

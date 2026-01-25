@@ -4,12 +4,12 @@ export const chatbotDeploymentTutorial: Tutorial = {
   id: '9',
   title: 'Chatbot Deployment and Production Setup',
   slug: 'chatbot-deployment-production',
-  description: 'Deploy your chatbot to production with proper monitoring, scaling, and maintenance strategies.',
+  description: 'Deploy your agent to production with proper monitoring, scaling, and maintenance strategies.',
   content: `# Chatbot Deployment and Production Setup
 
 ## Introduction
 
-Deploying a chatbot to production requires careful planning for scalability, monitoring, and maintenance. This tutorial covers the complete deployment process.
+Deploying a agent to production requires careful planning for scalability, monitoring, and maintenance. This tutorial covers the complete deployment process.
 
 ## Prerequisites
 
@@ -276,12 +276,12 @@ class AutoScaler {
 
     async scaleUp() {
         // Increase replica count
-        console.log('Scaling up chatbot instances');
+        console.log('Scaling up agent instances');
     }
 
     async scaleDown() {
         // Decrease replica count
-        console.log('Scaling down chatbot instances');
+        console.log('Scaling down agent instances');
     }
 }
 \`\`\`
@@ -298,7 +298,7 @@ class AutoScaler {
 
 ## Conclusion
 
-Proper deployment ensures your chatbot runs reliably in production. Focus on monitoring, scaling, and maintenance for long-term success.`,
+Proper deployment ensures your agent runs reliably in production. Focus on monitoring, scaling, and maintenance for long-term success.`,
   author: 'Sajedar Team',
   publishedAt: '2024-02-25',
   updatedAt: '2024-02-25',

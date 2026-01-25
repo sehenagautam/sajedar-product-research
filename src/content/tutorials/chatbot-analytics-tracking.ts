@@ -1,15 +1,15 @@
 import { Tutorial } from '../../types/tutorial';
 
 export const chatbotAnalyticsTutorial: Tutorial = {
-  id: '7',
-  title: 'Chatbot Analytics and Performance Tracking',
-  slug: 'chatbot-analytics-tracking',
-  description: 'Implement comprehensive analytics and tracking for your chatbot to measure performance, user engagement, and business metrics.',
-  content: `# Chatbot Analytics and Performance Tracking
+    id: '7',
+    title: 'Chatbot Analytics and Performance Tracking',
+    slug: 'chatbot-analytics-tracking',
+    description: 'Implement comprehensive analytics and tracking for your agent to measure performance, user engagement, and business metrics.',
+    content: `# Chatbot Analytics and Performance Tracking
 
 ## Introduction
 
-Analytics are crucial for understanding how your chatbot performs and how users interact with it. This tutorial covers implementing comprehensive tracking, metrics collection, and performance analysis.
+Analytics are crucial for understanding how your agent performs and how users interact with it. This tutorial covers implementing comprehensive tracking, metrics collection, and performance analysis.
 
 ## Prerequisites
 
@@ -376,23 +376,23 @@ class ExternalAnalyticsIntegration {
 1. **Privacy Compliance**: Ensure GDPR/CCPA compliance for data collection
 2. **Data Retention**: Implement data retention policies
 3. **Real-time Monitoring**: Set up alerts for performance issues
-4. **A/B Testing**: Track different chatbot versions
+4. **A/B Testing**: Track different agent versions
 5. **User Segmentation**: Analyze different user groups
 
 ## Conclusion
 
 Comprehensive analytics help you understand user behavior, optimize performance, and make data-driven decisions for your chatbot. Start with basic metrics and gradually implement more sophisticated tracking.`,
-  author: 'Sajedar Team',
-  publishedAt: '2024-02-15',
-  updatedAt: '2024-02-15',
-  tags: ['analytics', 'tracking', 'performance', 'metrics', 'dashboard'],
-  category: 'analytics',
-  difficulty: 'intermediate',
-  readTime: 20,
-  featured: false,
-  seo: {
-    metaTitle: 'Chatbot Analytics and Performance Tracking - Complete Guide',
-    metaDescription: 'Learn to implement comprehensive analytics and tracking for your chatbot. Performance monitoring, user engagement, and business metrics.',
-    keywords: ['chatbot analytics', 'performance tracking', 'user engagement', 'metrics', 'dashboard']
-  }
+    author: 'Sajedar Team',
+    publishedAt: '2024-02-15',
+    updatedAt: '2024-02-15',
+    tags: ['analytics', 'tracking', 'performance', 'metrics', 'dashboard'],
+    category: 'analytics',
+    difficulty: 'intermediate',
+    readTime: 20,
+    featured: false,
+    seo: {
+        metaTitle: 'Chatbot Analytics and Performance Tracking - Complete Guide',
+        metaDescription: 'Learn to implement comprehensive analytics and tracking for your chatbot. Performance monitoring, user engagement, and business metrics.',
+        keywords: ['chatbot analytics', 'performance tracking', 'user engagement', 'metrics', 'dashboard']
+    }
 };

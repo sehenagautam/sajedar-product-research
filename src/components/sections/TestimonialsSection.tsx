@@ -7,7 +7,7 @@ export function TestimonialsSection() {
       name: "RJ Manandhar",
       company: "Latta Kapada",
       role: "Store Owner",
-      quote: "The chatbot handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
+      quote: "The agent handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
       profilePic: "/lattakapada.png",
       rating: 5
     },
@@ -25,7 +25,7 @@ export function TestimonialsSection() {
       name: "Prakash Maharjan",
       company: "Osha Clothing & Apparels",
       role: "Managing Director",
-      quote: "From order queries to product availability, the AI chatbot handles everything smoothly. Customers feel attended to at all times.",
+      quote: "From order queries to product availability, the AI agent handles everything smoothly. Customers feel attended to at all times.",
       profilePic: "/osha.png",
       rating: 5
     },
@@ -62,7 +62,7 @@ export function TestimonialsSection() {
       name: "Ramesh Khatiwada",
       company: "Health Bridge Hospital",
       role: "Administrator",
-      quote: "Patients get instant responses for appointments and basic inquiries. The chatbot has reduced call center pressure significantly.",
+      quote: "Patients get instant responses for appointments and basic inquiries. The agent has reduced call center pressure significantly.",
       profilePic: "/healthbridge.png",
       rating: 5
     },

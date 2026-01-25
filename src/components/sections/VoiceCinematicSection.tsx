@@ -44,9 +44,9 @@ const VoiceWave: React.FC<{ width?: number; height?: number }> = ({ width, heigh
 // Message Square Text Icon
 const MessageSquareText: React.FC<{ size: number }> = ({ size }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-    <path d="M13 8H7"/>
-    <path d="M17 12H7"/>
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    <path d="M13 8H7" />
+    <path d="M17 12H7" />
   </svg>
 );
 
@@ -91,9 +91,9 @@ export function VoiceCinematicSection() {
                   className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
-                  Your chatbot <span className="text-gray-400">listens…</span>
+                  Your agent <span className="text-gray-400">listens…</span>
                 </h2>
-                
+
                 <h2
                   className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
@@ -106,7 +106,7 @@ export function VoiceCinematicSection() {
               <div className="w-full max-w-[480px] px-4">
                 <VoiceWave height={40} />
               </div>
-              
+
               {/* Conversation Demo */}
               <div className="w-full max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-3 sm:p-4 text-left font-medium flex flex-col justify-center">
                 <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-300 text-xs sm:text-sm md:text-base">
