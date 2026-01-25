@@ -30,15 +30,7 @@ export function TestimonialsSection() {
       rating: 5
     },
 
-    {
-      id: 4,
-      name: "Samyog Shrestha",
-      company: "Bj Store",
-      role: "Owner",
-      quote: "The AI assistant answers customer questions instantly and accurately. It has helped us close more sales without extra effort.",
-      profilePic: "/bjstore.png",
-      rating: 5
-    },
+
     {
       id: 5,
       name: "Dimanjan Dahal",
