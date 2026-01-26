@@ -40,15 +40,7 @@ export function TestimonialsSection() {
       profilePic: "/Sajedar.png",
       rating: 5
     },
-    {
-      id: 6,
-      name: "Anita Sharma",
-      company: "Crackgineers",
-      role: "Operations Lead",
-      quote: "Our technical queries are handled instantly and accurately. The AI understands context better than we expected.",
-      profilePic: "/Crackengineer.png",
-      rating: 5
-    },
+
     {
       id: 7,
       name: "Ramesh Khatiwada",
