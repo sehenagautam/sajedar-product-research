@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         serif: ['DM Serif Display', 'serif'],
         sans: ['Inter', 'Arial', 'Helvetica', 'sans-serif'],
+        helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {

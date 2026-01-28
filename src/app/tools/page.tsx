@@ -8,6 +8,11 @@ import { Footer } from '../../components/sections';
 const tools = [
     // --- 1. VISUAL CONTENT TOOLS (New) ---
     {
+        title: 'Furniture Prompt Creator',
+        content: `Generate high-quality, design-preserving image prompts for AI generators. Ensure your furniture keeps its canonical design while changing scenes.`,
+        link: '/tools/furniture-prompt-creator',
+    },
+    {
         title: 'Facebook Ad Mockup Generator',
         content: `Stop guessing. Upload your image and text to see exactly how your ad will look on the Facebook News Feed before you spend money.`,
         link: '/tools/facebook-ad-mockup',
