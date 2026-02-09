@@ -98,7 +98,7 @@ export function VoiceCinematicSection() {
                   className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-[#292524] px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
-                  …and <span className="text-emerald-500">speaks back.</span>
+                  …and <span className="text-emerald-500">responds back.</span>
                 </h2>
               </div>
 
@@ -116,7 +116,7 @@ export function VoiceCinematicSection() {
                   <span className="break-words">You: "Where's my order?"</span>
                 </div>
                 <div className="mt-2 rounded-xl bg-emerald-500/10 p-2 sm:p-3 text-[#292524] text-xs sm:text-sm md:text-base break-words">
-                  Sajedar Voice AI: "Let me check that for you… Order #12345 arrives tomorrow."
+                  Agent Response: "Let me check that for you… Order #12345 arrives tomorrow."
                 </div>
               </div>
             </div>

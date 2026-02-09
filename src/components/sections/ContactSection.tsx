@@ -40,7 +40,7 @@ ${formData.message}`;
     <section id="contact" className="w-full bg-[#fafaf9] py-24 px-4 flex flex-col items-center">
       <div className="max-w-xl w-full mx-auto flex flex-col items-center gap-8">
         <div className="flex flex-col items-center text-center gap-2 mb-4">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#292524] mb-2 leading-tight tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#292524] mb-2 leading-tight tracking-tight">
             Contact
           </h2>
         </div>

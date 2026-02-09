@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#18181b]/90 backdrop-blur-sm border-b border-emerald-500/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#10b981]/10 backdrop-blur-sm border-b border-emerald-500/20">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
 
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link
                 href="/about"
-                className="text-xs sm:text-sm font-medium text-white/80 hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
+                className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
                 style={{ fontFamily: 'Inter, Arial, sans-serif' }}
               >
                 About Us

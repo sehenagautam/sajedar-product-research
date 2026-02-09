@@ -25,7 +25,7 @@ export function FAQSection() {
   return (
     <section className="w-full bg-[#fafaf9] py-20 px-4 flex flex-col items-center">
       <div className="max-w-2xl w-full mx-auto flex flex-col items-center gap-8">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#292524] mb-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#292524] mb-6 text-center">
           Frequently Asked Questions
         </h2>
         <div className="w-full flex flex-col gap-4">

@@ -10,11 +10,11 @@ export function IntegrationSection() {
             className="text-3xl md:text-4xl font-semibold tracking-tight text-[#292524]"
             style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
           >
-            <span className="text-[#57534e]">Seamless</span> <span className="text-emerald-500">Integrations</span>
+            <span className="text-[#57534e]">Seamless</span> <span className="text-emerald-500">Sales Flow</span>
           </h2>
         </div>
 
-        {/* Integrations Grid */}
+        {/* Sales Flow Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Facebook */}
           <div className="bg-white/60 backdrop-blur-sm border border-stone-200 rounded-2xl p-6 text-center hover:bg-white/80 transition-all duration-300 shadow-sm">
@@ -99,7 +99,7 @@ export function IntegrationSection() {
               className="text-[#57534e] text-sm"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Leads data collection
+              Data collection
             </p>
           </div>
         </div>

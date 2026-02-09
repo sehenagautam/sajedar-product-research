@@ -6,7 +6,7 @@ import { ContactSection, Footer } from '../../components/sections';
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#fafaf9] text-[#44403c] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
       {/* Header */}
       <Header />
 

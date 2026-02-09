@@ -75,7 +75,7 @@ export function HeroSection() {
                 className="text-[#57534e] hover:text-[#292524] transition-colors duration-200 text-sm"
                 style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
-                See how we guided incoming leads to Advance Payments →
+                See how the agent guided incoming leads to make payments →
               </Link>
             </div>
           </div>
