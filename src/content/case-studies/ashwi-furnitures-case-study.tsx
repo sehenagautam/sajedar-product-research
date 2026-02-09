@@ -296,7 +296,7 @@ export const ashwiFurnituresCaseStudy = {
             </div>
 
             <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl p-6">
-              <h4 className="text-lg font-semibold text-purple-300 mb-4">🎯 Customer Engagement</h4>
+              <h4 className="text-lg font-semibold text-purple-300 mb-4">🎯 Engagement</h4>
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-300">Session Duration</span>

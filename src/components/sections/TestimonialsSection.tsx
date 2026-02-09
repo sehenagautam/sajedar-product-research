@@ -29,8 +29,6 @@ export function TestimonialsSection() {
       profilePic: "/osha.png",
       rating: 5
     },
-
-
     {
       id: 3,
       name: "Dimanjan Dahal",
