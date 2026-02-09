@@ -7,21 +7,21 @@ export function FeaturesSection() {
       {/*
       <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
         <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
-            <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+            <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
               Custom Chatbot Agency
             </span>
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
               AI Chatbots, Tailored for Your Business
             </h2>
             <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-6">
-              <span className="text-emerald-400 font-bold">Sajedar</span> is a{' '}
-              <span className="text-emerald-400 font-bold">hands-on agency</span> specializing in designing, building, and supporting{' '}
-              <span className="text-emerald-400 font-bold">custom AI chatbots</span> for{' '}
-              <span className="text-emerald-400 font-bold">ambitious brands</span>. We{' '}
-              <span className="text-emerald-400 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your agent fits your unique needs and delivers{' '}
-              <span className="text-emerald-400 font-bold">real value</span> to your customers and team.{' '}
-              <span className="text-emerald-400 font-bold">No off-the-shelf bots</span>—just{' '}
-              <span className="text-emerald-400 font-bold">thoughtful, tailored solutions</span> that help you stand out and grow.
+              <span className="text-emerald-500 font-bold">Sajedar</span> is a{' '}
+              <span className="text-emerald-500 font-bold">hands-on agency</span> specializing in designing, building, and supporting{' '}
+              <span className="text-emerald-500 font-bold">custom AI chatbots</span> for{' '}
+              <span className="text-emerald-500 font-bold">ambitious brands</span>. We{' '}
+              <span className="text-emerald-500 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your agent fits your unique needs and delivers{' '}
+              <span className="text-emerald-500 font-bold">real value</span> to your customers and team.{' '}
+              <span className="text-emerald-500 font-bold">No off-the-shelf bots</span>—just{' '}
+              <span className="text-emerald-500 font-bold">thoughtful, tailored solutions</span> that help you stand out and grow.
             </p>
             <a 
               href="#" 
@@ -33,15 +33,15 @@ export function FeaturesSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center w-full">
             <div className="flex flex-col gap-6 items-center">
-                <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-400">98%</span>
+                <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-500">98%</span>
                 <span className="text-gray-400 text-lg uppercase tracking-widest">Client Satisfaction</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-400">30,000+</span>
+                <span className="text-5xl md:text-6xl font-mono font-bold text-emerald-500">30,000+</span>
                 <span className="text-gray-400 text-lg uppercase tracking-widest text-center">Conversations Automated</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-4xl font-mono font-bold text-emerald-400">25+</span>
+                <span className="text-4xl font-mono font-bold text-emerald-500">25+</span>
                 <span className="text-gray-400 text-lg uppercase tracking-widest">Custom Bots Launched</span>
               </div>
             </div>
@@ -102,7 +102,7 @@ export function FeaturesSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12">
             <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
               <Rocket size={36} stroke="#22c55e" strokeWidth={2} />
-              <span className="text-4xl font-mono font-bold text-emerald-400">50+</span>
+              <span className="text-4xl font-mono font-bold text-emerald-500">50+</span>
               <span className="text-2xl font-bold text-white">Integrations</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Plug-and-play</span>
               <span className="text-gray-300 text-center">
@@ -112,7 +112,7 @@ export function FeaturesSection() {
             
             <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
               <Users size={36} stroke="#22c55e" strokeWidth={2} />
-              <span className="text-4xl font-mono font-bold text-emerald-400">24/7</span>
+              <span className="text-4xl font-mono font-bold text-emerald-500">24/7</span>
               <span className="text-2xl font-bold text-white">Support</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Always-on</span>
               <span className="text-gray-300 text-center">
@@ -122,7 +122,7 @@ export function FeaturesSection() {
             
             <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
               <Sparkles size={36} stroke="#22c55e" strokeWidth={2} />
-              <span className="text-4xl font-mono font-bold text-emerald-400">3x</span>
+              <span className="text-4xl font-mono font-bold text-emerald-500">3x</span>
               <span className="text-2xl font-bold text-white">Faster Response</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Speed & Analytics</span>
               <span className="text-gray-300 text-center">
@@ -132,7 +132,7 @@ export function FeaturesSection() {
             
             <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
               <Lightbulb size={36} stroke="#22c55e" strokeWidth={2} />
-              <span className="text-4xl font-mono font-bold text-emerald-400">15%</span>
+              <span className="text-4xl font-mono font-bold text-emerald-500">15%</span>
               <span className="text-2xl font-bold text-white">More Deals Closed</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">AI-Powered</span>
               <span className="text-gray-300 text-center">
@@ -151,7 +151,7 @@ export function FeaturesSection() {
             
             <div className="bg-[#23243a] rounded-2xl p-8 flex flex-col items-center gap-4 shadow border border-white/10">
               <Bot size={36} stroke="#22c55e" strokeWidth={2} />
-              <span className="text-4xl font-mono font-bold text-emerald-400">4.8/5</span>
+              <span className="text-4xl font-mono font-bold text-emerald-500">4.8/5</span>
               <span className="text-2xl font-bold text-white">Avg. Rating</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Loved by Customers</span>
               <span className="text-gray-300 text-center">

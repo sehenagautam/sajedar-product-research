@@ -3,12 +3,12 @@ import Image from 'next/image';
 export default function AboutSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-32">
-      
+
       {/* Background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#2eb44722,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#10b98122,transparent_60%)]" />
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
-        
+
         {/* Logo */}
         <Image
           src="/sajedar-new-logo.png"
@@ -27,7 +27,7 @@ export default function AboutSection() {
         <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
           <p>
             <strong className="text-white">Sajedar</strong> means
-            <span className="text-emerald-400 font-semibold"> partner</span>.
+            <span className="text-emerald-500 font-semibold"> partner</span>.
             We exist to be your trusted AI business partner.
           </p>
 

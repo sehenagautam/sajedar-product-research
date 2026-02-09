@@ -10,10 +10,10 @@ interface RelatedContentProps {
 
 export function RelatedContent({ currentTutorial, allTutorials, maxItems = 3 }: RelatedContentProps) {
   const relatedTutorials = allTutorials
-    .filter(tutorial => 
-      tutorial.id !== currentTutorial.id && 
-      (tutorial.category === currentTutorial.category || 
-       tutorial.tags.some(tag => currentTutorial.tags.includes(tag)))
+    .filter(tutorial =>
+      tutorial.id !== currentTutorial.id &&
+      (tutorial.category === currentTutorial.category ||
+        tutorial.tags.some(tag => currentTutorial.tags.includes(tag)))
     )
     .slice(0, maxItems);
 
@@ -29,7 +29,7 @@ export function RelatedContent({ currentTutorial, allTutorials, maxItems = 3 }: 
             href={`/tutorials/${tutorial.slug}`}
             className="block hover:bg-white/10 rounded-lg p-4 transition-colors"
           >
-            <h4 className="text-lg font-medium text-white mb-2 hover:text-emerald-400 transition-colors">
+            <h4 className="text-lg font-medium text-white mb-2 hover:text-emerald-500 transition-colors">
               {tutorial.title}
             </h4>
             <p className="text-gray-400 text-sm mb-2">{tutorial.description}</p>
@@ -64,11 +64,10 @@ export function CategoryNavigation({ currentCategory, categories }: CategoryNavi
           <Link
             key={category.id}
             href={`/tutorials/category/${category.slug}`}
-            className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${
-              currentCategory === category.id 
-                ? 'bg-emerald-500/20 text-emerald-300' 
+            className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${currentCategory === category.id
+                ? 'bg-emerald-500/20 text-emerald-300'
                 : 'hover:bg-white/10 text-gray-300'
-            }`}
+              }`}
           >
             <span className="text-2xl">{category.icon}</span>
             <div>
@@ -98,7 +97,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
           {index === items.length - 1 ? (
             <span className="text-white font-medium">{item.name}</span>
           ) : (
-            <Link 
+            <Link
               href={item.href}
               className="text-gray-400 hover:text-white transition-colors"
             >
@@ -119,7 +118,7 @@ interface TagCloudProps {
 
 export function TagCloud({ tags, currentTag, baseUrl = '/tutorials' }: TagCloudProps) {
   const uniqueTags = [...new Set(tags)].sort();
-  
+
   return (
     <div className="bg-white/5 rounded-xl p-6 border border-white/10">
       <h3 className="text-xl font-semibold text-white mb-4">Popular Tags</h3>
@@ -128,11 +127,10 @@ export function TagCloud({ tags, currentTag, baseUrl = '/tutorials' }: TagCloudP
           <Link
             key={tag}
             href={`${baseUrl}?tag=${encodeURIComponent(tag)}`}
-            className={`px-3 py-1 rounded-full text-sm transition-colors ${
-              currentTag === tag
+            className={`px-3 py-1 rounded-full text-sm transition-colors ${currentTag === tag
                 ? 'bg-emerald-500 text-white'
                 : 'bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30'
-            }`}
+              }`}
           >
             #{tag}
           </Link>
@@ -155,7 +153,7 @@ interface TutorialSeriesProps {
 export function TutorialSeries({ series, currentSlug }: TutorialSeriesProps) {
   const sortedSeries = series.sort((a, b) => a.order - b.order);
   const currentIndex = sortedSeries.findIndex(item => item.slug === currentSlug);
-  
+
   return (
     <div className="bg-white/5 rounded-xl p-6 border border-white/10">
       <h3 className="text-xl font-semibold text-white mb-4">Tutorial Series</h3>
@@ -164,27 +162,25 @@ export function TutorialSeries({ series, currentSlug }: TutorialSeriesProps) {
           <Link
             key={tutorial.slug}
             href={`/tutorials/${tutorial.slug}`}
-            className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${
-              tutorial.slug === currentSlug
+            className={`flex items-center space-x-3 p-3 rounded-lg transition-colors ${tutorial.slug === currentSlug
                 ? 'bg-emerald-500/20 text-emerald-300'
                 : 'hover:bg-white/10 text-gray-300'
-            }`}
+              }`}
           >
-            <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-              tutorial.completed 
-                ? 'bg-green-500 text-white' 
+            <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${tutorial.completed
+                ? 'bg-green-500 text-white'
                 : tutorial.slug === currentSlug
-                ? 'bg-emerald-500 text-white'
-                : 'bg-gray-500 text-white'
-            }`}>
+                  ? 'bg-emerald-500 text-white'
+                  : 'bg-gray-500 text-white'
+              }`}>
               {tutorial.completed ? '✓' : index + 1}
             </div>
             <div className="flex-1">
               <div className="font-medium">{tutorial.title}</div>
               <div className="text-xs text-gray-400">
-                {tutorial.completed ? 'Completed' : 
-                 tutorial.slug === currentSlug ? 'Current' : 
-                 'Upcoming'}
+                {tutorial.completed ? 'Completed' :
+                  tutorial.slug === currentSlug ? 'Current' :
+                    'Upcoming'}
               </div>
             </div>
           </Link>

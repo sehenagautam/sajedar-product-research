@@ -6,11 +6,11 @@ export function BrandVoiceSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-5">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
             Brand Customization
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            Tune Your Chatbot to Your <span className="text-emerald-400">Brand Voice</span>
+            Tune Your Chatbot to Your <span className="text-emerald-500">Brand Voice</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
             Customize your chatbot's personality, tone, and communication style to perfectly match your brand.

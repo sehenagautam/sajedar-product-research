@@ -3,21 +3,21 @@ import React from "react";
 // Sleeker, more expressive single-element illustration — static orb with gentle glow and pointers
 export default function AIAsASalesman() {
   return (
-    <section className="w-full py-24 px-4 bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] border-t border-b border-white/10">
+    <section className="w-full py-24 px-4 bg-[#fafaf9]">
       <div className="max-w-7xl mx-auto">
         <div className="relative w-full text-center">
           {/* Static gradient aura */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-r from-emerald-400/30 to-sky-400/30 blur-3xl" />
+            <div className="h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-3xl" />
           </div>
 
           {/* Text */}
           <div className="relative z-10 mb-16">
             <h1
-              className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-6"
+              className="text-4xl md:text-6xl font-semibold tracking-tight text-[#292524] mb-6"
               style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              <span className="text-gray-400">AI As a</span> <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">Salesman</span>
+              <span className="text-[#57534e]">AI As a</span> <span className="text-emerald-500">Salesman</span>
             </h1>
           </div>
 
@@ -39,8 +39,8 @@ export default function AIAsASalesman() {
                   key={label}
                   className="group relative"
                 >
-                  <div className="px-6 py-3 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                    <span className="text-sm font-medium text-white tracking-wide">
+                  <div className="px-6 py-3 rounded-2xl bg-white/60 backdrop-blur-sm border border-stone-200 shadow-sm text-[#44403c]">
+                    <span className="text-sm font-medium tracking-wide">
                       {label}
                     </span>
                   </div>

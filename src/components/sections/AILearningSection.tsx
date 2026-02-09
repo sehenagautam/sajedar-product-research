@@ -6,11 +6,11 @@ export function AILearningSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
             AI Learning & Adaptation
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            Your Chatbot <span className="text-emerald-400">Learns & Improves</span> with Every Conversation
+            Your Chatbot <span className="text-emerald-500">Learns & Improves</span> with Every Conversation
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
             Watch your agent evolve and adapt its communication style to better achieve your business goals.

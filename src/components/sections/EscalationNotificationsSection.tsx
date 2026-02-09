@@ -6,11 +6,11 @@ export function EscalationNotificationsSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
             Smart Escalation
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            Instant <span className="text-emerald-400">Human Escalation</span> Notifications
+            Instant <span className="text-emerald-500">Human Escalation</span> Notifications
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
             Never miss a customer inquiry. Get instant notifications on WhatsApp, Discord, or email
@@ -21,7 +21,7 @@ export function EscalationNotificationsSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Side - Features */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +35,7 @@ export function EscalationNotificationsSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ export function EscalationNotificationsSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@ export function EscalationNotificationsSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -191,13 +191,13 @@ export function EscalationNotificationsSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-emerald-900/30 to-red-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
+          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Never Miss a Customer Inquiry Again</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Set up instant escalation notifications and ensure every customer gets the attention they deserve,
               even when your agent reaches its limits.
             </p>
-            <a href="/?message=I want to set up escalation notifications for my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
+            <a href="/?message=I want to set up escalation notifications for my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
               Setup Notifications
             </a>
             <a href="/?message=Please show an escalation notifications demo.#contact" className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors duration-200">

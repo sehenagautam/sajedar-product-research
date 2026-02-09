@@ -32,31 +32,12 @@ export function TestimonialsSection() {
 
 
     {
-      id: 5,
+      id: 3,
       name: "Dimanjan Dahal",
       company: "Sajedar Chatbot",
       role: "Founder",
       quote: "Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.",
       profilePic: "/Sajedar.png",
-      rating: 5
-    },
-
-    {
-      id: 7,
-      name: "Ramesh Khatiwada",
-      company: "Health Bridge Hospital",
-      role: "Administrator",
-      quote: "Patients get instant responses for appointments and basic inquiries. The agent has reduced call center pressure significantly.",
-      profilePic: "/healthbridge.png",
-      rating: 5
-    },
-    {
-      id: 8,
-      name: "Priya Sharma",
-      company: "Clinico Labs",
-      role: "Lab Operations Manager",
-      quote: "Test reports, timings, and appointment queries are now fully automated. The experience feels seamless for patients.",
-      profilePic: "/Clinicolab.png",
       rating: 5
     }
   ];
@@ -66,7 +47,7 @@ export function TestimonialsSection() {
 
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
-    <div className="flex-shrink-0 w-80 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mx-4">
+    <div className="flex-shrink-0 w-80 bg-white/60 backdrop-blur-sm border border-stone-200 rounded-xl p-6 mx-4 shadow-sm">
       <div className="flex items-center mb-4">
         <img
           src={testimonial.profilePic}
@@ -74,36 +55,36 @@ export function TestimonialsSection() {
           className="w-12 h-12 rounded-full object-cover mr-4"
         />
         <div>
-          <h4 className="text-white font-semibold text-sm">
+          <h4 className="text-[#292524] font-semibold text-sm">
             {testimonial.name}
           </h4>
-          <p className="text-gray-400 text-xs">{testimonial.role}</p>
-          <p className="text-emerald-400 text-xs font-medium">{testimonial.company}</p>
+          <p className="text-[#57534e] text-xs">{testimonial.role}</p>
+          <p className="text-emerald-600 text-xs font-medium">{testimonial.company}</p>
         </div>
       </div>
 
       <div className="flex items-center mb-3">
         {[...Array(testimonial.rating)].map((_, i) => (
-          <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+          <svg key={i} className="w-4 h-4 text-yellow-500 fill-current" viewBox="0 0 20 20">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
           </svg>
         ))}
       </div>
 
-      <blockquote className="text-gray-300 text-sm leading-relaxed">
+      <blockquote className="text-[#57534e] text-sm leading-relaxed">
         "{testimonial.quote}"
       </blockquote>
     </div>
   );
 
   return (
-    <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
+    <section className="w-full bg-[#fafaf9] py-24 px-4 flex flex-col items-center">
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
 
         <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-white mb-2">
-            <span className="text-gray-400">What Our</span>{' '}
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-[#292524] mb-2">
+            <span className="text-[#57534e]">What Our</span>{' '}
+            <span className="text-emerald-500">
               Clients Say
             </span>
           </h2>

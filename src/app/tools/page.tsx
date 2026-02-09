@@ -13,6 +13,11 @@ const tools = [
         link: '/tools/furniture-prompt-creator',
     },
     {
+        title: 'Furniture Video Director',
+        content: `Director mode for multi-scene furniture video campaigns. Generate consistent video prompts for your products.`,
+        link: '/tools/furniture-video-prompt-creator',
+    },
+    {
         title: 'Facebook Ad Mockup Generator',
         content: `Stop guessing. Upload your image and text to see exactly how your ad will look on the Facebook News Feed before you spend money.`,
         link: '/tools/facebook-ad-mockup',

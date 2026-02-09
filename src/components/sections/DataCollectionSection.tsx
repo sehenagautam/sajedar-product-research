@@ -6,60 +6,59 @@ export function DataCollectionSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
-            Lead Management
+          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
+            Smart Data Collection
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            <span className="text-emerald-400">Data Collection</span> & Sales Funneling
+            Turn Conversations into <span className="text-emerald-500">Actionable Data</span>
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Automatically capture, organize, and track leads in real-time with seamless{' '}
-            <span className="text-emerald-400 font-bold">Google Sheets integration</span>.
-            Every conversation becomes valuable data for your sales pipeline.
+            Automatically capture, organize, and export customer information from every chat.
+            No more manual data entry.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Side - Features */}
-          <div className="space-y-8">
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+          <div className="space-y-8 order-2 lg:order-1">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Real-time Lead Capture</h3>
-                  <p className="text-gray-300">Every conversation automatically updates your Google Sheets with customer information, preferences, and interaction history.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Auto-Extraction</h3>
+                  <p className="text-gray-300">Intelligently identifies and saves names, emails, phone numbers, and custom data points from natural conversation.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Automated Sales Pipeline</h3>
-                  <p className="text-gray-300">Qualify leads automatically and move them through your sales funnel with intelligent scoring and categorization.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Instant Export</h3>
+                  <p className="text-gray-300">Sync collected data to Google Sheets, CRM, or your database in real-time via webhooks.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Analytics & Insights</h3>
-                  <p className="text-gray-300">Track conversion rates, response times, and customer engagement metrics directly in your spreadsheet.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Lead Qualification</h3>
+                  <p className="text-gray-300">Automatically categorizes leads based on collected data and conversation intent (e.g., Hot, Warm, Cold).</p>
                 </div>
               </div>
             </div>

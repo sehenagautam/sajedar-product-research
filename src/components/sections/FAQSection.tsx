@@ -23,18 +23,18 @@ export function FAQSection() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] py-20 px-4 flex flex-col items-center border-t border-white/10">
+    <section className="w-full bg-[#fafaf9] py-20 px-4 flex flex-col items-center">
       <div className="max-w-2xl w-full mx-auto flex flex-col items-center gap-8">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#292524] mb-6 text-center">
           Frequently Asked Questions
         </h2>
         <div className="w-full flex flex-col gap-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-[#23243a] rounded-2xl p-6 border border-white/10 shadow">
-              <h3 className="text-lg font-bold text-emerald-400 mb-2">
+            <div key={index} className="bg-white/60 rounded-2xl p-6 border border-stone-200 shadow-sm">
+              <h3 className="text-lg font-bold text-emerald-500 mb-2">
                 {faq.question}
               </h3>
-              <p className="text-gray-300">
+              <p className="text-[#57534e]">
                 {faq.answer}
               </p>
             </div>

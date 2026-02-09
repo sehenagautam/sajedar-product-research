@@ -68,7 +68,7 @@ const GradientBackdrop: React.FC = () => (
 
 // Frame Component
 const Frame: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] overflow-hidden">
+  <section className="relative w-full min-h-screen flex items-center justify-center bg-[#fafaf9] overflow-hidden">
     {children}
   </section>
 );
@@ -88,17 +88,17 @@ export function VoiceCinematicSection() {
               {/* Text above the conversation */}
               <div className="text-center space-y-1 sm:space-y-2">
                 <h2
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-[#292524] px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
-                  Your agent <span className="text-gray-400">listens…</span>
+                  Your agent <span className="text-[#57534e]">listens…</span>
                 </h2>
 
                 <h2
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white px-2"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-[#292524] px-2"
                   style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
                 >
-                  …and <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">speaks back.</span>
+                  …and <span className="text-emerald-500">speaks back.</span>
                 </h2>
               </div>
 
@@ -108,14 +108,14 @@ export function VoiceCinematicSection() {
               </div>
 
               {/* Conversation Demo */}
-              <div className="w-full max-w-2xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-3 sm:p-4 text-left font-medium flex flex-col justify-center">
-                <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-gray-300 text-xs sm:text-sm md:text-base">
+              <div className="w-full max-w-2xl rounded-2xl border border-stone-200 bg-white/60 backdrop-blur-sm p-3 sm:p-4 text-left font-medium flex flex-col justify-center shadow-sm">
+                <div className="flex items-start sm:items-center gap-2 sm:gap-3 text-[#57534e] text-xs sm:text-sm md:text-base">
                   <div className="flex-shrink-0 mt-0.5 sm:mt-0">
                     <MessageSquareText size={14} />
                   </div>
                   <span className="break-words">You: "Where's my order?"</span>
                 </div>
-                <div className="mt-2 rounded-xl bg-emerald-500/20 p-2 sm:p-3 text-white text-xs sm:text-sm md:text-base break-words">
+                <div className="mt-2 rounded-xl bg-emerald-500/10 p-2 sm:p-3 text-[#292524] text-xs sm:text-sm md:text-base break-words">
                   Sajedar Voice AI: "Let me check that for you… Order #12345 arrives tomorrow."
                 </div>
               </div>

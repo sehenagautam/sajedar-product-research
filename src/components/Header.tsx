@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#18181b]/90 via-[#23243a]/90 to-[#1a1a2e]/90 backdrop-blur-sm border-b border-emerald-500/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#18181b]/90 backdrop-blur-sm border-b border-emerald-500/20">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
 
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
                 style={{
                   fontFamily:
                     'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
-                  color: '#2eb447',
+                  color: '#10b981',
                 }}
               >
                 Sajedar
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link
                 href="/about"
-                className="text-xs sm:text-sm font-medium text-white/80 hover:text-[#2eb447] transition-colors duration-200 whitespace-nowrap"
+                className="text-xs sm:text-sm font-medium text-white/80 hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
                 style={{ fontFamily: 'Inter, Arial, sans-serif' }}
               >
                 About Us
@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-white text-xs sm:text-sm md:text-base font-semibold rounded-lg transition-colors duration-200 flex items-center gap-1 sm:gap-2 cursor-pointer hover:opacity-90 flex-shrink-0 whitespace-nowrap"
             style={{
               fontFamily: 'Inter, Arial, sans-serif',
-              backgroundColor: '#2eb447',
+              backgroundColor: '#10b981',
             }}
           >
             <svg
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
               />
             </svg>
             <span className="hidden sm:inline">View</span>
-            <span className="hidden md:inline"> Proposal</span>
+            <span className="hidden md:inline"> Pricing</span>
           </Link>
 
         </div>

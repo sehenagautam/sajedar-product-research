@@ -41,7 +41,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#fafaf9] text-[#44403c] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
 
       {/* Header */}
       <Header />
@@ -71,7 +71,7 @@ export default function Home() {
       <IntelligentProfilingSection />
 
       {/* Agentic Flow */}
-      <section className="w-full py-20 px-4 border-t border-b border-blue-900/20">
+      <section className="w-full py-20 px-4">
         <AgenticFlowDiagram />
       </section>
 

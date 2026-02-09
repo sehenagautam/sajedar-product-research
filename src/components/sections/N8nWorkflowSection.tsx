@@ -6,16 +6,16 @@ export function N8nWorkflowSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2 block">
+          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
             Visual AI Development
           </span>
           <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            We Build <span className="text-emerald-400">Advanced AI Agents</span> Using n8n & Python
+            We Build <span className="text-emerald-500">Advanced AI Agents</span> Using n8n & Python
           </h2>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
-            Sajedar uses <span className="text-emerald-400 font-bold">n8n for rapid prototyping</span> and
-            <span className="text-emerald-400 font-bold"> Python for long‑term, advanced solutions</span>
-            at an <span className="text-emerald-400 font-bold">optimized price</span>. We connect multiple AI services, orchestrate complex
+            Sajedar uses <span className="text-emerald-500 font-bold">n8n for rapid prototyping</span> and
+            <span className="text-emerald-500 font-bold"> Python for long‑term, advanced solutions</span>
+            at an <span className="text-emerald-500 font-bold">optimized price</span>. We connect multiple AI services, orchestrate complex
             decision-making processes, and build intelligent automation systems that handle your most challenging business scenarios.
           </p>
         </div>
@@ -23,7 +23,7 @@ export function N8nWorkflowSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Side - n8n Features */}
           <div className="space-y-8">
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@ export function N8nWorkflowSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ export function N8nWorkflowSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export function N8nWorkflowSection() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
+            <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
                   <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,21 +85,21 @@ export function N8nWorkflowSection() {
             {/* n8n Workflow Interface */}
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform -rotate-1 hover:rotate-0 transition-transform duration-500">
               {/* Workflow Header */}
-              <div className="bg-gradient-to-r from-purple-500 to-pink-600 px-4 py-3 flex items-center justify-between">
+              <div className="bg-gradient-to-r from-emerald-500 to-teal-600 px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                    <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                     </svg>
                   </div>
                   <div>
                     <div className="text-sm font-medium text-white">Sajedar n8n Agent Builder</div>
-                    <div className="text-xs text-purple-100">Advanced Workflows • Multi-AI Orchestration</div>
+                    <div className="text-xs text-emerald-100">Advanced Workflows • Multi-AI Orchestration</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                  <span className="text-xs text-purple-100">Live</span>
+                  <span className="text-xs text-emerald-100">Live</span>
                 </div>
               </div>
 
@@ -137,28 +137,28 @@ export function N8nWorkflowSection() {
                     <div className="absolute top-16 left-80 w-16 h-0.5 bg-gray-400"></div>
 
                     {/* Database Node */}
-                    <div className="absolute top-4 left-100 bg-green-500 text-white rounded-lg p-3 shadow-lg">
+                    <div className="absolute top-4 left-100 bg-emerald-500 text-white rounded-lg p-3 shadow-lg">
                       <div className="flex items-center space-x-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                         </svg>
                         <span className="text-xs font-medium">Database</span>
                       </div>
-                      <div className="text-xs text-green-100 mt-1">Customer Profile</div>
+                      <div className="text-xs text-emerald-100 mt-1">Customer Profile</div>
                     </div>
 
                     {/* Connection Line */}
                     <div className="absolute top-16 left-128 w-16 h-0.5 bg-gray-400"></div>
 
                     {/* Response Node */}
-                    <div className="absolute top-4 left-148 bg-orange-500 text-white rounded-lg p-3 shadow-lg">
+                    <div className="absolute top-4 left-148 bg-teal-500 text-white rounded-lg p-3 shadow-lg">
                       <div className="flex items-center space-x-2">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                         </svg>
                         <span className="text-xs font-medium">Response</span>
                       </div>
-                      <div className="text-xs text-orange-100 mt-1">Send Message</div>
+                      <div className="text-xs text-teal-100 mt-1">Send Message</div>
                     </div>
 
                     {/* Parallel Processing */}
@@ -220,8 +220,8 @@ export function N8nWorkflowSection() {
             {/* Floating Workflow Elements */}
             <div className="absolute -top-8 -right-8 space-y-2">
               {/* AI Services */}
-              <div className="bg-white rounded-lg p-3 shadow-lg border-l-4 border-purple-500 max-w-xs">
-                <div className="text-xs text-purple-600 font-medium mb-1">AI Services</div>
+              <div className="bg-white rounded-lg p-3 shadow-lg border-l-4 border-emerald-500 max-w-xs">
+                <div className="text-xs text-emerald-600 font-medium mb-1">AI Services</div>
                 <p className="text-xs text-gray-700">OpenAI, Claude, Google AI, Custom Models</p>
               </div>
 
@@ -233,13 +233,13 @@ export function N8nWorkflowSection() {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center animate-pulse">
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center animate-pulse">
               <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
               </svg>
             </div>
 
-            <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center animate-bounce">
+            <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center animate-bounce">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -249,39 +249,39 @@ export function N8nWorkflowSection() {
 
         {/* n8n Features Grid */}
         <div className="grid md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-xl p-6 backdrop-blur-sm">
+          <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
             <div className="text-center">
-              <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                 </svg>
               </div>
-                             <h3 className="text-lg font-semibold text-white mb-2">Advanced Architecture</h3>
-               <p className="text-gray-300 text-sm">We design sophisticated AI workflows using n8n's visual builder with enterprise-grade node connections and orchestration.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Advanced Architecture</h3>
+              <p className="text-gray-300 text-sm">We design sophisticated AI workflows using n8n's visual builder with enterprise-grade node connections and orchestration.</p>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-pink-900/20 to-red-900/20 border border-pink-500/30 rounded-xl p-6 backdrop-blur-sm">
+          <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
             <div className="text-center">
-              <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-                             <h3 className="text-lg font-semibold text-white mb-2">Multi-AI Orchestration</h3>
-               <p className="text-gray-300 text-sm">We orchestrate multiple AI services including OpenAI, Claude, Google AI, and custom models for intelligent decision-making.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Multi-AI Orchestration</h3>
+              <p className="text-gray-300 text-sm">We orchestrate multiple AI services including OpenAI, Claude, Google AI, and custom models for intelligent decision-making.</p>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-red-500/30 rounded-xl p-6 backdrop-blur-sm">
+          <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
             <div className="text-center">
-              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-                             <h3 className="text-lg font-semibold text-white mb-2">Intelligent Automation</h3>
-               <p className="text-gray-300 text-sm">We build AI agents that respond intelligently to events, schedules, and webhooks with sophisticated decision-making capabilities.</p>
+              <h3 className="text-lg font-semibold text-white mb-2">Intelligent Automation</h3>
+              <p className="text-gray-300 text-sm">We build AI agents that respond intelligently to events, schedules, and webhooks with sophisticated decision-making capabilities.</p>
             </div>
           </div>
         </div>
@@ -310,17 +310,17 @@ export function N8nWorkflowSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-xl p-8 backdrop-blur-sm">
+          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-4">Ready for Advanced AI Agents Built with n8n?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Let Sajedar build sophisticated AI automation workflows for your business. We connect multiple AI services, 
+              Let Sajedar build sophisticated AI automation workflows for your business. We connect multiple AI services,
               create intelligent agents, and automate complex business processes using n8n's powerful platform.
             </p>
-            <a href="/?message=I want to build an advanced AI agent with n8n.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">Start Building</a>
-            <a href="/?message=Please send me your AI agent templates.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200">View Templates</a>
+            <a href="/?message=I want to build an advanced AI agent with n8n.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">Start Building</a>
+            <a href="/?message=Please send me your AI agent templates.#contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg transition-colors duration-200">View Templates</a>
           </div>
         </div>
       </div>
     </section>
   );
-} 
+}
