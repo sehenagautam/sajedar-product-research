@@ -3,7 +3,7 @@ import React from "react";
 // Sleeker, more expressive single-element illustration — static orb with gentle glow and pointers
 export default function AIAsASalesman() {
   return (
-    <section className="w-full py-24 px-4 bg-[#fafaf9]">
+    <section className="w-full pt-0 pb-24 px-4 bg-[#fafaf9]">
       <div className="max-w-7xl mx-auto">
         <div className="relative w-full text-center">
           {/* Static gradient aura */}

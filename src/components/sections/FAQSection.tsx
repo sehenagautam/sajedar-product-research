@@ -5,7 +5,7 @@ export function FAQSection() {
       answer: "We build tailored Agent specific for your business needs. Hop on a short call and we will figure out everything you need."
     },
     {
-      question: "How long does it take to launch a custom chatbot?",
+      question: "How long does it take to launch a custom agent?",
       answer: "Between 1 to 3 days."
     },
     {
@@ -17,7 +17,7 @@ export function FAQSection() {
       answer: "Commission based is a long term relationship. We will be there for you as long as we work together."
     },
     {
-      question: "Is Sajedar suitable for small retail shops?",
+      question: "Is Sajedar suitable for online retail shops?",
       answer: "Yes! You are our primary clients right now."
     }
   ];

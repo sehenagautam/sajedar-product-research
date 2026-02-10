@@ -22,7 +22,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative w-full flex flex-col items-center justify-center pt-24 pb-16 px-4 min-h-[90vh] bg-[#fafaf9] text-[#44403c] overflow-hidden">
+    <section className="relative w-full flex flex-col items-center justify-center pt-24 pb-16 px-4 h-[90vh] bg-[#fafaf9] text-[#44403c] overflow-hidden">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Hero Content */}
@@ -60,7 +60,7 @@ export function HeroSection() {
                 href="/demo"
                 className="px-8 py-4 bg-black/5 hover:bg-black/10 text-[#44403c] font-bold rounded-lg transition-colors duration-200 text-center border border-black/10"
               >
-                See a Live Demo
+                Live Demos
               </Link>
             </div>
 
