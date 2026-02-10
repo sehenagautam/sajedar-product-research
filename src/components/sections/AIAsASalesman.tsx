@@ -17,7 +17,7 @@ export default function AIAsASalesman() {
               className="text-4xl md:text-6xl font-semibold tracking-tight text-[#292524] mb-6"
               style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              <span className="text-[#57534e]">AI As a</span> <span className="text-emerald-500">Salesman</span>
+              <span className="text-[#57534e]">AI as a</span> <span className="text-emerald-500">Salesman</span>
             </h1>
           </div>
 

@@ -113,10 +113,10 @@ export function VoiceCinematicSection() {
                   <div className="flex-shrink-0 mt-0.5 sm:mt-0">
                     <MessageSquareText size={14} />
                   </div>
-                  <span className="break-words">You: "Where's my order?"</span>
+                  <span className="break-words">Voice Message: "I want this pant umm for ah travel, is it any good?"</span>
                 </div>
                 <div className="mt-2 rounded-xl bg-emerald-500/10 p-2 sm:p-3 text-[#292524] text-xs sm:text-sm md:text-base break-words">
-                  Agent Response: "Let me check that for you… Order #12345 arrives tomorrow."
+                  Agent Response: "Ix9 is preferable to Ix7 for travel because of its quick-dry fabric. Want to switch?"
                 </div>
               </div>
             </div>

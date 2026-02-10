@@ -16,7 +16,7 @@ export default function AILearningShowcase() {
               <span className="text-[#292524]">AI Learning</span> <span className="text-emerald-500">& Adaptation</span>
             </h2>
             <p className="text-lg text-[#57534e]">
-              Sajedar's AI gets smarter with every interaction — <span className="text-[#44403c]">mastering communication, empathy,</span> <span className="text-emerald-500">and impact.</span>
+              Sajedar's Agents get smarter with more interactions; mastering communication, empathy, <span className="text-emerald-500">and impact.</span>
             </p>
           </motion.div>
 
