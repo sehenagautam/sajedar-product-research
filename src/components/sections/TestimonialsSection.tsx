@@ -6,7 +6,7 @@ export function TestimonialsSection() {
       id: 0,
       name: "RJ Manandhar",
       company: "Latta Kapada",
-      role: "Store Owner",
+      role: "Owner",
       quote: "The agent handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
       profilePic: "/lattakapada.png",
       rating: 5
@@ -15,8 +15,8 @@ export function TestimonialsSection() {
       id: 1,
       name: "Lakshman Paudel",
       company: "Ashwi",
-      role: "Founder",
-      quote: "Sajedar helped us automate customer conversations across platforms. Our response speed improved dramatically without hiring more staff.",
+      role: "Owner",
+      quote: "Agent implementation has provided us with a stable way to generate new demand for our furniture. We can quickly test demand for new furniture designs with its help. I am impressed.",
       profilePic: "/Ashwi.png",
       rating: 5
     },
@@ -24,15 +24,15 @@ export function TestimonialsSection() {
       id: 2,
       name: "Prakash Maharjan",
       company: "Osha Clothing & Apparels",
-      role: "Managing Director",
-      quote: "From order queries to product availability, the AI agent handles everything smoothly. Customers feel attended to at all times.",
+      role: "Owner",
+      quote: "We had previously abandoned the idea of boosting on facebook because we would have no time and capacity to respond to leads. Agent makes that fear irrelevant.",
       profilePic: "/osha.png",
       rating: 5
     },
     {
       id: 3,
       name: "Dimanjan Dahal",
-      company: "Sajedar Chatbot",
+      company: "Sajedar.com",
       role: "Founder",
       quote: "Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.",
       profilePic: "/Sajedar.png",

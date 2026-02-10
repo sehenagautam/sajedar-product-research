@@ -54,7 +54,7 @@ export function KeyFeaturesSection() {
               className="text-[#57534e] text-sm leading-relaxed"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Feed your agent verified business data to make it an expert on your brand.
+              Feed your agent verified business data to make it an expert on your products.
             </p>
           </div>
 
@@ -69,13 +69,13 @@ export function KeyFeaturesSection() {
               className="text-xl font-semibold text-[#292524] mb-3"
               style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Business Management
+              AI Reports
             </h3>
             <p
               className="text-[#57534e] text-sm leading-relaxed"
               style={{ fontFamily: 'SF Pro Text, -apple-system, BlinkMacSystemFont, sans-serif' }}
             >
-              Effortlessly control products, analytics, and responses in one dashboard.
+              Get reports with stats, inventory recommendations, performance metrics ...
             </p>
           </div>
         </div>
