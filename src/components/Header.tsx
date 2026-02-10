@@ -49,6 +49,13 @@ const Header: React.FC = () => {
               >
                 About Us
               </Link>
+              <Link
+                href="/stores"
+                className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
+                style={{ fontFamily: 'Inter, Arial, sans-serif' }}
+              >
+                Partner Stores
+              </Link>
             </nav>
           </div>
 

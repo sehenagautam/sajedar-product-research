@@ -4,7 +4,16 @@ import React from 'react';
 import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
 
+import { usePathname } from 'next/navigation';
+
 export function FloatingMessenger() {
+    const pathname = usePathname();
+
+    // Hide on stores related pages
+    if (pathname?.startsWith('/store')) {
+        return null;
+    }
+
     return (
         <Link
             href="https://m.me/sajedardotcom"

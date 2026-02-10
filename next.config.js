@@ -3,7 +3,7 @@ const nextConfig = {
   // Standard Next.js configuration for Vercel deployment
   trailingSlash: false,
   images: {
-    domains: [],
+    domains: ['images.unsplash.com'],
     unoptimized: false,
   },
 }

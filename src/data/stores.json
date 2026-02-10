@@ -1,0 +1,76 @@
+[
+    {
+        "id": "latta-kapada",
+        "name": "Latta Kapada",
+        "description": "Premium tactical gear and apparel for the rugged adventurer.",
+        "messengerUrl": "https://m.me/61575123480268",
+        "image": "https://images.unsplash.com/photo-1576158187530-98614561b3c9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "products": [
+            {
+                "id": "ix7_tactical",
+                "name": "Ix7 Tactical Pant",
+                "description": "Premium Quality Cotton, stretchable fabric, 10-pocket design. Sizes: 28 - 40. Colors: Black, Green, Khaki, Gray.",
+                "price": 3700,
+                "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "ix9_tactical",
+                "name": "IX9 Tactical Pant",
+                "description": "Special horse-cut leg design, anti-tear crotch, ergonomic knee, elastic waistband. Sizes: 28 - 40. Colors: Black, Green, Khaki, Gray.",
+                "price": 3700,
+                "image": "https://images.unsplash.com/photo-1517438476312-10d79c077509?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "tactical_belt",
+                "name": "Tactical Belt (Upsell)",
+                "description": "Heavy-duty nylon, quick-release buckle. Great for matching with pants. Colors: Khaki, Black, Green.",
+                "price": 800,
+                "image": "https://images.unsplash.com/photo-1550948924-a21235b0d0c8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "camouflage_tshirt",
+                "name": "Camouflage Tactical T-shirt",
+                "description": "Breathable tactical fabric. MRP 3500, currently offered at 2800. Colors: Black, Green.",
+                "price": 2800,
+                "image": "https://images.unsplash.com/photo-1588186259021-d138692794c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            }
+        ]
+    },
+    {
+        "id": "ashwi-furnitures",
+        "name": "Ashwi Furnitures",
+        "description": "Premium furniture and home decor. Customization available. We deliver customized orders in a single day.",
+        "messengerUrl": "https://m.me/61579049243889",
+        "image": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "products": [
+            {
+                "id": "ashwi-mandir",
+                "name": "Ashwi Mandir",
+                "description": "Beautifully crafted Mandir for your home.\n\nPrices:\n- Rs 14,999 (4' height, 2' width)\n- Rs 29,999 (5' height, 3' width)\n\nDelivery: Rs 500 (Payment after Delivery only)\nDiscount not available. Fixed Price.\nDefault color: white. Customization Available.",
+                "price": 14999,
+                "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "dressing-table",
+                "name": "Hollywood Style Dressing Table",
+                "description": "Hollywood Style Dressing Table with lighted mirror.\nPrice: Rs 20,000.\nCustomization: Available.\nDefault Material: Particle board (made in Thailand).",
+                "price": 20000,
+                "image": "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "bed-simple",
+                "name": "Standard Bed",
+                "description": "Comfortable and sturdy bed frame.\n\nPrices:\n- King: Rs 65,000/-\n- Queen: Rs 50,000/-\n- Low Beds: Rs 24,500/-\n\nDefault Material: Particle board (made in Thailand).",
+                "price": 24500,
+                "image": "https://images.unsplash.com/photo-1505693416388-b0346efee971?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            },
+            {
+                "id": "wardrobe-simple",
+                "name": "Standard Wardrobe",
+                "description": "Spacious wardrobe for all your storage needs.\n\nPrices:\n- 7×8 ft: Rs 80,000/-\n- 6×8 ft: Rs 65,000/-\n\nDefault Material: Particle board (made in Thailand).",
+                "price": 65000,
+                "image": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+            }
+        ]
+    }
+]
