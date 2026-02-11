@@ -79,6 +79,9 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+  verification: {
+    google: 'BiEAfyaXaxXl3el5L7dP3DfWT_deTSIMy1keH5VAfqg',
+  },
   alternates: {
     canonical: 'https://sajedar.com/',
   },
