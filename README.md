@@ -15,7 +15,7 @@ Sajedar offers custom AI agent solutions that transform customer engagement and 
   - Animated flow diagrams with Framer Motion
   - Interactive particles with tsparticles
   - Lottie animations for illustrations
-  - Smooth transitions and micro-interactions
+  - Smooth transitions and micro-interactions.
 
 ### 💬 Interactive Demonstrations
 - **Demo hub (/demo)**: Facebook Messenger AI demos for multiple businesses + CTA links
