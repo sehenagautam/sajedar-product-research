@@ -304,7 +304,7 @@ export default function ReadinessPage() {
           
           <div className="text-center">
             <Link
-              href={`/Contact?source=readiness&score=${totalScore}&business=${encodeURIComponent(formData.businessName)}&type=${encodeURIComponent(formData.businessType)}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.phone)}`}
+              href={`/contact?source=readiness&score=${totalScore}&business=${encodeURIComponent(formData.businessName)}&type=${encodeURIComponent(formData.businessType)}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.phone)}`}
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold rounded-lg hover:from-emerald-600 hover:to-green-600 transition-all duration-200 transform hover:scale-105"
             >
               <span className="text-xl">🚀</span>

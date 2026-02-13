@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleBySlug, getArticlesByTag, getRecentArticles } from '../../../content/articles';
+import { getArticleIntentLinks } from '../../../content/seo/articleIntentLinks';
 
 export async function generateStaticParams() {
   return getAllArticles().map(a => ({ slug: a.slug }));
@@ -177,6 +178,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   };
 
   const ctaContent = getCtaContent();
+  const strategyLinks = getArticleIntentLinks(article);
 
   return (
     <main className="min-h-screen bg-[#18181b] text-white">
@@ -243,6 +245,26 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         )}
+
+        {/* Strategy Link Network */}
+        <div className="mt-12 p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 className="text-xl font-bold mb-3">Implementation Pathways</h3>
+          <p className="text-gray-300 mb-4">
+            Use these service and use-case pages to move from insights to implementation.
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            {strategyLinks.map((page) => (
+              <Link
+                key={page.href}
+                href={page.href}
+                className="block rounded-lg border border-white/10 p-4 hover:bg-white/5 transition"
+              >
+                <div className="text-emerald-300 font-semibold">{page.title}</div>
+                <div className="text-sm text-gray-400 mt-1">{page.description}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );

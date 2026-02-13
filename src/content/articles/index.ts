@@ -1,8 +1,18 @@
 import { Article } from '../../types/article';
 import { ecommerceAiInsightsArticle } from './ecommerce-ai-insights';
 import { benchmarkClaimsArticle } from './benchmark-claims-vs-routed-reality';
+import { conversionRateImprovementMessengerArticle } from './conversion-rate-improvement-messenger';
+import { messengerAbandonedCartRecoveryStatsArticle } from './messenger-abandoned-cart-recovery-stats';
+import { chatbotProductRecommendationsExamplesArticle } from './chatbot-product-recommendations-examples';
+import { messengerRemarketingStrategyArticle } from './messenger-remarketing-strategy';
+import { conversationalCheckoutBenefitsArticle } from './conversational-checkout-benefits';
 
 export const articles: Article[] = [
+  conversationalCheckoutBenefitsArticle,
+  messengerRemarketingStrategyArticle,
+  chatbotProductRecommendationsExamplesArticle,
+  messengerAbandonedCartRecoveryStatsArticle,
+  conversionRateImprovementMessengerArticle,
   ecommerceAiInsightsArticle,
   benchmarkClaimsArticle,
 ];

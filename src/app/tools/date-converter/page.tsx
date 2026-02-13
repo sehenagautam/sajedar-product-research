@@ -153,7 +153,7 @@ export default function DateConverterPage() {
                     <p className="text-gray-300 mb-6">
                         Sajedar AI can automate your entire invoicing and tax data entry process.
                     </p>
-                    <a href="/Contact" className="inline-block bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition-colors">
+                    <a href="/contact" className="inline-block bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-gray-200 transition-colors">
                         Automate My Accounting
                     </a>
                 </div>

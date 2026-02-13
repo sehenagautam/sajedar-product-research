@@ -43,7 +43,7 @@ I'm interested in discussing automation solutions for my business. Please contac
     '@type': 'ContactPage',
     name: 'Contact Sajedar',
     description: 'Contact Sajedar to discuss custom AI agent solutions.',
-    url: '/Contact',
+    url: '/contact',
     mainEntity: {
       '@type': 'Organization',
       name: 'Sajedar',
@@ -70,7 +70,7 @@ I'm interested in discussing automation solutions for my business. Please contac
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: '/' },
-      { '@type': 'ListItem', position: 2, name: 'Contact', item: '/Contact' }
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: '/contact' }
     ]
   } as const;
 

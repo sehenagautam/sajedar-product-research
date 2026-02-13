@@ -45,6 +45,78 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       lastModified: now
     },
+    {
+      url: `${base}/chatbot-automation-agency`,
+      priority: 0.95,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/messenger-marketing-agency`,
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/ecommerce-chatbot-setup-service`,
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/messenger-ecommerce-automation`,
+      priority: 0.92,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/lead-qualification-chatbot`,
+      priority: 0.86,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/abandoned-cart-messenger-automation`,
+      priority: 0.86,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/product-recommendation-chatbot`,
+      priority: 0.86,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/conversational-checkout-chatbot`,
+      priority: 0.86,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/chatbot-for-clothing-brands`,
+      priority: 0.88,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/chatbot-for-local-stores`,
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/chatbot-for-restaurants`,
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/chatbot-for-education`,
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },
     { 
       url: `${base}/forum`, 
       priority: 0.8, 
@@ -58,7 +130,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     { 
-      url: `${base}/Contact`, 
+      url: `${base}/contact`, 
       priority: 0.8, 
       changeFrequency: 'monthly' as const,
       lastModified: now
@@ -76,13 +148,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     { 
-      url: `${base}/PrivacyPolicy`, 
+      url: `${base}/privacy-policy`, 
       priority: 0.5, 
       changeFrequency: 'yearly' as const,
       lastModified: now
     },
     { 
-      url: `${base}/TermsOfService`, 
+      url: `${base}/terms-of-service`, 
       priority: 0.5, 
       changeFrequency: 'yearly' as const,
       lastModified: now

@@ -141,7 +141,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
               All Tutorials
             </Link>
             <Link
-              href="/Contact"
+              href="/contact"
               className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg transition-colors duration-200"
             >
               Get Help

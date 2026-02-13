@@ -32,6 +32,9 @@ export default function ResourcesPage() {
                         <ul className="space-y-4">
                             <li><Link href="/tutorials" className="text-gray-300 hover:text-emerald-400">Tutorials</Link></li>
                             <li><Link href="/articles" className="text-gray-300 hover:text-emerald-400">Articles</Link></li>
+                            <li><Link href="/chatbot-automation-agency" className="text-gray-300 hover:text-emerald-400">Chatbot Automation Agency</Link></li>
+                            <li><Link href="/messenger-ecommerce-automation" className="text-gray-300 hover:text-emerald-400">Messenger Ecommerce Automation</Link></li>
+                            <li><Link href="/chatbot-for-clothing-brands" className="text-gray-300 hover:text-emerald-400">Chatbot for Clothing Brands</Link></li>
                             <li><Link href="/research" className="text-gray-300 hover:text-emerald-400">Research</Link></li>
                             <li><Link href="/case-studies" className="text-gray-300 hover:text-emerald-400">Case Studies</Link></li>
                             <li><Link href="/demo" className="text-gray-300 hover:text-emerald-400">Demo</Link></li>
@@ -88,9 +91,9 @@ export default function ResourcesPage() {
                                 Legal
                             </h3>
                             <ul className="space-y-3">
-                                <li><Link href="/PrivacyPolicy" className="text-gray-300 hover:text-white">Privacy Policy</Link></li>
-                                <li><Link href="/TermsOfService" className="text-gray-300 hover:text-white">Terms of Service</Link></li>
-                                <li><Link href="/Contact" className="text-gray-300 hover:text-white">Contact</Link></li>
+                                <li><Link href="/privacy-policy" className="text-gray-300 hover:text-white">Privacy Policy</Link></li>
+                                <li><Link href="/terms-of-service" className="text-gray-300 hover:text-white">Terms of Service</Link></li>
+                                <li><Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
                             </ul>
                         </div>
                     </div>

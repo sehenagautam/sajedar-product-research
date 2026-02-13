@@ -117,7 +117,7 @@ export default function SupportCostEstimatorPage() {
                                     </div>
                                     
                                     <div className="pt-4">
-                                        <Link href="/Contact" className="inline-block text-sm text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors border border-white/10">
+                                        <Link href="/contact" className="inline-block text-sm text-white bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors border border-white/10">
                                             Get Started &rarr;
                                         </Link>
                                     </div>

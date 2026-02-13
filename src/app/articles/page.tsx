@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getAllArticles } from '../../content/articles';
+import { coreServicePages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata = {
   title: 'Articles for Business | Sajedar',
@@ -13,6 +14,14 @@ export default function ArticlesPage() {
       <div className="max-w-5xl mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-2">Articles</h1>
         <p className="text-gray-300 mb-10">Short, practical reads — no jargon.</p>
+        <div className="grid gap-4 md:grid-cols-2 mb-10">
+          {[coreServicePages[0], useCasePages[0]].map((page) => (
+            <Link key={page.href} href={page.href} className="block rounded-xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
+              <div className="text-emerald-300 font-semibold">{page.title}</div>
+              <p className="text-sm text-gray-400 mt-1">{page.description}</p>
+            </Link>
+          ))}
+        </div>
         <div className="grid md:grid-cols-2 gap-6">
           {articles.map((a) => (
             <Link key={a.id} href={`/articles/${a.slug}`} className="group block bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition">

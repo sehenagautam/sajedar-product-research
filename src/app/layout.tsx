@@ -107,6 +107,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Sajedar',
+    url: 'https://sajedar.com',
+    logo: 'https://sajedar.com/sajedar-new-logo.png',
+    sameAs: [
+      'https://www.linkedin.com/company/sajedar',
+      'https://www.facebook.com/sajedardotcom',
+      'https://www.youtube.com/@sajedar_chatbots',
+      'https://www.tiktok.com/@sajedar_chatbots',
+    ],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        url: 'https://sajedar.com/contact',
+      },
+    ],
+  } as const;
+
   return (
     <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
       <head>
@@ -132,6 +153,7 @@ export default function RootLayout({
         <meta name="msapplication-starturl" content="/" />
       </head>
       <body className={`${inter.className} antialiased`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-H94EHFF2ED"

@@ -7,6 +7,18 @@ export function Footer() {
       {/* Main Navigation Links - Centered */}
       <div className="flex flex-wrap justify-center gap-8 mb-8">
         <Link
+          href="/chatbot-automation-agency"
+          className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
+        >
+          Services
+        </Link>
+        <Link
+          href="/messenger-ecommerce-automation"
+          className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
+        >
+          Use Cases
+        </Link>
+        <Link
           href="/resources"
           className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
         >

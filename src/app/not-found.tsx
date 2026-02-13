@@ -15,7 +15,7 @@ export default function NotFound() {
               <li><Link href="/demo" className="hover:underline">Live Demos</Link></li>
               <li><Link href="/articles" className="hover:underline">Articles</Link></li>
               <li><Link href="/tutorials" className="hover:underline">Tutorials</Link></li>
-              <li><Link href="/Contact" className="hover:underline">Contact</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
             </ul>
           </div>
           <div className="rounded-lg border border-white/10 p-5 bg-white/5">

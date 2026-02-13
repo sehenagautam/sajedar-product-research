@@ -1,0 +1,154 @@
+import Link from 'next/link';
+import { LinkCluster } from './LinkCluster';
+import { SeoPageLink } from '../../content/seo/agencyPages';
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface AgencySeoPageProps {
+  currentPath: string;
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  bullets: string[];
+  primaryCtaLabel: string;
+  primaryCtaHref: string;
+  secondaryCtaLabel: string;
+  secondaryCtaHref: string;
+  clusters: Array<{
+    title: string;
+    links: SeoPageLink[];
+  }>;
+  faqItems?: FaqItem[];
+}
+
+export function AgencySeoPage({
+  currentPath,
+  eyebrow,
+  title,
+  subtitle,
+  bullets,
+  primaryCtaLabel,
+  primaryCtaHref,
+  secondaryCtaLabel,
+  secondaryCtaHref,
+  clusters,
+  faqItems,
+}: AgencySeoPageProps) {
+  const canonicalUrl = `https://sajedar.com${currentPath}`;
+
+  const resolvedFaqItems: FaqItem[] = faqItems ?? [
+    {
+      question: `What does ${title} include?`,
+      answer: bullets.join(' '),
+    },
+    {
+      question: 'How long does implementation usually take?',
+      answer: 'Most teams launch core automation flows in days, then run optimization sprints based on conversion and support outcomes.',
+    },
+    {
+      question: 'How do we start?',
+      answer: 'Start with a scoped strategy call so we can map your highest-impact journeys and define implementation priorities.',
+    },
+  ];
+
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: title,
+    name: title,
+    description: subtitle,
+    provider: {
+      '@type': 'Organization',
+      name: 'Sajedar',
+      url: 'https://sajedar.com',
+    },
+    areaServed: 'Global',
+    url: canonicalUrl,
+  } as const;
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: resolvedFaqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  } as const;
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sajedar.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://sajedar.com/chatbot-automation-agency' },
+      { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
+    ],
+  } as const;
+
+  return (
+    <main className="min-h-screen bg-[#18181b] text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
+      <div className="max-w-5xl mx-auto px-4 py-12">
+        <nav className="text-sm text-gray-400 mb-8">
+          <Link href="/" className="hover:text-white">Home</Link>
+          <span className="px-2">/</span>
+          <Link href="/chatbot-automation-agency" className="hover:text-white">Services</Link>
+          <span className="px-2">/</span>
+          <span className="text-white">{title}</span>
+        </nav>
+
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300">
+          {eyebrow}
+        </span>
+        <h1 className="mt-4 text-4xl md:text-5xl font-serif font-bold leading-tight">{title}</h1>
+        <p className="mt-4 text-lg text-gray-300 max-w-3xl">{subtitle}</p>
+
+        <ul className="mt-8 space-y-3">
+          {bullets.map((bullet) => (
+            <li key={bullet} className="text-gray-200">• {bullet}</li>
+          ))}
+        </ul>
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Link href={primaryCtaHref} className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold transition">
+            {primaryCtaLabel}
+          </Link>
+          <Link href={secondaryCtaHref} className="px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg font-semibold transition">
+            {secondaryCtaLabel}
+          </Link>
+        </div>
+
+        {clusters.map((cluster) => (
+          <LinkCluster
+            key={cluster.title}
+            title={cluster.title}
+            links={cluster.links}
+            currentPath={currentPath}
+          />
+        ))}
+
+        <section className="mt-10">
+          <h2 className="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {resolvedFaqItems.map((item) => (
+              <div key={item.question} className="rounded-xl border border-white/10 bg-white/5 p-5">
+                <h3 className="text-lg font-semibold text-emerald-300">{item.question}</h3>
+                <p className="text-gray-300 mt-2">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
