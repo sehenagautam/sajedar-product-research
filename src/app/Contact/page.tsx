@@ -4,13 +4,13 @@ import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
+import { trackEvent } from '../../lib/analytics';
 
 function ContactForm() {
   const searchParams = useSearchParams();
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    // Prefill form data from URL parameters
     const source = searchParams.get('source');
     const score = searchParams.get('score');
     const business = searchParams.get('business');
@@ -30,7 +30,6 @@ I'm interested in discussing automation solutions for my business. Please contac
 
       setMessage(readinessMessage);
     } else {
-      // Also check for simple 'message' param like ContactSection does
       const msgParam = searchParams.get('message');
       if (msgParam) {
         setMessage(decodeURIComponent(msgParam));
@@ -44,14 +43,16 @@ I'm interested in discussing automation solutions for my business. Please contac
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Construct WhatsApp message with form data
     const whatsappMessage = `Hi Sajedar! I found you through your website.
 
 *Message:*
 ${message}`;
 
-    // Open WhatsApp with prefilled message
     const whatsappUrl = `https://wa.me/9779860479751?text=${encodeURIComponent(whatsappMessage)}`;
+    trackEvent('form_submit', {
+      source_page: '/contact',
+      source: source || 'direct',
+    });
     window.open(whatsappUrl, '_blank');
   };
 
@@ -60,7 +61,6 @@ ${message}`;
       <Header />
       <main className="min-h-screen w-full bg-[#fafaf9] flex flex-col items-center justify-center px-4 py-24 font-sans text-[#44403c] mt-16">
         <div className="max-w-xl w-full flex flex-col items-center gap-8">
-
           {source === 'readiness' && score && (
             <div className="w-full mb-2 p-4 bg-emerald-50 border border-emerald-200 rounded-lg shadow-sm">
               <div className="flex items-center gap-2 mb-2">
@@ -71,9 +71,7 @@ ${message}`;
                 Your score: <span className="font-bold text-emerald-600">{score}%</span> -
                 {parseInt(score) >= 71 ? ' Automation-Ready' : parseInt(score) >= 41 ? ' Emerging Stage' : ' Manual-First Stage'}
               </p>
-              <p className="text-xs text-gray-500 mt-2">
-                We've prefilled the message below with your results.
-              </p>
+              <p className="text-xs text-gray-500 mt-2">We've prefilled the message below with your results.</p>
             </div>
           )}
 
@@ -100,6 +98,15 @@ ${message}`;
             </button>
           </form>
 
+          <a
+            href="https://wa.me/9779860479751"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 text-white font-semibold shadow hover:opacity-90 transition"
+            onClick={() => trackEvent('cta_click', { cta_type: 'whatsapp_contact', source_page: '/contact' })}
+          >
+            Chat on WhatsApp
+          </a>
         </div>
       </main>
       <Footer />
@@ -109,18 +116,20 @@ ${message}`;
 
 export default function Contact() {
   return (
-    <Suspense fallback={
-      <main className="min-h-screen w-full bg-[#fafaf9] flex flex-col items-center justify-center px-4 py-24">
-        <div className="max-w-xl w-full bg-white rounded-3xl shadow-xl p-8 border border-stone-200">
-          <div className="animate-pulse space-y-4">
-            <div className="h-8 bg-stone-200 rounded w-1/3 mx-auto mb-8"></div>
-            <div className="h-32 bg-stone-200 rounded"></div>
-            <div className="h-12 bg-stone-200 rounded"></div>
+    <Suspense
+      fallback={
+        <main className="min-h-screen w-full bg-[#fafaf9] flex flex-col items-center justify-center px-4 py-24">
+          <div className="max-w-xl w-full bg-white rounded-3xl shadow-xl p-8 border border-stone-200">
+            <div className="animate-pulse space-y-4">
+              <div className="h-8 bg-stone-200 rounded w-1/3 mx-auto mb-8"></div>
+              <div className="h-32 bg-stone-200 rounded"></div>
+              <div className="h-12 bg-stone-200 rounded"></div>
+            </div>
           </div>
-        </div>
-      </main>
-    }>
+        </main>
+      }
+    >
       <ContactForm />
     </Suspense>
   );
-} 
+}

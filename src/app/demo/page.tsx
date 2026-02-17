@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '../../components/Header';
 import { ContactSection, Footer } from '../../components/sections';
+import { trackEvent } from '../../lib/analytics';
 
 export default function DemoPage() {
   const demos = [
@@ -130,14 +131,18 @@ export default function DemoPage() {
                   <a
                     href={demo.messengerUrl}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg"
+                    onClick={() => trackEvent('cta_click', { cta_type: 'messenger_chat', demo_id: demo.id })}
                   >
                     💬 Chat with {demo.name}
                   </a>
                   <a
                     href={demo.facebookUrl}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-lg"
+                    onClick={() => trackEvent('cta_click', { cta_type: 'facebook_page_visit', demo_id: demo.id })}
                   >
                     📘 Visit Facebook Page
                   </a>
@@ -151,6 +156,7 @@ export default function DemoPage() {
           <Link
             href="/?message=I want to build my own AI Messenger bot for my business.#contact"
             className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg"
+            onClick={() => trackEvent('demo_booked', { source_page: '/demo' })}
           >
             Build Your Own AI Chatbot
           </Link>

@@ -117,6 +117,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       lastModified: now
     },
+    {
+      url: `${base}/facebook-page-ai-sales-agent`,
+      priority: 0.95,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/facebook-messenger-ai-sales-agent`,
+      priority: 0.95,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
+      url: `${base}/ecommerce/facebook-sales-agent`,
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
     { 
       url: `${base}/forum`, 
       priority: 0.8, 

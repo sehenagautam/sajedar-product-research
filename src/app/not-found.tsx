@@ -13,6 +13,8 @@ export default function NotFound() {
             <ul className="space-y-2 text-emerald-300">
               <li><Link href="/" className="hover:underline">Home</Link></li>
               <li><Link href="/demo" className="hover:underline">Live Demos</Link></li>
+              <li><Link href="/facebook-page-ai-sales-agent" className="hover:underline">Facebook Page AI Sales Agent</Link></li>
+              <li><Link href="/facebook-messenger-ai-sales-agent" className="hover:underline">Messenger AI Sales Agent</Link></li>
               <li><Link href="/articles" className="hover:underline">Articles</Link></li>
               <li><Link href="/tutorials" className="hover:underline">Tutorials</Link></li>
               <li><Link href="/contact" className="hover:underline">Contact</Link></li>
