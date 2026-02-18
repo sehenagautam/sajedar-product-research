@@ -1,17 +1,32 @@
 # Sajedar - Custom AI Chatbot Agency
 
-A modern, responsive landing page for Sajedar, a custom AI agent agency specializing in tailored solutions for ambitious brands.
+A modern, responsive landing page for Sajedar, a custom AI agent agency specializing in tailored solutions for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement.
 
 ## 🚀 About
 
-Sajedar offers custom AI agent solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences.
+Sajedar offers custom AI agent solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences. We specialize in Facebook Messenger, Instagram, and web-based AI agents.
 
 ## ✨ Features
+
+### 🏢 Industry Solutions
+We provide specialized AI agents tailored for specific industries:
+- **[Clothing Brands](/chatbot-for-clothing-brands)**: AI fashion assistants for sizing and styling.
+- **[Education](/chatbot-for-education)**: Student support and enrollment automation.
+- **[Local Stores](/chatbot-for-local-stores)**: Inventory inquiry and local delivery handling.
+- **[Restaurants](/chatbot-for-restaurants)**: Table reservations and menu queries.
+- **[Real Estate](/chatbot-for-real-estate)**: Property scheduling and lead qualification.
+
+### 🛠️ Free Tools Suite
+A collection of 40+ developer and marketing tools available at **[/tools](/tools)**, including:
+- **Marketing**: ROAS Estimator, Break-Even ROAS, UTM Builder, Campaign Naming
+- **Social Media**: Caption Spacer, Hashtag Shuffler, Comment Picker
+- **Content Creation**: Facebook Ad Mockup, QR Code Studio, Image Cropper
+- **Utilities**: JSON Formatter, Cron Generator, Date Converter, WiFi Card Creator
 
 ### 🎨 Design & UX
 - **Modern Design**: Glassmorphism, gradients, and smooth animations
 - **Responsive Layout**: Optimized for all devices (desktop, tablet, mobile)
-- **Advanced Animations**: 
+- **Advanced Animations**:
   - Animated flow diagrams with Framer Motion
   - Interactive particles with tsparticles
   - Lottie animations for illustrations
@@ -55,7 +70,7 @@ Sajedar offers custom AI agent solutions that transform customer engagement and 
 - **Framework**: Next.js 14 with App Router
 - **Language**: TypeScript for type safety
 - **Styling**: Tailwind CSS for modern, responsive design
-- **Animations**: 
+- **Animations**:
   - Framer Motion for React animations
   - Anime.js for JavaScript animations
   - tsparticles for particle effects
@@ -67,6 +82,11 @@ Sajedar offers custom AI agent solutions that transform customer engagement and 
 - **Components**: Headless UI for accessible components
 - **Heroicons**: Optimized SVG icons
 
+### Utilities & Tools
+- `html2canvas`, `qrcode`, `sharp` for image generation
+- `nepali-date-converter`, `papaparse` for data handling
+- `colorthief` for dynamic color extraction
+
 ### Development Tools
 - **Linting**: ESLint with Next.js configuration
 - **Build**: Automatic optimization with Next.js
@@ -75,7 +95,7 @@ Sajedar offers custom AI agent solutions that transform customer engagement and 
 ## 📦 Installation
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation Steps
@@ -122,6 +142,7 @@ sajedar-landing/
 ├── public/                         # Static assets (icons, images, videos, robots, manifest)
 ├── src/
 │   ├── app/
+│   │   ├── tools/                  # /tools suite (40+ tools)
 │   │   ├── demo/                   # /demo page
 │   │   ├── developer/              # /developer page (custom Google Form)
 │   │   ├── forum/                  # /forum page (Discord CTA)
@@ -130,6 +151,7 @@ sajedar-landing/
 │   │   │   └── [slug]/page.tsx     # Single article (SEO + JSON-LD)
 │   │   ├── tutorials/              # /tutorials routes (listing/category/single)
 │   │   ├── Contact/                # /Contact page
+│   │   ├── [vertical]/             # Industry specific pages (e.g., chatbot-for-real-estate)
 │   │   ├── layout.tsx              # Global metadata and Organization/WebSite JSON-LD
 │   │   ├── globals.css             # Global styles (cursor, fonts, base)
 │   │   └── page.tsx                # Homepage
@@ -186,6 +208,7 @@ export const myArticle: Article = {
 
 ## 🔗 Key Pages
 - **Homepage**: `/`
+- **Tools**: `/tools`
 - **Demo**: `/demo`
 - **Articles**: `/articles`
 - **Tutorials**: `/tutorials`
@@ -218,4 +241,4 @@ This project is under private license. All rights reserved to Sajedar.
 
 ---
 
-© 2025 Sajedar. All rights reserved. 
+© 2026 Sajedar. All rights reserved.
