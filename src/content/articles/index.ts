@@ -7,7 +7,14 @@ import { chatbotProductRecommendationsExamplesArticle } from './chatbot-product-
 import { messengerRemarketingStrategyArticle } from './messenger-remarketing-strategy';
 import { conversationalCheckoutBenefitsArticle } from './conversational-checkout-benefits';
 
+import { metaAdsFollowUpRoiArticle } from './meta-ads-follow-up-roi-statistics';
+import { metaAdsResponseTimeArticle } from './meta-ads-response-time-engagement-data';
+import { metaAdsAutomationStrategiesArticle } from './facebook-messenger-automation-strategies-for-agencies';
+
 export const articles: Article[] = [
+  metaAdsAutomationStrategiesArticle,
+  metaAdsResponseTimeArticle,
+  metaAdsFollowUpRoiArticle,
   conversationalCheckoutBenefitsArticle,
   messengerRemarketingStrategyArticle,
   chatbotProductRecommendationsExamplesArticle,

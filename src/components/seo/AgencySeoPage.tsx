@@ -17,7 +17,9 @@ interface AgencySeoPageProps {
   eyebrow: string;
   title: string;
   subtitle: string;
+  subtitleNode?: React.ReactNode;
   bullets: string[];
+  bulletNodes?: React.ReactNode[];
   expectedOutcomes?: OutcomeItem[]; // Optional prop for high-intent ROI metrics
   primaryCtaLabel: string;
   primaryCtaHref: string;
@@ -28,6 +30,7 @@ interface AgencySeoPageProps {
     links: SeoPageLink[];
   }>;
   faqItems?: FaqItem[];
+  children?: React.ReactNode;
 }
 
 export function AgencySeoPage({
@@ -35,7 +38,9 @@ export function AgencySeoPage({
   eyebrow,
   title,
   subtitle,
+  subtitleNode,
   bullets,
+  bulletNodes,
   expectedOutcomes,
   primaryCtaLabel,
   primaryCtaHref,
@@ -43,6 +48,7 @@ export function AgencySeoPage({
   secondaryCtaHref,
   clusters,
   faqItems,
+  children,
 }: AgencySeoPageProps) {
   const canonicalUrl = `https://sajedar.com${currentPath}`;
 
@@ -118,7 +124,9 @@ export function AgencySeoPage({
           {eyebrow}
         </span>
         <h1 className="mt-4 text-4xl md:text-5xl font-serif font-bold leading-tight">{title}</h1>
-        <p className="mt-4 text-lg text-gray-300 max-w-3xl">{subtitle}</p>
+        <p className="mt-4 text-lg text-gray-300 max-w-3xl">
+          {subtitleNode || subtitle}
+        </p>
 
         {/* Expected Outcomes (High-Intent ROI Focus) */}
         {expectedOutcomes && expectedOutcomes.length > 0 && (
@@ -133,24 +141,27 @@ export function AgencySeoPage({
         )}
 
         <ul className="mt-8 space-y-3">
-          {bullets.map((bullet) => (
-            <li key={bullet} className="text-gray-200 flex items-start">
+          {bullets.map((bullet, index) => (
+            <li key={index} className="text-gray-200 flex items-start">
               <span className="text-emerald-500 mr-3 mt-1">✓</span>
-              <span>{bullet}</span>
+              <span>{bulletNodes ? bulletNodes[index] : bullet}</span>
             </li>
           ))}
         </ul>
 
+        {children}
+
         {/* Trust/Integration Badges (Generic for now, adds instant authority) */}
         <div className="mt-10 pt-6 border-t border-white/10">
-          <p className="text-xs text-gray-400 uppercase tracking-wider mb-4 font-semibold">Integrates seamlessly with</p>
-          <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-70 grayscale">
-            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Shopify</span>
-            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Salesforce</span>
-            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Zendesk</span>
-            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">HubSpot</span>
-            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Meta</span>
+          <p className="text-xs text-gray-400 uppercase tracking-wider mb-4 font-semibold">Standard Integrations</p>
+          <div className="flex flex-wrap gap-x-8 gap-y-4 items-center">
+            <span className="font-semibold text-lg text-emerald-400 transition-all cursor-default">Meta (Priority)</span>
+            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Shopify</span>
+            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Salesforce</span>
+            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Zendesk</span>
+            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">HubSpot</span>
           </div>
+          <p className="text-xs text-gray-500 mt-2 italic">* Integrations beyond the Meta ecosystem (e.g., Telegram, custom CRMs) require a customized higher-tier quotation.</p>
         </div>
 
         <div className="mt-10">

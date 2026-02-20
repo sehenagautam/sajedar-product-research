@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 

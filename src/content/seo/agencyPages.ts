@@ -35,9 +35,19 @@ export const coreServicePages: SeoPageLink[] = [
     href: '/ecommerce-chatbot-setup-service',
     description: 'Full setup service from flow mapping to launch, testing, and optimization.',
   },
+  {
+    title: 'Choose Meta AI Agent Service',
+    href: '/choose-meta-ai-agent-service',
+    description: 'The 5-step guide and core criteria for selecting the best Meta Messenger AI partner.',
+  },
 ];
 
 export const useCasePages: SeoPageLink[] = [
+  {
+    title: 'Increase Meta Ads Conversions',
+    href: '/increase-meta-ad-conversions',
+    description: 'Learn how 24/7 AI agents stop leaky funnels and double your Meta ROAS.',
+  },
   {
     title: 'Messenger Ecommerce Automation',
     href: '/messenger-ecommerce-automation',
@@ -54,6 +64,21 @@ export const useCasePages: SeoPageLink[] = [
     description: 'Recover lost checkouts with trigger-based Messenger re-engagement flows.',
   },
   {
+    title: 'Customer Service Automation',
+    href: '/customer-service-automation',
+    description: 'Deflect up to 80% of routine inquiries and slash response times.',
+  },
+  {
+    title: 'Lead Generation Chatbots',
+    href: '/lead-generation-chatbots',
+    description: 'Qualify and capture B2B or high-ticket leads interactively.',
+  },
+  {
+    title: 'Abandoned Cart Recovery Chatbots',
+    href: '/abandoned-cart-recovery-chatbots',
+    description: 'Recover 15-30% more carts through high-open-rate Messenger reminders.',
+  },
+  {
     title: 'Product Recommendation Chatbot',
     href: '/product-recommendation-chatbot',
     description: 'Conversational product discovery that increases AOV and conversion rates.',
@@ -62,6 +87,21 @@ export const useCasePages: SeoPageLink[] = [
     title: 'Conversational Checkout Chatbot',
     href: '/conversational-checkout-chatbot',
     description: 'Guide shoppers to purchase inside high-intent chat sessions.',
+  },
+  {
+    title: 'Filter Low-Quality Meta Ad Leads',
+    href: '/meta-ads-lead-qualification-bot',
+    description: 'Stop wasting time on unqualified leads by using an AI qualification system.',
+  },
+  {
+    title: 'Instant Response Chatbots for Ads',
+    href: '/meta-ads-instant-response-bot',
+    description: 'Never miss a sale because of a delayed reply. Guarantee 0.5s response times.',
+  },
+  {
+    title: 'Recover Abandoned Ad Conversations',
+    href: '/meta-ads-abandoned-conversations',
+    description: 'Automatically follow up with ghosted leads to resurrect Meta ad sales.',
   },
 ];
 

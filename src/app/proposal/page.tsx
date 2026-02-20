@@ -32,6 +32,13 @@ export default function ProposalPage() {
               Agent showcases, engages, and qualifies leads in natural conversation - converting chats into confirmed sales.
             </p>
           </div>
+          <div className="bg-emerald-50 p-6 rounded-xl border border-emerald-200 shadow-sm flex items-start gap-4">
+            <span className="text-2xl mt-1">📱</span>
+            <p className="text-[#44403c] leading-relaxed text-sm">
+              <strong className="text-[#292524] text-base block mb-1">Platform Integration Policy</strong>
+              Our standard configurations and listed pricing focus exclusively on the <strong>Meta ecosystem</strong> (Facebook Messenger, Instagram Direct, and WhatsApp). Integrations with outside platforms (Website Live Chat, Telegram, custom ERPs) require custom development and are subject to higher quotation rates.
+            </p>
+          </div>
         </section>
 
         <section className="space-y-6">
@@ -44,7 +51,7 @@ export default function ProposalPage() {
               'Collect payments',
               'Supports human takeover',
               'Admin defined negotiation rules',
-              'Notifies humans in complex situations',
+              'Native rendering on Meta platforms',
               'Understands images, voice message, and any language',
             ].map((capability, index) => (
               <li key={index} className="flex items-start gap-2">
