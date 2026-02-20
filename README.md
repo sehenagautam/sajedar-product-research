@@ -241,4 +241,4 @@ This project is under private license. All rights reserved to Sajedar.
 
 ---
 
-© 2026 Sajedar. All rights reserved.
+© 2026 Sajedar. All rights reserved
