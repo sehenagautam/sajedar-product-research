@@ -90,7 +90,8 @@ A collection of 40+ developer and marketing tools available at **[/tools](/tools
 ### Development Tools
 - **Linting**: ESLint with Next.js configuration
 - **Build**: Automatic optimization with Next.js
-- **Deployment**: Vercel-ready configuration
+- **Deployment**: Deployed on Vercel. 
+  - *Domain Configurations*: The Vercel project is configured to redirect the root domain (`sajedar.com`) to `www.sajedar.com`. Avoid adding duplicate redirect rules in `src/middleware.ts` or `next.config.js` to prevent `ERR_TOO_MANY_REDIRECTS` loops.
 
 ## 📦 Installation
 

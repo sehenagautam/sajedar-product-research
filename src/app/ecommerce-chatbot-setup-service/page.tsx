@@ -13,16 +13,30 @@ export default function EcommerceChatbotSetupServicePage() {
     <AgencySeoPage
       currentPath="/ecommerce-chatbot-setup-service"
       eyebrow="Core Service"
-      title="Ecommerce Chatbot Setup Service"
-      subtitle="End-to-end deployment for ecommerce chatbot systems that support sales, retention, and customer support goals."
-      bullets={[
-        'Discovery: offer map, intent map, and integration audit.',
-        'Build: conversation trees, fallback handling, and CRM handoff.',
-        'Launch: QA, instrumentation, and optimization playbooks.',
+      title="Scale Ecommerce Revenue with AI Automation"
+      subtitle="End-to-end deployment for ecommerce chat systems designed to maximize ROAS, recover abandoned carts, and slash support overhead."
+      expectedOutcomes={[
+        {
+          metric: '15-30%',
+          description: 'Average recovery rate on abandoned carts using Messenger automations compared to standard email.',
+        },
+        {
+          metric: 'Zero',
+          description: 'Time spent manually answering repetitive product and sizing questions.',
+        },
+        {
+          metric: '3x',
+          description: 'Higher engagement rates through personalized conversational commerce routing.',
+        }
       ]}
-      primaryCtaLabel="Request implementation"
-      primaryCtaHref="/contact"
-      secondaryCtaLabel="View demos"
+      bullets={[
+        'Full System Audit: We map your highest-leverage traffic sources and identify where revenue is leaking.',
+        'Custom Conversion Flows: Design and build specific agentic trees for sizing guidance, cross-selling, and checkout.',
+        'Seamless CRM Integration: Automatically route high-intent leads to your sales team while the AI handles the rest.',
+      ]}
+      primaryCtaLabel="Claim Your Free Strategy Call"
+      primaryCtaHref="/contact?message=I'm%20interested%20in%20a%20strategy%20call%20for%20ecommerce.#contact"
+      secondaryCtaLabel="View Success Metrics"
       secondaryCtaHref="/demo"
       clusters={[
         { title: 'Related Service Pages', links: coreServicePages },

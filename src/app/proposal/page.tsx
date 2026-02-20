@@ -84,10 +84,10 @@ export default function ProposalPage() {
               <h3 className="text-2xl font-bold text-[#292524] mb-4">2. Fixed Pricing Model</h3>
               <div className="space-y-2">
                 <p className="text-[#44403c]">
-                  <span className="font-bold text-[#292524]">Setup Fee:</span> $100
+                  <span className="font-bold text-[#292524]">Setup Fee:</span> $500
                 </p>
                 <p className="text-[#44403c]">
-                  <span className="font-bold text-[#292524]">Usage Cost:</span> $1 per 30 Leads Engaged
+                  <span className="font-bold text-[#292524]">Usage Cost:</span> $1 per 40 Leads Engaged
                 </p>
               </div>
             </div>

@@ -7,12 +7,18 @@ interface FaqItem {
   answer: string;
 }
 
+interface OutcomeItem {
+  metric: string;
+  description: string;
+}
+
 interface AgencySeoPageProps {
   currentPath: string;
   eyebrow: string;
   title: string;
   subtitle: string;
   bullets: string[];
+  expectedOutcomes?: OutcomeItem[]; // Optional prop for high-intent ROI metrics
   primaryCtaLabel: string;
   primaryCtaHref: string;
   secondaryCtaLabel: string;
@@ -30,6 +36,7 @@ export function AgencySeoPage({
   title,
   subtitle,
   bullets,
+  expectedOutcomes,
   primaryCtaLabel,
   primaryCtaHref,
   secondaryCtaLabel,
@@ -113,19 +120,52 @@ export function AgencySeoPage({
         <h1 className="mt-4 text-4xl md:text-5xl font-serif font-bold leading-tight">{title}</h1>
         <p className="mt-4 text-lg text-gray-300 max-w-3xl">{subtitle}</p>
 
+        {/* Expected Outcomes (High-Intent ROI Focus) */}
+        {expectedOutcomes && expectedOutcomes.length > 0 && (
+          <div className="mt-10 mb-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            {expectedOutcomes.map((outcome, idx) => (
+              <div key={idx} className="bg-emerald-900/10 border border-emerald-500/20 p-5 rounded-xl">
+                <div className="text-3xl font-bold text-emerald-400 mb-1">{outcome.metric}</div>
+                <div className="text-sm text-gray-300">{outcome.description}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
         <ul className="mt-8 space-y-3">
           {bullets.map((bullet) => (
-            <li key={bullet} className="text-gray-200">• {bullet}</li>
+            <li key={bullet} className="text-gray-200 flex items-start">
+              <span className="text-emerald-500 mr-3 mt-1">✓</span>
+              <span>{bullet}</span>
+            </li>
           ))}
         </ul>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          <Link href={primaryCtaHref} className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold transition">
-            {primaryCtaLabel}
-          </Link>
-          <Link href={secondaryCtaHref} className="px-6 py-3 bg-white/10 hover:bg-white/20 rounded-lg font-semibold transition">
-            {secondaryCtaLabel}
-          </Link>
+        {/* Trust/Integration Badges (Generic for now, adds instant authority) */}
+        <div className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-xs text-gray-400 uppercase tracking-wider mb-4 font-semibold">Integrates seamlessly with</p>
+          <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-70 grayscale">
+            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Shopify</span>
+            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Salesforce</span>
+            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Zendesk</span>
+            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">HubSpot</span>
+            <span className="font-semibold text-lg hover:grayscale-0 transition-all cursor-default">Meta</span>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <div className="flex flex-wrap gap-3">
+            <Link href={primaryCtaHref} className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 rounded-lg text-lg font-bold transition shadow-lg shadow-emerald-500/20">
+              {primaryCtaLabel}
+            </Link>
+            <Link href={secondaryCtaHref} className="px-8 py-4 bg-white/10 hover:bg-white/20 rounded-lg text-lg font-bold transition">
+              {secondaryCtaLabel}
+            </Link>
+          </div>
+          {/* Friction-reducing microcopy */}
+          <p className="mt-3 text-sm text-gray-400 flex items-center">
+            <span className="text-emerald-500 mr-2">⚡</span> Free strategy call. Zero commitment.
+          </p>
         </div>
 
         {clusters.map((cluster) => (
@@ -137,13 +177,13 @@ export function AgencySeoPage({
           />
         ))}
 
-        <section className="mt-10">
-          <h2 className="text-2xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+        <section className="mt-16 border-t border-white/10 pt-10">
+          <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {resolvedFaqItems.map((item) => (
-              <div key={item.question} className="rounded-xl border border-white/10 bg-white/5 p-5">
+              <div key={item.question} className="rounded-xl border border-white/10 bg-white/5 p-6 hover:border-white/20 transition-colors">
                 <h3 className="text-lg font-semibold text-emerald-300">{item.question}</h3>
-                <p className="text-gray-300 mt-2">{item.answer}</p>
+                <p className="text-gray-300 mt-2 leading-relaxed">{item.answer}</p>
               </div>
             ))}
           </div>

@@ -6,6 +6,21 @@ export interface SeoPageLink {
 
 export const coreServicePages: SeoPageLink[] = [
   {
+    title: 'Affordable AI Salesbots',
+    href: '/affordable-ai-salesbots',
+    description: 'Cost-effective automation and chatbots designed for small-to-medium businesses.',
+  },
+  {
+    title: 'Outsource AI Agents to Nepal',
+    href: '/outsource-ai-agents-nepal',
+    description: 'High-quality, cost-effective white-label AI development for global agencies.',
+  },
+  {
+    title: 'Meta Ads Partner Program',
+    href: '/meta-ads-partner-program',
+    description: 'Collaboration program for media buyers and performance agencies.',
+  },
+  {
     title: 'Chatbot Automation Agency',
     href: '/chatbot-automation-agency',
     description: 'Umbrella service page for ecommerce Messenger automation strategy and implementation.',
@@ -51,6 +66,21 @@ export const useCasePages: SeoPageLink[] = [
 ];
 
 export const industryPages: SeoPageLink[] = [
+  {
+    title: 'Chatbots for Meta Ads Retailers',
+    href: '/meta-ads-retail-chatbot',
+    description: 'Maximize Facebook and Instagram Ad ROAS using Click-to-Messenger automation.',
+  },
+  {
+    title: 'Chatbot for Facebook Dropshippers',
+    href: '/facebook-dropshipping-chatbot',
+    description: 'Increase ROAS and automate "Where is my order?" tickets for dropshipping stores.',
+  },
+  {
+    title: 'Chatbots for Retailers in Nepal',
+    href: '/nepal-retail-chatbot-services',
+    description: 'Local retail automation for businesses in Nepal targeting Messenger and WhatsApp.',
+  },
   {
     title: 'Chatbot for Clothing Brands',
     href: '/chatbot-for-clothing-brands',
