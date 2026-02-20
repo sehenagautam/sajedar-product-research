@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             >
               <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden flex-shrink-0">
                 <Image
-                  src="/sajedar-new-logo.png"
+                  src="/header-logo-transparent.png"
                   alt="Sajedar Logo"
                   fill
                   sizes="(max-width: 640px) 32px, 40px"
