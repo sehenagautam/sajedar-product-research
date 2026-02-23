@@ -13,6 +13,11 @@ const tools = [
         link: '/tools/furniture-prompt-creator',
     },
     {
+        title: 'Clothes Prompt Generator',
+        content: `Create clothing image prompts from a reference image. Preserve garment design while changing scene, model, and lighting.`,
+        link: '/tools/clothes-prompt-generator',
+    },
+    {
         title: 'Furniture Video Director',
         content: `Director mode for multi-scene furniture video campaigns. Generate consistent video prompts for your products.`,
         link: '/tools/furniture-video-prompt-creator',
