@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'Sajedar',
     images: [
       {
-        url: '/sajedar-new-logo.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Sajedar - AI Business Automation & Chatbots',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     creator: '@sajedar',
     title: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
     description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement.',
-    images: ['/sajedar-new-logo.png'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -87,16 +87,16 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/sajedar-new-logo.png', sizes: '16x16', type: 'image/png' },
-      { url: '/sajedar-new-logo.png', sizes: '32x32', type: 'image/png' },
-      { url: '/sajedar-new-logo.png', sizes: 'any' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: [
-      { url: '/sajedar-new-logo.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'android-chrome-192x192', url: '/sajedar-new-logo.png' },
-      { rel: 'android-chrome-512x512', url: '/sajedar-new-logo.png' },
+      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png' },
+      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
     ],
   },
   category: 'technology',
@@ -112,7 +112,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'Sajedar',
     url: 'https://sajedar.com',
-    logo: 'https://sajedar.com/sajedar-new-logo.png',
+    logo: 'https://sajedar.com/header-logo-transparent.png',
     sameAs: [
       'https://www.linkedin.com/company/sajedar',
       'https://www.facebook.com/sajedardotcom',
@@ -140,7 +140,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
         {/* Critical resources */}
-        <link rel="preload" href="/sajedar-new-logo.png" as="image" />
+        <link rel="preload" href="/header-logo-transparent.png" as="image" />
 
         {/* PWA meta tags */}
         <meta name="mobile-web-app-capable" content="yes" />
