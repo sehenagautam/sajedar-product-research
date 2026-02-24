@@ -35,11 +35,20 @@ export default function DemoPage() {
 
       <div className="max-w-7xl mx-auto px-4 py-16 w-full pt-32">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-slate-900 mb-6 tracking-tight">
-            Live AI Chatbot <span className="text-emerald-500">Demos</span>
+          <h1
+            className="text-4xl md:text-6xl font-semibold tracking-tight text-[#292524] mb-6"
+            style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
+          >
+            <span
+              className="text-white"
+              style={{ WebkitTextStroke: '2px #57534e' }}
+            >
+              Live AI Sales Agents
+            </span>{' '}
+            <span className="text-emerald-500">Demos</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-sans">
-            Experience real AI chatbots in action across different businesses.
+            Experience real AI Agents in action across different businesses.
           </p>
         </div>
 
