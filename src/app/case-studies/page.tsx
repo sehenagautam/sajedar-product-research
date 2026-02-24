@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { getAllCaseStudies } from '../../content/case-studies';
 
 export const metadata = {
-  title: 'AI Case Studies | Sajedar',
-  description: 'Real-world case studies showcasing successful AI implementations across various industries. Learn how our AI solutions drive business results.',
+  title: 'Facebook Messenger AI Sales Agent Case Studies',
+  description: 'Real-world case studies showing leads, bookings, and revenue outcomes from Facebook Messenger AI sales agent deployments.',
   alternates: { canonical: '/case-studies' },
   openGraph: {
-    title: 'AI Case Studies | Sajedar',
-    description: 'Real-world case studies showcasing successful AI implementations across various industries.',
+    title: 'Facebook Messenger AI Sales Agent Case Studies | Sajedar',
+    description: 'Real-world case studies showing leads, bookings, and revenue outcomes from Messenger AI sales agent deployments.',
     url: 'https://sajedar.com/case-studies'
   }
 };

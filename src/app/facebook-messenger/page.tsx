@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { MessageSquare, BookOpen, Users, TrendingUp, Shield, Globe, Zap, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-  description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources. Learn how to build, deploy, and optimize Facebook Messenger chatbots for any business.',
+  title: 'Facebook Messenger AI Sales Agent Resources',
+  description: 'Tutorials, guides, and implementation resources for Facebook Messenger AI sales agents, lead qualification, and automation.',
   keywords: [
     'facebook messenger chatbot',
     'facebook messenger ai chatbot',
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://sajedar.com/facebook-messenger' },
   openGraph: {
     type: 'website',
-    title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-    description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources for businesses.',
+    title: 'Facebook Messenger AI Sales Agent Resources',
+    description: 'Tutorials, guides, and implementation resources for Facebook Messenger AI sales agents and automation.',
     url: 'https://sajedar.com/facebook-messenger',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Facebook Messenger AI Chatbot Resources | Complete Guide Collection',
-    description: 'Comprehensive collection of Facebook Messenger AI agent tutorials, guides, and resources for businesses.'
+    title: 'Facebook Messenger AI Sales Agent Resources',
+    description: 'Tutorials, guides, and implementation resources for Facebook Messenger AI sales agents and automation.'
   }
 };
 

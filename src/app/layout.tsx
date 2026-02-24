@@ -20,10 +20,10 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sajedar.com'),
   title: {
-    default: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
+    default: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
     template: '%s | Sajedar'
   },
-  description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement. Free setup, no coding required.',
+  description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation. Book a demo with Sajedar.',
   keywords: [
     'facebook ai chatbot', 'facebook messenger chatbot', 'ai agent for facebook messenger',
     'facebook messenger ai chatbot', 'how to create agent in messenger', 'connect agent to facebook messenger',
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://sajedar.com',
-    title: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
-    description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement.',
+    title: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
+    description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation.',
     siteName: 'Sajedar',
     images: [
       {
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sajedar',
     creator: '@sajedar',
-    title: 'Sajedar - Facebook Messenger AI Chatbot Builder | Custom AI Chatbots',
-    description: 'Build custom Facebook Messenger AI chatbots with Sajedar. Create AI chatbots for Facebook Messenger that increase sales, automate customer support, and boost engagement.',
+    title: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
+    description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation.',
     images: ['/og-image.png'],
   },
   robots: {

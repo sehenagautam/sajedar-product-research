@@ -4,12 +4,12 @@ import { getAllResearchArticles } from '../../content/research';
 import { Calendar, Clock, User } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Research | Sajedar',
-  description: 'In-depth research articles on conversational AI, market trends, and strategic insights across Nepal and South Asia.',
+  title: 'AI Sales Agent Research & Benchmarks',
+  description: 'Research and benchmarks on conversational AI, Messenger automation performance, and deployment strategy.',
   alternates: { canonical: 'https://sajedar.com/research' },
   openGraph: {
-    title: 'Research | Sajedar',
-    description: 'In-depth research articles on conversational AI, market trends, and strategic insights across Nepal and South Asia.',
+    title: 'AI Sales Agent Research & Benchmarks | Sajedar',
+    description: 'Research and benchmarks on conversational AI, Messenger automation performance, and deployment strategy.',
     url: 'https://sajedar.com/research',
     type: 'website',
   },
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sajedar',
     creator: '@sajedar',
-    title: 'Research | Sajedar',
-    description: 'In-depth research articles on conversational AI, market trends, and strategic insights across Nepal and South Asia.',
+    title: 'AI Sales Agent Research & Benchmarks | Sajedar',
+    description: 'Research and benchmarks on conversational AI, Messenger automation performance, and deployment strategy.',
   },
 };
 

@@ -6,12 +6,14 @@ import { messengerAbandonedCartRecoveryStatsArticle } from './messenger-abandone
 import { chatbotProductRecommendationsExamplesArticle } from './chatbot-product-recommendations-examples';
 import { messengerRemarketingStrategyArticle } from './messenger-remarketing-strategy';
 import { conversationalCheckoutBenefitsArticle } from './conversational-checkout-benefits';
+import { elevatingEcommerceIntelligentChatbotAutomationArticle } from './elevating-ecommerce-intelligent-chatbot-automation';
 
 import { metaAdsFollowUpRoiArticle } from './meta-ads-follow-up-roi-statistics';
 import { metaAdsResponseTimeArticle } from './meta-ads-response-time-engagement-data';
 import { metaAdsAutomationStrategiesArticle } from './facebook-messenger-automation-strategies-for-agencies';
 
 export const articles: Article[] = [
+  elevatingEcommerceIntelligentChatbotAutomationArticle,
   metaAdsAutomationStrategiesArticle,
   metaAdsResponseTimeArticle,
   metaAdsFollowUpRoiArticle,

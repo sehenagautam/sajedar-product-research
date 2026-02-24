@@ -3,8 +3,9 @@ import { getAllArticles } from '../../content/articles';
 import { coreServicePages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata = {
-  title: 'Articles for Business | Sajedar',
-  description: 'Plain-language articles to help everyday businesspeople understand AI benefits.'
+  title: 'Facebook AI Sales Agent Articles',
+  description: 'Practical articles on Facebook Page AI sales agents, Messenger automation, conversion lift, and deployment strategy.',
+  alternates: { canonical: '/articles' }
 };
 
 export default function ArticlesPage() {

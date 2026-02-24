@@ -4,12 +4,12 @@ import { getAllTutorials, getFeaturedTutorials, categories } from '../../content
 import { Tutorial } from '../../types/tutorial';
 
 export const metadata = {
-  title: 'AI Chatbot Tutorials & Guides',
-  description: 'Learn to build AI chatbots, Facebook Messenger bots, and automation workflows. Step-by-step tutorials with code examples.',
+  title: 'Facebook Messenger AI Sales Agent Tutorials',
+  description: 'Step-by-step tutorials for Facebook Messenger AI sales agents, ecommerce automation, and lead qualification workflows.',
   alternates: { canonical: 'https://sajedar.com/tutorials' },
   openGraph: {
-    title: 'AI Chatbot Tutorials & Guides | Sajedar',
-    description: 'Learn to build AI chatbots, Facebook Messenger bots, and automation workflows. Step-by-step tutorials with code examples.',
+    title: 'Facebook Messenger AI Sales Agent Tutorials | Sajedar',
+    description: 'Step-by-step tutorials for Facebook Messenger AI sales agents, ecommerce automation, and lead qualification workflows.',
     url: 'https://sajedar.com/tutorials'
   }
 };

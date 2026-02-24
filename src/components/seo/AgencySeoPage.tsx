@@ -30,6 +30,8 @@ interface AgencySeoPageProps {
     links: SeoPageLink[];
   }>;
   faqItems?: FaqItem[];
+  integrations?: string[];
+  integrationsNote?: string;
   children?: React.ReactNode;
 }
 
@@ -48,6 +50,8 @@ export function AgencySeoPage({
   secondaryCtaHref,
   clusters,
   faqItems,
+  integrations,
+  integrationsNote,
   children,
 }: AgencySeoPageProps) {
   const canonicalUrl = `https://sajedar.com${currentPath}`;
@@ -105,6 +109,13 @@ export function AgencySeoPage({
     ],
   } as const;
 
+  const integrationItems = integrations && integrations.length > 0
+    ? integrations
+    : ['Meta (Priority)', 'Shopify', 'Salesforce', 'Zendesk', 'HubSpot'];
+
+  const integrationDisclaimer = integrationsNote
+    ?? '* Integrations beyond the Meta ecosystem (e.g., Telegram, custom CRMs) require a customized higher-tier quotation.';
+
   return (
     <main className="min-h-screen bg-[#18181b] text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
@@ -155,13 +166,16 @@ export function AgencySeoPage({
         <div className="mt-10 pt-6 border-t border-white/10">
           <p className="text-xs text-gray-400 uppercase tracking-wider mb-4 font-semibold">Standard Integrations</p>
           <div className="flex flex-wrap gap-x-8 gap-y-4 items-center">
-            <span className="font-semibold text-lg text-emerald-400 transition-all cursor-default">Meta (Priority)</span>
-            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Shopify</span>
-            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Salesforce</span>
-            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">Zendesk</span>
-            <span className="font-semibold text-lg opacity-70 grayscale hover:grayscale-0 transition-all cursor-default">HubSpot</span>
+            {integrationItems.map((item, index) => (
+              <span
+                key={item}
+                className={`font-semibold text-lg transition-all cursor-default ${index === 0 ? 'text-emerald-400' : 'opacity-70 grayscale hover:grayscale-0'}`}
+              >
+                {item}
+              </span>
+            ))}
           </div>
-          <p className="text-xs text-gray-500 mt-2 italic">* Integrations beyond the Meta ecosystem (e.g., Telegram, custom CRMs) require a customized higher-tier quotation.</p>
+          <p className="text-xs text-gray-500 mt-2 italic">{integrationDisclaimer}</p>
         </div>
 
         <div className="mt-10">
