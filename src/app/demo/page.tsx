@@ -27,18 +27,18 @@ export default function DemoPage() {
     }
   ];
 
-  const getColorClasses = () => 'bg-gradient-to-r from-blue-500 to-purple-600';
+  const getColorClasses = () => 'bg-emerald-500';
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181b] via-[#23243a] to-[#1a1a2e] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
+    <div className="min-h-screen w-full bg-[#fafaf9] text-[#44403c] flex flex-col items-center justify-center font-sans relative overflow-x-hidden">
       <Header />
 
-      <div className="max-w-7xl mx-auto px-4 py-16 w-full">
+      <div className="max-w-7xl mx-auto px-4 py-16 w-full pt-32">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
-            Live AI Chatbot <span className="text-emerald-400">Demos</span>
+          <h1 className="text-5xl md:text-6xl font-serif font-bold text-slate-900 mb-6 tracking-tight">
+            Live AI Chatbot <span className="text-emerald-500">Demos</span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-sans">
             Experience real AI chatbots in action across different businesses.
           </p>
         </div>
@@ -48,58 +48,60 @@ export default function DemoPage() {
             {demos.map((demo) => (
               <div
                 key={demo.id}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden"
+                className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
                 <div className={`${getColorClasses()} p-6`}>
                   <div className="flex justify-between items-center mb-3">
-                    <div className="flex items-center gap-3">
-                      <Image
-                        src={demo.logo}
-                        alt={`${demo.name} logo`}
-                        width={48}
-                        height={48}
-                        className="rounded-full object-cover bg-white/20"
-                      />
-                      <h3 className="text-2xl font-bold text-white">{demo.name}</h3>
+                    <div className="flex items-center gap-4">
+                      <div className="bg-white p-1 rounded-full shadow-sm">
+                        <Image
+                          src={demo.logo}
+                          alt={`${demo.name} logo`}
+                          width={48}
+                          height={48}
+                          className="rounded-full object-cover"
+                        />
+                      </div>
+                      <h3 className="text-2xl font-bold text-white font-serif">{demo.name}</h3>
                     </div>
                     <span className="text-sm text-white/80 flex items-center gap-2">
                       <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                       Live
                     </span>
                   </div>
-                  <p className="text-white/90">{demo.description}</p>
+                  <p className="text-emerald-50 font-medium">{demo.description}</p>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-6">
+                <div className="p-8">
+                  <div className="flex flex-wrap gap-2 mb-8">
                     {demo.features.map((feature, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-white/10 text-white/80 rounded-full text-sm"
+                        className="px-4 py-1.5 bg-emerald-50 text-emerald-700 font-medium rounded-full text-sm border border-emerald-100"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="flex items-center gap-4 pt-4 border-t border-gray-50">
                     <a
                       href={demo.messengerUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg"
+                      className="flex-1 text-center px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl tracking-wide transition-colors shadow-sm"
                       onClick={() => trackEvent('cta_click', { cta_type: 'messenger_chat', demo_id: demo.id })}
                     >
-                      💬 Chat with {demo.name}
+                      Test AI Assistant 💬
                     </a>
                     <a
                       href={demo.facebookUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-lg"
+                      className="flex-1 text-center px-6 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-semibold rounded-xl border border-slate-200 transition-colors shadow-sm"
                       onClick={() => trackEvent('cta_click', { cta_type: 'facebook_page_visit', demo_id: demo.id })}
                     >
-                      📘 Visit Facebook Page
+                      Visit Parent Page
                     </a>
                   </div>
                 </div>
@@ -108,13 +110,13 @@ export default function DemoPage() {
           </div>
         </div>
 
-        <div className="text-center mt-20">
+        <div className="text-center mt-20 mb-10">
           <Link
             href="/?message=I want to build my own AI Messenger bot for my business.#contact"
-            className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg"
+            className="inline-flex items-center justify-center px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
             onClick={() => trackEvent('demo_booked', { source_page: '/demo' })}
           >
-            Build Your Own AI Chatbot
+            Build Your Own AI Chatbot &rarr;
           </Link>
         </div>
 
