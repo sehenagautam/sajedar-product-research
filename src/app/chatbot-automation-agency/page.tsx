@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Elevating Ecommerce With Intelligent Chatbot Automation | Sajedar',
-  description: 'Design, implement, and optimize Messenger-first chatbot automation for ecommerce growth: conversion rate lift, cart recovery, AOV, and support-cost reduction.',
+  title: 'Messenger Marketing Agency for Ecommerce | Sajedar',
+  description: 'A service-focused playbook for ecommerce Messenger automation: Click-to-Message lead handling, compliance, cart recovery, qualification, recommendations, and conversational checkout.',
   alternates: { canonical: '/chatbot-automation-agency' },
 };
 
@@ -133,6 +134,80 @@ export default function ChatbotAutomationAgencyPage() {
             Chatbots are no longer just support widgets. In ecommerce, they function as revenue-driving digital sales consultants.
             A Messenger-first architecture, live product integrations, disciplined event tracking, and continuous optimization are what
             convert conversational interactions into measurable business growth.
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h2 className="text-2xl font-bold text-white">New Service Article: Messenger Marketing Agency for Ecommerce</h2>
+          <p className="mt-4 text-gray-300 leading-relaxed">
+            Ecommerce brands do not lose sales because traffic is impossible. They lose sales because follow-up speed, qualification logic,
+            and checkout support break down after the first click. That is exactly where a Messenger marketing agency for ecommerce creates ROI.
+          </p>
+          <p className="mt-4 text-gray-300 leading-relaxed">
+            Sajedar approaches this as a revenue system, not a chatbot widget. We map the full buyer path inside Meta conversations:
+            ad click to qualification, product discovery to checkout support, abandoned conversation recovery to repeat purchase flows.
+          </p>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">What a Messenger Marketing Agency Should Actually Deliver</h3>
+          <ul className="mt-3 space-y-2 text-gray-200">
+            <li className="flex items-start"><span className="text-emerald-500 mr-2 mt-1">•</span><span>Journey architecture for Click-to-Message campaigns and organic inbox traffic.</span></li>
+            <li className="flex items-start"><span className="text-emerald-500 mr-2 mt-1">•</span><span>Lead qualification logic that prioritizes high-intent buyers before human handoff.</span></li>
+            <li className="flex items-start"><span className="text-emerald-500 mr-2 mt-1">•</span><span>Product recommendation and conversational checkout flows that reduce friction.</span></li>
+            <li className="flex items-start"><span className="text-emerald-500 mr-2 mt-1">•</span><span>Event-level measurement so optimization is based on conversion data, not guesswork.</span></li>
+            <li className="flex items-start"><span className="text-emerald-500 mr-2 mt-1">•</span><span>Policy-safe messaging windows and escalation rules to protect long-term account health.</span></li>
+          </ul>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">Sajedar&apos;s 5-Layer Messenger Revenue System</h3>
+          <ol className="mt-3 space-y-2 text-gray-200 list-decimal pl-6">
+            <li><strong>Acquire:</strong> Convert Meta click-to-message traffic into structured conversations.</li>
+            <li><strong>Qualify:</strong> Score intent and route only sales-ready leads to humans.</li>
+            <li><strong>Recommend:</strong> Match products using context, catalog data, and preference signals.</li>
+            <li><strong>Recover:</strong> Bring back abandoned chats and carts with timed follow-up logic.</li>
+            <li><strong>Measure:</strong> Track conversion, AOV, and support deflection, then optimize weekly.</li>
+          </ol>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">Four High-ROI Ecommerce Plays</h3>
+          <div className="mt-3 grid gap-3 md:grid-cols-2">
+            <Link href="/abandoned-cart-messenger-automation" className="rounded-xl border border-white/10 p-4 hover:bg-white/5 transition">
+              <p className="font-semibold text-emerald-300">Abandoned Cart Messenger Automation</p>
+              <p className="mt-1 text-sm text-gray-300">Recover lost carts with dynamic product context and margin-safe incentives.</p>
+            </Link>
+            <Link href="/lead-qualification-chatbot" className="rounded-xl border border-white/10 p-4 hover:bg-white/5 transition">
+              <p className="font-semibold text-emerald-300">Lead Qualification Chatbot</p>
+              <p className="mt-1 text-sm text-gray-300">Filter low-quality leads fast and prioritize buyers with commercial intent.</p>
+            </Link>
+            <Link href="/product-recommendation-chatbot" className="rounded-xl border border-white/10 p-4 hover:bg-white/5 transition">
+              <p className="font-semibold text-emerald-300">Product Recommendation Chatbot</p>
+              <p className="mt-1 text-sm text-gray-300">Increase AOV through contextual cross-sell and upsell sequencing.</p>
+            </Link>
+            <Link href="/conversational-checkout-chatbot" className="rounded-xl border border-white/10 p-4 hover:bg-white/5 transition">
+              <p className="font-semibold text-emerald-300">Conversational Checkout Chatbot</p>
+              <p className="mt-1 text-sm text-gray-300">Reduce purchase friction with guided checkout and handoff support.</p>
+            </Link>
+          </div>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">Compliance Reality: Why This Needs a Service Partner</h3>
+          <p className="mt-3 text-gray-300 leading-relaxed">
+            Messenger growth is not only about creative flows. It is also about operating within policy constraints such as messaging windows,
+            re-engagement limits, and campaign-safe follow-up behavior. Sajedar builds these constraints into the architecture so growth does
+            not come at the cost of account risk.
+          </p>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">Proof and Implementation Speed</h3>
+          <p className="mt-3 text-gray-300 leading-relaxed">
+            If you need a reference model, review our live demo and case studies. You can see how the flow handles discovery, qualification,
+            data capture, and payment-adjacent steps in one consistent conversational journey.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <Link href="/demo" className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold">View Live Demo</Link>
+            <Link href="/case-studies" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Read Case Studies</Link>
+            <Link href="/messenger-marketing-agency" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Messenger Marketing Agency</Link>
+          </div>
+
+          <h3 className="mt-6 text-xl font-semibold text-emerald-300">Final Takeaway</h3>
+          <p className="mt-3 text-gray-300 leading-relaxed">
+            Self-serve tools can launch a bot. Sajedar builds the full revenue system around it: funnel design, qualification, recommendations,
+            recovery, compliance, and weekly optimization. If your goal is sales outcomes, not just chat activity, this is the operating model that compounds.
           </p>
         </div>
       </section>
