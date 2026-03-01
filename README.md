@@ -10,6 +10,7 @@ Sajedar offers custom AI agent solutions that transform customer engagement and 
 
 ### 🏢 Industry Solutions
 We provide specialized AI agents tailored for specific industries:
+- **[Automation Agency](/chatbot-automation-agency)**: Intelligent chatbot automation services.
 - **[Clothing Brands](/chatbot-for-clothing-brands)**: AI fashion assistants for sizing and styling.
 - **[Education](/chatbot-for-education)**: Student support and enrollment automation.
 - **[Local Stores](/chatbot-for-local-stores)**: Inventory inquiry and local delivery handling.
