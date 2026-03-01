@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Sleeker, more expressive single-element illustration — static orb with gentle glow and pointers
 export default function AIAsASalesman() {
@@ -25,10 +26,12 @@ export default function AIAsASalesman() {
           <div className="relative mx-auto flex flex-col items-center justify-center">
             {/* Central Image */}
             <div className="relative mb-12">
-              <img
+              <Image
                 src="/ai-as-a-salesman.png"
                 alt="AI Salesman"
-                className="w-80 h-80 object-contain rounded-3xl"
+                width={320}
+                height={320}
+                className="object-contain rounded-3xl"
               />
             </div>
 

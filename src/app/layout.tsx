@@ -140,7 +140,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
         {/* Critical resources */}
-        <link rel="preload" href="/header-logo-transparent.png" as="image" />
 
         {/* PWA meta tags */}
         <meta name="mobile-web-app-capable" content="yes" />
@@ -194,6 +193,8 @@ export default function RootLayout({
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=1889164861630433&ev=PageView&noscript=1"
             alt=""
+            fetchPriority="low"
+            loading="lazy"
           />
         </noscript>
       </body>

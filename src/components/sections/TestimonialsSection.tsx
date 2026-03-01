@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -47,10 +48,12 @@ export function TestimonialsSection() {
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
     <div className="flex-shrink-0 w-80 bg-white/60 backdrop-blur-sm border border-stone-200 rounded-xl p-6 mx-4 shadow-sm">
       <div className="flex items-center mb-4">
-        <img
+        <Image
           src={testimonial.profilePic}
           alt={testimonial.name}
-          className="w-12 h-12 rounded-full object-cover mr-4"
+          width={48}
+          height={48}
+          className="rounded-full object-cover mr-4"
         />
         <div>
           <h4 className="text-[#292524] font-semibold text-sm">

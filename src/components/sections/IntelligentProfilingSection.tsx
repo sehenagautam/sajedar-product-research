@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Phone, Clock, MapPin, Star } from "lucide-react";
+import Image from "next/image";
 
 const HEADSHOT_DATA_URI =
   "data:image/svg+xml;utf8," +
@@ -48,10 +49,13 @@ export default function IntelligentProfilingSection() {
 
             {/* AI Avatar */}
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <img
+              <Image
                 src={HEADSHOT_DATA_URI}
                 alt="Friendly AI Avatar"
-                className="absolute inset-0 h-full w-full rounded-full object-cover ring-8 ring-emerald-500/20 shadow-2xl"
+                fill
+                sizes="(max-width: 768px) 256px, 320px"
+                className="absolute inset-0 rounded-full object-cover ring-8 ring-emerald-500/20 shadow-2xl"
+                unoptimized
               />
             </div>
 
@@ -70,7 +74,14 @@ export default function IntelligentProfilingSection() {
               <div className="relative flex flex-col gap-6 p-8 z-20">
                 <div className="flex items-center gap-4 border-b border-stone-200 pb-4">
                   <div className="relative h-16 w-16 rounded-full overflow-hidden ring-4 ring-emerald-100 shadow-md">
-                    <img src={CUSTOMER_AVATAR} alt="Sita Lama" className="h-full w-full object-cover" />
+                    <Image
+                      src={CUSTOMER_AVATAR}
+                      alt="Sita Lama"
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                      unoptimized
+                    />
                   </div>
                   <div>
                     <p className="font-semibold text-[#292524] text-lg">Sita Lama</p>
