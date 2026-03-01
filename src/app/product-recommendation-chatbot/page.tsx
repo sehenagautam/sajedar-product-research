@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Product Recommendation Chatbot for Ecommerce',
-  description: 'Conversational product recommendation chatbot implementation for higher conversion rates and average order value.',
+  title: 'AI Product Recommendation Sales Agent',
+  description: 'Personalized product matching over messaging apps. Act like a digital floor-clerk to cross-sell and up-sell at exactly the right moment.',
   alternates: { canonical: '/product-recommendation-chatbot' },
 };
 

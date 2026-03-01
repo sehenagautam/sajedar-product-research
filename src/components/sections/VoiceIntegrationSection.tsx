@@ -316,16 +316,15 @@ export function VoiceIntegrationSection() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Add Voice to Your Chatbot?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Transform your customer interactions with natural voice capabilities.
-              Create more accessible, engaging, and human-like conversations that drive better results.
-            </p>
-            <a href="/?message=I want to enable voice AI in my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Enable Voice AI
+        {/* CTA Section */}
+        <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm">
+          <h3 className="text-2xl font-bold text-white mb-4">Ready to Add Voice to Your Sales Agent?</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Give your AI the ability to speak. Let customers interact naturally through voice messages, bridging the gap between digital and human conversation.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/?message=I want to enable voice AI in my sales agent.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center w-full sm:w-auto">
+              Enable Voice InteractionsAI
             </a>
             <a href="/?message=Please show a brand voice customization demo.#contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg transition-colors duration-200">
               Voice Demo

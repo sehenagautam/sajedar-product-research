@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Chatbot for Local Stores',
-  description: 'Local store chatbot automation for Messenger: inventory answers, booking, order capture, and repeat customer campaigns.',
+  title: 'AI Sales Agent for Local Stores',
+  description: 'Geographically targeted AI sales agents for local retail, clinics, and service providers. Drive foot traffic and local pickup automation.',
   alternates: { canonical: '/chatbot-for-local-stores' },
 };
 

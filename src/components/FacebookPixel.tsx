@@ -73,7 +73,7 @@ export const trackPurchase = (value: number, currency?: string) => {
   trackFacebookEvent('Purchase', {
     value: value,
     currency: currency || 'USD',
-    content_name: 'AI Chatbot Service',
+    content_name: 'AI Sales Agent Service',
     content_category: 'Business Services'
   });
 };

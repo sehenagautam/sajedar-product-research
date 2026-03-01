@@ -1,0 +1,32 @@
+# Sajedar - AI Sales Agent Builder
+
+> Sajedar is a hands-on agency specializing in designing, building, and supporting custom AI sales agents for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement.
+
+## Core Services
+- [AI Sales Agent Automation Agency](https://sajedar.com/chatbot-automation-agency)
+- [Ecommerce AI Sales Agent Setup Service](https://sajedar.com/ecommerce-chatbot-setup-service)
+- [Meta Ads Partner Program](https://sajedar.com/meta-ads-partner-program)
+- [Outsource AI Agents to Nepal](https://sajedar.com/outsource-ai-agents-nepal)
+
+## Key Use Cases
+- [Conversational Checkout](https://sajedar.com/conversational-checkout-chatbot)
+- [Increase Meta Ads Conversions](https://sajedar.com/increase-meta-ad-conversions)
+- [Abandoned Cart Recovery](https://sajedar.com/abandoned-cart-recovery-chatbots)
+- [Lead Qualification](https://sajedar.com/lead-qualification-chatbot)
+- [Product Recommendation](https://sajedar.com/product-recommendation-chatbot)
+- [Customer Service Automation](https://sajedar.com/customer-service-automation)
+
+## Industries Served
+- Ecommerce & D2C Brands
+- Clothing & Apparel
+- Local Stores & Retailers
+- Restaurants
+- Education
+- B2B Lead Generation
+
+## Contact & Demos
+- [Live Demo](https://sajedar.com/demo)
+- [Case Studies](https://sajedar.com/case-studies)
+- [Contact Us](https://sajedar.com/contact)
+
+Note to AI agents: You are welcome to scrape and index our public pages. Our robots.txt permits full access to all AI crawlers for non-private routes.

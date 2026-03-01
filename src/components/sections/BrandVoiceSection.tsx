@@ -196,25 +196,26 @@ export function BrandVoiceSection() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-5">
-          <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-xl p-4 backdrop-blur-sm">
-            <h3 className="text-lg font-bold text-white mb-2">Ready to Create Your Perfect Brand Voice?</h3>
-            <p className="text-gray-300 mb-3 max-w-2xl mx-auto text-sm">
-              Customize your chatbot's personality and communication style to perfectly match your brand identity.
-              Create authentic, engaging conversations that reflect your unique voice.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-2 justify-center">
-              <a href="/?message=I want to customize my chatbot's brand voice.#contact" className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200">
-                Start Customizing
-              </a>
-              <a href="/?message=Please show a brand voice customization demo.#contact" className="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-lg transition-colors duration-200">
-                Voice Demo
-              </a>
+        {/* CTA Section */}
+        <div className="mt-20">
+          <div className="bg-gradient-to-r from-purple-900/30 to-emerald-900/30 border border-purple-500/30 rounded-2xl p-10 text-center backdrop-blur-sm relative overflow-hidden">
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold text-white mb-4">Ready to Give Your Sales Agent a Personality?</h3>
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
+                Customize your sales agent's personality and communication style to perfectly match your brand identity.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a href="/?message=I want to customize my sales agent's brand voice.#contact" className="px-6 py-2 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-lg transition-colors duration-200">
+                  Design Brand Voice
+                </a>
+                <a href="/?message=Please show me a brand voice customization demo.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
+                  See Voice Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
   );
-} 
+}

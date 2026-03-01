@@ -189,16 +189,15 @@ export function EscalationNotificationsSection() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Never Miss a Customer Inquiry Again</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Set up instant escalation notifications and ensure every customer gets the attention they deserve,
-              even when your agent reaches its limits.
-            </p>
-            <a href="/?message=I want to set up escalation notifications for my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Setup Notifications
+        {/* CTA Section */}
+        <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm">
+          <h3 className="text-2xl font-bold text-white mb-4">Never Miss a High-Value Opportunity</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Equip your sales agent with intelligent escalation rules. When a complex query or high-intent lead appears, your best human agents step in seamlessly.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/?message=I want to set up escalation notifications for my sales agent.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto text-center">
+              Configure Human Handoff
             </a>
             <a href="/?message=Please show an escalation notifications demo.#contact" className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors duration-200">
               View Escalation Demo

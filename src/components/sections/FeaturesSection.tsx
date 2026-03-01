@@ -7,20 +7,23 @@ export function FeaturesSection() {
       {/*
       <section className="w-full bg-[#18181b] py-24 px-4 flex flex-col items-center border-t border-white/10">
         <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
-            <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
-              Custom Chatbot Agency
-            </span>
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-              AI Chatbots, Tailored for Your Business
+            <div className="flex items-center space-x-2">
+              <span className="text-emerald-500 text-2xl">⚡</span>
+              <span className="text-gray-400 font-serif tracking-wider uppercase text-sm">
+                AI Sales Agent Builder
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white leading-tight">
+              AI Sales Agents, Tailored for Your Business
             </h2>
             <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-6">
-              <span className="text-emerald-500 font-bold">Sajedar</span> is a{' '}
-              <span className="text-emerald-500 font-bold">hands-on agency</span> specializing in designing, building, and supporting{' '}
-              <span className="text-emerald-500 font-bold">custom AI chatbots</span> for{' '}
-              <span className="text-emerald-500 font-bold">ambitious brands</span>. We{' '}
-              <span className="text-emerald-500 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your agent fits your unique needs and delivers{' '}
-              <span className="text-emerald-500 font-bold">real value</span> to your customers and team.{' '}
-              <span className="text-emerald-500 font-bold">No off-the-shelf bots</span>—just{' '}
+              <p className="text-lg text-gray-400 leading-relaxed max-w-xl">
+              Sajedar is a hands-on agency specializing in designing, building, and supporting &apos; &apos;
+              <span className="text-emerald-500 font-bold">custom AI sales agents</span> for &apos; &apos;
+              <span className="text-emerald-500 font-bold">ambitious brands</span>. We &apos; &apos;
+              <span className="text-emerald-500 font-bold">work closely with you</span> from first strategy call to launch and beyond, ensuring your agent fits your unique needs and delivers &apos; &apos;
+              <span className="text-emerald-500 font-bold">real value</span> to your customers and team. &apos; &apos;}
+              <span className="text-emerald-500 font-bold">No off-the-shelf bots</span>&mdash;just &apos; &apos;
               <span className="text-emerald-500 font-bold">thoughtful, tailored solutions</span> that help you stand out and grow.
             </p>
             <a 

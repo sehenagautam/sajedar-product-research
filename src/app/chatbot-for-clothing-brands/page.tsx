@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Chatbot for Clothing Brands',
-  description: 'Messenger and ecommerce chatbot automation for clothing brands focused on conversion, repeat purchases, and support efficiency.',
+  title: 'AI Sales Agent for Clothing Brands',
+  description: 'Messenger and ecommerce AI sales agent automation for clothing brands focused on conversion, repeat purchases, and support efficiency.',
   alternates: { canonical: '/chatbot-for-clothing-brands' },
 };
 

@@ -6,12 +6,12 @@ export function KnowledgeIntegrationSection() {
       <div className="max-w-6xl w-full mx-auto flex flex-col gap-16">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-4">
-          <span className="text-emerald-500 text-xs font-bold uppercase tracking-widest mb-2 block">
-            Knowledge Integration
-          </span>
-          <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-2 leading-tight tracking-tight">
-            Feed Your Chatbot with <span className="text-emerald-500">Business Knowledge</span>
-          </h2>
+          <div className="flex items-center space-x-2">
+            <span className="text-emerald-500 text-2xl">🧠</span>
+            <span className="text-gray-400 font-serif tracking-wider uppercase text-sm">
+              Feed Your Sales Agent with <span className="text-emerald-500">Business Knowledge</span>
+            </span>
+          </div>
           <p className="text-lg md:text-2xl text-gray-200 max-w-3xl mb-6">
             Connect your agent to all your business data sources - databases, PDFs, websites,
             and knowledge bases. Your agent becomes an expert on your business with instant access to accurate information.
@@ -64,15 +64,17 @@ export function KnowledgeIntegrationSection() {
             </div>
 
             <div className="bg-gradient-to-r from-emerald-900/20 to-transparent border border-emerald-500/30 rounded-xl p-6 backdrop-blur-sm">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center shrink-0 border border-red-500/20">
+                  {/* Assuming Shield is an imported SVG/React component */}
+                  {/* <Shield className="w-6 h-6 text-red-500" /> */}
+                  <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Secure & Compliant</h3>
-                  <p className="text-gray-300">Enterprise-grade security with role-based access control. Your sensitive business data remains protected while being accessible to your chatbot.</p>
+                  <h4 className="text-white font-bold text-lg mb-2">Secure & Private</h4>
+                  <p className="text-gray-300">Enterprise-grade security with role-based access control. Your sensitive business data remains protected while being accessible to your sales agent.</p>
                 </div>
               </div>
             </div>
@@ -241,16 +243,15 @@ export function KnowledgeIntegrationSection() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-900/30 to-emerald-900/30 border border-blue-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Make Your Chatbot a Business Expert?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Connect your agent to all your business knowledge sources and watch it become an expert
-              on your products, services, and company information.
-            </p>
-            <a href="/?message=I want to connect knowledge sources to my chatbot.#contact" className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Connect Knowledge Sources
+        {/* CTA Section */}
+        <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm">
+          <h3 className="text-2xl font-bold text-white mb-4">Ready to Make Your Sales Agent a Business Expert?</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Stop manually answering the same questions. Let our AI ingest your business data and provide accurate, instant answers 24/7.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/?message=I want to connect knowledge sources to my sales agent.#contact" className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto text-center">
+              Sync Knowledge Base
             </a>
             <a href="/?message=Please show a knowledge integration demo.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200">
               View Integration Demo

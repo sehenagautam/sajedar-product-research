@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Ecommerce Chatbot Setup Service',
-  description: 'Complete ecommerce chatbot setup service including flow design, integration, launch QA, and post-launch optimization.',
+  title: 'Ecommerce AI Sales Agent Setup Service',
+  description: 'Full-service AI sales agent implementation for D2C brands. From strategy to live deployment, we build revenue-driving Messenger agents.',
   alternates: { canonical: '/ecommerce-chatbot-setup-service' },
 };
 

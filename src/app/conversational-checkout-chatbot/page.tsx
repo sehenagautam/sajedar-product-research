@@ -1,10 +1,11 @@
 import { Metadata } from 'next';
 import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
-import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
+import { coreServicePages, industryPages, proofPages } from '../../content/seo/agencyPages';
+import { useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Conversational Checkout Chatbot',
-  description: 'Conversational checkout chatbot strategy and implementation for ecommerce brands that want higher purchase completion.',
+  title: 'Conversational Checkout AI Sales Agent',
+  description: 'Seamlessly close sales via Messenger. Stop dropping off to clunky website carts. Capture impulse buys with Native Conversational Commerce.',
   alternates: { canonical: '/conversational-checkout-chatbot' },
 };
 

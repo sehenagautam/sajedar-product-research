@@ -145,22 +145,19 @@ export function ClientProfilingSection() {
         </div>
       </div>
 
-      {/* Bottom CTA */}
-      <div className="text-center mt-16 max-w-6xl w-full mx-auto">
-        <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
-          <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Comprehensive Customer Profiles?</h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            Start profiling your customers automatically and unlock the power of personalized experiences.
-            Drive higher engagement, better conversions, and stronger customer relationships.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="/?message=I want to start customer profiling in my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto">
-              Start Profiling
-            </a>
-            <a href="/?message=Please show a customer profiling demo.#contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto">
-              View Profile Demo
-            </a>
-          </div>
+      {/* CTA Section */}
+      <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm max-w-6xl w-full mx-auto">
+        <h3 className="text-2xl font-bold text-white mb-4">Ready to Learn More About Your Customers?</h3>
+        <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          Stop guessing who your customers are. Let your sales agent naturally collect and organize customer data, building rich profiles with every conversation.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a href="/?message=I want to start customer profiling in my sales agent.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto text-center">
+            Start Profiling
+          </a>
+          <a href="/?message=Please show a customer profiling demo.#contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg transition-colors duration-200 w-full sm:w-auto">
+            View Profile Demo
+          </a>
         </div>
       </div>
     </section>

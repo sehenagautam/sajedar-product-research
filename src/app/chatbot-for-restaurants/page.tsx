@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Chatbot for Restaurants',
-  description: 'Restaurant chatbot automation for Messenger covering reservations, menu questions, and repeat guest campaigns.',
+  title: 'AI Sales Agent for Restaurants & Nightlife',
+  description: 'Automate reservations, menu questions, and event inquiries with AI sales agents built for hospitality.',
   alternates: { canonical: '/chatbot-for-restaurants' },
 };
 

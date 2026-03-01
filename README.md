@@ -1,10 +1,10 @@
-# Sajedar - Custom AI Chatbot Agency
+# Sajedar - AI Sales Agent Builder
 
-A modern, responsive landing page for Sajedar, a custom AI agent agency specializing in tailored solutions for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement.
+A modern, responsive landing page for Sajedar, an AI sales agent agency specializing in tailored solutions for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement.
 
 ## 🚀 About
 
-Sajedar offers custom AI agent solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences. We specialize in Facebook Messenger, Instagram, and web-based AI agents.
+Sajedar offers custom AI sales agent solutions that transform customer engagement and automate interactions. Our platform combines cutting-edge technologies with modern design to create exceptional user experiences. We specialize in Facebook Messenger, Instagram, and web-based AI agents.
 
 ## ✨ Features
 

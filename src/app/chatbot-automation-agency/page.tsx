@@ -4,15 +4,15 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-  title: 'Messenger Marketing Agency for Ecommerce | Sajedar',
-  description: 'A service-focused playbook for ecommerce Messenger automation: Click-to-Message lead handling, compliance, cart recovery, qualification, recommendations, and conversational checkout.',
-  alternates: { canonical: '/chatbot-automation-agency' },
+  title: 'AI Sales Agent Builder & Automation Agency',
+  description: 'Full-service AI sales agent builder and conversational automation agency. We bridge the gap between traffic and revenue through intelligent Messenger flows.',
+  alternates: { canonical: '/ai-sales-agent-agency' },
 };
 
 export default function ChatbotAutomationAgencyPage() {
   return (
     <AgencySeoPage
-      currentPath="/chatbot-automation-agency"
+      currentPath="/ai-sales-agent-agency"
       eyebrow="Core Service"
       title="Elevating Ecommerce With Intelligent Chatbot Automation"
       subtitle="A practical framework for designing, implementing, and optimizing Messenger-first ecommerce chatbot systems with measurable revenue and support outcomes."

@@ -8,7 +8,7 @@ export const coreServicePages: SeoPageLink[] = [
   {
     title: 'Affordable AI Salesbots',
     href: '/affordable-ai-salesbots',
-    description: 'Cost-effective automation and chatbots designed for small-to-medium businesses.',
+    description: 'Cost-effective automation and AI sales agents designed for small-to-medium businesses.',
   },
   {
     title: 'Outsource AI Agents to Nepal',
@@ -21,9 +21,9 @@ export const coreServicePages: SeoPageLink[] = [
     description: 'Collaboration program for media buyers and performance agencies.',
   },
   {
-    title: 'Chatbot Automation Agency',
+    title: 'AI Sales Agent Automation Agency',
     href: '/chatbot-automation-agency',
-    description: 'Umbrella service page for ecommerce Messenger automation strategy and implementation.',
+    description: 'Umbrella service page for ecommerce Messenger sales agent strategy and implementation.',
   },
   {
     title: 'Messenger Marketing Agency',
@@ -31,7 +31,7 @@ export const coreServicePages: SeoPageLink[] = [
     description: 'Done-for-you Messenger sales automation for ecommerce brands that need growth and retention.',
   },
   {
-    title: 'Ecommerce Chatbot Setup Service',
+    title: 'Ecommerce AI Sales Agent Setup Service',
     href: '/ecommerce-chatbot-setup-service',
     description: 'Full setup service from flow mapping to launch, testing, and optimization.',
   },
@@ -54,7 +54,7 @@ export const useCasePages: SeoPageLink[] = [
     description: 'Pillar use-case page focused on revenue outcomes for ecommerce operations.',
   },
   {
-    title: 'Lead Qualification Chatbot',
+    title: 'Lead Qualification AI Sales Agent',
     href: '/lead-qualification-chatbot',
     description: 'Automated lead triage and routing to sales with qualification scoring.',
   },
@@ -69,22 +69,22 @@ export const useCasePages: SeoPageLink[] = [
     description: 'Deflect up to 80% of routine inquiries and slash response times.',
   },
   {
-    title: 'Lead Generation Chatbots',
+    title: 'Lead Generation AI Sales Agents',
     href: '/lead-generation-chatbots',
     description: 'Qualify and capture B2B or high-ticket leads interactively.',
   },
   {
-    title: 'Abandoned Cart Recovery Chatbots',
+    title: 'Abandoned Cart Recovery Sales Agents',
     href: '/abandoned-cart-recovery-chatbots',
     description: 'Recover 15-30% more carts through high-open-rate Messenger reminders.',
   },
   {
-    title: 'Product Recommendation Chatbot',
+    title: 'Product Recommendation AI Sales Agent',
     href: '/product-recommendation-chatbot',
     description: 'Conversational product discovery that increases AOV and conversion rates.',
   },
   {
-    title: 'Conversational Checkout Chatbot',
+    title: 'Conversational Checkout AI Sales Agent',
     href: '/conversational-checkout-chatbot',
     description: 'Guide shoppers to purchase inside high-intent chat sessions.',
   },
@@ -107,39 +107,39 @@ export const useCasePages: SeoPageLink[] = [
 
 export const industryPages: SeoPageLink[] = [
   {
-    title: 'Chatbots for Meta Ads Retailers',
+    title: 'AI Sales Agents for Meta Ads Retailers',
     href: '/meta-ads-retail-chatbot',
     description: 'Maximize Facebook and Instagram Ad ROAS using Click-to-Messenger automation.',
   },
   {
-    title: 'Chatbot for Facebook Dropshippers',
+    title: 'AI Sales Agent for Facebook Dropshippers',
     href: '/facebook-dropshipping-chatbot',
     description: 'Increase ROAS and automate "Where is my order?" tickets for dropshipping stores.',
   },
   {
-    title: 'Chatbots for Retailers in Nepal',
+    title: 'AI Sales Agents for Retailers in Nepal',
     href: '/nepal-retail-chatbot-services',
-    description: 'Local retail automation for businesses in Nepal targeting Messenger and WhatsApp.',
+    description: 'Local retail sales agent automation for businesses in Nepal targeting Messenger and WhatsApp.',
   },
   {
-    title: 'Chatbot for Clothing Brands',
+    title: 'AI Sales Agent for Clothing Brands',
     href: '/chatbot-for-clothing-brands',
     description: 'Industry landing page for apparel and fashion ecommerce teams.',
   },
   {
-    title: 'Chatbot for Local Stores',
+    title: 'AI Sales Agent for Local Stores',
     href: '/chatbot-for-local-stores',
     description: 'Local retail workflows for inventory questions, booking, and repeat orders.',
   },
   {
-    title: 'Chatbot for Restaurants',
+    title: 'AI Sales Agent for Restaurants',
     href: '/chatbot-for-restaurants',
-    description: 'Messenger automation for menus, reservation capture, and repeat diners.',
+    description: 'Messenger sales agent automation for menus, reservation capture, and repeat diners.',
   },
   {
-    title: 'Chatbot for Education',
+    title: 'AI Sales Agent for Education',
     href: '/chatbot-for-education',
-    description: 'Enrollment and student support automation for education organizations.',
+    description: 'Enrollment and student support sales agent automation for education organizations.',
   },
 ];
 

@@ -1,7 +1,7 @@
 {
   "name": "Sajedar - AI Sales Agent",
   "short_name": "Sajedar",
-  "description": "Custom AI chatbots for ambitious brands. Build intelligent chatbots with our expert guidance.",
+  "description": "Commission-based AI sales agents for ambitious brands. Build intelligent sales agents with our expert guidance.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#18181b",

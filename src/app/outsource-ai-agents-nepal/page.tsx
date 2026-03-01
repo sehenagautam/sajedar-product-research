@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-    title: 'Outsource AI Agents & Chatbots to Nepal | Sajedar',
-    description: 'Partner with Nepal\'s premier AI automation agency. High-quality, cost-effective conversational AI, Messenger bots, and WhatsApp development for international enterprise clients.',
+    title: 'Outsource AI Sales Agents to Nepal | Sajedar',
+    description: 'Partner with Nepal\'s premier AI automation agency. High-quality, cost-effective conversational AI, Messenger agents, and WhatsApp development for international enterprise clients.',
     alternates: { canonical: '/outsource-ai-agents-nepal' },
 };
 

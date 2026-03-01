@@ -212,17 +212,16 @@ export function ImageChatSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-emerald-900/30 to-blue-900/30 border border-emerald-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Enhance Your Chatbot with Images?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Add rich media support to your agent and provide customers with visual content,
-              product images, and interactive experiences.
-            </p>
-            <a href="/?message=I want to add image support to my chatbot.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 mr-4">
-              Add Image Support
+        <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm">
+          <h3 className="text-2xl font-bold text-white mb-4">Ready to Enhance Your Sales Agent with Images?</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Give your AI agent eyes. Let it process customer photos, analyze receipts, and confirm visual details instantly.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/?message=I want to add image support to my sales agent.#contact" className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-colors duration-200 text-center w-full sm:w-auto">
+              Enable Visual AI
             </a>
-            <a href="/?message=Please show me an image-enabled agent demo.#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200">
+            <a href="/?message=Please show me an image-enabled agent demo.#contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors duration-200 text-center w-full sm:w-auto">
               See Image Demo
             </a>
           </div>

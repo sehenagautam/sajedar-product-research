@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbots for Retailers in Nepal | Sajedar',
-    description: 'Custom Facebook Messenger and WhatsApp chatbot development for retail businesses in Nepal. Automate customer support, handle inventory queries, and drive Kathmandu-wide sales.',
+    title: 'Nepal Retail AI Sales Agent Services',
+    description: 'Local AI sales agent automation for Nepali retailers. Stop losing customers on Facebook & Instagram while you sleep.',
     alternates: { canonical: '/nepal-retail-chatbot-services' },
 };
 

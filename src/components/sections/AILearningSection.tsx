@@ -232,16 +232,15 @@ export function AILearningSection() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-orange-900/30 to-red-900/30 border border-orange-500/30 rounded-xl p-8 backdrop-blur-sm">
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Watch Your Chatbot Evolve?</h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              Deploy your AI agent and watch it learn, adapt, and improve with every conversation.
-              See real-time progress as it achieves your business goals more effectively.
-            </p>
-            <a href="/?message=I want to deploy and start my chatbot's learning journey.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200 mr-4">
-              Start Learning Journey
+        {/* CTA Section */}
+        <div className="text-center mt-20 relative z-20 bg-emerald-900/30 p-10 rounded-2xl border border-emerald-500/20 backdrop-blur-sm">
+          <h3 className="text-2xl font-bold text-white mb-4">Ready to Watch Your Sales Agent Evolve?</h3>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            Stop retraining human agents. Deploy an AI that learns from every interaction, masters your winning sales scripts, and continuously improves its closing rate.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="/?message=I want to deploy and start my sales agent's learning journey.#contact" className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-lg transition-colors duration-200">
+              Deploy Learning AI Journey
             </a>
             <a href="/?message=Please show an AI learning demo.#contact" className="px-8 py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-lg transition-colors duration-200">
               View Learning Demo

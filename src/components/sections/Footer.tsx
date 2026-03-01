@@ -8,9 +8,9 @@ export function Footer() {
       <div className="flex flex-wrap justify-center gap-8 mb-8">
         <Link
           href="/chatbot-automation-agency"
-          className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
+          className="text-gray-400 hover:text-emerald-500 transition-colors"
         >
-          Services
+          AI Sales Agent Services
         </Link>
         <Link
           href="/messenger-ecommerce-automation"
@@ -28,9 +28,9 @@ export function Footer() {
 
       {/* Brand Section - Centered */}
       <div className="flex items-center gap-2 mb-2">
-        <span className="text-emerald-500 font-mono font-bold text-lg">Sajedar</span>
-        <span>•</span>
-        <span className="text-[#292524]">AI Agent Builder Agency</span>
+        <span className="text-emerald-500 font-bold ml-[2px]">Sajedar</span>
+        <span className="text-[#292524] font-medium ml-2">|</span>
+        <span className="text-[#292524]">AI Sales Agent Builder</span>
       </div>
 
       {/* AI Summary Buttons */}

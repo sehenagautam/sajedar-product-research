@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-    title: 'AI Chatbot for Facebook Dropshippers',
-    description: 'Automate your Facebook dropshipping customer support, capture high-intent leads from ads, and increase ROAS with conversational AI.',
+    title: 'Facebook Ads & Dropshipping AI Sales Agent',
+    description: 'Scale dropshipping campaigns profitably by automating "Where is my order?" tickets and driving high-converting Messenger ad flows.',
     alternates: { canonical: '/facebook-dropshipping-chatbot' },
 };
 
