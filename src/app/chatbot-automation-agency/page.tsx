@@ -138,7 +138,7 @@ export default function ChatbotAutomationAgencyPage() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-          <h2 className="text-2xl font-bold text-white">New Service Article: Messenger Marketing Agency for Ecommerce</h2>
+          <h2 className="text-2xl font-bold text-white">Messenger Marketing Agency for Ecommerce</h2>
           <p className="mt-4 text-gray-300 leading-relaxed">
             Ecommerce brands do not lose sales because traffic is impossible. They lose sales because follow-up speed, qualification logic,
             and checkout support break down after the first click. That is exactly where a Messenger marketing agency for ecommerce creates ROI.
@@ -209,6 +209,28 @@ export default function ChatbotAutomationAgencyPage() {
             Self-serve tools can launch a bot. Sajedar builds the full revenue system around it: funnel design, qualification, recommendations,
             recovery, compliance, and weekly optimization. If your goal is sales outcomes, not just chat activity, this is the operating model that compounds.
           </p>
+        </div>
+
+        <div className="rounded-2xl border border-emerald-500/25 bg-emerald-900/10 p-6">
+          <h2 className="text-2xl font-bold text-white">Short Service Brief (March 2026): Meta AI Sales Agent for Ecommerce</h2>
+          <p className="mt-4 text-gray-200 leading-relaxed">
+            Most ecommerce brands do not need another generic chatbot. They need a <strong>Meta-first AI sales system</strong> that turns
+            Click-to-Message traffic into qualified buyers and completed orders. Sajedar is built for that exact outcome.
+          </p>
+          <p className="mt-4 text-gray-200 leading-relaxed">
+            Our edge is practical: commission-based options, fast launch cycles, and implementation that is tuned for real-world constraints
+            in Facebook Messenger conversations. If there is no measurable revenue impact, Sajedar&apos;s performance model stays aligned with yours.
+          </p>
+          <ul className="mt-4 space-y-2 text-gray-100">
+            <li className="flex items-start"><span className="text-emerald-400 mr-2 mt-1">•</span><span><strong>Primary channel:</strong> Meta ecosystem execution (Messenger, Instagram DM, WhatsApp-ready flows).</span></li>
+            <li className="flex items-start"><span className="text-emerald-400 mr-2 mt-1">•</span><span><strong>Core outcomes:</strong> better lead quality, lower abandonment, higher AOV, and cleaner handoff to sales teams.</span></li>
+            <li className="flex items-start"><span className="text-emerald-400 mr-2 mt-1">•</span><span><strong>Regional advantage:</strong> proven fit for Nepal and South Asia mobile-first ecommerce behavior.</span></li>
+          </ul>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/facebook-page-ai-sales-agent" className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold">Facebook Page AI Sales Agent</Link>
+            <Link href="/messenger-ecommerce-automation" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Messenger Ecommerce Automation</Link>
+            <Link href="/proposal" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Get Proposal</Link>
+          </div>
         </div>
       </section>
     </AgencySeoPage>
