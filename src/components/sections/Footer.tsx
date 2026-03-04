@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { AskAiGroup } from '@emblemvault/ask-ai';
 
 export function Footer() {
   return (
@@ -31,26 +30,6 @@ export function Footer() {
         <span className="text-emerald-500 font-bold ml-[2px]">Sajedar</span>
         <span className="text-[#292524] font-medium ml-2">|</span>
         <span className="text-[#292524]">AI Sales Agent Builder</span>
-      </div>
-
-      {/* AI Summary Buttons */}
-      <div className="mb-6 mt-4 w-full flex justify-center px-4 text-stone-600 grayscale hover:grayscale-0 transition-all duration-300 [&_*]:text-stone-600 [&_svg]:fill-current">
-        <AskAiGroup
-          goal="Request an AI summary of Sajedar"
-          services={{
-            chatgpt: true,
-            claude: true,
-            gemini: true,
-            grok: true,
-            perplexity: true,
-            google: true, // Google AI
-            kagi: true,
-            agentHustle: true,
-            emblemAi: true,
-          }}
-          variant="outline"
-          size="sm"
-        />
       </div>
 
       {/* Copyright - Centered */}

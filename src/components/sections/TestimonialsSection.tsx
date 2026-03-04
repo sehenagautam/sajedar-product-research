@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 export function TestimonialsSection() {
@@ -40,10 +39,6 @@ export function TestimonialsSection() {
       rating: 5
     }
   ];
-
-  const topDuplicated = [...testimonials, ...testimonials];
-
-
 
   const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
     <div className="flex-shrink-0 w-80 bg-white/60 backdrop-blur-sm border border-stone-200 rounded-xl p-6 mx-4 shadow-sm">
@@ -91,31 +86,12 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll-left">
-            {topDuplicated.map((testimonial, index) => (
-              <TestimonialCard key={`top-${testimonial.id}-${index}`} testimonial={testimonial} />
-            ))}
-          </div>
-
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={`testimonial-${testimonial.id}`} testimonial={testimonial} />
+          ))}
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes scroll-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-
-        .animate-scroll-left {
-          animation: scroll-left 60s linear infinite;
-        }
-
-        .animate-scroll-left:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 }

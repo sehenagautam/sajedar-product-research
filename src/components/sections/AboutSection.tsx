@@ -33,7 +33,7 @@ export default function AboutSection() {
           </p>
 
           <p>
-            Currently, We build systems for Facebook Page only.
+            We primarily build and optimize Meta ecosystem sales systems, with Facebook Page and Messenger as our core implementation focus.
           </p>
 
           <p>

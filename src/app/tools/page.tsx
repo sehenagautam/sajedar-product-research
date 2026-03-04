@@ -176,12 +176,6 @@ Safely create Purchase, Lead, AddToCart, and other conversion tracking scripts w
         link: '/tools/facebook-pixel-generator',
     },
     {
-        title: 'UTM Campaign URL Builder',
-        content: `Create clean, trackable URLs for ads and campaigns.
-Know exactly which Facebook ad, post, or agent flow is driving your results.`,
-        link: '/tools/utm-builders',
-    },
-    {
         title: 'JSON Payload Formatter & Validator',
         content: `Debug your n8n workflows instantly. Validate, pretty-print, or minify your JSON payloads to fix syntax errors before running your automation.`,
         link: '/tools/json-formatter',
