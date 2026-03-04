@@ -81,7 +81,7 @@ A collection of 40+ developer and marketing tools available at **[/tools](/tools
 - **Icons**: Lucide React for consistent iconography
 - **Fonts**: DM Serif Display and Inter for modern typography
 - **Components**: Headless UI for accessible components
-- **Heroicons**: Optimized SVG icons
+- **Heroicons**: Optimized SVG icons.
 
 ### Utilities & Tools
 - `html2canvas`, `qrcode`, `sharp` for image generation
