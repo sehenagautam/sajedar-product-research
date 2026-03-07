@@ -10,14 +10,6 @@ export default function AboutSection() {
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
 
-        {/* Logo */}
-        <Image
-          src="/sajedar-new-logo.png"
-          alt="Sajedar Logo"
-          width={96}
-          height={96}
-          className="mx-auto mb-8"
-        />
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-[#292524] mb-8">
