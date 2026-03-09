@@ -10,10 +10,13 @@ interface LinkClusterProps {
   title: string;
   links: ClusterLink[];
   currentPath?: string;
+  maxLinks?: number;
 }
 
-export function LinkCluster({ title, links, currentPath }: LinkClusterProps) {
-  const visibleLinks = links.filter((link) => link.href !== currentPath);
+export function LinkCluster({ title, links, currentPath, maxLinks = 4 }: LinkClusterProps) {
+  const visibleLinks = links
+    .filter((link) => link.href !== currentPath)
+    .slice(0, maxLinks);
 
   if (visibleLinks.length === 0) {
     return null;

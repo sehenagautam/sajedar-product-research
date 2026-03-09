@@ -29,6 +29,7 @@ interface AgencySeoPageProps {
     title: string;
     links: SeoPageLink[];
   }>;
+  clusterLinkLimit?: number;
   faqItems?: FaqItem[];
   integrations?: string[];
   integrationsNote?: string;
@@ -49,6 +50,7 @@ export function AgencySeoPage({
   secondaryCtaLabel,
   secondaryCtaHref,
   clusters,
+  clusterLinkLimit,
   faqItems,
   integrations,
   integrationsNote,
@@ -199,6 +201,7 @@ export function AgencySeoPage({
             title={cluster.title}
             links={cluster.links}
             currentPath={currentPath}
+            maxLinks={clusterLinkLimit ?? 4}
           />
         ))}
 
