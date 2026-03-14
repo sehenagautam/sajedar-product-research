@@ -1,6 +1,6 @@
 # Sajedar - AI Sales Agent Builder
 
-A modern, responsive landing page for Sajedar, an AI sales agent agency specializing in tailored solutions for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement.
+A modern, responsive landing page for Sajedar, an AI sales agent agency specializing in tailored solutions for ambitious brands. We build intelligent, conversation-driven interfaces that automate sales, support, and engagement. 
 
 ## 🚀 About
 
