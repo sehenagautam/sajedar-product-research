@@ -50,6 +50,7 @@ export default function ProposalPage() {
               '24/7 Responses',
               'Collect payments',
               'Supports human takeover',
+              'Syncs with ads',
               'Admin defined negotiation rules',
               'Native rendering on Meta platforms',
               'Understands images, voice message, and any language',
