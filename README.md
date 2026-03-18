@@ -119,7 +119,7 @@ yarn install
 ```bash
 npm run dev
 # or
-yarn dev
+yarn dev 
 ```
 
 4. **Open in browser**
