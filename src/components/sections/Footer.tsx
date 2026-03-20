@@ -4,10 +4,10 @@ export function Footer() {
   return (
     <footer className="w-full py-10 flex flex-col items-center bg-[#fafaf9] text-[#57534e] text-sm font-sora border-t border-stone-200 mt-8">
       {/* Main Navigation Links - Centered */}
-      <div className="flex flex-wrap justify-center gap-8 mb-8">
+      <div className="flex flex-wrap justify-center gap-6 mb-8">
         <Link
           href="/chatbot-automation-agency"
-          className="text-gray-400 hover:text-emerald-500 transition-colors"
+          className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
         >
           AI Sales Agent Services
         </Link>

@@ -34,6 +34,9 @@ const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_L2kzlmU774TDNxEIJo_9yg_F8cbRsFe
 export default function DemoRequestPage() {
   const [supabaseClient, setSupabaseClient] = useState<ReturnType<NonNullable<typeof window.supabase>['createClient']> | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const [businessName, setBusinessName] = useState('');
   const [businessDetails, setBusinessDetails] = useState('');
   const [productName, setProductName] = useState('');
@@ -114,6 +117,7 @@ export default function DemoRequestPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
 
     if (!supabaseClient) {
       alert('Supabase is not ready yet. Please try again.');
@@ -125,6 +129,9 @@ export default function DemoRequestPage() {
     }
 
     setIsSubmitting(true);
+    setIsSubmitted(false);
+    setSuccessMessage('');
+    setErrorMessage('');
     try {
       const [optimizedImg1, optimizedImg2, optimizedQr] = await Promise.all([
         optimizeImage(img1, 'product image 1'),
@@ -143,8 +150,8 @@ export default function DemoRequestPage() {
         business_details: businessDetails,
         product_name: productName,
         product_features: features,
-        price_usd: Number(price),
-        price: Number(price),
+        price_usd: price,
+        price: price,
         contact,
         contact_info: contact,
         phone_or_email: contact,
@@ -182,26 +189,27 @@ export default function DemoRequestPage() {
         throw new Error(`DB insert failed: ${error.message}`);
       }
 
-      alert('Demo request submitted successfully.');
+      setBusinessName('');
+      setBusinessDetails('');
+      setProductName('');
+      setPrice('');
+      setFeatures('');
+      setContact('');
+      setImg1(null);
+      setImg2(null);
+      setQr(null);
+      form.reset();
+      setIsSubmitted(true);
+      setSuccessMessage('Request submitted successfully. Our team will review your details and contact you shortly.');
+
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Unknown error';
       console.error('Demo request submit failed:', message, err);
+      setErrorMessage('We could not submit your request just yet. Please review the form and try again.');
       alert(`Failed to submit demo request: ${message}`);
+    } finally {
       setIsSubmitting(false);
-      return;
     }
-
-    setBusinessName('');
-    setBusinessDetails('');
-    setProductName('');
-    setPrice('');
-    setFeatures('');
-    setContact('');
-    setImg1(null);
-    setImg2(null);
-    setQr(null);
-    e.currentTarget.reset();
-    setIsSubmitting(false);
   };
 
   return (
@@ -239,7 +247,12 @@ export default function DemoRequestPage() {
                 type="text"
                 required
                 value={businessName}
-                onChange={(e) => setBusinessName(e.target.value)}
+                onChange={(e) => {
+                  setBusinessName(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
@@ -250,7 +263,12 @@ export default function DemoRequestPage() {
                 rows={4}
                 required
                 value={businessDetails}
-                onChange={(e) => setBusinessDetails(e.target.value)}
+                onChange={(e) => {
+                  setBusinessDetails(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
@@ -261,19 +279,28 @@ export default function DemoRequestPage() {
                 type="text"
                 required
                 value={productName}
-                onChange={(e) => setProductName(e.target.value)}
+                onChange={(e) => {
+                  setProductName(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
 
             <div>
-              <label className="block mb-1 font-semibold text-[#292524]">Price (USD)</label>
+              <label className="block mb-1 font-semibold text-[#292524]">Price</label>
               <input
-                type="number"
-                step="0.01"
+                type="text"
                 required
                 value={price}
-                onChange={(e) => setPrice(e.target.value)}
+                onChange={(e) => {
+                  setPrice(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
@@ -305,7 +332,12 @@ export default function DemoRequestPage() {
                 rows={5}
                 required
                 value={features}
-                onChange={(e) => setFeatures(e.target.value)}
+                onChange={(e) => {
+                  setFeatures(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
@@ -326,7 +358,12 @@ export default function DemoRequestPage() {
                 type="text"
                 required
                 value={contact}
-                onChange={(e) => setContact(e.target.value)}
+                onChange={(e) => {
+                  setContact(e.target.value);
+                  setIsSubmitted(false);
+                  setSuccessMessage('');
+                  setErrorMessage('');
+                }}
                 className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
               />
             </div>
@@ -336,8 +373,14 @@ export default function DemoRequestPage() {
               disabled={isSubmitting || !supabaseClient}
               className="w-full md:w-auto px-8 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-bold transition-colors"
             >
-              {isSubmitting ? 'Submitting...' : 'Submit Demo Request'}
+              {isSubmitting ? 'Submitting...' : isSubmitted ? 'Submitted' : 'Submit Demo Request'}
             </button>
+            {successMessage ? (
+              <p className="text-sm font-medium text-emerald-700">{successMessage}</p>
+            ) : null}
+            {errorMessage ? (
+              <p className="text-sm font-medium text-red-600">{errorMessage}</p>
+            ) : null}
           </form>
         </div>
       </main>
