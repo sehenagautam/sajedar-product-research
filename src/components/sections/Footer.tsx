@@ -23,6 +23,12 @@ export function Footer() {
         >
           Resources
         </Link>
+        <Link
+          href="/career"
+          className="px-6 py-2 rounded-full border border-stone-300 hover:bg-stone-200 transition-colors text-[#292524] font-medium"
+        >
+          Careers
+        </Link>
       </div>
 
       {/* Brand Section - Centered */}
