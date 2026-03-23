@@ -23,7 +23,7 @@ export default function CareerPage() {
                                 <h2 className="text-2xl font-semibold text-black mb-2">Agent Engineer</h2>
                                 <div className="flex flex-wrap gap-3 text-sm font-medium">
                                     <span className="bg-[#f5f5f4] px-3 py-1 rounded-full text-[#44403c]">Part Time</span>
-                                    <span className="bg-[#f5f5f4] px-3 py-1 rounded-full text-[#44403c]">Minimal Experience</span>
+                                    <span className="bg-[#f5f5f4] px-3 py-1 rounded-full text-[#44403c]">Entry Level Only</span>
                                     <span className="bg-[#f5f5f4] px-3 py-1 rounded-full text-[#44403c]">Remote</span>
                                 </div>
                             </div>
@@ -81,6 +81,29 @@ export default function CareerPage() {
                                 <h3 className="text-lg font-semibold text-black mb-3">Other Benefits</h3>
                                 <p>Premium AI tools such as Codex, Supergrok, etc. to supercharge your productivity.</p>
                             </section>
+                        </div>
+
+                        <div className="mt-16 border-t border-black/10 pt-10">
+                            <h2 className="text-2xl font-semibold text-black mb-6">Other Open Gigs</h2>
+                            <div className="space-y-8">
+                                {/* Video Editing */}
+                                <div className="p-6 bg-[#f5f5f4] rounded-xl border border-[rgba(0,0,0,0.05)]">
+                                    <h3 className="text-xl font-semibold text-black mb-2">Video Editing</h3>
+                                    <p className="text-[#44403c] mb-3">We are looking for talented video editors.</p>
+                                    <p className="text-sm text-[#57534e] font-medium">To apply: Please include a link to your portfolio when emailing us.</p>
+                                </div>
+
+                                {/* Meta Ads */}
+                                <div className="p-6 bg-[#f5f5f4] rounded-xl border border-[rgba(0,0,0,0.05)]">
+                                    <h3 className="text-xl font-semibold text-black mb-2">Meta Ads Specialist</h3>
+                                    <p className="text-[#44403c] mb-3">Open for both low and high volume campaigns.</p>
+                                    <p className="text-sm text-[#57534e] mb-2 font-medium">Requirements:</p>
+                                    <ul className="list-disc pl-5 space-y-1 text-sm text-[#57534e] font-medium">
+                                        <li>You must have your own dollar cards.</li>
+                                        <li>To apply: Please include your past margin rates along with your application.</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="mt-12 bg-black text-white p-8 rounded-xl text-center">
