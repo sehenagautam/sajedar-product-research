@@ -8,7 +8,7 @@ export function TestimonialsSection() {
       company: "Latta Kapada",
       role: "Owner",
       quote: "The agent handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
-      profilePic: "/lattakapada.png",
+      profilePic: "/lattakapada.webp",
       rating: 5
     },
     {
@@ -17,7 +17,7 @@ export function TestimonialsSection() {
       company: "Ashwi",
       role: "Owner",
       quote: "Agent implementation has provided us with a stable way to generate new demand for our furniture. We can quickly test demand for new furniture designs with its help. I am impressed.",
-      profilePic: "/Ashwi.png",
+      profilePic: "/Ashwi.webp",
       rating: 5
     },
     {
@@ -26,7 +26,7 @@ export function TestimonialsSection() {
       company: "Osha Clothing & Apparels",
       role: "Owner",
       quote: "We had previously abandoned the idea of boosting on facebook because we would have no time and capacity to respond to leads. Agent makes that fear irrelevant.",
-      profilePic: "/osha.png",
+      profilePic: "/osha.webp",
       rating: 5
     },
     {
@@ -35,7 +35,7 @@ export function TestimonialsSection() {
       company: "Sajedar.com",
       role: "Founder",
       quote: "Of course it wouldn’t be nice if I didn’t use my agent to respond on my own Facebook page.",
-      profilePic: "/Sajedar.png",
+      profilePic: "/Sajedar.webp",
       rating: 5
     }
   ];

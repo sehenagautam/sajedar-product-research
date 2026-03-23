@@ -11,7 +11,7 @@ export default function FounderMessageSection() {
         <div className="flex-shrink-0">
           <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border border-stone-200">
             <Image
-              src="/founder_pic.png"
+              src="/founder_pic.webp"
               alt="Founder of Sajedar"
               fill
               className="object-cover"

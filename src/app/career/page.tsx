@@ -29,13 +29,13 @@ export default function CareerPage() {
             title: "Video Editor",
             href: "/career/video-editing",
             type: "Freelance",
-            description: "Edit engaging visual content for our social media channels to highlight the power of AI automation. Must have an existing portfolio showcasing your editing capabilities."
+            description: "Edit engaging visual content for the clients of Sajedar. You must have an existing portfolio showcasing your editing capabilities."
         },
         {
             title: "Meta Ads Specialist",
             href: "/career/meta-ads",
             type: "Freelance",
-            description: "Manage both high and low volume Meta Ad campaigns to generate B2B leads. You must have your own dollar cards and include your past margin rates in your application."
+            description: "Serve our clients who do not have their own meta ads setup on a base plus bonus basis. Must have your own dollar cards and capacity for low volume/occasional ads."
         }
     ];
 

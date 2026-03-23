@@ -25,7 +25,7 @@ export default function VideoEditingPage() {
                     <section>
                         <h3 className="text-lg font-semibold text-black mb-3">About the job</h3>
                         <p>
-                            We are looking for talented, creative video editors to help us craft compelling visual narratives about our AI automation tools. You will be cutting clips, adding dynamic motion graphics, and formatting videos for high engagement on platforms like YouTube, TikTok, and Instagram Reels.
+                            We are looking for talented, creative video editors to help craft compelling visual narratives for the clients of Sajedar. You will not be editing for Sajedar itself, but directly empowering our wide portfolio of clients. You will be cutting clips, adding dynamic motion graphics, and formatting videos for high engagement on platforms like YouTube, TikTok, and Instagram Reels.
                         </p>
                     </section>
                 </div>

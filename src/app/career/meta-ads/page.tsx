@@ -24,15 +24,15 @@ export default function MetaAdsPage() {
                     <section>
                         <h3 className="text-lg font-semibold text-black mb-3">About the job</h3>
                         <p>
-                            We are looking for skilled Meta Ads Specialists to handle both high and low volume ad campaigns. You will construct highly converting ad sets to generate leads for our AI sales bots.
+                            We build sales AI agents. Some of our clients do not have their own meta ads setup, so in order to fulfill that gap, we are looking for some meta ad specialist to serve our clients in preferably base plus bonus basis.
                         </p>
                     </section>
 
                     <section>
                         <h3 className="text-lg font-semibold text-black mb-3">Requirements</h3>
                         <ul className="list-disc pl-5 space-y-2">
-                            <li>Must have your own dollar cards for running campaigns.</li>
-                            <li>Experience with scaling and managing robust Meta Ads portfolios.</li>
+                            <li>Can manage your own dollar card.</li>
+                            <li>Can work for low volume and occasional ads for multiple different clients.</li>
                         </ul>
                     </section>
                 </div>
