@@ -52,7 +52,7 @@ ${formData.message}`;
               </div>
               <div>
                 <h3 className="text-2xl md:text-3xl font-semibold text-[#292524]">Write a message</h3>
-                <p className="text-[#78716c] text-lg mt-1">Share the business context first.</p>
+                <p className="text-[#78716c] text-lg mt-1">Tell us a little about what you want to build.</p>
               </div>
             </div>
 
