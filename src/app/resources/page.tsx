@@ -39,6 +39,7 @@ export default function ResourcesPage() {
                             <li><Link href="/case-studies" className="text-gray-300 hover:text-emerald-400">Case Studies</Link></li>
                             <li><Link href="/demo" className="text-gray-300 hover:text-emerald-400">Demo</Link></li>
                             <li><Link href="/readiness" className="text-gray-300 hover:text-emerald-400">Automation Readiness</Link></li>
+                            <li><Link href="/iq-test" className="text-gray-300 hover:text-emerald-400">ARC-Style IQ Test</Link></li>
                             <li>
                                 <Link
                                     href="/tools"
@@ -117,11 +118,17 @@ export default function ResourcesPage() {
                                 Tool
                             </span>
                             <h3 className="text-xl font-bold text-white mb-3">
-                                AI Chatbot Readiness Checker
+                                ARC-Style IQ Test
                             </h3>
                             <p className="text-gray-300">
-                                Assess how prepared your business is for deploying an AI agent across sales, support, and operations.
+                                Run a timed abstract reasoning test with ARC-style visual puzzles and server-side scoring.
                             </p>
+                            <Link
+                                href="/iq-test"
+                                className="mt-5 inline-flex text-sm font-semibold text-emerald-400 hover:text-emerald-300"
+                            >
+                                Open IQ Test
+                            </Link>
                         </div>
 
                         {/* Tool Card 2 */}

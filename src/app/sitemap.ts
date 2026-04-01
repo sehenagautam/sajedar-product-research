@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       lastModified: now
     },
+    {
+      url: `${base}/iq-test`,
+      priority: 0.7,
+      changeFrequency: 'monthly' as const,
+      lastModified: now
+    },
     { 
       url: `${base}/tutorials`, 
       priority: 0.9, 
