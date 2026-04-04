@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emblemvault/ask-ai": "^0.1.1",
     "@fontsource/dm-serif-display": "^5.2.6",
     "@fontsource/inter": "^5.2.6",
     "@tsparticles/react": "^3.0.0",
