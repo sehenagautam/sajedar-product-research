@@ -29,15 +29,15 @@ export function HeroSection() {
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
                 <span className="text-white" style={{ WebkitTextStroke: '2px #57534e' }}>
-                  Commission based
+                  Facebook Page
                 </span>{' '}
-                <span className="text-emerald-500">Facebook Page AI Sales Agent</span>
+                <span className="text-emerald-500">AI Sales Agent</span>
               </h1>
             </div>
 
             <p className="text-xl md:text-2xl mb-8 leading-relaxed text-[#44403c]">
               <br />
-              We put skin in the game. If we don’t generate measurable revenue, we don’t get paid.
+              Top AI Agent Builder in Nepal
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
