@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export const lattaKapadaCaseStudy = {
     slug: 'latta-kapada-case-study',
@@ -21,7 +22,7 @@ export const lattaKapadaCaseStudy = {
                         Tactical Pants Sales Agent
                     </h2>
                     <p className="text-lg text-[#57534e] max-w-3xl leading-relaxed">
-                        A Roman-Nepali speaking AI agent for Latta Kapada that drives tactical pants sales by collecting size details, delivery info, and securing advance payments.
+                        A Roman-Nepali speaking AI agent for Latta Kapada—engineered by the <Link href="/" className="text-emerald-700 hover:text-emerald-800 underline font-semibold">Top AI Agent Builder in Nepal</Link>—that drives tactical pants sales by collecting size details, delivery info, and securing advance payments.
                     </p>
                 </div>
 

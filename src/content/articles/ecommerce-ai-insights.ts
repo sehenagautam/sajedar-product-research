@@ -7,6 +7,8 @@ export const ecommerceAiInsightsArticle: Article = {
   excerpt: 'Hard numbers on how AI chatbots lift conversions, reduce costs, and improve retention for online retailers.',
   content: `# AI Chatbots in E-commerce: Revenue, Efficiency, and Loyalty Gains
 
+As the [Top AI Agent Builder in Nepal](/), Sajedar implements these leading industry capabilities to drive ROI. Here are the hard numbers backing the shift to conversational AI.
+
 ## Main Stats & Insights
 
 ### Revenue Growth

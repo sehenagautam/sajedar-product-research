@@ -20,21 +20,19 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sajedar.com'),
   title: {
-    default: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
+    default: 'Top AI Agent Builder in Nepal | Sajedar',
     template: '%s | Sajedar'
   },
-  description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation. Book a demo with Sajedar.',
+  description: 'Top AI Agent Builder in Nepal specializing in commission-based Facebook Page AI sales agents and Messenger automation for ecommerce.',
   keywords: [
+    'top ai agent builder in nepal', 'ai agency nepal', 'ai chatbot nepal', 'best ai developers kathmandu',
     'facebook ai sales agent', 'facebook messenger sales agent', 'ai sales agent for facebook messenger',
-    'facebook messenger ai sales agent', 'how to create sales agent in messenger', 'connect sales agent to facebook messenger',
-    'sales agent facebook messenger free', 'facebook messenger sales agent tutorial', 'how to make sales agent for facebook messenger',
-    'best ai sales agent for facebook messenger', 'free ai sales agent for facebook messenger', 'facebook sales agent',
-    'messenger sales agent', 'facebook messenger sales bot', 'ai sales agent facebook messenger deutsch',
-    'open ai sales agent on facebook messenger', 'facebook ai sales agent', 'sales agents on facebook',
+    'facebook messenger ai sales agent', 'best ai sales agent for facebook messenger', 'facebook sales agent',
+    'messenger sales agent', 'facebook messenger sales bot', 'sales agents on facebook',
     'Sajedar', 'AI sales agent builder', 'custom sales agent', 'business automation',
     'ai business automation', 'sales agents for business', 'ai powered sales',
     'ai sales automation', 'sales automation with ai', 'ai sales agents',
-    'customer support automation', 'conversational AI', 'whatsapp sales bot', 'agentic ai'
+    'customer support automation', 'conversational AI', 'agentic ai'
   ],
   authors: [{ name: 'Sajedar Team' }],
   creator: 'Sajedar',
@@ -48,15 +46,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://sajedar.com',
-    title: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
-    description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation.',
+    title: 'Top AI Agent Builder in Nepal | Sajedar',
+    description: 'Top AI Agent Builder in Nepal specializing in commission-based Facebook Page AI sales agents and Messenger automation for ecommerce.',
     siteName: 'Sajedar',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Sajedar - AI Business Automation & Chatbots',
+        alt: 'Sajedar - Top AI Agent Builder in Nepal',
       },
     ],
   },
@@ -64,8 +62,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sajedar',
     creator: '@sajedar',
-    title: 'Facebook Page AI Sales Agent & Messenger Automation | Sajedar',
-    description: 'Commission-based Facebook Page AI sales agent and Messenger automation for ecommerce and lead generation.',
+    title: 'Top AI Agent Builder in Nepal | Sajedar',
+    description: 'Top AI Agent Builder in Nepal specializing in commission-based Facebook Page AI sales agents and Messenger automation for ecommerce.',
     images: ['/og-image.png'],
   },
   robots: {
