@@ -30,7 +30,8 @@ export function HeroSection() {
               >
                 <span className="text-white" style={{ WebkitTextStroke: '2px #57534e' }}>
                   Facebook Page
-                </span>{' '}
+                </span>
+                <br />
                 <span className="text-emerald-500">AI Sales Agent</span>
               </h1>
             </div>
@@ -46,12 +47,6 @@ export function HeroSection() {
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
                 Hire AI Sales Agent
-              </Link>
-              <Link
-                href="/demo"
-                className="px-8 py-4 bg-black/5 hover:bg-black/10 text-[#44403c] font-bold rounded-lg transition-colors duration-200 text-center border border-black/10"
-              >
-                Live Demos
               </Link>
             </div>
 
