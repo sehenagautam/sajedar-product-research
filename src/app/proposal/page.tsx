@@ -155,7 +155,7 @@ export default function ProposalPage() {
                     <p className="text-sm text-[#44403c]">Rs 4,000 <span className="text-[#a8a29e]">- charged after trial only</span></p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Conversation</p>
+                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
                     <p className="text-sm text-[#44403c]">Rs 3<span className="text-[#a8a29e]">- subject to future adjustment</span></p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function ProposalPage() {
                     <p className="text-sm text-[#44403c]">Rs 8,000 <span className="text-[#a8a29e]">- charged after trial only</span></p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Conversation</p>
+                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
                     <p className="text-sm text-[#44403c]">Rs 4<span className="text-[#a8a29e]">- subject to future adjustment</span></p>
                   </div>
                 </div>
@@ -221,7 +221,7 @@ export default function ProposalPage() {
                     <p className="text-sm text-[#44403c]">Rs 50,000 <span className="text-[#a8a29e]">- charged after trial only</span></p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Conversation</p>
+                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
                     <p className="text-sm text-[#44403c]">Rs 5 <span className="text-[#a8a29e]">- subject to future adjustment</span></p>
                   </div>
                   <div>
