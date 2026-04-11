@@ -5,7 +5,7 @@ export function TestimonialsSection() {
     {
       id: 0,
       name: "Rohit Bista",
-      company: "Latta Kapada",
+      company: "Mero Kapada",
       role: "Owner",
       quote: "The agent handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
       profilePic: "/lattakapada.webp",
@@ -14,7 +14,7 @@ export function TestimonialsSection() {
     {
       id: 1,
       name: "Lakshmi Pokharel",
-      company: "Ashwi",
+      company: "Ashok Furniture",
       role: "Owner",
       quote: "Agent implementation has provided us with a stable way to generate new demand for our furniture. We can quickly test demand for new furniture designs with its help. I am impressed.",
       profilePic: "/Ashwi.webp",
