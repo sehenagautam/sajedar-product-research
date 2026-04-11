@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-    title: 'Nepal Retail AI Sales Agent Services',
-    description: 'Local AI sales agent automation for Nepali retailers. Stop losing customers on Facebook & Instagram while you sleep.',
+    title: 'Top AI Agent Builder in Nepal | Retail Sales Agent Services',
+    description: 'Local AI sales agent automation for Nepali retailers from the Top AI Agent Builder in Nepal. Stop losing customers on Facebook & Instagram while you sleep.',
     alternates: { canonical: '/nepal-retail-chatbot-services' },
 };
 
@@ -13,8 +13,8 @@ export default function NepalRetailChatbotPage() {
         <AgencySeoPage
             currentPath="/nepal-retail-chatbot-services"
             eyebrow="Local Retail Automation"
-            title="Automate Your Retail Business in Nepal"
-            subtitle="Stop losing customers because your team is asleep or too busy to reply. Get a custom AI chatbot that speaks to your Nepali customers 24/7 on Facebook Messenger and WhatsApp."
+            title="The Top AI Agent Builder in Nepal"
+            subtitle="Stop losing customers because your team is asleep or too busy to reply. Partner with the Top AI Agent Builder in Nepal to get a custom AI chatbot that speaks to your Nepali customers 24/7 on Facebook Messenger and WhatsApp."
             expectedOutcomes={[
                 {
                     metric: '24/7',

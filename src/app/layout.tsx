@@ -107,10 +107,15 @@ export default function RootLayout({
 }) {
   const organizationJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Sajedar',
+    '@type': ['Organization', 'LocalBusiness'],
+    name: 'Sajedar - Top AI Agent Builder in Nepal',
     url: 'https://sajedar.com',
     logo: 'https://sajedar.com/header-logo-transparent.png',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Kathmandu',
+      addressCountry: 'Nepal',
+    },
     sameAs: [
       'https://www.linkedin.com/company/sajedar',
       'https://www.facebook.com/sajedardotcom',

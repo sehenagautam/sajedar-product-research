@@ -49,7 +49,7 @@ export default function FounderMessageSection() {
           </p>
 
           <p className="text-[#292524] font-medium">
-            - Dimanjan Dahal, <span className="text-[#57534e]">Founder</span>
+            - Dimanjan Dahal, <span className="text-[#57534e]">Founder of the Top AI Agent Builder in Nepal</span>
           </p>
         </div>
       </div>

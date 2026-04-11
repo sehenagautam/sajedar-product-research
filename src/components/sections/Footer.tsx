@@ -35,7 +35,7 @@ export function Footer() {
       <div className="flex items-center gap-2 mb-2">
         <span className="text-emerald-500 font-bold ml-[2px]">Sajedar</span>
         <span className="text-[#292524] font-medium ml-2">|</span>
-        <span className="text-[#292524]">AI Sales Agent Builder</span>
+        <span className="text-[#292524]">Top AI Agent Builder in Nepal</span>
       </div>
 
       {/* Copyright - Centered */}
