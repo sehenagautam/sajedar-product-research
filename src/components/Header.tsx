@@ -50,13 +50,6 @@ const Header: React.FC = () => {
                 About Us
               </Link>
               <Link
-                href="/stores"
-                className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
-                style={{ fontFamily: 'Inter, Arial, sans-serif' }}
-              >
-                Partner Stores
-              </Link>
-              <Link
                 href="/career"
                 className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
                 style={{ fontFamily: 'Inter, Arial, sans-serif' }}
@@ -68,7 +61,7 @@ const Header: React.FC = () => {
 
           {/* Right Section: Download Button */}
           <Link
-            href="/proposal"
+            href="/pricing"
             className="px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 text-white text-xs sm:text-sm md:text-base font-semibold rounded-lg transition-colors duration-200 flex items-center gap-1 sm:gap-2 cursor-pointer hover:opacity-90 flex-shrink-0 whitespace-nowrap"
             style={{
               fontFamily: 'Inter, Arial, sans-serif',

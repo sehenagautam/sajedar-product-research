@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
-      url: `${base}/proposal`,
+      url: `${base}/pricing`,
       priority: 0.9,
       changeFrequency: 'weekly' as const,
       lastModified: now

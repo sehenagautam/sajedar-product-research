@@ -4,7 +4,7 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       id: 0,
-      name: "RJ Manandhar",
+      name: "Rohit Bista",
       company: "Latta Kapada",
       role: "Owner",
       quote: "The agent handles everything — from showing product details to collecting addresses and advance payments. Customers love how smooth the experience is, and I get notified instantly for every order.",
@@ -13,7 +13,7 @@ export function TestimonialsSection() {
     },
     {
       id: 1,
-      name: "Lakshman Paudel",
+      name: "Lakshmi Pokharel",
       company: "Ashwi",
       role: "Owner",
       quote: "Agent implementation has provided us with a stable way to generate new demand for our furniture. We can quickly test demand for new furniture designs with its help. I am impressed.",
@@ -22,8 +22,8 @@ export function TestimonialsSection() {
     },
     {
       id: 2,
-      name: "Prakash Maharjan",
-      company: "Osha Clothing & Apparels",
+      name: "Prem Manandhar",
+      company: "Misha Clothing & Apparels",
       role: "Owner",
       quote: "We had previously abandoned the idea of boosting on facebook because we would have no time and capacity to respond to leads. Agent makes that fear irrelevant.",
       profilePic: "/osha.webp",

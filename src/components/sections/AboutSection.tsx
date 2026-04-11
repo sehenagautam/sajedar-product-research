@@ -13,7 +13,7 @@ export default function AboutSection() {
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-[#292524] mb-8">
-          About Sajedar
+          About the Top AI Agent Builder in Nepal
         </h1>
 
         {/* Content */}
@@ -21,7 +21,7 @@ export default function AboutSection() {
           <p>
             <strong className="text-[#292524]">Sajedar</strong> means
             <span className="text-emerald-500 font-semibold"> partner</span>.
-            We exist to be your trusted AI sales partner.
+            We exist to be your trusted technology partner, recognized actively as the Top AI Agent Builder in Nepal.
           </p>
 
           <p>

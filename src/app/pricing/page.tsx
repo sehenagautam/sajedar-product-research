@@ -6,7 +6,7 @@ import { TrackEventOnMount } from '../../components/analytics/TrackEventOnMount'
 export const metadata: Metadata = {
   title: 'Service Plans & Pricing - Sajedar',
   description: 'Transparent pricing for AI-powered Facebook Messenger sales agents. Commission-based and standardized plans with free trials.',
-  alternates: { canonical: '/proposal' },
+  alternates: { canonical: '/pricing' },
 };
 
 function daysUntil(dateStr: string): number {
@@ -22,7 +22,7 @@ export default function ProposalPage() {
 
   return (
     <div className="min-h-screen w-full bg-[#fafaf9] font-sans text-[#44403c]" style={{ fontSize: '16px' }}>
-      <TrackEventOnMount eventName="proposal_view" params={{ source_page: '/proposal' }} />
+      <TrackEventOnMount eventName="proposal_view" params={{ source_page: '/pricing' }} />
 
       {/* Header */}
       <header className="w-full border-b border-stone-200 bg-[#fafaf9]">

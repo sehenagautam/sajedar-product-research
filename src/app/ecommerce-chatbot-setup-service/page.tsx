@@ -66,7 +66,7 @@ export default function EcommerceChatbotSetupServicePage() {
             Start with the proposal route to select the right model for your funnel stage.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/proposal" className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 font-semibold">See Proposal Options</Link>
+            <Link href="/pricing" className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 font-semibold">See Proposal Options</Link>
             <Link href="/messenger-marketing-agency" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold">Messenger Marketing Agency</Link>
             <Link href="/abandoned-cart-messenger-automation" className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 font-semibold">Abandoned Cart Automation</Link>
           </div>

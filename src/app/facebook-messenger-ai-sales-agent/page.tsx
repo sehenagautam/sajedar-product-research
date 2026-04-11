@@ -21,7 +21,7 @@ export default function FacebookMessengerAiSalesAgentPage() {
       primaryCtaText="Get a demo"
       primaryCtaHref="/contact?source=facebook-messenger-ai-sales-agent"
       secondaryCtaText="Get proposal"
-      secondaryCtaHref="/proposal"
+      secondaryCtaHref="/pricing"
     />
   );
 }

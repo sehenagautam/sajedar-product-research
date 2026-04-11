@@ -229,7 +229,7 @@ export default function ChatbotAutomationAgencyPage() {
           <div className="mt-5 flex flex-wrap gap-3">
             <Link href="/facebook-page-ai-sales-agent" className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 rounded-lg font-semibold">Facebook Page AI Sales Agent</Link>
             <Link href="/messenger-ecommerce-automation" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Messenger Ecommerce Automation</Link>
-            <Link href="/proposal" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Get Proposal</Link>
+            <Link href="/pricing" className="px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg font-semibold">Get Proposal</Link>
           </div>
         </div>
       </section>

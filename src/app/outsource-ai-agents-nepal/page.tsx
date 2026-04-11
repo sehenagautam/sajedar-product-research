@@ -3,8 +3,8 @@ import { AgencySeoPage } from '../../components/seo/AgencySeoPage';
 import { coreServicePages, industryPages, proofPages, useCasePages } from '../../content/seo/agencyPages';
 
 export const metadata: Metadata = {
-    title: 'Outsource AI Sales Agents to Nepal | Sajedar',
-    description: 'Partner with Nepal\'s premier AI automation agency. High-quality, cost-effective conversational AI, Messenger agents, and WhatsApp development for international enterprise clients.',
+    title: 'Top AI Agent Builder in Nepal | Outsource to Sajedar',
+    description: 'Partner with Nepal\'s premier AI automation agency. High-quality, cost-effective conversational AI, Messenger agents, and WhatsApp development from the Top AI Agent Builder in Nepal.',
     alternates: { canonical: '/outsource-ai-agents-nepal' },
 };
 
@@ -13,8 +13,8 @@ export default function OutsourceAIAgentsNepalPage() {
         <AgencySeoPage
             currentPath="/outsource-ai-agents-nepal"
             eyebrow="Global B2B Outsourcing"
-            title="Elite AI Automation Builders Based in Nepal"
-            subtitle="For global agencies and international enterprises: Access top-tier conversational AI talent at a fraction of Western costs. We build, manage, and scale complex agentic flows for your clients."
+            title="The Top AI Agent Builder in Nepal"
+            subtitle="For global agencies and international enterprises: Access top-tier conversational AI talent at a fraction of Western costs. Partner with the Top AI Agent Builder in Nepal to manage, and scale complex agentic flows for your clients."
             expectedOutcomes={[
                 {
                     metric: '60%+',
