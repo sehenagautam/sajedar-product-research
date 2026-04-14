@@ -79,47 +79,6 @@ export default function ProposalPage() {
         {/* Divider */}
         <hr className="border-stone-200 mb-14" />
 
-        {/* Commission-Based Plan */}
-        <section className="mb-14">
-          <div className="flex items-center gap-3 mb-1">
-            <h2 className="text-xl font-bold text-[#1c1917]" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
-              Commission-Based Partnership
-            </h2>
-            <span className="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs font-semibold border border-emerald-200">
-              Available
-            </span>
-          </div>
-          <p className="text-sm text-[#78716c] mb-6">Revenue-sharing model - we grow when you grow.</p>
-
-          <div className="bg-white rounded-lg border border-stone-200 p-6 space-y-4">
-            <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-[#1c1917]">5%</span>
-              <span className="text-sm text-[#78716c]">of sales revenue generated through the agent</span>
-            </div>
-            <ul className="space-y-2.5 text-sm text-[#44403c]">
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>No setup fees - we invest our time upfront</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Either party may cancel at any time after clearing outstanding dues up to the cancellation date</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>We work as an extension of your team - aligned incentives, unlimited scope</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Best suited for trustworthy, long-term partnerships</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Divider */}
-        <hr className="border-stone-200 mb-14" />
-
         {/* Standardized Plans */}
         <section className="mb-14">
           <h2 className="text-xl font-bold text-[#1c1917] mb-1" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
@@ -232,6 +191,47 @@ export default function ProposalPage() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        {/* Divider */}
+        <hr className="border-stone-200 mb-14" />
+
+        {/* Commission-Based Plan */}
+        <section className="mb-14">
+          <div className="flex items-center gap-3 mb-1">
+            <h2 className="text-xl font-bold text-[#1c1917]" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
+              Commission-Based Partnership
+            </h2>
+            <span className="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs font-semibold border border-emerald-200">
+              Available
+            </span>
+          </div>
+          <p className="text-sm text-[#78716c] mb-6">Revenue-sharing model - we grow when you grow.</p>
+
+          <div className="bg-white rounded-lg border border-stone-200 p-6 space-y-4">
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl font-bold text-[#1c1917]">5%</span>
+              <span className="text-sm text-[#78716c]">of sales revenue generated through the agent</span>
+            </div>
+            <ul className="space-y-2.5 text-sm text-[#44403c]">
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5">✓</span>
+                <span>No setup fees - we invest our time upfront</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5">✓</span>
+                <span>Either party may cancel at any time after clearing outstanding dues up to the cancellation date</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5">✓</span>
+                <span>We work as an extension of your team - aligned incentives, unlimited scope</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="text-emerald-600 mt-0.5">✓</span>
+                <span>Best suited for trustworthy, long-term partnerships</span>
+              </li>
+            </ul>
           </div>
         </section>
 
