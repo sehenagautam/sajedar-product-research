@@ -18,7 +18,6 @@ import {
   IntelligentProfilingSection,
   AIAsASalesman,
   PartnershipsSection,
-  TestimonialsSection,
   KeyFeaturesSection,
   IntegrationSection,
   FounderMessageSection, // ✅ IMPORTANT
@@ -80,8 +79,7 @@ export default function Home() {
 
 
 
-      {/* Testimonials */}
-      <TestimonialsSection />
+
 
       {/* Partnerships */}
       <PartnershipsSection />

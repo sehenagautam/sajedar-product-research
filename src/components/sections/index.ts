@@ -22,7 +22,6 @@ export { N8nWorkflowSection } from './N8nWorkflowSection';
 export { FAQSection } from './FAQSection';
 export { ContactSection } from './ContactSection';
 export { Footer } from './Footer';
-export { TestimonialsSection } from './TestimonialsSection';
 export { PartnershipsSection } from './PartnershipsSection';
 export { KeyFeaturesSection } from './KeyFeaturesSection';
 export { IntegrationSection } from './IntegrationSection';
