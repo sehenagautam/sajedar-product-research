@@ -54,7 +54,7 @@ export function HeroSection() {
                 href="/demo-request"
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
-                Hire AI Sales Agent
+                Request Demo
               </Link>
             </div>
 
