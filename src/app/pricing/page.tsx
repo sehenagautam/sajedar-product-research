@@ -115,7 +115,11 @@ export default function ProposalPage() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 3<span className="text-[#a8a29e]">- subject to future adjustment</span></p>
+                    <p className="text-sm text-[#44403c]">Rs 2 <span className="text-[#a8a29e]">- subject to future adjustment</span></p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Product Change Cost</p>
+                    <p className="text-sm text-[#44403c]">Rs 500 <span className="text-[#a8a29e]">per product change</span></p>
                   </div>
                 </div>
               </div>
