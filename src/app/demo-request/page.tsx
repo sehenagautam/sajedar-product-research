@@ -31,12 +31,92 @@ declare global {
 const SUPABASE_URL = 'https://ibgfepyfkdfopcngeoyb.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_L2kzlmU774TDNxEIJo_9yg_F8cbRsFe';
 
+const PROFANITY_TERMS = [
+  'arse',
+  'asshole',
+  'bastard',
+  'bitch',
+  'bollocks',
+  'bullshit',
+  'chutiya',
+  'cunt',
+  'dick',
+  'fuck',
+  'fucker',
+  'fucking',
+  'gandu',
+  'harami',
+  'kukur',
+  'loda',
+  'madarchod',
+  'motherfucker',
+  'nigga',
+  'nigger',
+  'porn',
+  'pussy',
+  'randi',
+  'shit',
+  'slut',
+  'whore',
+];
+
+const PROFANITY_PATTERNS = PROFANITY_TERMS.map((term) => ({
+  term,
+  compact: term.replace(/[^a-z0-9]/g, ''),
+  spaced: new RegExp(`\\b${term.split('').map((char) => `${char}+`).join('[\\W_]*')}\\b`, 'i'),
+}));
+
+type TextFieldName = 'businessName' | 'businessDetails' | 'productName' | 'price' | 'features' | 'contact';
+type ProfanityErrors = Partial<Record<TextFieldName, string>>;
+
+const FIELD_LABELS: Record<TextFieldName, string> = {
+  businessName: 'Business Name',
+  businessDetails: 'Business Details',
+  productName: 'Product Name',
+  price: 'Price',
+  features: 'Product Features',
+  contact: 'Contact',
+};
+
+function normalizeForProfanity(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[0@]/g, 'o')
+    .replace(/[1!|]/g, 'i')
+    .replace(/[3]/g, 'e')
+    .replace(/[4]/g, 'a')
+    .replace(/[5$]/g, 's')
+    .replace(/[7]/g, 't')
+    .replace(/(.)\1{2,}/g, '$1$1');
+}
+
+function containsProfanity(value: string): boolean {
+  const normalized = normalizeForProfanity(value);
+  const compact = normalized.replace(/[^a-z0-9]/g, '');
+
+  return PROFANITY_PATTERNS.some(({ compact: term, spaced }) => (
+    compact.includes(term) || spaced.test(normalized)
+  ));
+}
+
+function validateProfanity(fields: Record<TextFieldName, string>): ProfanityErrors {
+  return (Object.keys(fields) as TextFieldName[]).reduce<ProfanityErrors>((errors, fieldName) => {
+    if (containsProfanity(fields[fieldName])) {
+      errors[fieldName] = `${FIELD_LABELS[fieldName]} contains language we cannot accept. Please revise it.`;
+    }
+    return errors;
+  }, {});
+}
+
 export default function DemoRequestPage() {
   const [supabaseClient, setSupabaseClient] = useState<ReturnType<NonNullable<typeof window.supabase>['createClient']> | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [profanityErrors, setProfanityErrors] = useState<ProfanityErrors>({});
   const [businessName, setBusinessName] = useState('');
   const [businessDetails, setBusinessDetails] = useState('');
   const [productName, setProductName] = useState('');
@@ -46,6 +126,18 @@ export default function DemoRequestPage() {
   const [img1, setImg1] = useState<File | null>(null);
   const [img2, setImg2] = useState<File | null>(null);
   const [qr, setQr] = useState<File | null>(null);
+
+  const clearFieldFeedback = (fieldName: TextFieldName) => {
+    setIsSubmitted(false);
+    setSuccessMessage('');
+    setErrorMessage('');
+    setProfanityErrors((currentErrors) => {
+      if (!currentErrors[fieldName]) return currentErrors;
+      const nextErrors = { ...currentErrors };
+      delete nextErrors[fieldName];
+      return nextErrors;
+    });
+  };
 
   const optimizeImage = async (file: File | null, label: string): Promise<Blob | null> => {
     if (!file) return null;
@@ -125,6 +217,23 @@ export default function DemoRequestPage() {
     }
     if (SUPABASE_URL.includes('your-project-url')) {
       alert('Supabase URL is still a placeholder. Replace SUPABASE_URL in src/app/demo-request/page.tsx with your real project URL.');
+      return;
+    }
+
+    const textFields = {
+      businessName,
+      businessDetails,
+      productName,
+      price,
+      features,
+      contact,
+    };
+    const nextProfanityErrors = validateProfanity(textFields);
+    if (Object.keys(nextProfanityErrors).length > 0) {
+      setProfanityErrors(nextProfanityErrors);
+      setIsSubmitted(false);
+      setSuccessMessage('');
+      setErrorMessage('Please remove inappropriate language from the highlighted fields before submitting.');
       return;
     }
 
@@ -249,12 +358,15 @@ export default function DemoRequestPage() {
                 value={businessName}
                 onChange={(e) => {
                   setBusinessName(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('businessName');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.businessName)}
+                aria-describedby={profanityErrors.businessName ? 'businessName-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.businessName ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.businessName ? (
+                <p id="businessName-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.businessName}</p>
+              ) : null}
             </div>
 
             <div>
@@ -265,12 +377,15 @@ export default function DemoRequestPage() {
                 value={businessDetails}
                 onChange={(e) => {
                   setBusinessDetails(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('businessDetails');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.businessDetails)}
+                aria-describedby={profanityErrors.businessDetails ? 'businessDetails-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.businessDetails ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.businessDetails ? (
+                <p id="businessDetails-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.businessDetails}</p>
+              ) : null}
             </div>
 
             <div>
@@ -281,12 +396,15 @@ export default function DemoRequestPage() {
                 value={productName}
                 onChange={(e) => {
                   setProductName(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('productName');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.productName)}
+                aria-describedby={profanityErrors.productName ? 'productName-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.productName ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.productName ? (
+                <p id="productName-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.productName}</p>
+              ) : null}
             </div>
 
             <div>
@@ -297,12 +415,15 @@ export default function DemoRequestPage() {
                 value={price}
                 onChange={(e) => {
                   setPrice(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('price');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.price)}
+                aria-describedby={profanityErrors.price ? 'price-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.price ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.price ? (
+                <p id="price-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.price}</p>
+              ) : null}
             </div>
 
             <div>
@@ -334,12 +455,15 @@ export default function DemoRequestPage() {
                 value={features}
                 onChange={(e) => {
                   setFeatures(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('features');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.features)}
+                aria-describedby={profanityErrors.features ? 'features-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.features ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.features ? (
+                <p id="features-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.features}</p>
+              ) : null}
             </div>
 
             <div>
@@ -360,12 +484,15 @@ export default function DemoRequestPage() {
                 value={contact}
                 onChange={(e) => {
                   setContact(e.target.value);
-                  setIsSubmitted(false);
-                  setSuccessMessage('');
-                  setErrorMessage('');
+                  clearFieldFeedback('contact');
                 }}
-                className="w-full border border-stone-300 rounded-md px-3 py-2 bg-white"
+                aria-invalid={Boolean(profanityErrors.contact)}
+                aria-describedby={profanityErrors.contact ? 'contact-error' : undefined}
+                className={`w-full border rounded-md px-3 py-2 bg-white ${profanityErrors.contact ? 'border-red-400 focus:outline-red-500' : 'border-stone-300'}`}
               />
+              {profanityErrors.contact ? (
+                <p id="contact-error" className="mt-1 text-sm font-medium text-red-600">{profanityErrors.contact}</p>
+              ) : null}
             </div>
 
             <button
