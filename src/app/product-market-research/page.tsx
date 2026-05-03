@@ -72,6 +72,12 @@ const packages = [
     includes: ['Demand signal check', 'Basic competitor scan', 'Price range notes', 'Go / improve / avoid recommendation'],
   },
   {
+    name: 'Product Discovery Research',
+    price: 'Rs 5000',
+    description: 'Best when you know the customer or category, but not the exact product to sell.',
+    includes: ['5 to 8 product opportunity ideas', 'Demand and trend signal scan', 'Competitor whitespace notes', 'Top 3 product shortlist with next steps'],
+  },
+  {
     name: 'Market Research Report',
     price: 'Rs 7000',
     description: 'Best before buying inventory or planning ads.',
@@ -188,7 +194,7 @@ export default function ProductMarketResearchPage() {
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">Pricing</p>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#1c1917]">Choose the depth based on your risk.</h2>
             </div>
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {packages.map((pkg) => (
                 <div key={pkg.name} className="rounded-lg border border-stone-200 bg-[#fafaf9] p-6">
                   <h3 className="text-lg font-bold text-[#1c1917]">{pkg.name}</h3>
