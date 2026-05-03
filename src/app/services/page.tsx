@@ -62,7 +62,7 @@ const services = [
   },
   {
     title: 'Social Media Graphics',
-    href: '/contact?message=I%20am%20interested%20in%20social%20media%20graphics%20for%20my%20business.',
+    href: '/social-media-graphics',
     price: 'Rs 200 per graphic',
     description: 'Branded graphics for posts, offers, product announcements, and daily social media marketing.',
     icon: ImageIcon,
