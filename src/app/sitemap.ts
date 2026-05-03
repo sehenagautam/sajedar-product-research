@@ -34,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
+      url: `${base}/product-market-research`,
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
       url: `${base}/motionmandu`,
       priority: 0.9,
       changeFrequency: 'weekly' as const,

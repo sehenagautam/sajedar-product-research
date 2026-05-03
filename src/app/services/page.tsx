@@ -55,8 +55,8 @@ const services = [
   },
   {
     title: 'Product Market Research',
-    href: '/contact?message=I%20am%20interested%20in%20product%20market%20research%20for%20my%20business.',
-    price: 'Contact for scope',
+    href: '/product-market-research',
+    price: 'Starts at Rs 3000',
     description: 'Research support to understand demand, competitors, positioning, and market fit before launching or scaling a product.',
     icon: SearchCheck,
   },
