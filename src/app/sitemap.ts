@@ -34,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
+      url: `${base}/meta-ads`,
+      priority: 0.92,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
       url: `${base}/about`,
       priority: 0.75,
       changeFrequency: 'monthly' as const,
