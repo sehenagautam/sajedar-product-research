@@ -1,16 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Bot, Clapperboard, Code2, Megaphone, MessageCircle, UsersRound } from 'lucide-react';
+import { ArrowRight, Bot, Clapperboard, Code2, Megaphone, MessageCircle, SearchCheck, UsersRound } from 'lucide-react';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'Services for Nepali Businesses',
-  description: 'Explore Sajedar services for Nepali businesses: AI sales agents, AI videos, Meta ads, custom CRM, and business websites.',
+  description: 'Explore Sajedar services for Nepali businesses: AI sales agents, AI videos, Meta ads, custom CRM, business websites, and product market research.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'Sajedar Services',
-    description: 'AI, ads, CRM, video, and website services for Nepali businesses.',
+    description: 'AI, ads, CRM, video, website, and product market research services for Nepali businesses.',
     url: 'https://sajedar.com/services',
     siteName: 'Sajedar',
     type: 'website',
@@ -53,6 +53,13 @@ const services = [
     description: 'High quality frontend website with Discord order notifications and Sajedar subdomain hosting.',
     icon: Code2,
   },
+  {
+    title: 'Product Market Research',
+    href: '/contact?message=I%20am%20interested%20in%20product%20market%20research%20for%20my%20business.',
+    price: 'Contact for scope',
+    description: 'Research support to understand demand, competitors, positioning, and market fit before launching or scaling a product.',
+    icon: SearchCheck,
+  },
 ];
 
 const whatsappMessage = encodeURIComponent(
@@ -74,7 +81,7 @@ export default function ServicesPage() {
                   Services for Nepali businesses selling online.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-[#57534e] md:text-lg">
-                  Choose from AI sales agents, AI videos, Meta ads planning, custom CRM systems, and affordable business websites.
+                  Choose from AI sales agents, AI videos, Meta ads planning, custom CRM systems, affordable business websites, and product market research.
                 </p>
               </div>
               <a
