@@ -6,7 +6,7 @@ import { Footer } from '../../components/sections/Footer';
 
 export const metadata: Metadata = {
   title: 'Custom CRM Nepal for Social Media Businesses',
-  description: 'Custom CRM for Nepali businesses that sell through Facebook, Instagram, WhatsApp, and social media. Setup starts at Rs 10,000 with Rs 0.2 per customer managed.',
+  description: 'Custom CRM for Nepali businesses that sell through Facebook, Instagram, WhatsApp, and social media. Setup starts at Rs 10,000 with Rs 0.1 per customer per month.',
   keywords: [
     'custom crm nepal',
     'crm for nepali business',
@@ -141,8 +141,8 @@ export default function CrmPage() {
                 </div>
                 <div className="rounded-lg border border-stone-200 bg-white p-5">
                   <p className="text-sm font-semibold text-[#78716c]">Running cost</p>
-                  <p className="mt-2 text-4xl font-black text-[#1c1917]">Rs 0.2</p>
-                  <p className="mt-2 text-sm font-medium text-[#57534e]">per customer managed</p>
+                  <p className="mt-2 text-4xl font-black text-[#1c1917]">Rs 0.1</p>
+                  <p className="mt-2 text-sm font-medium text-[#57534e]">per customer per month</p>
                 </div>
               </div>
               <p className="mt-5 text-sm leading-7 text-[#57534e]">
@@ -234,7 +234,7 @@ export default function CrmPage() {
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Custom CRM for Nepal</p>
               <h2 className="mt-2 text-2xl font-bold text-[#1c1917]">Ready to manage customers properly?</h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-[#57534e]">
-                Setup starts at Rs 10,000, with Rs 0.2 per customer managed. Share your business flow and we will plan the CRM structure with you.
+                Setup starts at Rs 10,000, with Rs 0.1 per customer per month. Share your business flow and we will plan the CRM structure with you.
               </p>
             </div>
             <a

@@ -42,7 +42,7 @@ const services = [
   {
     title: 'Custom CRM',
     href: '/crm',
-    price: 'Rs 10,000 setup + Rs 0.2/customer',
+    price: 'Rs 10,000 setup + Rs 0.1/customer/month',
     description: 'Custom CRM for businesses that sell through Facebook, Instagram, WhatsApp, and social media.',
     icon: UsersRound,
   },
