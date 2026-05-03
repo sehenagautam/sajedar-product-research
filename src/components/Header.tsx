@@ -43,6 +43,13 @@ const Header: React.FC = () => {
             {/* Navigation Links - Hidden on very small screens */}
             <nav className="hidden sm:flex items-center space-x-4 md:space-x-6">
               <Link
+                href="/services"
+                className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
+                style={{ fontFamily: 'Inter, Arial, sans-serif' }}
+              >
+                Services
+              </Link>
+              <Link
                 href="/about"
                 className="text-xs sm:text-sm font-medium text-[#292524] hover:text-emerald-500 transition-colors duration-200 whitespace-nowrap"
                 style={{ fontFamily: 'Inter, Arial, sans-serif' }}

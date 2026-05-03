@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
+      url: `${base}/services`,
+      priority: 0.95,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
       url: `${base}/motionmandu`,
       priority: 0.9,
       changeFrequency: 'weekly' as const,
