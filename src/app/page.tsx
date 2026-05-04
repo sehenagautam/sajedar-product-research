@@ -349,38 +349,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-b border-stone-200 bg-white">
-          <div className="mx-auto grid max-w-7xl gap-8 px-6 py-16 md:grid-cols-[0.8fr_1.2fr] lg:px-8">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">Full setup, one partner</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-[#1c1917] md:text-5xl">
-                Not just a website. Not just ads. The operating layer.
-              </h2>
-              <p className="mt-5 text-base leading-8 text-[#57534e]">
-                Most online businesses in Nepal start with social media. Sajedar gives that business a proper system around it: discovery, content, website, CRM, advertising, automation, and follow-up.
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {setupSteps.map((step, index) => {
-                const Icon = step.icon;
-
-                return (
-                  <div key={step.title} className="rounded-lg border border-stone-200 bg-[#fafaf9] p-5">
-                    <div className="flex items-center justify-between gap-4">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
-                        <Icon className="h-5 w-5" aria-hidden="true" />
-                      </div>
-                      <span className="text-sm font-black text-stone-300">0{index + 1}</span>
-                    </div>
-                    <h3 className="mt-5 text-lg font-black text-[#1c1917]">{step.title}</h3>
-                    <p className="mt-3 text-sm leading-7 text-[#57534e]">{step.copy}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         <section id="services-pipeline" className="relative overflow-hidden bg-[#f5f5f7] px-5 py-16 text-[#1d1d1f] md:px-10 lg:px-14">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_-12%,rgba(255,255,255,1),rgba(245,245,247,0)_44%)]" />
           <div className="pointer-events-none absolute left-1/2 top-20 h-[620px] w-[900px] -translate-x-1/2 rounded-full bg-white/55 blur-3xl" />
@@ -450,6 +418,92 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden bg-[#07130f] px-5 py-16 text-white md:px-10 lg:px-14">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(16,185,129,0.24),transparent_42%)]" />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[720px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/10" />
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/15" />
+
+          <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="inline-flex rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-emerald-200">
+                Full setup, one partner
+              </p>
+              <h2 className="mt-5 max-w-3xl text-4xl font-black leading-none tracking-tight text-white md:text-6xl">
+                One operating layer for online business.
+              </h2>
+              <p className="mt-5 max-w-xl text-base font-semibold leading-8 text-emerald-50/70">
+                Research, website, CRM, creative, ads, and AI sales connected under Sajedar.
+              </p>
+            </div>
+
+            <div className="relative md:min-h-[560px]">
+              <div className="mx-auto mb-5 flex h-44 w-44 flex-col items-center justify-center rounded-[2rem] border border-white/15 bg-white text-center text-[#07130f] shadow-[0_34px_100px_rgba(0,0,0,0.45)] md:hidden">
+                <Sparkles className="h-8 w-8 text-emerald-600" aria-hidden="true" />
+                <p className="mt-3 text-2xl font-black tracking-tight">Sajedar</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">setup core</p>
+              </div>
+
+              <div className="grid gap-3 md:hidden">
+                {setupSteps.map((step, index) => {
+                  const Icon = step.icon;
+
+                  return (
+                    <div key={step.title} className="rounded-[1.35rem] border border-white/12 bg-white/[0.08] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-2xl">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-300 text-[#07130f] shadow-[0_14px_34px_rgba(16,185,129,0.28)]">
+                          <Icon className="h-6 w-6" aria-hidden="true" />
+                        </div>
+                        <div>
+                          <p className="text-xs font-black text-emerald-200">0{index + 1}</p>
+                          <h3 className="text-base font-black leading-5 text-white">{step.title}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="absolute left-1/2 top-1/2 hidden h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/20 blur-3xl md:block" />
+              <div className="absolute left-1/2 top-1/2 hidden h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-200/20 bg-white/[0.04] shadow-[0_0_100px_rgba(16,185,129,0.18)] backdrop-blur-xl md:block" />
+              <div className="absolute left-1/2 top-1/2 hidden h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[2rem] border border-white/15 bg-white text-center text-[#07130f] shadow-[0_34px_100px_rgba(0,0,0,0.45)] md:flex">
+                <Sparkles className="h-8 w-8 text-emerald-600" aria-hidden="true" />
+                <p className="mt-3 text-2xl font-black tracking-tight">Sajedar</p>
+                <p className="mt-1 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">setup core</p>
+              </div>
+
+              <div className="absolute left-1/2 top-1/2 hidden h-px w-[82%] -translate-x-1/2 bg-gradient-to-r from-transparent via-emerald-300/55 to-transparent md:block" />
+              <div className="absolute left-1/2 top-1/2 hidden h-[82%] w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-emerald-300/55 to-transparent md:block" />
+
+              {setupSteps.map((step, index) => {
+                const Icon = step.icon;
+                const positions = [
+                  'left-1/2 top-0 -translate-x-1/2',
+                  'right-0 top-1/2 -translate-y-1/2',
+                  'bottom-0 left-1/2 -translate-x-1/2',
+                  'left-0 top-1/2 -translate-y-1/2',
+                ];
+
+                return (
+                  <div
+                    key={step.title}
+                    className={`absolute ${positions[index]} hidden w-[250px] rounded-[1.35rem] border border-white/12 bg-white/[0.08] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-2xl md:block`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-300 text-[#07130f] shadow-[0_14px_34px_rgba(16,185,129,0.28)]">
+                        <Icon className="h-6 w-6" aria-hidden="true" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-black text-emerald-200">0{index + 1}</p>
+                        <h3 className="text-base font-black leading-5 text-white">{step.title}</h3>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
