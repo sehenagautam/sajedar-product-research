@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import {
   ArrowRight,
   BellRing,
@@ -17,6 +18,7 @@ import {
   Sparkles,
   UsersRound,
 } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import Header from '../components/Header';
 import { Footer } from '../components/sections/Footer';
 
@@ -24,18 +26,97 @@ const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I want to set up or improve my online business. Please help me choose the right services.'
 );
 
+function SceneShell({ children, className = '' }: { children: ReactNode; className?: string }) {
+  return (
+    <svg viewBox="0 0 220 220" fill="none" aria-hidden="true" className={className}>
+      <defs>
+        <linearGradient id="sceneFace" x1="54" y1="30" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FFFFFF" />
+          <stop offset="0.45" stopColor="#F8FFFB" />
+          <stop offset="1" stopColor="#DDF8E8" />
+        </linearGradient>
+        <linearGradient id="sceneGreen" x1="55" y1="48" x2="150" y2="160" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#34D399" />
+          <stop offset="0.56" stopColor="#059669" />
+          <stop offset="1" stopColor="#065F46" />
+        </linearGradient>
+        <radialGradient
+          id="sceneGlow"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(139 61) rotate(113) scale(83)"
+        >
+          <stop stopColor="#B7F7D1" stopOpacity="0.95" />
+          <stop offset="1" stopColor="#B7F7D1" stopOpacity="0" />
+        </radialGradient>
+        <filter id="sceneBigShadow" x="-20" y="-20" width="260" height="260" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feDropShadow dx="0" dy="30" stdDeviation="18" floodColor="#047857" floodOpacity="0.24" />
+          <feDropShadow dx="0" dy="10" stdDeviation="8" floodColor="#000000" floodOpacity="0.12" />
+          <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="#FFFFFF" floodOpacity="0.9" />
+        </filter>
+        <filter id="sceneSmallShadow" x="-20" y="-20" width="260" height="260" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feDropShadow dx="0" dy="14" stdDeviation="10" floodColor="#047857" floodOpacity="0.18" />
+          <feDropShadow dx="0" dy="4" stdDeviation="4" floodColor="#000000" floodOpacity="0.08" />
+        </filter>
+      </defs>
+      <ellipse cx="110" cy="184" rx="62" ry="16" fill="#047857" opacity="0.12" />
+      <circle cx="140" cy="67" r="74" fill="url(#sceneGlow)" />
+      <circle cx="61" cy="145" r="38" fill="#ECFDF3" opacity="0.85" />
+      {children}
+    </svg>
+  );
+}
+
+function ServiceScene({ icon: Icon, index, className = '' }: { icon: LucideIcon; index: number; className?: string }) {
+  const shapes = [
+    <circle key="research" cx="110" cy="105" r="55" fill="url(#sceneFace)" />,
+    <rect key="website" x="47" y="52" width="126" height="104" rx="34" fill="url(#sceneFace)" />,
+    <rect key="crm" x="58" y="36" width="104" height="130" rx="34" fill="url(#sceneFace)" />,
+    <rect key="graphics" x="44" y="55" width="132" height="96" rx="36" fill="url(#sceneFace)" />,
+    <rect key="video" x="42" y="62" width="136" height="90" rx="34" fill="url(#sceneFace)" />,
+    <path key="ads" d="M53 56h83l34 34v50c0 16-13 29-29 29H53V56Z" fill="url(#sceneFace)" />,
+    <rect key="agent" x="46" y="59" width="128" height="98" rx="42" fill="url(#sceneFace)" />,
+  ];
+
+  return (
+    <SceneShell className={className}>
+      <g filter="url(#sceneBigShadow)">
+        {shapes[index]}
+        <path d="M73 67c20-14 53-14 71 0" stroke="#FFFFFF" strokeWidth="13" strokeLinecap="round" opacity="0.85" />
+        <circle cx="110" cy="109" r="38" fill="#FFFFFF" opacity="0.94" />
+        <Icon x={82} y={81} width={56} height={56} strokeWidth={1.8} color="#047857" />
+        {index === 1 && <path d="M47 78h126" stroke="#D6F5E3" strokeWidth="8" />}
+        {index === 4 && <path d="M98 119l38 22V97l-38 22Z" fill="url(#sceneGreen)" opacity="0.18" />}
+        {index === 5 && <path d="M73 111h78" stroke="url(#sceneGreen)" strokeWidth="10" strokeLinecap="round" opacity="0.4" />}
+      </g>
+      <g filter="url(#sceneSmallShadow)">
+        <rect x={index % 2 === 0 ? 35 : 141} y={index % 2 === 0 ? 119 : 45} width="42" height="42" rx="16" fill="white" />
+        <path
+          d={index % 2 === 0 ? 'M47 140h18M56 131v18' : 'M153 66h18M162 57v18'}
+          stroke="#10B981"
+          strokeWidth="6"
+          strokeLinecap="round"
+        />
+      </g>
+      <circle cx={index % 2 === 0 ? 165 : 43} cy={index % 2 === 0 ? 49 : 63} r="7" fill="#34D399" opacity="0.8" />
+    </SceneShell>
+  );
+}
+
 const services = [
   {
-    title: 'Product Market Research',
+    title: 'Product Research',
     href: '/product-market-research',
-    price: 'Starting at Rs 3000',
+    price: 'Starting at Rs 3,000',
     copy: 'Find demand, competitors, price range, and launch risk before you spend.',
     icon: SearchCheck,
   },
   {
     title: 'Business Website',
     href: '/website',
-    price: 'Starting at Rs 4000',
+    price: 'Starting at Rs 4,000',
     copy: 'Launch a sharp frontend with order notifications and Sajedar subdomain hosting.',
     icon: Code2,
   },
@@ -54,14 +135,14 @@ const services = [
     icon: ImageIcon,
   },
   {
-    title: 'Motionmandu AI Videos',
+    title: 'AI Videos',
     href: '/motionmandu',
-    price: 'Starting at Rs 2000',
+    price: 'Starting at Rs 2,000',
     copy: 'Turn products, offers, and services into short AI video creatives.',
     icon: Clapperboard,
   },
   {
-    title: 'Meta Ads Planning',
+    title: 'Meta Ads',
     href: '/meta-ads',
     price: 'Starting with budget plan',
     copy: 'Plan Facebook and Instagram campaigns with a clear spending path.',
@@ -70,7 +151,7 @@ const services = [
   {
     title: 'AI Sales Agent',
     href: '/sales-agent',
-    price: 'Starting at Rs 4000',
+    price: 'Starting at Rs 4,000',
     copy: 'Answer, recommend, qualify, and follow up inside Messenger.',
     icon: Bot,
   },
@@ -300,52 +381,75 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services-pipeline" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-          <div className="mb-9 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">Services</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-[#1c1917] md:text-5xl">
-                One connected path from idea to online sales.
+        <section id="services-pipeline" className="relative overflow-hidden bg-[#f5f5f7] px-5 py-16 text-[#1d1d1f] md:px-10 lg:px-14">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_-12%,rgba(255,255,255,1),rgba(245,245,247,0)_44%)]" />
+          <div className="pointer-events-none absolute left-1/2 top-20 h-[620px] w-[900px] -translate-x-1/2 rounded-full bg-white/55 blur-3xl" />
+          <div className="pointer-events-none absolute right-[-180px] top-28 h-[560px] w-[560px] rounded-full bg-emerald-200/35 blur-3xl" />
+          <div className="pointer-events-none absolute bottom-[-260px] left-[-180px] h-[620px] w-[620px] rounded-full bg-lime-100/85 blur-3xl" />
+
+          <div className="relative mx-auto max-w-[1640px]">
+            <div className="mx-auto mb-10 max-w-5xl text-center">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-bold text-emerald-700 shadow-sm backdrop-blur-xl">
+                <Sparkles className="h-4 w-4" aria-hidden="true" />
+                Services
+              </div>
+
+              <h2 className="text-[clamp(3rem,7vw,7rem)] font-black leading-[0.9] tracking-tight text-[#1d1d1f]">
+                From idea to sales.
               </h2>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-[#57534e]">
-                Product research comes first, then the website, CRM, creative, ads, and AI sales agent work together as one online business system.
+
+              <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-black/55 md:text-2xl md:leading-9">
+                Product research comes first, then website, CRM, creative, ads, and AI sales work as one connected online business setup.
               </p>
             </div>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-stone-300 px-5 py-3 text-sm font-bold text-[#292524] transition hover:border-emerald-300 hover:bg-emerald-50"
-            >
-              Explore all services
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
-          <div className="relative">
-            <div className="absolute left-6 top-0 hidden h-full w-px bg-emerald-200 max-lg:block" aria-hidden="true" />
-            <div className="absolute left-0 right-0 top-6 hidden h-px bg-emerald-200 lg:block" aria-hidden="true" />
-            <div className="relative grid gap-4 lg:grid-cols-7">
-              {services.map((service) => {
-                const Icon = service.icon;
 
-                return (
+            <div className="relative mb-8 flex justify-center">
+              <Link
+                href="/services"
+                className="group inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/80 px-6 py-4 text-base font-bold shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d1d1f] hover:text-white hover:shadow-2xl"
+              >
+                Explore all services
+                <ArrowRight className="h-5 w-5 transition duration-300 group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
+            </div>
+
+            <div className="relative rounded-[2rem] border border-white/75 bg-white/40 p-3 shadow-[0_40px_120px_rgba(0,0,0,0.075)] backdrop-blur-2xl md:p-6 xl:rounded-[3.5rem]">
+              <div className="absolute left-16 right-16 top-1/2 hidden h-px bg-gradient-to-r from-transparent via-emerald-300/60 to-transparent xl:block" />
+
+              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-7">
+                {services.map((service, index) => (
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="group relative flex gap-4 rounded-lg border border-stone-200 bg-white p-4 shadow-sm transition hover:border-emerald-300 hover:shadow-md lg:min-h-[300px] lg:flex-col lg:pt-5"
+                    className="group relative flex min-h-[320px] flex-col items-center justify-between overflow-hidden rounded-[2rem] border border-white/90 bg-white/82 px-4 py-5 text-center shadow-[0_24px_70px_rgba(0,0,0,0.07)] backdrop-blur-2xl transition duration-500 hover:-translate-y-2 hover:bg-white hover:shadow-[0_38px_110px_rgba(0,0,0,0.16)] sm:min-h-[350px] xl:min-h-[385px] xl:rounded-[2.5rem]"
                   >
-                    <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 ring-4 ring-white">
-                      <Icon className="h-6 w-6" aria-hidden="true" />
+                    <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-white via-white/70 to-transparent" />
+                    <div className="absolute -top-20 h-44 w-44 rounded-full bg-emerald-100 opacity-0 blur-2xl transition duration-500 group-hover:opacity-100" />
+                    <div className="absolute bottom-0 h-24 w-full bg-gradient-to-t from-emerald-50/60 to-transparent" />
+
+                    <div className="relative flex w-full justify-end">
+                      <span className="rounded-full bg-black/[0.035] px-3 py-1 text-xs font-black text-black/28">0{index + 1}</span>
                     </div>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-start justify-between gap-3">
-                        <h3 className="text-base font-black leading-6 text-[#1c1917] lg:text-lg">{service.title}</h3>
-                        <ArrowRight className="mt-1 h-4 w-4 flex-shrink-0 text-stone-400 transition group-hover:translate-x-1 group-hover:text-emerald-600" aria-hidden="true" />
-                      </div>
-                      <p className="mt-2 text-sm font-bold leading-6 text-emerald-700">{service.price}</p>
-                      <p className="mt-3 text-sm leading-6 text-[#57534e]">{service.copy}</p>
+
+                    <div className="relative -mt-1 flex h-40 w-40 items-center justify-center rounded-[2rem] bg-gradient-to-br from-white via-[#f4fff8] to-[#dff8ea] shadow-[inset_0_2px_8px_rgba(255,255,255,0.95),inset_0_-20px_36px_rgba(4,120,87,0.1),0_26px_60px_rgba(4,120,87,0.14)] ring-1 ring-white transition duration-500 group-hover:scale-[1.05] group-hover:rotate-[-1deg] xl:h-44 xl:w-44">
+                      <ServiceScene icon={service.icon} index={index} className="h-40 w-40 transition duration-500 group-hover:scale-[1.03] xl:h-44 xl:w-44" />
+                    </div>
+
+                    <div className="relative -mt-1">
+                      <h3 className="mx-auto max-w-[210px] text-2xl font-black leading-[1.02] tracking-tight text-[#1d1d1f] xl:text-xl 2xl:text-2xl">
+                        {service.title}
+                      </h3>
+
+                      <p className="mt-3 text-sm font-black leading-6 text-emerald-700">{service.price}</p>
+                      <p className="mt-3 line-clamp-3 text-sm leading-6 text-black/50 xl:hidden 2xl:block">{service.copy}</p>
+                    </div>
+
+                    <div className="relative mt-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-black/60 shadow-sm transition duration-300 group-hover:bg-[#1d1d1f] group-hover:text-white">
+                      <ArrowRight className="h-5 w-5 transition duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
                     </div>
                   </Link>
-                );
-              })}
+                ))}
+              </div>
             </div>
           </div>
         </section>
