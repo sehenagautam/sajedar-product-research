@@ -8,7 +8,6 @@ import {
   CheckCircle2,
   Clapperboard,
   Code2,
-  DatabaseZap,
   Globe2,
   ImageIcon,
   Megaphone,
@@ -70,6 +69,7 @@ function SceneShell({ children, className = '' }: { children: ReactNode; classNa
 }
 
 function ServiceScene({ icon: Icon, index, className = '' }: { icon: LucideIcon; index: number; className?: string }) {
+  const accents = ['#059669', '#2563EB', '#7C3AED', '#F59E0B', '#E11D48', '#0EA5E9', '#0F766E'];
   const shapes = [
     <circle key="research" cx="110" cy="105" r="55" fill="url(#sceneFace)" />,
     <rect key="website" x="47" y="52" width="126" height="104" rx="34" fill="url(#sceneFace)" />,
@@ -79,14 +79,24 @@ function ServiceScene({ icon: Icon, index, className = '' }: { icon: LucideIcon;
     <path key="ads" d="M53 56h83l34 34v50c0 16-13 29-29 29H53V56Z" fill="url(#sceneFace)" />,
     <rect key="agent" x="46" y="59" width="128" height="98" rx="42" fill="url(#sceneFace)" />,
   ];
+  const details = [
+    <path key="research-detail" d="M78 139l22-24 19 18 25-36" stroke={accents[index]} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" opacity="0.34" />,
+    <path key="website-detail" d="M62 78h96M72 59h10M92 59h10M112 59h10" stroke={accents[index]} strokeWidth="7" strokeLinecap="round" opacity="0.34" />,
+    <path key="crm-detail" d="M132 82h22M132 108h22M132 134h22" stroke={accents[index]} strokeWidth="9" strokeLinecap="round" opacity="0.34" />,
+    <path key="graphics-detail" d="M67 132l30-31 23 23 17-18 28 26" stroke={accents[index]} strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" opacity="0.34" />,
+    <path key="video-detail" d="M66 62l-10-26M112 62l-10-26M96 120l40 23V96l-40 24Z" stroke={accents[index]} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" opacity="0.32" />,
+    <path key="ads-detail" d="M145 78c13 12 13 38 0 50M158 65c24 25 24 77 0 101" stroke={accents[index]} strokeWidth="7" strokeLinecap="round" opacity="0.32" />,
+    <path key="agent-detail" d="M110 59V34M75 126c18 18 52 18 70 0" stroke={accents[index]} strokeWidth="8" strokeLinecap="round" opacity="0.34" />,
+  ];
 
   return (
     <SceneShell className={className}>
       <g filter="url(#sceneBigShadow)">
         {shapes[index]}
         <path d="M73 67c20-14 53-14 71 0" stroke="#FFFFFF" strokeWidth="13" strokeLinecap="round" opacity="0.85" />
+        {details[index]}
         <circle cx="110" cy="109" r="38" fill="#FFFFFF" opacity="0.94" />
-        <Icon x={82} y={81} width={56} height={56} strokeWidth={1.8} color="#047857" />
+        <Icon x={82} y={81} width={56} height={56} strokeWidth={1.8} color={accents[index]} />
         {index === 1 && <path d="M47 78h126" stroke="#D6F5E3" strokeWidth="8" />}
         {index === 4 && <path d="M98 119l38 22V97l-38 22Z" fill="url(#sceneGreen)" opacity="0.18" />}
         {index === 5 && <path d="M73 111h78" stroke="url(#sceneGreen)" strokeWidth="10" strokeLinecap="round" opacity="0.4" />}
@@ -95,12 +105,12 @@ function ServiceScene({ icon: Icon, index, className = '' }: { icon: LucideIcon;
         <rect x={index % 2 === 0 ? 35 : 141} y={index % 2 === 0 ? 119 : 45} width="42" height="42" rx="16" fill="white" />
         <path
           d={index % 2 === 0 ? 'M47 140h18M56 131v18' : 'M153 66h18M162 57v18'}
-          stroke="#10B981"
+          stroke={accents[index]}
           strokeWidth="6"
           strokeLinecap="round"
         />
       </g>
-      <circle cx={index % 2 === 0 ? 165 : 43} cy={index % 2 === 0 ? 49 : 63} r="7" fill="#34D399" opacity="0.8" />
+      <circle cx={index % 2 === 0 ? 165 : 43} cy={index % 2 === 0 ? 49 : 63} r="7" fill={accents[index]} opacity="0.75" />
     </SceneShell>
   );
 }
@@ -109,74 +119,51 @@ const services = [
   {
     title: 'Product Research',
     href: '/product-market-research',
-    price: 'Starting at Rs 3,000',
-    copy: 'Find demand, competitors, price range, and launch risk before you spend.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 3,000',
     icon: SearchCheck,
   },
   {
     title: 'Business Website',
     href: '/website',
-    price: 'Starting at Rs 4,000',
-    copy: 'Launch a sharp frontend with order notifications and Sajedar subdomain hosting.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 4,000',
     icon: Code2,
   },
   {
     title: 'Custom CRM',
     href: '/crm',
-    price: 'Starting at Rs 10,000',
-    copy: 'Track customers, alerts, accounts, and social-commerce workflows.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 10,000',
     icon: UsersRound,
   },
   {
     title: 'Social Media Graphics',
     href: '/social-media-graphics',
-    price: 'Starting at Rs 200',
-    copy: 'Create branded posts, offers, announcements, and daily social visuals.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 200',
     icon: ImageIcon,
   },
   {
     title: 'AI Videos',
     href: '/motionmandu',
-    price: 'Starting at Rs 2,000',
-    copy: 'Turn products, offers, and services into short AI video creatives.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 2,000',
     icon: Clapperboard,
   },
   {
     title: 'Meta Ads',
     href: '/meta-ads',
-    price: 'Starting with budget plan',
-    copy: 'Plan Facebook and Instagram campaigns with a clear spending path.',
+    pricePrefix: 'Starting with',
+    priceValue: 'Budget plan',
     icon: Megaphone,
   },
   {
     title: 'AI Sales Agent',
     href: '/sales-agent',
-    price: 'Starting at Rs 4,000',
-    copy: 'Answer, recommend, qualify, and follow up inside Messenger.',
+    pricePrefix: 'Starting at',
+    priceValue: 'Rs 4,000',
     icon: Bot,
-  },
-];
-
-const setupSteps = [
-  {
-    title: 'Find the opportunity',
-    copy: 'Research the product, audience, competitors, pricing, and market risk before spending heavily.',
-    icon: SearchCheck,
-  },
-  {
-    title: 'Build the online base',
-    copy: 'Launch the website, subdomain, CRM, dashboard, order notifications, and social account workflow.',
-    icon: Globe2,
-  },
-  {
-    title: 'Create demand',
-    copy: 'Plan Meta ads, publish graphics, make videos, and shape offers that are easy to understand.',
-    icon: Megaphone,
-  },
-  {
-    title: 'Convert and manage',
-    copy: 'Use AI sales agents, alerts, customer records, and follow-up systems to turn interest into orders.',
-    icon: DatabaseZap,
   },
 ];
 
@@ -408,8 +395,10 @@ export default function Home() {
                         {service.title}
                       </h3>
 
-                      <p className="mt-3 text-sm font-black leading-6 text-emerald-700">{service.price}</p>
-                      <p className="mt-3 line-clamp-3 text-sm leading-6 text-black/50 xl:hidden 2xl:block">{service.copy}</p>
+                      <div className="mt-4">
+                        <p className="text-sm font-black leading-5 text-black/35">{service.pricePrefix}</p>
+                        <p className="mt-1 text-xl font-black leading-6 text-emerald-700">{service.priceValue}</p>
+                      </div>
                     </div>
 
                     <div className="relative mt-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white text-black/60 shadow-sm transition duration-300 group-hover:bg-[#1d1d1f] group-hover:text-white">
@@ -424,86 +413,80 @@ export default function Home() {
 
         <section className="relative overflow-hidden bg-[#07130f] px-5 py-16 text-white md:px-10 lg:px-14">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(16,185,129,0.24),transparent_42%)]" />
-          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[720px] w-[720px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/10" />
-          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/15" />
+          <div className="pointer-events-none absolute -right-24 top-10 h-[520px] w-[520px] rounded-full bg-sky-400/10 blur-3xl" />
+          <div className="pointer-events-none absolute -left-24 bottom-0 h-[520px] w-[520px] rounded-full bg-emerald-400/12 blur-3xl" />
 
-          <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
             <div>
               <p className="inline-flex rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-emerald-200">
                 Full setup, one partner
               </p>
               <h2 className="mt-5 max-w-3xl text-4xl font-black leading-none tracking-tight text-white md:text-6xl">
-                One operating layer for online business.
+                Sajedar connected to your online business.
               </h2>
-              <p className="mt-5 max-w-xl text-base font-semibold leading-8 text-emerald-50/70">
-                Research, website, CRM, creative, ads, and AI sales connected under Sajedar.
-              </p>
             </div>
 
-            <div className="relative md:min-h-[560px]">
-              <div className="mx-auto mb-5 flex h-44 w-44 flex-col items-center justify-center rounded-[2rem] border border-white/15 bg-white text-center text-[#07130f] shadow-[0_34px_100px_rgba(0,0,0,0.45)] md:hidden">
-                <Sparkles className="h-8 w-8 text-emerald-600" aria-hidden="true" />
-                <p className="mt-3 text-2xl font-black tracking-tight">Sajedar</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">setup core</p>
-              </div>
-
-              <div className="grid gap-3 md:hidden">
-                {setupSteps.map((step, index) => {
-                  const Icon = step.icon;
-
-                  return (
-                    <div key={step.title} className="rounded-[1.35rem] border border-white/12 bg-white/[0.08] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-2xl">
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-300 text-[#07130f] shadow-[0_14px_34px_rgba(16,185,129,0.28)]">
-                          <Icon className="h-6 w-6" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <p className="text-xs font-black text-emerald-200">0{index + 1}</p>
-                          <h3 className="text-base font-black leading-5 text-white">{step.title}</h3>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <div className="absolute left-1/2 top-1/2 hidden h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/20 blur-3xl md:block" />
-              <div className="absolute left-1/2 top-1/2 hidden h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-200/20 bg-white/[0.04] shadow-[0_0_100px_rgba(16,185,129,0.18)] backdrop-blur-xl md:block" />
-              <div className="absolute left-1/2 top-1/2 hidden h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-[2rem] border border-white/15 bg-white text-center text-[#07130f] shadow-[0_34px_100px_rgba(0,0,0,0.45)] md:flex">
-                <Sparkles className="h-8 w-8 text-emerald-600" aria-hidden="true" />
-                <p className="mt-3 text-2xl font-black tracking-tight">Sajedar</p>
-                <p className="mt-1 text-xs font-black uppercase tracking-[0.18em] text-emerald-700">setup core</p>
-              </div>
-
-              <div className="absolute left-1/2 top-1/2 hidden h-px w-[82%] -translate-x-1/2 bg-gradient-to-r from-transparent via-emerald-300/55 to-transparent md:block" />
-              <div className="absolute left-1/2 top-1/2 hidden h-[82%] w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-emerald-300/55 to-transparent md:block" />
-
-              {setupSteps.map((step, index) => {
-                const Icon = step.icon;
-                const positions = [
-                  'left-1/2 top-0 -translate-x-1/2',
-                  'right-0 top-1/2 -translate-y-1/2',
-                  'bottom-0 left-1/2 -translate-x-1/2',
-                  'left-0 top-1/2 -translate-y-1/2',
-                ];
-
-                return (
-                  <div
-                    key={step.title}
-                    className={`absolute ${positions[index]} hidden w-[250px] rounded-[1.35rem] border border-white/12 bg-white/[0.08] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-2xl md:block`}
-                  >
+            <div className="relative">
+              <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-400/20 blur-3xl" />
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.08] p-4 shadow-[0_40px_140px_rgba(0,0,0,0.38)] backdrop-blur-2xl md:rounded-[2.6rem] md:p-6">
+                <div className="rounded-[1.5rem] border border-white/10 bg-[#f8fffb] p-4 text-[#07130f] shadow-2xl md:rounded-[2rem] md:p-6">
+                  <div className="flex items-center justify-between border-b border-black/10 pb-4">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-emerald-300 text-[#07130f] shadow-[0_14px_34px_rgba(16,185,129,0.28)]">
-                        <Icon className="h-6 w-6" aria-hidden="true" />
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-900/20">
+                        <Sparkles className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div>
-                        <p className="text-xs font-black text-emerald-200">0{index + 1}</p>
-                        <h3 className="text-base font-black leading-5 text-white">{step.title}</h3>
+                        <p className="text-2xl font-black tracking-tight">Sajedar</p>
+                        <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">online business OS</p>
+                      </div>
+                    </div>
+                    <div className="hidden rounded-full bg-emerald-50 px-4 py-2 text-xs font-black text-emerald-700 sm:block">live</div>
+                  </div>
+
+                  <div className="mt-5 grid gap-4 md:grid-cols-[1.1fr_0.9fr]">
+                    <div className="rounded-[1.25rem] bg-[#07130f] p-5 text-white">
+                      <div className="flex items-center justify-between">
+                        <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-200">ashwi.sajedar.com</p>
+                        <Globe2 className="h-5 w-5 text-emerald-200" aria-hidden="true" />
+                      </div>
+                      <div className="mt-7 h-4 w-3/4 rounded-full bg-white/20" />
+                      <div className="mt-3 h-4 w-1/2 rounded-full bg-white/15" />
+                      <div className="mt-7 grid grid-cols-3 gap-3">
+                        <div className="h-20 rounded-2xl bg-emerald-300/90" />
+                        <div className="h-20 rounded-2xl bg-sky-300/90" />
+                        <div className="h-20 rounded-2xl bg-amber-300/90" />
+                      </div>
+                    </div>
+
+                    <div className="grid gap-4">
+                      <div className="rounded-[1.25rem] border border-emerald-100 bg-white p-4 shadow-sm">
+                        <div className="flex items-center gap-3">
+                          <MessageCircle className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                          <p className="text-sm font-black">Customer chats</p>
+                        </div>
+                        <div className="mt-4 space-y-2">
+                          <div className="h-3 w-full rounded-full bg-stone-200" />
+                          <div className="h-3 w-2/3 rounded-full bg-emerald-200" />
+                        </div>
+                      </div>
+                      <div className="rounded-[1.25rem] border border-emerald-100 bg-white p-4 shadow-sm">
+                        <div className="flex items-center gap-3">
+                          <BellRing className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                          <p className="text-sm font-black">Orders connected</p>
+                        </div>
+                        <div className="mt-4 grid grid-cols-2 gap-3">
+                          <div className="rounded-xl bg-emerald-50 p-3">
+                            <p className="text-xl font-black">13</p>
+                          </div>
+                          <div className="rounded-xl bg-sky-50 p-3">
+                            <p className="text-xl font-black">CRM</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              </div>
             </div>
           </div>
         </section>
