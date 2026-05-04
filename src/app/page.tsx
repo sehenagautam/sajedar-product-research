@@ -26,53 +26,53 @@ const whatsappMessage = encodeURIComponent(
 
 const services = [
   {
-    title: 'AI Sales Agent',
-    href: '/sales-agent',
-    price: 'Commission and plan based',
-    copy: 'Messenger sales automation that answers, recommends, qualifies, and follows up.',
-    icon: Bot,
+    title: 'Product Market Research',
+    href: '/product-market-research',
+    price: 'Starting at Rs 3000',
+    copy: 'Find demand, competitors, price range, and launch risk before you spend.',
+    icon: SearchCheck,
   },
   {
     title: 'Business Website',
     href: '/website',
-    price: 'Rs 4000',
-    copy: 'High quality frontend, Discord order notifications, and Sajedar subdomain hosting.',
+    price: 'Starting at Rs 4000',
+    copy: 'Launch a sharp frontend with order notifications and Sajedar subdomain hosting.',
     icon: Code2,
   },
   {
     title: 'Custom CRM',
     href: '/crm',
-    price: 'Rs 10,000 + Rs 0.1/customer/month',
-    copy: 'Customer tracking for social-media businesses with dashboards, alerts, and accounts.',
+    price: 'Starting at Rs 10,000',
+    copy: 'Track customers, alerts, accounts, and social-commerce workflows.',
     icon: UsersRound,
-  },
-  {
-    title: 'Meta Ads Planning',
-    href: '/meta-ads',
-    price: 'Budget planning via WhatsApp',
-    copy: 'Practical Facebook and Instagram ad planning for Nepalese businesses.',
-    icon: Megaphone,
-  },
-  {
-    title: 'Motionmandu AI Videos',
-    href: '/motionmandu',
-    price: 'Rs 2000 per video',
-    copy: 'AI videos for product launches, offers, service explainers, and social campaigns.',
-    icon: Clapperboard,
   },
   {
     title: 'Social Media Graphics',
     href: '/social-media-graphics',
-    price: 'Rs 200 per graphic',
-    copy: 'Branded graphics for products, offers, announcements, and daily posting.',
+    price: 'Starting at Rs 200',
+    copy: 'Create branded posts, offers, announcements, and daily social visuals.',
     icon: ImageIcon,
   },
   {
-    title: 'Product Market Research',
-    href: '/product-market-research',
-    price: 'Starts at Rs 3000',
-    copy: 'Demand validation, competitor research, pricing direction, and launch decisions.',
-    icon: SearchCheck,
+    title: 'Motionmandu AI Videos',
+    href: '/motionmandu',
+    price: 'Starting at Rs 2000',
+    copy: 'Turn products, offers, and services into short AI video creatives.',
+    icon: Clapperboard,
+  },
+  {
+    title: 'Meta Ads Planning',
+    href: '/meta-ads',
+    price: 'Starting with budget plan',
+    copy: 'Plan Facebook and Instagram campaigns with a clear spending path.',
+    icon: Megaphone,
+  },
+  {
+    title: 'AI Sales Agent',
+    href: '/sales-agent',
+    price: 'Starting at Rs 4000',
+    copy: 'Answer, recommend, qualify, and follow up inside Messenger.',
+    icon: Bot,
   },
 ];
 
@@ -300,13 +300,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <section id="services-pipeline" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-9 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">Services</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-[#1c1917] md:text-5xl">
-                Build only what your business needs right now.
+                One connected path from idea to online sales.
               </h2>
+              <p className="mt-4 max-w-2xl text-base leading-8 text-[#57534e]">
+                Product research comes first, then the website, CRM, creative, ads, and AI sales agent work together as one online business system.
+              </p>
             </div>
             <Link
               href="/services"
@@ -316,28 +319,34 @@ export default function Home() {
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {services.map((service) => {
-              const Icon = service.icon;
+          <div className="relative">
+            <div className="absolute left-6 top-0 hidden h-full w-px bg-emerald-200 max-lg:block" aria-hidden="true" />
+            <div className="absolute left-0 right-0 top-6 hidden h-px bg-emerald-200 lg:block" aria-hidden="true" />
+            <div className="relative grid gap-4 lg:grid-cols-7">
+              {services.map((service) => {
+                const Icon = service.icon;
 
-              return (
-                <Link
-                  key={service.href}
-                  href={service.href}
-                  className="group rounded-lg border border-stone-200 bg-white p-6 shadow-sm transition hover:border-emerald-300 hover:shadow-md"
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
+                return (
+                  <Link
+                    key={service.href}
+                    href={service.href}
+                    className="group relative flex gap-4 rounded-lg border border-stone-200 bg-white p-4 shadow-sm transition hover:border-emerald-300 hover:shadow-md lg:min-h-[300px] lg:flex-col lg:pt-5"
+                  >
+                    <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 ring-4 ring-white">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
-                    <ArrowRight className="h-5 w-5 flex-shrink-0 text-stone-400 transition group-hover:translate-x-1 group-hover:text-emerald-600" aria-hidden="true" />
-                  </div>
-                  <h3 className="mt-5 text-xl font-black text-[#1c1917]">{service.title}</h3>
-                  <p className="mt-2 text-sm font-bold text-emerald-700">{service.price}</p>
-                  <p className="mt-4 text-sm leading-7 text-[#57534e]">{service.copy}</p>
-                </Link>
-              );
-            })}
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-start justify-between gap-3">
+                        <h3 className="text-base font-black leading-6 text-[#1c1917] lg:text-lg">{service.title}</h3>
+                        <ArrowRight className="mt-1 h-4 w-4 flex-shrink-0 text-stone-400 transition group-hover:translate-x-1 group-hover:text-emerald-600" aria-hidden="true" />
+                      </div>
+                      <p className="mt-2 text-sm font-bold leading-6 text-emerald-700">{service.price}</p>
+                      <p className="mt-3 text-sm leading-6 text-[#57534e]">{service.copy}</p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </section>
 
