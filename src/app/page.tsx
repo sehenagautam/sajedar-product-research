@@ -246,64 +246,60 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative hidden min-h-[560px] md:block">
-              <div className="absolute -right-10 top-4 h-72 w-72 rounded-full bg-emerald-400/20 blur-3xl" />
-              <div className="absolute bottom-6 left-0 h-64 w-64 rounded-full bg-sky-400/10 blur-3xl" />
-              <div className="absolute inset-x-0 top-0 rounded-[2rem] border border-white/15 bg-white/[0.08] p-4 shadow-[0_40px_120px_rgba(0,0,0,0.34)] backdrop-blur-2xl">
-                <div className="rounded-[1.5rem] bg-[#f8fffb] p-5 text-[#111827] shadow-2xl">
-                  <div className="flex items-center justify-between border-b border-stone-200 pb-4">
-                    <div>
-                      <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">Sajedar setup engine</p>
-                      <p className="mt-1 text-2xl font-black tracking-tight">Social sales cockpit</p>
-                    </div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-lg shadow-emerald-900/20">
-                      <Sparkles className="h-6 w-6" aria-hidden="true" />
-                    </div>
+            <div className="relative hidden min-h-[450px] md:block">
+              <div className="absolute right-0 top-3 h-80 w-80 rounded-full bg-emerald-400/20 blur-3xl" />
+              <div className="absolute bottom-8 left-2 h-72 w-72 rounded-full bg-sky-400/10 blur-3xl" />
+              <div className="absolute inset-x-0 -top-20 overflow-hidden rounded-[2.5rem] border border-white/15 bg-white/[0.08] p-6 shadow-[0_40px_120px_rgba(0,0,0,0.34)] backdrop-blur-2xl">
+                <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/10" />
+                <div className="absolute left-1/2 top-1/2 h-[280px] w-[280px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-emerald-300/15" />
+
+                <div className="relative flex items-center justify-between">
+                  <div className="rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-emerald-100">
+                    Brick by brick
+                  </div>
+                  <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#111827] shadow-lg">
+                    easy path
+                  </div>
+                </div>
+                <p className="relative mt-5 max-w-sm text-3xl font-black leading-9 text-white">
+                  Every step handled, one clear path forward.
+                </p>
+
+                <div className="relative mt-3 min-h-[285px]">
+                  <div className="absolute left-4 top-10 flex h-24 w-24 flex-col items-center justify-center rounded-[1.75rem] border border-white/20 bg-white text-center text-[#111827] shadow-[0_24px_70px_rgba(0,0,0,0.28)]">
+                    <Sparkles className="h-7 w-7 text-emerald-600" aria-hidden="true" />
+                    <p className="mt-2 text-lg font-black">Sajedar</p>
                   </div>
 
-                  <div className="mt-5 grid gap-4">
-                    <div className="rounded-2xl bg-[#111827] p-5 text-white">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-200">website</p>
-                          <p className="mt-1 text-lg font-black">ashwi.sajedar.com</p>
-                        </div>
-                        <Globe2 className="h-6 w-6 text-emerald-200" aria-hidden="true" />
-                      </div>
-                      <div className="mt-6 grid grid-cols-3 gap-3">
-                        <div className="h-24 rounded-2xl bg-emerald-300/90" />
-                        <div className="h-24 rounded-2xl bg-sky-300/90" />
-                        <div className="h-24 rounded-2xl bg-amber-300/90" />
-                      </div>
-                    </div>
+                  <div className="absolute bottom-3 right-4 flex h-28 w-36 flex-col justify-center rounded-[1.75rem] border border-emerald-200 bg-emerald-300 p-4 text-[#06251b] shadow-[0_24px_80px_rgba(16,185,129,0.32)]">
+                    <Globe2 className="h-7 w-7" aria-hidden="true" />
+                    <p className="mt-3 text-xl font-black leading-5">Online business</p>
+                  </div>
 
-                    <div className="grid grid-cols-3 gap-3">
-                      {[
-                        ['42', 'DM leads'],
-                        ['13', 'orders'],
-                        ['8', 'follow-ups'],
-                      ].map(([stat, label]) => (
-                        <div key={label} className="rounded-2xl border border-stone-200 bg-white p-4">
-                          <p className="text-2xl font-black text-[#111827]">{stat}</p>
-                          <p className="mt-1 text-xs font-bold text-[#57534e]">{label}</p>
-                        </div>
-                      ))}
-                    </div>
+                  <div className="absolute left-24 top-20 right-28 h-56">
+                    <div className="absolute left-0 top-0 h-3 w-full rotate-[18deg] rounded-full bg-gradient-to-r from-emerald-300/0 via-emerald-300/45 to-emerald-300/0" />
+                    {[
+                      { title: 'Research', icon: SearchCheck, pos: 'left-[0%] top-[0%]', color: 'bg-emerald-50 text-emerald-700' },
+                      { title: 'Website', icon: Code2, pos: 'left-[19%] top-[13%]', color: 'bg-sky-50 text-sky-700' },
+                      { title: 'CRM', icon: UsersRound, pos: 'left-[38%] top-[26%]', color: 'bg-violet-50 text-violet-700' },
+                      { title: 'Ads', icon: Megaphone, pos: 'left-[57%] top-[39%]', color: 'bg-amber-50 text-amber-700' },
+                      { title: 'AI Sales', icon: Bot, pos: 'left-[76%] top-[52%]', color: 'bg-rose-50 text-rose-700' },
+                    ].map((brick, index) => {
+                      const Icon = brick.icon;
 
-                    <div className="grid grid-cols-2 gap-3">
-                      <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4">
-                        <div className="flex items-center gap-2">
-                          <MessageCircle className="h-5 w-5 text-emerald-700" aria-hidden="true" />
-                          <p className="text-sm font-black">AI replies</p>
+                      return (
+                        <div
+                          key={brick.title}
+                          className={`absolute ${brick.pos} w-32 -rotate-[8deg] rounded-2xl border border-white/80 ${brick.color} p-3 shadow-[0_20px_55px_rgba(0,0,0,0.22)]`}
+                        >
+                          <div className="flex items-center justify-between">
+                            <Icon className="h-5 w-5" aria-hidden="true" />
+                            <span className="text-xs font-black opacity-45">0{index + 1}</span>
+                          </div>
+                          <p className="mt-3 text-base font-black leading-5 text-[#111827]">{brick.title}</p>
                         </div>
-                      </div>
-                      <div className="rounded-2xl border border-sky-100 bg-sky-50 p-4">
-                        <div className="flex items-center gap-2">
-                          <BellRing className="h-5 w-5 text-sky-700" aria-hidden="true" />
-                          <p className="text-sm font-black">Order alerts</p>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
