@@ -5,8 +5,8 @@ import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
 
 export const metadata: Metadata = {
-  title: 'Business Website Nepal for Rs 4000',
-  description: 'Get a high quality business website for Rs 4000 with Discord order notifications and a Sajedar subdomain like ashwi.sajedar.com.',
+  title: 'Custom Business Website Nepal for Rs 4000',
+  description: 'Get a custom premium-looking business website for Rs 4000, designed with Claude AI support, Discord order notifications, and a Sajedar subdomain like ashwi.sajedar.com.',
   keywords: [
     'website design nepal',
     'business website nepal',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/website' },
   openGraph: {
-    title: 'Business Website Nepal for Rs 4000',
-    description: 'High quality frontend, Discord order notifications, and Sajedar subdomain hosting for Nepali businesses.',
+    title: 'Custom Business Website Nepal for Rs 4000',
+    description: 'Premium-looking custom frontend designed with Claude AI support, Discord order notifications, and Sajedar subdomain hosting for Nepali businesses.',
     url: 'https://sajedar.com/website',
     siteName: 'Sajedar',
     type: 'website',
@@ -33,8 +33,8 @@ const whatsappMessage = encodeURIComponent(
 
 const features = [
   {
-    title: 'High quality frontend',
-    copy: 'A polished, mobile-friendly website built to make your business look credible and easy to browse.',
+    title: 'Custom premium frontend',
+    copy: 'A polished, mobile-friendly website designed with Claude AI support so your business looks premium, credible, and easy to browse.',
     icon: Sparkles,
   },
   {
@@ -86,13 +86,13 @@ export default function WebsitePage() {
             <div className="py-8">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700">
                 <Code2 className="h-4 w-4" aria-hidden="true" />
-                Websites for Nepali businesses
+                Custom websites for Nepali businesses
               </div>
               <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-[#1c1917] md:text-6xl">
-                Get a business website for Rs 4000.
+                Get a custom business website for Rs 4000.
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#57534e] md:text-lg">
-                Sajedar builds high quality frontend websites for Nepali businesses, with order notifications sent to Discord and hosting on a clean Sajedar subdomain.
+                Sajedar uses Claude AI to help design premium-looking custom frontend websites for Nepali businesses, with order notifications sent to Discord and hosting on a clean Sajedar subdomain.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -125,7 +125,7 @@ export default function WebsitePage() {
               </div>
               <div className="mt-5 space-y-3">
                 {[
-                  'High quality frontend included',
+                  'Custom premium frontend designed with Claude AI support',
                   'Discord notifications for orders',
                   'Hosted on your Sajedar subdomain',
                   'Can upgrade to your own domain name afterwards',
@@ -148,7 +148,7 @@ export default function WebsitePage() {
                 Made for businesses that sell online and need orders handled quickly.
               </h2>
               <p className="mt-4 text-base leading-8 text-[#57534e]">
-                This is a practical starter website for businesses that want to look professional online without dealing with domain and hosting complexity on day one.
+                This is a practical custom starter website for businesses that want to look professional online without dealing with domain and hosting complexity on day one.
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -213,7 +213,7 @@ export default function WebsitePage() {
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Website service</p>
               <h2 className="mt-2 text-2xl font-bold text-[#1c1917]">Ready to launch your business website?</h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-[#57534e]">
-                Starting at Rs 4000, with high quality frontend, Discord order notifications, and a Sajedar subdomain like ashwi.sajedar.com.
+                Starting at Rs 4000, with a Claude AI-assisted custom premium frontend, Discord order notifications, and a Sajedar subdomain like ashwi.sajedar.com.
               </p>
             </div>
             <a

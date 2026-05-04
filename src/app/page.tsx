@@ -13,7 +13,6 @@ import {
   SearchCheck,
   Sparkles,
   UsersRound,
-  Zap,
 } from 'lucide-react';
 import Header from '../components/Header';
 import { Footer } from '../components/sections/Footer';
@@ -35,13 +34,13 @@ const bricks = [
 
 /* Service cards data */
 const services = [
-  { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, desc: 'Find winning products with data-driven insights' },
-  { title: 'Business Website', href: '/website', icon: Code2, desc: 'Convert visitors into paying customers' },
-  { title: 'Custom CRM', href: '/crm', icon: UsersRound, desc: 'Track every lead and customer interaction' },
-  { title: 'Social Graphics', href: '/social-media-graphics', icon: ImageIcon, desc: 'Scroll-stopping visuals for your brand' },
-  { title: 'AI Videos', href: '/motionmandu', icon: Clapperboard, desc: 'Professional video content at scale' },
-  { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, desc: 'Targeted campaigns that drive real sales' },
-  { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, desc: 'Automate DMs and close sales 24/7' },
+  { title: 'Custom Product Research', href: '/product-market-research', icon: SearchCheck, price: 'Starting at Rs 3,000' },
+  { title: 'Custom Business Website', href: '/website', icon: Code2, price: 'Starting at Rs 4,000' },
+  { title: 'Custom CRM', href: '/crm', icon: UsersRound, price: 'Starting at Rs 10,000' },
+  { title: 'Custom Social Graphics', href: '/social-media-graphics', icon: ImageIcon, price: 'Starting at Rs 200' },
+  { title: 'Custom AI Videos', href: '/motionmandu', icon: Clapperboard, price: 'Starting at Rs 2,000' },
+  { title: 'Custom Meta Ads', href: '/meta-ads', icon: Megaphone, price: 'Starting with budget plan' },
+  { title: 'Custom AI Sales Agent', href: '/sales-agent', icon: Bot, price: 'Starting at Rs 4,000' },
 ];
 
 export default function Home() {
@@ -163,12 +162,12 @@ export default function Home() {
                     }}
                   >
                     <div
-                      className={`flex items-center gap-3 rounded-xl border px-5 py-3 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${
+                      className={`flex items-center gap-3 rounded-lg border px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${
                         isLast
                           ? 'border-emerald-500/30 bg-emerald-50 shadow-lg shadow-emerald-500/10 hover:border-emerald-500/40'
                           : 'border-black/[0.06] bg-white/80 shadow-sm hover:border-black/[0.12] hover:shadow-md'
                       }`}
-                      style={{ minWidth: '140px' }}
+                      style={{ minWidth: '170px' }}
                     >
                       <div
                         className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg"
@@ -189,11 +188,6 @@ export default function Home() {
                 );
               })}
 
-              {/* Final destination label */}
-              <div className="animate-fade-up absolute right-2 top-4 flex items-center gap-2 text-[12px] text-emerald-600/50" style={{ animationDelay: '1.1s' }}>
-                <Zap className="h-3 w-3" />
-                Complete system
-              </div>
             </div>
           </div>
 
@@ -211,11 +205,6 @@ export default function Home() {
           <div className="relative mx-auto max-w-7xl">
             {/* Section header */}
             <div className="mx-auto mb-16 max-w-2xl text-center">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-white/70 px-4 py-2 text-[12px] font-medium uppercase tracking-[0.15em] text-[#a1a1aa]">
-                <Sparkles className="h-3 w-3 text-emerald-500/60" aria-hidden="true" />
-                Services
-              </div>
-
               <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-[1.1] tracking-[-0.03em]">
                 <span className="text-gradient">From idea to</span>{' '}
                 <span className="text-gradient-accent">sales.</span>
@@ -257,8 +246,8 @@ export default function Home() {
                       </span>
 
                       {/* Icon */}
-                      <div className="mt-4 flex h-10 w-10 items-center justify-center rounded-xl border border-black/[0.06] bg-[#fafafa]">
-                        <Icon className="h-5 w-5 text-emerald-600/70" aria-hidden="true" />
+                      <div className="mt-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-black/[0.06] bg-[#fafafa] shadow-sm">
+                        <Icon className="h-10 w-10 text-emerald-600/75" aria-hidden="true" />
                       </div>
 
                       {/* Title */}
@@ -266,9 +255,8 @@ export default function Home() {
                         {service.title}
                       </h3>
 
-                      {/* Description */}
-                      <p className="mt-2 text-[13px] leading-relaxed text-[#a1a1aa]">
-                        {service.desc}
+                      <p className="mt-3 text-[13px] font-semibold leading-relaxed text-emerald-700">
+                        {service.price}
                       </p>
                     </div>
 

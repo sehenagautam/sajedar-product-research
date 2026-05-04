@@ -19,21 +19,21 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: 'AI Sales Agent',
+    title: 'Custom AI Sales Agent',
     href: '/sales-agent',
     price: 'Commission and plan based',
     description: 'AI sales agents for Messenger that answer customers, understand products, and help convert conversations.',
     icon: Bot,
   },
   {
-    title: 'Motionmandu AI Videos',
+    title: 'Custom Motionmandu AI Videos',
     href: '/motionmandu',
     price: 'Rs 2000 per video',
     description: 'AI-generated business videos for products, offers, services, and social media campaigns.',
     icon: Clapperboard,
   },
   {
-    title: 'Meta Ads Planning',
+    title: 'Custom Meta Ads Planning',
     href: '/meta-ads',
     price: 'Budget planning via WhatsApp',
     description: 'Facebook and Instagram ad planning for Nepalese businesses with practical budget guidance.',
@@ -47,21 +47,21 @@ const services = [
     icon: UsersRound,
   },
   {
-    title: 'Business Website',
+    title: 'Custom Business Website',
     href: '/website',
     price: 'Rs 4000',
     description: 'High quality frontend website with Discord order notifications and Sajedar subdomain hosting.',
     icon: Code2,
   },
   {
-    title: 'Product Market Research',
+    title: 'Custom Product Market Research',
     href: '/product-market-research',
     price: 'Starts at Rs 3000',
     description: 'Research support to understand demand, competitors, positioning, and market fit before launching or scaling a product.',
     icon: SearchCheck,
   },
   {
-    title: 'Social Media Graphics',
+    title: 'Custom Social Media Graphics',
     href: '/social-media-graphics',
     price: 'Rs 200 per graphic',
     description: 'Branded graphics for posts, offers, product announcements, and daily social media marketing.',
@@ -121,7 +121,16 @@ export default function ServicesPage() {
                     </div>
                     <ArrowRight className="h-5 w-5 flex-shrink-0 text-stone-400 transition group-hover:translate-x-1 group-hover:text-emerald-600" aria-hidden="true" />
                   </div>
-                  <h2 className="mt-5 text-xl font-bold text-[#1c1917]">{service.title}</h2>
+                  <h2 className="mt-5 text-xl font-bold text-[#1c1917]">
+                    {service.title.startsWith('Custom ') ? (
+                      <>
+                        <span className="text-emerald-700">Custom</span>
+                        {service.title.replace('Custom', '')}
+                      </>
+                    ) : (
+                      service.title
+                    )}
+                  </h2>
                   <p className="mt-2 text-sm font-bold text-emerald-700">{service.price}</p>
                   <p className="mt-4 text-sm leading-7 text-[#57534e]">{service.description}</p>
                 </Link>
