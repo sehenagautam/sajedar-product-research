@@ -2,18 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --background: #18181b;
-  --foreground: #fff;
-  --font-serif: 'DM Serif Display', serif;
-  --font-sans: 'Inter', Arial, Helvetica, sans-serif;
-  /* Base font scaling */
-  --base-font-size: 100%;
+  --background: #fafafa;
+  --foreground: #18181b;
+  --accent: #10b981;
+  --accent-subtle: #065f46;
+  --surface: #ffffff;
+  --surface-elevated: #f4f4f5;
+  --border: rgba(0,0,0,0.06);
+  --border-hover: rgba(0,0,0,0.12);
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-muted: #a1a1aa;
 }
 
-/* Increase overall font scale by ~20% (+10% more now => ~32%) */
 html {
-  font-size: calc(var(--base-font-size) * 1.32);
+  font-size: 100%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @theme inline {
@@ -23,64 +32,102 @@ html {
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.hero-noise-bg {
-  position: absolute;
+/* Noise texture overlay */
+.noise-overlay {
+  position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: -1;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII='); /* subtle noise */
-  opacity: 0.18;
-  mix-blend-mode: screen;
+  z-index: 9999;
+  opacity: 0.018;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: multiply;
 }
 
-/* Gradient animation */
-@keyframes gradient-x {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+/* Glow effects */
+.glow-emerald {
+  box-shadow: 0 0 80px rgba(16, 185, 129, 0.1), 0 0 160px rgba(16, 185, 129, 0.04);
 }
 
-.animate-gradient-x {
-  animation: gradient-x 15s ease infinite;
+.glow-line {
+  background: linear-gradient(90deg, transparent, rgba(16,185,129,0.25), transparent);
+  height: 1px;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #18181b 0%, #3f3f46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth animations */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #23243a;
+  background: #fafafa;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #22c55e;
-  border-radius: 4px;
+  background: #d4d4d8;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #16a34a;
+  background: #a1a1aa;
 }
 
 /* Global cursor pointer for clickable elements */
@@ -89,20 +136,14 @@ a, button, [role="button"], [onclick], input[type="button"], input[type="submit"
   cursor: pointer !important;
 }
 
-/* Ensure all interactive elements have pointer cursor */
-a:hover, button:hover, [role="button"]:hover, [onclick]:hover, 
-input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,
-.cursor-pointer:hover, .clickable:hover, [data-clickable="true"]:hover {
-  cursor: pointer !important;
-}
-
-/* Specific cursor styles for different states */
-a:active, button:active, [role="button"]:active {
-  cursor: pointer !important;
-}
-
-/* Disabled elements should not have pointer cursor */
+/* Disabled elements */
 a:disabled, button:disabled, [role="button"]:disabled,
 input[type="button"]:disabled, input[type="submit"]:disabled, input[type="reset"]:disabled {
   cursor: not-allowed !important;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(16, 185, 129, 0.2);
+  color: #18181b;
 }

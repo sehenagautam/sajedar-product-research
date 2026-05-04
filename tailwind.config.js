@@ -8,33 +8,25 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
         serif: ['DM Serif Display', 'serif'],
-        sans: ['Inter', 'Arial', 'Helvetica', 'sans-serif'],
-        helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-        mono: ['Menlo', 'Monaco', 'Consolas', 'monospace'],
+        mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
       colors: {
         emerald: {
           400: '#34d399',
-          500: '#22c55e',
-          600: '#16a34a',
-        },
-        gray: {
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-        },
-        orange: {
-          400: '#f59e42',
-        },
-        blue: {
-          900: '#23243a',
+          500: '#10b981',
+          600: '#059669',
         },
       },
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
       boxShadow: {
-        glass: '0 8px 32px 0 rgba(34,197,94,0.10), 0 2px 8px 0 rgba(0,0,0,0.10)',
+        glow: '0 0 60px rgba(16, 185, 129, 0.12)',
       },
     },
   },
   plugins: [],
-}; 
+};

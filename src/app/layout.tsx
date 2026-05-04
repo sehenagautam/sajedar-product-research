@@ -149,9 +149,9 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Sajedar" />
         <meta name="apple-mobile-web-app-title" content="Sajedar" />
-        <meta name="theme-color" content="#18181b" />
-        <meta name="msapplication-navbutton-color" content="#18181b" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#fafafa" />
+        <meta name="msapplication-navbutton-color" content="#fafafa" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="msapplication-starturl" content="/" />
       </head>
       <body className={`${inter.className} antialiased`}>
