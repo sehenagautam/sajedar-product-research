@@ -34,13 +34,13 @@ const bricks = [
 
 /* Service cards data */
 const services = [
-  { title: 'Custom Product Research', href: '/product-market-research', icon: SearchCheck, price: 'Starting at Rs 3,000' },
-  { title: 'Custom Business Website', href: '/website', icon: Code2, price: 'Starting at Rs 4,000' },
-  { title: 'Custom CRM', href: '/crm', icon: UsersRound, price: 'Starting at Rs 10,000' },
-  { title: 'Custom Social Graphics', href: '/social-media-graphics', icon: ImageIcon, price: 'Starting at Rs 200' },
-  { title: 'Custom AI Videos', href: '/motionmandu', icon: Clapperboard, price: 'Starting at Rs 2,000' },
-  { title: 'Custom Meta Ads', href: '/meta-ads', icon: Megaphone, price: 'Starting with budget plan' },
-  { title: 'Custom AI Sales Agent', href: '/sales-agent', icon: Bot, price: 'Starting at Rs 4,000' },
+  { title: 'Product Research',   href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at',   price: 'Rs 3,000',     iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
+  { title: 'Business Website',   href: '/website',                 icon: Code2,        priceLabel: 'Starting at',   price: 'Rs 4,000',     iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100'   },
+  { title: 'Custom CRM',         href: '/crm',                     icon: UsersRound,   priceLabel: 'Starting at',   price: 'Rs 10,000',    iconColor: '#8b5cf6', iconBg: 'from-violet-50 to-purple-100' },
+  { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at',   price: 'Rs 200',       iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
+  { title: 'AI Videos',          href: '/motionmandu',             icon: Clapperboard, priceLabel: 'Starting at',   price: 'Rs 2,000',     iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100'   },
+  { title: 'Meta Ads',           href: '/meta-ads',                icon: Megaphone,    priceLabel: 'Starting with', price: 'Budget plan',  iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100'   },
+  { title: 'AI Sales Agent',     href: '/sales-agent',             icon: Bot,          priceLabel: 'Starting at',   price: 'Rs 4,000',     iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
 ];
 
 export default function Home() {
@@ -226,45 +226,50 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Services grid */}
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {/* Services grid - 7 portrait cards matching reference design */}
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-black/[0.06] bg-white/60 p-6 transition-all duration-500 hover:border-black/[0.1] hover:bg-white hover:shadow-lg hover:shadow-black/[0.04]"
+                    className="group relative flex flex-col items-center overflow-hidden rounded-2xl border border-black/[0.06] bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08]"
                   >
-                    {/* Hover glow */}
-                    <div className="pointer-events-none absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-emerald-500/[0.05] opacity-0 blur-[60px] transition-opacity duration-500 group-hover:opacity-100" />
+                    {/* Number top-right */}
+                    <span className="absolute right-3 top-3 text-[11px] font-semibold text-[#c4c4c8]">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
 
-                    <div className="relative">
-                      {/* Number */}
-                      <span className="text-[11px] font-medium text-[#d4d4d8]">
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-
-                      {/* Icon */}
-                      <div className="mt-4 flex h-20 w-20 items-center justify-center rounded-2xl border border-black/[0.06] bg-[#fafafa] shadow-sm">
-                        <Icon className="h-10 w-10 text-emerald-600/75" aria-hidden="true" />
-                      </div>
-
-                      {/* Title */}
-                      <h3 className="mt-4 text-[17px] font-semibold tracking-tight text-[#18181b]">
-                        {service.title}
-                      </h3>
-
-                      <p className="mt-3 text-[13px] font-semibold leading-relaxed text-emerald-700">
-                        {service.price}
-                      </p>
+                    {/* Icon bubble with soft gradient bg */}
+                    <div
+                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-[22px] bg-gradient-to-br ${service.iconBg} shadow-sm transition-transform duration-300 group-hover:scale-105`}
+                    >
+                      {/* Soft blob glow inside */}
+                      <div
+                        className="absolute inset-0 rounded-[22px] opacity-40"
+                        style={{ background: `radial-gradient(circle at 65% 35%, ${service.iconColor}30, transparent 70%)` }}
+                      />
+                      <Icon className="relative h-9 w-9" style={{ color: service.iconColor }} aria-hidden="true" />
                     </div>
 
+                    {/* Title */}
+                    <h3 className="text-[14px] font-black leading-snug tracking-tight text-[#1c1917] whitespace-pre-line">
+                      {service.title}
+                    </h3>
+
+                    {/* Price label */}
+                    <p className="mt-2 text-[11px] font-medium text-[#a8a29e]">{service.priceLabel}</p>
+                    <p
+                      className="mt-0.5 text-[15px] font-black"
+                      style={{ color: service.iconColor === '#f59e0b' ? '#d97706' : service.iconColor }}
+                    >
+                      {service.price}
+                    </p>
+
                     {/* Arrow */}
-                    <div className="mt-6 flex justify-end">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full border border-black/[0.06] text-[#d4d4d8] transition-all duration-300 group-hover:border-emerald-500/30 group-hover:bg-emerald-50 group-hover:text-emerald-600">
-                        <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-                      </div>
+                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full border border-black/[0.07] text-[#c4c4c8] transition-all duration-300 group-hover:border-transparent group-hover:bg-emerald-500 group-hover:text-white">
+                      <ArrowRight className="h-3 w-3" aria-hidden="true" />
                     </div>
                   </Link>
                 );

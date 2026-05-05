@@ -1,16 +1,14 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Building2, Clapperboard, Clock3, Send, Sparkles, Video } from 'lucide-react';
-import Header from '../../components/Header';
-import { Footer } from '../../components/sections/Footer';
+import { ArrowRight, Play, Send, Star, Zap, Film, Clapperboard, Sparkles, Clock, ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Motionmandu AI Business Videos',
-  description: 'Motionmandu creates AI videos for businesses in Nepal. Get product, offer, and brand videos for Rs 2000 per video.',
+  title: 'Motionmandu AI — Premium Business Videos in Nepal',
+  description: 'Motionmandu creates cinematic AI videos for businesses in Nepal. Product launches, brand films, reels, and ad creatives. Starting at Rs 2,000.',
   alternates: { canonical: '/motionmandu' },
   openGraph: {
-    title: 'Motionmandu AI Business Videos',
-    description: 'AI videos for businesses at Rs 2000 per video.',
+    title: 'Motionmandu AI — Premium Business Videos',
+    description: 'Your business has a story. We turn it into video.',
     url: 'https://sajedar.com/motionmandu',
     siteName: 'Sajedar',
     type: 'website',
@@ -18,171 +16,374 @@ export const metadata: Metadata = {
 };
 
 const whatsappMessage = encodeURIComponent(
-  'Hi Sajedar! I am interested in Motionmandu AI videos for my business. Please share details.'
+  'Hi! I am interested in Motionmandu AI videos for my business. Please share details.'
 );
 
-const useCases = [
-  'Product launch videos',
-  'Offer and sale promos',
-  'Restaurant menu reels',
-  'Real estate walkthrough concepts',
-  'Fashion and clothing drops',
-  'Service explainers for local businesses',
+const videoTypes = [
+  { label: 'Product Launch', icon: '🎬' },
+  { label: 'Brand Film', icon: '🎞' },
+  { label: 'Reels & Stories', icon: '📱' },
+  { label: 'Ad Creatives', icon: '📢' },
+  { label: 'Restaurant Promos', icon: '🍽' },
+  { label: 'Fashion Drops', icon: '👗' },
 ];
 
-const steps = [
+const process = [
   {
+    step: '01',
     title: 'Send your brief',
-    copy: 'Share your product, offer, audience, and any brand references you already have.',
+    body: 'Share your product, brand story, target audience, and any references. WhatsApp works fine.',
+    icon: Send,
   },
   {
-    title: 'We create the video',
-    copy: 'Motionmandu turns your brief into a polished AI video made for business promotion.',
+    step: '02',
+    title: 'We craft your video',
+    body: 'Our AI-powered studio transforms your brief into a polished cinematic video — motion, sound, story included.',
+    icon: Film,
   },
   {
-    title: 'Use it in your ads',
-    copy: 'Post it on Facebook, Instagram, TikTok, reels, stories, or sales campaigns.',
+    step: '03',
+    title: 'Publish and convert',
+    body: 'Deploy across Facebook, Instagram, TikTok, and ad campaigns. Built for engagement from the first frame.',
+    icon: Zap,
   },
+];
+
+const features = [
+  { title: 'Motion Design', body: 'Fluid animations that command attention and hold it.' },
+  { title: 'Story-Driven', body: 'Research-backed narratives that connect with your audience.' },
+  { title: 'Fast Delivery', body: 'Production-ready videos without production-day delays.' },
+  { title: 'Ad-Ready Format', body: 'Optimised for Meta, TikTok, YouTube — every ratio.' },
 ];
 
 export default function MotionmanduPage() {
   return (
-    <div className="min-h-screen w-full bg-[#fafaf9] font-sans text-[#44403c]">
-      <Header />
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#0a0a0a] font-sans text-white">
 
-      <main className="w-full pt-24">
-        <section className="relative overflow-hidden border-b border-stone-200 bg-[#111827] text-white">
-          <div className="absolute inset-0 opacity-30">
-            <div className="h-full w-full bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.5),transparent_28%),radial-gradient(circle_at_82%_12%,rgba(251,191,36,0.35),transparent_24%),linear-gradient(135deg,rgba(17,24,39,1),rgba(28,25,23,1))]" />
+      {/* ── CUSTOM HEADER ── */}
+      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 lg:px-10"
+        style={{ background: 'linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0) 100%)' }}
+      >
+        <Link href="/" className="flex items-center gap-2 group">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 shadow-lg shadow-amber-500/30">
+            <Clapperboard className="h-4 w-4 text-white" />
           </div>
-          <div className="relative mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:items-center lg:px-8">
-            <div>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/40 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-100">
-                <Sparkles className="h-4 w-4" aria-hidden="true" />
-                AI videos for businesses
-              </div>
-              <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">
-                Motionmandu makes business videos with AI.
-              </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-stone-200 md:text-lg">
-                Get short, sharp videos for your products, offers, services, and brand campaigns without a full shoot day.
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-950/30 transition hover:bg-emerald-400"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Send className="h-4 w-4" aria-hidden="true" />
-                  Order a video
-                </a>
-                <Link
-                  href="/contact?message=I%20am%20interested%20in%20Motionmandu%20AI%20videos%20for%20my%20business."
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 px-6 py-3 text-sm font-bold text-white transition hover:border-white/60 hover:bg-white/10"
-                >
-                  Talk to us
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-              </div>
+          <div>
+            <span className="text-[13px] font-black tracking-widest text-amber-400 uppercase">Motionmandu</span>
+            <span className="ml-1.5 text-[10px] font-semibold tracking-widest text-white/30 uppercase">AI</span>
+          </div>
+        </Link>
+        <a
+          href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-5 py-2 text-[13px] font-semibold text-amber-300 backdrop-blur transition-all hover:bg-amber-400 hover:text-black hover:border-amber-400"
+        >
+          Order a video
+          <ChevronRight className="h-3.5 w-3.5" />
+        </a>
+      </header>
+
+      <main>
+        {/* ══════════════════════════════════
+            HERO — full-bleed cinematic
+        ══════════════════════════════════ */}
+        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+          {/* Layered background */}
+          <div className="absolute inset-0">
+            {/* Dark base */}
+            <div className="absolute inset-0 bg-[#0a0a0a]" />
+            {/* Gold radial glow top-center */}
+            <div className="absolute inset-x-0 top-0 h-[70vh] bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(217,119,6,0.18),transparent_70%)]" />
+            {/* Warm bottom glow */}
+            <div className="absolute bottom-0 left-1/4 h-[40vh] w-[50vw] rounded-full bg-amber-600/[0.06] blur-[120px]" />
+            {/* Film grain texture */}
+            <div
+              className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
+              style={{
+                backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+              }}
+            />
+            {/* Horizontal film strip lines */}
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-px bg-gradient-to-r from-transparent via-amber-500/20 to-transparent" />
+          </div>
+
+          {/* Content */}
+          <div className="relative mx-auto max-w-5xl px-6 text-center lg:px-8">
+            {/* Eyebrow */}
+            <div className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-amber-400/20 bg-amber-400/[0.06] px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-amber-300 backdrop-blur-sm">
+              <div className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
+              AI Video Studio for Nepal Businesses
             </div>
 
-            <div className="rounded-lg border border-white/15 bg-white/10 p-6 shadow-2xl backdrop-blur">
-              <div className="flex items-center justify-between border-b border-white/15 pb-5">
-                <div>
-                  <p className="text-sm font-medium text-stone-300">Starting price</p>
-                  <p className="mt-1 text-4xl font-black text-white">Rs 2000</p>
-                </div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-emerald-400 text-[#111827]">
-                  <Video className="h-7 w-7" aria-hidden="true" />
-                </div>
-              </div>
-              <p className="mt-5 text-sm font-semibold text-emerald-100">Per video</p>
-              <p className="mt-3 text-sm leading-7 text-stone-200">
-                Ideal for businesses that need fresh ad creatives, social posts, and quick promotional videos without heavy production cost.
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-lg border border-white/10 bg-black/20 p-4">
-                  <Clock3 className="mb-3 h-5 w-5 text-emerald-300" aria-hidden="true" />
-                  <p className="font-semibold text-white">Fast turnaround</p>
-                </div>
-                <div className="rounded-lg border border-white/10 bg-black/20 p-4">
-                  <Building2 className="mb-3 h-5 w-5 text-emerald-300" aria-hidden="true" />
-                  <p className="font-semibold text-white">Business focused</p>
-                </div>
-              </div>
+            {/* Main headline */}
+            <h1 className="text-[clamp(2.8rem,8vw,6.5rem)] font-black leading-[0.95] tracking-[-0.04em]">
+              <span className="block text-white">Your business</span>
+              <span className="block text-white">has a story.</span>
+              <span
+                className="block mt-2"
+                style={{
+                  background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 40%, #d97706 70%, #92400e 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                We turn it into video.
+              </span>
+            </h1>
+
+            {/* Sub */}
+            <p className="mx-auto mt-8 max-w-xl text-[16px] leading-relaxed text-white/50">
+              Cinematic AI-powered videos for product launches, brand stories, reels, and ad campaigns.
+              Starting at <strong className="text-amber-400">Rs 2,000</strong> per video.
+            </p>
+
+            {/* CTAs */}
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-8 py-3.5 text-[14px] font-black text-black shadow-2xl shadow-amber-500/30 transition-all hover:-translate-y-0.5 hover:shadow-amber-500/50"
+              >
+                <Send className="h-4 w-4" />
+                Order on WhatsApp
+              </a>
+              <Link
+                href="#how-it-works"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-7 py-3.5 text-[14px] font-semibold text-white/70 backdrop-blur transition-all hover:border-white/20 hover:text-white"
+              >
+                <Play className="h-3.5 w-3.5 fill-current" />
+                See how it works
+              </Link>
             </div>
+
+            {/* Tags */}
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-2">
+              {['AI Videos', 'Reels', 'Ads', 'Brand Videos', 'Product Launches'].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-1.5 text-[12px] font-medium text-white/40"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Bottom scroll cue */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20">
+            <div className="h-8 w-px bg-gradient-to-b from-transparent to-white/20" />
+            <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-          <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">What you can make</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#1c1917]">Videos built for sales, ads, and daily marketing.</h2>
-              <p className="mt-4 text-base leading-8 text-[#57534e]">
-                Motionmandu is for businesses that need more creative output without adding a full video production team.
-              </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {useCases.map((item) => (
-                <div key={item} className="flex items-center gap-3 rounded-lg border border-stone-200 bg-white p-4 shadow-sm">
-                  <Clapperboard className="h-5 w-5 flex-shrink-0 text-emerald-600" aria-hidden="true" />
-                  <span className="text-sm font-semibold text-[#292524]">{item}</span>
+        {/* ══════════════════════════════════
+            PRICE SPOTLIGHT
+        ══════════════════════════════════ */}
+        <section className="relative overflow-hidden border-y border-white/[0.05] bg-[#0d0d0d] px-6 py-16 text-center lg:px-8">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_50%_50%,rgba(217,119,6,0.07),transparent_70%)]" />
+          <div className="relative mx-auto max-w-4xl">
+            <div className="grid gap-8 md:grid-cols-3">
+              {[
+                { value: 'Rs 2,000', label: 'Per video', note: 'Minimum order' },
+                { value: '2–4 days', label: 'Turnaround', note: 'Brief to delivery' },
+                { value: '100%', label: 'Business focused', note: 'Made for conversions' },
+              ].map((stat) => (
+                <div key={stat.label} className="flex flex-col items-center">
+                  <p
+                    className="text-[clamp(2rem,5vw,3rem)] font-black tracking-tight"
+                    style={{
+                      background: 'linear-gradient(135deg, #fbbf24, #d97706)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-[14px] font-semibold text-white/70">{stat.label}</p>
+                  <p className="text-[12px] text-white/30">{stat.note}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="border-y border-stone-200 bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-            <div className="mb-9 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-600">Simple process</p>
-                <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#1c1917]">From brief to ready-to-post video.</h2>
-              </div>
-              <p className="max-w-md text-sm leading-7 text-[#57534e]">
-                Send the essentials and we shape the creative so your business can publish faster.
+        {/* ══════════════════════════════════
+            WHAT WE CREATE
+        ══════════════════════════════════ */}
+        <section className="relative overflow-hidden bg-[#0a0a0a] px-6 py-24 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-14 max-w-lg">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.25em] text-amber-500/60">
+                Video types
               </p>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-tight tracking-tight text-white">
+                Every format your business needs.
+              </h2>
             </div>
-            <div className="grid gap-5 md:grid-cols-3">
-              {steps.map((step, index) => (
-                <div key={step.title} className="rounded-lg border border-stone-200 bg-[#fafaf9] p-6">
-                  <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-sm font-black text-emerald-700">
-                    {index + 1}
+
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+              {videoTypes.map(({ label, icon }) => (
+                <div
+                  key={label}
+                  className="group flex flex-col items-center gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 text-center transition-all duration-300 hover:border-amber-400/20 hover:bg-amber-400/[0.04]"
+                >
+                  <span className="text-3xl leading-none">{icon}</span>
+                  <p className="text-[13px] font-semibold text-white/60 transition-colors group-hover:text-white/90">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════
+            HOW IT WORKS
+        ══════════════════════════════════ */}
+        <section id="how-it-works" className="relative overflow-hidden border-t border-white/[0.04] bg-[#0d0d0d] px-6 py-24 lg:px-8">
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(217,119,6,0.05),transparent_70%)]" />
+          <div className="relative mx-auto max-w-6xl">
+            <div className="mb-14 text-center">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.25em] text-amber-500/60">
+                Simple process
+              </p>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-black tracking-tight text-white">
+                Brief to ready-to-post in 3 steps.
+              </h2>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              {process.map(({ step, title, body, icon: Icon }) => (
+                <div
+                  key={step}
+                  className="relative overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 transition-all duration-300 hover:border-amber-400/20"
+                >
+                  {/* Step number watermark */}
+                  <div
+                    className="absolute -right-4 -top-4 text-[80px] font-black leading-none select-none"
+                    style={{ color: 'rgba(217,119,6,0.05)' }}
+                  >
+                    {step}
                   </div>
-                  <h3 className="text-lg font-bold text-[#1c1917]">{step.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[#57534e]">{step.copy}</p>
+                  <div className="relative">
+                    <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/10 border border-amber-400/20">
+                      <Icon className="h-5 w-5 text-amber-400" />
+                    </div>
+                    <h3 className="text-[18px] font-black text-white">{title}</h3>
+                    <p className="mt-3 text-[14px] leading-relaxed text-white/40">{body}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
-          <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-7 md:flex md:items-center md:justify-between md:gap-8">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">Motionmandu</p>
-              <h2 className="mt-2 text-2xl font-bold text-[#1c1917]">Ready to create your next business video?</h2>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-[#57534e]">
-                Rs 2000 per video. Send your business details and we will help turn them into an AI video concept.
+        {/* ══════════════════════════════════
+            FEATURES GRID
+        ══════════════════════════════════ */}
+        <section className="relative overflow-hidden bg-[#0a0a0a] px-6 py-24 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-14 max-w-lg">
+              <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.25em] text-amber-500/60">
+                Why Motionmandu
               </p>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-black tracking-tight text-white">
+                Studio quality without studio overhead.
+              </h2>
             </div>
-            <a
-              href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-emerald-600 md:mt-0 md:w-auto"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Send className="h-4 w-4" aria-hidden="true" />
-              Start on WhatsApp
-            </a>
+
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {features.map(({ title, body }) => (
+                <div
+                  key={title}
+                  className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-7 transition-all duration-300 hover:border-amber-400/20 hover:bg-amber-400/[0.03]"
+                >
+                  <div className="mb-2 h-1 w-8 rounded-full bg-gradient-to-r from-amber-400 to-orange-500" />
+                  <h3 className="mt-4 text-[16px] font-black text-white">{title}</h3>
+                  <p className="mt-2 text-[13px] leading-relaxed text-white/40">{body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════
+            CTA — full-bleed cinematic
+        ══════════════════════════════════ */}
+        <section className="relative overflow-hidden border-t border-white/[0.04] bg-[#0d0d0d] px-6 py-32 text-center lg:px-8">
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute inset-x-0 top-0 h-full bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,rgba(217,119,6,0.1),transparent_70%)]" />
+          </div>
+          <div className="relative mx-auto max-w-3xl">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/[0.06] px-5 py-2 text-[12px] font-semibold uppercase tracking-[0.15em] text-amber-300">
+              <Sparkles className="h-3.5 w-3.5" />
+              Motionmandu AI
+            </div>
+            <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-black leading-[0.95] tracking-[-0.03em] text-white">
+              Ready to shoot<br />
+              <span
+                style={{
+                  background: 'linear-gradient(135deg, #fbbf24, #d97706)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                your next video?
+              </span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-md text-[15px] leading-relaxed text-white/40">
+              Rs 2,000 per video. Send your brief on WhatsApp and we will turn it into something your audience cannot scroll past.
+            </p>
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-9 py-4 text-[15px] font-black text-black shadow-2xl shadow-amber-500/25 transition-all hover:-translate-y-0.5 hover:shadow-amber-500/40"
+              >
+                <Send className="h-4 w-4" />
+                Start on WhatsApp
+              </a>
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 text-[14px] font-semibold text-white/30 transition-colors hover:text-white/60"
+              >
+                See all Sajedar services
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            {/* Social proof line */}
+            <div className="mt-14 flex items-center justify-center gap-3 text-white/20">
+              <div className="flex -space-x-2">
+                {['🏪', '🍽', '👗'].map((e, i) => (
+                  <div key={i} className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-sm">
+                    {e}
+                  </div>
+                ))}
+              </div>
+              <p className="text-[12px]">Used by Nepal businesses in retail, F&amp;B, fashion, and more</p>
+            </div>
           </div>
         </section>
       </main>
 
-      <Footer />
+      {/* ── FOOTER ── */}
+      <footer className="border-t border-white/[0.04] bg-[#0a0a0a] px-6 py-10 text-center lg:px-8">
+        <div className="flex flex-col items-center gap-3">
+          <Link href="/" className="text-[13px] font-semibold text-amber-400/60 transition-colors hover:text-amber-400">
+            Part of Sajedar
+          </Link>
+          <p className="text-[12px] text-white/20">
+            © {new Date().getFullYear()} Motionmandu by Sajedar. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
