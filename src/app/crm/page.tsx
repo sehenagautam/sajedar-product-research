@@ -1,5 +1,9 @@
-import { Metadata } from 'next';
+'use client';
+
+import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 import {
   ArrowRight,
   BellRing,
@@ -15,34 +19,14 @@ import {
   Sparkles,
   UsersRound,
   Zap,
+  ChevronRight,
+  Layout,
+  MousePointer2,
+  BarChart3,
+  Globe,
 } from 'lucide-react';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
-
-export const metadata: Metadata = {
-  title: 'Custom CRM Nepal for Social Media Businesses',
-  description: 'Custom CRM for Nepali businesses that sell through Facebook, Instagram, WhatsApp, and social media. Setup starts at Rs 10,000 with Rs 0.1 per customer per month.',
-  keywords: [
-    'custom crm nepal',
-    'crm for nepali business',
-    'social media crm nepal',
-    'facebook crm nepal',
-    'instagram crm nepal',
-    'online business crm nepal',
-    'customer management system nepal',
-    'crm for facebook sellers',
-    'crm for ecommerce nepal',
-    'sajedar crm',
-  ],
-  alternates: { canonical: '/crm' },
-  openGraph: {
-    title: 'Custom CRM Nepal for Social Media Businesses',
-    description: 'Manage customers, alerts, social accounts, and dashboards in one custom CRM for Nepali online businesses.',
-    url: 'https://sajedar.com/crm',
-    siteName: 'Sajedar',
-    type: 'website',
-  },
-};
 
 const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I am interested in a custom CRM for my Nepali online business. Please share details about setup and customer management pricing.'
@@ -50,152 +34,294 @@ const whatsappMessage = encodeURIComponent(
 
 const features = [
   {
-    title: 'Account system',
+    title: 'Account System',
     copy: 'Secure owner, manager, and staff access with the permissions your team actually needs.',
     icon: KeyRound,
-    accent: 'bg-emerald-50 text-emerald-700 ring-emerald-100',
+    color: 'emerald',
   },
   {
-    title: 'Social media accounts',
+    title: 'Social Media Accounts',
     copy: 'Organize customer records around Facebook, Instagram, WhatsApp, comments, and DMs.',
     icon: Share2,
-    accent: 'bg-sky-50 text-sky-700 ring-sky-100',
+    color: 'sky',
   },
   {
-    title: 'Auto detection features',
+    title: 'Auto Detection',
     copy: 'Spot repeat buyers, missed replies, order signals, and customers who need follow-up.',
     icon: Zap,
-    accent: 'bg-amber-50 text-amber-700 ring-amber-100',
+    color: 'amber',
   },
   {
-    title: 'Alert systems',
+    title: 'Alert Systems',
     copy: 'Trigger reminders for delayed orders, hot leads, support requests, and team handoffs.',
     icon: BellRing,
-    accent: 'bg-rose-50 text-rose-700 ring-rose-100',
+    color: 'rose',
   },
   {
-    title: 'Dashboard',
+    title: 'Founder Dashboard',
     copy: 'Track customers, sales activity, follow-ups, campaign health, and team workload.',
     icon: Gauge,
-    accent: 'bg-indigo-50 text-indigo-700 ring-indigo-100',
+    color: 'indigo',
   },
   {
-    title: 'Hosted on subdomain',
+    title: 'Hosted Solution',
     copy: 'Launch on a clean hosted subdomain so your team can use it from anywhere.',
     icon: Server,
-    accent: 'bg-stone-100 text-stone-700 ring-stone-200',
+    color: 'stone',
   },
 ];
 
 const workflow = [
   {
-    title: 'Map the messy reality',
-    copy: 'We document how customers currently message, order, pay, complain, repeat, and disappear.',
+    title: 'Map Reality',
+    copy: 'We document how customers message, order, pay, and repeat.',
+    icon: SearchCheck,
   },
   {
-    title: 'Design the operating system',
-    copy: 'We shape the CRM around your customer stages, staff roles, alerts, and reporting needs.',
+    title: 'Design OS',
+    copy: 'We shape the CRM around your customer stages and staff roles.',
+    icon: Layout,
   },
   {
-    title: 'Launch, host, and improve',
-    copy: 'Your CRM goes live on a subdomain with pricing that grows by managed customers.',
+    title: 'Live Launch',
+    copy: 'Your CRM goes live on a subdomain with scalable pricing.',
+    icon: Globe,
   },
-];
-
-const demoHighlights = [
-  'Founder dashboard with GMV, ROAS, CPA, and repeat customer rate',
-  'Creator and campaign operations views inspired by /crm/demo',
-  'Omni inbox for customer context, order history, and replies',
 ];
 
 const businessTypes = [
-  'Facebook sellers',
-  'Instagram stores',
-  'WhatsApp order teams',
-  'Clothing and fashion brands',
-  'Furniture and home businesses',
-  'Local ecommerce operators',
+  'Facebook Sellers',
+  'Instagram Stores',
+  'WhatsApp Order Teams',
+  'Fashion Brands',
+  'Furniture Businesses',
+  'Local Ecommerce',
 ];
+
+const fadeIn = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 }
+};
+
+const staggerContainer = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1
+    }
+  }
+};
 
 export default function CrmPage() {
   return (
-    <div className="min-h-screen w-full bg-[#f7f8f6] font-sans text-stone-800">
+    <div className="min-h-screen w-full bg-[#fafaf9] font-sans text-stone-900 selection:bg-emerald-100 selection:text-emerald-900">
       <Header />
 
-      <main className="w-full pt-20">
-        <section className="overflow-hidden border-b border-stone-200 bg-[#f7f8f6]">
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-16 lg:px-8">
-            <div className="max-w-2xl">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-bold text-emerald-700 shadow-sm">
-                <UsersRound className="h-4 w-4" aria-hidden="true" />
-                Custom CRM for Nepali social-commerce teams
-              </div>
-              <h1 className="text-4xl font-black leading-[1.04] tracking-tight text-stone-950 md:text-6xl">
-                Your inbox is already a sales floor. Give it a proper CRM.
-              </h1>
-              <p className="mt-6 max-w-xl text-base leading-8 text-stone-600 md:text-lg">
-                Sajedar builds custom CRM systems for Nepali businesses that sell through Facebook,
-                Instagram, WhatsApp, comments, and daily customer conversations.
-              </p>
+      <main className="w-full pt-14">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-white pb-16 pt-20 md:pb-24 md:pt-32">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 z-0 opacity-[0.03] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
+            <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+              <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="1" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+          </div>
 
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-stone-950 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-stone-900/10 transition hover:-translate-y-0.5 hover:bg-stone-800"
-                  target="_blank"
-                  rel="noopener noreferrer"
+          <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <motion.div 
+                initial="initial"
+                animate="animate"
+                variants={staggerContainer}
+                className="max-w-2xl"
+              >
+                <motion.div 
+                  variants={fadeIn}
+                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm"
                 >
-                  <MessageSquareText className="h-4 w-4" aria-hidden="true" />
-                  Discuss CRM on WhatsApp
-                </a>
-                <Link
-                  href="/crm/demo"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-stone-300 bg-white px-6 py-3 text-sm font-bold text-stone-900 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-300 hover:text-emerald-700"
+                  <UsersRound className="h-4 w-4" />
+                  Custom CRM for Nepali Social-Commerce
+                </motion.div>
+                
+                <motion.h1 
+                  variants={fadeIn}
+                  className="text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-7xl"
                 >
-                  <PlayCircle className="h-4 w-4" aria-hidden="true" />
-                  View live demo
-                </Link>
-              </div>
+                  Turn your <span className="text-emerald-600">messy inbox</span> into a proper sales floor.
+                </motion.h1>
+                
+                <motion.p 
+                  variants={fadeIn}
+                  className="mt-8 max-w-xl text-lg leading-relaxed text-stone-600 md:text-xl"
+                >
+                  Sajedar builds custom CRM systems for businesses that sell through Facebook, 
+                  Instagram, and WhatsApp. No more lost leads or forgotten follow-ups.
+                </motion.p>
 
-              <div className="mt-8 grid grid-cols-2 gap-3 sm:max-w-lg">
-                <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-700">Setup starts</p>
-                  <p className="mt-2 text-3xl font-black text-stone-950">Rs 10,000</p>
+                <motion.div 
+                  variants={fadeIn}
+                  className="mt-10 flex flex-col gap-4 sm:flex-row"
+                >
+                  <a
+                    href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageSquareText className="h-5 w-5" />
+                    Discuss on WhatsApp
+                  </a>
+                  <Link
+                    href="/crm/demo"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                  >
+                    <PlayCircle className="h-5 w-5" />
+                    Interactive Demo
+                  </Link>
+                </motion.div>
+
+                <motion.div 
+                  variants={fadeIn}
+                  className="mt-12 grid grid-cols-2 gap-4 sm:max-w-md"
+                >
+                  <div className="rounded-2xl border border-stone-100 bg-stone-50/50 p-5">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-stone-500">Setup Starts</p>
+                    <p className="mt-1 text-2xl font-black text-stone-950">Rs 10,000</p>
+                  </div>
+                  <div className="rounded-2xl border border-emerald-100 bg-emerald-50/30 p-5">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-emerald-700">Monthly</p>
+                    <p className="mt-1 text-2xl font-black text-stone-950">Rs 0.1 <span className="text-sm font-bold text-stone-400">/cust</span></p>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.95, x: 20 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative"
+              >
+                <div className="relative z-10 rounded-[2.5rem] border-[8px] border-stone-950/5 bg-white p-2 shadow-2xl">
+                  <div className="relative overflow-hidden rounded-[2rem] bg-stone-100 shadow-inner">
+                    <Image
+                      src="/crm-redesign-screenshot.png"
+                      alt="Sajedar CRM Dashboard"
+                      width={1200}
+                      height={900}
+                      className="w-full transition duration-700 hover:scale-105"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/20 to-transparent opacity-0 transition-opacity hover:opacity-100" />
+                  </div>
                 </div>
-                <div className="rounded-lg border border-sky-200 bg-sky-50 p-4">
-                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-sky-700">Monthly usage</p>
-                  <p className="mt-2 text-3xl font-black text-stone-950">Rs 0.1</p>
-                  <p className="text-xs font-bold text-sky-700">per customer</p>
-                </div>
-              </div>
+                
+                {/* Floating Elements */}
+                <motion.div 
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -right-8 -top-8 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur-md sm:block"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+                      <BarChart3 className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Total GMV</p>
+                      <p className="text-lg font-black text-stone-950">Rs 842K</p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  className="absolute -bottom-8 -left-8 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur-md sm:block"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500 text-white shadow-lg shadow-blue-500/20">
+                      <MessageSquareText className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Active Chats</p>
+                      <p className="text-lg font-black text-stone-950">124 New</p>
+                    </div>
+                  </div>
+                </motion.div>
+                
+                {/* Decorative circles */}
+                <div className="absolute -right-20 -top-20 -z-10 h-64 w-64 rounded-full bg-emerald-50 blur-3xl" />
+                <div className="absolute -bottom-20 -left-20 -z-10 h-64 w-64 rounded-full bg-blue-50 blur-3xl" />
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="bg-stone-50 py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="mb-16 max-w-3xl">
+              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-emerald-700">Powerful Capabilities</h2>
+              <h3 className="mt-4 text-4xl font-black tracking-tight text-stone-950 md:text-5xl">
+                Everything you need to scale your social commerce team.
+              </h3>
             </div>
 
-            <div className="relative w-full max-w-[560px] justify-self-end">
-              <div className="rounded-lg border border-stone-200 bg-white p-3 shadow-2xl shadow-stone-900/10">
-                <div className="mb-3 flex items-center justify-between px-2 py-1">
-                  <div className="flex items-center gap-2">
-                    <span className="h-3 w-3 rounded-full bg-rose-400" />
-                    <span className="h-3 w-3 rounded-full bg-amber-400" />
-                    <span className="h-3 w-3 rounded-full bg-emerald-400" />
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {features.map((feature, idx) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                  className="group relative overflow-hidden rounded-[2rem] border border-stone-200 bg-white p-8 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
+                >
+                  <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${feature.color}-50 text-${feature.color}-600 ring-1 ring-${feature.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
+                    <feature.icon className="h-7 w-7" />
                   </div>
-                  <Link href="/crm/demo" className="inline-flex items-center gap-2 rounded-md bg-stone-100 px-3 py-1.5 text-xs font-black uppercase tracking-[0.16em] text-stone-600 transition hover:bg-stone-200">
-                    Demo
-                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-                  </Link>
-                </div>
-                <div className="relative h-[360px] overflow-hidden rounded-lg border border-stone-200 bg-[#f4f7fb] sm:h-[400px] lg:h-[420px]">
-                  <iframe
-                    src="/crm/demo"
-                    title="Sajedar CRM demo preview"
-                    className="absolute left-0 top-0 h-[780px] w-[760px] origin-top-left scale-[0.47] border-0 bg-[#f4f7fb] sm:w-[840px] sm:scale-50 lg:w-[1120px] lg:scale-[0.44]"
-                  />
-                </div>
-              </div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
-                {demoHighlights.map((highlight) => (
-                  <div key={highlight} className="flex gap-2 rounded-lg border border-stone-200 bg-white p-3 text-xs font-semibold leading-5 text-stone-600 shadow-sm">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" aria-hidden="true" />
-                    <span>{highlight}</span>
+                  <h4 className="text-xl font-black text-stone-950">{feature.title}</h4>
+                  <p className="mt-4 leading-relaxed text-stone-600">{feature.copy}</p>
+                  
+                  {/* Subtle arrow that appears on hover */}
+                  <div className="mt-6 flex items-center gap-2 text-sm font-bold text-stone-400 opacity-0 transition-all group-hover:translate-x-1 group-hover:text-emerald-600 group-hover:opacity-100">
+                    Learn more <ChevronRight className="h-4 w-4" />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Workflow / Process Section */}
+        <section className="relative overflow-hidden bg-white py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="mb-20 text-center">
+              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-emerald-700">Our Approach</h2>
+              <h3 className="mt-4 text-4xl font-black tracking-tight text-stone-950 md:text-5xl">
+                From chaos to clarity in three steps.
+              </h3>
+            </div>
+
+            <div className="relative">
+              {/* Connecting line for desktop */}
+              <div className="absolute left-1/2 top-1/2 hidden h-0.5 w-[80%] -translate-x-1/2 -translate-y-1/2 bg-stone-100 lg:block" />
+              
+              <div className="grid gap-12 lg:grid-cols-3">
+                {workflow.map((step, idx) => (
+                  <div key={step.title} className="relative z-10 flex flex-col items-center text-center">
+                    <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-3xl bg-stone-950 text-2xl font-black text-white shadow-xl shadow-stone-900/20 ring-8 ring-white">
+                      <step.icon className="h-10 w-10" />
+                    </div>
+                    <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">
+                      {idx + 1}
+                    </div>
+                    <h4 className="text-2xl font-black text-stone-950">{step.title}</h4>
+                    <p className="mt-4 max-w-xs leading-relaxed text-stone-600">{step.copy}</p>
                   </div>
                 ))}
               </div>
@@ -203,131 +329,164 @@ export default function CrmPage() {
           </div>
         </section>
 
-        <section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-[0.8fr_1.2fr] lg:px-8">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-emerald-700">Main features</p>
-              <h2 className="mt-3 max-w-xl text-3xl font-black tracking-tight text-stone-950 md:text-4xl">
-                Built around the way Nepali teams sell, follow up, and remember customers.
-              </h2>
-              <p className="mt-5 text-base leading-8 text-stone-600">
-                The dashboard is customized around your business flow, with the interactive example available at{' '}
-                <Link href="/crm/demo" className="font-bold text-emerald-700 underline decoration-emerald-200 underline-offset-4 hover:text-emerald-800">
-                  /crm/demo
-                </Link>
-                .
-              </p>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {features.map((feature) => {
-                const Icon = feature.icon;
-
-                return (
-                  <div key={feature.title} className="rounded-lg border border-stone-200 bg-[#fbfbfa] p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                    <div className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg ring-1 ${feature.accent}`}>
-                      <Icon className="h-5 w-5" aria-hidden="true" />
+        {/* Interactive Demo CTA Section */}
+        <section className="bg-stone-950 py-24">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="relative overflow-hidden rounded-[3rem] bg-emerald-600 p-8 md:p-16 lg:p-20">
+              {/* Decorative gradient */}
+              <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
+              <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-stone-950/20 blur-3xl" />
+              
+              <div className="relative z-10 grid gap-12 lg:grid-cols-2 lg:items-center">
+                <div className="text-white">
+                  <h2 className="text-4xl font-black leading-tight tracking-tight md:text-5xl">
+                    Experience the system in action.
+                  </h2>
+                  <p className="mt-6 text-lg font-medium text-emerald-50/80">
+                    Don't just take our word for it. Explore the live interactive demo 
+                    and see how different roles—from founders to support agents—use 
+                    the custom Sajedar CRM.
+                  </p>
+                  <div className="mt-10 flex flex-wrap gap-4">
+                    <Link
+                      href="/crm/demo"
+                      className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-emerald-700 shadow-xl transition hover:-translate-y-1 hover:bg-stone-50"
+                    >
+                      <PlayCircle className="h-5 w-5" />
+                      Open Live Demo
+                    </Link>
+                    <a
+                      href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                      className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-950 px-8 text-base font-bold text-white shadow-xl transition hover:-translate-y-1 hover:bg-emerald-900"
+                    >
+                      Get Started Today
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="relative hidden lg:block">
+                  <div className="group relative overflow-hidden rounded-[2rem] border-[4px] border-white/20 shadow-2xl transition duration-500 hover:scale-[1.02]">
+                    <Image
+                      src="/crm-redesign-screenshot.png"
+                      alt="Sajedar CRM Demo Preview"
+                      width={800}
+                      height={600}
+                      className="w-full opacity-60 grayscale transition duration-700 group-hover:opacity-100 group-hover:grayscale-0"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Link 
+                        href="/crm/demo"
+                        className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-emerald-600 shadow-2xl transition-transform hover:scale-110"
+                      >
+                        <MousePointer2 className="h-10 w-10" />
+                      </Link>
                     </div>
-                    <h3 className="text-base font-black text-stone-950">{feature.title}</h3>
-                    <p className="mt-2 text-sm leading-7 text-stone-600">{feature.copy}</p>
                   </div>
-                );
-              })}
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="border-y border-stone-200 bg-[#eef7f3]">
-          <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
-            <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-end">
+        {/* Who it is for */}
+        <section className="bg-white py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="grid gap-16 lg:grid-cols-[1fr_auto]">
               <div>
-                <p className="text-xs font-black uppercase tracking-[0.22em] text-emerald-800">How it works</p>
-                <h2 className="mt-3 text-3xl font-black tracking-tight text-stone-950 md:text-4xl">
-                  From scattered conversations to a managed customer system.
-                </h2>
+                <h2 className="text-xs font-black uppercase tracking-[0.25em] text-emerald-700">Perfect Fit</h2>
+                <h3 className="mt-4 text-4xl font-black tracking-tight text-stone-950 md:text-5xl">
+                  For businesses whose customer memory lives in chats and spreadsheets.
+                </h3>
+                <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                  If your team is juggling notebooks, phone galleries, and thousands of DMs, 
+                  you are losing money every day. A custom CRM gives your process a reliable home.
+                </p>
+                
+                <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {businessTypes.map((type) => (
+                    <div key={type} className="flex items-center gap-3 rounded-2xl border border-stone-100 bg-stone-50/50 p-4 transition-colors hover:border-emerald-100 hover:bg-emerald-50/30">
+                      <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                      <span className="font-bold text-stone-800">{type}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <p className="max-w-xl text-sm leading-7 text-stone-700 md:justify-self-end">
-                The goal is simple: your team should know who the customer is, what happened before,
-                what needs attention now, and what should happen next.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-4 md:grid-cols-3">
-              {workflow.map((step, index) => (
-                <div key={step.title} className="rounded-lg border border-emerald-200/70 bg-white p-6 shadow-sm">
-                  <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-stone-950 text-sm font-black text-white">
-                    {index + 1}
+              
+              <div className="flex flex-col gap-6 rounded-[3rem] border border-stone-200 bg-stone-50 p-10 lg:w-96">
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-xl shadow-emerald-500/20">
+                    <ShieldCheck className="h-8 w-8" />
                   </div>
-                  <h3 className="text-lg font-black text-stone-950">{step.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-stone-600">{step.copy}</p>
+                  <h4 className="text-2xl font-black text-stone-950">Enterprise Ready</h4>
+                  <p className="mt-4 text-sm font-medium leading-relaxed text-stone-600">
+                    Built for security, scalability, and speed. We host it, we manage it, you just sell.
+                  </p>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-16 md:grid-cols-[0.95fr_1.05fr] md:items-center lg:px-8">
-            <div>
-              <p className="text-xs font-black uppercase tracking-[0.22em] text-emerald-700">Who it is for</p>
-              <h2 className="mt-3 text-3xl font-black tracking-tight text-stone-950 md:text-4xl">
-                For businesses whose customer memory lives in chats, comments, and spreadsheets.
-              </h2>
-              <p className="mt-5 text-base leading-8 text-stone-600">
-                If your team is using notebooks, saved replies, phone galleries, and memory to manage
-                customers, a custom CRM gives that process a reliable home.
-              </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {businessTypes.map((type) => (
-                <div key={type} className="flex items-center gap-3 rounded-lg border border-stone-200 bg-[#fbfbfa] p-4 shadow-sm">
-                  <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-emerald-600" aria-hidden="true" />
-                  <span className="text-sm font-bold text-stone-800">{type}</span>
+                
+                <hr className="border-stone-200" />
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="text-sm font-bold text-stone-700">Daily Backups</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="text-sm font-bold text-stone-700">99.9% Uptime SLA</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="text-sm font-bold text-stone-700">Dedicated Support</span>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-5 pb-16 lg:px-8">
-          <div className="grid gap-4 rounded-lg border border-stone-200 bg-stone-950 p-6 text-white shadow-2xl shadow-stone-900/10 md:grid-cols-[1fr_auto] md:items-center md:p-8">
-            <div>
-              <div className="mb-4 flex flex-wrap gap-2">
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold text-emerald-100">
-                  <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />
-                  Hosted CRM
-                </span>
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold text-sky-100">
-                  <SearchCheck className="h-3.5 w-3.5" aria-hidden="true" />
-                  Custom workflows
-                </span>
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs font-bold text-amber-100">
-                  <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-                  Smart alerts
-                </span>
               </div>
-              <h2 className="text-2xl font-black tracking-tight md:text-3xl">Ready to manage customers properly?</h2>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-300">
-                Setup starts at Rs 10,000, with Rs 0.1 per customer per month. Share your business flow
-                and we will plan the CRM structure with you.
-              </p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
-              <a
-                href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-500 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-emerald-600"
-                target="_blank"
-                rel="noopener noreferrer"
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="bg-stone-50 pb-24 md:pb-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-white p-12 text-center md:p-20">
+              <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-50 blur-3xl" />
+              <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-blue-50 blur-3xl" />
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="relative z-10 mx-auto max-w-3xl"
               >
-                <MessageSquareText className="h-4 w-4" aria-hidden="true" />
-                WhatsApp Sajedar
-              </a>
-              <Link
-                href="/contact?message=I%20am%20interested%20in%20a%20custom%20CRM%20for%20my%20Nepali%20online%20business."
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5 hover:bg-white/10"
-              >
-                Request CRM plan
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
+                <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-stone-950 px-4 py-1 text-[10px] font-black uppercase tracking-widest text-white">
+                  <Sparkles className="h-3 w-3 text-amber-400" />
+                  Start Scaling Now
+                </div>
+                <h2 className="text-4xl font-black tracking-tight text-stone-950 md:text-6xl">
+                  Ready to manage customers properly?
+                </h2>
+                <p className="mt-8 text-lg leading-relaxed text-stone-600">
+                  Join dozens of ambitious Nepali brands using Sajedar to automate their sales 
+                  and manage their customer life cycle. Setup is fast, simple, and affordable.
+                </p>
+                <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                  <a
+                    href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageSquareText className="h-5 w-5" />
+                    WhatsApp Sajedar
+                  </a>
+                  <Link
+                    href="/contact?message=I%20am%20interested%20in%20a%20custom%20CRM%20for%20my%20Nepali%20online%20business."
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                  >
+                    Request CRM Plan
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
