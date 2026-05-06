@@ -34,13 +34,13 @@ const bricks = [
 
 /* Service cards data */
 const services = [
-  { title: 'Product Research',   href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at',   price: 'Rs 3,000',     iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
-  { title: 'Business Website',   href: '/website',                 icon: Code2,        priceLabel: 'Starting at',   price: 'Rs 4,000',     iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100'   },
-  { title: 'Custom CRM',         href: '/crm',                     icon: UsersRound,   priceLabel: 'Starting at',   price: 'Rs 10,000',    iconColor: '#8b5cf6', iconBg: 'from-violet-50 to-purple-100' },
-  { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at',   price: 'Rs 200',       iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
-  { title: 'AI Videos',          href: '/motionmandu',             icon: Clapperboard, priceLabel: 'Starting at',   price: 'Rs 2,000',     iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100'   },
-  { title: 'Meta Ads',           href: '/meta-ads',                icon: Megaphone,    priceLabel: 'Starting with', price: 'Budget plan',  iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100'   },
-  { title: 'AI Sales Agent',     href: '/sales-agent',             icon: Bot,          priceLabel: 'Starting at',   price: 'Rs 4,000',     iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
+  { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
+  { title: 'Business Website', href: '/website', icon: Code2, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
+  { title: 'Custom CRM', href: '/crm', icon: UsersRound, priceLabel: 'Starting at', price: 'Rs 10,000', iconColor: '#8b5cf6', iconBg: 'from-violet-50 to-purple-100' },
+  { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
+  { title: 'AI Videos', href: '/motionmandu', icon: Clapperboard, priceLabel: 'Starting at', price: 'Rs 2,000', iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100' },
+  { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
+  { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
 ];
 
 export default function Home() {
@@ -85,7 +85,7 @@ export default function Home() {
               </h1>
 
               <p className="animate-fade-up mt-6 max-w-lg text-[16px] leading-relaxed text-[#71717a]" style={{ animationDelay: '0.2s' }}>
-                From DMs to a complete sales engine. Website, CRM, ads, creative, and AI automation. One partner, every step.
+                From DMs to a complete sales engine. Website, CRM, ads, creative, and AI automation. One partner, every step. <b>Online Business Operating System</b>
               </p>
 
               <div className="animate-fade-up mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
@@ -162,11 +162,10 @@ export default function Home() {
                     }}
                   >
                     <div
-                      className={`flex items-center gap-3 rounded-lg border px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${
-                        isLast
+                      className={`flex items-center gap-3 rounded-lg border px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${isLast
                           ? 'border-emerald-500/30 bg-emerald-50 shadow-lg shadow-emerald-500/10 hover:border-emerald-500/40'
                           : 'border-black/[0.06] bg-white/80 shadow-sm hover:border-black/[0.12] hover:shadow-md'
-                      }`}
+                        }`}
                       style={{ minWidth: '170px' }}
                     >
                       <div
