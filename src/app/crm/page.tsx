@@ -124,7 +124,7 @@ export default function CrmPage() {
 
       <main className="w-full pt-20">
         <section className="overflow-hidden border-b border-stone-200 bg-[#f7f8f6]">
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[0.88fr_1.12fr] md:items-center md:py-16 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 md:grid-cols-[1.15fr_0.85fr] md:items-center md:py-16 lg:px-8">
             <div className="max-w-2xl">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-bold text-emerald-700 shadow-sm">
                 <UsersRound className="h-4 w-4" aria-hidden="true" />
@@ -170,7 +170,7 @@ export default function CrmPage() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative w-full max-w-[560px] justify-self-end">
               <div className="rounded-lg border border-stone-200 bg-white p-3 shadow-2xl shadow-stone-900/10">
                 <div className="mb-3 flex items-center justify-between px-2 py-1">
                   <div className="flex items-center gap-2">
@@ -183,15 +183,15 @@ export default function CrmPage() {
                     <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
                   </Link>
                 </div>
-                <div className="h-[520px] overflow-hidden rounded-lg border border-stone-200 bg-[#f4f7fb]">
+                <div className="relative h-[360px] overflow-hidden rounded-lg border border-stone-200 bg-[#f4f7fb] sm:h-[400px] lg:h-[420px]">
                   <iframe
                     src="/crm/demo"
                     title="Sajedar CRM demo preview"
-                    className="h-[780px] w-full origin-top scale-[0.68] border-0 bg-[#f4f7fb] sm:scale-[0.78] lg:w-[1280px] lg:scale-[0.58]"
+                    className="absolute left-0 top-0 h-[780px] w-[760px] origin-top-left scale-[0.47] border-0 bg-[#f4f7fb] sm:w-[840px] sm:scale-50 lg:w-[1120px] lg:scale-[0.44]"
                   />
                 </div>
               </div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              <div className="mt-4 grid gap-3 sm:grid-cols-3 md:grid-cols-1 xl:grid-cols-3">
                 {demoHighlights.map((highlight) => (
                   <div key={highlight} className="flex gap-2 rounded-lg border border-stone-200 bg-white p-3 text-xs font-semibold leading-5 text-stone-600 shadow-sm">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" aria-hidden="true" />
