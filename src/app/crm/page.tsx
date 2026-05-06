@@ -206,17 +206,39 @@ export default function CrmPage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <div className="relative z-10 rounded-[2.5rem] border-[8px] border-stone-950/5 bg-white p-2 shadow-2xl">
-                  <div className="relative overflow-hidden rounded-[2rem] bg-stone-100 shadow-inner">
+                {/* Mac Window Frame */}
+                <div className="relative z-10 rounded-2xl border border-stone-200 bg-white p-1 shadow-2xl">
+                  {/* Top Bar */}
+                  <div className="flex items-center gap-1.5 px-4 py-3 border-b border-stone-100 bg-stone-50/50 rounded-t-xl">
+                    <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
+                    <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
+                    <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
+                    <div className="ml-4 flex-1">
+                      <div className="h-4 w-full max-w-[200px] bg-white rounded-md border border-stone-200" />
+                    </div>
+                  </div>
+                  
+                  {/* Image Container */}
+                  <div className="relative overflow-hidden rounded-b-xl bg-stone-100 group">
                     <Image
-                      src="/crm-redesign-screenshot.png"
-                      alt="Sajedar CRM Dashboard"
+                      src="/crm_demo_ss.png"
+                      alt="Sajedar CRM Dashboard Demo"
                       width={1200}
                       height={900}
-                      className="w-full transition duration-700 hover:scale-105"
+                      className="w-full transition duration-700 group-hover:scale-105"
                       priority
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/20 to-transparent opacity-0 transition-opacity hover:opacity-100" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/40 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-40" />
+                    
+                    {/* Play Button Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <Link 
+                        href="/crm/demo"
+                        className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-emerald-600 shadow-2xl transition-transform hover:scale-110"
+                      >
+                        <PlayCircle className="h-12 w-12" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 
@@ -227,11 +249,11 @@ export default function CrmPage() {
                   className="absolute -right-8 -top-8 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur-md sm:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-lg shadow-indigo-600/20">
                       <BarChart3 className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Total GMV</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Total Sales</p>
                       <p className="text-lg font-black text-stone-950">Rs 842K</p>
                     </div>
                   </div>
@@ -247,8 +269,8 @@ export default function CrmPage() {
                       <MessageSquareText className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Active Chats</p>
-                      <p className="text-lg font-black text-stone-950">124 New</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-stone-400">Live Support</p>
+                      <p className="text-lg font-black text-stone-950">Active Now</p>
                     </div>
                   </div>
                 </motion.div>
@@ -365,21 +387,31 @@ export default function CrmPage() {
                 </div>
                 
                 <div className="relative hidden lg:block">
-                  <div className="group relative overflow-hidden rounded-[2rem] border-[4px] border-white/20 shadow-2xl transition duration-500 hover:scale-[1.02]">
-                    <Image
-                      src="/crm-redesign-screenshot.png"
-                      alt="Sajedar CRM Demo Preview"
-                      width={800}
-                      height={600}
-                      className="w-full opacity-60 grayscale transition duration-700 group-hover:opacity-100 group-hover:grayscale-0"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Link 
-                        href="/crm/demo"
-                        className="flex h-20 w-20 items-center justify-center rounded-full bg-white text-emerald-600 shadow-2xl transition-transform hover:scale-110"
-                      >
-                        <MousePointer2 className="h-10 w-10" />
-                      </Link>
+                  {/* Mac Window Frame for CTA section */}
+                  <div className="group relative overflow-hidden rounded-2xl border border-white/20 shadow-2xl transition duration-500 hover:scale-[1.02] bg-white/10 backdrop-blur-sm p-1">
+                    {/* Top Bar */}
+                    <div className="flex items-center gap-1.5 px-4 py-2 border-b border-white/10 bg-white/5 rounded-t-xl">
+                      <div className="w-2.5 h-2.5 rounded-full bg-white/30" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-white/30" />
+                      <div className="w-2.5 h-2.5 rounded-full bg-white/30" />
+                    </div>
+                    
+                    <div className="relative overflow-hidden rounded-b-xl">
+                      <Image
+                        src="/crm_demo_ss.png"
+                        alt="Sajedar CRM Demo Preview"
+                        width={800}
+                        height={600}
+                        className="w-full opacity-60 grayscale transition duration-700 group-hover:opacity-100 group-hover:grayscale-0"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <Link 
+                          href="/crm/demo"
+                          className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-emerald-600 shadow-2xl transition-transform hover:scale-110"
+                        >
+                          <MousePointer2 className="h-8 w-8" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

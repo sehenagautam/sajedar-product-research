@@ -2,6 +2,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import {
     Users,
     ShoppingBag,
@@ -202,37 +203,164 @@ const FounderView = ({ showToast }) => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {/* Main Chart */}
-                <div className="lg:col-span-2 bg-white rounded-3xl border border-slate-100 p-6 shadow-sm">
+                <div className="lg:col-span-2 bg-white rounded-3xl border border-slate-100 p-6 shadow-sm overflow-hidden group relative">
                     <div className="flex items-center justify-between mb-8">
                         <div>
-                            <h2 className="text-xl font-black text-slate-800">GMV vs. Ad Spend</h2>
-                            <div className="flex items-center mt-2 space-x-4">
-                                <span className="flex items-center text-sm font-medium text-slate-600"><span className="w-3 h-3 rounded-full bg-violet-500 mr-2"></span> GMV</span>
-                                <span className="flex items-center text-sm font-medium text-slate-600"><span className="w-3 h-3 rounded-full bg-sky-300 mr-2"></span> Ad Spend</span>
+                            <h2 className="text-xl font-black text-slate-800">Sales Performance</h2>
+                            <div className="flex items-center mt-3 space-x-6">
+                                <span className="flex items-center text-[10px] font-black uppercase tracking-widest text-slate-500">
+                                    <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 mr-2 shadow-[0_0_8px_rgba(79,70,229,0.4)]"></span> 
+                                    Total Sales (Rs.)
+                                </span>
+                                <span className="flex items-center text-[10px] font-black uppercase tracking-widest text-slate-500">
+                                    <span className="w-2.5 h-2.5 rounded-full bg-sky-400 mr-2 shadow-[0_0_8px_rgba(56,189,248,0.4)]"></span> 
+                                    Ad Spend
+                                </span>
                             </div>
                         </div>
-                        <button onClick={handleExportClick} className="flex items-center space-x-2 text-sm font-bold text-violet-600 hover:text-violet-700 bg-violet-50 px-4 py-2 rounded-xl transition-colors">
-                            <Download className="w-4 h-4" />
-                            <span>Export CSV</span>
-                        </button>
+                        <div className="flex gap-2">
+                             <div className="hidden sm:flex items-center bg-slate-50 rounded-xl px-3 py-1.5 border border-slate-100">
+                                <span className="text-[10px] font-black text-emerald-600 uppercase tracking-tighter">Live from Nepal</span>
+                                <span className="ml-2 w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                             </div>
+                        </div>
                     </div>
 
-                    <div className="h-64 flex items-end justify-between space-x-2">
-                        {revenueChart.map((rev, idx) => (
-                            <div key={idx} className="flex flex-col items-center flex-1 group relative">
-                                <div
-                                    className="w-full max-w-[2rem] bg-gradient-to-t from-violet-200 to-violet-400 rounded-t-xl transition-all duration-300 relative z-10 hover:from-violet-400 hover:to-violet-600"
-                                    style={{ height: `${(rev / 900) * 100}%` }}
-                                ></div>
-                                <div
-                                    className="absolute bottom-0 w-full max-w-[2rem] bg-sky-200 rounded-t-xl opacity-80 z-20"
-                                    style={{ height: `${(spendChart[idx] / 900) * 100}%` }}
-                                ></div>
-                            </div>
-                        ))}
+                    <div className="relative h-72 w-full flex">
+                        {/* Y-Axis Labels */}
+                        <div className="flex flex-col justify-between text-[9px] font-black text-slate-300 pr-4 pb-8 uppercase">
+                            <span>Rs 1M</span>
+                            <span>Rs 750K</span>
+                            <span>Rs 500K</span>
+                            <span>Rs 250K</span>
+                            <span>0</span>
+                        </div>
+
+                        <div className="flex-1 relative">
+                            <svg className="h-full w-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                <defs>
+                                    <linearGradient id="salesGradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stopColor="#4f46e5" stopOpacity="0.15" />
+                                        <stop offset="100%" stopColor="#4f46e5" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="spendGradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.08" />
+                                        <stop offset="100%" stopColor="#38bdf8" stopOpacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                
+                                {/* Grid Lines */}
+                                {[0, 25, 50, 75, 100].map((y) => (
+                                    <line 
+                                        key={y} 
+                                        x1="0" y1={y} x2="100" y2={y} 
+                                        stroke="#f8fafc" 
+                                        strokeWidth="1" 
+                                    />
+                                ))}
+
+                                {/* Helper function to create smooth path (simplified bezier) */}
+                                {(() => {
+                                    const getPath = (data) => {
+                                        return data.map((val, i) => {
+                                            const x = (i / (data.length - 1)) * 100;
+                                            const y = 100 - (val / 1000) * 100; // Normalized to 1M
+                                            return `${i === 0 ? 'M' : 'L'} ${x},${y}`;
+                                        }).join(' ');
+                                    };
+
+                                    const getSmoothPath = (data) => {
+                                        const points = data.map((val, i) => ({
+                                            x: (i / (data.length - 1)) * 100,
+                                            y: 100 - (val / 1000) * 100
+                                        }));
+                                        
+                                        let d = `M ${points[0].x},${points[0].y}`;
+                                        for (let i = 0; i < points.length - 1; i++) {
+                                            const p0 = points[i];
+                                            const p1 = points[i + 1];
+                                            const cp1x = p0.x + (p1.x - p0.x) / 2;
+                                            d += ` C ${cp1x},${p0.y} ${cp1x},${p1.y} ${p1.x},${p1.y}`;
+                                        }
+                                        return d;
+                                    };
+
+                                    return (
+                                        <>
+                                            {/* Sales Area */}
+                                            <motion.path
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                transition={{ duration: 1.5 }}
+                                                d={`${getSmoothPath(revenueChart)} L 100,100 L 0,100 Z`}
+                                                fill="url(#salesGradient)"
+                                            />
+
+                                            {/* Sales Line */}
+                                            <motion.path
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1 }}
+                                                transition={{ duration: 2, ease: "easeOut" }}
+                                                d={getSmoothPath(revenueChart)}
+                                                fill="none"
+                                                stroke="#4f46e5"
+                                                strokeWidth="3"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+
+                                            {/* Spend Line */}
+                                            <motion.path
+                                                initial={{ pathLength: 0 }}
+                                                animate={{ pathLength: 1 }}
+                                                transition={{ duration: 2, ease: "easeOut", delay: 0.3 }}
+                                                d={getSmoothPath(spendChart)}
+                                                fill="none"
+                                                stroke="#38bdf8"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeDasharray="4 6"
+                                            />
+
+                                            {/* Data Points */}
+                                            {revenueChart.map((val, i) => (
+                                                <motion.circle
+                                                    key={`rev-${i}`}
+                                                    initial={{ scale: 0 }}
+                                                    animate={{ scale: 1 }}
+                                                    transition={{ delay: 1.5 + (i * 0.1) }}
+                                                    cx={(i / (revenueChart.length - 1)) * 100}
+                                                    cy={100 - (val / 1000) * 100}
+                                                    r="2"
+                                                    fill="white"
+                                                    stroke="#4f46e5"
+                                                    strokeWidth="2"
+                                                    className="cursor-pointer"
+                                                />
+                                            ))}
+                                        </>
+                                    );
+                                })()}
+                            </svg>
+                        </div>
                     </div>
-                    <div className="flex justify-between text-xs text-slate-400 mt-4 font-bold uppercase tracking-wider px-1">
-                        <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span><span>Now</span>
+                    
+                    <div className="flex justify-between text-[10px] text-slate-400 mt-4 font-black uppercase tracking-[0.2em] ml-14">
+                        <span>W1</span>
+                        <span>W2</span>
+                        <span>W3</span>
+                        <span>W4</span>
+                        <span>W5</span>
+                        <span>W6</span>
+                        <span>W7</span>
+                        <span>W8</span>
+                        <span className="text-indigo-600">Growth</span>
+                    </div>
+
+                    {/* Branding overlay */}
+                    <div className="absolute bottom-6 right-6 opacity-10 pointer-events-none">
+                        <p className="text-2xl font-black italic tracking-tighter">SAJEDAR CRM</p>
                     </div>
                 </div>
 
