@@ -28,6 +28,27 @@ const videoTypes = [
   { label: 'Fashion Drops', icon: '👗' },
 ];
 
+const sampleVideos = [
+  {
+    title: 'Osha Fashion Promo',
+    category: 'Fashion reel',
+    duration: '48 sec',
+    src: '/motionmandu/samples/osha-ai-sample.mp4',
+  },
+  {
+    title: 'Gecko Product Spot',
+    category: 'Character ad',
+    duration: '28 sec',
+    src: '/motionmandu/samples/gecko-ai-sample.mp4',
+  },
+  {
+    title: 'Boutique Launch Film',
+    category: 'Store campaign',
+    duration: '43 sec',
+    src: '/motionmandu/samples/botique-ai-sample.mp4',
+  },
+];
+
 const process = [
   {
     step: '01',
@@ -151,11 +172,11 @@ export default function MotionmanduPage() {
                 Order on WhatsApp
               </a>
               <Link
-                href="#how-it-works"
+                href="#sample-videos"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-7 py-3.5 text-[14px] font-semibold text-white/70 backdrop-blur transition-all hover:border-white/20 hover:text-white"
               >
                 <Play className="h-3.5 w-3.5 fill-current" />
-                See how it works
+                Watch samples
               </Link>
             </div>
 
@@ -176,6 +197,72 @@ export default function MotionmanduPage() {
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/20">
             <div className="h-8 w-px bg-gradient-to-b from-transparent to-white/20" />
             <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+          </div>
+        </section>
+
+        {/* ══════════════════════════════════
+            SAMPLE AI VIDEOS
+        ══════════════════════════════════ */}
+        <section id="sample-videos" className="relative overflow-hidden bg-[#080808] px-6 py-24 lg:px-8">
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-amber-500/[0.06] to-transparent" />
+            <div className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/[0.05] blur-[120px]" />
+          </div>
+          <div className="relative mx-auto max-w-6xl">
+            <div className="mb-12 grid gap-6 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+              <div>
+                <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.25em] text-amber-500/60">
+                  Sample AI videos
+                </p>
+                <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-tight tracking-tight text-white">
+                  Three compressed samples from the Motionmandu reel.
+                </h2>
+              </div>
+              <p className="max-w-xl text-[14px] leading-relaxed text-white/40 md:justify-self-end">
+                Lightweight vertical MP4 previews, compressed for fast loading while keeping the cinematic
+                motion, product focus, and social-ready framing intact.
+              </p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              {sampleVideos.map((video, index) => (
+                <article
+                  key={video.title}
+                  className="group overflow-hidden rounded-2xl border border-white/[0.08] bg-white/[0.03] shadow-2xl shadow-black/30 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30"
+                >
+                  <div className="relative aspect-[9/16] overflow-hidden bg-black">
+                    <video
+                      className="h-full w-full object-cover"
+                      src={video.src}
+                      title={video.title}
+                      aria-label={`${video.title} sample video`}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                    />
+                    <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between p-4">
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-white/70 backdrop-blur">
+                        <Star className="h-3 w-3 fill-amber-400 text-amber-400" />
+                        Sample {index + 1}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-[10px] font-bold text-white/70 backdrop-blur">
+                        <Clock className="h-3 w-3 text-amber-300" />
+                        {video.duration}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-amber-400/60">
+                      {video.category}
+                    </p>
+                    <h3 className="mt-2 text-[17px] font-black text-white">{video.title}</h3>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
