@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   ArrowRight,
@@ -102,19 +101,19 @@ const steps = [
 
 const showcase = [
   {
-    title: 'Ashwi Furniture',
-    category: 'Product Promo',
-    image: '/ashwi_preview.png',
+    title: 'Fashion Offer',
+    category: 'Clothing Brand',
+    color: 'from-pink-500 to-rose-500',
   },
   {
-    title: 'Daily Diva',
-    category: 'Fashion Offer',
-    image: '/dailydiva_preview.png',
+    title: 'New Arrival',
+    category: 'Furniture Store',
+    color: 'from-amber-500 to-orange-600',
   },
   {
-    title: 'Latta Kapada',
-    category: 'Brand Story',
-    image: '/lattakapada.webp',
+    title: 'Limited Sale',
+    category: 'Tech Gadgets',
+    color: 'from-blue-500 to-indigo-600',
   },
 ];
 
@@ -131,6 +130,23 @@ const staggerContainer = {
     }
   }
 };
+
+const AbstractGraphic = ({ className = "", color = "bg-emerald-500", label = "Offer" }) => (
+  <div className={`relative overflow-hidden rounded-2xl ${className} bg-stone-100 flex flex-col`}>
+    <div className={`h-2/3 w-full ${color} opacity-90 relative`}>
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+         <ImageIcon className="w-20 h-20 text-white" />
+      </div>
+    </div>
+    <div className="flex-1 p-4 bg-white">
+      <div className="h-2 w-1/2 bg-stone-100 rounded-full mb-2" />
+      <div className="h-4 w-3/4 bg-stone-200 rounded-full" />
+    </div>
+    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm">
+       <p className="text-[8px] font-black uppercase tracking-widest text-stone-900">{label}</p>
+    </div>
+  </div>
+);
 
 export default function SocialMediaGraphicsClient() {
   return (
@@ -227,38 +243,20 @@ export default function SocialMediaGraphicsClient() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                {/* Visual Stack of Graphics */}
+                {/* Visual Stack of Graphics (Placeholders) */}
                 <div className="relative aspect-square w-full max-w-md mx-auto">
                    {/* Main preview */}
                    <div className="absolute inset-0 z-20 rounded-3xl border border-stone-200 bg-white p-2 shadow-2xl overflow-hidden">
-                      <Image 
-                        src="/dailydiva_preview.png"
-                        alt="Sample Graphic"
-                        width={600}
-                        height={600}
-                        className="h-full w-full object-cover rounded-2xl"
-                      />
+                      <AbstractGraphic className="h-full w-full" color="bg-rose-500" label="Main Offer" />
                    </div>
                    
                    {/* Decorative side ones */}
                    <div className="absolute -left-12 top-12 -z-10 h-64 w-64 rotate-[-12deg] rounded-3xl border border-stone-200 bg-white p-2 shadow-xl opacity-40">
-                      <Image 
-                        src="/ashwi_preview.png"
-                        alt="Sample Graphic"
-                        width={300}
-                        height={300}
-                        className="h-full w-full object-cover rounded-2xl"
-                      />
+                      <AbstractGraphic className="h-full w-full" color="bg-sky-500" label="New Arrival" />
                    </div>
                    
                    <div className="absolute -right-12 bottom-12 -z-10 h-64 w-64 rotate-[12deg] rounded-3xl border border-stone-200 bg-white p-2 shadow-xl opacity-40">
-                      <Image 
-                        src="/lattakapada.webp"
-                        alt="Sample Graphic"
-                        width={300}
-                        height={300}
-                        className="h-full w-full object-cover rounded-2xl"
-                      />
+                      <AbstractGraphic className="h-full w-full" color="bg-amber-500" label="Summer Sale" />
                    </div>
                 </div>
                 
@@ -308,7 +306,7 @@ export default function SocialMediaGraphicsClient() {
           </div>
         </section>
 
-        {/* Showcase Gallery */}
+        {/* Showcase Gallery (Placeholders) */}
         <section className="bg-white py-24 md:py-32 overflow-hidden">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -333,15 +331,11 @@ export default function SocialMediaGraphicsClient() {
                   transition={{ delay: idx * 0.2 }}
                   className="group relative"
                 >
-                  <div className="aspect-square overflow-hidden rounded-[2.5rem] border border-stone-100 bg-stone-50 shadow-sm transition-all group-hover:shadow-2xl group-hover:shadow-stone-950/10">
-                    <Image 
-                      src={item.image}
-                      alt={item.title}
-                      width={500}
-                      height={500}
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="aspect-square overflow-hidden rounded-[2.5rem] border border-stone-100 bg-stone-50 shadow-sm transition-all group-hover:shadow-2xl group-hover:shadow-stone-950/10 flex items-center justify-center bg-gradient-to-br from-stone-50 to-stone-100">
+                    <div className={`w-3/4 h-3/4 rounded-2xl bg-gradient-to-br ${item.color} shadow-lg flex items-center justify-center`}>
+                       <ImageIcon className="w-16 h-16 text-white/40" />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-stone-950/40 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100 rounded-[2.5rem]" />
                     <div className="absolute bottom-8 left-8 translate-y-4 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                       <p className="text-[10px] font-black uppercase tracking-widest text-emerald-400">{item.category}</p>
                       <h4 className="mt-1 text-xl font-black text-white">{item.title}</h4>
