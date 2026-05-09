@@ -24,8 +24,8 @@ const whatsappMessage = encodeURIComponent(
 /* Brick data for the ascending staircase */
 const bricks = [
   { title: 'Research', icon: SearchCheck, color: '#10b981' },
-  { title: 'Website', icon: Code2, color: '#3b82f6' },
-  { title: 'CRM', icon: UsersRound, color: '#8b5cf6' },
+  { title: 'Jasus AI', icon: Eye, color: '#f43f5e' },
+  { title: 'Website+CRM', icon: Layout, color: '#3b82f6' },
   { title: 'Graphics', icon: ImageIcon, color: '#f59e0b' },
   { title: 'Video', icon: Clapperboard, color: '#ef4444' },
   { title: 'Ads', icon: Megaphone, color: '#06b6d4' },
@@ -35,8 +35,8 @@ const bricks = [
 /* Service cards data */
 const services = [
   { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
-  { title: 'Business Website', href: '/website', icon: Code2, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
-  { title: 'Custom CRM', href: '/crm', icon: UsersRound, priceLabel: 'Starting at', price: 'Rs 10,000', iconColor: '#8b5cf6', iconBg: 'from-violet-50 to-purple-100' },
+  { title: 'Jasus AI Spying', href: '/jasus-ai', icon: Eye, priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#f43f5e', iconBg: 'from-rose-50 to-pink-100' },
+  { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
   { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'AI Videos', href: '/motionmandu', icon: Clapperboard, priceLabel: 'Starting at', price: 'Rs 2,000', iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100' },
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
