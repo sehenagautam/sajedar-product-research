@@ -21,6 +21,7 @@ import {
   Globe,
   PieChart,
   MousePointer2,
+  CheckCircle2,
 } from 'lucide-react';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
