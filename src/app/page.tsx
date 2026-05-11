@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import Header from '../components/Header';
 import { Footer } from '../components/sections/Footer';
+import FounderMessageSection from '../components/sections/FounderMessageSection';
 
 const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I want to set up or improve my online business. Please help me choose the right services.'
@@ -374,6 +375,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <FounderMessageSection />
 
         {/* CTA SECTION */}
         <section className="relative overflow-hidden border-t border-black/[0.04] bg-[#fafafa] px-6 py-24 lg:px-8">
