@@ -71,12 +71,12 @@ const staggerContainer = {
 };
 
 const ServicesOnlyNav = () => (
-  <header className="fixed right-4 top-4 z-50 sm:right-6">
+  <header className="fixed left-4 top-4 z-50 sm:left-6">
     <Link
       href="/services"
       className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white px-5 text-sm font-black text-slate-950 shadow-2xl shadow-black/30 transition hover:-translate-y-0.5 hover:bg-emerald-50 hover:text-emerald-700"
     >
-      View services
+      View all services
       <ArrowRight className="h-4 w-4" aria-hidden="true" />
     </Link>
   </header>
@@ -186,7 +186,7 @@ export default function JasusAiClient() {
                   variants={fadeIn}
                   className="text-5xl font-black leading-[1.05] tracking-tight text-white md:text-7xl"
                 >
-                  Know what they do. <span className="text-emerald-500 underline decoration-emerald-500/30 underline-offset-8">Before they do it.</span>
+                  Competitor ले के गर्दैछन्? <span className="text-emerald-500 underline decoration-emerald-500/30 underline-offset-8">उनीहरूले गर्नु अघि नै थाहा पाउनुहोस्.</span>
                 </motion.h1>
                 
                 <motion.p 
@@ -244,14 +244,12 @@ export default function JasusAiClient() {
                 <SpyDashboard />
                 
                 {/* Floating alert */}
-                <motion.div 
-                  animate={{ scale: [1, 1.05, 1], opacity: [0.8, 1, 0.8] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="absolute -top-6 -right-6 bg-rose-500 text-white rounded-2xl p-4 shadow-2xl flex items-center gap-3"
+                <div 
+                  className="absolute -top-6 -right-6 bg-red-600 text-white rounded-2xl p-4 shadow-2xl shadow-red-950/30 flex items-center gap-3"
                 >
-                   <ShieldAlert className="w-5 h-5 animate-bounce" />
+                   <ShieldAlert className="w-5 h-5" />
                    <span className="text-xs font-black uppercase tracking-tighter">Competitor Scaled Ads</span>
-                </motion.div>
+                </div>
                 
                 {/* Ambient glows */}
                 <div className="absolute -inset-20 bg-emerald-500/10 blur-[100px] -z-10 rounded-full" />
