@@ -193,81 +193,82 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section id="service-catalog" className="mx-auto max-w-7xl px-6 py-12 lg:px-8 lg:py-20">
-          <div className="mb-10 grid gap-6 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-            <div>
+        <section id="service-catalog" className="bg-white px-6 py-16 lg:px-8 lg:py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-14 text-center">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#86868b]">Module shelf</p>
-              <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#1d1d1f] md:text-5xl">
+              <h2 className="mx-auto mt-4 max-w-4xl text-5xl font-semibold leading-[1.03] tracking-tight text-[#1d1d1f] md:text-6xl">
                 Choose the part that moves the business forward.
               </h2>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {[
-                'Every module can run alone.',
-                'Each module plugs into the next.',
-                'Starter prices stay in Nepali rupees.',
-              ].map((point) => (
-                <div key={point} className="flex items-start gap-2 rounded-lg border border-black/[0.06] bg-white p-3 shadow-sm">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" aria-hidden="true" />
-                  <p className="text-xs font-semibold leading-5 text-[#6e6e73]">{point}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-2">
-            {services.map((service) => {
-              const Icon = service.icon;
-
-              return (
-                <Link
-                  key={service.href}
-                  href={service.href}
-                  className="group grid min-h-[268px] gap-5 rounded-lg border border-black/[0.06] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-black/20 hover:shadow-xl hover:shadow-black/[0.07] sm:grid-cols-[190px_1fr]"
-                >
-                  <div className="flex flex-col justify-between rounded-lg border border-black/[0.06] bg-[#f5f5f7] p-4">
-                    <div>
-                      <div className={`flex h-12 w-12 items-center justify-center rounded-lg ring-1 ${toneClasses[service.tone as keyof typeof toneClasses]}`}>
-                        <Icon className="h-6 w-6" aria-hidden="true" />
-                      </div>
-                      <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Lane</p>
-                      <p className="mt-1 text-2xl font-semibold tracking-tight text-[#1d1d1f]">{service.lane}</p>
-                    </div>
-                    <p className="mt-6 text-sm font-semibold text-emerald-700">{service.price}</p>
+              <div className="mx-auto mt-10 grid max-w-5xl divide-y divide-black/[0.08] border-y border-black/[0.08] text-left sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+                {[
+                  ['Every module can run alone.', 'Start with the one bottleneck that matters today.'],
+                  ['Each module plugs into the next.', 'Add the next layer only when the business is ready.'],
+                  ['Starter prices stay in Nepali rupees.', 'Clear entry points without enterprise packaging.'],
+                ].map(([point, detail]) => (
+                  <div key={point} className="p-5 sm:p-6">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                    <p className="mt-4 text-base font-semibold leading-6 text-[#1d1d1f]">{point}</p>
+                    <p className="mt-2 text-sm leading-6 text-[#6e6e73]">{detail}</p>
                   </div>
-                  <div className="flex flex-col">
-                    <div className="flex items-start justify-between gap-4">
-                      <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">
-                        {service.title}
-                      </h2>
-                      <span className="text-[11px] font-semibold text-[#c7c7cc]">{service.href.replace('/', '')}</span>
-                    </div>
-                    <div className="mt-5 grid gap-3">
+                ))}
+              </div>
+            </div>
+
+            <div className="grid gap-4 lg:grid-cols-2">
+              {services.map((service) => {
+                const Icon = service.icon;
+
+                return (
+                  <Link
+                    key={service.href}
+                    href={service.href}
+                    className="group grid min-h-[268px] gap-5 rounded-lg border border-black/[0.06] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-black/20 hover:shadow-xl hover:shadow-black/[0.07] sm:grid-cols-[190px_1fr]"
+                  >
+                    <div className="flex flex-col justify-between rounded-lg border border-black/[0.06] bg-[#f5f5f7] p-4">
                       <div>
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Symptom</p>
-                        <p className="mt-1 text-sm leading-6 text-[#6e6e73]">{service.symptom}</p>
-                      </div>
-                      <div className="grid gap-3 sm:grid-cols-2">
-                        <div className="rounded-lg border border-black/[0.06] p-3">
-                          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Input</p>
-                          <p className="mt-1 text-xs font-semibold leading-5 text-[#6e6e73]">{service.input}</p>
+                        <div className={`flex h-12 w-12 items-center justify-center rounded-lg ring-1 ${toneClasses[service.tone as keyof typeof toneClasses]}`}>
+                          <Icon className="h-6 w-6" aria-hidden="true" />
                         </div>
-                        <div className="rounded-lg border border-black/[0.06] p-3">
-                          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Output</p>
-                          <p className="mt-1 text-xs font-semibold leading-5 text-[#6e6e73]">{service.output}</p>
-                        </div>
+                        <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Lane</p>
+                        <p className="mt-1 text-2xl font-semibold tracking-tight text-[#1d1d1f]">{service.lane}</p>
                       </div>
+                      <p className="mt-6 text-sm font-semibold text-emerald-700">{service.price}</p>
                     </div>
-                  <div className="mt-auto flex items-center justify-between pt-5">
-                    <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b]">Open module</span>
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/[0.08] text-[#a1a1aa] transition group-hover:border-emerald-500 group-hover:bg-emerald-500 group-hover:text-white">
-                      <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                    </span>
-                  </div>
-                  </div>
-                </Link>
-              );
-            })}
+                    <div className="flex flex-col">
+                      <div className="flex items-start justify-between gap-4">
+                        <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f]">
+                          {service.title}
+                        </h2>
+                        <span className="text-[11px] font-semibold text-[#c7c7cc]">{service.href.replace('/', '')}</span>
+                      </div>
+                      <div className="mt-5 grid gap-3">
+                        <div>
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Symptom</p>
+                          <p className="mt-1 text-sm leading-6 text-[#6e6e73]">{service.symptom}</p>
+                        </div>
+                        <div className="grid gap-3 sm:grid-cols-2">
+                          <div className="rounded-lg border border-black/[0.06] p-3">
+                            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Input</p>
+                            <p className="mt-1 text-xs font-semibold leading-5 text-[#6e6e73]">{service.input}</p>
+                          </div>
+                          <div className="rounded-lg border border-black/[0.06] p-3">
+                            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#86868b]">Output</p>
+                            <p className="mt-1 text-xs font-semibold leading-5 text-[#6e6e73]">{service.output}</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div className="mt-auto flex items-center justify-between pt-5">
+                      <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#86868b]">Open module</span>
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/[0.08] text-[#a1a1aa] transition group-hover:border-emerald-500 group-hover:bg-emerald-500 group-hover:text-white">
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                    </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </section>
 
