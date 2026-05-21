@@ -1,22 +1,22 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Jasus AI | Competition Spying & Market Intelligence Nepal',
-  description: 'Uncover your competitors strategies with Jasus AI. We track their best-selling products, ad creatives, pricing shifts, and customer engagement patterns in the Nepali market.',
+  title: 'Jasus AI | Competitor Insights & Market Intelligence Nepal',
+  description: 'Understand competitor strategies with Jasus AI. We review public market signals, ad creatives, pricing shifts, and customer engagement patterns in the Nepali market.',
   keywords: [
-    'competitor spying nepal',
+    'competitor insights nepal',
     'market intelligence nepal',
     'jasus ai',
-    'facebook ad library spying nepal',
-    'e-commerce competitor tracking',
+    'facebook ad library insights nepal',
+    'e-commerce competitor insights',
     'nepali business intelligence',
-    'track competitor pricing nepal',
+    'competitor pricing insights nepal',
     'sajedar jasus ai',
   ],
   alternates: { canonical: '/jasus-ai' },
   openGraph: {
-    title: 'Jasus AI: Professional Competition Spying for Nepali Brands',
-    description: 'Know what your competitors are doing before they do. Professional market intelligence and ad tracking for ambitious Nepali businesses.',
+    title: 'Jasus AI: Competitor Insights for Nepali Brands',
+    description: 'See what is working in your category. Market intelligence and ad insights for ambitious Nepali businesses.',
     url: 'https://sajedar.com/jasus-ai',
     siteName: 'Sajedar',
     type: 'website',

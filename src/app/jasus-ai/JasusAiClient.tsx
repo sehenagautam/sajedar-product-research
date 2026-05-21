@@ -19,13 +19,13 @@ import {
 import { Footer } from '../../components/sections/Footer';
 
 const whatsappMessage = encodeURIComponent(
-  'Hi Sajedar! I am interested in Jasus AI competition spying. Please share how I can track my competitors in Nepal.'
+  'Hi Sajedar! I am interested in Jasus AI competitor insights. Please share how I can understand my market in Nepal.'
 );
 
-const spyFeatures = [
+const insightFeatures = [
   {
-    title: 'Ad Library Monitoring',
-    copy: 'Track exactly which creatives, offers, and hooks your competitors are running right now.',
+    title: 'Ad Library Insights',
+    copy: 'See which public creatives, offers, and hooks are active in your category right now.',
     icon: Search,
     color: 'red',
   },
@@ -81,7 +81,7 @@ const ServicesOnlyNav = () => (
   </header>
 );
 
-const SpyDashboard = () => (
+const InsightsDashboard = () => (
   <div className="relative bg-slate-950 rounded-[2.5rem] border border-slate-800 p-8 shadow-2xl overflow-hidden group">
     <div className="flex items-center justify-between mb-10">
        <div className="flex items-center gap-3">
@@ -96,7 +96,7 @@ const SpyDashboard = () => (
           </div>
           <div>
             <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Jasus AI Active</p>
-            <p className="text-xs font-bold text-white">Monitoring 12 Brands</p>
+            <p className="text-xs font-bold text-white">Reviewing 12 Brands</p>
           </div>
        </div>
        <div className="h-2 w-24 bg-slate-800 rounded-full" />
@@ -178,23 +178,23 @@ export default function JasusAiClient() {
                       className="object-cover"
                     />
                   </span>
-                  Market Intelligence & Competition Spying
+                  Market Intelligence & Competitor Insights
                 </motion.div>
                 
                 <motion.h1 
                   variants={fadeIn}
                   className="text-5xl font-black leading-[1.05] tracking-tight text-white md:text-7xl"
                 >
-                  Competitor ले के गर्दैछन्? <span className="text-red-500 underline decoration-red-500/30 underline-offset-8">उनीहरूले गर्नु अघि नै थाहा पाउनुहोस्.</span>
+                  Competitor बजारमा के चलिरहेको छ? <span className="text-red-500 underline decoration-red-500/30 underline-offset-8">clear insight पाउनुहोस्.</span>
                 </motion.h1>
                 
                 <motion.p 
                   variants={fadeIn}
                   className="mt-8 max-w-xl text-lg leading-relaxed text-slate-500 md:text-xl"
                 >
-                  Jasus AI tracks competitors in the Nepali market. Kathmandu ko fast-moving bazaar ma 
-                  their winning ads, best-selling products, and pricing moves kasto chalirako chha, 
-                  we show you before you spend blindly.
+                  Jasus AI reviews public market signals in Nepal. Kathmandu ko fast-moving bazaar ma
+                  which ads, products, and pricing moves are getting attention, we turn it into clear direction
+                  before you spend blindly.
                 </motion.p>
 
                 <motion.div 
@@ -228,8 +228,8 @@ export default function JasusAiClient() {
                    </div>
                    <div className="h-10 w-px bg-slate-800" />
                    <div className="flex flex-col">
-                      <span className="text-2xl font-black text-white">Chupchap</span>
-                      <span className="text-xs font-bold text-slate-600 uppercase tracking-widest text-center">Operation</span>
+                      <span className="text-2xl font-black text-white">Quiet Review</span>
+                      <span className="text-xs font-bold text-slate-600 uppercase tracking-widest text-center">Mode</span>
                    </div>
                 </motion.div>
               </motion.div>
@@ -240,14 +240,14 @@ export default function JasusAiClient() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <SpyDashboard />
+                <InsightsDashboard />
                 
                 {/* Floating alert */}
                 <div 
                   className="absolute -top-6 -right-6 bg-red-600 text-white rounded-2xl p-4 shadow-2xl shadow-red-950/30 flex items-center gap-3"
                 >
                    <ShieldAlert className="w-5 h-5" />
-                   <span className="text-xs font-black uppercase tracking-tighter">Competitor Scaled Ads</span>
+                   <span className="text-xs font-black uppercase tracking-tighter">Competitor Ad Momentum</span>
                 </div>
                 
                 {/* Ambient glows */}
@@ -261,14 +261,14 @@ export default function JasusAiClient() {
         <section id="capabilities" className="bg-[#0f0f15] py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="mb-16 max-w-3xl">
-              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-red-500">Unfair Advantage</h2>
+              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-red-500">Market Clarity</h2>
               <h3 className="mt-4 text-4xl font-black tracking-tight text-white md:text-5xl">
-                Information is the ultimate leverage.
+                Clear signals make better decisions.
               </h3>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {spyFeatures.map((feature, idx) => (
+              {insightFeatures.map((feature, idx) => (
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, y: 20 }}
@@ -288,17 +288,17 @@ export default function JasusAiClient() {
           </div>
         </section>
 
-        {/* Stealth Pricing */}
+        {/* Pricing */}
         <section className="bg-slate-950 py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-red-600 to-red-900 p-8 md:p-20 text-white shadow-2xl">
               <div className="relative z-10 grid gap-12 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <h2 className="text-4xl font-black tracking-tight md:text-5xl">Spy on 3 Competitors for Rs 2,500.</h2>
+                  <h2 className="text-4xl font-black tracking-tight md:text-5xl">Review 3 Competitors for Rs 2,500.</h2>
                   <p className="mt-6 text-lg text-red-50/70 leading-relaxed">
-                    Get a deep-dive Jasus AI report on any 3 brands in your category. 
-                    Includes ad library breakdown, price structure, and 30-day monitoring. 
-                    Ali smart tarika le competitor herne setup.
+                    Get a deep-dive Jasus AI report on any 3 brands in your category.
+                    Includes ad library breakdown, price structure, and 30-day updates.
+                    Ali smart tarika le market bujhne setup.
                   </p>
                   
                   <div className="mt-10 flex flex-wrap gap-4">
@@ -306,16 +306,16 @@ export default function JasusAiClient() {
                       href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
                       className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-red-900 shadow-xl transition hover:-translate-y-1 hover:bg-slate-50"
                     >
-                      Start Monitoring Now
+                      Start Market Review
                     </a>
                   </div>
                 </div>
                 
                 <div className="grid gap-4">
                    {[
-                     'Direct access to hidden ad creatives',
+                     'Public ad creative review',
                      'Bi-weekly strategy updates',
-                     'Chupchap monitoring (they won\'t know)',
+                     'Quiet public-signal review',
                      'Direct WhatsApp delivery'
                    ].map((item) => (
                      <div key={item} className="flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
@@ -344,8 +344,8 @@ export default function JasusAiClient() {
                 Ready to stop guessing?
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-slate-500">
-                Jasus AI is the secret weapon for ambitious Nepali brands. Share your category 
-                and we'll show you exactly what's winning in the market today. Kura clear, guesswork kam.
+                Jasus AI is a market clarity tool for ambitious Nepali brands. Share your category
+                and we'll show you what is working in the market today. Kura clear, guesswork kam.
               </p>
               <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
