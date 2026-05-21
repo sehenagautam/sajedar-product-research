@@ -27,7 +27,7 @@ const whatsappMessage = encodeURIComponent(
 /* Brick data for the ascending staircase */
 const bricks = [
   { title: 'Research', icon: SearchCheck, color: '#10b981' },
-  { title: 'Jasus AI', icon: Eye, color: '#f43f5e' },
+  { title: 'Jasus AI', icon: Eye, color: '#dc2626' },
   { title: 'Website+CRM', icon: Layout, color: '#3b82f6' },
   { title: 'Graphics', icon: ImageIcon, color: '#f59e0b' },
   { title: 'Video', icon: Clapperboard, color: '#ef4444' },
@@ -38,7 +38,7 @@ const bricks = [
 /* Service cards data */
 const services = [
   { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
-  { title: 'Jasus AI Spying', href: '/jasus-ai', icon: Eye, priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#f43f5e', iconBg: 'from-rose-50 to-pink-100' },
+  { title: 'Jasus AI Spying', href: '/jasus-ai', icon: Eye, priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#dc2626', iconBg: 'from-red-50 to-red-100' },
   { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
   { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'AI Videos', href: '/motionmandu', icon: Clapperboard, priceLabel: 'Starting at', price: 'Rs 2,000', iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100' },
