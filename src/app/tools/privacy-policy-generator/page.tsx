@@ -12,10 +12,8 @@ export default function PrivacyPolicyGeneratorPage() {
         website: ''
     });
 
-    const [generatedLink, setGeneratedLink] = useState('');
     const [policyText, setPolicyText] = useState('');
     const [copiedText, setCopiedText] = useState(false);
-    const [copiedLink, setCopiedLink] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({
@@ -61,29 +59,13 @@ Email: ${formData.email}
 `;
         setPolicyText(text);
 
-        // 2. Generate the Hosted Link (Base64 Encoded Data)
-        // We encode the form data into a JSON string, then Base64 encode it.
-        // This allows the /policy/view page to reconstruct the policy without a database.
-        const jsonString = JSON.stringify(formData);
-        const encodedData = btoa(encodeURIComponent(jsonString)); // encodeURIComponent handles special chars/emojis correctly before b64
-        
-        // Assuming the site is hosted at window.location.origin
-        const link = `${window.location.origin}/policy/view?data=${encodedData}`;
-        setGeneratedLink(link);
-        
         setCopiedText(false);
-        setCopiedLink(false);
     };
 
-    const copyToClipboard = (text: string, isLink: boolean) => {
+    const copyToClipboard = (text: string) => {
         navigator.clipboard.writeText(text);
-        if (isLink) {
-            setCopiedLink(true);
-            setTimeout(() => setCopiedLink(false), 2000);
-        } else {
-            setCopiedText(true);
-            setTimeout(() => setCopiedText(false), 2000);
-        }
+        setCopiedText(true);
+        setTimeout(() => setCopiedText(false), 2000);
     };
 
     return (
@@ -99,7 +81,7 @@ Email: ${formData.email}
                         Facebook Ads Privacy Policy Generator
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Don't get your ads rejected. Generate a compliant Privacy Policy instantly and get a hosted link to paste into Facebook.
+                        Don't get your ads rejected. Generate compliant Privacy Policy text you can publish on your own website or store.
                     </p>
                 </div>
 
@@ -157,43 +139,23 @@ Email: ${formData.email}
                                 onClick={generatePolicy}
                                 className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-emerald-500/20"
                             >
-                                Generate Policy & Link
+                                Generate Policy Text
                             </button>
                         </div>
                     </div>
 
                     {/* Output Section */}
                     <div className="space-y-6">
-                        {/* Hosted Link Card */}
-                        <div className={`bg-gradient-to-r from-blue-900/40 to-emerald-900/40 rounded-2xl border border-emerald-500/30 p-8 transition-all duration-500 ${generatedLink ? 'opacity-100 translate-y-0' : 'opacity-50 translate-y-4 blur-[2px]'}`}>
+                        <div className="rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-blue-900/40 to-emerald-900/40 p-8">
                             <div className="flex items-start gap-4">
                                 <div className="bg-emerald-500/20 p-3 rounded-lg text-emerald-400">
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg>
                                 </div>
                                 <div className="flex-grow">
-                                    <h3 className="text-lg font-bold text-white mb-2">Your Hosted Link</h3>
-                                    <p className="text-gray-400 text-sm mb-3">Paste this directly into Facebook Ads Manager under "Privacy Policy URL".</p>
-                                    
-                                    <div className="flex gap-2">
-                                        <input 
-                                            readOnly 
-                                            value={generatedLink} 
-                                            className="bg-black/30 border border-white/10 rounded px-3 py-2 text-sm text-gray-300 w-full font-mono"
-                                            placeholder="Generate to see link..."
-                                        />
-                                        <button
-                                            onClick={() => generatedLink && copyToClipboard(generatedLink, true)}
-                                            disabled={!generatedLink}
-                                            className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded text-sm font-semibold transition-colors whitespace-nowrap"
-                                        >
-                                            {copiedLink ? 'Copied!' : 'Copy'}
-                                        </button>
-                                    </div>
-                                    {generatedLink && (
-                                        <a href={generatedLink} target="_blank" rel="noreferrer" className="inline-block mt-3 text-xs text-emerald-400 hover:text-emerald-300 underline">
-                                            Test Link (Opens in new tab)
-                                        </a>
-                                    )}
+                                    <h3 className="text-lg font-bold text-white mb-2">Use this on your own domain</h3>
+                                    <p className="text-gray-400 text-sm leading-6">
+                                        Sajedar no longer creates public hosted policy links from form data. Copy the generated text below and publish it on your website, Shopify store, or Facebook page before using it in Ads Manager.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +165,7 @@ Email: ${formData.email}
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-bold text-white">Policy Text Preview</h3>
                                 <button
-                                    onClick={() => policyText && copyToClipboard(policyText, false)}
+                                    onClick={() => policyText && copyToClipboard(policyText)}
                                     disabled={!policyText}
                                     className="text-sm text-emerald-400 hover:text-emerald-300 font-semibold"
                                 >

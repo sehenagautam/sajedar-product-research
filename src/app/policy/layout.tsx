@@ -14,6 +14,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ToolsLayout({ children }: { children: React.ReactNode }) {
+export default function PolicyLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

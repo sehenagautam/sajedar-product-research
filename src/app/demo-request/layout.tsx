@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  title: 'Demo Request',
+  description: 'Private Sajedar demo request form.',
   robots: {
     index: false,
     follow: false,
@@ -14,6 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ToolsLayout({ children }: { children: React.ReactNode }) {
+export default function DemoRequestLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

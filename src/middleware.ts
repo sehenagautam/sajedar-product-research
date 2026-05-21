@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const before = url.searchParams.toString();
+  const privatePrefixes = ['/tools', '/policy', '/developer', '/demo-request', '/crm/demo'];
 
   const removableExact = new Set(['fbclid', 'gclid', 'gclsrc', 'dclid', 'msclkid', 'trk']);
   const removablePrefixes = ['utm_'];
@@ -22,7 +23,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+  if (privatePrefixes.some((prefix) => url.pathname === prefix || url.pathname.startsWith(`${prefix}/`))) {
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet, noimageindex');
+  }
+
+  return response;
 }
 
 export const config = {

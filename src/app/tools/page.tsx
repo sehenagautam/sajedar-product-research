@@ -88,7 +88,7 @@ const tools = [
     },
     {
         title: 'Privacy Policy Generator',
-        content: `Generate a compliant Privacy Policy for Facebook Lead Ads instantly. Includes a free hosted link feature so you don't need a website to run ads.`,
+        content: `Generate compliant Privacy Policy text for Facebook Lead Ads and publish it on your own website, store, or business page.`,
         link: '/tools/privacy-policy-generator',
     },
     {
