@@ -101,6 +101,24 @@ const showcase = [
     image: '/social-media-graphics/perfume-main.jpg',
     alt: 'Perfume social media graphic design preview',
   },
+  {
+    title: 'Le Bleu Product Creative',
+    category: 'Fragrance Product',
+    image: '/social-media-graphics/le-bleu-01.webp',
+    alt: 'Le Bleu perfume social media graphic design preview',
+  },
+  {
+    title: 'Le Bleu Offer Creative',
+    category: 'Fragrance Product',
+    image: '/social-media-graphics/le-bleu-02.webp',
+    alt: 'Le Bleu perfume offer graphic design preview',
+  },
+  {
+    title: 'Le Bleu Brand Creative',
+    category: 'Fragrance Product',
+    image: '/social-media-graphics/le-bleu-03.webp',
+    alt: 'Le Bleu perfume brand graphic design preview',
+  },
 ];
 
 const fadeIn = {
