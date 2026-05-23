@@ -30,6 +30,12 @@ const videoTypes = [
 
 const sampleVideos = [
   {
+    title: 'Le Bleu Fragrance Spot',
+    category: 'Product reel',
+    duration: '10 sec',
+    src: '/motionmandu/samples/lebleu-ai-sample.mp4',
+  },
+  {
     title: 'Osha Fashion Promo',
     category: 'Fashion reel',
     duration: '48 sec',
@@ -215,7 +221,7 @@ export default function MotionmanduPage() {
                   Sample AI videos
                 </p>
                 <h2 className="text-[clamp(2rem,4vw,3rem)] font-black leading-tight tracking-tight text-white">
-                  Three compressed samples from the Motionmandu reel.
+                  Four compressed samples from the Motionmandu reel.
                 </h2>
               </div>
               <p className="max-w-xl text-[14px] leading-relaxed text-white/40 md:justify-self-end">
@@ -224,7 +230,7 @@ export default function MotionmanduPage() {
               </p>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {sampleVideos.map((video, index) => (
                 <article
                   key={video.title}
