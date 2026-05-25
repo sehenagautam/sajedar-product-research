@@ -2,6 +2,11 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 
 export function HeroSection() {
+  const whatsappMessage = encodeURIComponent(
+    'Hi Sajedar! I want to request a demo for the AI Sales Agent.'
+  );
+  const requestDemoHref = `https://wa.me/9779860479751?text=${whatsappMessage}`;
+
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -50,12 +55,14 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/demo-request"
+              <a
+                href={requestDemoHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
                 Request Demo
-              </Link>
+              </a>
             </div>
 
             <div className="pt-4">
