@@ -34,18 +34,18 @@ const whatsappMessage = encodeURIComponent(
 const websiteFeatures = [
   {
     icon: Sparkles,
-    title: 'AI-Custom Design',
-    body: 'Not a template. Polished, modern sites built specifically for your brand feel.',
+    title: 'CRO-Focused Design',
+    body: 'Conversion Rate Optimization built-in. Modern, fast sites designed specifically to turn visitors into buyers.',
   },
   {
     icon: BellRing,
-    title: 'Discord Notifications',
-    body: 'Get instant alerts for new orders directly in your team Discord channel.',
+    title: 'Cart Recovery Alerts',
+    body: 'Automated Abandoned Cart Recovery sequences to bring back shoppers who left without paying.',
   },
   {
     icon: Server,
-    title: 'Instant Hosting',
-    body: 'Launch on yourstore.sajedar.com instantly. No domain hassle required.',
+    title: 'Instant Scaling',
+    body: 'Launch on yourstore.sajedar.com instantly. High-performance hosting built for traffic spikes.',
   },
 ];
 
@@ -53,17 +53,17 @@ const crmFeatures = [
   {
     icon: KeyRound,
     title: 'Account Permissions',
-    body: 'Secure owner, manager, and staff access with custom permission levels.',
+    body: 'Secure owner, manager, and staff access with custom permission levels for your sales team.',
   },
   {
     icon: Gauge,
-    title: 'Founder Dashboard',
-    body: 'Track sales, active chats, and team workload from a single high-level view.',
+    title: 'AOV & LTV Dashboard',
+    body: 'Track Average Order Value and Customer Lifetime Value from a single high-level founder view.',
   },
   {
     icon: Zap,
-    title: 'Auto Detection',
-    body: 'Spot repeat buyers and missed replies across your social channels.',
+    title: 'Profit Optimization',
+    body: 'Spot repeat buyers and optimize marketing spend based on real-time sales data across channels.',
   },
 ];
 

@@ -27,26 +27,26 @@ const whatsappMessage = encodeURIComponent(
 
 const features = [
   {
-    title: 'Offer Graphics',
-    copy: 'Sale, discount, bundle, launch, and limited-time promotion designs.',
+    title: 'Social Proof Ads',
+    copy: 'Integrate reviews, ratings, and trust badges directly into your offer graphics for immediate credibility.',
     icon: Tags,
     iconClass: 'bg-[#e8f7ef] text-emerald-700 ring-emerald-100',
   },
   {
-    title: 'Product Posts',
-    copy: 'Clean product-focused graphics for Facebook, Instagram, and Stories.',
+    title: 'CTR Creatives',
+    copy: 'Graphics optimized strictly to drive clicks to your landing page with clear, bold hierarchies.',
     icon: ShoppingBag,
     iconClass: 'bg-[#eef5ff] text-blue-600 ring-blue-100',
   },
   {
-    title: 'Brand Consistency',
-    copy: 'Graphics follow your colors, logo, and preferred visual direction.',
+    title: 'Scroll Stoppers',
+    copy: 'Visually striking designs specifically engineered to make users halt their feed scrolling.',
     icon: Palette,
     iconClass: 'bg-[#fff7e6] text-amber-700 ring-amber-100',
   },
   {
-    title: 'Repeatable Look',
-    copy: 'Build a consistent visual identity for your page over time.',
+    title: 'Beat Creative Fatigue',
+    copy: 'Maintain a fresh visual identity and keep your audience engaged with regular creative updates.',
     icon: LayoutTemplate,
     iconClass: 'bg-[#fff1f5] text-rose-600 ring-rose-100',
   },

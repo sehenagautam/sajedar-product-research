@@ -40,19 +40,19 @@ const whatsappMessage = encodeURIComponent(
 const valueProps = [
   {
     title: 'Solving the Dollar Barrier',
-    desc: 'No card? Bank paperwork headache? Hit your $500 limit? We provide seamless ad payment solutions so you can run ads consistently.',
+    desc: 'Hit your $500 limit? We provide seamless ad payment solutions so you can run ads consistently and maintain your ROAS.',
     icon: CreditCard,
     color: 'emerald',
   },
   {
     title: 'Agencies Ignore Micro-Budgets',
-    desc: 'Most agencies want huge retainers. We are built for small businesses starting at $3-$5/day without the premium agency price tag.',
+    desc: 'Built for small businesses starting at $3-$5/day. We use Pixel & Conversions API (CAPI) to track every rupee spent.',
     icon: TrendingUp,
     color: 'blue',
   },
   {
     title: 'Beyond the "Boost" Button',
-    desc: 'The Boost button is a trap for vanity metrics. We use professional Ads Manager setups to reach exact buyers ready to order.',
+    desc: 'The Boost button is a trap. We use professional CBO/ABO structures inside Ads Manager to find buyers ready to order.',
     icon: Zap,
     color: 'amber',
   },
@@ -62,47 +62,47 @@ const whoItHelps = [
   {
     title: 'Insta Pages & Boutiques',
     icon: ShoppingBag,
-    desc: 'Run ads consistently without card limits. High-intent buyer targeting for small budgets.',
+    desc: 'Run ads consistently without card limits. High-intent Lookalike Audience (LAL) targeting for small budgets.',
   },
   {
     title: 'Restaurants & Cloud Kitchens',
     icon: Coffee,
-    desc: 'Hyper-local radius targeting. Only pay for ads shown to people who can actually order.',
+    desc: 'Hyper-local radius targeting. Only pay for ads shown to people who can actually order in your zone.',
   },
   {
     title: 'Furniture & Decor',
     icon: Package,
-    desc: 'Controlled, slow-burn ad spend. Reach people actively interested in home decor.',
+    desc: 'Controlled, slow-burn ad spend. Reach people actively interested in home decor using custom audiences.',
   },
   {
     title: 'Education Consultancies',
     icon: GraduationCap,
-    desc: 'Precise demographic targeting. Get serious student inquiries, not random clicks.',
+    desc: 'Precise demographic targeting. Get serious student inquiries, not random clicks from outside regions.',
   },
   {
     title: 'Independent Freelancers',
     icon: Hammer,
-    desc: 'Photographers, MUA, planners—run local ads without an expensive middleman.',
+    desc: 'Photographers, MUA, planners—run local ads and track conversions without an expensive middleman.',
   },
   {
     title: 'Local Ecommerce',
     icon: Globe,
-    desc: 'Transition from Boost Post to optimized catalog sales and smart retargeting.',
+    desc: 'Transition from Boost Post to optimized CAPI tracking, catalog sales and smart retargeting.',
   },
 ];
 
 const steps = [
   {
-    title: 'Proper Campaign Setup',
-    desc: 'We avoid the expensive "Boost Post". Instead, we set up objective-based campaigns inside Ads Manager to tell the algorithm exactly what action you want.',
+    title: 'Strategic CBO/ABO Setup',
+    desc: 'We avoid the expensive "Boost Post". Instead, we set up CBO/ABO campaigns inside Ads Manager to tell the algorithm exactly what ROAS you want.',
   },
   {
-    title: 'Maximizing Micro-Budgets',
-    desc: 'Every dollar is valuable. We ensure your budget is spent perfectly by focusing on clear offers and high-conversion paths.',
+    title: 'Pixel & CAPI Tracking',
+    desc: 'Every dollar is valuable. We ensure your budget is spent perfectly by using the Conversions API to track high-conversion paths.',
   },
   {
-    title: 'Precision Targeting',
-    desc: 'No more generic broad reach. We map your target zone and demographics to ensure your ads hit the right Nepali market segments.',
+    title: 'LAL & Precision Targeting',
+    desc: 'No more generic broad reach. We use Lookalike Audiences and zone targeting to ensure your ads hit the right Nepali market segments.',
   },
 ];
 

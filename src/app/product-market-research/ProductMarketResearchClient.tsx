@@ -34,37 +34,37 @@ const whatsappMessage = encodeURIComponent(
 const features = [
   {
     title: 'Demand Validation',
-    copy: 'Check if people are already searching, buying, or engaging with your product category.',
+    copy: 'Identify "Winning Products" by checking if people are already searching, buying, or engaging with your category.',
     icon: SearchCheck,
     color: 'emerald',
   },
   {
     title: 'Competitor Scan',
-    copy: 'Identify existing sellers, their pricing, content style, and visible market weaknesses.',
+    copy: 'Detect market Saturation. Identify existing sellers, their pricing, content style, and visible market weaknesses.',
     icon: Target,
     color: 'sky',
   },
   {
     title: 'Customer Profile',
-    copy: 'Clarify likely customer segments, buying triggers, and effective messaging angles.',
+    copy: 'Clarify likely customer segments, buying triggers, and effective messaging angles for high conversion.',
     icon: UsersRound,
     color: 'amber',
   },
   {
     title: 'Pricing Direction',
-    copy: 'Compare market price ranges and suggest practical positioning for your products.',
+    copy: 'Analyze Perceived Value and compare market price ranges to suggest practical positioning for your products.',
     icon: BarChart3,
     color: 'indigo',
   },
   {
     title: 'Launch Channels',
-    copy: 'Recommend channels such as FB, Instagram, TikTok, or SEO for the fastest growth.',
+    copy: 'Recommend channels such as FB, Instagram, TikTok, or SEO for the fastest growth and brand scaling.',
     icon: LineChart,
     color: 'rose',
   },
   {
     title: 'Action Report',
-    copy: 'Get a concise report with findings, risks, recommendations, and clear next steps.',
+    copy: 'Get a concise report with findings, risks, and Private Label / White Label scaling recommendations.',
     icon: ClipboardList,
     color: 'stone',
   },

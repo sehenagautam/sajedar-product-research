@@ -65,22 +65,22 @@ const process = [
   {
     step: '02',
     title: 'We craft your video',
-    body: 'Our AI-powered studio transforms your brief into a polished cinematic video — motion, sound, story included.',
+    body: 'Our AI studio transforms your brief into a cinematic video with strong Hooks and B-Roll details included.',
     icon: Film,
   },
   {
     step: '03',
     title: 'Publish and convert',
-    body: 'Deploy across Facebook, Instagram, TikTok, and ad campaigns. Built for engagement from the first frame.',
+    body: 'Deploy across Meta & TikTok with clear CTAs. Built to make your audience stop and engage from the first frame.',
     icon: Zap,
   },
 ];
 
 const features = [
-  { title: 'Motion Design', body: 'Fluid animations that command attention and hold it.' },
-  { title: 'Story-Driven', body: 'Research-backed narratives that connect with your audience.' },
-  { title: 'Fast Delivery', body: 'Production-ready videos without production-day delays.' },
-  { title: 'Ad-Ready Format', body: 'Optimised for Meta, TikTok, YouTube — every ratio.' },
+  { title: 'Motion Design', body: 'Fluid animations and striking hooks that command immediate attention.' },
+  { title: 'UGC Style Options', body: 'Research-backed authentic narratives that connect deeply with your audience.' },
+  { title: 'Cinematic B-Roll', body: 'Production-ready detail shots showing your product from every angle.' },
+  { title: 'CTA-Ready Format', body: 'Optimised for Meta, TikTok, YouTube with clear calls to action in every ratio.' },
 ];
 
 export default function MotionmanduPage() {

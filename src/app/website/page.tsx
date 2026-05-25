@@ -37,13 +37,13 @@ const whatsappMessage = encodeURIComponent(
 const features = [
   {
     icon: Sparkles,
-    title: 'AI-assisted custom design',
-    body: 'Every site is designed with Claude AI to look polished, modern, and unique — not a generic template.',
+    title: 'CRO-focused custom design',
+    body: 'Every site is designed for Conversion Rate Optimization (CRO) to look polished and turn visitors into buyers.',
   },
   {
     icon: BellRing,
-    title: 'Order notifications to Discord',
-    body: 'When a customer places an order, you get notified instantly in your Discord channel.',
+    title: 'Abandoned Cart Recovery',
+    body: 'Automated sequences to bring back shoppers who left their details but didn\'t finish the purchase.',
   },
   {
     icon: Server,
@@ -52,8 +52,8 @@ const features = [
   },
   {
     icon: Globe2,
-    title: 'Upgrade to custom domain',
-    body: 'Ready to grow? Move to your own domain name later with a simple upgrade.',
+    title: 'Maximize AOV & LTV',
+    body: 'Built-in features to increase Average Order Value and Customer Lifetime Value through smart layouts.',
   },
 ];
 

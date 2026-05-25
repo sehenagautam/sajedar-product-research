@@ -24,26 +24,26 @@ const whatsappMessage = encodeURIComponent(
 
 const insightFeatures = [
   {
-    title: 'Ad Library Insights',
-    copy: 'See which public creatives, offers, and hooks are active in your category right now.',
+    title: 'Ad Spying & Library',
+    copy: 'Monitor competitors\' active campaigns to see which creatives, offers, and hooks are active in your category right now.',
     icon: Search,
     color: 'red',
   },
   {
-    title: 'Pricing Alerts',
-    copy: 'Get notified when competitors change their prices or launch limited-time flash sales.',
+    title: 'Burn Rate & Velocity',
+    copy: 'Estimate competitor ad spend and Engagement Velocity to catch a trend right before it peaks.',
     icon: Bell,
     color: 'sky',
   },
   {
     title: 'Top Seller Detection',
-    copy: 'Identify which products are driving the most engagement and sales for other brands.',
+    copy: 'Identify which products are driving the most sales for other brands. Reverse-engineer their success with Funnel Hacking.',
     icon: TrendingUp,
     color: 'amber',
   },
   {
     title: 'Creative Intelligence',
-    copy: 'Analyze the video hooks and image styles that are currently winning in the Nepali market.',
+    copy: 'Analyze the video hooks and image styles that are currently winning. Avoid fatigue and stay ahead of the market.',
     icon: Sparkles,
     color: 'red',
   },

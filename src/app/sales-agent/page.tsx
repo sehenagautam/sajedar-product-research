@@ -47,25 +47,25 @@ function PricingSection() {
             Plans &amp; Pricing
           </h2>
           <p className="text-[#57534e] text-base leading-relaxed max-w-xl">
-            AI sales agents for Facebook Messenger that showcase products, engage customers, and convert conversations into confirmed orders &ndash; automatically.
+            Conversational Commerce agents that showcase products, engage customers, and convert conversations into confirmed orders &ndash; automatically.
           </p>
         </div>
 
         {/* Current Scope */}
         <div className="bg-white rounded-lg border border-stone-200 p-6 mb-14">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-[#292524] mb-3">Current Scope</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-[#292524] mb-3">Omnichannel Capability</h3>
           <ul className="space-y-2 text-sm text-[#44403c]">
             <li className="flex items-start gap-2.5">
               <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>Supported platform: <strong>Facebook Messenger</strong></span>
+              <span>Supported platforms: <strong>Facebook Messenger & Instagram</strong></span>
             </li>
             <li className="flex items-start gap-2.5">
               <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>Image &amp; voice message understanding included in all plans</span>
+              <span>Friction Reduction: Image &amp; voice message understanding included</span>
             </li>
             <li className="flex items-start gap-2.5">
               <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>All setup is performed manually by our team &ndash; no self-service configuration required</span>
+              <span>Lead Nurturing: Automated follow-ups for "Price please" and "PP" comments</span>
             </li>
             <li className="flex items-start gap-2.5">
               <span className="text-[#a8a29e] mt-0.5 text-xs">●</span>
@@ -284,15 +284,15 @@ function PricingSection() {
           <div className="bg-white rounded-lg border border-stone-200 p-6">
             <ul className="grid md:grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-[#44403c]">
               {[
-                '24/7 automated responses',
-                'Payment collection',
-                'Human takeover support',
+                '24/7 Conversational Commerce',
+                'Payment collection & checkout',
+                'Friction Reduction via AI answers',
+                'Lead Nurturing & automated follow-ups',
                 'Ad campaign synchronisation',
-                'Admin-defined negotiation rules',
                 'Native rendering on Meta platforms',
                 'Image & voice message understanding',
-                'Multi-language support',
-                'Labeling in Meta Business Suite'
+                'Multi-language support (Nepali/English)',
+                'Omnichannel data syncing'
               ].map((capability) => (
                 <li key={capability} className="flex items-start gap-2.5">
                   <span className="text-emerald-600 mt-0.5">✓</span>
