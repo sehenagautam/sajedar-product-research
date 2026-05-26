@@ -20,6 +20,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { Footer } from '../../components/sections/Footer';
+import MarketClarityApple from './MarketClarityApple';
 
 const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I am interested in Jasus AI competitor insights. Please share how I can understand my market in Nepal.'
@@ -285,15 +286,13 @@ export default function JasusAiClient() {
         </section>
 
         {/* Capabilities Section */}
-        <section id="capabilities" className="bg-[#0f0f15] py-24 md:py-32">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="mb-16 max-w-3xl">
-              <h2 className="text-xs font-black uppercase tracking-[0.25em] text-red-500">Market Clarity</h2>
-              <h3 className="mt-4 text-4xl font-black tracking-tight text-white md:text-5xl">
-                Clear signals make better decisions.
-              </h3>
-            </div>
+        <div id="capabilities">
+          <MarketClarityApple />
+        </div>
 
+        {/* Features List */}
+        <section className="bg-[#0f0f15] pb-24 md:pb-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {insightFeatures.map((feature, idx) => (
                 <motion.div
