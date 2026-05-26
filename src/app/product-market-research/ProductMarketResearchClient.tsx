@@ -34,37 +34,37 @@ const whatsappMessage = encodeURIComponent(
 const features = [
   {
     title: 'Demand Validation',
-    copy: 'Identify "Winning Products" by checking if people are already searching, buying, or engaging with your category.',
+    copy: 'Our core Market Research process validates if people are already searching, buying, or engaging with your category.',
     icon: SearchCheck,
     color: 'emerald',
   },
   {
-    title: 'Competitor Scan',
-    copy: 'Detect market Saturation. Identify existing sellers, their pricing, content style, and visible market weaknesses.',
+    title: 'Competitor Analysis',
+    copy: 'Deep dive into existing sellers. We perform a Market Gap Analysis to find visible weaknesses you can exploit.',
     icon: Target,
     color: 'sky',
   },
   {
-    title: 'Customer Profile',
-    copy: 'Clarify likely customer segments, buying triggers, and effective messaging angles for high conversion.',
-    icon: UsersRound,
+    title: 'Ad Spy Research',
+    copy: 'Analysis of active competitor ads, hooks, and messaging angles to see what is currently converting.',
+    icon: Search,
     color: 'amber',
   },
   {
-    title: 'Pricing Direction',
-    copy: 'Analyze Perceived Value and compare market price ranges to suggest practical positioning for your products.',
+    title: 'Pricing & Positioning',
+    copy: 'Detailed Pricing & Positioning Analysis to ensure your Perceived Value justifies your market entry.',
     icon: BarChart3,
     color: 'indigo',
   },
   {
-    title: 'Launch Channels',
-    copy: 'Recommend channels such as FB, Instagram, TikTok, or SEO for the fastest growth and brand scaling.',
+    title: 'Trend Analysis',
+    copy: 'Spot rising product categories using Trend Analysis before they become saturated in the Nepali market.',
     icon: LineChart,
     color: 'rose',
   },
   {
-    title: 'Action Report',
-    copy: 'Get a concise report with findings, risks, and Private Label / White Label scaling recommendations.',
+    title: 'Opportunity Analysis',
+    copy: 'Get a concise Product Opportunity Analysis report with Private Label scaling recommendations.',
     icon: ClipboardList,
     color: 'stone',
   },
@@ -74,22 +74,22 @@ const packages = [
   {
     name: 'Quick Validation',
     price: 'Rs 3,000',
-    desc: 'Best before testing a single product idea or small batch.',
-    includes: ['Demand signal check', 'Basic competitor scan', 'Price range notes', 'Go / avoid recommendation'],
+    desc: 'Best for single Product Validation before buying small batches.',
+    includes: ['Demand Validation signal check', 'Basic Competitor Analysis', 'Pricing & Position notes', 'Go / avoid recommendation'],
     featured: false,
   },
   {
     name: 'Discovery Research',
     price: 'Rs 5,000',
-    desc: 'Best when you have a category but need the exact product.',
-    includes: ['5-8 product opportunity ideas', 'Trend signal scan', 'Competitor whitespace notes', 'Top 3 product shortlist'],
+    desc: 'Deep dive Winning Product Research for your category.',
+    includes: ['Product Opportunity Analysis', 'Trend Analysis scan', 'Market Gap Analysis', 'Top 3 product shortlist'],
     featured: true,
   },
   {
     name: 'Full Market Report',
     price: 'Rs 7,000',
-    desc: 'Best before buying large inventory or planning major ads.',
-    includes: ['Full competitor analysis', 'Customer profile notes', 'Pricing & position direction', 'Channel recommendations'],
+    desc: 'Comprehensive Market Research before major scaling.',
+    includes: ['Full Competitor Analysis', 'Ad Spy Research breakdown', 'Customer profile insights', 'Channel recommendations'],
     featured: false,
   },
 ];
@@ -196,7 +196,7 @@ export default function ProductMarketResearchClient() {
                   className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm"
                 >
                   <Search className="h-4 w-4" />
-                  Product Validation for Nepali Ecommerce
+                  Winning Product Research & Validation
                 </motion.div>
                 
                 <motion.h1 
