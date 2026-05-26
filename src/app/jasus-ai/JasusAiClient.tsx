@@ -15,6 +15,9 @@ import {
   Unlock,
   Bell,
   CheckCircle2,
+  MessageSquareText,
+  Users,
+  ShieldCheck,
 } from 'lucide-react';
 import { Footer } from '../../components/sections/Footer';
 
@@ -24,28 +27,52 @@ const whatsappMessage = encodeURIComponent(
 
 const insightFeatures = [
   {
-    title: 'Ad Spying & Library',
-    copy: 'Monitor competitors\' active campaigns to see which creatives, offers, and hooks are active in your category right now.',
+    title: 'Ads Library Monitoring',
+    copy: 'Continuous monitoring of Facebook Ads Library. See active creatives and hooks in your category.',
     icon: Search,
     color: 'red',
   },
   {
-    title: 'Burn Rate & Velocity',
-    copy: 'Estimate competitor ad spend and Engagement Velocity to catch a trend right before it peaks.',
-    icon: Bell,
+    title: 'TikTok Trend Detection',
+    copy: 'Catch viral product trends and creative styles on TikTok before they peak in the local market.',
+    icon: Sparkles,
     color: 'sky',
   },
   {
-    title: 'Top Seller Detection',
-    copy: 'Identify which products are driving the most sales for other brands. Reverse-engineer their success with Funnel Hacking.',
+    title: 'Competitor Tracking',
+    copy: 'Track competitor website updates, new product launches, and layout changes automatically.',
     icon: TrendingUp,
     color: 'amber',
   },
   {
-    title: 'Creative Intelligence',
-    copy: 'Analyze the video hooks and image styles that are currently winning. Avoid fatigue and stay ahead of the market.',
-    icon: Sparkles,
+    title: 'Price & Offer Alerts',
+    copy: 'Get notified when competitors change their prices or launch limited-time flash sales.',
+    icon: Bell,
+    color: 'sky',
+  },
+  {
+    title: 'Sentiment Analysis',
+    copy: 'Review and comment sentiment analysis to understand customer pain points and weaknesses.',
+    icon: MessageSquareText,
+    color: 'blue',
+  },
+  {
+    title: 'Influencer Tracking',
+    copy: 'Monitor influencer partnerships and see which creators are driving engagement for other brands.',
+    icon: Users,
+    color: 'amber',
+  },
+  {
+    title: 'Emerging Products',
+    copy: 'Detection of new "Winning Products" being tested across multiple stores in the region.',
+    icon: Target,
     color: 'red',
+  },
+  {
+    title: 'चुपचाप Review Mode',
+    copy: 'Analyze market signals without alerting competitors. Pure data-driven intelligence.',
+    icon: ShieldCheck,
+    color: 'blue',
   },
 ];
 
@@ -53,6 +80,7 @@ const featureColorClasses = {
   red: 'bg-red-500/10 text-red-500 ring-red-500/20',
   sky: 'bg-sky-500/10 text-sky-500 ring-sky-500/20',
   amber: 'bg-amber-500/10 text-amber-500 ring-amber-500/20',
+  blue: 'bg-blue-500/10 text-blue-500 ring-blue-500/20',
 };
 
 const fadeIn = {
