@@ -86,16 +86,6 @@ ${formData.message}`;
             </div>
 
             <div className="bg-white rounded-2xl border border-stone-200 p-6">
-              <p className="text-sm font-semibold tracking-[0.24em] text-[#78716c] uppercase mb-3">Canada</p>
-              <a
-                href="tel:+14373184777"
-                className="text-2xl md:text-3xl font-semibold text-[#292524] hover:text-emerald-600 transition-colors break-words leading-tight"
-              >
-                +1 437 318 4777
-              </a>
-            </div>
-
-            <div className="bg-white rounded-2xl border border-stone-200 p-6">
               <p className="text-sm font-semibold tracking-[0.24em] text-[#78716c] uppercase mb-3">Nepal</p>
               <a
                 href="tel:+9779860479751"
