@@ -27,24 +27,24 @@ const whatsappMessage = encodeURIComponent(
 
 /* Brick data for the ascending staircase */
 const bricks = [
+  { title: 'Strategy', icon: BrainCircuit, color: '#8b5cf6' },
   { title: 'Research', icon: SearchCheck, color: '#10b981' },
   { title: 'Jasus AI', icon: Eye, color: '#dc2626' },
   { title: 'Website+CRM', icon: Layout, color: '#3b82f6' },
   { title: 'Creatives', icon: Sparkles, color: '#f59e0b' },
   { title: 'Ads', icon: Megaphone, color: '#06b6d4' },
   { title: 'Sales Agent', icon: Bot, color: '#10b981' },
-  { title: 'Strategy', icon: BrainCircuit, color: '#8b5cf6' },
 ];
 
 /* Service cards data */
 const services = [
+  { title: 'AI Strategy\nConsulting', href: '/ai-strategy-consulting', icon: BrainCircuit, priceLabel: 'Starting at', price: 'Rs 5,000', iconColor: '#8b5cf6', iconBg: 'from-purple-50 to-violet-100' },
   { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
   { title: 'Jasus AI Insights', href: '/jasus-ai', icon: Eye, priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#dc2626', iconBg: 'from-red-50 to-red-100' },
   { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
   { title: 'Sajedar Creatives', href: '/creatives', icon: Sparkles, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
   { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
-  { title: 'AI Strategy\nConsulting', href: '/ai-strategy-consulting', icon: BrainCircuit, priceLabel: 'Starting at', price: 'Rs 5,000', iconColor: '#8b5cf6', iconBg: 'from-purple-50 to-violet-100' },
 ];
 
 export default function Home() {
