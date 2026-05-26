@@ -2,11 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  BarChart3,
-  CheckCircle2,
+  BarChart3,  CheckCircle2,
   ClipboardList,
   LineChart,
   MessageCircle,
@@ -109,20 +107,6 @@ const steps = [
   },
 ];
 
-const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.5 }
-};
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
-};
-
 const DataVisualization = ({ className = "" }) => (
   <div className={`relative bg-white rounded-3xl border border-stone-200 p-6 shadow-2xl overflow-hidden ${className}`}>
     <div className="flex items-center justify-between mb-8">
@@ -139,10 +123,8 @@ const DataVisualization = ({ className = "" }) => (
         <div key={i} className="flex items-center gap-4">
           <div className="h-2 w-8 bg-stone-100 rounded-full" />
           <div className="flex-1 h-3 bg-stone-50 rounded-full overflow-hidden">
-            <motion.div 
-              initial={{ width: 0 }}
-              animate={{ width: `${w}%` }}
-              transition={{ duration: 1, delay: i * 0.1 + 0.5 }}
+            <div 
+              style={{ width: `${w}%` }}
               className={`h-full ${i === 2 ? 'bg-emerald-500' : 'bg-stone-300'}`}
             />
           </div>
@@ -185,39 +167,22 @@ export default function ProductMarketResearchClient() {
 
           <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
             <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-              <motion.div 
-                initial="initial"
-                animate="animate"
-                variants={staggerContainer}
-                className="max-w-2xl"
-              >
-                <motion.div 
-                  variants={fadeIn}
-                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm"
-                >
+              <div className="max-w-2xl">
+                <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm">
                   <Search className="h-4 w-4" />
                   Winning Product Research & Validation
-                </motion.div>
+                </div>
                 
-                <motion.h1 
-                  variants={fadeIn}
-                  className="text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-7xl"
-                >
+                <h1 className="text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-7xl">
                   Stop guessing. <span className="text-emerald-600">Validate demand</span> before you buy.
-                </motion.h1>
+                </h1>
                 
-                <motion.p 
-                  variants={fadeIn}
-                  className="mt-8 max-w-xl text-lg leading-relaxed text-stone-600 md:text-xl"
-                >
+                <p className="mt-8 max-w-xl text-lg leading-relaxed text-stone-600 md:text-xl">
                   Don't waste money on dead stock or generic ads. We study competitors, 
                   pricing, and local demand signals so you launch with confidence.
-                </motion.p>
+                </p>
 
-                <motion.div 
-                  variants={fadeIn}
-                  className="mt-10 flex flex-col gap-4 sm:flex-row"
-                >
+                <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
                     className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
@@ -233,12 +198,9 @@ export default function ProductMarketResearchClient() {
                   >
                     Request Sample Report
                   </Link>
-                </motion.div>
+                </div>
 
-                <motion.div 
-                  variants={fadeIn}
-                  className="mt-12 flex items-center gap-8"
-                >
+                <div className="mt-12 flex items-center gap-8">
                    <div className="flex flex-col">
                       <span className="text-2xl font-black text-stone-950">Rs 3,000</span>
                       <span className="text-xs font-bold text-stone-400 uppercase tracking-widest">Starting Price</span>
@@ -248,23 +210,14 @@ export default function ProductMarketResearchClient() {
                       <span className="text-2xl font-black text-stone-950">24-48 Hours</span>
                       <span className="text-xs font-bold text-stone-400 uppercase tracking-widest">Turnaround</span>
                    </div>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
 
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95, x: 20 }}
-                animate={{ opacity: 1, scale: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="relative"
-              >
+              <div className="relative">
                 <DataVisualization className="w-full max-w-md mx-auto" />
                 
                 {/* Floating tags */}
-                <motion.div 
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -top-6 -left-6 bg-white rounded-2xl border border-stone-100 p-4 shadow-xl flex items-center gap-3"
-                >
+                <div className="absolute -top-6 -left-6 bg-white rounded-2xl border border-stone-100 p-4 shadow-xl flex items-center gap-3">
                    <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center text-white">
                       <Target className="w-4 h-4" />
                    </div>
@@ -272,13 +225,9 @@ export default function ProductMarketResearchClient() {
                      <p className="text-[10px] font-black text-stone-400 uppercase tracking-widest">Competitor Scan</p>
                      <p className="text-xs font-bold text-stone-900">8 Brands Found</p>
                    </div>
-                </motion.div>
+                </div>
 
-                <motion.div 
-                  animate={{ y: [0, 10, 0] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -bottom-6 -right-6 bg-stone-950 rounded-2xl p-4 shadow-xl flex items-center gap-3 text-white"
-                >
+                <div className="absolute -bottom-6 -right-6 bg-stone-950 rounded-2xl p-4 shadow-xl flex items-center gap-3 text-white">
                    <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white">
                       <SearchCheck className="w-4 h-4" />
                    </div>
@@ -286,8 +235,8 @@ export default function ProductMarketResearchClient() {
                      <p className="text-[10px] font-black text-white/40 uppercase tracking-widest">Demand Signal</p>
                      <p className="text-xs font-bold text-white">High (Rising)</p>
                    </div>
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -304,12 +253,8 @@ export default function ProductMarketResearchClient() {
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature, idx) => (
-                <motion.div
+                <div
                   key={feature.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
                   className="group rounded-[2rem] border border-stone-200 bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
                 >
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${feature.color}-50 text-${feature.color}-600 ring-1 ring-${feature.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
@@ -317,7 +262,7 @@ export default function ProductMarketResearchClient() {
                   </div>
                   <h4 className="text-xl font-black text-stone-950">{feature.title}</h4>
                   <p className="mt-4 leading-relaxed text-stone-600">{feature.copy}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -414,10 +359,7 @@ export default function ProductMarketResearchClient() {
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
               
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+              <div
                 className="relative z-10 mx-auto max-w-3xl"
               >
                 <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-[10px] font-black uppercase tracking-widest text-emerald-400">
@@ -449,7 +391,7 @@ export default function ProductMarketResearchClient() {
                     <ArrowRight className="h-5 w-5" />
                   </Link>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </section>
