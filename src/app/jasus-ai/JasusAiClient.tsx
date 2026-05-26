@@ -51,7 +51,7 @@ const InsightsDashboard = () => (
        <div className="flex items-center gap-3">
           <div className="relative w-10 h-10 overflow-hidden rounded-xl bg-red-500/20 border border-red-500/30 animate-pulse">
              <Image
-               src="/jasus-ai-icon.png"
+               src="/jasus-ai-icon.jpg"
                alt="Jasus AI icon"
                fill
                sizes="40px"
@@ -135,7 +135,7 @@ export default function JasusAiClient() {
                 >
                   <span className="relative h-5 w-5 overflow-hidden rounded-full">
                     <Image
-                      src="/jasus-ai-icon.png"
+                      src="/jasus-ai-icon.jpg"
                       alt=""
                       fill
                       sizes="20px"

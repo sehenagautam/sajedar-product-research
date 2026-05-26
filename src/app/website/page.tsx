@@ -73,22 +73,22 @@ const included = [
   'WhatsApp contact integration',
   'Basic SEO setup',
 ];
-
 const examples = [
   {
     name: 'Ashwi Furniture',
     url: 'ashwi.sajedar.com',
     href: 'https://ashwi.sajedar.com',
-    image: '/ashwi_preview.png',
+    image: '/ashwi_preview.jpg',
     tag: 'Furniture store',
-    palette: 'Dark & editorial',
   },
   {
     name: 'Daily Diva',
     url: 'dailydiva.sajedar.com',
     href: 'https://dailydiva.sajedar.com',
-    image: '/dailydiva_preview.png',
+    image: '/dailydiva_preview.jpg',
     tag: 'Fashion bags',
+  },
+];
     palette: 'Soft & elegant',
   },
 ];

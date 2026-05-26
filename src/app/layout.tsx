@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: 'Sajedar',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Sajedar - Top AI Agent Builder in Nepal',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     creator: '@sajedar',
     title: 'Top AI Agent Builder in Nepal | Sajedar',
     description: 'Top AI Agent Builder in Nepal specializing in commission-based Facebook Page AI sales agents and Messenger automation for ecommerce.',
-    images: ['/og-image.png'],
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -85,16 +85,16 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.jpg', sizes: '16x16', type: 'image/jpeg' },
+      { url: '/favicon-32x32.jpg', sizes: '32x32', type: 'image/jpeg' },
       { url: '/favicon.ico', sizes: 'any' },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.jpg', sizes: '180x180', type: 'image/jpeg' },
     ],
     other: [
-      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png' },
-      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
+      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.jpg' },
+      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.jpg' },
     ],
   },
   category: 'technology',

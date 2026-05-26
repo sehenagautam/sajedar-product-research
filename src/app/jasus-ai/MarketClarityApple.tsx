@@ -142,7 +142,7 @@ export default function MarketClarityApple() {
         <div className="absolute left-1/2 top-1/2 z-20 h-28 w-28 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[2rem] bg-white p-6 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
           <div className="relative h-full w-full">
             <Image
-              src="/jasus-ai-icon.png"
+              src="/jasus-ai-icon.jpg"
               alt="Jasus AI"
               fill
               className="object-contain"

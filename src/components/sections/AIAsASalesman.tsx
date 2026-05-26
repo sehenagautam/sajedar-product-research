@@ -27,7 +27,7 @@ export default function AIAsASalesman() {
             {/* Central Image */}
             <div className="relative mb-12">
               <Image
-                src="/ai-as-a-salesman.webp"
+                src="/ai-as-a-salesman.jpg"
                 alt="AI Salesman"
                 width={320}
                 height={320}

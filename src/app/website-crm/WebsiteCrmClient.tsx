@@ -72,14 +72,14 @@ const examples = [
     name: 'Ashwi Furniture',
     url: 'ashwi.sajedar.com',
     href: 'https://ashwi.sajedar.com',
-    image: '/ashwi_preview.png',
+    image: '/ashwi_preview.jpg',
     tag: 'Furniture store',
   },
   {
     name: 'Daily Diva',
     url: 'dailydiva.sajedar.com',
     href: 'https://dailydiva.sajedar.com',
-    image: '/dailydiva_preview.png',
+    image: '/dailydiva_preview.jpg',
     tag: 'Fashion bags',
   },
 ];
@@ -200,7 +200,7 @@ export default function WebsiteCrmClient() {
                   </div>
                   <div className="relative overflow-hidden bg-stone-100">
                     <Image
-                      src="/crm_demo_ss.png"
+                      src="/crm_demo_ss.jpg"
                       alt="Sajedar CRM & Website Platform"
                       width={1200}
                       height={900}
