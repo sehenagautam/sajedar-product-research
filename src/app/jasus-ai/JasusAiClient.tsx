@@ -228,10 +228,9 @@ export default function JasusAiClient() {
                    </div>
                    <div className="h-10 w-px bg-slate-800" />
                    <div className="flex flex-col">
-                      <span className="text-2xl font-black text-white">Quiet Review</span>
-                      <span className="text-xs font-bold text-slate-600 uppercase tracking-widest text-center">Mode</span>
-                   </div>
-                </motion.div>
+                     <span className="text-2xl font-black text-white">चुपचाप Review</span>
+                     <span className="text-xs font-bold text-slate-600 uppercase tracking-widest text-center">Mode</span>
+                   </div>                </motion.div>
               </motion.div>
 
               <motion.div 
@@ -315,7 +314,7 @@ export default function JasusAiClient() {
                    {[
                      'Public ad creative review',
                      'Bi-weekly strategy updates',
-                     'Quiet public-signal review',
+                     'चुपचाप public-signal review',
                      'Direct WhatsApp delivery'
                    ].map((item) => (
                      <div key={item} className="flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10">
