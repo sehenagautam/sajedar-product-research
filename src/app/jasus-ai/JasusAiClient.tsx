@@ -6,18 +6,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  Search,
   ShieldAlert,
   Target,
-  TrendingUp,
   MessageCircle,
-  Sparkles,
   Unlock,
-  Bell,
   CheckCircle2,
-  MessageSquareText,
-  Users,
-  ShieldCheck,
 } from 'lucide-react';
 import { Footer } from '../../components/sections/Footer';
 import MarketClarityApple from './MarketClarityApple';
@@ -25,64 +18,6 @@ import MarketClarityApple from './MarketClarityApple';
 const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I am interested in Jasus AI competitor insights. Please share how I can understand my market in Nepal.'
 );
-
-const insightFeatures = [
-  {
-    title: 'Ads Library Monitoring',
-    copy: 'Continuous monitoring of Facebook Ads Library. See active creatives and hooks in your category.',
-    icon: Search,
-    color: 'red',
-  },
-  {
-    title: 'TikTok Trend Detection',
-    copy: 'Catch viral product trends and creative styles on TikTok before they peak in the local market.',
-    icon: Sparkles,
-    color: 'sky',
-  },
-  {
-    title: 'Competitor Tracking',
-    copy: 'Track competitor website updates, new product launches, and layout changes automatically.',
-    icon: TrendingUp,
-    color: 'amber',
-  },
-  {
-    title: 'Price & Offer Alerts',
-    copy: 'Get notified when competitors change their prices or launch limited-time flash sales.',
-    icon: Bell,
-    color: 'sky',
-  },
-  {
-    title: 'Sentiment Analysis',
-    copy: 'Review and comment sentiment analysis to understand customer pain points and weaknesses.',
-    icon: MessageSquareText,
-    color: 'blue',
-  },
-  {
-    title: 'Influencer Tracking',
-    copy: 'Monitor influencer partnerships and see which creators are driving engagement for other brands.',
-    icon: Users,
-    color: 'amber',
-  },
-  {
-    title: 'Emerging Products',
-    copy: 'Detection of new "Winning Products" being tested across multiple stores in the region.',
-    icon: Target,
-    color: 'red',
-  },
-  {
-    title: 'चुपचाप Review Mode',
-    copy: 'Analyze market signals without alerting competitors. Pure data-driven intelligence.',
-    icon: ShieldCheck,
-    color: 'blue',
-  },
-];
-
-const featureColorClasses = {
-  red: 'bg-red-500/10 text-red-500 ring-red-500/20',
-  sky: 'bg-sky-500/10 text-sky-500 ring-sky-500/20',
-  amber: 'bg-amber-500/10 text-amber-500 ring-amber-500/20',
-  blue: 'bg-blue-500/10 text-blue-500 ring-blue-500/20',
-};
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -289,30 +224,6 @@ export default function JasusAiClient() {
         <div id="capabilities">
           <MarketClarityApple />
         </div>
-
-        {/* Features List */}
-        <section className="bg-[#0f0f15] pb-24 md:pb-32">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {insightFeatures.map((feature, idx) => (
-                <motion.div
-                  key={feature.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1 }}
-                  className="group rounded-[2rem] border border-slate-800 bg-slate-900/30 p-8 transition-all hover:-translate-y-2 hover:border-red-500/30 hover:bg-slate-900/50"
-                >
-                  <div className={`mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl ring-1 transition-colors group-hover:bg-red-500 group-hover:text-white ${featureColorClasses[feature.color as keyof typeof featureColorClasses]}`}>
-                    <feature.icon className="h-6 w-6" />
-                  </div>
-                  <h4 className="text-lg font-black text-white">{feature.title}</h4>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-500">{feature.copy}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Pricing */}
         <section className="bg-slate-950 py-24 md:py-32">
