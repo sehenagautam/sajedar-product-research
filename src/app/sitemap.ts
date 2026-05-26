@@ -46,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
+      url: `${base}/ai-strategy-consulting`,
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+      lastModified: now
+    },
+    {
       url: `${base}/meta-ads`,
       priority: 0.92,
       changeFrequency: 'weekly' as const,

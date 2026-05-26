@@ -3,6 +3,7 @@ import {
   ArrowRight,
   BellRing,
   Bot,
+  BrainCircuit,
   CheckCircle2,
   Clapperboard,
   Code2,
@@ -32,6 +33,7 @@ const bricks = [
   { title: 'Creatives', icon: Sparkles, color: '#f59e0b' },
   { title: 'Ads', icon: Megaphone, color: '#06b6d4' },
   { title: 'Sales Agent', icon: Bot, color: '#10b981' },
+  { title: 'Strategy', icon: BrainCircuit, color: '#8b5cf6' },
 ];
 
 /* Service cards data */
@@ -42,6 +44,7 @@ const services = [
   { title: 'Sajedar Creatives', href: '/creatives', icon: Sparkles, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
   { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
+  { title: 'AI Strategy\nConsulting', href: '/ai-strategy-consulting', icon: BrainCircuit, priceLabel: 'Starting at', price: 'Rs 5,000', iconColor: '#8b5cf6', iconBg: 'from-purple-50 to-violet-100' },
 ];
 
 export default function Home() {
@@ -226,8 +229,8 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Services grid - 6 portrait cards matching reference design */}
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
+            {/* Services grid - 7 portrait cards matching reference design */}
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (

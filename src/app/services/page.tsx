@@ -14,6 +14,7 @@ import {
   Sparkles,
   Zap,
   ChevronRight,
+  BrainCircuit,
 } from 'lucide-react';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
@@ -98,6 +99,19 @@ const services = [
     lane: 'Sales',
     tag: '06',
   },
+  {
+    title: 'AI Strategy Consulting',
+    href: '/ai-strategy-consulting',
+    price: 'Rs 5,000 / session',
+    symptom: 'You want to use AI but do not know where to start.',
+    input: 'Goals, current tools, team size',
+    output: 'AI roadmap, tool selection, automation plan',
+    icon: BrainCircuit,
+    accent: '#8b5cf6',
+    accentDim: 'rgba(139,92,246,0.12)',
+    lane: 'Strategy',
+    tag: '07',
+  },
 ];
 
 const diagnostics = [
@@ -106,6 +120,7 @@ const diagnostics = [
   { problem: 'Customers ask, then disappear.', module: 'AI Sales Agent', href: '/sales-agent' },
   { problem: 'We have interest, but no proper system.', module: 'Website + CRM', href: '/website-crm' },
   { problem: 'The offer is good but looks weak online.', module: 'Sajedar Creatives', href: '/creatives' },
+  { problem: 'AI is moving fast and I am confused.', module: 'AI Strategy Consulting', href: '/ai-strategy-consulting' },
 ];
 
 const whatsappMessage = encodeURIComponent('Hi Sajedar! I want to discuss which service is best for my business.');
@@ -380,9 +395,16 @@ export default function ServicesPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((s, i) => (
+              {services.slice(0, 6).map((s, i) => (
                 <ServiceCard key={s.href} service={s} index={i} />
               ))}
+            </div>
+
+            {/* Last card centered */}
+            <div className="mt-4 flex justify-center">
+              <div className="w-full sm:w-1/2 lg:w-1/3">
+                <ServiceCard service={services[6]} index={6} />
+              </div>
             </div>
           </div>
         </section>
