@@ -12,6 +12,21 @@ const nextConfig = {
     ],
     unoptimized: false,
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/social-media-graphics',
+        destination: '/creatives',
+        permanent: true,
+      },
+      {
+        source: '/motionmandu',
+        destination: '/creatives',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig 

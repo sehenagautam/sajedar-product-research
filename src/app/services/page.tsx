@@ -60,30 +60,17 @@ const services = [
     tag: '03',
   },
   {
-    title: 'Social Media Graphics',
-    href: '/social-media-graphics',
-    price: 'Rs 200 per graphic',
-    symptom: 'Your offer is decent, but the feed looks inconsistent.',
-    input: 'Product photos, offer, brand colors',
-    output: 'Post creatives, covers, offer graphics',
-    icon: ImageIcon,
+    title: 'Sajedar Creatives',
+    href: '/creatives',
+    price: 'Graphics: Rs 200 | Videos: Rs 2,000',
+    symptom: 'Your offer is strong, but your visual content looks weak or inconsistent.',
+    input: 'Photos, offer, brand feel, goal',
+    output: 'Branded graphics and cinematic AI videos',
+    icon: Sparkles,
     accent: '#f59e0b',
     accentDim: 'rgba(245,158,11,0.12)',
     lane: 'Creative',
     tag: '04',
-  },
-  {
-    title: 'Motionmandu AI Videos',
-    href: '/motionmandu',
-    price: 'Starts at Rs 2,000',
-    symptom: 'Static posts are not giving enough attention.',
-    input: 'Product, offer, mood, format',
-    output: 'Short AI video concepts for campaigns',
-    icon: Clapperboard,
-    accent: '#a855f7',
-    accentDim: 'rgba(168,85,247,0.12)',
-    lane: 'Motion',
-    tag: '05',
   },
   {
     title: 'Meta Ads Planning',
@@ -96,7 +83,7 @@ const services = [
     accent: '#06b6d4',
     accentDim: 'rgba(6,182,212,0.12)',
     lane: 'Demand',
-    tag: '06',
+    tag: '05',
   },
   {
     title: 'AI Sales Agent',
@@ -109,7 +96,7 @@ const services = [
     accent: '#10b981',
     accentDim: 'rgba(16,185,129,0.12)',
     lane: 'Sales',
-    tag: '07',
+    tag: '06',
   },
 ];
 
@@ -118,7 +105,7 @@ const diagnostics = [
   { problem: 'My competitors are suddenly everywhere.', module: 'Jasus AI Competitor Insights', href: '/jasus-ai' },
   { problem: 'Customers ask, then disappear.', module: 'AI Sales Agent', href: '/sales-agent' },
   { problem: 'We have interest, but no proper system.', module: 'Website + CRM', href: '/website-crm' },
-  { problem: 'The offer is good but looks weak online.', module: 'Graphics + Videos', href: '/social-media-graphics' },
+  { problem: 'The offer is good but looks weak online.', module: 'Sajedar Creatives', href: '/creatives' },
 ];
 
 const whatsappMessage = encodeURIComponent('Hi Sajedar! I want to discuss which service is best for my business.');
@@ -393,16 +380,9 @@ export default function ServicesPage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {services.slice(0, 6).map((s, i) => (
+              {services.map((s, i) => (
                 <ServiceCard key={s.href} service={s} index={i} />
               ))}
-            </div>
-
-            {/* Last card centered */}
-            <div className="mt-4 flex justify-center">
-              <div className="w-full sm:w-1/2 lg:w-1/3">
-                <ServiceCard service={services[6]} index={6} />
-              </div>
             </div>
           </div>
         </section>

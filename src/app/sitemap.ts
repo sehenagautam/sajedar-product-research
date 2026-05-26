@@ -40,13 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now
     },
     {
-      url: `${base}/social-media-graphics`,
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-      lastModified: now
-    },
-    {
-      url: `${base}/motionmandu`,
+      url: `${base}/creatives`,
       priority: 0.9,
       changeFrequency: 'weekly' as const,
       lastModified: now

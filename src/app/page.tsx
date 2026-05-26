@@ -29,8 +29,7 @@ const bricks = [
   { title: 'Research', icon: SearchCheck, color: '#10b981' },
   { title: 'Jasus AI', icon: Eye, color: '#dc2626' },
   { title: 'Website+CRM', icon: Layout, color: '#3b82f6' },
-  { title: 'Graphics', icon: ImageIcon, color: '#f59e0b' },
-  { title: 'Video', icon: Clapperboard, color: '#ef4444' },
+  { title: 'Creatives', icon: Sparkles, color: '#f59e0b' },
   { title: 'Ads', icon: Megaphone, color: '#06b6d4' },
   { title: 'Sales Agent', icon: Bot, color: '#10b981' },
 ];
@@ -40,8 +39,7 @@ const services = [
   { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
   { title: 'Jasus AI Insights', href: '/jasus-ai', icon: Eye, priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#dc2626', iconBg: 'from-red-50 to-red-100' },
   { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
-  { title: 'Social Media\nGraphics', href: '/social-media-graphics', icon: ImageIcon, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
-  { title: 'AI Videos', href: '/motionmandu', icon: Clapperboard, priceLabel: 'Starting at', price: 'Rs 2,000', iconColor: '#ef4444', iconBg: 'from-red-50 to-rose-100' },
+  { title: 'Sajedar Creatives', href: '/creatives', icon: Sparkles, priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
   { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
 ];
@@ -228,8 +226,8 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Services grid - 7 portrait cards matching reference design */}
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+            {/* Services grid - 6 portrait cards matching reference design */}
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
