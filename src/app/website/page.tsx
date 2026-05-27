@@ -80,6 +80,7 @@ const examples = [
     href: 'https://ashwi.sajedar.com',
     image: '/ashwi_preview.jpg',
     tag: 'Furniture store',
+    palette: 'Warm & premium',
   },
   {
     name: 'Daily Diva',
@@ -87,8 +88,6 @@ const examples = [
     href: 'https://dailydiva.sajedar.com',
     image: '/dailydiva_preview.jpg',
     tag: 'Fashion bags',
-  },
-];
     palette: 'Soft & elegant',
   },
 ];
