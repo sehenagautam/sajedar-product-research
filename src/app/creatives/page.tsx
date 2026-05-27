@@ -105,16 +105,6 @@ const graphicsShowcase = [
     image: '/social-media-graphics/roma-perfume.jpg',
   },
   {
-    title: 'Perfume Launch Creative',
-    category: 'Beauty Product',
-    image: '/social-media-graphics/perfume-main.jpg',
-  },
-  {
-    title: 'Le Bleu Product Creative',
-    category: 'Fragrance Product',
-    image: '/social-media-graphics/le-bleu-01.jpg',
-  },
-  {
     title: 'Le Bleu Offer Creative',
     category: 'Fragrance Product',
     image: '/social-media-graphics/le-bleu-02.jpg',
