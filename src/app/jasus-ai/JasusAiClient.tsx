@@ -45,58 +45,20 @@ const ServicesOnlyNav = () => (
   </header>
 );
 
-const InsightsDashboard = () => (
-  <div className="relative bg-slate-950 rounded-[2.5rem] border border-slate-800 p-8 shadow-2xl overflow-hidden group">
-    <div className="flex items-center justify-between mb-10">
-       <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10 overflow-hidden rounded-xl bg-red-500/20 border border-red-500/30 animate-pulse">
-             <Image
-               src="/jasus-ai-icon.jpg"
-               alt="Jasus AI icon"
-               fill
-               sizes="40px"
-               className="object-cover"
-             />
-          </div>
-          <div>
-            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Jasus AI Active</p>
-            <p className="text-xs font-bold text-white">Reviewing 12 Brands</p>
-          </div>
-       </div>
-       <div className="h-2 w-24 bg-slate-800 rounded-full" />
-    </div>
+const JasusAiVideo = () => (
+  <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900 shadow-2xl group">
+    <video
+      className="h-full w-full object-cover"
+      src="/ai_vids/jasus-ai-ad.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="metadata"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent pointer-events-none" />
     
-    <div className="space-y-6">
-       {[1, 2, 3].map((i) => (
-         <div key={i} className="flex items-center gap-4 border-b border-slate-900 pb-4 last:border-0">
-            <div className="w-12 h-12 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center">
-               <div className="w-6 h-6 rounded-md bg-slate-800" />
-            </div>
-            <div className="flex-1 space-y-2">
-               <div className="h-2 w-1/3 bg-slate-800 rounded-full" />
-               <div className="h-3 w-3/4 bg-slate-700 rounded-full" />
-            </div>
-            <div className="text-[10px] font-black px-2 py-1 rounded-md bg-red-500/10 text-red-500">
-               {i === 1 ? 'NEW AD' : 'PRICE DROPPED'}
-            </div>
-         </div>
-       ))}
-    </div>
-    
-    <div className="mt-10 grid grid-cols-2 gap-4">
-       <div className="bg-slate-900/50 rounded-2xl p-4 border border-slate-800">
-          <p className="text-[8px] font-black text-slate-500 uppercase tracking-widest">Est. Monthly Ad Spend</p>
-          <p className="text-lg font-black text-white mt-1">Rs 5.6L</p>
-       </div>
-       <div className="bg-red-500 rounded-2xl p-4 shadow-lg shadow-red-500/20">
-          <p className="text-[8px] font-black text-red-950 uppercase tracking-widest">Winning Hook</p>
-          <p className="text-sm font-black text-red-950 mt-1">"Free Delivery Today"</p>
-       </div>
-    </div>
-
-    <div className="absolute inset-0 bg-gradient-to-tr from-red-500/5 to-transparent pointer-events-none" />
-    
-    {/* Scanline effect */}
+    {/* Subtle Scanline/Overlay */}
     <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]" />
   </div>
 );
@@ -203,14 +165,14 @@ export default function JasusAiClient() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative"
               >
-                <InsightsDashboard />
+                <JasusAiVideo />
                 
                 {/* Floating alert */}
                 <div 
-                  className="absolute -top-6 -right-6 bg-red-600 text-white rounded-2xl p-4 shadow-2xl shadow-red-950/30 flex items-center gap-3"
+                  className="absolute -top-6 -right-2 bg-red-600 text-white rounded-2xl p-4 shadow-2xl shadow-red-950/30 flex items-center gap-3 z-10"
                 >
                    <ShieldAlert className="w-5 h-5" />
-                   <span className="text-xs font-black uppercase tracking-tighter">Competitor Ad Momentum</span>
+                   <span className="text-xs font-black uppercase tracking-tighter">Live Market Signal</span>
                 </div>
                 
                 {/* Ambient glows */}
