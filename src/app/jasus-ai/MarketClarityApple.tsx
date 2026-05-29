@@ -121,7 +121,7 @@ export default function MarketClarityApple() {
         {[190, 240, 290, 340, 390].map((radius) => (
           <div
             key={radius}
-            className="absolute left-1/2 top-1/2 rounded-full border border-white/10"
+            className="absolute left-1/2 top-1/2 rounded-full border border-white/20"
             style={{
               width: radius * 2,
               height: radius * 2,
@@ -130,13 +130,13 @@ export default function MarketClarityApple() {
           />
         ))}
 
-        <div className="absolute left-1/2 top-1/2 h-[42rem] w-[42rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/10" />
-        <div className="absolute left-1/2 top-1/2 h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10" />
+        <div className="absolute left-1/2 top-1/2 h-[42rem] w-[42rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-white/20" />
+        <div className="absolute left-1/2 top-1/2 h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20" />
 
-        <div className="absolute left-1/2 top-1/2 h-px w-[92%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        <div className="absolute left-1/2 top-1/2 h-[92%] w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-white/10 to-transparent" />
-        <div className="absolute left-1/2 top-1/2 h-px w-[80%] -translate-x-1/2 rotate-45 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        <div className="absolute left-1/2 top-1/2 h-px w-[80%] -translate-x-1/2 -rotate-45 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="absolute left-1/2 top-1/2 h-px w-[92%] -translate-x-1/2 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+        <div className="absolute left-1/2 top-1/2 h-[92%] w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-white/20 to-transparent" />
+        <div className="absolute left-1/2 top-1/2 h-px w-[80%] -translate-x-1/2 rotate-45 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+        <div className="absolute left-1/2 top-1/2 h-px w-[80%] -translate-x-1/2 -rotate-45 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
         {/* Center Logo */}
         <div className="absolute left-1/2 top-1/2 z-20 h-28 w-28 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[2rem] bg-white p-6 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
