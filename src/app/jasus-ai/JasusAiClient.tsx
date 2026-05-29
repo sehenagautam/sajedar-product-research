@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  ShieldAlert,
   Target,
   MessageCircle,
   Unlock,
@@ -166,15 +165,7 @@ export default function JasusAiClient() {
                 className="relative"
               >
                 <JasusAiVideo />
-                
-                {/* Floating alert */}
-                <div 
-                  className="absolute -top-6 -right-2 bg-red-600 text-white rounded-2xl p-4 shadow-2xl shadow-red-950/30 flex items-center gap-3 z-10"
-                >
-                   <ShieldAlert className="w-5 h-5" />
-                   <span className="text-xs font-black uppercase tracking-tighter">Live Market Signal</span>
-                </div>
-                
+
                 {/* Ambient glows */}
                 <div className="absolute -inset-20 bg-red-500/10 blur-[100px] -z-10 rounded-full" />
               </motion.div>
