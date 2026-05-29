@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -10,6 +10,8 @@ import {
   MessageCircle,
   Unlock,
   CheckCircle2,
+  Play,
+  Volume2,
 } from 'lucide-react';
 import { Footer } from '../../components/sections/Footer';
 import MarketClarityApple from './MarketClarityApple';
@@ -44,23 +46,56 @@ const ServicesOnlyNav = () => (
   </header>
 );
 
-const JasusAiVideo = () => (
-  <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900 shadow-2xl group">
-    <video
-      className="h-full w-full object-cover"
-      src="/ai_vids/jasus-ai-ad.mp4"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent pointer-events-none" />
-    
-    {/* Subtle Scanline/Overlay */}
-    <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]" />
-  </div>
-);
+const JasusAiVideo = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
+  return (
+    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900 shadow-2xl group">
+      <video
+        ref={videoRef}
+        className="h-full w-full object-cover"
+        src="/ai_vids/jasus-ai-ad.mp4"
+        loop
+        playsInline
+        preload="metadata"
+        poster="/ai_vids/jasus-ai-thumb.jpg"
+      />
+      
+      {!isPlaying && (
+        <div 
+          className="absolute inset-0 z-20 flex items-center justify-center bg-slate-950/20 cursor-pointer transition-colors hover:bg-slate-950/10"
+          onClick={handlePlay}
+        >
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-red-600/90 text-white shadow-2xl shadow-red-600/40 transition-transform group-hover:scale-110">
+            <Play className="ml-1 h-8 w-8 fill-current" />
+          </div>
+        </div>
+      )}
+
+      {isPlaying && (
+        <div className="absolute top-4 right-4 z-20 pointer-events-none">
+          <div className="flex items-center gap-2 rounded-full bg-slate-950/40 px-3 py-1.5 backdrop-blur-md border border-white/10 animate-pulse">
+            <Volume2 className="h-3 w-3 text-white" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-white">Audio On</span>
+          </div>
+        </div>
+      )}
+
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent pointer-events-none" />
+      
+      {/* Subtle Scanline/Overlay */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%]" />
+    </div>
+  );
+};
 
 export default function JasusAiClient() {
   return (
