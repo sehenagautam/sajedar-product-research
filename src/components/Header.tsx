@@ -4,7 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  logoSrc?: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg" }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -17,7 +21,7 @@ const Header: React.FC = () => {
             >
               <div className="relative h-7 w-7 flex-shrink-0 overflow-hidden rounded-md">
                 <Image
-                  src="/header-logo-transparent.jpg"
+                  src={logoSrc}
                   alt="Sajedar Logo"
                   fill
                   sizes="28px"

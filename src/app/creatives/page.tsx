@@ -114,7 +114,7 @@ const graphicsShowcase = [
 export default function CreativesPage() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#fafaf9] font-sans text-stone-900">
-      <Header />
+      <Header logoSrc="/sajedar-creatives.jpg" />
 
       <main className="pt-14">
         {/* ══════════════════════════════════
@@ -133,9 +133,19 @@ export default function CreativesPage() {
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 text-center">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
-              <Sparkles className="h-4 w-4 text-amber-500" />
-              Sajedar Creative Studio
+            <div className="mb-8 flex flex-col items-center gap-6">
+              <div className="relative h-20 w-20 overflow-hidden rounded-2xl shadow-xl ring-1 ring-stone-200">
+                <Image 
+                  src="/sajedar-creatives.jpg" 
+                  alt="Sajedar Creatives Logo" 
+                  fill 
+                  className="object-cover"
+                />
+              </div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
+                <Sparkles className="h-4 w-4 text-amber-500" />
+                Sajedar Creative Studio
+              </div>
             </div>
             <h1 className="mx-auto max-w-4xl text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-8xl">
               High-converting <span className="text-emerald-600">content</span> for your business.
