@@ -156,17 +156,20 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         {/* Header row */}
         <div className="flex items-start justify-between mb-6">
           <div
-            className="flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 overflow-hidden"
-            style={{ background: service.accentDim, border: `1px solid ${service.accent}22` }}
+            className="flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 overflow-hidden shadow-sm"
+            style={{ 
+              background: service.logo ? '#fff' : service.accentDim, 
+              border: service.logo ? 'none' : `1px solid ${service.accent}22` 
+            }}
           >
             {service.logo ? (
-              <div className="relative h-7 w-7">
+              <div className="relative h-full w-full">
                 <Image
                   src={service.logo}
                   alt={service.title}
                   fill
-                  sizes="28px"
-                  className="object-contain"
+                  sizes="48px"
+                  className="object-cover"
                 />
               </div>
             ) : (

@@ -245,27 +245,27 @@ export default function Home() {
                       {String(index + 1).padStart(2, '0')}
                     </span>
 
-                    {/* Icon bubble with soft gradient bg */}
+                    {/* Profile-picture style container */}
                     <div
-                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-[22px] bg-gradient-to-br ${service.iconBg} shadow-sm transition-transform duration-300 group-hover:scale-105`}
+                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden shadow-sm transition-transform duration-300 group-hover:scale-105 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
                     >
-                      {/* Soft blob glow inside */}
-                      <div
-                        className="absolute inset-0 rounded-[22px] opacity-40"
-                        style={{ background: `radial-gradient(circle at 65% 35%, ${service.iconColor}30, transparent 70%)` }}
-                      />
                       {service.logo ? (
-                        <div className="relative h-11 w-11 flex-shrink-0 overflow-hidden rounded-lg">
-                          <Image
-                            src={service.logo}
-                            alt={service.title}
-                            fill
-                            sizes="44px"
-                            className="object-contain"
-                          />
-                        </div>
+                        <Image
+                          src={service.logo}
+                          alt={service.title}
+                          fill
+                          sizes="88px"
+                          className="object-cover"
+                        />
                       ) : (
-                        <Icon className="relative h-9 w-9" style={{ color: service.iconColor }} aria-hidden="true" />
+                        <>
+                          {/* Soft blob glow inside for icon versions */}
+                          <div
+                            className="absolute inset-0 rounded-full opacity-40"
+                            style={{ background: `radial-gradient(circle at 65% 35%, ${service.iconColor}30, transparent 70%)` }}
+                          />
+                          <Icon className="relative h-9 w-9" style={{ color: service.iconColor }} aria-hidden="true" />
+                        </>
                       )}
                     </div>
 
