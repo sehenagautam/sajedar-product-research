@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ArrowRight,
   Bot,
@@ -24,6 +25,7 @@ const services = [
   {
     title: 'AI Sales Agent',
     href: '/sales-agent',
+    logo: '/header-logo-transparent.jpg',
     price: 'Starts at Rs 4,000',
     symptom: 'Chats come in, but replies are slow or inconsistent.',
     input: 'FAQs, products, policies, tone',
@@ -50,6 +52,7 @@ const services = [
   {
     title: 'Sajedar Creatives',
     href: '/creatives',
+    logo: '/sajedar-creatives.jpg',
     price: 'Graphics: Rs 200 | Videos: Rs 2,000',
     symptom: 'Your offer is strong, but your visual content looks weak or inconsistent.',
     input: 'Photos, offer, brand feel, goal',
@@ -76,6 +79,7 @@ const services = [
   {
     title: 'Jasus AI Competitor Insights',
     href: '/jasus-ai',
+    logo: '/jasus-ai-icon.jpg',
     price: 'Rs 2,500 for 3 competitors',
     symptom: 'Competitors are moving fast and you are guessing.',
     input: 'Three competitor names or pages',
@@ -152,10 +156,22 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         {/* Header row */}
         <div className="flex items-start justify-between mb-6">
           <div
-            className="flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110"
+            className="flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 overflow-hidden"
             style={{ background: service.accentDim, border: `1px solid ${service.accent}22` }}
           >
-            <Icon className="h-5 w-5" style={{ color: service.accent }} />
+            {service.logo ? (
+              <div className="relative h-7 w-7">
+                <Image
+                  src={service.logo}
+                  alt={service.title}
+                  fill
+                  sizes="28px"
+                  className="object-contain"
+                />
+              </div>
+            ) : (
+              <Icon className="h-5 w-5" style={{ color: service.accent }} />
+            )}
           </div>
           <span className="text-[11px] font-bold tracking-[0.2em] text-white/20">{service.tag}</span>
         </div>
