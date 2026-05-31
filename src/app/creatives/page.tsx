@@ -1,3 +1,4 @@
+import React, { useState, useRef } from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,7 +21,8 @@ import {
   Tags,
   Globe,
   Smartphone,
-  CheckCircle2
+  CheckCircle2,
+  Volume2
 } from 'lucide-react';
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
@@ -111,6 +113,54 @@ const graphicsShowcase = [
   },
 ];
 
+const CreativesAdVideo = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
+  return (
+    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white shadow-2xl group">
+      <video
+        ref={videoRef}
+        className="h-full w-full object-cover"
+        src="/ai_vids/sajedar-creatives-ad.mp4"
+        loop
+        playsInline
+        preload="metadata"
+        poster="/ai_vids/sajedar-creatives-thumb.jpg"
+      />
+      
+      {!isPlaying && (
+        <div 
+          className="absolute inset-0 z-20 flex items-center justify-center bg-stone-900/10 cursor-pointer transition-colors hover:bg-stone-900/5"
+          onClick={handlePlay}
+        >
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-600/90 text-white shadow-2xl shadow-emerald-600/40 transition-transform group-hover:scale-110">
+            <Play className="ml-1 h-8 w-8 fill-current" />
+          </div>
+        </div>
+      )}
+
+      {isPlaying && (
+        <div className="absolute top-4 right-4 z-20 pointer-events-none">
+          <div className="flex items-center gap-2 rounded-full bg-white/40 px-3 py-1.5 backdrop-blur-md border border-stone-200/20 animate-pulse">
+            <Volume2 className="h-3 w-3 text-stone-900" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-stone-900">Audio On</span>
+          </div>
+        </div>
+      )}
+
+      <div className="absolute inset-0 bg-gradient-to-t from-stone-900/20 to-transparent pointer-events-none" />
+    </div>
+  );
+};
+
 export default function CreativesPage() {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#fafaf9] font-sans text-stone-900">
@@ -132,45 +182,56 @@ export default function CreativesPage() {
             </svg>
           </div>
 
-          <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 text-center">
-            <div className="mb-8 flex flex-col items-center gap-6">
-              <div className="relative h-20 w-20 overflow-hidden rounded-2xl shadow-xl ring-1 ring-stone-200">
-                <Image 
-                  src="/sajedar-creatives.jpg" 
-                  alt="Sajedar Creatives Logo" 
-                  fill 
-                  className="object-cover"
-                />
+          <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div className="max-w-2xl text-center lg:text-left">
+                <div className="mb-8 flex flex-col items-center lg:items-start gap-6">
+                  <div className="relative h-20 w-20 overflow-hidden rounded-2xl shadow-xl ring-1 ring-stone-200">
+                    <Image 
+                      src="/sajedar-creatives.jpg" 
+                      alt="Sajedar Creatives Logo" 
+                      fill 
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
+                    <Sparkles className="h-4 w-4 text-amber-500" />
+                    Sajedar Creative Studio
+                  </div>
+                </div>
+                <h1 className="mx-auto max-w-4xl text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-7xl">
+                  High-converting <span className="text-emerald-600">content</span> for your business.
+                </h1>
+                <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
+                  From cinematic AI videos that tell your story to branded graphics that stop the scroll. 
+                  Built for engagement, optimized for sales in the Nepali market.
+                </p>
+                <div className="mt-12 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-4 sm:flex-row">
+                  <a
+                    href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageSquareText className="h-5 w-5" />
+                    Order on WhatsApp
+                  </a>
+                  <Link
+                    href="#ai-videos"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                  >
+                    View Services
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </div>
               </div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
-                <Sparkles className="h-4 w-4 text-amber-500" />
-                Sajedar Creative Studio
+
+              <div className="relative">
+                <CreativesAdVideo />
+                
+                {/* Ambient glow */}
+                <div className="absolute -inset-20 bg-emerald-500/5 blur-[100px] -z-10 rounded-full" />
               </div>
-            </div>
-            <h1 className="mx-auto max-w-4xl text-5xl font-black leading-[1.05] tracking-tight text-stone-950 md:text-8xl">
-              High-converting <span className="text-emerald-600">content</span> for your business.
-            </h1>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
-              From cinematic AI videos that tell your story to branded graphics that stop the scroll. 
-              Built for engagement, optimized for sales in the Nepali market.
-            </p>
-            <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MessageSquareText className="h-5 w-5" />
-                Order on WhatsApp
-              </a>
-              <Link
-                href="#ai-videos"
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
-              >
-                View Services
-                <ArrowRight className="h-5 w-5" />
-              </Link>
             </div>
           </div>
         </section>
