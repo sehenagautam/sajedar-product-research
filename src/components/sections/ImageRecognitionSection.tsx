@@ -1,57 +1,104 @@
 'use client';
 
-import { FileImage, Sparkles, MessageCircle } from 'lucide-react';
+import React from 'react';
+import { FileImage, Mic, Sparkles, MessageCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+// Voice Wave Component
+const VoiceWave: React.FC<{ height?: number }> = ({ height }) => {
+  const bars = Array.from({ length: 20 }, (_, i) => ({
+    id: i,
+    height: Math.random() * 100,
+    delay: Math.random() * 1000,
+  }));
+
+  return (
+    <div className="flex items-center justify-center gap-0.5 sm:gap-1 w-full max-w-full" style={{ height: height || 32 }}>
+      {bars.map((bar) => (
+        <motion.div
+          key={bar.id}
+          className="bg-emerald-500 rounded-full flex-shrink"
+          style={{
+            width: '2px',
+            height: `${Math.max(6, bar.height / 2)}px`,
+            flex: '1 1 auto',
+            minWidth: '1.5px',
+            maxWidth: '3px',
+          }}
+          animate={{
+            scaleY: [0.3, 1, 0.3],
+            opacity: [0.7, 1, 0.7],
+          }}
+          transition={{
+            duration: 0.8 + Math.random() * 0.4,
+            repeat: Infinity,
+            delay: bar.delay / 1000,
+            ease: "easeInOut"
+          }}
+        />
+      ))}
+    </div>
+  );
+};
 
 const ImageRecognitionSection = () => {
   return (
     <section className="w-full py-24 px-4 bg-[#fafaf9]">
-      <div className="max-w-6xl mx-auto">
-        {/* Apple-style Frame container */}
-        <div className="bg-white/40 backdrop-blur-xl rounded-3xl border border-white/40 p-4 sm:p-6 md:p-12 shadow-lg">
-          <div className="space-y-6 sm:space-y-8 text-center">
-            {/* Main Title */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-[#292524] px-2">
-              <span className="text-[#292524]">See.</span> <span className="text-emerald-500">Understand.</span> <span className="text-[#292524]">Respond.</span>
-            </h2>
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#1c1917] mb-6">
+            We support <span className="text-emerald-500">Images & Voice</span>
+          </h2>
+          <p className="text-[#57534e] text-lg max-w-2xl mx-auto">
+            Your agent doesn't just read text. It sees product photos and listens to voice messages 
+            to provide instant, accurate responses.
+          </p>
+        </div>
 
-            {/* Visual Flow Diagram */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-[#57534e] py-4 sm:py-8">
-              {/* Input Icon */}
-              <div className="flex flex-col items-center gap-2 min-w-0 flex-1 sm:flex-initial">
-                <div className="p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/20">
-                  <FileImage className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Image Recognition Card */}
+          <div className="bg-white rounded-[2.5rem] border border-stone-200 p-8 shadow-sm flex flex-col items-center text-center">
+             <div className="w-20 h-20 rounded-3xl bg-blue-50 flex items-center justify-center mb-8 ring-1 ring-blue-100">
+                <FileImage className="w-10 h-10 text-blue-600" />
+             </div>
+             <h3 className="text-xl font-bold text-[#1c1917] mb-4">Visual Intelligence</h3>
+             <p className="text-sm text-[#57534e] leading-relaxed mb-6">
+               Customers send screenshots or product photos. The agent identifies the item, 
+               checks stock, and answers questions immediately.
+             </p>
+             <div className="mt-auto w-full bg-stone-50 rounded-2xl p-4 border border-stone-100">
+                <p className="text-[10px] font-black uppercase tracking-widest text-[#a8a29e] mb-2">Capabilities</p>
+                <div className="flex flex-wrap justify-center gap-2">
+                   {['Product ID', 'Size Check', 'Color Match'].map(t => (
+                     <span key={t} className="px-2 py-1 bg-white border border-stone-200 rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
+                   ))}
                 </div>
-                <span className="text-xs sm:text-sm text-[#44403c]">Image</span>
-              </div>
+             </div>
+          </div>
 
-              {/* Arrow - Changes direction on mobile */}
-              <div className="text-xl sm:text-2xl text-[#a8a29e] rotate-90 sm:rotate-0">→</div>
+          {/* Voice Recognition Card */}
+          <div className="bg-white rounded-[2.5rem] border border-stone-200 p-8 shadow-sm flex flex-col items-center text-center">
+             <div className="w-20 h-20 rounded-3xl bg-emerald-50 flex items-center justify-center mb-8 ring-1 ring-emerald-100">
+                <Mic className="w-10 h-10 text-emerald-600" />
+             </div>
+             <h3 className="text-xl font-bold text-[#1c1917] mb-4">Voice Understanding</h3>
+             <p className="text-sm text-[#57534e] leading-relaxed mb-6">
+               Nepali and English voice messages are transcribed and understood in real-time, 
+               making it easier for customers to shop on the move.
+             </p>
+             
+             <div className="w-full max-w-[200px] mb-6">
+                <VoiceWave />
+             </div>
 
-              {/* Processing Icon */}
-              <div className="flex flex-col items-center gap-2 min-w-0 flex-1 sm:flex-initial max-w-full">
-                <div className="p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/20">
-                  <Sparkles className="w-5 h-5 sm:w-7 sm:h-7 text-yellow-600" />
+             <div className="mt-auto w-full bg-stone-50 rounded-2xl p-4 border border-stone-100">
+                <p className="text-[10px] font-black uppercase tracking-widest text-[#a8a29e] mb-2">Capabilities</p>
+                <div className="flex flex-wrap justify-center gap-2">
+                   {['Transcription', 'Intent Read', 'Multi-lingual'].map(t => (
+                     <span key={t} className="px-2 py-1 bg-white border border-stone-200 rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
+                   ))}
                 </div>
-                <div className="text-xs sm:text-sm font-medium text-[#44403c]">AI Insight</div>
-                <div className="text-[10px] sm:text-xs text-[#57534e] mt-1 px-2 break-words max-w-[200px] sm:max-w-none">"Detected: Ashwi Sofa, Inventory Available"</div>
-              </div>
-
-              {/* Arrow - Changes direction on mobile */}
-              <div className="text-xl sm:text-2xl text-[#a8a29e] rotate-90 sm:rotate-0">→</div>
-
-              {/* Output */}
-              <div className="flex flex-col items-center gap-2 min-w-0 flex-1 sm:flex-initial max-w-full">
-                <div className="p-3 sm:p-4 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-emerald-600/10 border border-emerald-500/20">
-                  <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
-                </div>
-                <div className="text-center max-w-full">
-                  <div className="text-xs sm:text-sm font-medium text-[#44403c]">Response</div>
-                  <div className="text-[10px] sm:text-xs text-[#57534e] mt-1 px-2 break-words max-w-[200px] sm:max-w-none">"You have a great taste in furniture! Would you like to see more of such?"</div>
-                </div>
-              </div>
-            </div>
-
-
+             </div>
           </div>
         </div>
       </div>

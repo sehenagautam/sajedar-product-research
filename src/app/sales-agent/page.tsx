@@ -308,10 +308,6 @@ export default function SalesAgentPage() {
 
       <ImageRecognitionSection />
 
-      <VoiceCinematicSection />
-
-      <IntegrationSection />
-
       <FeaturesSection />
 
       <AILearningShowcase />

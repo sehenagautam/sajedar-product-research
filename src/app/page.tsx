@@ -238,7 +238,11 @@ export default function Home() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className="group relative flex flex-col items-center overflow-hidden rounded-2xl border border-black/[0.06] bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08]"
+                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl border bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08] ${
+                      service.href === '/sales-agent' 
+                        ? 'border-emerald-500 ring-2 ring-emerald-500/10 scale-105 z-10' 
+                        : 'border-black/[0.06]'
+                    }`}
                   >
                     {/* Number top-right */}
                     <span className="absolute right-3 top-3 text-[11px] font-semibold text-[#c4c4c8]">
