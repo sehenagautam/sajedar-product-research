@@ -34,8 +34,8 @@ function daysUntil(dateStr: string): number {
 }
 
 function PricingSection() {
-  const plusDays = daysUntil('2026-06-01');
-  const proDays = daysUntil('2026-08-01');
+  const plusDays = daysUntil('2026-07-01');
+  const proDays = daysUntil('2026-09-01');
 
   return (
     <section className="w-full bg-[#fafaf9] px-6 py-20">
@@ -127,7 +127,7 @@ function PricingSection() {
                 <h4 className="text-lg font-bold text-[#1c1917]">Plus</h4>
                 <span className="text-xs text-[#78716c] font-medium">Up to 10 Products</span>
                 <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded text-xs font-semibold border border-stone-200">
-                  June 2026 · {plusDays} days
+                  July 2026 · {plusDays} days
                 </span>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
@@ -148,7 +148,7 @@ function PricingSection() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 4 <span className="text-[#a8a29e]">subject to future adjustment</span></p>
+                    <p className="text-sm text-[#44403c]">Rs 2.5 <span className="text-[#a8a29e]">fixed price for any number of replies</span></p>
                   </div>
                 </div>
               </div>
@@ -160,7 +160,7 @@ function PricingSection() {
                 <h4 className="text-lg font-bold text-[#1c1917]">Pro</h4>
                 <span className="text-xs text-[#78716c] font-medium">Unlimited Products</span>
                 <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded text-xs font-semibold border border-stone-200">
-                  August 2026 · {proDays} days
+                  September 2026 · {proDays} days
                 </span>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
@@ -181,7 +181,7 @@ function PricingSection() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 5 <span className="text-[#a8a29e]">subject to future adjustment</span></p>
+                    <p className="text-sm text-[#44403c]">Rs 3 <span className="text-[#a8a29e]">fixed price for any number of replies</span></p>
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Includes</p>
