@@ -67,10 +67,6 @@ function PricingSection() {
               <span className="text-emerald-600 mt-0.5 text-xs">●</span>
               <span>Lead Nurturing: Automated follow-ups for "Price please" and "PP" comments</span>
             </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-[#a8a29e] mt-0.5 text-xs">●</span>
-              <span className="text-[#78716c]">Per-conversation pricing is subject to revision as infrastructure costs evolve</span>
-            </li>
           </ul>
         </div>
 
@@ -271,7 +267,6 @@ function PricingSection() {
                 'Native rendering on Meta platforms',
                 'Image & voice message understanding',
                 'Multi-language support (Nepali/English)',
-                'Omnichannel data syncing'
               ].map((capability) => (
                 <li key={capability} className="flex items-start gap-2.5">
                   <span className="text-emerald-600 mt-0.5">✓</span>
@@ -311,8 +306,6 @@ export default function SalesAgentPage() {
 
       <PricingSection />
 
-      <AIAsASalesman />
-
       <ImageRecognitionSection />
 
       <VoiceCinematicSection />
@@ -334,6 +327,8 @@ export default function SalesAgentPage() {
       <FounderMessageSection />
 
       <FAQSection />
+
+      <AIAsASalesman />
 
       <ContactSection />
 

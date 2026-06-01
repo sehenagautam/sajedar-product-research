@@ -41,7 +41,7 @@ ${formData.message}`;
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.35fr_0.9fr] gap-8 items-start">
+        <div className="max-w-3xl mx-auto">
           <form
             className="w-full bg-white rounded-3xl shadow-xl border border-stone-200 p-8 flex flex-col gap-6"
             onSubmit={handleFormSubmit}
@@ -73,28 +73,6 @@ ${formData.message}`;
               Message founder on Whatsapp
             </button>
           </form>
-
-          <div className="w-full bg-gradient-to-br from-emerald-50 to-white rounded-3xl shadow-xl border border-emerald-200 p-8 flex flex-col gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#292524] flex items-center justify-center shrink-0">
-                <Phone className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl md:text-3xl font-semibold text-[#292524]">Contact Info</h3>
-                <p className="text-[#78716c] text-lg mt-1">Direct regional numbers.</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl border border-stone-200 p-6">
-              <p className="text-sm font-semibold tracking-[0.24em] text-[#78716c] uppercase mb-3">Nepal</p>
-              <a
-                href="tel:+9779860479751"
-                className="text-2xl md:text-3xl font-semibold text-[#292524] hover:text-emerald-600 transition-colors break-words leading-tight"
-              >
-                +977 986 0479751
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="flex items-center justify-center gap-6 mt-12">
