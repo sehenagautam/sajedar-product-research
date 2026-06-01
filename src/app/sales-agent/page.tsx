@@ -35,7 +35,7 @@ function daysUntil(dateStr: string): number {
 
 function PricingSection() {
   const plusDays = daysUntil('2026-07-01');
-  const proDays = daysUntil('2026-09-01');
+  const whatsappLink = (msg: string) => `https://wa.me/9779860479751?text=${encodeURIComponent(msg)}`;
 
   return (
     <section className="w-full bg-[#fafaf9] px-6 py-20">
@@ -83,112 +83,124 @@ function PricingSection() {
           </h3>
           <p className="text-sm text-[#78716c] mb-8">Fixed pricing with free trial conversations. Setup fee is charged only after the trial.</p>
 
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Basic Plan */}
-            <div className="bg-white rounded-lg border border-stone-200 p-6">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <h4 className="text-lg font-bold text-[#1c1917]">Basic</h4>
-                <span className="text-xs text-[#78716c] font-medium">Single Product</span>
-                <span className="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs font-semibold border border-emerald-200">
+            <div className="bg-stone-900 rounded-2xl border border-stone-800 p-6 shadow-xl flex flex-col text-white transform md:scale-105 relative z-10">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg">
+                Recommended
+              </div>
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-bold">Basic</h4>
+                  <p className="text-xs text-stone-400 font-medium mt-1">Single Product</p>
+                </div>
+                <span className="px-2.5 py-0.5 bg-white/10 text-stone-300 rounded-full text-[10px] font-bold border border-white/10 uppercase tracking-wider">
                   Available
                 </span>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Products</p>
-                    <p className="text-sm text-[#44403c]">1 product &ndash; up to 5 variants (styles)</p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Trial</p>
-                    <p className="text-sm text-[#44403c]">50 conversations, free of charge</p>
-                  </div>
+              
+              <div className="mb-6">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-3xl font-black text-white">Rs 1.8</span>
+                  <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">/ Person</span>
                 </div>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Setup Fee</p>
-                    <p className="text-sm text-[#44403c]">Rs 4,000 <span className="text-[#a8a29e]">charged after trial only</span></p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 1.8 <span className="text-[#a8a29e]">fixed price for any number of replies to the same person</span></p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Product Change Cost</p>
-                    <p className="text-sm text-[#44403c]">Rs 500 <span className="text-[#a8a29e]">per product change</span></p>
-                  </div>
+                <p className="text-[10px] font-bold text-stone-500 mt-1 uppercase tracking-tight">Unlimited replies to the same person</p>
+              </div>
+
+              <div className="space-y-4 flex-1">
+                <div className="pt-4 border-t border-white/10">
+                  <p className="text-[10px] uppercase tracking-widest text-stone-500 font-black mb-2">Scope</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2 text-xs text-stone-300">
+                      <span className="text-emerald-400 font-bold">✓</span>
+                      <span>1 product &ndash; 5 variants</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-xs text-stone-300">
+                      <span className="text-emerald-400 font-bold">✓</span>
+                      <span>50 trial conversations</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t border-white/10">
+                  <p className="text-[10px] uppercase tracking-widest text-stone-500 font-black mb-2">Fees</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2 text-xs text-stone-300">
+                      <span className="text-stone-500 font-bold">●</span>
+                      <span>Rs 4,000 setup (after trial)</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-xs text-stone-300">
+                      <span className="text-stone-500 font-bold">●</span>
+                      <span>Rs 500 per product change</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
+
+              <a 
+                href={whatsappLink("Hi Sajedar! I am interested in the Basic Sales Agent plan.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-white text-stone-900 rounded-xl font-bold text-sm transition-colors hover:bg-stone-100"
+              >
+                Talk on WhatsApp
+              </a>
             </div>
 
             {/* Plus Plan */}
-            <div className="bg-white rounded-lg border border-stone-200 p-6">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <h4 className="text-lg font-bold text-[#1c1917]">Plus</h4>
-                <span className="text-xs text-[#78716c] font-medium">Up to 10 Products</span>
-                <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded text-xs font-semibold border border-stone-200">
-                  July 2026 · {plusDays} days
+            <div className="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm flex flex-col">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-bold text-[#1c1917]">Plus</h4>
+                  <p className="text-xs text-[#78716c] font-medium mt-1">Up to 10 Products</p>
+                </div>
+                <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded-full text-[10px] font-bold border border-stone-200 uppercase tracking-wider">
+                  July 2026
                 </span>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Products</p>
-                    <p className="text-sm text-[#44403c]">10 products &ndash; 5 variants each</p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Trial</p>
-                    <p className="text-sm text-[#44403c]">50 conversations, free of charge</p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Setup Fee</p>
-                    <p className="text-sm text-[#44403c]">Rs 8,000 <span className="text-[#a8a29e]">charged after trial only</span></p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 2.5 <span className="text-[#a8a29e]">fixed price for any number of replies</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            {/* Pro Plan */}
-            <div className="bg-white rounded-lg border border-stone-200 p-6">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <h4 className="text-lg font-bold text-[#1c1917]">Pro</h4>
-                <span className="text-xs text-[#78716c] font-medium">Unlimited Products</span>
-                <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded text-xs font-semibold border border-stone-200">
-                  September 2026 · {proDays} days
-                </span>
-              </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Products</p>
-                    <p className="text-sm text-[#44403c]">Website database connection &ndash; thousands of products</p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Trial</p>
-                    <p className="text-sm text-[#44403c]">100 conversations, free of charge</p>
-                  </div>
+              <div className="mb-6">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-3xl font-black text-[#1c1917]">Rs 2.5</span>
+                  <span className="text-xs font-bold text-[#a8a29e] uppercase tracking-widest">/ Person</span>
                 </div>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Setup Fee</p>
-                    <p className="text-sm text-[#44403c]">Rs 50,000 <span className="text-[#a8a29e]">charged after trial only</span></p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 3 <span className="text-[#a8a29e]">fixed price for any number of replies</span></p>
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Includes</p>
-                    <p className="text-sm text-[#44403c]">Dedicated custom dashboard</p>
-                  </div>
+                <p className="text-[10px] font-bold text-[#a8a29e] mt-1 uppercase tracking-tight">Unlimited replies to the same person</p>
+              </div>
+
+              <div className="space-y-4 flex-1">
+                <div className="pt-4 border-t border-stone-100">
+                  <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Scope</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>10 products &ndash; 5 variants each</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-500 font-bold">✓</span>
+                      <span>50 trial conversations</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t border-stone-100">
+                  <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Fees</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-stone-400 font-bold">●</span>
+                      <span>Rs 8,000 setup (after trial)</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
+
+              <a 
+                href={whatsappLink("Hi Sajedar! I am interested in the Plus Sales Agent plan.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-stone-900 text-white rounded-xl font-bold text-sm transition-colors hover:bg-stone-800"
+              >
+                Talk on WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -230,47 +242,14 @@ function PricingSection() {
                 <span>Best suited for trustworthy, long-term partnerships</span>
               </li>
             </ul>
-          </div>
-        </div>
-
-        <hr className="border-stone-200 mb-14" />
-
-        {/* Enterprise */}
-        <div className="mb-14">
-          <div className="flex items-center gap-3 mb-1">
-            <h3 className="text-xl font-bold text-[#1c1917]" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
-              Enterprise
-            </h3>
-            <span className="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-xs font-semibold border border-emerald-200">
-              Available
-            </span>
-          </div>
-          <p className="text-sm text-[#78716c] mb-6">For organisations requiring bespoke solutions at scale.</p>
-
-          <div className="bg-white rounded-lg border border-stone-200 p-6">
-            <div className="flex items-baseline gap-2 mb-5">
-              <span className="text-sm text-[#78716c]">Starting at</span>
-              <span className="text-2xl font-bold text-[#1c1917]">Rs 10,00,000</span>
-              <span className="text-sm text-[#78716c]">setup</span>
-            </div>
-            <ul className="space-y-2.5 text-sm text-[#44403c]">
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Contract-based engagement with defined SLAs</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Dedicated dashboards and reporting</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Advanced AI analytics and performance insights</span>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="text-emerald-600 mt-0.5">✓</span>
-                <span>Open to custom integrations and additional capabilities</span>
-              </li>
-            </ul>
+            <a 
+              href={whatsappLink("Hi Sajedar! I am interested in the Commission-Based Partnership for the Sales Agent.")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center justify-center gap-2 px-8 py-3 bg-emerald-500 text-white rounded-xl font-bold text-sm transition-colors hover:bg-emerald-600"
+            >
+              Talk on WhatsApp
+            </a>
           </div>
         </div>
 
@@ -330,6 +309,8 @@ export default function SalesAgentPage() {
 
       <HeroSection />
 
+      <PricingSection />
+
       <AIAsASalesman />
 
       <ImageRecognitionSection />
@@ -349,8 +330,6 @@ export default function SalesAgentPage() {
       </section>
 
       <KeyFeaturesSection />
-
-      <PricingSection />
 
       <FounderMessageSection />
 
