@@ -81,12 +81,20 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={requestDemoHref}
+                href="https://web.facebook.com/profile.php?id=61579437972679"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-lg transition-colors duration-200 text-center"
               >
-                Request Demo
+                Live Demo
+              </a>
+              <a
+                href={requestDemoHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 border-2 border-emerald-500 text-emerald-600 hover:bg-emerald-50 font-bold rounded-lg transition-colors duration-200 text-center"
+              >
+                Message Founder
               </a>
             </div>
 
