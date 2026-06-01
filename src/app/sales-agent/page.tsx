@@ -12,7 +12,6 @@ import {
   ImageRecognitionSection,
   VoiceCinematicSection,
   FeaturesSection,
-  AILearningShowcase,
   IntelligentProfilingSection,
   AIAsASalesman,
   IntegrationSection,
@@ -307,8 +306,6 @@ export default function SalesAgentPage() {
       <ImageRecognitionSection />
 
       <FeaturesSection />
-
-      <AILearningShowcase />
 
       <IntelligentProfilingSection />
 
