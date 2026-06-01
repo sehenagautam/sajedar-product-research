@@ -32,15 +32,6 @@ const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I am interested in creative services (AI videos/Graphics) for my business. Please share details.'
 );
 
-const videoTypes = [
-  { label: 'Product Launch', icon: '🎬' },
-  { label: 'Brand Film', icon: '🎞' },
-  { label: 'Reels & Stories', icon: '📱' },
-  { label: 'Ad Creatives', icon: '📢' },
-  { label: 'Restaurant Promos', icon: '🍽' },
-  { label: 'Fashion Drops', icon: '👗' },
-];
-
 const sampleVideos = [
   {
     title: 'Le Bleu Fragrance Spot',
@@ -65,33 +56,6 @@ const sampleVideos = [
     category: 'Store campaign',
     duration: '43 sec',
     src: '/motionmandu/samples/botique-ai-sample.mp4',
-  },
-];
-
-const graphicsFeatures = [
-  {
-    title: 'Social Proof Ads',
-    copy: 'Integrate reviews, ratings, and trust badges directly into your offer graphics for immediate credibility.',
-    icon: Tags,
-    iconClass: 'bg-emerald-50 text-emerald-700 ring-emerald-100',
-  },
-  {
-    title: 'CTR Creatives',
-    copy: 'Graphics optimized strictly to drive clicks to your landing page with clear, bold hierarchies.',
-    icon: ShoppingBag,
-    iconClass: 'bg-blue-50 text-blue-600 ring-blue-100',
-  },
-  {
-    title: 'Scroll Stoppers',
-    copy: 'Visually striking designs specifically engineered to make users halt their feed scrolling.',
-    icon: Palette,
-    iconClass: 'bg-amber-50 text-amber-700 ring-amber-100',
-  },
-  {
-    title: 'Beat Creative Fatigue',
-    copy: 'Maintain a fresh visual identity and keep your audience engaged with regular creative updates.',
-    icon: LayoutTemplate,
-    iconClass: 'bg-rose-50 text-rose-600 ring-rose-100',
   },
 ];
 
@@ -267,15 +231,6 @@ export default function CreativesClient() {
                 </article>
               ))}
             </div>
-
-            <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              {videoTypes.map(({ label, icon }) => (
-                <div key={label} className="flex flex-col items-center gap-3 rounded-2xl border border-white/5 bg-white/[0.03] p-6 text-center transition hover:border-amber-400/20">
-                  <span className="text-3xl">{icon}</span>
-                  <p className="text-xs font-bold text-white/50">{label}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -296,19 +251,7 @@ export default function CreativesClient() {
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {graphicsFeatures.map((feature, idx) => (
-                <div key={feature.title} className="group rounded-[2rem] border border-stone-200 bg-white p-8 transition hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5">
-                  <div className={`mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl ring-1 ${feature.iconClass}`}>
-                    <feature.icon className="h-6 w-6" />
-                  </div>
-                  <h4 className="text-lg font-black text-stone-950">{feature.title}</h4>
-                  <p className="mt-3 text-sm leading-relaxed text-stone-500">{feature.copy}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {graphicsShowcase.map((item) => (
                 <div key={item.title} className="group relative aspect-square overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white shadow-sm transition hover:shadow-2xl">
                   <Image src={item.image} alt={item.title} fill className="object-cover transition duration-700 group-hover:scale-105" />
