@@ -104,7 +104,7 @@ function PricingSection() {
                   <span className="text-3xl font-black text-white">Rs 1.8</span>
                   <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">/ Person</span>
                 </div>
-                <p className="text-[10px] font-bold text-stone-500 mt-1 uppercase tracking-tight">Unlimited replies to the same person</p>
+                <p className="text-[10px] font-bold text-stone-500 mt-1 uppercase tracking-tight">for any number of replies</p>
               </div>
 
               <div className="space-y-4 flex-1">
@@ -164,7 +164,7 @@ function PricingSection() {
                   <span className="text-3xl font-black text-[#1c1917]">Rs 2.5</span>
                   <span className="text-xs font-bold text-[#a8a29e] uppercase tracking-widest">/ Person</span>
                 </div>
-                <p className="text-[10px] font-bold text-[#a8a29e] mt-1 uppercase tracking-tight">Unlimited replies to the same person</p>
+                <p className="text-[10px] font-bold text-[#a8a29e] mt-1 uppercase tracking-tight">for any number of replies</p>
               </div>
 
               <div className="space-y-4 flex-1">
