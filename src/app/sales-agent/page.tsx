@@ -15,7 +15,6 @@ import {
   AILearningShowcase,
   IntelligentProfilingSection,
   AIAsASalesman,
-  KeyFeaturesSection,
   IntegrationSection,
   FounderMessageSection,
   FAQSection,
@@ -317,8 +316,6 @@ export default function SalesAgentPage() {
       <section className="w-full py-20 px-4">
         <AgenticFlowDiagram />
       </section>
-
-      <KeyFeaturesSection />
 
       <FounderMessageSection />
 

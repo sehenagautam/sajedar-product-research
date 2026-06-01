@@ -59,7 +59,7 @@ export function HeroSection() {
                 style={{ fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif' }}
               >
                 <span className="text-white" style={{ WebkitTextStroke: '2px #57534e' }}>
-                  Facebook Page
+                  Custom Facebook Page
                 </span>
                 <br />
                 <span className="text-emerald-500">AI Sales Agent</span>
