@@ -111,7 +111,7 @@ function PricingSection() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Per Person</p>
-                    <p className="text-sm text-[#44403c]">Rs 2 <span className="text-[#a8a29e]">subject to future adjustment</span></p>
+                    <p className="text-sm text-[#44403c]">Rs 1.8 <span className="text-[#a8a29e]">fixed price for any number of replies to the same person</span></p>
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wide text-[#a8a29e] font-semibold mb-1">Product Change Cost</p>
