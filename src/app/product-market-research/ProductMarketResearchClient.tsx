@@ -25,6 +25,8 @@ import {
 import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
 
+type DemandGraphVariant = 'plc' | 'fad' | 'fashion' | 'seasonal' | 'sCurve' | 'brandShare';
+
 const whatsappMessage = encodeURIComponent(
   'Hi Sajedar! I am interested in product market research for my business. Please help me choose the right research package.'
 );
@@ -106,6 +108,123 @@ const steps = [
     desc: 'Receive a practical report to launch, adjust, or skip the idea.',
   },
 ];
+
+const lifecycleRows = [
+  ['Development', 'No market demand yet', 'New gadget before launch'],
+  ['Introduction', 'Slow demand growth', 'First smartwatches'],
+  ['Growth', 'Rapid increase in demand', 'Air fryers in early years'],
+  ['Maturity', 'Demand stabilizes', 'Smartphones today'],
+  ['Decline', 'Demand falls', 'DVD players'],
+];
+
+const cycleCards: Array<{
+  title: string;
+  eyebrow: string;
+  copy: string;
+  graph: DemandGraphVariant;
+  examples: string[];
+}> = [
+  {
+    title: 'Product Life Cycle',
+    eyebrow: 'Development to decline',
+    copy: 'Most retail products move from launch uncertainty into growth, maturity, and eventual decline. The goal is to avoid buying late when demand has already flattened.',
+    graph: 'plc',
+    examples: ['New gadgets before launch', 'Air fryers in early growth', 'DVD players in decline'],
+  },
+  {
+    title: 'Fad Products',
+    eyebrow: 'Fast spike, fast collapse',
+    copy: 'Fads explode quickly and collapse quickly, which makes stock planning and ad timing difficult. They can win, but only with tight testing and fast exits.',
+    graph: 'fad',
+    examples: ['Fidget spinners', 'Pop-it toys', 'Viral TikTok products'],
+  },
+  {
+    title: 'Fashion Products',
+    eyebrow: 'Slower but longer lived',
+    copy: 'Fashion-led products usually grow slower, remain relevant for longer, and decline more gradually than fads.',
+    graph: 'fashion',
+    examples: ['Oversized hoodies', 'Certain sneaker styles', 'Recurring accessory trends'],
+  },
+  {
+    title: 'Seasonal Demand',
+    eyebrow: 'Predictable yearly peaks',
+    copy: 'Some demand comes back every year. Research should separate true growth from predictable seasonal timing.',
+    graph: 'seasonal',
+    examples: ['Sunscreen in summer', 'Jackets in winter', 'Dashain and Tihar gifts in Nepal'],
+  },
+  {
+    title: 'Market Penetration Curve',
+    eyebrow: 'The adoption S-curve',
+    copy: 'Successful categories often move from innovators to early adopters, early majority, late majority, and laggards as the market saturates.',
+    graph: 'sCurve',
+    examples: ['Smartphones', 'Online shopping', 'Electric vehicles'],
+  },
+  {
+    title: 'Competitive Evolution',
+    eyebrow: 'Category grows, winners change',
+    copy: 'A category can stay healthy while individual brands swap positions. Research looks at both total demand and who is capturing it.',
+    graph: 'brandShare',
+    examples: ['2024: Brand A 70%, Brand B 30%', '2025: 50% each', '2026: Brand A 30%, Brand B 70%'],
+  },
+];
+
+const demandDrivers = [
+  {
+    title: 'Consumer Factors',
+    items: ['Income growth', 'Lifestyle changes', 'Demographics', 'Social influence'],
+  },
+  {
+    title: 'Market Factors',
+    items: ['Competitor activity', 'Pricing changes', 'Availability', 'Channel behavior'],
+  },
+  {
+    title: 'External Factors',
+    items: ['Economic conditions', 'Government regulation', 'Technology shifts', 'Platform changes'],
+  },
+];
+
+const dropshippingStages = ['Discovery', 'Viral Growth', 'Saturation', 'Commoditization'];
+
+const graphPaths: Record<DemandGraphVariant, string> = {
+  plc: 'M12 142 C34 142 44 142 58 142 C76 140 82 104 101 78 C121 48 148 34 174 34 L226 34 C252 35 264 54 270 82 C276 112 286 142 308 142 C324 142 337 142 348 142',
+  fad: 'M12 142 C56 142 66 142 76 142 C93 139 102 62 126 34 C147 60 158 138 178 142 C210 142 268 142 348 142',
+  fashion: 'M12 142 C52 142 66 132 84 112 C105 88 124 67 151 59 C181 50 210 62 234 83 C262 108 287 132 348 142',
+  seasonal: 'M12 134 C30 134 38 54 60 54 C82 54 90 134 108 134 C126 134 134 54 156 54 C178 54 186 134 204 134 C222 134 230 54 252 54 C274 54 282 134 300 134 C316 134 330 134 348 134',
+  sCurve: 'M12 142 C52 142 64 122 85 104 C111 82 124 74 151 72 C184 70 185 32 226 32 L348 32',
+  brandShare: 'M12 58 C70 62 124 78 181 92 C236 106 291 122 348 128',
+};
+
+const DemandMiniGraph = ({ variant, title }: { variant: DemandGraphVariant; title: string }) => (
+  <div className="rounded-3xl border border-stone-200 bg-white p-5 shadow-sm">
+    <div className="mb-4 flex items-center justify-between">
+      <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">Demand over time</span>
+      <LineChart className="h-4 w-4 text-emerald-600" />
+    </div>
+    <svg viewBox="0 0 360 170" className="h-36 w-full overflow-visible" role="img" aria-label={`${title} demand curve`}>
+      <line x1="12" y1="150" x2="348" y2="150" stroke="#d6d3d1" strokeWidth="2" />
+      <line x1="12" y1="18" x2="12" y2="150" stroke="#d6d3d1" strokeWidth="2" />
+      <path d="M12 18 L7 28 M12 18 L17 28" fill="none" stroke="#d6d3d1" strokeWidth="2" strokeLinecap="round" />
+      <path d="M348 150 L338 145 M348 150 L338 155" fill="none" stroke="#d6d3d1" strokeWidth="2" strokeLinecap="round" />
+      {variant === 'brandShare' && (
+        <>
+          <path d="M12 124 C70 120 124 104 181 90 C236 76 291 60 348 54" fill="none" stroke="#10b981" strokeWidth="8" strokeLinecap="round" />
+          <text x="246" y="50" className="fill-emerald-700 text-[11px] font-black">Brand B</text>
+          <text x="246" y="135" className="fill-stone-500 text-[11px] font-black">Brand A</text>
+        </>
+      )}
+      <path
+        d={graphPaths[variant]}
+        fill="none"
+        stroke={variant === 'brandShare' ? '#0f172a' : '#10b981'}
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <text x="22" y="28" className="fill-stone-400 text-[10px] font-bold">Demand</text>
+      <text x="313" y="164" className="fill-stone-400 text-[10px] font-bold">Time</text>
+    </svg>
+  </div>
+);
 
 const DataVisualization = ({ className = "" }) => (
   <div className={`relative bg-white rounded-3xl border border-stone-200 p-6 shadow-2xl overflow-hidden ${className}`}>
@@ -264,6 +383,113 @@ export default function ProductMarketResearchClient() {
                   <p className="mt-4 leading-relaxed text-stone-600">{feature.copy}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Demand Curves Section */}
+        <section className="bg-white py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
+            <div className="mb-16 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+              <div>
+                <h2 className="text-xs font-black uppercase tracking-[0.25em] text-emerald-700">Demand Over Time</h2>
+                <h3 className="mt-4 text-4xl font-black tracking-tight text-stone-950 md:text-5xl">
+                  We check where a product sits in the market cycle.
+                </h3>
+              </div>
+              <p className="text-lg leading-relaxed text-stone-600">
+                A product can be promising, risky, seasonal, saturated, or simply too late. Our research maps the demand curve so you know whether to test, stock, scale, or skip.
+              </p>
+            </div>
+
+            <div className="hidden overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-50 md:block">
+              <div className="grid grid-cols-[1fr_1.35fr_1fr] gap-px bg-stone-200 text-sm">
+                <div className="bg-stone-950 px-5 py-4 font-black text-white">Stage</div>
+                <div className="bg-stone-950 px-5 py-4 font-black text-white">Demand Characteristics</div>
+                <div className="bg-stone-950 px-5 py-4 font-black text-white">Example</div>
+                {lifecycleRows.map(([stage, demand, example]) => (
+                  <React.Fragment key={stage}>
+                    <div className="bg-white px-5 py-4 font-black text-stone-950">{stage}</div>
+                    <div className="bg-white px-5 py-4 text-stone-600">{demand}</div>
+                    <div className="bg-white px-5 py-4 text-stone-600">{example}</div>
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid gap-3 md:hidden">
+              {lifecycleRows.map(([stage, demand, example]) => (
+                <div key={stage} className="rounded-3xl border border-stone-200 bg-stone-50 p-5">
+                  <p className="text-lg font-black text-stone-950">{stage}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-stone-600">{demand}</p>
+                  <p className="mt-3 rounded-2xl bg-white px-4 py-3 text-sm font-bold text-emerald-700 ring-1 ring-stone-200">{example}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-2">
+              {cycleCards.map((cycle) => (
+                <div key={cycle.title} className="rounded-[2rem] border border-stone-200 bg-[#fafaf9] p-6 md:p-8">
+                  <DemandMiniGraph variant={cycle.graph} title={cycle.title} />
+                  <div className="mt-6">
+                    <p className="text-[10px] font-black uppercase tracking-[0.22em] text-emerald-700">{cycle.eyebrow}</p>
+                    <h4 className="mt-2 text-2xl font-black text-stone-950">{cycle.title}</h4>
+                    <p className="mt-4 leading-relaxed text-stone-600">{cycle.copy}</p>
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {cycle.examples.map((example) => (
+                        <span key={example} className="rounded-full border border-stone-200 bg-white px-3 py-1 text-xs font-bold text-stone-600">
+                          {example}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
+              <div className="rounded-[2rem] border border-stone-200 bg-stone-950 p-8 text-white md:p-10">
+                <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500">
+                  <Zap className="h-6 w-6" />
+                </div>
+                <h4 className="text-3xl font-black tracking-tight">For ecommerce and dropshipping</h4>
+                <p className="mt-5 leading-relaxed text-white/70">
+                  Many winning products follow the same pattern: a few sellers discover the item, demand rises rapidly, competitors enter, ad costs increase, margins shrink, and the product becomes commoditized.
+                </p>
+                <div className="mt-8 grid gap-3 sm:grid-cols-4">
+                  {dropshippingStages.map((stage, idx) => (
+                    <div key={stage} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-emerald-300">0{idx + 1}</p>
+                      <p className="mt-2 text-sm font-black text-white">{stage}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-8 text-sm font-bold leading-relaxed text-emerald-200">
+                  The sweet spot is early growth: demand is rising, but competition and ad costs are still moderate.
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-stone-200 bg-[#fafaf9] p-8 md:p-10">
+                <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
+                  <Layers className="h-6 w-6" />
+                </div>
+                <h4 className="text-3xl font-black tracking-tight text-stone-950">Demand drivers we watch</h4>
+                <div className="mt-8 grid gap-5">
+                  {demandDrivers.map((group) => (
+                    <div key={group.title} className="rounded-2xl border border-stone-200 bg-white p-5">
+                      <h5 className="font-black text-stone-950">{group.title}</h5>
+                      <div className="mt-4 grid gap-2 sm:grid-cols-2">
+                        {group.items.map((item) => (
+                          <div key={item} className="flex items-center gap-2 text-sm font-bold text-stone-600">
+                            <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
+                            {item}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
