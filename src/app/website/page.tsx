@@ -17,7 +17,7 @@ import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
 
 export const metadata: Metadata = {
-  title: 'Custom Business Website Nepal — Starting at Rs 4,000 | Sajedar',
+  title: 'Custom Business Website Nepal - Starting at Rs 4,000 | Sajedar',
   description:
     'Premium-looking custom websites for Nepali businesses starting at Rs 4,000. See live examples: ashwi.sajedar.com, dailydiva.sajedar.com.',
   alternates: { canonical: '/website' },
@@ -48,7 +48,7 @@ const features = [
   {
     icon: Server,
     title: 'Sajedar subdomain hosting',
-    body: 'Launch on yourstore.sajedar.com from day one — no domain purchase required.',
+    body: 'Launch on yourstore.sajedar.com from day one - no domain purchase required.',
   },
   {
     icon: Globe2,
@@ -121,7 +121,7 @@ export default function WebsitePage() {
                 </h1>
                 <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-white/50">
                   Expensive agencies charge Rs 50,000+ for a site. Cheap templates look cheap. Sajedar builds you a{' '}
-                  <span className="text-white/80 font-medium">genuinely premium custom website</span> for Rs 4,000 — designed with AI, live in days.
+                  <span className="text-white/80 font-medium">genuinely premium custom website</span> for Rs 4,000 - designed with AI, live in days.
                 </p>
                 <div className="mt-10 flex flex-wrap gap-3">
                   <a
@@ -365,7 +365,7 @@ export default function WebsitePage() {
               className="mt-10 inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-9 py-4 text-[15px] font-black text-white shadow-2xl shadow-emerald-500/25 transition-all hover:-translate-y-0.5 hover:bg-emerald-400"
             >
               <MessageCircle className="h-4 w-4" />
-              Order on WhatsApp — Rs 4,000
+              Order on WhatsApp - Rs 4,000
             </a>
           </div>
         </section>

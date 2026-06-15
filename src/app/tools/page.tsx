@@ -160,7 +160,7 @@ Convert normal text into 𝐁𝐨𝐥𝐝 𝐔𝐧𝐢𝐜𝐨𝐝𝐞 text that
     {
         title: 'Engagement Rate Calculator',
         content: `Instantly measure how well your posts perform.
-Calculate engagement rate using likes, comments, shares, and follower count — no analytics tools needed.`,
+Calculate engagement rate using likes, comments, shares, and follower count - no analytics tools needed.`,
         link: '/tools/engagement-rate-calculator',
     },
     {
@@ -242,7 +242,7 @@ Safely create Purchase, Lead, AddToCart, and other conversion tracking scripts w
     },
     {
         title: 'Secure CSV to JSON Converter',
-        content: `Convert spreadsheets to JSON for webhooks. 100% private and browser-based—your data never leaves your computer.`,
+        content: `Convert spreadsheets to JSON for webhooks. 100% private and browser-based - your data never leaves your computer.`,
         link: '/tools/csv-to-json',
     },
     {

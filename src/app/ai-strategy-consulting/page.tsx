@@ -18,7 +18,7 @@ import Header from '../../components/Header';
 import { Footer } from '../../components/sections/Footer';
 
 export const metadata: Metadata = {
-  title: 'AI Strategy Consulting Nepal — Roadmap for Your Business | Sajedar',
+  title: 'AI Strategy Consulting Nepal - Roadmap for Your Business | Sajedar',
   description: 'Confused about AI? We help Nepali businesses build a clear AI roadmap. Tool selection, workflow automation, and implementation strategy.',
   alternates: { canonical: '/ai-strategy-consulting' },
 };

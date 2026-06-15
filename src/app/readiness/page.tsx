@@ -39,7 +39,7 @@ const readinessQuestions = {
     title: "Customer Communication & Responsiveness",
     description: "How well do you handle inquiries and conversations?",
     questions: [
-      "How many customer inquiries arrive daily — and how fast do you respond?",
+      "How many customer inquiries arrive daily - and how fast do you respond?",
       "Are replies mostly manual, or supported by staff/tools?",
       "Do you use WhatsApp Business, Messenger, or similar apps?",
       "Do you track conversations using a CRM or spreadsheet?",
@@ -351,7 +351,7 @@ export default function ReadinessPage() {
             Discover Your Automation Readiness
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-4">
-            In just 5 minutes, find out how prepared your business is to adopt automation and AI — and receive a personalized action plan with expert insights.
+            In just 5 minutes, find out how prepared your business is to adopt automation and AI - and receive a personalized action plan with expert insights.
           </p>
           <p className="text-sm text-gray-400 max-w-2xl mx-auto mb-8">
             Only 13% of companies feel fully prepared for AI. Don’t let readiness be your bottleneck. (Sources: Innovectus, RAND, Salesforce, Adact)

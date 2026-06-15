@@ -82,7 +82,7 @@ const whoItHelps = [
   {
     title: 'Independent Freelancers',
     icon: Hammer,
-    desc: 'Photographers, MUA, planners—run local ads and track conversions without an expensive middleman.',
+    desc: 'Photographers, MUA, planners - run local ads and track conversions without an expensive middleman.',
   },
   {
     title: 'Local Ecommerce',
@@ -180,7 +180,7 @@ export default function MetaAdsPage() {
                   className="mt-8 max-w-xl text-lg leading-relaxed text-stone-600 md:text-xl"
                 >
                   Khali "Boost Post" thichera matra hudaina. Whether you hit your $500 limit 
-                  or don't want the bank hassle—we make proper ad targeting accessible 
+                  or don't want the bank hassle - we make proper ad targeting accessible 
                   starting at just <span className="font-bold text-stone-900">$3 to $5 a day.</span>
                 </motion.p>
 

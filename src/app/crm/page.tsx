@@ -366,7 +366,7 @@ export default function CrmPage() {
                   </h2>
                   <p className="mt-6 text-lg font-medium text-emerald-50/80">
                     Don't just take our word for it. Explore the live interactive demo 
-                    and see how different roles—from founders to support agents—use 
+                    and see how different roles - from founders to support agents - use 
                     the custom Sajedar CRM.
                   </p>
                   <div className="mt-10 flex flex-wrap gap-4">

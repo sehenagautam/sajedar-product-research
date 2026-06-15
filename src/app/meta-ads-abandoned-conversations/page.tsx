@@ -14,7 +14,7 @@ export default function MetaAdsAbandonedConversationsPage() {
             currentPath="/meta-ads-abandoned-conversations"
             eyebrow="Pain Point: Lead Ghosting"
             title="Resurrect Dead Meta Ad Conversations Automatically"
-            subtitle="The hardest part of Meta Ads isn't getting the click—it's getting the customer to reply after they ask for the price. Our AI Agents run relentless, polite follow-up sequences until the lead converts."
+            subtitle="The hardest part of Meta Ads isn't getting the click - it's getting the customer to reply after they ask for the price. Our AI Agents run relentless, polite follow-up sequences until the lead converts."
             expectedOutcomes={[
                 {
                     metric: '20-30%',

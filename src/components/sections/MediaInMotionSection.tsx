@@ -7,7 +7,7 @@ export function MediaInMotionSection() {
       {/* Title and Subtitle */}
       <div className="text-center mb-12 max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white" style={{ fontFamily: 'DM Serif Display, serif' }}>
-          Media in Motion — <span className="text-emerald-500">Cinematic Showcase</span>
+          Media in Motion - <span className="text-emerald-500">Cinematic Showcase</span>
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
           Express more with Sajedar. Text. Picture. Voice. Video. Every message, beautifully delivered.
@@ -92,7 +92,7 @@ export function MediaInMotionSection() {
       {/* Connecting Statement */}
       <div className="text-center mb-8 max-w-4xl mx-auto">
         <p className="text-lg text-gray-300 leading-relaxed">
-          From words to visuals, from voice to motion — Sajedar lets businesses connect like never before.
+          From words to visuals, from voice to motion - Sajedar lets businesses connect like never before.
         </p>
       </div>
 

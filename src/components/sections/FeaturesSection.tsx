@@ -109,7 +109,7 @@ export function FeaturesSection() {
               <span className="text-2xl font-bold text-white">Integrations</span>
               <span className="text-gray-400 text-sm uppercase tracking-widest">Plug-and-play</span>
               <span className="text-gray-300 text-center">
-                Connect your agent to the tools you already use—no headaches.
+                Connect your agent to the tools you already use - no headaches.
               </span>
             </div>
             

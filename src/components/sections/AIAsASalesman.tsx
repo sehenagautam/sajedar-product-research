@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-// Sleeker, more expressive single-element illustration — static orb with gentle glow and pointers
+// Sleeker, more expressive single-element illustration - static orb with gentle glow and pointers
 export default function AIAsASalesman() {
   return (
     <section className="w-full pt-0 pb-24 px-4 bg-[#fafaf9]">

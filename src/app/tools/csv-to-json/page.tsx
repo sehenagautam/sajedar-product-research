@@ -50,7 +50,7 @@ export default function CsvToJsonPage() {
                         Secure CSV to JSON Converter
                     </h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Convert your spreadsheets into JSON for webhooks and APIs. Processed 100% in your browser—your data never leaves your device.
+                        Convert your spreadsheets into JSON for webhooks and APIs. Processed 100% in your browser - your data never leaves your device.
                     </p>
                 </div>
 

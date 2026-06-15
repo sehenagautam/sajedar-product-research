@@ -14,7 +14,7 @@ export default function ArticlesPage() {
     <main className="min-h-screen bg-[#18181b] text-white">
       <div className="max-w-5xl mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-2">Articles</h1>
-        <p className="text-gray-300 mb-10">Short, practical reads — no jargon.</p>
+        <p className="text-gray-300 mb-10">Short, practical reads - no jargon.</p>
         <div className="grid gap-4 md:grid-cols-2 mb-10">
           {[coreServicePages[0], useCasePages[0]].map((page) => (
             <Link key={page.href} href={page.href} className="block rounded-xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition">
