@@ -12,12 +12,12 @@ export function AgenticFlowDiagram() {
       {/* SVG Flow Diagram with animated dot splitting and recombining */}
       <svg viewBox="0 0 1100 400" width="100%" height="400" className="block mx-auto" style={{ maxWidth: 1100 }}>
         {/* Main flow boxes */}
-        <rect x="60" y="70" width="160" height="80" rx="16" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <rect x="320" y="80" width="180" height="60" rx="16" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <rect x="800" y="70" width="180" height="80" rx="16" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
+        <rect x="60" y="70" width="160" height="80" rx="16" fill="#f5f5f4" />
+        <rect x="320" y="80" width="180" height="60" rx="16" fill="#f5f5f4" />
+        <rect x="800" y="70" width="180" height="80" rx="16" fill="#f5f5f4" />
         {/* Connecting lines */}
-        <line x1="220" y1="110" x2="320" y2="110" stroke="#d6d3d1" strokeWidth="3" />
-        <line x1="500" y1="110" x2="800" y2="110" stroke="#d6d3d1" strokeWidth="3" />
+        <line x1="220" y1="110" x2="320" y2="110" stroke="#f5f5f4" strokeWidth="3" />
+        <line x1="500" y1="110" x2="800" y2="110" stroke="#f5f5f4" strokeWidth="3" />
         {/* Potential Customer icon+label inside box */}
         <text x="140" y="105" fontSize="32" fontFamily="monospace" textAnchor="middle">👤</text>
         <text x="140" y="130" fontSize="16" fill="#44403c" textAnchor="middle">Potential Customer</text>
@@ -28,12 +28,12 @@ export function AgenticFlowDiagram() {
         <text x="890" y="105" fontSize="32" fontFamily="monospace" textAnchor="middle">💬</text>
         <text x="890" y="130" fontSize="16" fill="#44403c" textAnchor="middle">Final response</text>
         {/* Tool/Model/Memory nodes */}
-        <circle cx="200" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <circle cx="340" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <circle cx="480" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <circle cx="620" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <circle cx="760" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
-        <circle cx="900" cy="260" r="38" fill="#f5f5f4" stroke="#d6d3d1" strokeWidth="2" />
+        <circle cx="200" cy="260" r="38" fill="#f5f5f4" />
+        <circle cx="340" cy="260" r="38" fill="#f5f5f4" />
+        <circle cx="480" cy="260" r="38" fill="#f5f5f4" />
+        <circle cx="620" cy="260" r="38" fill="#f5f5f4" />
+        <circle cx="760" cy="260" r="38" fill="#f5f5f4" />
+        <circle cx="900" cy="260" r="38" fill="#f5f5f4" />
         {/* Node icons */}
         <text x="200" y="270" fontSize="32" textAnchor="middle">🧠</text>
         <text x="340" y="270" fontSize="32" textAnchor="middle">💾</text>

@@ -77,9 +77,11 @@ export default function Home() {
             {/* Left copy */}
             <div className="max-w-2xl">
               <h1 className="animate-fade-up text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-[-0.03em]" style={{ animationDelay: '0.1s' }}>
-                <span className="text-gradient">system behind</span>
+                <span className="text-[#18181b]">System Behind</span>
                 <br />
-                <span className="text-gradient-accent">your Online Business</span>
+                <span className="text-gray-400 text-[0.6em] font-medium leading-none">your</span>
+                <br />
+                <span className="text-gradient-accent">Online Business</span>
               </h1>
 
               <p className="animate-fade-up mt-6 max-w-lg text-[16px] leading-relaxed text-[#71717a]" style={{ animationDelay: '0.2s' }}>
@@ -89,7 +91,7 @@ export default function Home() {
               <div className="animate-fade-up mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
                 <a
                   href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                  className="group inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-6 py-3 text-[14px] font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-xl hover:shadow-emerald-500/30"
+                  className="group inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-6 py-3 text-[14px] font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-400 hover:shadow-xl hover:shadow-emerald-500/30"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -98,7 +100,7 @@ export default function Home() {
                 </a>
                 <Link
                   href="/services"
-                  className="group inline-flex items-center gap-2 rounded-xl bg-white/60 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-black/[0.15] hover:bg-white hover:text-[#18181b]"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-white/60 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:bg-white hover:text-[#18181b]"
                 >
                   View services
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -212,17 +214,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* CTA */}
-            <div className="mb-12 flex justify-center">
-              <Link
-                href="/services"
-                className="group inline-flex items-center gap-2.5 rounded-full bg-white/70 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-emerald-500/20 hover:bg-emerald-50 hover:text-emerald-700"
-              >
-                Explore all services
-                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
-              </Link>
-            </div>
-
             {/* Services grid - 7 portrait cards matching reference design */}
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
               {services.map((service, index) => {
@@ -231,7 +222,7 @@ export default function Home() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08] ${
+                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 ${
                       service.href === '/sales-agent' 
                         ? 'border border-emerald-500 ring-2 ring-emerald-500/10 scale-105 z-10' 
                         : ''
@@ -244,7 +235,7 @@ export default function Home() {
 
                     {/* Profile-picture style container */}
                     <div
-                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden shadow-sm transition-transform duration-300 group-hover:scale-105 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
+                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden shadow-sm transition-transform duration-300 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
                     >
                       {service.logo ? (
                         <Image
@@ -281,7 +272,7 @@ export default function Home() {
                     </p>
 
                     {/* Arrow */}
-                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full text-[#c4c4c8] transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-white">
+                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full text-[#c4c4c8] transition-all duration-300">
                       <ArrowRight className="h-3 w-3" aria-hidden="true" />
                     </div>
                   </Link>
