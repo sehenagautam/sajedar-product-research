@@ -57,7 +57,7 @@ const ImageRecognitionSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Image Recognition Card */}
-          <div className="bg-white rounded-[2.5rem] border border-stone-200 p-8 shadow-sm flex flex-col items-center text-center">
+          <div className="bg-[#fafaf9] rounded-[2.5rem] p-8 flex flex-col items-center text-center">
              <div className="w-20 h-20 rounded-3xl bg-blue-50 flex items-center justify-center mb-8 ring-1 ring-blue-100">
                 <FileImage className="w-10 h-10 text-blue-600" />
              </div>
@@ -66,18 +66,18 @@ const ImageRecognitionSection = () => {
                Customers send screenshots or product photos. The agent identifies the item, 
                checks stock, and answers questions immediately.
              </p>
-             <div className="mt-auto w-full bg-stone-50 rounded-2xl p-4 border border-stone-100">
+             <div className="mt-auto w-full bg-stone-100/50 rounded-2xl p-4">
                 <p className="text-[10px] font-black uppercase tracking-widest text-[#a8a29e] mb-2">Capabilities</p>
                 <div className="flex flex-wrap justify-center gap-2">
                    {['Product ID', 'Size Check', 'Color Match'].map(t => (
-                     <span key={t} className="px-2 py-1 bg-white border border-stone-200 rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
+                     <span key={t} className="px-2 py-1 bg-white rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
                    ))}
                 </div>
              </div>
           </div>
 
           {/* Voice Recognition Card */}
-          <div className="bg-white rounded-[2.5rem] border border-stone-200 p-8 shadow-sm flex flex-col items-center text-center">
+          <div className="bg-[#fafaf9] rounded-[2.5rem] p-8 flex flex-col items-center text-center">
              <div className="w-20 h-20 rounded-3xl bg-emerald-50 flex items-center justify-center mb-8 ring-1 ring-emerald-100">
                 <Mic className="w-10 h-10 text-emerald-600" />
              </div>
@@ -91,11 +91,11 @@ const ImageRecognitionSection = () => {
                 <VoiceWave />
              </div>
 
-             <div className="mt-auto w-full bg-stone-50 rounded-2xl p-4 border border-stone-100">
+             <div className="mt-auto w-full bg-stone-100/50 rounded-2xl p-4">
                 <p className="text-[10px] font-black uppercase tracking-widest text-[#a8a29e] mb-2">Capabilities</p>
                 <div className="flex flex-wrap justify-center gap-2">
                    {['Transcription', 'Intent Read', 'Multi-lingual'].map(t => (
-                     <span key={t} className="px-2 py-1 bg-white border border-stone-200 rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
+                     <span key={t} className="px-2 py-1 bg-white rounded-lg text-[10px] font-bold text-[#44403c]">{t}</span>
                    ))}
                 </div>
              </div>
