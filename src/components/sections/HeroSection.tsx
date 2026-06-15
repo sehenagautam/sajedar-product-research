@@ -67,9 +67,6 @@ export function HeroSection() {
             </div>
 
             <div className="mb-8">
-              <p className="text-xl md:text-2xl leading-relaxed text-[#44403c] mb-4 mt-6">
-                Top AI Agent Builder in Nepal
-              </p>
               <div className="flex items-center gap-2 text-sm text-[#57534e] bg-emerald-50 w-fit px-3 py-1.5 rounded-full border border-emerald-100">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
