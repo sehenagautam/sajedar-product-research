@@ -54,52 +54,52 @@ function PricingSection() {
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Basic Plan */}
-            <div className="bg-stone-900 rounded-2xl border border-stone-800 p-6 shadow-xl flex flex-col text-white transform md:scale-105 relative z-10">
+            <div className="bg-emerald-50 rounded-2xl p-6 flex flex-col transform md:scale-105 relative z-10">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg">
                 Recommended
               </div>
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h4 className="text-xl font-bold">Basic</h4>
-                  <p className="text-xs text-stone-400 font-medium mt-1">Single Product</p>
+                  <h4 className="text-xl font-bold text-[#1c1917]">Basic</h4>
+                  <p className="text-xs text-[#57534e] font-medium mt-1">Single Product</p>
                 </div>
-                <span className="px-2.5 py-0.5 bg-white/10 text-stone-300 rounded-full text-[10px] font-bold border border-white/10 uppercase tracking-wider">
+                <span className="px-2.5 py-0.5 bg-emerald-100 text-emerald-700 rounded-full text-[10px] font-bold border border-emerald-200 uppercase tracking-wider">
                   Available
                 </span>
               </div>
               
               <div className="mb-6">
                 <div className="flex items-baseline gap-1">
-                  <span className="text-3xl font-black text-white">Rs 1.8</span>
-                  <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">/ Person</span>
+                  <span className="text-3xl font-black text-[#1c1917]">Rs 1.8</span>
+                  <span className="text-xs font-bold text-[#a8a29e] uppercase tracking-widest">/ Person</span>
                 </div>
-                <p className="text-[10px] font-bold text-stone-500 mt-1 uppercase tracking-tight">for any number of replies</p>
+                <p className="text-[10px] font-bold text-[#a8a29e] mt-1 uppercase tracking-tight">for any number of replies</p>
               </div>
 
               <div className="space-y-4 flex-1">
-                <div className="pt-4 border-t border-white/10">
-                  <p className="text-[10px] uppercase tracking-widest text-stone-500 font-black mb-2">Scope</p>
+                <div className="pt-4 border-t border-emerald-200/50">
+                  <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Scope</p>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-2 text-xs text-stone-300">
-                      <span className="text-emerald-400 font-bold">✓</span>
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-500 font-bold">✓</span>
                       <span>1 product &ndash; 5 variants</span>
                     </li>
-                    <li className="flex items-start gap-2 text-xs text-stone-300">
-                      <span className="text-emerald-400 font-bold">✓</span>
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-500 font-bold">✓</span>
                       <span>50 trial conversations</span>
                     </li>
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t border-white/10">
-                  <p className="text-[10px] uppercase tracking-widest text-stone-500 font-black mb-2">Fees</p>
+                <div className="pt-4 border-t border-emerald-200/50">
+                  <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Fees</p>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-2 text-xs text-stone-300">
-                      <span className="text-stone-500 font-bold">●</span>
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-600 font-bold">●</span>
                       <span>Rs 4,000 setup (after trial)</span>
                     </li>
-                    <li className="flex items-start gap-2 text-xs text-stone-300">
-                      <span className="text-stone-500 font-bold">●</span>
+                    <li className="flex items-start gap-2 text-xs text-[#44403c]">
+                      <span className="text-emerald-600 font-bold">●</span>
                       <span>Rs 500 per product change</span>
                     </li>
                   </ul>
@@ -110,14 +110,14 @@ function PricingSection() {
                 href={whatsappLink("Hi Sajedar! I am interested in the Basic Sales Agent plan.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-white text-stone-900 rounded-xl font-bold text-sm transition-colors hover:bg-stone-100"
+                className="mt-8 flex items-center justify-center gap-2 w-full py-3 bg-stone-900 text-white rounded-xl font-bold text-sm transition-colors hover:bg-stone-800"
               >
                 Talk on WhatsApp
               </a>
             </div>
 
             {/* Plus Plan */}
-            <div className="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm flex flex-col">
+            <div className="bg-[#fafaf9] rounded-2xl p-6 flex flex-col">
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-xl font-bold text-[#1c1917]">Plus</h4>
@@ -137,7 +137,7 @@ function PricingSection() {
               </div>
 
               <div className="space-y-4 flex-1">
-                <div className="pt-4 border-t border-stone-100">
+                <div className="pt-4 border-t border-stone-200/50">
                   <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Scope</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-xs text-[#44403c]">
@@ -151,7 +151,7 @@ function PricingSection() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t border-stone-100">
+                <div className="pt-4 border-t border-stone-200/50">
                   <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Fees</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-xs text-[#44403c]">
