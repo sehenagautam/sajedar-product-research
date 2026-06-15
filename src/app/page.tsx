@@ -82,10 +82,6 @@ export default function Home() {
                 <span className="text-gradient-accent">Online Business</span>
               </h1>
 
-              <p className="animate-fade-up mt-6 max-w-lg text-[16px] leading-relaxed text-[#71717a]" style={{ animationDelay: '0.2s' }}>
-                One partner, every step. <b>Online Business Operating System</b>
-              </p>
-
               <div className="animate-fade-up mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
                 <a
                   href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
@@ -108,7 +104,7 @@ export default function Home() {
 
               {/* Proof points */}
               <div className="animate-fade-up mt-12 flex flex-wrap gap-x-6 gap-y-3" style={{ animationDelay: '0.4s' }}>
-                {['Social-first businesses', 'Nepal pricing', 'Plan on WhatsApp'].map((point) => (
+                {['One partner, every step.'].map((point) => (
                   <div key={point} className="flex items-center gap-2 text-[13px] text-[#a1a1aa]">
                     <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500/60" aria-hidden="true" />
                     {point}
@@ -162,8 +158,8 @@ export default function Home() {
                   >
                     <div
                       className={`flex items-center gap-3 rounded-lg px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${isLast
-                          ? 'border border-emerald-500/30 bg-emerald-50 shadow-emerald-500/10 hover:border-emerald-500/40'
-                          : 'bg-white/80 hover:border-black/[0.12]'
+                          ? 'bg-emerald-50 shadow-emerald-500/10'
+                          : 'bg-white/80'
                         }`}
                       style={{ minWidth: '170px' }}
                     >
@@ -234,7 +230,7 @@ export default function Home() {
 
                     {/* Profile-picture style container */}
                     <div
-                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden transition-transform duration-300 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
+                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden transition-transform duration-300 bg-white shadow-sm`}
                     >
                       {service.logo ? (
                         <Image

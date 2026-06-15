@@ -58,7 +58,7 @@ const ImageRecognitionSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Image Recognition Card */}
           <div className="bg-[#fafaf9] rounded-[2.5rem] p-8 flex flex-col items-center text-center">
-             <div className="w-20 h-20 rounded-3xl bg-blue-50 flex items-center justify-center mb-8 ring-1 ring-blue-100">
+             <div className="w-20 h-20 rounded-3xl bg-blue-50 flex items-center justify-center mb-8">
                 <FileImage className="w-10 h-10 text-blue-600" />
              </div>
              <h3 className="text-xl font-bold text-[#1c1917] mb-4">Visual Intelligence</h3>
@@ -78,8 +78,8 @@ const ImageRecognitionSection = () => {
 
           {/* Voice Recognition Card */}
           <div className="bg-[#fafaf9] rounded-[2.5rem] p-8 flex flex-col items-center text-center">
-             <div className="w-20 h-20 rounded-3xl bg-emerald-50 flex items-center justify-center mb-8 ring-1 ring-emerald-100">
-                <Mic className="w-10 h-10 text-emerald-600" />
+             <div className="w-full max-w-[200px] mb-8 h-20 flex items-center justify-center">
+                <VoiceWave height={64} />
              </div>
              <h3 className="text-xl font-bold text-[#1c1917] mb-4">Voice Understanding</h3>
              <p className="text-sm text-[#57534e] leading-relaxed mb-6">
@@ -87,10 +87,6 @@ const ImageRecognitionSection = () => {
                making it easier for customers to shop on the move.
              </p>
              
-             <div className="w-full max-w-[200px] mb-6">
-                <VoiceWave />
-             </div>
-
              <div className="mt-auto w-full bg-stone-100/50 rounded-2xl p-4">
                 <p className="text-[10px] font-black uppercase tracking-widest text-[#a8a29e] mb-2">Capabilities</p>
                 <div className="flex flex-wrap justify-center gap-2">

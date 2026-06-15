@@ -9,7 +9,7 @@ export default function FounderMessageSection() {
 
         {/* Founder Image */}
         <div className="flex-shrink-0">
-          <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-2xl border border-stone-200">
+          <div className="relative w-64 h-64 rounded-2xl overflow-hidden">
             <Image
               src="/founder_pic.jpg"
               alt="Founder of Sajedar"

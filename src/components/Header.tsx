@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg" }) => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl backdrop-saturate-150">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/40 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           {/* Left: Logo + Nav */}
@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg
               href="/"
               className="flex items-center gap-2.5 transition-opacity duration-200 hover:opacity-80"
             >
-              <div className="relative h-7 w-7 flex-shrink-0 overflow-hidden rounded-md">
+              <div className="relative h-7 w-7 flex-shrink-0 overflow-hidden rounded-md bg-white">
                 <Image
                   src={logoSrc}
                   alt="Sajedar Logo"
