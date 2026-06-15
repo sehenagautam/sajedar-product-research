@@ -43,7 +43,7 @@ ${formData.message}`;
 
         <div className="max-w-3xl mx-auto">
           <form
-            className="w-full bg-white rounded-3xl shadow-xl border border-stone-200 p-8 flex flex-col gap-6"
+            className="w-full bg-white rounded-3xl shadow-xl p-8 flex flex-col gap-6"
             onSubmit={handleFormSubmit}
           >
             <div className="flex items-start gap-4">
@@ -63,7 +63,7 @@ ${formData.message}`;
               required
               value={formData.message}
               onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
-              className="w-full px-5 py-4 bg-stone-50 border border-stone-300 rounded-2xl text-[#292524] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none text-lg"
+              className="w-full px-5 py-4 bg-stone-50 rounded-2xl text-[#292524] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-none text-lg"
             />
 
             <button
