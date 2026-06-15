@@ -76,11 +76,6 @@ export default function Home() {
           <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 pb-20 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
             {/* Left copy */}
             <div className="max-w-2xl">
-              <div className="animate-fade-up mb-8 inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-white/70 px-4 py-2 text-[13px] font-medium text-[#71717a] backdrop-blur-sm">
-                <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse-glow" />
-                Top AI Agent Builder in Nepal
-              </div>
-
               <h1 className="animate-fade-up text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-[-0.03em]" style={{ animationDelay: '0.1s' }}>
                 <span className="text-gradient">We build the</span>
                 <br />

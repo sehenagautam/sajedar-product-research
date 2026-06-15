@@ -30,7 +30,7 @@ export function Footer() {
           <div className="flex items-center gap-2.5">
             <span className="text-sm font-semibold text-emerald-600">Sajedar</span>
             <span className="text-[#d4d4d8]">·</span>
-            <span className="text-[13px] text-[#a1a1aa]">AI-powered business setup in Nepal</span>
+            <span className="text-[13px] text-[#a1a1aa]">Top AI Agent Builder in Nepal</span>
           </div>
           <p className="text-[12px] text-[#a1a1aa]">
             © {new Date().getFullYear()} Sajedar. All rights reserved.
