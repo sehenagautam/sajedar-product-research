@@ -87,7 +87,7 @@ export default function AIStrategyConsultingPage() {
           </div>
 
           <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8 text-center">
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700 shadow-sm">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700">
               <BrainCircuit className="h-4 w-4" />
               Strategic AI Guidance
             </div>
@@ -102,7 +102,7 @@ export default function AIStrategyConsultingPage() {
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -111,7 +111,7 @@ export default function AIStrategyConsultingPage() {
               </a>
               <Link
                 href="#what-you-get"
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
               >
                 See Roadmap
                 <ArrowRight className="h-5 w-5" />
@@ -132,7 +132,7 @@ export default function AIStrategyConsultingPage() {
 
             <div className="grid gap-8 sm:grid-cols-3">
               {strategyPoints.map((point) => (
-                <div key={point.title} className="group rounded-[2rem] bg-white p-10 transition hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5">
+                <div key={point.title} className="group rounded-[2rem] bg-white p-10 transition hover:-translate-y-2 hover:border-emerald-200">
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${point.color}-50 text-${point.color}-600 ring-1 ring-${point.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <point.icon className="h-7 w-7" />
                   </div>
@@ -174,7 +174,7 @@ export default function AIStrategyConsultingPage() {
               </div>
 
               <div className="relative">
-                <div className="relative z-10 rounded-[3rem] bg-white p-12 shadow-2xl">
+                <div className="relative z-10 rounded-[3rem] bg-white p-12">
                   <div className="mb-8 flex items-center justify-between">
                     <h4 className="text-2xl font-black text-stone-950">AI Strategy</h4>
                     <span className="rounded-full bg-emerald-100 px-4 py-1 text-xs font-black uppercase tracking-widest text-emerald-700">Available Now</span>
@@ -187,7 +187,7 @@ export default function AIStrategyConsultingPage() {
                     </div>
                     <a
                       href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                      className="flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl transition hover:bg-stone-800"
+                      className="flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white transition hover:bg-stone-800"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -215,7 +215,7 @@ export default function AIStrategyConsultingPage() {
             <div className="mt-12">
                <a
                 href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-emerald-700"
                 target="_blank"
                 rel="noopener noreferrer"
               >

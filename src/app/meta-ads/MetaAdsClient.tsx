@@ -162,7 +162,7 @@ export default function MetaAdsPage() {
               >
                 <motion.div 
                   variants={fadeIn}
-                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm"
+                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700"
                 >
                   <DollarSign className="h-4 w-4" />
                   Practical Ad Planning for Nepal
@@ -190,7 +190,7 @@ export default function MetaAdsPage() {
                 >
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -199,7 +199,7 @@ export default function MetaAdsPage() {
                   </a>
                   <button
                     onClick={() => document.getElementById('simulator')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     <PieChart className="h-5 w-5" />
                     Simulate Budget
@@ -213,7 +213,7 @@ export default function MetaAdsPage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="relative hidden lg:block"
               >
-                <div className="relative z-10 rounded-[3rem] border-[12px] border-stone-950/5 bg-white p-8 shadow-2xl">
+                <div className="relative z-10 rounded-[3rem] border-[12px] border-stone-950/5 bg-white p-8">
                   <div className="space-y-6">
                     <div className="flex items-center justify-between">
                       <div className="h-8 w-32 rounded-lg bg-stone-100" />
@@ -260,7 +260,7 @@ export default function MetaAdsPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
+                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200"
                 >
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${prop.color}-50 text-${prop.color}-600 ring-1 ring-${prop.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <prop.icon className="h-7 w-7" />
@@ -325,7 +325,7 @@ export default function MetaAdsPage() {
               </div>
 
               <div className="relative">
-                <div className="relative z-10 rounded-[3rem] bg-white p-8 shadow-2xl">
+                <div className="relative z-10 rounded-[3rem] bg-white p-8">
                   <div className="mb-8 flex items-center justify-between">
                     <h4 className="text-xl font-black text-stone-950">The "Boost" Trap vs. Strategic Ads</h4>
                     <span className="rounded-full bg-stone-100 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-stone-500">Outcome of $50 Spend</span>
@@ -370,7 +370,7 @@ export default function MetaAdsPage() {
                 </div>
                 
                 {/* Floating graphic */}
-                <div className="absolute -right-8 -bottom-8 z-20 h-32 w-32 rounded-3xl bg-white p-6 shadow-xl flex items-center justify-center">
+                <div className="absolute -right-8 -bottom-8 z-20 h-32 w-32 rounded-3xl bg-white p-6 flex items-center justify-center">
                    <TrendingUp className="h-16 w-16 text-emerald-500" />
                 </div>
               </div>
@@ -393,7 +393,7 @@ export default function MetaAdsPage() {
             <div className="mt-20 grid gap-8 md:grid-cols-3">
               {steps.map((step, idx) => (
                 <div key={step.title} className="relative flex flex-col items-center">
-                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-stone-950 text-xl font-black text-white shadow-xl shadow-stone-900/20">
+                  <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-stone-950 text-xl font-black text-white">
                     {idx + 1}
                   </div>
                   <h4 className="text-xl font-black text-stone-950">{step.title}</h4>
@@ -417,7 +417,7 @@ export default function MetaAdsPage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {whoItHelps.map((item) => (
                 <div key={item.title} className="flex flex-col gap-6 rounded-[2.5rem] border border-stone-100 bg-stone-50/50 p-10 transition-colors hover:bg-white hover:border-emerald-100">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emerald-600">
                     <item.icon className="h-7 w-7" />
                   </div>
                   <div>
@@ -458,7 +458,7 @@ export default function MetaAdsPage() {
                 <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-emerald-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -467,7 +467,7 @@ export default function MetaAdsPage() {
                   </a>
                   <Link
                     href="/contact?message=I%20am%20interested%20in%20planning%20a%20professional%20Meta%20Ads%20budget."
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                   >
                     Get Custom Quote
                     <ArrowRight className="h-5 w-5" />

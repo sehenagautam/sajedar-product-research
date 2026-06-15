@@ -38,7 +38,7 @@ const ServicesOnlyNav = () => (
   <header className="fixed left-4 top-4 z-50 sm:left-6">
     <Link
       href="/services"
-      className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white px-5 text-sm font-black text-slate-950 shadow-2xl shadow-black/30 transition hover:-translate-y-0.5 hover:bg-red-50 hover:text-red-700"
+      className="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white px-5 text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:bg-red-50 hover:text-red-700"
     >
       View all services
       <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -58,7 +58,7 @@ const JasusAiVideo = () => {
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900 shadow-2xl group">
+    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-900 group">
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
@@ -74,7 +74,7 @@ const JasusAiVideo = () => {
           className="absolute inset-0 z-20 flex items-center justify-center bg-slate-950/20 cursor-pointer transition-colors hover:bg-slate-950/10"
           onClick={handlePlay}
         >
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-red-600/90 text-white shadow-2xl shadow-red-600/40 transition-transform group-hover:scale-110">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-red-600/90 text-white shadow-red-600/40 transition-transform group-hover:scale-110">
             <Play className="ml-1 h-8 w-8 fill-current" />
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function JasusAiClient() {
               >
                 <motion.div 
                   variants={fadeIn}
-                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/5 px-4 py-1.5 text-sm font-bold text-red-500 shadow-sm"
+                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/5 px-4 py-1.5 text-sm font-bold text-red-500"
                 >
                   <span className="relative h-5 w-5 overflow-hidden rounded-full">
                     <Image
@@ -163,7 +163,7 @@ export default function JasusAiClient() {
                 >
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-red-600 px-8 text-base font-bold text-white shadow-xl shadow-red-500/20 transition hover:-translate-y-1 hover:bg-red-500"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-red-600 px-8 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-red-500"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -172,7 +172,7 @@ export default function JasusAiClient() {
                   </a>
                   <button
                     onClick={() => document.getElementById('capabilities')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-slate-800 bg-slate-900/50 px-8 text-base font-bold text-white shadow-sm transition hover:-translate-y-1 hover:border-slate-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-slate-800 bg-slate-900/50 px-8 text-base font-bold text-white transition hover:-translate-y-1 hover:border-slate-700"
                   >
                     See Capabilities
                   </button>
@@ -216,7 +216,7 @@ export default function JasusAiClient() {
         {/* Pricing */}
         <section className="bg-slate-950 py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-red-600 to-red-900 p-8 md:p-20 text-white shadow-2xl">
+            <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-red-600 to-red-900 p-8 md:p-20 text-white">
               <div className="relative z-10 grid gap-12 lg:grid-cols-2 lg:items-center">
                 <div>
                   <h2 className="text-4xl font-black tracking-tight md:text-5xl">Review 3 Competitors for Rs 2,500.</h2>
@@ -229,7 +229,7 @@ export default function JasusAiClient() {
                   <div className="mt-10 flex flex-wrap gap-4">
                     <a
                       href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                      className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-red-900 shadow-xl transition hover:-translate-y-1 hover:bg-slate-50"
+                      className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-red-900 transition hover:-translate-y-1 hover:bg-slate-50"
                     >
                       Start Market Review
                     </a>
@@ -275,7 +275,7 @@ export default function JasusAiClient() {
               <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
                   href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                  className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-red-600 px-10 text-base font-bold text-white shadow-xl shadow-red-600/20 transition hover:-translate-y-1 hover:bg-red-700"
+                  className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-red-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-red-700"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -284,7 +284,7 @@ export default function JasusAiClient() {
                 </a>
                 <Link
                   href="/contact"
-                  className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-slate-900 border border-slate-800 px-10 text-base font-bold text-white shadow-xl transition hover:-translate-y-1 hover:bg-slate-800"
+                  className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-slate-900 border border-slate-800 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-slate-800"
                 >
                   Request Bulk Quote
                   <ArrowRight className="h-5 w-5" />

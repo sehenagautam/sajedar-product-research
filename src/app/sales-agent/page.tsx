@@ -55,7 +55,7 @@ function PricingSection() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Basic Plan */}
             <div className="bg-emerald-50 rounded-2xl p-6 flex flex-col transform md:scale-105 relative z-10">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest">
                 Recommended
               </div>
               <div className="flex justify-between items-start mb-4">

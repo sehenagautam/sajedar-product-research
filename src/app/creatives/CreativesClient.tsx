@@ -84,7 +84,7 @@ const CreativesAdVideo = () => {
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] bg-white shadow-2xl group">
+    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] bg-white group">
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
@@ -100,7 +100,7 @@ const CreativesAdVideo = () => {
           className="absolute inset-0 z-20 flex items-center justify-center bg-stone-900/10 cursor-pointer transition-colors hover:bg-stone-900/5"
           onClick={handlePlay}
         >
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-600/90 text-white shadow-2xl shadow-red-600/40 transition-transform group-hover:scale-110">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-600/90 text-white shadow-red-600/40 transition-transform group-hover:scale-110">
             <Play className="ml-1 h-8 w-8 fill-current" />
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function CreativesClient() {
             <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div className="max-w-2xl text-center lg:text-left">
                 <div className="mb-8 flex flex-col items-center lg:items-start gap-6">
-                  <div className="relative h-20 w-20 overflow-hidden rounded-2xl shadow-xl ring-1 ring-stone-200">
+                  <div className="relative h-20 w-20 overflow-hidden rounded-2xl ring-1 ring-stone-200">
                     <Image 
                       src="/sajedar-creatives.jpg" 
                       alt="Sajedar Creatives Logo" 
@@ -153,7 +153,7 @@ export default function CreativesClient() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500">
                     <Sparkles className="h-4 w-4 text-amber-500" />
                     Sajedar Creative Studio
                   </div>
@@ -168,7 +168,7 @@ export default function CreativesClient() {
                 <div className="mt-12 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -177,7 +177,7 @@ export default function CreativesClient() {
                   </a>
                   <Link
                     href="#ai-videos"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     View Services
                     <ArrowRight className="h-5 w-5" />
@@ -253,7 +253,7 @@ export default function CreativesClient() {
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {graphicsShowcase.map((item) => (
-                <div key={item.title} className="group relative aspect-square overflow-hidden rounded-[2.5rem] bg-white shadow-sm transition hover:shadow-2xl">
+                <div key={item.title} className="group relative aspect-square overflow-hidden rounded-[2.5rem] bg-white transition hover:shadow-2xl">
                   <Image src={item.image} alt={item.title} fill className="object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-8">
                     <div>
@@ -292,7 +292,7 @@ export default function CreativesClient() {
                 <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-emerald-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -301,7 +301,7 @@ export default function CreativesClient() {
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-xl transition hover:-translate-y-1 hover:bg-stone-50"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:bg-stone-50"
                   >
                     Request Bulk Quote
                     <ArrowRight className="h-5 w-5" />

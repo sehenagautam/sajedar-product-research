@@ -42,7 +42,7 @@ export default function AIAsASalesman() {
                   key={label}
                   className="group relative"
                 >
-                  <div className="px-6 py-3 rounded-2xl bg-white/60 backdrop-blur-sm shadow-sm text-[#44403c]">
+                  <div className="px-6 py-3 rounded-2xl bg-white/60 backdrop-blur-sm text-[#44403c]">
                     <span className="text-sm font-medium tracking-wide">
                       {label}
                     </span>

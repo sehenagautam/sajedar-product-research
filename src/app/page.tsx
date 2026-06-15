@@ -89,7 +89,8 @@ export default function Home() {
               <div className="animate-fade-up mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
                 <a
                   href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                  className="group inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-6 py-3 text-[14px] font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-400 hover:shadow-xl hover:shadow-emerald-500/30"
+                  className="group inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-6 py-3 text-[14px] font-semibold text-white shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-400 hover:shadow-emerald-500/30"
+
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -161,8 +162,8 @@ export default function Home() {
                   >
                     <div
                       className={`flex items-center gap-3 rounded-lg px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${isLast
-                          ? 'border border-emerald-500/30 bg-emerald-50 shadow-lg shadow-emerald-500/10 hover:border-emerald-500/40'
-                          : 'bg-white/80 shadow-sm hover:border-black/[0.12] hover:shadow-md'
+                          ? 'border border-emerald-500/30 bg-emerald-50 shadow-emerald-500/10 hover:border-emerald-500/40'
+                          : 'bg-white/80 hover:border-black/[0.12]'
                         }`}
                       style={{ minWidth: '170px' }}
                     >
@@ -220,7 +221,7 @@ export default function Home() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 ${
+                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl bg-white pt-5 pb-5 px-3 text-center transition-all duration-300 ${
                       service.href === '/sales-agent' 
                         ? 'border border-emerald-500 ring-2 ring-emerald-500/10 scale-105 z-10' 
                         : ''
@@ -233,7 +234,7 @@ export default function Home() {
 
                     {/* Profile-picture style container */}
                     <div
-                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden shadow-sm transition-transform duration-300 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
+                      className={`relative mb-5 flex h-[88px] w-[88px] items-center justify-center rounded-full overflow-hidden transition-transform duration-300 ${service.logo ? 'bg-white' : `bg-gradient-to-br ${service.iconBg}`}`}
                     >
                       {service.logo ? (
                         <Image
@@ -289,7 +290,7 @@ export default function Home() {
           </div>
 
           <div className="relative mx-auto max-w-3xl">
-            <div className="overflow-hidden rounded-2xl bg-white/70 p-8 text-center backdrop-blur-sm shadow-lg shadow-black/[0.03] md:p-12">
+            <div className="overflow-hidden rounded-2xl bg-white/70 p-8 text-center backdrop-blur-sm shadow-black/[0.03] md:p-12">
               <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-200 bg-emerald-50">
                 <MessageCircle className="h-5 w-5 text-emerald-600" aria-hidden="true" />
               </div>
@@ -301,7 +302,8 @@ export default function Home() {
               </p>
               <a
                 href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                className="mt-8 inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-7 py-3.5 text-[14px] font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-400 hover:shadow-xl hover:shadow-emerald-500/30"
+                className="group inline-flex items-center gap-2.5 rounded-xl bg-emerald-500 px-6 py-3 text-[14px] font-semibold text-white shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-400 hover:shadow-emerald-500/30"
+
                 target="_blank"
                 rel="noopener noreferrer"
               >

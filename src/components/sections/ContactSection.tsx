@@ -43,7 +43,7 @@ ${formData.message}`;
 
         <div className="max-w-3xl mx-auto">
           <form
-            className="w-full bg-white rounded-3xl shadow-xl p-8 flex flex-col gap-6"
+            className="w-full bg-white rounded-3xl p-8 flex flex-col gap-6"
             onSubmit={handleFormSubmit}
           >
             <div className="flex items-start gap-4">

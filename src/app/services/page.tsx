@@ -157,7 +157,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         {/* Header row */}
         <div className="flex items-start justify-between mb-6">
           <div
-            className="flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 overflow-hidden shadow-sm"
+            className="flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 overflow-hidden"
             style={{ 
               background: service.logo ? '#fff' : service.accentDim, 
               border: service.logo ? 'none' : `1px solid ${service.accent}22` 
@@ -319,7 +319,8 @@ export default function ServicesPage() {
                   href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex h-13 items-center gap-2.5 rounded-full px-7 text-sm font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="group inline-flex h-13 items-center gap-2.5 rounded-full px-7 text-sm font-bold text-black transition-all duration-300 hover:scale-105"
+
                   style={{
                     background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
                     boxShadow: '0 0 40px rgba(16,185,129,0.3)',
@@ -452,7 +453,7 @@ export default function ServicesPage() {
                 href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex flex-shrink-0 items-center gap-2.5 rounded-full px-7 py-4 text-sm font-bold text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                className="group inline-flex flex-shrink-0 items-center gap-2.5 rounded-full px-7 py-4 text-sm font-bold text-black transition-all duration-300 hover:scale-105"
                 style={{
                   background: 'linear-gradient(135deg, #10b981, #059669)',
                   boxShadow: '0 0 40px rgba(16,185,129,0.25)',

@@ -195,7 +195,7 @@ const graphPaths: Record<DemandGraphVariant, string> = {
 };
 
 const DemandMiniGraph = ({ variant, title }: { variant: DemandGraphVariant; title: string }) => (
-  <div className="rounded-3xl bg-white p-5 shadow-sm">
+  <div className="rounded-3xl bg-white p-5">
     <div className="mb-4 flex items-center justify-between">
       <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">Demand over time</span>
       <LineChart className="h-4 w-4 text-emerald-600" />
@@ -227,7 +227,7 @@ const DemandMiniGraph = ({ variant, title }: { variant: DemandGraphVariant; titl
 );
 
 const DataVisualization = ({ className = "" }) => (
-  <div className={`relative bg-white rounded-3xl p-6 shadow-2xl overflow-hidden ${className}`}>
+  <div className={`relative bg-white rounded-3xl p-6 overflow-hidden ${className}`}>
     <div className="flex items-center justify-between mb-8">
       <div className="flex gap-1.5">
         <div className="w-2 h-2 rounded-full bg-emerald-500" />
@@ -287,7 +287,7 @@ export default function ProductMarketResearchClient() {
           <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
             <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div className="max-w-2xl">
-                <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm">
+                <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700">
                   <Search className="h-4 w-4" />
                   Winning Product Research & Validation
                 </div>
@@ -304,7 +304,7 @@ export default function ProductMarketResearchClient() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -313,7 +313,7 @@ export default function ProductMarketResearchClient() {
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     Request Sample Report
                   </Link>
@@ -336,7 +336,7 @@ export default function ProductMarketResearchClient() {
                 <DataVisualization className="w-full max-w-md mx-auto" />
                 
                 {/* Floating tags */}
-                <div className="absolute -top-6 -left-6 bg-white rounded-2xl border border-stone-100 p-4 shadow-xl flex items-center gap-3">
+                <div className="absolute -top-6 -left-6 bg-white rounded-2xl border border-stone-100 p-4 flex items-center gap-3">
                    <div className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center text-white">
                       <Target className="w-4 h-4" />
                    </div>
@@ -346,7 +346,7 @@ export default function ProductMarketResearchClient() {
                    </div>
                 </div>
 
-                <div className="absolute -bottom-6 -right-6 bg-stone-950 rounded-2xl p-4 shadow-xl flex items-center gap-3 text-white">
+                <div className="absolute -bottom-6 -right-6 bg-stone-950 rounded-2xl p-4 flex items-center gap-3 text-white">
                    <div className="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white">
                       <SearchCheck className="w-4 h-4" />
                    </div>
@@ -374,7 +374,7 @@ export default function ProductMarketResearchClient() {
               {features.map((feature, idx) => (
                 <div
                   key={feature.title}
-                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
+                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200"
                 >
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${feature.color}-50 text-${feature.color}-600 ring-1 ring-${feature.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <feature.icon className="h-7 w-7" />
@@ -510,7 +510,7 @@ export default function ProductMarketResearchClient() {
                   key={pkg.name}
                   className={`relative rounded-[2.5rem] p-10 border transition-all hover:-translate-y-2 ${
                     pkg.featured 
-                      ? 'bg-emerald-600 border-emerald-500 shadow-2xl shadow-emerald-500/20' 
+                      ? 'bg-emerald-600 border-emerald-500 shadow-emerald-500/20' 
                       : 'bg-[#fafaf9]'
                   }`}
                 >
@@ -567,7 +567,7 @@ export default function ProductMarketResearchClient() {
               
               <div className="grid gap-4 sm:grid-cols-3">
                 {steps.map((step, idx) => (
-                  <div key={step.title} className="bg-white rounded-[2rem] p-8 border border-stone-100 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors">
+                  <div key={step.title} className="bg-white rounded-[2rem] p-8 border border-stone-100 relative overflow-hidden group hover:border-emerald-200 transition-colors">
                     <div className="text-4xl font-black text-stone-50 mb-4 group-hover:text-emerald-50 transition-colors">0{idx + 1}</div>
                     <h4 className="text-lg font-black text-stone-950 relative z-10">{step.title}</h4>
                     <p className="mt-4 text-sm leading-relaxed text-stone-500 relative z-10">{step.desc}</p>
@@ -602,7 +602,7 @@ export default function ProductMarketResearchClient() {
                 <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-emerald-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -611,7 +611,7 @@ export default function ProductMarketResearchClient() {
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-xl transition hover:-translate-y-1 hover:bg-stone-50"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:bg-stone-50"
                   >
                     Request Custom Quote
                     <ArrowRight className="h-5 w-5" />

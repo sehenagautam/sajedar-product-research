@@ -77,7 +77,7 @@ function BrandTargetNode({ brand }: { brand: BrandTarget }) {
         marginTop: -brand.size / 2,
       }}
     >
-      <div className={`relative h-full w-full flex items-center justify-center rounded-full border backdrop-blur-md shadow-2xl transition-transform hover:scale-110 ${colorClasses[brand.color]}`}>
+      <div className={`relative h-full w-full flex items-center justify-center rounded-full border backdrop-blur-md transition-transform hover:scale-110 ${colorClasses[brand.color]}`}>
         <div className="px-2 text-center">
           <p
             className={`truncate font-black ${
@@ -139,7 +139,7 @@ export default function MarketClarityApple() {
         <div className="absolute left-1/2 top-1/2 h-px w-[80%] -translate-x-1/2 -rotate-45 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
         {/* Center Logo */}
-        <div className="absolute left-1/2 top-1/2 z-20 h-28 w-28 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[2rem] bg-white p-6 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
+        <div className="absolute left-1/2 top-1/2 z-20 h-28 w-28 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[2rem] bg-white p-6">
           <div className="relative h-full w-full">
             <Image
               src="/jasus-ai-icon.jpg"
@@ -156,7 +156,7 @@ export default function MarketClarityApple() {
           <BrandTargetNode key={brand.name} brand={brand} />
         ))}
 
-        <div className="absolute right-0 top-0 z-50 rounded-2xl border border-white/5 bg-slate-900/80 px-3 py-2 shadow-2xl backdrop-blur-2xl">
+        <div className="absolute right-0 top-0 z-50 rounded-2xl border border-white/5 bg-slate-900/80 px-3 py-2 backdrop-blur-2xl">
           <div className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">
             <ScanLine size={12} /> Risk
           </div>

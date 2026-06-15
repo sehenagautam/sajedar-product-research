@@ -30,7 +30,7 @@ export function FAQSection() {
         </h2>
         <div className="w-full flex flex-col gap-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white/60 rounded-2xl p-6 shadow-sm">
+            <div key={index} className="bg-white/60 rounded-2xl p-6">
               <h3 className="text-lg font-bold text-emerald-500 mb-2">
                 {faq.question}
               </h3>

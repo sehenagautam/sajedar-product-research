@@ -54,7 +54,7 @@ export default function IntelligentProfilingSection() {
                 alt="Friendly AI Avatar"
                 fill
                 sizes="(max-width: 768px) 256px, 320px"
-                className="absolute inset-0 rounded-full object-cover ring-8 ring-emerald-500/20 shadow-2xl"
+                className="absolute inset-0 rounded-full object-cover ring-8 ring-emerald-500/20"
                 unoptimized
               />
             </div>
@@ -68,12 +68,12 @@ export default function IntelligentProfilingSection() {
 
           {/* Customer Card */}
           <div className="mt-12 md:mt-0 md:ml-0 w-full max-w-md">
-            <div className="relative overflow-hidden border-0 bg-white shadow-xl rounded-3xl">
+            <div className="relative overflow-hidden border-0 bg-white rounded-3xl">
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-transparent to-teal-50/50 rounded-3xl opacity-60" />
 
               <div className="relative flex flex-col gap-6 p-8 z-20">
                 <div className="flex items-center gap-4 pb-4">
-                  <div className="relative h-16 w-16 rounded-full overflow-hidden ring-4 ring-emerald-100 shadow-md">
+                  <div className="relative h-16 w-16 rounded-full overflow-hidden ring-4 ring-emerald-100">
                     <Image
                       src={CUSTOMER_AVATAR}
                       alt="Sita Lama"
@@ -90,32 +90,32 @@ export default function IntelligentProfilingSection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-[#57534e]">
-                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm min-w-0">
+                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 min-w-0">
                     <Mail className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                     <span className="whitespace-nowrap overflow-hidden text-ellipsis">sita.lama@example.com</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm min-w-0">
+                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 min-w-0">
                     <Phone className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                     <span className="whitespace-nowrap">+977 984-1234567</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm min-w-0">
+                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 min-w-0">
                     <MapPin className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                     <span className="whitespace-nowrap">Boudha, Kathmandu</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm min-w-0">
+                  <div className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 min-w-0">
                     <Clock className="h-4 w-4 text-emerald-600 flex-shrink-0" />
                     <span className="whitespace-nowrap">Prefers: 11 AM - 3 PM</span>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-3 pt-4">
-                  <span className="rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-semibold text-emerald-700 shadow-sm border border-emerald-100">
+                  <span className="rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-semibold text-emerald-700 border border-emerald-100">
                     Conversion Probability: 72%
                   </span>
-                  <span className="rounded-full bg-teal-50 px-4 py-1.5 text-xs font-semibold text-teal-700 shadow-sm border border-teal-100">
+                  <span className="rounded-full bg-teal-50 px-4 py-1.5 text-xs font-semibold text-teal-700 border border-teal-100">
                     Segment: Retail Shopper
                   </span>
-                  <span className="rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-semibold text-emerald-700 shadow-sm border border-emerald-100">
+                  <span className="rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-semibold text-emerald-700 border border-emerald-100">
                     Engagement: Moderate
                   </span>
                 </div>
@@ -123,9 +123,9 @@ export default function IntelligentProfilingSection() {
                 <div className="mt-6 pt-4 text-xs text-[#57534e]">
                   <p className="font-semibold text-[#292524] mb-2 flex items-center gap-1"><Star className="h-3 w-3 text-emerald-500" /> Recent Interactions</p>
                   <ul className="space-y-2">
-                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm"><span className="text-lg">🛒</span> Browsed kitchen appliances - Today</li>
-                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm"><span className="text-lg">👟</span> Added sneakers to wishlist - 2 days ago</li>
-                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2 shadow-sm"><span className="text-lg">🪴</span> Viewed home décor sale - 1 week ago</li>
+                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2"><span className="text-lg">🛒</span> Browsed kitchen appliances - Today</li>
+                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2"><span className="text-lg">👟</span> Added sneakers to wishlist - 2 days ago</li>
+                    <li className="flex items-center gap-2 bg-stone-50 rounded-xl px-3 py-2"><span className="text-lg">🪴</span> Viewed home décor sale - 1 week ago</li>
                   </ul>
                 </div>
               </div>

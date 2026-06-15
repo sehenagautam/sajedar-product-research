@@ -128,7 +128,7 @@ export default function WebsiteCrmClient() {
               >
                 <motion.div 
                   variants={fadeIn}
-                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700 shadow-sm"
+                  className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50/50 px-4 py-1.5 text-sm font-bold text-emerald-700"
                 >
                   <Layout className="h-4 w-4" />
                   Your Complete Business Operating System
@@ -155,7 +155,7 @@ export default function WebsiteCrmClient() {
                 >
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white shadow-xl shadow-stone-900/10 transition hover:-translate-y-1 hover:bg-stone-800"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-stone-950 px-8 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-stone-800"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -164,7 +164,7 @@ export default function WebsiteCrmClient() {
                   </a>
                   <Link
                     href="/crm/demo"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     Explore CRM Demo
                   </Link>
@@ -192,7 +192,7 @@ export default function WebsiteCrmClient() {
                 className="relative"
               >
                 {/* Unified Device Preview */}
-                <div className="relative z-10 rounded-2xl bg-white p-1 shadow-2xl overflow-hidden">
+                <div className="relative z-10 rounded-2xl bg-white p-1 overflow-hidden">
                   <div className="flex items-center gap-1.5 px-4 py-3 border-b border-stone-100 bg-stone-50/50 rounded-t-xl">
                     <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
                     <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
@@ -213,10 +213,10 @@ export default function WebsiteCrmClient() {
                 <motion.div 
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -right-8 top-12 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur-md sm:block"
+                  className="absolute -right-8 top-12 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 backdrop-blur-md sm:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-lg shadow-indigo-600/20">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-indigo-600/20">
                       <Code2 className="h-5 w-5" />
                     </div>
                     <div>
@@ -229,10 +229,10 @@ export default function WebsiteCrmClient() {
                 <motion.div 
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -left-8 bottom-12 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 shadow-xl backdrop-blur-md sm:block"
+                  className="absolute -left-8 bottom-12 z-20 hidden rounded-3xl border border-white bg-white/90 p-4 backdrop-blur-md sm:block"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white shadow-emerald-500/20">
                       <UsersRound className="h-5 w-5" />
                     </div>
                     <div>
@@ -252,7 +252,7 @@ export default function WebsiteCrmClient() {
             <div className="mb-20 grid gap-16 lg:grid-cols-2">
               {/* Website Column */}
               <div>
-                <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-xl shadow-blue-600/20">
+                <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-blue-600/20">
                   <Code2 className="h-8 w-8" />
                 </div>
                 <h3 className="text-3xl font-black tracking-tight text-stone-950">Premium Business Frontend</h3>
@@ -260,7 +260,7 @@ export default function WebsiteCrmClient() {
                 
                 <div className="mt-10 grid gap-4">
                   {websiteFeatures.map((f) => (
-                    <div key={f.title} className="flex gap-4 rounded-2xl bg-white p-6 shadow-sm border border-stone-100">
+                    <div key={f.title} className="flex gap-4 rounded-2xl bg-white p-6 border border-stone-100">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
                          <f.icon className="h-5 w-5" />
                       </div>
@@ -275,7 +275,7 @@ export default function WebsiteCrmClient() {
 
               {/* CRM Column */}
               <div>
-                <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-xl shadow-indigo-600/20">
+                <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-indigo-600/20">
                   <UsersRound className="h-8 w-8" />
                 </div>
                 <h3 className="text-3xl font-black tracking-tight text-stone-950">Custom Sales OS Backend</h3>
@@ -283,7 +283,7 @@ export default function WebsiteCrmClient() {
                 
                 <div className="mt-10 grid gap-4">
                   {crmFeatures.map((f) => (
-                    <div key={f.title} className="flex gap-4 rounded-2xl bg-white p-6 shadow-sm border border-stone-100">
+                    <div key={f.title} className="flex gap-4 rounded-2xl bg-white p-6 border border-stone-100">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                          <f.icon className="h-5 w-5" />
                       </div>
@@ -314,7 +314,7 @@ export default function WebsiteCrmClient() {
                   href={ex.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative overflow-hidden rounded-[2.5rem] bg-white p-2 shadow-sm transition-all hover:shadow-2xl"
+                  className="group relative overflow-hidden rounded-[2.5rem] bg-white p-2 transition-all hover:shadow-2xl"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
                     <Image
@@ -324,7 +324,7 @@ export default function WebsiteCrmClient() {
                       className="object-cover transition duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-stone-950/20 opacity-0 transition-opacity group-hover:opacity-100 flex items-center justify-center">
-                       <div className="h-14 w-14 rounded-full bg-white flex items-center justify-center text-stone-950 shadow-xl">
+                       <div className="h-14 w-14 rounded-full bg-white flex items-center justify-center text-stone-950">
                           <ExternalLink className="h-6 w-6" />
                        </div>
                     </div>
@@ -369,7 +369,7 @@ export default function WebsiteCrmClient() {
                 <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href={`https://wa.me/9779860479751?text=${whatsappMessage}`}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white shadow-xl shadow-emerald-600/20 transition hover:-translate-y-1 hover:bg-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-10 text-base font-bold text-white transition hover:-translate-y-1 hover:bg-emerald-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -378,7 +378,7 @@ export default function WebsiteCrmClient() {
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-xl transition hover:-translate-y-1 hover:bg-stone-50"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:bg-stone-50"
                   >
                     Request Custom Quote
                     <ArrowRight className="h-5 w-5" />
