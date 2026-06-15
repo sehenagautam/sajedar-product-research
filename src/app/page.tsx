@@ -77,15 +77,13 @@ export default function Home() {
             {/* Left copy */}
             <div className="max-w-2xl">
               <h1 className="animate-fade-up text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-[-0.03em]" style={{ animationDelay: '0.1s' }}>
-                <span className="text-gradient">We build the</span>
-                <br />
                 <span className="text-gradient">system behind</span>
                 <br />
-                <span className="text-gradient-accent">your online business.</span>
+                <span className="text-gradient-accent">your Online Business</span>
               </h1>
 
               <p className="animate-fade-up mt-6 max-w-lg text-[16px] leading-relaxed text-[#71717a]" style={{ animationDelay: '0.2s' }}>
-                From DMs to a complete sales engine. Website, CRM, ads, creative, and AI automation. One partner, every step. <b>Online Business Operating System</b>
+                One partner, every step. <b>Online Business Operating System</b>
               </p>
 
               <div className="animate-fade-up mt-10 flex flex-wrap gap-3" style={{ animationDelay: '0.3s' }}>
