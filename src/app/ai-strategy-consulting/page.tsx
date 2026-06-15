@@ -111,7 +111,7 @@ export default function AIStrategyConsultingPage() {
               </a>
               <Link
                 href="#what-you-get"
-                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
               >
                 See Roadmap
                 <ArrowRight className="h-5 w-5" />
@@ -132,7 +132,7 @@ export default function AIStrategyConsultingPage() {
 
             <div className="grid gap-8 sm:grid-cols-3">
               {strategyPoints.map((point) => (
-                <div key={point.title} className="group rounded-[2rem] border border-stone-200 bg-white p-10 transition hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5">
+                <div key={point.title} className="group rounded-[2rem] bg-white p-10 transition hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5">
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${point.color}-50 text-${point.color}-600 ring-1 ring-${point.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <point.icon className="h-7 w-7" />
                   </div>
@@ -174,7 +174,7 @@ export default function AIStrategyConsultingPage() {
               </div>
 
               <div className="relative">
-                <div className="relative z-10 rounded-[3rem] border border-stone-200 bg-white p-12 shadow-2xl">
+                <div className="relative z-10 rounded-[3rem] bg-white p-12 shadow-2xl">
                   <div className="mb-8 flex items-center justify-between">
                     <h4 className="text-2xl font-black text-stone-950">AI Strategy</h4>
                     <span className="rounded-full bg-emerald-100 px-4 py-1 text-xs font-black uppercase tracking-widest text-emerald-700">Available Now</span>

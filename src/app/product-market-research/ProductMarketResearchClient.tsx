@@ -195,7 +195,7 @@ const graphPaths: Record<DemandGraphVariant, string> = {
 };
 
 const DemandMiniGraph = ({ variant, title }: { variant: DemandGraphVariant; title: string }) => (
-  <div className="rounded-3xl border border-stone-200 bg-white p-5 shadow-sm">
+  <div className="rounded-3xl bg-white p-5 shadow-sm">
     <div className="mb-4 flex items-center justify-between">
       <span className="text-[10px] font-black uppercase tracking-[0.2em] text-stone-400">Demand over time</span>
       <LineChart className="h-4 w-4 text-emerald-600" />
@@ -227,7 +227,7 @@ const DemandMiniGraph = ({ variant, title }: { variant: DemandGraphVariant; titl
 );
 
 const DataVisualization = ({ className = "" }) => (
-  <div className={`relative bg-white rounded-3xl border border-stone-200 p-6 shadow-2xl overflow-hidden ${className}`}>
+  <div className={`relative bg-white rounded-3xl p-6 shadow-2xl overflow-hidden ${className}`}>
     <div className="flex items-center justify-between mb-8">
       <div className="flex gap-1.5">
         <div className="w-2 h-2 rounded-full bg-emerald-500" />
@@ -313,7 +313,7 @@ export default function ProductMarketResearchClient() {
                   </a>
                   <Link
                     href="/contact"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     Request Sample Report
                   </Link>
@@ -374,7 +374,7 @@ export default function ProductMarketResearchClient() {
               {features.map((feature, idx) => (
                 <div
                   key={feature.title}
-                  className="group rounded-[2rem] border border-stone-200 bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
+                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
                 >
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${feature.color}-50 text-${feature.color}-600 ring-1 ring-${feature.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <feature.icon className="h-7 w-7" />
@@ -402,7 +402,7 @@ export default function ProductMarketResearchClient() {
               </p>
             </div>
 
-            <div className="hidden overflow-hidden rounded-[2rem] border border-stone-200 bg-stone-50 md:block">
+            <div className="hidden overflow-hidden rounded-[2rem] bg-stone-50 md:block">
               <div className="grid grid-cols-[1fr_1.35fr_1fr] gap-px bg-stone-200 text-sm">
                 <div className="bg-stone-950 px-5 py-4 font-black text-white">Stage</div>
                 <div className="bg-stone-950 px-5 py-4 font-black text-white">Demand Characteristics</div>
@@ -419,7 +419,7 @@ export default function ProductMarketResearchClient() {
 
             <div className="grid gap-3 md:hidden">
               {lifecycleRows.map(([stage, demand, example]) => (
-                <div key={stage} className="rounded-3xl border border-stone-200 bg-stone-50 p-5">
+                <div key={stage} className="rounded-3xl bg-stone-50 p-5">
                   <p className="text-lg font-black text-stone-950">{stage}</p>
                   <p className="mt-3 text-sm leading-relaxed text-stone-600">{demand}</p>
                   <p className="mt-3 rounded-2xl bg-white px-4 py-3 text-sm font-bold text-emerald-700 ring-1 ring-stone-200">{example}</p>
@@ -429,7 +429,7 @@ export default function ProductMarketResearchClient() {
 
             <div className="mt-10 grid gap-6 lg:grid-cols-2">
               {cycleCards.map((cycle) => (
-                <div key={cycle.title} className="rounded-[2rem] border border-stone-200 bg-[#fafaf9] p-6 md:p-8">
+                <div key={cycle.title} className="rounded-[2rem] bg-[#fafaf9] p-6 md:p-8">
                   <DemandMiniGraph variant={cycle.graph} title={cycle.title} />
                   <div className="mt-6">
                     <p className="text-[10px] font-black uppercase tracking-[0.22em] text-emerald-700">{cycle.eyebrow}</p>
@@ -437,7 +437,7 @@ export default function ProductMarketResearchClient() {
                     <p className="mt-4 leading-relaxed text-stone-600">{cycle.copy}</p>
                     <div className="mt-6 flex flex-wrap gap-2">
                       {cycle.examples.map((example) => (
-                        <span key={example} className="rounded-full border border-stone-200 bg-white px-3 py-1 text-xs font-bold text-stone-600">
+                        <span key={example} className="rounded-full bg-white px-3 py-1 text-xs font-bold text-stone-600">
                           {example}
                         </span>
                       ))}
@@ -448,7 +448,7 @@ export default function ProductMarketResearchClient() {
             </div>
 
             <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
-              <div className="rounded-[2rem] border border-stone-200 bg-stone-950 p-8 text-white md:p-10">
+              <div className="rounded-[2rem] bg-stone-950 p-8 text-white md:p-10">
                 <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500">
                   <Zap className="h-6 w-6" />
                 </div>
@@ -469,14 +469,14 @@ export default function ProductMarketResearchClient() {
                 </p>
               </div>
 
-              <div className="rounded-[2rem] border border-stone-200 bg-[#fafaf9] p-8 md:p-10">
+              <div className="rounded-[2rem] bg-[#fafaf9] p-8 md:p-10">
                 <div className="mb-8 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">
                   <Layers className="h-6 w-6" />
                 </div>
                 <h4 className="text-3xl font-black tracking-tight text-stone-950">Demand drivers we watch</h4>
                 <div className="mt-8 grid gap-5">
                   {demandDrivers.map((group) => (
-                    <div key={group.title} className="rounded-2xl border border-stone-200 bg-white p-5">
+                    <div key={group.title} className="rounded-2xl bg-white p-5">
                       <h5 className="font-black text-stone-950">{group.title}</h5>
                       <div className="mt-4 grid gap-2 sm:grid-cols-2">
                         {group.items.map((item) => (
@@ -511,7 +511,7 @@ export default function ProductMarketResearchClient() {
                   className={`relative rounded-[2.5rem] p-10 border transition-all hover:-translate-y-2 ${
                     pkg.featured 
                       ? 'bg-emerald-600 border-emerald-500 shadow-2xl shadow-emerald-500/20' 
-                      : 'bg-[#fafaf9] border-stone-200'
+                      : 'bg-[#fafaf9]'
                   }`}
                 >
                   {pkg.featured && (
@@ -540,7 +540,7 @@ export default function ProductMarketResearchClient() {
                     className={`mt-10 inline-flex w-full h-14 items-center justify-center rounded-2xl text-base font-bold transition-colors ${
                       pkg.featured 
                         ? 'bg-stone-950 text-white hover:bg-stone-800' 
-                        : 'bg-white border border-stone-200 text-stone-900 hover:border-emerald-300'
+                        : 'bg-white text-stone-900 hover:border-emerald-300'
                     }`}
                   >
                     Select Package
@@ -581,7 +581,7 @@ export default function ProductMarketResearchClient() {
         {/* Final CTA */}
         <section className="bg-white pb-24 md:pb-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-950 p-12 text-center md:p-20 text-white">
+            <div className="relative overflow-hidden rounded-[3rem] bg-stone-950 p-12 text-center md:p-20 text-white">
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
               

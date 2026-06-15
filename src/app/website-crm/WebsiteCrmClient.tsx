@@ -164,7 +164,7 @@ export default function WebsiteCrmClient() {
                   </a>
                   <Link
                     href="/crm/demo"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     Explore CRM Demo
                   </Link>
@@ -192,7 +192,7 @@ export default function WebsiteCrmClient() {
                 className="relative"
               >
                 {/* Unified Device Preview */}
-                <div className="relative z-10 rounded-2xl border border-stone-200 bg-white p-1 shadow-2xl overflow-hidden">
+                <div className="relative z-10 rounded-2xl bg-white p-1 shadow-2xl overflow-hidden">
                   <div className="flex items-center gap-1.5 px-4 py-3 border-b border-stone-100 bg-stone-50/50 rounded-t-xl">
                     <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
                     <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
@@ -314,7 +314,7 @@ export default function WebsiteCrmClient() {
                   href={ex.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white p-2 shadow-sm transition-all hover:shadow-2xl"
+                  className="group relative overflow-hidden rounded-[2.5rem] bg-white p-2 shadow-sm transition-all hover:shadow-2xl"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
                     <Image
@@ -345,7 +345,7 @@ export default function WebsiteCrmClient() {
         {/* Final CTA */}
         <section className="bg-stone-50 pb-24 md:pb-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-950 p-12 text-center md:p-20 text-white">
+            <div className="relative overflow-hidden rounded-[3rem] bg-stone-950 p-12 text-center md:p-20 text-white">
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
               

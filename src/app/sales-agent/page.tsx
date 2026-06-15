@@ -123,7 +123,7 @@ function PricingSection() {
                   <h4 className="text-xl font-bold text-[#1c1917]">Plus</h4>
                   <p className="text-xs text-[#78716c] font-medium mt-1">Up to 10 Products</p>
                 </div>
-                <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded-full text-[10px] font-bold border border-stone-200 uppercase tracking-wider">
+                <span className="px-2.5 py-0.5 bg-stone-100 text-[#78716c] rounded-full text-[10px] font-bold uppercase tracking-wider">
                   July 2026
                 </span>
               </div>
@@ -137,7 +137,7 @@ function PricingSection() {
               </div>
 
               <div className="space-y-4 flex-1">
-                <div className="pt-4 border-t border-stone-200/50">
+                <div className="pt-4 border-t border-emerald-200/50">
                   <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Scope</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-xs text-[#44403c]">
@@ -151,7 +151,7 @@ function PricingSection() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t border-stone-200/50">
+                <div className="pt-4 border-t border-emerald-200/50">
                   <p className="text-[10px] uppercase tracking-widest text-[#a8a29e] font-black mb-2">Fees</p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2 text-xs text-[#44403c]">

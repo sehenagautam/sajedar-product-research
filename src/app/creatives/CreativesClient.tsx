@@ -84,7 +84,7 @@ const CreativesAdVideo = () => {
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white shadow-2xl group">
+    <div className="relative mx-auto w-full max-w-[320px] aspect-[9/16] overflow-hidden rounded-[2.5rem] bg-white shadow-2xl group">
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
@@ -153,7 +153,7 @@ export default function CreativesClient() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-stone-50 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-stone-500 shadow-sm">
                     <Sparkles className="h-4 w-4 text-amber-500" />
                     Sajedar Creative Studio
                   </div>
@@ -177,7 +177,7 @@ export default function CreativesClient() {
                   </a>
                   <Link
                     href="#ai-videos"
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     View Services
                     <ArrowRight className="h-5 w-5" />
@@ -253,7 +253,7 @@ export default function CreativesClient() {
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {graphicsShowcase.map((item) => (
-                <div key={item.title} className="group relative aspect-square overflow-hidden rounded-[2.5rem] border border-stone-200 bg-white shadow-sm transition hover:shadow-2xl">
+                <div key={item.title} className="group relative aspect-square overflow-hidden rounded-[2.5rem] bg-white shadow-sm transition hover:shadow-2xl">
                   <Image src={item.image} alt={item.title} fill className="object-cover transition duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-8">
                     <div>
@@ -272,7 +272,7 @@ export default function CreativesClient() {
         ══════════════════════════════════ */}
         <section className="bg-white py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-stone-950 p-12 text-center md:p-20 text-white">
+            <div className="relative overflow-hidden rounded-[3rem] bg-stone-950 p-12 text-center md:p-20 text-white">
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-amber-500/10 blur-3xl" />
               

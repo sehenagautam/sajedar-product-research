@@ -199,7 +199,7 @@ export default function MetaAdsPage() {
                   </a>
                   <button
                     onClick={() => document.getElementById('simulator')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-stone-200 bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
+                    className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     <PieChart className="h-5 w-5" />
                     Simulate Budget
@@ -260,7 +260,7 @@ export default function MetaAdsPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="group rounded-[2rem] border border-stone-200 bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
+                  className="group rounded-[2rem] bg-white p-10 transition-all hover:-translate-y-2 hover:border-emerald-200 hover:shadow-xl hover:shadow-emerald-900/5"
                 >
                   <div className={`mb-8 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-${prop.color}-50 text-${prop.color}-600 ring-1 ring-${prop.color}-100 transition-colors group-hover:bg-emerald-500 group-hover:text-white`}>
                     <prop.icon className="h-7 w-7" />
@@ -325,7 +325,7 @@ export default function MetaAdsPage() {
               </div>
 
               <div className="relative">
-                <div className="relative z-10 rounded-[3rem] border border-stone-200 bg-white p-8 shadow-2xl">
+                <div className="relative z-10 rounded-[3rem] bg-white p-8 shadow-2xl">
                   <div className="mb-8 flex items-center justify-between">
                     <h4 className="text-xl font-black text-stone-950">The "Boost" Trap vs. Strategic Ads</h4>
                     <span className="rounded-full bg-stone-100 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-stone-500">Outcome of $50 Spend</span>
@@ -433,7 +433,7 @@ export default function MetaAdsPage() {
         {/* Final CTA */}
         <section className="bg-stone-50 pb-24 md:pb-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
-            <div className="relative overflow-hidden rounded-[3rem] border border-stone-200 bg-white p-12 text-center md:p-20">
+            <div className="relative overflow-hidden rounded-[3rem] bg-white p-12 text-center md:p-20">
               <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-emerald-50 blur-3xl" />
               <div className="absolute -bottom-10 -left-10 h-64 w-64 rounded-full bg-blue-50 blur-3xl" />
               

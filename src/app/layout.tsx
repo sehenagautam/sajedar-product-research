@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, DM_Serif_Display } from 'next/font/google';
+import { Inter, DM_Serif_Display, Caveat } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { FloatingMessenger } from '../components/FloatingMessenger';
@@ -15,6 +15,12 @@ const dmSerif = DM_Serif_Display({
   variable: '--font-dm-serif',
   display: 'swap',
   weight: '400'
+});
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  variable: '--font-caveat',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -132,7 +138,7 @@ export default function RootLayout({
   } as const;
 
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
+    <html lang="en" className={`${inter.variable} ${dmSerif.variable} ${caveat.variable}`}>
       <head>
         {/* Resource hints */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />

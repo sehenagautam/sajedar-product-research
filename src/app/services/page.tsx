@@ -121,6 +121,7 @@ const services = [
 const diagnostics = [
   { problem: 'I do not know what to sell next.', module: 'Product Market Research', href: '/product-market-research' },
   { problem: 'My competitors are suddenly everywhere.', module: 'Jasus AI Competitor Insights', href: '/jasus-ai' },
+  { problem: 'I want more customers but don\'t know where to start.', module: 'Meta Ads Planning', href: '/meta-ads' },
   { problem: 'Customers ask, then disappear.', module: 'AI Sales Agent', href: '/sales-agent' },
   { problem: 'We have interest, but no proper system.', module: 'Website + CRM', href: '/website-crm' },
   { problem: 'The offer is good but looks weak online.', module: 'Sajedar Creatives', href: '/creatives' },
@@ -343,17 +344,16 @@ export default function ServicesPage() {
             {/* ─── SYMPTOM ROUTING PANEL ─── */}
             <div
               className="mx-auto mt-20 max-w-3xl rounded-2xl overflow-hidden"
-              style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}
+              style={{ background: 'rgba(255,255,255,0.03)' }}
             >
-              <div className="flex items-center justify-between px-5 py-4" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+              <div className="flex items-center justify-between px-5 py-4">
                 <div className="flex items-center gap-2">
                   <Zap className="h-3.5 w-3.5 text-emerald-400" />
                   <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-white/30">Symptom Router</span>
                 </div>
                 <span className="rounded-full px-2.5 py-0.5 text-[10px] font-bold text-emerald-400 uppercase tracking-wider" style={{ background: 'rgba(16,185,129,0.1)', border: '1px solid rgba(16,185,129,0.15)' }}>Nepal</span>
               </div>
-              <div className="divide-y" style={{ borderColor: 'rgba(255,255,255,0.04)' }}>
-                {diagnostics.map((item, i) => (
+              <div className="">                {diagnostics.map((item, i) => (
                   <Link
                     key={item.problem}
                     href={item.href}

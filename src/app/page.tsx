@@ -76,11 +76,9 @@ export default function Home() {
           <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 pb-20 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
             {/* Left copy */}
             <div className="max-w-2xl">
-              <h1 className="animate-fade-up text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-[-0.03em]" style={{ animationDelay: '0.1s' }}>
+              <h1 className="animate-fade-up text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[1.05] tracking-[-0.03em] flex flex-col" style={{ animationDelay: '0.1s' }}>
                 <span className="text-[#18181b]">System Behind</span>
-                <br />
-                <span className="text-gray-400 text-[0.6em] font-medium leading-none">your</span>
-                <br />
+                <span className="text-gray-400 text-[0.6em] font-medium leading-none py-2 translate-x-12 md:translate-x-20" style={{ fontFamily: 'var(--font-caveat), cursive' }}>your</span>
                 <span className="text-gradient-accent">Online Business</span>
               </h1>
 
