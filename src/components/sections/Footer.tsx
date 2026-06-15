@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-black/[0.06] bg-[#fafafa] px-6 py-16 lg:px-8">
+    <footer className="relative bg-[#fafafa] px-6 py-16 lg:px-8">
       <div className="mx-auto max-w-7xl">
         {/* Nav */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -15,7 +15,7 @@ export function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full border border-black/[0.06] bg-black/[0.02] px-5 py-2 text-[13px] font-medium text-[#71717a] transition-all duration-200 hover:border-black/[0.12] hover:text-[#18181b]"
+              className="rounded-full bg-black/[0.02] px-5 py-2 text-[13px] font-medium text-[#71717a] transition-all duration-200 hover:border-black/[0.12] hover:text-[#18181b]"
             >
               {link.label}
             </Link>

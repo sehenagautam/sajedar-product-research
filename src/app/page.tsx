@@ -98,7 +98,7 @@ export default function Home() {
                 </a>
                 <Link
                   href="/services"
-                  className="group inline-flex items-center gap-2 rounded-xl border border-black/[0.08] bg-white/60 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-black/[0.15] hover:bg-white hover:text-[#18181b]"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-white/60 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-black/[0.15] hover:bg-white hover:text-[#18181b]"
                 >
                   View services
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -160,9 +160,9 @@ export default function Home() {
                     }}
                   >
                     <div
-                      className={`flex items-center gap-3 rounded-lg border px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${isLast
-                          ? 'border-emerald-500/30 bg-emerald-50 shadow-lg shadow-emerald-500/10 hover:border-emerald-500/40'
-                          : 'border-black/[0.06] bg-white/80 shadow-sm hover:border-black/[0.12] hover:shadow-md'
+                      className={`flex items-center gap-3 rounded-lg px-6 py-2.5 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 ${isLast
+                          ? 'border border-emerald-500/30 bg-emerald-50 shadow-lg shadow-emerald-500/10 hover:border-emerald-500/40'
+                          : 'bg-white/80 shadow-sm hover:border-black/[0.12] hover:shadow-md'
                         }`}
                       style={{ minWidth: '170px' }}
                     >
@@ -216,7 +216,7 @@ export default function Home() {
             <div className="mb-12 flex justify-center">
               <Link
                 href="/services"
-                className="group inline-flex items-center gap-2.5 rounded-full border border-black/[0.06] bg-white/70 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-emerald-500/20 hover:bg-emerald-50 hover:text-emerald-700"
+                className="group inline-flex items-center gap-2.5 rounded-full bg-white/70 px-6 py-3 text-[14px] font-medium text-[#52525b] transition-all duration-300 hover:border-emerald-500/20 hover:bg-emerald-50 hover:text-emerald-700"
               >
                 Explore all services
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true" />
@@ -231,10 +231,10 @@ export default function Home() {
                   <Link
                     key={service.href}
                     href={service.href}
-                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl border bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08] ${
+                    className={`group relative flex flex-col items-center overflow-hidden rounded-2xl bg-white pt-5 pb-5 px-3 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/[0.08] ${
                       service.href === '/sales-agent' 
-                        ? 'border-emerald-500 ring-2 ring-emerald-500/10 scale-105 z-10' 
-                        : 'border-black/[0.06]'
+                        ? 'border border-emerald-500 ring-2 ring-emerald-500/10 scale-105 z-10' 
+                        : ''
                     }`}
                   >
                     {/* Number top-right */}
@@ -281,7 +281,7 @@ export default function Home() {
                     </p>
 
                     {/* Arrow */}
-                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full border border-black/[0.07] text-[#c4c4c8] transition-all duration-300 group-hover:border-transparent group-hover:bg-emerald-500 group-hover:text-white">
+                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full text-[#c4c4c8] transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-white">
                       <ArrowRight className="h-3 w-3" aria-hidden="true" />
                     </div>
                   </Link>
@@ -294,13 +294,13 @@ export default function Home() {
         <FounderMessageSection />
 
         {/* CTA SECTION */}
-        <section className="relative overflow-hidden border-t border-black/[0.04] bg-[#fafafa] px-6 py-24 lg:px-8">
+        <section className="relative overflow-hidden bg-[#fafafa] px-6 py-24 lg:px-8">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute bottom-0 left-1/2 h-[300px] w-[600px] -translate-x-1/2 translate-y-1/2 rounded-full bg-emerald-500/[0.04] blur-[100px]" />
           </div>
 
           <div className="relative mx-auto max-w-3xl">
-            <div className="overflow-hidden rounded-2xl border border-black/[0.06] bg-white/70 p-8 text-center backdrop-blur-sm shadow-lg shadow-black/[0.03] md:p-12">
+            <div className="overflow-hidden rounded-2xl bg-white/70 p-8 text-center backdrop-blur-sm shadow-lg shadow-black/[0.03] md:p-12">
               <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-200 bg-emerald-50">
                 <MessageCircle className="h-5 w-5 text-emerald-600" aria-hidden="true" />
               </div>

@@ -174,7 +174,7 @@ function PricingSection() {
           </div>
         </div>
 
-        <hr className="border-stone-200 mb-14" />
+        <hr className="mb-14" />
 
         {/* Commission-Based Partnership */}
         <div className="mb-14">
@@ -188,7 +188,7 @@ function PricingSection() {
           </div>
           <p className="text-sm text-[#78716c] mb-6">Revenue-sharing model &ndash; we grow when you grow.</p>
 
-          <div className="bg-white rounded-lg border border-stone-200 p-6 space-y-4">
+          <div className="bg-white rounded-lg p-6 space-y-4">
             <div className="flex items-baseline gap-2">
               <span className="text-2xl font-bold text-[#1c1917]">5%</span>
               <span className="text-sm text-[#78716c]">of sales revenue generated through the agent</span>

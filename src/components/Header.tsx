@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg" }) => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl backdrop-saturate-150">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           {/* Left: Logo + Nav */}
@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg
           {/* Right: Services CTA */}
           <Link
             href="/services"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-black/[0.08] bg-black/[0.02] px-3.5 py-1.5 text-[13px] font-medium text-[#18181b] transition-all duration-200 hover:border-emerald-500/30 hover:bg-emerald-50 hover:text-emerald-700"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-black/[0.02] px-3.5 py-1.5 text-[13px] font-medium text-[#18181b] transition-all duration-200 hover:border-emerald-500/30 hover:bg-emerald-50 hover:text-emerald-700"
           >
             Services
             <svg className="h-3 w-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
