@@ -43,31 +43,7 @@ function PricingSection() {
           <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-[#1c1917] leading-tight mb-4" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
             Plans &amp; Pricing
           </h2>
-          <p className="text-[#57534e] text-base leading-relaxed max-w-xl">
-            Conversational Commerce agents that showcase products, engage customers, and convert conversations into confirmed orders &ndash; automatically.
-          </p>
         </div>
-
-        {/* Current Scope */}
-        <div className="bg-white rounded-lg border border-stone-200 p-6 mb-14">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-[#292524] mb-3">Omnichannel Capability</h3>
-          <ul className="space-y-2 text-sm text-[#44403c]">
-            <li className="flex items-start gap-2.5">
-              <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>Supported platforms: <strong>Facebook Messenger & Instagram</strong></span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>Friction Reduction: Image &amp; voice message understanding included</span>
-            </li>
-            <li className="flex items-start gap-2.5">
-              <span className="text-emerald-600 mt-0.5 text-xs">●</span>
-              <span>Lead Nurturing: Automated follow-ups for "Price please" and "PP" comments</span>
-            </li>
-          </ul>
-        </div>
-
-        <hr className="border-stone-200 mb-14" />
 
         {/* Standardized Plans */}
         <div className="mb-14">
@@ -244,42 +220,6 @@ function PricingSection() {
               Talk on WhatsApp
             </a>
           </div>
-        </div>
-
-        <hr className="border-stone-200 mb-14" />
-
-        {/* Agent Capabilities */}
-        <div className="mb-14">
-          <h3 className="text-xl font-bold text-[#1c1917] mb-6" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
-            Agent Capabilities
-          </h3>
-          <div className="bg-white rounded-lg border border-stone-200 p-6">
-            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-[#44403c]">
-              {[
-                '24/7 Conversational Commerce',
-                'Payment collection & checkout',
-                'Friction Reduction via AI answers',
-                'Lead Nurturing & automated follow-ups',
-                'Ad campaign synchronisation',
-                'Native rendering on Meta platforms',
-                'Image & voice message understanding',
-                'Multi-language support (Nepali/English)',
-              ].map((capability) => (
-                <li key={capability} className="flex items-start gap-2.5">
-                  <span className="text-emerald-600 mt-0.5">✓</span>
-                  <span>{capability}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Setup Duration */}
-        <div className="bg-stone-50 rounded-lg border border-stone-200 p-6">
-          <p className="text-sm text-[#44403c]">
-            <strong className="text-[#292524]">Setup Duration:</strong>{' '}
-            Typically one to three business days. All configuration is handled by our team &ndash; no technical involvement required from your side.
-          </p>
         </div>
       </div>
     </section>
