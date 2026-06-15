@@ -270,7 +270,7 @@ export default function Home() {
                     </p>
 
                     {/* Arrow */}
-                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full text-[#c4c4c8] transition-all duration-300">
+                    <div className="mt-4 flex h-7 w-7 items-center justify-center rounded-full text-[#c4c4c8] transition-all duration-300 group-hover:text-emerald-500">
                       <ArrowRight className="h-3 w-3" aria-hidden="true" />
                     </div>
                   </Link>
