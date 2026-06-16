@@ -17,7 +17,7 @@ interface Button {
 export default function MessengerBuilderPage() {
     const [title, setTitle] = useState('Welcome to Sajedar');
     const [subtitle, setSubtitle] = useState('The best agent agency in Nepal.');
-    const [imageUrl, setImageUrl] = useState('https://sajedar.com/sajedarlogo.jpg');
+    const [imageUrl, setImageUrl] = useState('https://sajedar.com/sajedar-new-logo-jun16.png');
     const [actionUrl, setActionUrl] = useState('');
     const [buttons, setButtons] = useState<Button[]>([]);
 

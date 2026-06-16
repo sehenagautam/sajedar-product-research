@@ -39,7 +39,7 @@ const bricks = [
 
 /* Service cards data */
 const services = [
-  { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, logo: '/sajedarlogo.jpg', priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
+  { title: 'AI Sales Agent', href: '/sales-agent', icon: Bot, logo: '/sajedar-new-logo-jun16.png', priceLabel: 'Starting at', price: 'Rs 4,000', iconColor: '#10b981', iconBg: 'from-teal-50 to-emerald-100' },
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
   { title: 'Sajedar Creatives', href: '/creatives', icon: Sparkles, logo: '/sajedar-creatives.jpg', priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },

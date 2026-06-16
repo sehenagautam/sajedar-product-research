@@ -25,7 +25,7 @@ const services = [
   {
     title: 'AI Sales Agent',
     href: '/sales-agent',
-    logo: '/sajedarlogo.jpg',
+    logo: '/sajedar-new-logo-jun16.png',
     price: 'Starts at Rs 4,000',
     symptom: 'Chats come in, but replies are slow or inconsistent.',
     input: 'FAQs, products, policies, tone',
@@ -157,7 +157,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
         {/* Header row */}
         <div className="flex items-start justify-between mb-6">
           <div
-            className="flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 overflow-hidden"
+            className="flex h-12 w-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:scale-110 overflow-hidden bg-white"
             style={{ 
               background: service.logo ? '#fff' : service.accentDim, 
               border: service.logo ? 'none' : `1px solid ${service.accent}22` 

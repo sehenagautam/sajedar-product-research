@@ -116,7 +116,7 @@ export default function RootLayout({
     '@type': ['Organization', 'LocalBusiness'],
     name: 'Sajedar - Top AI Agent Builder in Nepal',
     url: 'https://sajedar.com',
-    logo: 'https://sajedar.com/sajedarlogo.jpg',
+    logo: 'https://sajedar.com/sajedar-new-logo-jun16.png',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Kathmandu',
