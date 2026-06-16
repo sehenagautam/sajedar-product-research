@@ -43,7 +43,7 @@ const services = [
   { title: 'Meta Ads', href: '/meta-ads', icon: Megaphone, priceLabel: 'Starting with', price: 'Budget plan', iconColor: '#06b6d4', iconBg: 'from-cyan-50 to-sky-100' },
   { title: 'Sajedar Creatives', href: '/creatives', icon: Sparkles, logo: '/sajedar-creatives.jpg', priceLabel: 'Starting at', price: 'Rs 200', iconColor: '#f59e0b', iconBg: 'from-amber-50 to-yellow-100' },
   { title: 'Website + CRM', href: '/website-crm', icon: Layout, priceLabel: 'Starting at', price: 'Rs 14,000', iconColor: '#3b82f6', iconBg: 'from-blue-50 to-sky-100' },
-  { title: 'Jasus AI Insights', href: '/jasus-ai', icon: Eye, logo: '/jasus-ai-icon.jpg', priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#dc2626', iconBg: 'from-red-50 to-red-100' },
+  { title: 'Jasus AI Intel', href: '/jasus-ai', icon: Eye, logo: '/jasus-ai-icon.jpg', priceLabel: 'Starting at', price: 'Rs 2,500', iconColor: '#dc2626', iconBg: 'from-red-50 to-red-100' },
   { title: 'Product Research', href: '/product-market-research', icon: SearchCheck, priceLabel: 'Starting at', price: 'Rs 3,000', iconColor: '#10b981', iconBg: 'from-emerald-50 to-green-100' },
   { title: 'AI Strategy\nConsulting', href: '/ai-strategy-consulting', icon: BrainCircuit, priceLabel: 'Starting at', price: 'Rs 5,000', iconColor: '#8b5cf6', iconBg: 'from-purple-50 to-violet-100' },
 ];

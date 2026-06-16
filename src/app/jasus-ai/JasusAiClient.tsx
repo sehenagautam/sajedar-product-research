@@ -17,7 +17,7 @@ import { Footer } from '../../components/sections/Footer';
 import MarketClarityApple from './MarketClarityApple';
 
 const whatsappMessage = encodeURIComponent(
-  'Hi Sajedar! I am interested in Jasus AI competitor insights. Please share how I can understand my market in Nepal.'
+  'Hi Sajedar! I am interested in Jasus AI Intel. Please share how I can understand my market in Nepal.'
 );
 
 const fadeIn = {
@@ -138,7 +138,7 @@ export default function JasusAiClient() {
                       className="object-cover"
                     />
                   </span>
-                  Market Intelligence & Competitor Insights
+                  Market Intel & Competitor Research
                 </motion.div>
                 
                 <motion.h1 
@@ -219,7 +219,7 @@ export default function JasusAiClient() {
             <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-red-600 to-red-900 p-8 md:p-20 text-white">
               <div className="relative z-10 grid gap-12 lg:grid-cols-2 lg:items-center">
                 <div>
-                  <h2 className="text-4xl font-black tracking-tight md:text-5xl">Review 3 Competitors for Rs 2,500.</h2>
+                  <h2 className="text-4xl font-black tracking-tight md:text-5xl">Review 3 Competitors - Jasus Intel.</h2>
                   <p className="mt-6 text-lg text-red-50/70 leading-relaxed">
                     Get a deep-dive Jasus AI report on any 3 brands in your category.
                     Includes ad library breakdown, price structure, and 30-day updates.
@@ -269,7 +269,7 @@ export default function JasusAiClient() {
                 Ready to stop guessing?
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-slate-500">
-                Jasus AI is a market clarity tool for ambitious Nepali brands. Share your category
+                Jasus AI Intel is a market clarity tool for ambitious Nepali brands. Share your category
                 and we'll show you what is working in the market today. Kura clear, guesswork kam.
               </p>
               <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">

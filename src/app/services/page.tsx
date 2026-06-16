@@ -77,7 +77,7 @@ const services = [
     tag: '04',
   },
   {
-    title: 'Jasus AI Competitor Insights',
+    title: 'Jasus AI Intel',
     href: '/jasus-ai',
     logo: '/jasus-ai-icon.jpg',
     price: 'Rs 2,500 for 3 competitors',
@@ -120,7 +120,7 @@ const services = [
 
 const diagnostics = [
   { problem: 'I do not know what to sell next.', module: 'Product Market Research', href: '/product-market-research' },
-  { problem: 'My competitors are suddenly everywhere.', module: 'Jasus AI Competitor Insights', href: '/jasus-ai' },
+  { problem: 'My competitors are suddenly everywhere.', module: 'Jasus AI Intel', href: '/jasus-ai' },
   { problem: 'I want more customers but don\'t know where to start.', module: 'Meta Ads Planning', href: '/meta-ads' },
   { problem: 'Customers ask, then disappear.', module: 'AI Sales Agent', href: '/sales-agent' },
   { problem: 'We have interest, but no proper system.', module: 'Website + CRM', href: '/website-crm' },
