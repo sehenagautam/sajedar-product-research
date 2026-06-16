@@ -8,7 +8,7 @@ interface HeaderProps {
   logoSrc?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ logoSrc = "/header-logo-transparent.jpg" }) => {
+const Header: React.FC<HeaderProps> = ({ logoSrc = "/sajedarlogo.jpg" }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/40 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

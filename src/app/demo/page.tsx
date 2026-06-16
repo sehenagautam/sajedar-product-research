@@ -16,7 +16,7 @@ export default function DemoPage() {
         'Our most advanced agent yet - guides users from product discovery to address collection, collects Rs 100 advance payment, and notifies the store owner automatically.',
       facebookUrl: 'https://web.facebook.com/profile.php?id=61575123480268',
       messengerUrl: 'https://m.me/61575123480268',
-      logo: '/lattakapadalogo.webp',
+      logo: '/lattakapadalogo.jpg',
       features: [
         'Product details & discovery',
         'Address collection',

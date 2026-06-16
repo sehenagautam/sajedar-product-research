@@ -25,7 +25,7 @@ const services = [
   {
     title: 'AI Sales Agent',
     href: '/sales-agent',
-    logo: '/header-logo-transparent.jpg',
+    logo: '/sajedarlogo.jpg',
     price: 'Starts at Rs 4,000',
     symptom: 'Chats come in, but replies are slow or inconsistent.',
     input: 'FAQs, products, policies, tone',
