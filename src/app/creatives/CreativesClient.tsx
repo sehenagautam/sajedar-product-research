@@ -47,9 +47,9 @@ const sampleVideos = [
   },
   {
     title: 'Gecko Product Spot',
-    category: 'Character ad',
-    duration: '28 sec',
-    src: '/motionmandu/samples/gecko-ai-sample.mp4',
+    category: 'Product reel',
+    duration: '30 sec',
+    src: '/gecko_ai.mp4',
   },
   {
     title: 'Boutique Launch Film',
