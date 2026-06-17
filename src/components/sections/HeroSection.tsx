@@ -72,7 +72,7 @@ export function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                 </span>
-                <span>Sajedar's agent has now interacted with <strong>more than 20,000 people</strong>.</span>
+                <span>Sajedar's agent has now interacted with <strong>more than 25,000 people</strong>.</span>
               </div>
             </div>
 
@@ -107,23 +107,23 @@ export function HeroSection() {
           </div>
 
           <div className="relative flex justify-center">
-            <div 
+            <div
               className="relative w-full max-w-48 sm:max-w-56 md:max-w-64 lg:max-w-72 xl:max-w-80 aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl group cursor-pointer"
               onClick={togglePlay}
             >
-              <video 
+              <video
                 ref={videoRef}
-                autoPlay 
-                muted 
-                loop 
-                playsInline 
+                autoPlay
+                muted
+                loop
+                playsInline
                 poster="/sajedar_intro_thumb.jpg"
                 className="w-full h-full object-cover object-center"
               >
                 <source src="/sajedar_intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              
+
               {/* Overlay with Play/Pause button */}
               <div className={`absolute inset-0 bg-black/20 transition-opacity duration-300 ${isPlaying ? 'opacity-0 group-hover:opacity-100' : 'opacity-100'}`}>
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -138,7 +138,7 @@ export function HeroSection() {
               </div>
 
               {/* Sound Control */}
-              <div 
+              <div
                 className="absolute bottom-4 right-4 z-20 transition-transform hover:scale-110 active:scale-95"
                 onClick={toggleMute}
               >
