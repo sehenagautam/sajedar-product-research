@@ -312,7 +312,7 @@ export default function ProductMarketResearchClient() {
                     Discuss on WhatsApp
                   </a>
                   <Link
-                    href="/contact"
+                    href="/product-market-research/sample-report"
                     className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-8 text-base font-bold text-stone-900 transition hover:-translate-y-1 hover:border-emerald-300 hover:text-emerald-700"
                   >
                     Request Sample Report
